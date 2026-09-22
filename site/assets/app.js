@@ -711,7 +711,7 @@
     }
     prep(d);
     const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
-    $("#updated").innerHTML = `<span>Sources reviewed ${esc(srcStamp)}</span>` + (d.curator_reviewed ? `<span>Curator reviewed ${esc(longDate(d.curator_reviewed))}</span>` : "");
+    $("#updated").innerHTML = `<span>Sources reviewed ${esc(srcStamp)}</span>`;
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();
