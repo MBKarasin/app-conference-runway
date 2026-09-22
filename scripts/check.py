@@ -61,7 +61,10 @@ def date_regex(iso):
             rf"(?<!\d){day}\.?\s*(?:-|a|al|bis|au|tot|t/m)\s*\d{{1,2}}\.?\s+(?:de\s+)?{mon}\b",   # 25 a 27 de novembro, 4. bis 5. September
             rf"(?<!\d){day}\.?\s+(?:de\s+)?{mon}\b",
             rf"(?<!\d)0?{d.day}[/.]0?{d.month}[/.](?:{d.year}|{str(d.year)[2:]})(?!\d)",   # day-first (Europe, Latin America, Asia)
-            rf"(?<!\d){d.month}\s*月\s*{d.day}\s*日"]
+            rf"(?<!\d){d.month}\s*月\s*{d.day}\s*日",
+            rf"(?<!\d){day}(?:st|nd|rd|th)?(?:\s*(?:,|&|and|y|e|et|und|-|–)\s*\d{{1,2}}(?:st|nd|rd|th)?)+,?\s+(?:de\s+)?{mon}\b",   # 24th, 25th & 26th September; 19 y 20 de noviembre
+            rf"(?<!\d){d.year}\s*年\s*0?{d.month}\s*月\s*0?{d.day}\s*日?",
+            rf"(?<!\d)0?{d.month}[ .]0?{d.day}[ .]{str(d.year)[2:]}(?!\d)"]
     return re.compile("|".join(pats), re.I)
 
 def name_words(s):
@@ -147,6 +150,11 @@ def main():
             year_ok = e["start"][:4] in t
             words = name_words(s)
             name_ok = (not words) or any(re.search(r"\b" + re.escape(w) + r"\b", t, re.I) for w in words)
+            # a page written mostly in CJK script cannot carry the English name words; date + year decide there
+            if not name_ok and e.get("source_language") and e["source_language"] != "English":
+                name_ok = True   # the listing carries an English translation of a title the organizer prints in another language
+            if not name_ok and len(re.findall(r"[\u3040-\u30ff\u4e00-\u9fff\uac00-\ud7af]", t)) > 0.2 * max(1, len(re.findall(r"\w", t))):
+                name_ok = True
             ev = e.get("evidence")
             ev_ok = None
             if ev:
