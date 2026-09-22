@@ -17,7 +17,7 @@ jobs:
   check:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     outputs:
       go: ${{ steps.gate.outputs.go }}
     permissions:
@@ -37,13 +37,13 @@ jobs:
       - if: steps.gate.outputs.go == 'true'
         run: pip install --no-cache-dir "pypdf==5.*"
       - if: steps.gate.outputs.go == 'true'
-        run: python scripts/build.py && python scripts/check.py && python scripts/build.py && python scripts/validate.py && python scripts/snapshot.py
+        run: python scripts/build.py && python scripts/check.py && python scripts/linkcheck.py && python scripts/build.py && python scripts/validate.py && python scripts/snapshot.py
       - if: steps.gate.outputs.go == 'true'
         name: Commit verification stamps
         run: |
           git config user.name "runway-checker"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/verification.json data/check_report.md data/ledger.json data/snapshots site/data/runway.json site/runway.ics
+          git add data/verification.json data/check_report.md data/link_report.md data/link_status.json data/ledger.json data/snapshots site/data/runway.json site/runway.ics
           git diff --cached --quiet || git commit -m "Nightly source check $(date -u +%F)"
           git push
       - if: steps.gate.outputs.go == 'true'
