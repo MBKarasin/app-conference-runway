@@ -1092,6 +1092,17 @@
 "region": "West",
 "state": "NV"
 },
+"Franciscan Center Gathering Space, Madonna University, Livonia, MI": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 42.3972,
+"lon": -83.3723,
+"place": "Livonia",
+"precision": "city",
+"region": "Midwest",
+"state": "MI"
+},
 "Garden Grove (Anaheim), CA": {
 "cc": "US",
 "continent": "North America",
@@ -1496,6 +1507,28 @@
 "precision": "city",
 "region": "South",
 "state": "FL"
+},
+"Holy Family University, Newtown East campus, Newtown, PA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 40.6532,
+"lon": -76.3456,
+"place": "Newtown",
+"precision": "city",
+"region": "Northeast",
+"state": "PA"
+},
+"Holy Family University, Newtown campus, Newtown, PA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 40.6532,
+"lon": -76.3456,
+"place": "Newtown",
+"precision": "city",
+"region": "Northeast",
+"state": "PA"
 },
 "Hong Kong": {
 "cc": "HK",
@@ -2655,6 +2688,17 @@
 "region": "Northeast",
 "state": "NJ"
 },
+"Nadeau Hall conference room, University of Maine at Fort Kent, Fort Kent, ME (Zoom option)": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 47.2517,
+"lon": -68.5872,
+"place": "Fort Kent",
+"precision": "city",
+"region": "Northeast",
+"state": "ME"
+},
 "Naples, FL": {
 "cc": "US",
 "continent": "North America",
@@ -3366,6 +3410,17 @@
 "region": "Midwest",
 "state": "MO"
 },
+"SIUE Morris University Center, Legacy Room, Edwardsville, IL (day one on Zoom, day two in person)": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 38.7908,
+"lon": -89.9886,
+"place": "Edwardsville",
+"precision": "city",
+"region": "Midwest",
+"state": "IL"
+},
 "Sacramento, CA": {
 "cc": "US",
 "continent": "North America",
@@ -3752,6 +3807,17 @@
 "precision": "country",
 "region": "Europe"
 },
+"Southern Illinois University Edwardsville, Edwardsville, IL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 38.7908,
+"lon": -89.9886,
+"place": "Edwardsville",
+"precision": "city",
+"region": "Midwest",
+"state": "IL"
+},
 "Spokane, WA": {
 "cc": "US",
 "continent": "North America",
@@ -4135,6 +4201,17 @@
 "region": "West",
 "state": "CA"
 },
+"UIC College of Nursing lobby, 845 S. Damen Ave., Chicago, IL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 41.837,
+"lon": -87.6849,
+"place": "Chicago",
+"precision": "city",
+"region": "Midwest",
+"state": "IL"
+},
 "United States (venue not stated by organizer)": {
 "cc": "US",
 "continent": "North America",
@@ -4143,6 +4220,39 @@
 "lon": -74.006,
 "precision": "country",
 "region": "North America"
+},
+"University Center, UC 220 Chattanooga Room A-B, 642 E 5th St, Chattanooga, TN": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 35.066,
+"lon": -85.2484,
+"place": "Chattanooga",
+"precision": "city",
+"region": "South",
+"state": "TN"
+},
+"University of Kansas Medical Center, Kansas City, KS": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.1225,
+"lon": -94.7418,
+"place": "Kansas City",
+"precision": "city",
+"region": "Midwest",
+"state": "KS"
+},
+"University of Pennsylvania School of Nursing, Philadelphia, PA (virtual option)": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 40.0094,
+"lon": -75.1333,
+"place": "Philadelphia",
+"precision": "city",
+"region": "Northeast",
+"state": "PA"
 },
 "Utrecht, Netherlands": {
 "cc": "NL",
