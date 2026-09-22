@@ -647,3 +647,5 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   :root:not([data-theme="light"]){--t-meet:#7FB0DD;--t-call:#5CC08A;--t-obs:#E0A45C}
   :root:not([data-theme="light"]) .tag.p.neutral{background:#1A2329!important;color:#C9D7DB!important;border-color:#33474F!important}
 }
+.mast h1 a.home{color:inherit;text-decoration:none}
+.mast h1 a.home:hover .runway-word,.mast h1 a.home:focus-visible .runway-word{text-decoration:underline;text-decoration-color:#CC0033;text-underline-offset:6px}
