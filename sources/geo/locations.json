@@ -50,6 +50,16 @@
 "precision": "city",
 "region": "Africa"
 },
+"Academia, Singapore General Hospital Campus, Singapore": {
+"cc": "SG",
+"continent": "Asia",
+"country": "Singapore",
+"lat": 1.2897,
+"lon": 103.8501,
+"place": "Singapore",
+"precision": "city",
+"region": "Asia"
+},
 "Accra, Ghana": {
 "cc": "GH",
 "continent": "Africa",
@@ -59,6 +69,16 @@
 "place": "Accra",
 "precision": "city",
 "region": "Africa"
+},
+"Adelaide Oval, Adelaide, South Australia, Australia": {
+"cc": "AU",
+"continent": "Oceania",
+"country": "Australia",
+"lat": -34.9287,
+"lon": 138.5986,
+"place": "Adelaide",
+"precision": "city",
+"region": "Oceania"
 },
 "Aloft Wichita, Wichita, KS": {
 "cc": "US",
@@ -168,6 +188,16 @@
 "place": "Concord, NC",
 "precision": "city"
 },
+"Atılım Üniversitesi, Ankara, Turkey": {
+"cc": "TR",
+"continent": "Asia",
+"country": "Turkey",
+"lat": 39.9199,
+"lon": 32.8543,
+"place": "Ankara",
+"precision": "city",
+"region": "Asia"
+},
 "Auditório Monsenhor Salim, Campinas, Brazil": {
 "cc": "BR",
 "continent": "South America",
@@ -187,6 +217,16 @@
 "precision": "city",
 "region": "South",
 "state": "GA"
+},
+"Aulas de Formación de Fuden, Madrid, Spain": {
+"cc": "ES",
+"continent": "Europe",
+"country": "Spain",
+"lat": 40.4165,
+"lon": -3.7026,
+"place": "Madrid",
+"precision": "city",
+"region": "Europe"
 },
 "Austin, TX": {
 "cc": "US",
@@ -390,6 +430,16 @@
 "precision": "city",
 "region": "South America"
 },
+"Brasília, Distrito Federal, Brazil": {
+"cc": "BR",
+"continent": "South America",
+"country": "Brazil",
+"lat": -15.7797,
+"lon": -47.9297,
+"place": "Brasília",
+"precision": "city",
+"region": "South America"
+},
 "Breezy Point Resort, Breezy Point, MN": {
 "cc": "US",
 "continent": "North America",
@@ -419,6 +469,15 @@
 "place": "Buenos Aires",
 "precision": "city",
 "region": "South America"
+},
+"CMN Siglo XXI, Ciudad de México, Mexico": {
+"cc": "MX",
+"continent": "North America",
+"country": "Mexico",
+"lat": 19.428,
+"lon": -99.128,
+"precision": "country",
+"region": "North America"
 },
 "Cairns, QLD, Australia": {
 "cc": "AU",
@@ -612,6 +671,17 @@
 "precision": "city",
 "region": "West",
 "state": "CA"
+},
+"Creighton University College of Nursing, Omaha, NE": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 42.4649,
+"lon": -97.9071,
+"place": "Creighton",
+"precision": "city",
+"region": "Midwest",
+"state": "NE"
 },
 "Crowne Plaza Kearney, Kearney, NE": {
 "cc": "US",
@@ -979,6 +1049,16 @@
 "region": "Northeast",
 "state": "VT"
 },
+"Fairfield by Marriott – Ozone Convention Centre, Kolkata, India": {
+"cc": "IN",
+"continent": "Asia",
+"country": "India",
+"lat": 22.5626,
+"lon": 88.363,
+"place": "Kolkata",
+"precision": "city",
+"region": "Asia"
+},
 "Fairmont Georgetown, Washington, DC": {
 "cc": "US",
 "continent": "North America",
@@ -1099,17 +1179,6 @@
 "precision": "city",
 "region": "South",
 "state": "TN"
-},
-"Grand Hyatt Washington, Washington, DC": {
-"cc": "US",
-"continent": "North America",
-"country": "United States",
-"lat": 38.9042,
-"lon": -77.0165,
-"place": "Washington",
-"precision": "city",
-"region": "South",
-"state": "DC"
 },
 "Grand Traverse Resort and Spa, Williamsburg, MI": {
 "cc": "US",
@@ -1985,6 +2054,17 @@
 "region": "West",
 "state": "WY"
 },
+"Larson Kelly Auditorium, Driscoll Hall, Villanova University, Villanova, PA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 40.0405,
+"lon": -75.341,
+"place": "Villanova",
+"precision": "city",
+"region": "Northeast",
+"state": "PA"
+},
 "Las Vegas, NV": {
 "cc": "US",
 "continent": "North America",
@@ -2038,6 +2118,16 @@
 "precision": "city",
 "region": "Midwest",
 "state": "NE"
+},
+"Link Campus University, Rome, Italy": {
+"cc": "IT",
+"continent": "Europe",
+"country": "Italy",
+"lat": 41.8919,
+"lon": 12.5113,
+"place": "Rome",
+"precision": "city",
+"region": "Europe"
 },
 "Lisbon, Portugal": {
 "cc": "PT",
@@ -2158,6 +2248,17 @@
 "precision": "city",
 "region": "South",
 "state": "KY"
+},
+"M. Christine Schwartz Center for Nursing and Health Studies / S.H.A.R.E. Simulation Hospital, Coral Gables campus, Coral Gables, FL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 25.6831,
+"lon": -80.2617,
+"place": "Coral Gables",
+"precision": "city",
+"region": "South",
+"state": "FL"
 },
 "MART Auditorium, Stony Brook, NY": {
 "cc": "US",
@@ -2394,6 +2495,16 @@
 "region": "Midwest",
 "state": "MN"
 },
+"Mombasa County, Kenya": {
+"cc": "KE",
+"continent": "Africa",
+"country": "Kenya",
+"lat": -4.0547,
+"lon": 39.6636,
+"place": "Mombasa",
+"precision": "city",
+"region": "Africa"
+},
 "Monroe Township, NJ": {
 "cc": "US",
 "continent": "North America",
@@ -2479,6 +2590,16 @@
 "precision": "city",
 "region": "Northeast",
 "state": "NY"
+},
+"Multiusos de Gondomar, Gondomar, Portugal": {
+"cc": "PT",
+"continent": "Europe",
+"country": "Portugal",
+"lat": 41.1445,
+"lon": -8.5322,
+"place": "Gondomar",
+"precision": "city",
+"region": "Europe"
 },
 "Munich, Germany": {
 "cc": "DE",
@@ -2664,6 +2785,16 @@
 "place": "Niagara Falls",
 "precision": "city",
 "region": "North America"
+},
+"Nicon Luxury Hotel, Abuja, Nigeria": {
+"cc": "NG",
+"continent": "Africa",
+"country": "Nigeria",
+"lat": 9.0579,
+"lon": 7.4951,
+"place": "Abuja",
+"precision": "city",
+"region": "Africa"
 },
 "Nieuwegein, Netherlands": {
 "cc": "NL",
@@ -3539,6 +3670,16 @@
 "region": "South",
 "state": "FL"
 },
+"Sheraton Toronto Airport Hotel & Conference Centre, Toronto, Ontario, Canada": {
+"cc": "CA",
+"continent": "North America",
+"country": "Canada",
+"lat": 43.7064,
+"lon": -79.3986,
+"place": "Toronto",
+"precision": "city",
+"region": "North America"
+},
 "Sheraton Vancouver Wall Centre, Vancouver, BC, Canada": {
 "cc": "CA",
 "continent": "North America",
@@ -3685,6 +3826,15 @@
 "precision": "city",
 "region": "West",
 "state": "WA"
+},
+"Switzerland (venue with Berner Fachhochschule BFH; exact hall not stated)": {
+"cc": "CH",
+"continent": "Europe",
+"country": "Switzerland",
+"lat": 47.367,
+"lon": 8.55,
+"precision": "country",
+"region": "Europe"
 },
 "São Paulo, Brazil": {
 "cc": "BR",
@@ -3836,6 +3986,16 @@
 "region": "Midwest",
 "state": "NE"
 },
+"The Richmond Education and Event Centre, Dublin, Ireland": {
+"cc": "IE",
+"continent": "Europe",
+"country": "Ireland",
+"lat": 53.3331,
+"lon": -6.2489,
+"place": "Dublin",
+"precision": "city",
+"region": "Europe"
+},
 "The Ritz Carlton, Tysons Corner, McLean, VA": {
 "cc": "US",
 "continent": "North America",
@@ -3953,6 +4113,17 @@
 "region": "West",
 "state": "WA"
 },
+"U-M School of Nursing, Building 2 (SNB 2), Ann Arbor, MI": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 42.2761,
+"lon": -83.7309,
+"place": "Ann Arbor",
+"precision": "city",
+"region": "Midwest",
+"state": "MI"
+},
 "UCLA School of Nursing, Los Angeles, CA": {
 "cc": "US",
 "continent": "North America",
@@ -4012,6 +4183,17 @@
 "precision": "city",
 "region": "West",
 "state": "NV"
+},
+"Villanova University, Villanova, PA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 40.0405,
+"lon": -75.341,
+"place": "Villanova",
+"precision": "city",
+"region": "Northeast",
+"state": "PA"
 },
 "Virginia (venue not posted)": {
 "cc": "US",
@@ -4266,6 +4448,16 @@
 "lat": 22.2769,
 "lon": 113.5678,
 "place": "Zhuhai",
+"precision": "city",
+"region": "Asia"
+},
+"大臺南會展中心 (Tainan Exhibition Center), Tainan City, Taiwan": {
+"cc": "TW",
+"continent": "Asia",
+"country": "Taiwan",
+"lat": 22.9908,
+"lon": 120.2133,
+"place": "Tainan",
 "precision": "city",
 "region": "Asia"
 }
