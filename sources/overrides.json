@@ -532,6 +532,48 @@
   "60ec5ef3bd26": {
    "removed": true,
    "_why": "Duplicate of 168119a896f1. ABEn's page read 2026-09-22 gives the 76th CBEn as 8 a 12 de novembro de 2026; the 9-11 November record was wrong."
+  },
+  "e9ba48026efc": {
+   "source_url": "https://www.itns.org/",
+   "evidence": "The 34th Annual ITNS Symposium Where Compassion Meets Innovation: Bringing the World of Transplant Nursing Together September 25-27, 2026",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+  },
+  "8a0d140dd475": {
+   "source_url": "https://www.napnap.org/specialty-symposium/",
+   "evidence": "our fall virtual symposium live on Oct. 9 from 11 a.m. to 6 p.m. ET with on-demand access through Dec. 31, 2026",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+  },
+  "dbfaf50988f0": {
+   "source_url": "https://nam.edu/event/2026-annual-meeting-chronic-disease/",
+   "evidence": "NAM Member Interest Group Meetings | Sunday, October 18 … Scientific Symposium | Monday, October 19",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+  },
+  "a82459f399b8": {
+   "source_url": "https://nam.edu/event/2026-healthy-longevity-global-innovator-summit/",
+   "evidence": "will host Catalyzing Healthy Longevity: NAM Global Innovator Summit on October 20, 2026, in Washington, D.C.",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+  },
+  "341d49a57d61": {
+   "source_url": "https://www.clintox.org/nacct",
+   "evidence": "2026 | San Diego, California | October 21st - 25th",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+  },
+  "ee1eb9c0e631": {
+   "source_url": "https://heartrhythm.com/",
+   "evidence": "Heart Rhythm 2027 | May 13–16, 2027 | San Francisco, CA",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
   }
  },
  "rules": {
