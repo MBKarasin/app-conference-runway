@@ -10,6 +10,7 @@
   const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const MONTH = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const DOWL = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
   const D = s => new Date(s + "T12:00:00");
   const TODAY = iso(new Date());
@@ -42,10 +43,14 @@
   };
 
   /* ---------- vocabulary ---------- */
-  const PROF_COLOR = { NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", CAA: "--caa", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
-  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["PA", "PA"], ["CRNA", "CRNA"], ["CAA", "CAA"], ["CNS", "CNS"], ["CNM", "CNM"], ["RNFA", "NP-RNFA"]];
+  const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", CAA: "--caa", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
+  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["PA", "PA"], ["CRNA", "CRNA"], ["CAA", "CAA"], ["CNS", "CNS"], ["CNM", "CNM"], ["RNFA", "NP-RNFA"], ["STU", "Students"], ["DNP", "DNP Projects"]];
   const AGACNP_TOPICS = new Set(["Acute Care", "Critical Care", "Emergency", "Emergency Medicine", "Hospital Medicine", "Cardiology", "Cardiothoracic Surgery", "Pulmonary", "Neuroscience", "Neurosurgery", "Trauma", "Resuscitation", "ECMO & Perfusion", "Surgery", "Vascular Surgery", "Infectious Diseases", "Toxicology", "Nephrology"]);
-  const PLABEL = { RNFA: "NP-RNFA" };
+  const PLABEL = { RNFA: "NP-RNFA", STU: "Students", DNP: "DNP Projects" };
+  // Students = organizer-documented opportunities for APP students (NP, PA, CRNA, CAA, CNS, CNM); DNP Projects = venues for DNP project posters/abstracts.
+  const APP_ROLES = ["NP", "AGACNP", "PA", "CRNA", "CAA", "CNS", "CNM"];
+  const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
+  const dnpOK = e => !!(e && e.student && e.student.category === "project");
   const FOCUS_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["executive", "Executive"]];
   const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"], ["observance", "Celebrations"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
@@ -110,6 +115,15 @@
     if (c.status === "none") return { k: "none", label: short(c.text && c.text !== "—" ? c.text : "", "No call") };
     return { k: "tba", label: short(c.text, "Call not posted") };
   }
+  // An abstract call as a span: from its opening day (or today, if already open with no published opening) to its due date.
+  function callSpan(e) {
+    if (e.s.kind === "observance") return null;
+    const c = e.call || {}, to = c.closes;
+    if (!to || !/^\d{4}-\d{2}-\d{2}$/.test(to)) return null;
+    let from = c.opens && c.opens <= to ? c.opens : null;
+    if (!from) from = ["open", "urgent"].includes(e.c.k) && TODAY < to ? TODAY : to;
+    return { from, to };
+  }
   function wireSkip() {
     const a = document.querySelector("a.skip");
     if (!a) return;
@@ -134,6 +148,7 @@
       e.hay = [s.name, s.org_display || s.org, s.org, e.location, (s.specialty || []).join(" "), e.theme, (e.sessions || []).join(" "), (e.daily || []).map(x => x.title).join(" "), s.professions.join(" "), e.student && e.student.kind, e.student && e.student.detail, e.geo && e.geo.country].join(" ").toLowerCase();
       return e;
     });
+    EDS.forEach(e => { if (stuOK(e)) e.s.hasStu = true; if (dnpOK(e)) e.s.hasDnp = true; });
     const upcoming = EDS.filter(e => !e.past && !e.expectedRow && e.verify.state !== "rule");
     const mapped = upcoming.filter(e => e.geo && e.geo.country);
     const countries = new Set(mapped.map(e => e.geo.country));
@@ -155,6 +170,8 @@
     const P = s.professions;
     switch (st.prof) {
       case "": return true;
+      case "STU": return !!s.hasStu;
+      case "DNP": return !!s.hasDnp;
       case "NP": return P.some(p => ["NP", "Multidisciplinary", "Nursing", "CNS", "CNM"].includes(p));
       case "AGACNP": return agacnpFit(s);
       case "PA": return P.some(p => ["PA", "Multidisciplinary"].includes(p));
@@ -196,15 +213,17 @@
   }
   function edMatch(e) {
     if (!seriesMatch(e.s, st.view === "students") || !placeMatch(e) || !verMatch(e)) return false;
-    if (st.view === "students" && st.prof && !(e.student && (e.student.roles || []).includes(st.prof))) return false;
+    if (st.prof === "STU" && !e.expectedRow && !stuOK(e)) return false;
+    if (st.prof === "DNP" && !e.expectedRow && !dnpOK(e)) return false;
+    if (st.view === "students" && st.prof && st.prof !== "STU" && st.prof !== "DNP" && !(e.student && (e.student.roles || []).includes(st.prof))) return false;
     if (st.q && !st.q.toLowerCase().split(/\s+/).every(w => e.hay.includes(w))) return false;
     if (st.openOnly && !(st.view === "students" ? e.student && e.student.deadline && e.student.deadline >= TODAY : ["open", "urgent"].includes(e.c.k))) return false;
     return true;
   }
 
   /* ---------- pieces ---------- */
-  const colorOf = s => s.kind === "observance" ? "var(--obs)" : "var(" + (PROF_COLOR[s.professions[0]] || "--multi") + ")";
-  const profTags = s => s.professions.map(p => `<span class="tag p" style="--c:var(${PROF_COLOR[p] || "--multi"})">${esc(PLABEL[p] || p)}</span>`).join("") + (s.rnfa_inferred ? `<span class="tag p" style="--c:var(--rnfa)" title="Surgical or perioperative meeting relevant to NP first assistants; curator tag">NP-RNFA</span>` : "");
+  const colorOf = s => s.kind === "observance" ? "var(--t-obs)" : "var(--t-meet)";   // colour = record type; disciplines are badges
+  const profTags = s => s.professions.map(p => `<span class="tag p neutral">${esc(PLABEL[p] || p)}</span>`).join("") + (s.rnfa_inferred ? `<span class="tag p neutral" title="Surgical or perioperative meeting relevant to NP first assistants; curator tag">NP-RNFA</span>` : "");
   function vBadge(e, exceptionsOnly = false) {
     const v = e.verify || { state: "unchecked" };
     // Records carry no verification label; the page header carries the source-review timestamps.
@@ -284,33 +303,46 @@
   function vCalendar() {
     const [y, m] = st.cal.split("-").map(Number);
     const first = new Date(y, m - 1, 1), start = new Date(first); start.setDate(1 - first.getDay());
-    const M = EDS.filter(e => edMatch(e) && !e.expectedRow), byDay = new Map();
-    const push = (k, v) => { if (!byDay.has(k)) byDay.set(k, []); byDay.get(k).push(v); };
+    const M = EDS.filter(e => edMatch(e) && !e.expectedRow), items = [];
     const mode = st.view;
     M.forEach(e => {
       const meeting = mode === "upcoming" || mode === "directory" || (mode === "past" && e.past);
-      if (meeting && !(mode === "upcoming" && e.past)) {
-        const from = e.start > iso(start) ? e.start : iso(start);
-        const until = e.end < addDays(iso(start), 41) ? e.end : addDays(iso(start), 41);
-        for (let day = from; day <= until; day = addDays(day, 1)) push(day, { e, dl: false, ongoing: day !== e.start });
-      }
-      if ((mode === "upcoming" || mode === "deadlines") && e.s.kind !== "observance") {
-        if (e.c.closes) push(e.c.closes, { e, dl: true });
-        if (mode === "deadlines" && e.c.opens) push(e.c.opens, { e, op: true });
-      }
+      if (meeting && !(mode === "upcoming" && e.past)) items.push({ e, from: e.start, to: e.end || e.start });
+      const cs = callSpan(e);
+      if ((mode === "upcoming" || mode === "deadlines") && cs) items.push({ e, call: true, from: cs.from, to: cs.to });
     });
+    // Meetings view: meetings first, then celebrations, then open abstract calls. Deadlines view: calls first.
+    const rank = x => mode === "deadlines" ? (x.call ? 0 : x.e.s.kind === "observance" ? 2 : 1) : (x.call ? 2 : x.e.s.kind === "observance" ? 1 : 0);
     const expected = st.expected && mode !== "past" ? EDS.filter(e => e.expectedRow && edMatch(e) && e.start.slice(0, 7) === st.cal) : [];
-    let cells = DOW.map(d => `<div class="dow">${d}</div>`).join("");
-    for (let i = 0; i < 42; i++) {
-      const d = new Date(start); d.setDate(start.getDate() + i);
-      if (i >= 35 && d.getMonth() !== m - 1) break;
-      const k = iso(d), items = (byDay.get(k) || []).sort((a, b) =>
-        (a.e.s.name === "National APP Week" ? -10 : a.dl ? -5 : a.e.s.kind === "observance" ? -3 : 0) -
-        (b.e.s.name === "National APP Week" ? -10 : b.dl ? -5 : b.e.s.kind === "observance" ? -3 : 0));
-      cells += `<div class="cell${d.getMonth() !== m - 1 ? " out" : ""}${k === TODAY ? " today" : ""}"><span class="num">${d.getDate()}</span>
-        ${items.map(({ e, dl, op, ongoing }, j) => { const daily = (e.daily || []).find(x => x.date === k); const label = e.s.name === "National APP Week" ? `<strong>National APP Week</strong>${daily ? `<small>${esc(daily.title)}</small>` : ""}` : (dl ? "Deadline: " : op ? "Opens: " : "") + esc(e.s.name); return `<button class="ce${dl ? " dl" : ""}${op ? " op" : ""}${ongoing ? " ongoing" : ""}${e.s.name === "National APP Week" ? " appweek" : ""}${e.past && !dl ? " was" : ""}${j >= 4 ? " extra" : ""}" style="--c:${colorOf(e.s)}" data-e="${e.id}" title="${esc((dl ? "Abstract deadline: " : op ? "Abstract call opens: " : ongoing ? "Continues: " : "") + e.s.name + (daily ? " · " + daily.title : "") + " — " + range(e))}">${label}</button>`; }).join("")}
-        ${items.length > 4 ? `<button class="overflow" data-day="${k}" data-extra="${items.length - 4}" aria-expanded="false">+${items.length - 4} more</button>` : ""}</div>`;
+    const SHOW = 6;
+    let weeks = "";
+    for (let w = 0; w < 6; w++) {
+      const ws = new Date(start); ws.setDate(start.getDate() + w * 7);
+      if (w >= 5 && ws.getMonth() !== m - 1) break;
+      const wkS = iso(ws), wkE = addDays(wkS, 6);
+      const inWk = items.filter(x => x.from <= wkE && x.to >= wkS)
+        .map(x => ({ ...x, a: x.from < wkS ? wkS : x.from, b: x.to > wkE ? wkE : x.to }))
+        .sort((p, q) => rank(p) - rank(q) || p.a.localeCompare(q.a) || q.b.localeCompare(p.b) || p.e.s.name.localeCompare(q.e.s.name));
+      const lanes = [];   // last occupied day per lane
+      inWk.forEach(x => { let l = lanes.findIndex(end => end < x.a); if (l < 0) { l = lanes.length; lanes.push(x.b); } else lanes[l] = x.b; x.lane = l; });
+      const nL = lanes.length, hidden = inWk.filter(x => x.lane >= SHOW).length;
+      let h = "";
+      for (let i = 0; i < 7; i++) {
+        const d = new Date(ws); d.setDate(ws.getDate() + i); const k = iso(d);
+        h += `<div class="cell${d.getMonth() !== m - 1 ? " out" : ""}${k === TODAY ? " today" : ""}" style="grid-column:${i + 1};grid-row:1 / -1"><button class="num" data-dayopen="${k}" aria-label="All records for ${esc(longDate(k))}">${d.getDate()}</button></div>`;
+      }
+      inWk.forEach(x => {
+        const { e, call } = x, c0 = daysBetween(wkS, x.a) + 1, c1 = daysBetween(wkS, x.b) + 2;
+        const contL = x.from < wkS, contR = x.to > wkE, span = c1 - c0;
+        const due = call && !contR;
+        const label = (contL ? "… " : "") + (call ? (due ? "Abstracts due: " : "Abstracts open: ") : "") + esc(e.s.name) + (call ? (span > 1 || !due ? ` <small>due ${esc(md(x.to))}</small>` : "") : span > 1 ? ` <small>${esc(range(e))}</small>` : "");
+        h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= SHOW ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= SHOW ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
+      });
+      if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${SHOW + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false">+${hidden} more this week</button>`;
+      const rc = `26px${Math.min(nL, SHOW) ? ` repeat(${Math.min(nL, SHOW)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = `26px repeat(${nL + 1}, auto)`;
+      weeks += `<div class="wk" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
     }
+    const cells = `<div class="dowrow">${DOW.map(d => `<div class="dow">${d}</div>`).join("")}</div>${weeks}`;
     const Y0 = +TODAY.slice(0, 4), years = []; for (let yy = Y0 - 3; yy <= DATA.horizon; yy++) years.push(yy);
     const title = { upcoming: "Meetings and abstract deadlines", deadlines: "Abstract calls: openings and deadlines", past: "Past meetings", directory: "Every edition on file" }[mode];
     return `<div class="calhead">
@@ -321,9 +353,9 @@
         <label class="sr" for="calY">Year</label><select id="calY" class="sel">${years.map(yy => `<option ${yy === y ? "selected" : ""}>${yy}</option>`).join("")}</select>
         <button class="btn" data-act="today">Today</button></div>
       <p class="fine">${esc(title)}</p>
-      <div class="legend"><span><i style="--c:var(--np)"></i>NP</span><span><i style="--c:var(--pa)"></i>PA</span><span><i style="--c:var(--crna)"></i>CRNA</span><span><i style="--c:var(--caa)"></i>CAA</span><span><i style="--c:var(--cns)"></i>CNS</span><span><i style="--c:var(--cnm)"></i>CNM</span><span><i style="--c:var(--rnfa)"></i>NP-RNFA</span><span><i style="--c:var(--multi)"></i>Multidisciplinary</span><span><i style="--c:var(--nursing)"></i>Nursing</span><span><i style="--c:var(--obs)"></i>Celebration</span>${mode === "upcoming" || mode === "deadlines" ? `<span class="dlkey">Red = abstract deadline</span>` : ""}</div>
+      <div class="legend"><span><i style="--c:var(--t-meet)"></i>Meeting</span><span><i style="--c:var(--t-call)"></i>Abstract call open, ends on the due date</span><span><i class="duekey"></i>Abstracts due</span><span><i style="--c:var(--t-obs)"></i>Celebration</span><span class="fine">Disciplines appear as badges on each record.</span></div>
       ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}
-      <div class="calwrap"><div class="cal" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
+      <div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
   }
   function vPast() {
     const L = EDS.filter(e => e.past && !e.expectedRow && edMatch(e)).sort((a, b) => b.start.localeCompare(a.start));
@@ -378,6 +410,7 @@
 
   function spotlight() {
     const el = $("#spotlight");
+    el.hidden = true; return;   // by decision (2026-09-22): no observance banner in the header
     const current = EDS.filter(e => e.s.kind === "observance" && !e.expectedRow && e.start <= TODAY && e.end >= TODAY && ["verified", "rule"].includes(e.verify.state))
       .sort((a, b) => (a.s.name === "National APP Week" ? -1 : 0) - (b.s.name === "National APP Week" ? -1 : 0))[0];
     if (!current) { el.hidden = true; return; }
@@ -386,11 +419,11 @@
   }
 
   /* ---------- controls ---------- */
-  const chipRow = (key, list) => list.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-f="${key}" data-v="${esc(v)}" aria-pressed="${st[key] === v}"${key === "prof" && v === "AGACNP" ? ' title="Curated adult acute care topic relevance; organizer eligibility and intended audience may vary."' : ""}>${key === "prof" && v ? `<span class="dot" style="--c:var(${PROF_COLOR[v]})"></span>` : ""}${esc(l)}</button>`).join("");
+  const chipRow = (key, list) => list.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-f="${key}" data-v="${esc(v)}" aria-pressed="${st[key] === v}"${key === "prof" && v === "AGACNP" ? ' title="Curated adult acute care topic relevance; organizer eligibility and intended audience may vary."' : ""}>${esc(l)}</button>`).join("");
   function controls() {
     $("#tabs").innerHTML = TABS.map(([v, l]) => `<button id="tab-${v}" role="tab" aria-controls="view" aria-selected="${st.view === v}" tabindex="${st.view === v ? 0 : -1}" data-view="${v}">${esc(l)}</button>`).join("");
     $("#view").setAttribute("aria-labelledby", "tab-" + st.view);
-    $("#quickprof").innerHTML = `<span class="flabel">Profession</span>${chipRow("prof", PROF_CHIPS)}`;
+    $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${chipRow("prof", PROF_CHIPS)}`;
     $("#viewtools").innerHTML = `${st.view === "students" ? "" : `<div class="seg" role="group" aria-label="Display">
         <button data-display="list" aria-pressed="${st.display === "list"}">${ICON.list}List</button>
         <button data-display="calendar" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button></div>`}
@@ -447,7 +480,7 @@
       summary = `${n} upcoming meeting${n === 1 ? "" : "s"}`;
     }
     const applied = [];
-    if (st.prof) applied.push("Role: " + (st.prof === "AGACNP" ? "AGACNP (curated topic fit)" : PLABEL[st.prof] || st.prof));
+    if (st.prof) applied.push("Discipline: " + (st.prof === "AGACNP" ? "AGACNP (curated topic fit)" : PLABEL[st.prof] || st.prof));
     if (st.area) applied.push((st.area.startsWith("n:") ? "Country: " : st.area.startsWith("c:") ? "Continent: " : "US region: ") + st.area.slice(2));
     if (st.where === "online") applied.push("Location: online");
     if (st.near) applied.push(`Within ${st.radius} miles of ${st.near.label}`);
@@ -455,8 +488,7 @@
     if (st.q) applied.push("Search: " + st.q);
     if (st.openOnly) applied.push(st.view === "students" ? "Student submissions open" : "Abstract call open");
     const stamp = DATA && DATA.built ? stampET(DATA.built).replace(/^Data snapshot /, "") : "";
-    $("#summary").innerHTML = esc(summary + (applied.length ? " · " + applied.join(" · ") : ""))
-      ;
+    $("#summary").innerHTML = `<b>${esc(summary)}</b>` + (applied.length ? `<span class="applied">${esc(applied.join(" · "))}</span>` : "");
     $("#fbtn").textContent = "Filters" + (activeCount() ? " (" + activeCount() + ")" : "");
     writeHash();
     if (f && document.getElementById(f)) { const el = document.getElementById(f); el.focus(); if (el.setSelectionRange && el.value) el.setSelectionRange(el.value.length, el.value.length); }
@@ -505,6 +537,22 @@
   /* ---------- detail dialog ---------- */
   const byId = id => EDS.find(e => e.id === id);
   const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; } };
+  function openDay(k) {
+    const mode = st.view, rows = [];
+    EDS.filter(e => edMatch(e) && !e.expectedRow).forEach(e => {
+      const meeting = mode === "upcoming" || mode === "directory" || (mode === "past" && e.past);
+      if (meeting && !(mode === "upcoming" && e.past) && e.start <= k && e.end >= k) rows.push({ e, what: e.start === k ? "Starts" : e.end === k ? "Final day" : "In progress" });
+      const cs = (mode === "upcoming" || mode === "deadlines") ? callSpan(e) : null;
+      if (cs && cs.from <= k && cs.to >= k) rows.push({ e, what: cs.to === k ? "Abstracts due today" : cs.from === k && cs.from < cs.to ? "Abstract call opens · due " + md(cs.to) : "Abstract call open · due " + md(cs.to), dl: cs.to === k, call: true });
+    });
+    rows.sort((a, b) => (b.dl ? 1 : 0) - (a.dl ? 1 : 0) || a.e.s.name.localeCompare(b.e.s.name));
+    $("#dlg").dataset.cur = "";
+    $("#dlg").innerHTML = `<div class="dlg dayview"><button class="x" data-act="close" aria-label="Close">×</button>
+      <header><p class="eyebrow">${rows.length} record${rows.length === 1 ? "" : "s"}</p><h3>${esc(DOWL[D(k).getDay()] + ", " + longDate(k))}</h3></header>
+      ${rows.length ? `<ul class="daylist">${rows.map(({ e, what, dl, call }) => `<li><button data-e="${esc(e.id)}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)}"><span class="dwhat${dl ? " dl" : ""}">${esc(what)}</span><b>${esc(e.s.name)}</b><span class="dmeta">${esc(e.s.org_display || e.s.org)} · ${esc(range(e))}${e.location ? " · " + esc(e.location) : ""}</span></button></li>`).join("")}</ul>` : `<p class="fine">Nothing on this day with the current filters.</p>`}
+    </div>`;
+    if (!$("#dlg").open) $("#dlg").showModal();
+  }
   function openDetail(e) {
     const s = e.s, v = e.verify || {};
     $("#dlg").dataset.cur = e.id;
@@ -589,7 +637,7 @@
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener("click", ev => {
-      const t = ev.target.closest("[data-view],[data-display],[data-f],[data-act],[data-e],[data-s],[data-letter],[data-day]");
+      const t = ev.target.closest("[data-view],[data-display],[data-f],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen]");
       if (!t) return;
       if (t.dataset.view) { st.view = t.dataset.view; if (st.view === "students") st.display = "list"; st.more = 1; render(); return; }
       if (t.dataset.display) { st.display = t.dataset.display; render(); return; }
@@ -614,8 +662,10 @@
       if (act === "copyview") { copy(location.href, "Link to this view copied"); return; }
       if (act === "filters") { filtersOpen = !filtersOpen; $("#filters").classList.toggle("open", filtersOpen); $("#geoquick").classList.toggle("open", filtersOpen); t.setAttribute("aria-expanded", String(filtersOpen)); return; }
       if (t.dataset.letter) { ev.preventDefault(); const el = document.getElementById("letter-" + t.dataset.letter); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 170 }); return; }
+      if (t.dataset.dayopen) { openDay(t.dataset.dayopen); return; }
       if (t.dataset.day) {
-        const cell = t.closest(".cell"), expanded = cell.classList.toggle("expanded");
+        const cell = t.closest(".wk") || t.closest(".cell"), expanded = cell.classList.toggle("expanded");
+        if (cell.dataset.rx) cell.style.gridTemplateRows = expanded ? cell.dataset.rx : cell.dataset.rc;
         t.setAttribute("aria-expanded", String(expanded));
         t.textContent = expanded ? "Show fewer" : `+${t.dataset.extra} more`;
         return;
@@ -661,7 +711,7 @@
     }
     prep(d);
     const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
-    $("#updated").textContent = "Sources reviewed " + srcStamp + (d.curator_reviewed ? " · Curator reviewed " + longDate(d.curator_reviewed) : "");
+    $("#updated").innerHTML = `<span>Sources reviewed ${esc(srcStamp)}</span>` + (d.curator_reviewed ? `<span>Curator reviewed ${esc(longDate(d.curator_reviewed))}</span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();
