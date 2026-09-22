@@ -155,6 +155,13 @@ def main():
                 ev_ok = all(norm(f)[:80] in norm(t) for f in frags) if frags else None
             if date_ok and year_ok and name_ok:
                 rec.update(state="verified", last_verified=NOW)
+                m = date_regex(e["start"]).search(t)   # keep the sentence the date was found in, so every record can show its source wording
+                if m:
+                    a, b = max(0, m.start() - 90), min(len(t), m.end() + 90)
+                    snip = re.sub(r"\s+", " ", t[a:b]).strip()
+                    snip = re.sub(r"[\w.+-]+@[\w.-]+\.\w+", "", snip)            # never carry a contact address into the record
+                    snip = re.sub(r"\+?\d[\d ().-]{7,}\d", "", snip)
+                    rec["snippet"] = re.sub(r"\s{2,}", " ", snip).strip(" .,;|-")
             else:
                 miss = [k for k, v in (("date", date_ok), ("year", year_ok), ("name", name_ok)) if not v]
                 rec.update(state="not_found", why="not on page: " + ", ".join(miss))

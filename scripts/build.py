@@ -85,6 +85,12 @@ def kind_for(name, tags):
     return "conference"
 
 ISO_D = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+def close_past_calls(eds):
+    for e in eds:
+        c = e.get("call") or {}
+        if c.get("closes") and c["closes"] < TODAY.isoformat() and c.get("status") in ("open", "urgent", "soon"):
+            c["status"] = "closed"
+
 def norm_call(c):
     c = c or {}
     c = {k: (v if k not in ("opens", "closes", "d", "odd", "df") or v is None or ISO_D.match(str(v)) else None) for k, v in c.items()}
@@ -346,6 +352,16 @@ def rule_dates(rule, y):
         return d.isoformat(), (d + dt.timedelta(days=rule.get("length", 1) - 1)).isoformat()
     return None, None
 
+def tidy_snippet(text, year):
+    """Keep the part of the captured page text that actually carries the date, not the menu around it."""
+    parts = [p.strip(" .,;") for p in re.split(r"\s*[|•·›»]\s*|(?<=[a-z])\.\s+", text) if p.strip()]
+    hit = [p for p in parts if year in p] or parts
+    out = max(hit, key=len) if hit else text
+    out = re.sub(r"^[a-z]{1,12}\b\s*", "", out)          # a word cut in half at the start reads as a typo
+    return out[:200].strip()
+
+CUTOFF_NOTE = " — the organizer's cut-off time applies; confirm on their page before submitting."
+
 def ics(eds, series):
     def esc(s): return (s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
     def fold(line):
@@ -364,13 +380,22 @@ def ics(eds, series):
     stamp = dt.datetime.now(dt.UTC).strftime("%Y%m%dT%H%M%SZ")
     for e in eds:
         if e.get("month_only") or e["end"] < (TODAY - dt.timedelta(days=60)).isoformat(): continue
+        # the feed carries only what the website shows by default: a subscriber should never receive
+        # a date the site itself asks a reader to review
+        v = e.get("verify") or {}
+        if v.get("state") not in ("verified", "rule", "archived", "announced") or v.get("evidence_match") is False: continue
         s = series[e["series"]]
+        note = {"verified": "Start date checked against the organizer's page",
+                "rule": "Computed from the organizer's published rule",
+                "archived": "Recorded from the organizer's page when published",
+                "announced": "Organizer save-the-date; programme still to come"}.get(v.get("state"), "")
+        when = (v.get("last_verified") or "")[:10]
         end = (dt.date.fromisoformat(e["end"]) + dt.timedelta(days=1)).strftime("%Y%m%d")
         L += ["BEGIN:VEVENT", f"UID:{e['id']}@app-conference-runway", f"DTSTAMP:{stamp}",
               f"DTSTART;VALUE=DATE:{e['start'].replace('-', '')}", f"DTEND;VALUE=DATE:{end}",
               f"SUMMARY:{esc(s['name'])} ({esc(s['org'])})", f"LOCATION:{esc(e.get('location'))}",
               f"URL:{e.get('source_url') or ''}",
-              f"DESCRIPTION:{esc('Confirm details on the organizer page before registering or booking travel.')}",
+              f"DESCRIPTION:{esc(note + (' (' + when + ')' if when else '') + '. Confirm details on the organizer page before registering or booking travel. ' + (e.get('source_url') or ''))}",
               "END:VEVENT"]
         c = e.get("call") or {}
         if c.get("closes") and c["closes"] >= TODAY.isoformat():
@@ -378,7 +403,8 @@ def ics(eds, series):
             nd = (dt.date.fromisoformat(c["closes"]) + dt.timedelta(days=1)).strftime("%Y%m%d")
             L += ["BEGIN:VEVENT", f"UID:{e['id']}-call@app-conference-runway", f"DTSTAMP:{stamp}",
                   f"DTSTART;VALUE=DATE:{d}", f"DTEND;VALUE=DATE:{nd}",
-                  f"SUMMARY:Abstract deadline: {esc(s['name'])}", f"DESCRIPTION:{esc(c.get('text') or '')}",
+                  f"SUMMARY:Abstract deadline: {esc(s['name'])}",
+                  f"DESCRIPTION:{esc((c.get('text') or '') + CUTOFF_NOTE)}",
                   f"URL:{c.get('url') or e.get('source_url') or ''}", "END:VEVENT"]
     L.append("END:VCALENDAR")
     return "\r\n".join(fold(line) for line in L) + "\r\n"
@@ -429,6 +455,7 @@ def main():
                                                "call", "source_url", "evidence", "detail_url", "compiled", "student")}
     led_f.parent.mkdir(exist_ok=True)
     json.dump(ledger, open(led_f, "w", encoding="utf-8"), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    close_past_calls(eds)
     proj = project(series, eds)
     for e in proj: e["id"] = edition_id(e)
     present(series)
@@ -464,6 +491,8 @@ def main():
                            "last_verified": when, "url": e.get("source_url")}
         elif v:
             e["verify"] = v
+            if not e.get("evidence") and v.get("state") == "verified" and v.get("snippet"):
+                e["evidence"], e["evidence_auto"] = tidy_snippet(v["snippet"], e["start"][:4]), True
         else:
             e["verify"] = {"state": "unchecked", "checked": None}
     for e in proj:
