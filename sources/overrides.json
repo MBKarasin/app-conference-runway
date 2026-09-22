@@ -1,7 +1,8 @@
 {
  "_readme": "Curator corrections. 'aliases' folds a duplicate series into the kept one; 'series' and 'editions' patch fields by id; an edition with \"removed\": true is dropped.",
  "aliases": {
-  "american-association-of-neuroscience-nur__neuroscience-nursing-annual-conference": "american-association-of-neuroscience-nur__aann-annual-conference"
+  "american-association-of-neuroscience-nur__neuroscience-nursing-annual-conference": "american-association-of-neuroscience-nur__aann-annual-conference",
+  "associa-o-brasileira-de-enfermagem-aben__76-congresso-brasileiro-de-enfermagem-cben": "associa-o-brasileira-de-enfermagem-aben__congresso-brasileiro-de-enfermagem-cben"
  },
  "series": {},
  "editions": {
@@ -94,15 +95,18 @@
   "9c25bb01384b": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "TNA District 9 Conference: Friday, September 25, 2026, Memorial Hermann Memorial City Medical Center, Houston."
+   "evidence": "Location: Memorial Hermann Memorial City Medical Center - Tower Conference Center - Houston, Texas Dates Fri, Sep 25, 2026 - 7:45 AM to 3:30 PM CDT",
+   "source_url": "https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "d0b45cb18fd0": {
    "source_url": "https://convention.jtbcom.co.jp/jans46/outline.html",
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "The 46th Annual Conference of Japan Academy of Nursing Science: December 12–13, 2026, Tokyo International Forum.",
+   "evidence": "第46回日本看護科学学会学術集会 The 46th Annual Conference of Japan Academy of Nursing Science … 会期 2026年12月12日（土）・13日（日） 会場 東京国際フォーラム",
    "reviewed_on": "2026-09-22",
-   "_why": "jans.or.jp schedule read 2026-09-22: \"日時：2026年12月12日（土）・13日（日）／場所：東京国際フォーラム\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "9e0e24120486": {
    "source_url": "https://njsna.org/events/month/2026-10/",
@@ -115,28 +119,42 @@
   "2baa3d5fee7a": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "Institute for Critical Care Medicine 2026 Summit for Advanced Practice Providers: October 13, 2026, New York or livestream."
+   "evidence": "October 13th, 2026 | New York, NY Registration Institute for Critical Care Medicine (ICCM) 2026 Summit for Advanced Practice Providers",
+   "source_url": "https://critcaresummit.com/",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "f21293985b2b": {
    "source_url": "https://www.nonpf.org/page/futureconferences",
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "2026 NONPF Fall Conference: November 5–6, Tucson, Arizona."
+   "evidence": "The 2026 NONPF Fall Conference will take place November 5-6 2026 in Tuscon, Arizona",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "6e8d92987926": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "AMIA 2026 Annual Symposium: November 7–11, Dallas, Texas."
+   "evidence": "2026 Annual Symposium November 7–11, 2026 Dallas, TX",
+   "source_url": "https://brand.amia.org/m/65eea6d416de44d1/original/AMIA-2026-Annual-Symposium-Prospectus.pdf",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "7656f2da8579": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "NNA Annual Convention: October 1–2, 2026, Kearney, Nebraska."
+   "evidence": "Join us for NNA’s Annual Convention Oct 1-2, 2026 | Kearney, NE",
+   "source_url": "https://nebraskanurses.org/convention/",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "89de4656498c": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "NP26 Annual Conference: October 1–4, 2026, Niagara Falls, New York."
+   "evidence": "October 1- 4 - Niagara Falls, NY",
+   "source_url": "https://www.thenpa.org/page/NP26",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "7439fe42fefc": {
    "start": "2026-10-01",
@@ -145,28 +163,41 @@
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "note": "Pre-meeting workshops start October 1; the main meeting runs October 2–4.",
-   "evidence": "AVA event: October 2–4, 2026, with pre-meeting workshops October 1."
+   "evidence": "AVA 2026 ANNUAL SCIENTIFIC MEETING 10/1/2026 to 10/4/2026 When: Thursday October 1st - Sunday October 4th 2026",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "785efb278b8a": {
-   "source_url": "https://www.acep.org/acep26/",
+   "source_url": "https://www.acep.org/sa",
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "ACEP Scientific Assembly 2026: October 5–8, Chicago, Illinois."
+   "evidence": "Join Us for ACEP26 October 5-8, 2026",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "7111b734f1a9": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "Registration is now open for the 29th Annual NPWH Women’s Healthcare Conference, September 23–25, 2026, in Richmond, Virginia."
+   "evidence": "2026 NPWH Annual Women's Healthcare Conference 9/23/2026 to 9/25/2026 When: September 23 - 25, 2026",
+   "source_url": "https://npwh.org/m/event_details.asp?id=1984651",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "98da2c267857": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "NACNS 2027 Annual Conference: March 1–4, 2027, Kansas City; student poster submission deadline September 27, 2026."
+   "evidence": "2027 Annual Conference will take place at the Loews Kansas City, in Kansas City Missouri, March 1 – 4, 2027.",
+   "source_url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "b32ffbb674ac": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "2026 NLN Education Summit: September 23–25, Washington, DC."
+   "evidence": "2026 NLN EDUCATION SUMMIT Beyond the Storm: Reshaping Resilience & Recovery WASHINGTON, DC SEPTEMBER 23-25",
+   "source_url": "https://summit.nln.org/",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "09391e1f6db0": {
    "source_url": "https://texasnp.org/calendar/",
@@ -184,7 +215,9 @@
    "source_url": "https://www.aana.com/event/national-crna-week-2027/",
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "National CRNA Week 2027: January 17, 2027 - January 23, 2027"
+   "evidence": "National CRNA Week 2027 January 17, 2027 - January 23, 2027",
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "3d8a3d9936ff": {
    "start": "2026-09-28",
@@ -219,7 +252,9 @@
   "823a00629439": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "NZNO registration page read 2026-09-22: \"Tuesday 22, Wednesday 23, and Thursday 24 September 2026 ... Novotel Rotorua Lakeside\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://na-admin.eventscloud.com/file_uploads/0f16f866d07fe3cf70432a7e11c23f02_2026NZNOTermsandConditions.pdf",
+   "evidence": "Tuesday 22 September 2026 – NZNO Annual General Meeting"
   },
   "e48b8600d4b5": {
    "source_reviewed": true,
@@ -229,109 +264,151 @@
   "460a16759e79": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "iapasociety.org read 2026-09-22: \"Healthcare in the Heartland ... October 26-27, 2026 in Coralville, Iowa\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.iapasociety.org",
+   "evidence": "IPAS Fall CME Conference October 26-27, 2026 | Coralville, Iowa"
   },
   "51ef23154e50": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "wapa.com read 2026-09-22: \"Dates: November 1st-4th Location: Hyatt Regency Lake Washington in Renton, WA\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://wapa.com/events/wapa-fall-conference-2026/",
+   "evidence": "Join your fellow physician associates for the WAPA Fall Conference, happening November 1st-4th at the scenic Hyatt Regency Lake Washington"
   },
   "9fa932165f0a": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "seoc.cl read 2026-09-22: \"VIII Congreso Internacional ... 19, 20 y 21 de noviembre de 2026 ... Hotel Best Western, Las Condes\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://seoc.cl/uploads/islands/26/files/6ab2a4b0c317d_programa-8-congreso-seoc-2026_.pdf",
+   "evidence": "19,20 y 21 de noviembre 2026 - Santiago, Best Western Premier Marina Las Condes"
   },
   "df41d3af0294": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "congresoenfermeria.ufro.cl read 2026-09-22: \"II CONGRESO INTERNACIONAL ... 19 y 20 de Noviembre 2026 ... Aula Magna, Universidad de La Frontera\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://congresoenfermeria.ufro.cl/",
+   "evidence": "FECHA 19 Y 20 DE NOVIEMBRE 2026"
   },
   "c6226c5e9add": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "uach.mx read 2026-09-22: \"14º CONGRESO NACIONAL POSGRADO EN ENFERMERÍA ... 26 y 27 de noviembre de 2026\".",
-   "location": "Poliforum Científico y Cultural, Chihuahua, Mexico"
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "location": "Poliforum Científico y Cultural, Chihuahua, Mexico",
+   "source_url": "https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/",
+   "evidence": "Fecha 26 y 27 de noviembre de 2026 Sede Poliforum Científico y Cultural “Dr. Víctor M. Gómez Moreno”"
   },
   "db6c943ce1b9": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "aana.com read 2026-09-22: \"EDGE 2027 ... February 25, 2027 - February 28, 2027 ... Sheraton Dallas Hotel\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.aana.com/event/edge-2027/",
+   "evidence": "EDGE 2027 February 25, 2027 - February 28, 2027 Sheraton Dallas Hotel — Dallas, TX"
   },
   "a83ba760ec56": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "academyonline.org read 2026-09-22: \"Join us in Louisville, Kentucky for the Spring 2027 Advanced Practice Neonatal Nurses Conference. April 8-10, 2027\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.academyonline.org/page/conferences",
+   "evidence": "Join us in Louisville, Kentucky for the Spring 2027 Advanced Practice Neonatal Nurses Conference. April 8-10, 2027"
   },
   "63b4fd60df55": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "amia.org read 2026-09-22: \"2027 Amplify Informatics Conference ... April 12 - 15 ... Atlanta, GA\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://amia.org/education-events/2027-amplify-informatics-conference",
+   "evidence": "2027 Amplify Informatics Conference … April 12 - 15 Atlanta, GA"
   },
   "002ad3b7a061": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "aana.com read 2026-09-22: \"Mid-Year Assembly 2027 ... April 16, 2027 - April 21, 2027 ... JW Marriott Washington, DC\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.aana.com/event/mid-year-assembly-2027/",
+   "evidence": "Mid-Year Assembly 2027 April 16, 2027 - April 21, 2027"
   },
   "479121152dc2": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "ons.org read 2026-09-22: \"Every May, Oncology Nursing Month celebrates the role oncology nurses play in patient care\"; the month is the organizer's stated rule."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.ons.org/oncology-nursing-month",
+   "evidence": "Every May, we honor oncology nurses for the hope they nurture and the strength they inspire."
   },
   "fc952b75dcbc": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "aacn.org read 2026-09-22: NTI 2027 listed as \"May 2-5\" in Indianapolis."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.aacn.org/conferences-and-events/nti",
+   "evidence": "NTI 2027 Indianapolis May 2-5"
   },
   "2b995c9ce64e": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "asco.org read 2026-09-22: \"June 4 -8, 2027 ... McCormick Place, Chicago, IL\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.asco.org/annual-meeting/dates-know",
+   "evidence": "June 4 - 8, 2027 location_on McCormick Place, Chicago, IL #ASCO27"
   },
   "63030a7dee9b": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "aana.com read 2026-09-22: \"AANA Annual Congress 2027 ... August 8, 2027 - August 12, 2027 ... Ernest N. Morial Convention Center, New Orleans, LA\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.aana.com/event/aana-annual-congress-2027/",
+   "evidence": "AANA Annual Congress 2027 August 8, 2027 - August 12, 2027 Join us in New Orleans, LA"
   },
   "919004c82f9a": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "wapa.com read 2026-09-22: \"WAPA Fall Conference 2027 ... Sep 30 2027 - Oct 03 2027 ... Great Wolf Lodge\"; end date corrected from Sep 30 to Oct 3.",
-   "end": "2027-10-03"
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "end": "2027-10-03",
+   "source_url": "https://wapa.com/events/wapa-fall-conference-2027/",
+   "evidence": "WAPA Fall Conference 2027 Save the Date and Plan to join us! DATE Sep 30 2027 - Oct 03 2027"
   },
   "c45dffbcbe96": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "acep.org read 2026-09-22: \"ACEP27 Scientific Assembly: 10/25/2027 - 10/28/2027, Boston, Massachusetts\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.acep.org/sa/general-information/future-dates",
+   "evidence": "ACEP27 Scientific Assembly 10/25/2027 - 10/28/2027 Boston, Massachusetts"
   },
   "2b4240065e0a": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "jans.or.jp read 2026-09-22: \"日時：2027年11月27日・28日／場所：札幌コンベンションセンター\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.jans.or.jp/meetings/schedule/",
+   "evidence": "第47回学術集会（2027年度） 日時：2027年11月27日・28日 場所：札幌コンベンションセンター"
   },
   "0062195111b0": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "asco.org read 2026-09-22: \"June 2 - 6, 2028 ... Chicago, IL\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.asco.org/annual-meeting/dates-know",
+   "evidence": "Future Meetings June 2 - 6, 2028 Chicago, IL"
   },
   "bfff1655d95c": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "acep.org read 2026-09-22: \"ACEP28 Scientific Assembly: 9/17/2028 - 9/20/2028, Las Vegas, Nevada\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.acep.org/sa/general-information/future-dates",
+   "evidence": "ACEP28 Scientific Assembly 9/17/2028 - 9/20/2028 Las Vegas, Nevada"
   },
   "27adc53dd3fe": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "acep.org read 2026-09-22: \"ACEP29 Scientific Assembly: 10/1/2029 - 10/4/2029, Philadelphia, Pennsylvania\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.acep.org/sa/general-information/future-dates",
+   "evidence": "ACEP29 Scientific Assembly 10/1/2029 - 10/4/2029 Philadelphia, Pennsylvania"
   },
   "e2d3b8e33ed3": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "acep.org read 2026-09-22: \"ACEP30 Scientific Assembly: 10/17/2030 - 10/20/2030, San Francisco, California\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.acep.org/sa/general-information/future-dates",
+   "evidence": "ACEP30 Scientific Assembly 10/17/2030 - 10/20/2030 San Francisco, California"
   },
   "194ce1735b8f": {
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "_why": "acep.org read 2026-09-22: \"ACEP31 Scientific Assembly: 10/27/2031 - 10/30/2031, Chicago, Illinois\"."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "source_url": "https://www.acep.org/sa/general-information/future-dates",
+   "evidence": "ACEP31 Scientific Assembly 10/27/2031 - 10/30/2031 Chicago, Illinois"
   },
   "df0c3e9bbf98": {
    "removed": true,
@@ -367,9 +444,9 @@
    "note": null,
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
-   "evidence": "ENRS 39th Annual Scientific Sessions · LOEWS PHILADELPHIA · 03.31.27 - 04.02.27",
+   "evidence": "ENRS 39th Annual Scientific Sessions LOEWS PHILADELPHIA 03 31 27 - 04 02 27",
    "evidence_image": "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png",
-   "_why": "Dates are printed in the conference site's banner image, not in page text: read 2026-09-22 — 'LOEWS PHILADELPHIA 03.31.27 - 04.02.27'."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "bfb1cef79cb1": {
    "note": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
@@ -377,10 +454,10 @@
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
    "source_url": "https://mypnaa.org/events",
-   "evidence": "48th PNAA Annual National Convention · Save the date · July 17–24, 2027 · Inter-Island Cruise in Hawaii",
+   "evidence": "July 17-24, 2027 This year, we’re taking you on a spectacular Inter-Island Cruise in Hawaii",
    "evidence_image": "https://mypnaa.org/resources/Events/PNAA48/48th%20PNAA%20National%20Convention%20Flyer%20with%20Theme%20v3.png",
    "location": "Inter-island cruise, Hawaii (host chapter: PNA Hawaii)",
-   "_why": "Flyer on mypnaa.org/events read 2026-09-22: '48th PNAA Annual National Convention … Save the date July 17–24, 2027 … Inter-Island Cruise in Hawaii'."
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "4963c59b8b50": {
    "source_reviewed": true,
@@ -388,6 +465,73 @@
    "evidence": "2027 AANP Health Policy Conference · February 7, 2027 – February 9, 2027 · Washington, District of Columbia",
    "location": "Washington, DC",
    "_why": "aanp.org/events/2027-hpc read 2026-09-22; the page is JavaScript-only to the automatic check."
+  },
+  "64d695b36d4b": {
+   "source_url": "https://www.iapacon.org/",
+   "evidence": "22nd Annual Conference of IAPA | 6th International Conference of GACOPA Jointly Hosted by 24th, 25th & 26th September 2026 | Fairfield by Marriott – Ozone Convention Centre, Kolkata",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "825ae90df474": {
+   "source_url": "https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs",
+   "evidence": "Het 18e jaarcongres zal plaatsvinden in het NBC-congrescentrum in Nieuwegein op donderdag 1 en vrijdag 2 oktober 2026.",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "6db24e4a848d": {
+   "source_url": "https://onanigeria.org/registration",
+   "evidence": "7th - 10th October 2026 Abuja, Nigeria",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "2fedca69186a": {
+   "source_url": "https://www.tnpa.org.tw/events/content.php?id=6262",
+   "evidence": "2026/10/18 (日) 12:30 ~ 16:00",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "2bedae9df083": {
+   "source_url": "https://www.cano-acio.ca/page/cano2026",
+   "evidence": "CANO/ACIO Annual Conference 2026 Congrès annuel 2026 de l’ACIO/CANO October 22–25, 2026 | Montréal, Québec",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "2891e7185321": {
+   "source_url": "https://pinc.fkep.unpad.ac.id/",
+   "evidence": "HYBRID CONFERENCE • NOVEMBER 6th - 7th, 2026 Faculty of Nursing, Universitas Padjadjaran",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "08404cd571fb": {
+   "source_url": "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx",
+   "evidence": "The Qatar Health Congress 2026, held from 11 to 14 November at the Sheraton-Grand Doha Resort & Convention Hotel",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "b9f577965d09": {
+   "source_url": "https://www.linkedin.com/posts/american-academy-of-anesthesiologists-assistants_aaaa2027-callforspeakers-anesthesiologistassistant-activity-7481057620322091008-Vu-Z",
+   "evidence": "The Call for Speakers for the AAAA 2027 Annual Conference is now open. Join us April 15-18, 2027, in Orlando, Florida",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "0c7fb520bb72": {
+   "source_url": "https://www.nonpf.org/page/futureconferences",
+   "evidence": "54th Annual Conference Dates: April 19-23, 2028 Location: Phoenix, Arizona",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+  },
+  "60ec5ef3bd26": {
+   "removed": true,
+   "_why": "Duplicate of 168119a896f1. ABEn's page read 2026-09-22 gives the 76th CBEn as 8 a 12 de novembro de 2026; the 9-11 November record was wrong."
   }
  },
  "rules": {
