@@ -1,0 +1,401 @@
+{
+ "group": "claude-dnp-schools-2",
+ "_note": "Second DNP-school sweep 2026-09-22",
+ "series": [
+  {
+   "name": "Doctor of Nursing Practice Poster Presentation",
+   "org": "University of Miami — School of Nursing and Health Studies",
+   "org_url": "https://news.miami.edu/sonhs/stories/2024/12/dnp-students-share-scholarly-findings.html",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "nursing scholarship"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically December",
+   "np_pa_basis": "School of nursing scholarship event that carries DNP project work; audience per the school: internal",
+   "editions": [
+    {
+     "start": "2024-12-11",
+     "end": "2024-12-11",
+     "location": "M. Christine Schwartz Center for Nursing and Health Studies / S.H.A.R.E. Simulation Hospital, Coral Gables campus, Coral Gables, FL",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://news.miami.edu/sonhs/stories/2024/12/dnp-students-share-scholarly-findings.html",
+     "evidence": "The University of Miami School of Nursing and Health Studies is proud to announce the Class of 2024 Doctor of Nursing Practice Poster Presentation took place Wednesday, December 11, the day before Com",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Research, Scholarship and Innovation Symposium",
+   "org": "University of Michigan, Ann Arbor — School of Nursing",
+   "org_url": "https://nursing.umich.edu/research/research-scholarship-and-innovation-symposium",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "nursing scholarship"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "School of nursing scholarship event that carries DNP project work; audience per the school: unstated",
+   "editions": [
+    {
+     "start": "2025-04-02",
+     "end": "2025-04-02",
+     "location": "U-M School of Nursing, Building 2 (SNB 2), Ann Arbor, MI",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://nursing.umich.edu/research/research-scholarship-and-innovation-symposium",
+     "evidence": "Wednesday, April 2, 2025 / Noon - 5:30 p.m.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Annual Nursing Scholars Forum (Sigma Theta Tau, Iota Tau Chapter)",
+   "org": "Creighton University — College of Nursing",
+   "org_url": "https://www.creighton.edu/sites/default/files/2023%20Research%20Day%20Book%20of%20Abstracts%20FINAL(1).pdf",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "nursing scholarship"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "School of nursing scholarship event that carries DNP project work; audience per the school: unstated",
+   "editions": [
+    {
+     "start": "2023-04-27",
+     "end": "2023-04-27",
+     "location": "Creighton University College of Nursing, Omaha, NE",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.creighton.edu/sites/default/files/2023%20Research%20Day%20Book%20of%20Abstracts%20FINAL(1).pdf",
+     "evidence": "34th Annual Nursing Scholars Forum ... Thursday, April 27, 2023",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "DNP Summit",
+   "org": "University of Rochester — School of Nursing",
+   "org_url": "https://son.rochester.edu/dnp-summit/index.html",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience per the school: unstated",
+   "editions": [
+    {
+     "start": "2023-10-06",
+     "end": "2023-10-20",
+     "location": "Virtual",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://son.rochester.edu/newsroom/2023/dnp-summit-2023.html",
+     "evidence": "The University of Rochester School of Nursing will host its eighth Doctor of Nursing Practice (DNP) Summit on Oct. 6, 13 and 20.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    },
+    {
+     "start": "2024-10-04",
+     "end": "2024-10-18",
+     "location": "Virtual",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://events.rochester.edu/event/dnp-summit-2024-innovation-inspiration",
+     "evidence": "Friday, October 4, 1-2 p.m. / Friday, October 11, 1-2 p.m. / Friday, October 18, 1-2 p.m.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "DNP Project Presentation Event",
+   "org": "Mount St. Joseph University — School of Health Sciences",
+   "org_url": "https://www.msj.edu/news/2026/04/2026-dnp-project-presentation-event.html",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience per the school: public",
+   "editions": [
+    {
+     "start": "2026-04-23",
+     "end": "2026-04-23",
+     "location": "Virtual (Zoom)",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.msj.edu/news/2026/04/2026-dnp-project-presentation-event.html",
+     "evidence": "Thursday, April 23, 2026 | 4:00 p.m.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Doctoral Student Project Showcase",
+   "org": "University of Cincinnati — College of Nursing",
+   "org_url": "https://www.uc.edu/news/articles/2025/03/college-of-nursing-showcases-doctoral-work.html",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience per the school: public",
+   "editions": [
+    {
+     "start": "2023-04-13",
+     "end": "2023-04-13",
+     "location": "Virtual",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.uc.edu/news/articles/2023/03/college-of-nursing-showcases-doctoral-work-promotes-a-culture-of-scholarship-and-inclusive-excellence.html",
+     "evidence": "The event will begin at 5 p.m. ET April 13 and is open to the public.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    },
+    {
+     "start": "2024-04-10",
+     "end": "2024-04-10",
+     "location": "Virtual",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.uc.edu/news/articles/2024/03/college-of-nursing-showcases-doctoral-work.html",
+     "evidence": "The event will begin at 5 p.m. ET on April 10 and is open to the public.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    },
+    {
+     "start": "2025-04-15",
+     "end": "2025-04-15",
+     "location": "Virtual",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.uc.edu/news/articles/2025/03/college-of-nursing-showcases-doctoral-work.html",
+     "evidence": "The event will begin at 5:30 p.m. ET on April 15 and is open to the public.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Implementation Science Symposium (OKWU Nursing Symposium)",
+   "org": "Oklahoma Wesleyan University — School of Nursing",
+   "org_url": "https://www.okwu.edu/nursing-symposium/",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "nursing scholarship"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically January",
+   "np_pa_basis": "School of nursing scholarship event that carries DNP project work; audience per the school: public",
+   "editions": [
+    {
+     "start": "2027-01-08",
+     "end": "2027-01-08",
+     "location": "Oklahoma Wesleyan University, 2201 Silver Lake Road, Bartlesville, OK 74006",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.okwu.edu/nursing-symposium/",
+     "evidence": "January 8, 2027 @ 8:00 am - 3:30 pm CST",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Annual Research Symposium",
+   "org": "Villanova University — M. Louise Fitzpatrick College of Nursing",
+   "org_url": "https://www1.villanova.edu/university/nursing/faculty-and-research/centers/ONR/events/ARS.html",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "nursing scholarship"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "np_pa_basis": "School of nursing scholarship event that carries DNP project work; audience per the school: public",
+   "editions": [
+    {
+     "start": "2024-03-21",
+     "end": "2024-03-21",
+     "location": "Larson Kelly Auditorium, Driscoll Hall, Villanova University, Villanova, PA",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.villanova.edu/university/nursing/faculty-and-research/centers/ONR/events/ARS/2024-ars/schedule-2024.html",
+     "evidence": "Thursday, March 21, 2024",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    },
+    {
+     "start": "2026-03-19",
+     "end": "2026-03-19",
+     "location": "Villanova University, Villanova, PA",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.villanova.edu/university/nursing/faculty-and-research/centers/ONR/events/ARS/2026-annual-research-symposium/2026-research-symposium-posters.html",
+     "evidence": "Date: Thursday, March 19, 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "DNP Final Project Poster Presentations",
+   "org": "University of Washington — School of Nursing",
+   "org_url": "https://students.nursing.uw.edu/?p=6814",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience per the school: unstated",
+   "editions": [
+    {
+     "start": "2026-03-17",
+     "end": "2026-03-17",
+     "location": "Virtually via Zoom",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://students.nursing.uw.edu/?p=6814",
+     "evidence": "Date: Tuesday, March 17, 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  }
+ ],
+ "not_found": []
+}

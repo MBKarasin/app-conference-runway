@@ -1,0 +1,624 @@
+{
+ "group": "claude-intl-2",
+ "_note": "International sweep 2026-09-22 (16 countries)",
+ "series": [
+  {
+   "name": "INMO Advanced Practice Section Conference",
+   "org": "Irish Nurses and Midwives Organisation (INMO) – Advanced Practice Section",
+   "org_url": "https://www.inmo.ie/",
+   "professions": [
+    "NP",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "advanced practice",
+    "general"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically May",
+   "editions": [
+    {
+     "start": "2026-05-27",
+     "end": "2026-05-27",
+     "location": "The Richmond Education and Event Centre, Dublin, Ireland",
+     "format": "in person",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": "No call-for-abstracts information published on this page.",
+      "url": null
+     },
+     "source_url": "https://iaanmp.com/inmo-advanced-practice-section-conference-wednesday-27-may-2026-the-richmond-education-and-event-centre-dublin/",
+     "evidence": "INMO Advanced Practice Section Conference. Wednesday, 27 May 2026. The Richmond Education and Event Centre, Dublin",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "VII Congresso dos Enfermeiros e I Fórum Académico de Enfermagem",
+   "org": "Ordem dos Enfermeiros",
+   "org_url": "https://www.ordemenfermeiros.pt/",
+   "professions": [
+    "RN",
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "general nursing",
+    "academic nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "congress",
+   "region": "intl",
+   "recurrence": "periodic, typically May",
+   "editions": [
+    {
+     "start": "2026-05-14",
+     "end": "2026-05-16",
+     "location": "Multiusos de Gondomar, Gondomar, Portugal",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Submissão de Resumos (abstract submission) section linked; no deadline text captured.",
+      "url": "https://www.ordemenfermeiros.pt/vii-congresso-dos-enfermeiros-e-i-f%C3%B3rum-acad%C3%A9mico-de-enfermagem/"
+     },
+     "source_url": "https://www.ordemenfermeiros.pt/eventos/conteudos/viicongressoenfermeiros/",
+     "evidence": "O VII Congresso dos Enfermeiros que se realiza nos dias 14, 15 e 16 de maio, no Multiusos de Gondomar",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "ESNO Congress 2026 – Mutual Goals, Many Pathways: Unifying Specialist Nursing Education Across Europe",
+   "org": "Federazione Nazionale degli Ordini delle Professioni Infermieristiche (FNOPI)",
+   "org_url": "https://www.fnopi.it/",
+   "professions": [
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "specialist nursing education"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "congress",
+   "region": "intl",
+   "recurrence": "annual (European Specialist Nurses Organisations congress; 2026 edition hosted in Italy by FNOPI)",
+   "editions": [
+    {
+     "start": "2026-06-04",
+     "end": "2026-06-06",
+     "location": "Link Campus University, Rome, Italy",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not specified on this page.",
+      "url": null
+     },
+     "source_url": "https://www.fnopi.it/2026/04/27/esno-congress-2026/",
+     "evidence": "dal 4 al 6 giugno, il futuro dell'infermieristica specialistica europea",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "NPAO Annual Conference",
+   "org": "Nurse Practitioners' Association of Ontario (NPAO)",
+   "org_url": "https://npao.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "general primary/acute care np"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-23",
+     "end": "2026-09-25",
+     "location": "Sheraton Toronto Airport Hotel & Conference Centre, Toronto, Ontario, Canada",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not specified on this page.",
+      "url": null
+     },
+     "source_url": "https://npao2026annualconference.vfairs.com/",
+     "evidence": "Sep 23, 2026, 9:00 AM - Sep 25, 2026, 3:00 PM (EST)",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "ACNP National Conference 2026",
+   "org": "Australian College of Nurse Practitioners (ACNP)",
+   "org_url": "https://www.acnp.org.au/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "general"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-14",
+     "end": "2026-09-16",
+     "location": "Adelaide Oval, Adelaide, South Australia, Australia",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not specified on this page.",
+      "url": "https://www.acnp.org.au/conference-prospectus"
+     },
+     "source_url": "https://www.acnp.org.au/index.cfm?module=event&pagemode=indiv&page_id=4348746",
+     "evidence": "Adelaide Oval | Adelaide, South Australia | 14-16 September",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "RCN Advanced Nurse Practitioner Conference 2026",
+   "org": "Royal College of Nursing (RCN)",
+   "org_url": "https://www.rcn.org.uk/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "advanced clinical practice"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-10-02",
+     "end": "2026-10-02",
+     "location": "20 Cavendish Square, Marylebone, London, W1G 0RN, United Kingdom (also online)",
+     "format": "hybrid",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": "No call-for-abstracts information published on this page.",
+      "url": null
+     },
+     "source_url": "https://www.rcn.org.uk/news-and-events/events/uk-rcn-advanced-nurse-practitioner-conference-02102026",
+     "evidence": "02 Oct 2026, 09:00 - 16:30",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "6th APN-Symposium (Advanced Practice Nursing)",
+   "org": "ZHAW Institut für Pflege (in collaboration with Berner Fachhochschule BFH)",
+   "org_url": "https://www.zhaw.ch/de/gesundheit/institute-zentren/ipf/symposien-und-veranstaltungen/advanced-practice-nursing-apn",
+   "professions": [
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "symposium",
+   "region": "intl",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-06-02",
+     "end": "2026-06-02",
+     "location": "Switzerland (venue with Berner Fachhochschule BFH; exact hall not stated)",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not specified on this page.",
+      "url": null
+     },
+     "source_url": "https://www.zhaw.ch/de/gesundheit/institute-zentren/ipf/symposien-und-veranstaltungen/advanced-practice-nursing-apn",
+     "evidence": "Am 2. Juni 2026 findet das APN-Symposium in Zusammenarbeit mit der Berner Fachhochschule BFH statt.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "SingHealth APN Conference 2026",
+   "org": "SingHealth (National Nursing Academy)",
+   "org_url": "https://www.nna.gov.sg/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-07-24",
+     "end": "2026-07-25",
+     "location": "Academia, Singapore General Hospital Campus, Singapore",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not specified on this page.",
+      "url": null
+     },
+     "source_url": "https://www.nna.gov.sg/events/singhealth-apn-conference-2026/",
+     "evidence": "24 July 2026 - 25 July 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society)",
+   "org": "台灣專科護理師學會 Taiwan Association of Nurse Practitioners (TNPA)",
+   "org_url": "https://www.tnpa.org.tw/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "thoracic surgery",
+    "cardiovascular surgery"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual (co-organized)",
+   "editions": [
+    {
+     "start": "2026-10-18",
+     "end": "2026-10-18",
+     "location": "大臺南會展中心 (Tainan Exhibition Center), Tainan City, Taiwan",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Poster/oral presentation competition referenced; deadline not captured.",
+      "url": "https://www.tnpa.org.tw/events/"
+     },
+     "source_url": "https://www.tnpa.org.tw/events/",
+     "evidence": "2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "76º Congresso Brasileiro de Enfermagem (CBEn)",
+   "org": "Associação Brasileira de Enfermagem (ABEn)",
+   "org_url": "https://abennacional.org.br/",
+   "professions": [
+    "RN",
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "general nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "congress",
+   "region": "intl",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-11-09",
+     "end": "2026-11-11",
+     "location": "Brasília, Distrito Federal, Brazil",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not captured from this page.",
+      "url": null
+     },
+     "source_url": "https://eventosaben.org.br/76cben/",
+     "evidence": "O Evento será realizado entre os dias 09 e 11 de novembro de 2026 em Brasília - DF",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "IV Congreso Internacional de Enfermería IMSS",
+   "org": "Fundación IMSS (Instituto Mexicano del Seguro Social)",
+   "org_url": "https://enfermeria.fimss.mx/",
+   "professions": [
+    "RN",
+    "NP"
+   ],
+   "specialty": [
+    "general nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "congress",
+   "region": "intl",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-05-13",
+     "end": "2026-05-15",
+     "location": "CMN Siglo XXI, Ciudad de México, Mexico",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not specified on this page.",
+      "url": null
+     },
+     "source_url": "https://enfermeria.fimss.mx/",
+     "evidence": "13, 14 y 15 de mayo de 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "2026 Annual Scientific Conference & AGM",
+   "org": "National Nurses Association Of Kenya (NNAK)",
+   "org_url": "https://www.nnak.or.ke/",
+   "professions": [
+    "RN",
+    "NP"
+   ],
+   "specialty": [
+    "general nursing",
+    "universal health coverage"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-10-28",
+     "end": "2026-10-30",
+     "location": "Mombasa County, Kenya",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "\"Call for Abstracts Guidelines 2026\" document referenced; specific deadline not captured.",
+      "url": "https://www.nnak.or.ke/2026-asc-agm/"
+     },
+     "source_url": "https://www.nnak.or.ke/2026-asc-agm/",
+     "evidence": "28th – 30th October, 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "CNMF West Africa Region Conference 2026",
+   "org": "National Association of Nigeria Nurses and Midwives (NANNM), hosting the Commonwealth Nurses and Midwives Federation (CNMF)",
+   "org_url": "https://nannm.com.ng/",
+   "professions": [
+    "RN",
+    "NP",
+    "CNM"
+   ],
+   "specialty": [
+    "general nursing and midwifery"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "regional Commonwealth conference (one-off West Africa hosting in 2026)",
+   "editions": [
+    {
+     "start": "2026-04-21",
+     "end": "2026-04-23",
+     "location": "Nicon Luxury Hotel, Abuja, Nigeria",
+     "format": "in person",
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-01-12",
+      "text": "The deadline for submission is Friday, 16th January 2026 (per nannm.com.ng); commonwealthnurses.org states 12 January 2026.",
+      "url": "https://nannm.com.ng/callforabstract/"
+     },
+     "source_url": "https://www.commonwealthnurses.org/WA2026/",
+     "evidence": "21, 22 and 23 April 2026 ... Nicon Luxury Hotel, Abuja, Nigeria",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "IAPACON 2026 – 22nd Annual Conference of the Indian Association of Physician Assistants",
+   "org": "Indian Association of Physician Assistants (IAPA)",
+   "org_url": "https://www.iapacon.org/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "general"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-09-24",
+     "end": "2026-09-26",
+     "location": "Fairfield by Marriott – Ozone Convention Centre, Kolkata, India",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Abstract Submission Portal linked; deadline not captured.",
+      "url": "https://www.iapacon.org/"
+     },
+     "source_url": "https://www.iapacon.org/",
+     "evidence": "24th, 25th & 26th September 2026 | Fairfield by Marriott – Ozone Convention Centre, Kolkata",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "9. Uluslararası 20. Ulusal Hemşirelik Kongresi (9th International, 20th National Nursing Congress)",
+   "org": "Türk Hemşireler Derneği (Turkish Nurses Association), with Atılım Üniversitesi Sağlık Bilimleri Fakültesi",
+   "org_url": "https://www.thder.org.tr/",
+   "professions": [
+    "RN",
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "general nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "congress",
+   "region": "intl",
+   "recurrence": "biennial (national), typically May",
+   "editions": [
+    {
+     "start": "2026-05-14",
+     "end": "2026-05-16",
+     "location": "Atılım Üniversitesi, Ankara, Turkey",
+     "format": "in person",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Not captured from this page.",
+      "url": null
+     },
+     "source_url": "https://hemsirelikkongresi.com/",
+     "evidence": "kongremiz 14-16 Mayıs 2026 tarihlerinde Atılım Üniversitesi'nin konferans salonları ve amfilerinde gerçekleştirilecektir",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "V Encuentro de Enfermeras de Práctica Avanzada",
+   "org": "Fundación para el Desarrollo de la Enfermería (FUDEN)",
+   "org_url": "https://www.fuden.es/",
+   "professions": [
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "symposium",
+   "region": "intl",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-15",
+     "end": "2026-10-15",
+     "location": "Aulas de Formación de Fuden, Madrid, Spain",
+     "format": "in person",
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-09-14",
+      "text": "Tienes hasta el 14 de septiembre para enviarnos tu propuesta.",
+      "url": "https://www.fuden.es/noticias/abierto-el-plazo-para-enviar-tu-trabajo-al-v-encuentro-de-enfermeras-de-practica-avanzada-de-fuden/"
+     },
+     "source_url": "https://www.fuden.es/noticias/abierto-el-plazo-para-enviar-tu-trabajo-al-v-encuentro-de-enfermeras-de-practica-avanzada-de-fuden/",
+     "evidence": "el 15 de octubre de 2026 en las Aulas de Formación de Fuden en Madrid",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "Nurse Practitioners New Zealand",
+   "url": "https://npnzconference.co.nz/",
+   "reason": "2028 conference announced for May in Christchurch with no dates published"
+  }
+ ]
+}
