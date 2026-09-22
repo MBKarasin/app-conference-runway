@@ -20,9 +20,12 @@
    "evidence": "27th Annual NPWH Women’s Healthcare Conference, September 25-28, 2024"
   },
   "426f2f34845c": {
-   "date_conflict": true,
+   "date_conflict": null,
    "compiled": "2026-09-21",
-   "note": "The Japan NP Society's index lists November 21–22; the dedicated 2026 program and poster list November 21–23. The three-day program range is shown. Confirm the final day before travel."
+   "note": "The society's meeting page and the meeting's own site both give November 21-23, 2026 at Morinomiya University of Medical Sciences, Osaka. The summary line on the society's index reads 11/21-11/22 but labels the end day 月・祝 (Monday, public holiday), which is November 23; the index line is a typo.",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "js-np.jp/scientific-meeting-single-12.htm read 2026-09-22: 会期 2026.11.21(土)〜23(月・祝), 会場 森ノ宮医療大学; jsnp2026.jp/outline.html gives the same range."
   },
   "85a947e04684": {
    "source_reviewed": true,
@@ -56,8 +59,11 @@
   },
   "cd48f1f07eaf": {
    "source_url": "https://oncologypas.org/event/2027-annual-symposium/",
-   "date_conflict": true,
-   "note": "The organizer's 2027 event page says September 23–26 in its title and body, but its structured date field says September 23–27. Confirm the final day before booking travel."
+   "date_conflict": null,
+   "note": null,
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "oncologypas.org/event/2027-annual-symposium/ and the events index both read \"September 23 - September 26, 2027\" on 2026-09-22; the earlier 23-27 value came from a structured metadata field that no longer appears."
   },
   "e1d965344e5e": {
    "source_reviewed": true,
@@ -334,6 +340,34 @@
   "4169d9ce47cd": {
    "removed": true,
    "_why": "AAOHN says the 2027 national conference is all-virtual \"this upcoming June\" but publishes no dates. The single-day June 1 record was a placeholder, not an organizer date. Removed 2026-09-22."
+  },
+  "a3400aa377d9": {
+   "source_url": "https://kapn.enpnetwork.com/nurse-practitioner-news/228218-save-the-date-and-call-for-presentations-for-kansas-advanced-practice-nurses-6th-annual-sunflower-conference-february-19-20-2027-in-wichita-ks",
+   "evidence": "Call for Presentations for Kansas Advanced Practice Nurses 6th Annual Sunflower Conference February 19-20, 2027 in Wichita, KS",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "call": {
+    "status": "open",
+    "opens": null,
+    "closes": "2026-09-30",
+    "text": "Call for presentations; submissions close September 30, 2026",
+    "url": "https://forms.gle/Mun8EChacCsdaTT47"
+   },
+   "_why": "Walked kapn.enpnetwork.com: events list (webinars only), then News, where the save-the-date post carries the dates, venue city and the presentation deadline."
+  },
+  "f728d5279341": {
+   "source_url": "https://enrs2027conference.oa-event.com/",
+   "call": {
+    "status": "open",
+    "opens": null,
+    "closes": "2026-10-28",
+    "text": "Peer-reviewed paper and poster, clinical nurse researcher-scholar poster, workshop and symposium applications close Wednesday, October 28, 2026, 11:59 p.m. Eastern; school-selected student posters close December 18, 2026",
+    "url": "https://enrs2027conference.oa-event.com/abstracts"
+   },
+   "note": "Walked enrs-go.org (home, events, industry events) and the 39th Annual Scientific Sessions site (home, abstracts, hotel and travel) on 2026-09-22: the organizer publishes the city (Philadelphia, Loews Philadelphia) and hotel room-block cut-offs of March 8 and 10, 2027, but no conference dates. The March 31-April 2, 2027 range on file is not confirmed by the organizer and is withheld from the default view."
+  },
+  "bfb1cef79cb1": {
+   "note": "Walked mypnaa.org on 2026-09-22: events page, the 48th convention save-the-date link (404), the registration page (blocked to automated readers) and the events calendar (an embedded calendar with no readable entries). The organizer confirms the 47th convention (July 15-19, 2026, Colorado Springs) but publishes no dates for the 48th. The July 17-24, 2027 cruise range on file is unconfirmed and is withheld from the default view."
   }
  },
  "rules": {
