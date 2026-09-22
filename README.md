@@ -1,2 +1,54 @@
-# app-conference-runway
-APP Conference Runway: conferences, abstract deadlines and observances for NPs, PAs and CRNAs, checked nightly against organizer pages.
+# APP Conference Runway
+
+Conferences, symposiums, abstract deadlines, student and DNP project opportunities, and celebration weeks for advanced practice providers across roles and countries. Coverage is still concentrated in the United States and is not yet exhaustive. This is a static site designed for GitHub Pages; a nightly GitHub Action (about 2 a.m. New York time) re-reads organizer pages and stamps each date *start found*, *needs review* or *not re-checked*.
+
+## Set it up (about 15 minutes, all in your browser)
+
+1. **Create a GitHub account** at github.com/signup with your personal email. Pick a handle with letters, numbers and single hyphens only (the handle becomes the web address: `https://<handle>.github.io/app-conference-runway/`). Use a new password you use nowhere else, and turn on two-factor authentication (Settings → Password and authentication).
+2. **Create a repository** named `app-conference-runway`, set to **Public**, with no template and no README.
+3. **Add the files with GitHub Desktop**: the project contains more than 900 files, while GitHub's browser uploader accepts at most 100 at a time. In GitHub Desktop, clone the empty repository you created, copy *everything inside this folder* into that local clone (including the hidden `.github` folder), review the changes, commit, and choose **Push origin**. Do not upload this ZIP as a single file.
+4. **Turn on Pages**: Settings → Pages → Source: **GitHub Actions**.
+5. **Allow the checker to write its stamps**: Settings → Actions → General → Workflow permissions → **Read and write permissions** → Save.
+6. **Run it once**: Actions tab → "Check sources and publish" → Run workflow. When it finishes, the site is live at the address in step 1.
+7. **Settings file**: edit `site/assets/config.js`. Set `repo: "https://github.com/<handle>/app-conference-runway"` to turn on "Suggest a fix". The curator name, credentials, affiliations, titles and links are also kept in this file. Commit any updates.
+8. **Security basics**: Settings → Code security → turn on Dependabot alerts and secret scanning. Do not add collaborators; with none, nothing reaches the site without your merge.
+
+## Keeping it current
+
+- Every night the checker runs at about 2 a.m. New York time, commits `data/verification.json`, and redeploys; the page header shows the time of the last update. GitHub runs schedules in UTC, so the workflow fires at 06:00 and 07:00 UTC and keeps only the one that lands at 2 a.m. Eastern (EDT or EST). GitHub notes scheduled runs can be delayed at peak load. The nightly commits also keep GitHub from pausing the schedule (it disables scheduled workflows in public repos after 60 days without activity).
+- New meeting locations: run `python scripts/geocode.py` after adding meetings so ZIP-radius and region filters can place them; anything it can't place is listed, and you can pin it in `sources/geo/manual.json`.
+- If any date stops matching its organizer page, an issue titled **"Runway: dates to review"** opens (or refreshes). Fix the date in `sources/overrides.json` (or the source file), commit, and the site redeploys.
+- New meetings: add them to a `sources/group_*.json` file following `sources/SCHEMA.md`. Use the organizer's own page, including local-language pages when applicable, and record translated titles in English. Preserve the original source URL.
+- The AGACNP filter is a curator-selected adult acute care topic view. It does not assert that an organizer has a designated AGACNP track or that the event offers AGACNP-specific credit.
+- The **Students & DNP projects** tab includes only organizer-documented opportunities. The meeting date and a student submission deadline are distinct fields; a student opportunity may be listed even after its call has closed.
+- The default **Source checked dates** view includes organizer pages whose start-date evidence still matches, manually reviewed dates, and published-rule observances. It excludes source wording drift, unreachable or missing source evidence, and organizer date conflicts. Visitors can switch the filter off to inspect those exceptions. The checker does not independently prove each end date or registration link; the edition's organizer link remains the final reference.
+- Visitors can subscribe to `runway.ics` in Outlook, Google or Apple Calendar; it refreshes on their calendar's schedule.
+
+## How the pieces fit
+
+| Path | What it is |
+|---|---|
+| `sources/` | Curated inputs. Never edited by the checker. `overrides.json` holds your corrections and wins over everything. |
+| `scripts/build.py` | Merges sources + verification into `site/data/runway.json` and `site/runway.ics`; projects "expected" months up to three years ahead (a rolling window), and keeps `data/ledger.json`, a permanent record of every dated edition ever published. |
+| `scripts/check.py` | Re-reads organizer pages (robots.txt honored, one request per page, one site at a time). Writes `data/verification.json` and `data/check_report.md`. |
+| `scripts/geocode.py` | Places each venue (U.S. Census Gazetteer; GeoNames, CC BY 4.0) and builds the ZIP and world-city lookups for "Near". |
+| `sources/archive/` | Organizer past-meeting archive links and earlier editions. |
+| `scripts/snapshot.py` | Saves each night's data to `data/snapshots/<year>/<date>.json.gz` (about 45 KB a night). |
+| `scripts/validate.py` | Build gate: bad dates, non-https sources, private-looking strings and unsupported absence claims fail the build. |
+| `site/` | The website. No third-party requests, cookies or analytics. Fonts are self-hosted (SIL Open Font License). |
+
+## Verification states
+
+The meeting list shows plain text source notes only for exceptions. Routine source-check details and review dates remain available inside each meeting.
+
+- **Start found**: the start date, its year and a distinctive word of the meeting name were found on the organizer page at the last check. The checker does not independently verify the end date; confirm the full range before booking.
+- **Source wording changed**: the start was found, but the saved organizer excerpt no longer matches the page. The entry is hidden from the default source-checked view and visible with a plain-text warning when that filter is off.
+- **Needs review**: the page was read, but one of those was missing. The date stays as compiled until you change it; the default view excludes it.
+- **Not re-checked**: the page blocked automated reading or needs JavaScript. The date is shown as compiled, with its compile date, when the source-checked filter is off.
+- **Organizer dates conflict**: the organizer's own pages or metadata disagree. The default view excludes it until resolved.
+- **Expected**: projected from a meeting's usual month. Never given a day.
+- **Set by rule**: an observance computed from the organizer's published rule (e.g., PA Week, October 6-12).
+
+## Private preview
+
+Open the separately delivered `APP-Conference-Runway-v9-preview.html` to browse the site without hosting it. It contains the data, city lookup and fonts and makes no network requests until you follow an external organizer link. The preview file is not part of the website repository.

@@ -1,0 +1,905 @@
+[
+ {
+  "id": "american-association-of-nurse-practition__health-policy-conference",
+  "archive_url": "https://www.aanp.org/events/archive",
+  "archive_evidence": "Browse Past Events by Category and Date",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-02-08",
+    "end": "2026-02-10",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aanp.org/events/2026-hpc",
+    "evidence": "February 8, 2026 – February 10, 2026 Washington, District of Columbia",
+    "detail_url": "https://www.aanp.org/events/2026-hpc"
+   },
+   {
+    "start": "2025-03-02",
+    "end": "2025-03-04",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aanp.org/events/2025-hpc",
+    "evidence": "March 2, 2025 – March 4, 2025 Washington, District of Columbia",
+    "detail_url": "https://www.aanp.org/events/2025-hpc"
+   }
+  ],
+  "note": "Archive page lists 2026 HPC; 2025 found at /events/2025-hpc. /events/2024-hpc returned 404, so no third edition."
+ },
+ {
+  "id": "american-academy-of-nursing__health-policy-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "academypolicyconference.com and aannet.org event pages show only the 2026 conference (Oct 8-10, 2026, Washington DC); no past-conference page or dated past edition found on organizer sites."
+ },
+ {
+  "id": "american-college-of-nurse-midwives__health-policy-summit-hill-day",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-05-04",
+    "end": "2026-05-05",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://healthpolicysummit.midwife.org/",
+    "evidence": "The ACNM Health Policy Summit takes place Monday, May 4, 2026 and Hill Day takes place Tuesday, May 5, 2026 in Washington, D.C.",
+    "detail_url": null
+   }
+  ],
+  "note": "Microsite still shows the 2026 edition (now past). midwife.org/past-acnm-meetings-and-events returned 404; no earlier editions found."
+ },
+ {
+  "id": "heart-rhythm-society__heart-rhythm",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-23",
+    "end": "2026-04-26",
+    "location": "Chicago, IL",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://heartrhythm.com/heart-rhythm-2026",
+    "evidence": "April 23-26, 2026 Chicago, IL & Online",
+    "detail_url": "https://heartrhythm.com/heart-rhythm-2026"
+   },
+   {
+    "start": "2025-04-24",
+    "end": "2025-04-27",
+    "location": "San Diego, CA",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://heartrhythm.com/attend/heart-rhythm-2025",
+    "evidence": "April 24-27, 2025 San Diego, CA & Online",
+    "detail_url": "https://heartrhythm.com/attend/heart-rhythm-2025"
+   }
+  ],
+  "note": "No past-meetings index found; editions taken from per-year pages. CONTRADICTION: heartrhythm.com/attend/future-meetings reads 'Heart Rhythm 2027 ... May 13-16, 2026, San Francisco, CA' (year typo on organizer page; known edition 2027-05-13)."
+ },
+ {
+  "id": "american-academy-of-physician-associates__hospital-medicine-essentials",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Organizer page shows only Aug 30-Sept 2, 2026 (Nashville); no earlier editions found on aapa.org."
+ },
+ {
+  "id": "hospice-and-palliative-nurses-associatio__hpna-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-27",
+    "end": "2025-10-28",
+    "location": "Lake Buena Vista, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://portal.advancingexpertcare.org/Portal/Shared_Content/Events/Event_Display.aspx?EventKey=25HPNACONF",
+    "evidence": "10/27/2025 - 10/28/2025",
+    "detail_url": "https://portal.advancingexpertcare.org/ItemDetail?iProductCode=HPNACONFOD25"
+   }
+  ],
+  "note": "No past-conferences index found. 2025 dates also confirmed by HPNA news: 'hosted the HPNA Annual Conference last week from October 27–28 in Lake Buena Vista, FL.' 2026 edition (May 7-8, 2026) already known."
+ },
+ {
+  "id": "heart-rhythm-society__hrx-live",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-04",
+    "end": "2025-09-06",
+    "location": "Atlanta, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://experiencehrx.com/hrx-live/",
+    "evidence": "Join us at HRX Live 2025—September 4–6 in Atlanta—for a transformative event exploring the future of cardiovascular medicine.",
+    "detail_url": "https://experiencehrx.com/2025-highlights/"
+   }
+  ],
+  "note": "hrsonline.org/hrx-2025 agrees ('from September 4-6, 2025', Signia by Hilton Atlanta). 2024/2023 highlight pages exist but gave no verbatim dates. Current 2026 edition is Sept 18-20, 2026 (Board Review Course Sept 17)."
+ },
+ {
+  "id": "institute-for-critical-care-medicine-mou__iccm-summit-for-advanced-practice-providers",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-19",
+    "end": "2025-09-19",
+    "location": "New York, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://events.mountsinaihealth.org/event/iccm-2025-summit-for-advanced-practice-practitioners",
+    "evidence": "Friday, September 19, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "critcaresummit.com has no past info; 2025 edition from Mount Sinai events calendar (titled 'ICCM 2025 Summit for Advanced Practice Practitioners')."
+ },
+ {
+  "id": "idsa-shea-hivma-pids-and-sidp-joint-meet__idweek",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": "https://academic.oup.com/ofid/supplements",
+  "past_editions": [
+   {
+    "start": "2025-10-19",
+    "end": "2025-10-22",
+    "location": "Atlanta, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://pids.org/event/idweek-2025/",
+    "evidence": "Atlanta, GA Oct. 19 - 22, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "IDWeek FAQ: 'ID Week 2025 abstracts were published in Open Forum Infectious Diseases in January 2026' and links OFID supplements. No past-meetings list on idweek.org; 2025 dates from co-organizer PIDS."
+ },
+ {
+  "id": "society-for-simulation-in-healthcare__imsh",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-01-10",
+    "end": "2026-01-14",
+    "location": "San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://imsh2026.org/about",
+    "evidence": "Saturday, January 10, through Wednesday, January 14, 2026, at the Henry B. González Convention Center in San Antonio, Texas, USA",
+    "detail_url": "https://imsh2026.org/about"
+   },
+   {
+    "start": "2025-01-10",
+    "end": "2025-01-14",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.imsh2025.org/",
+    "evidence": "January 10 - 14, 2025 | Orlando, FL",
+    "detail_url": "https://www.imsh2025.org/"
+   }
+  ],
+  "note": "No past-meetings index found; editions from per-year microsites."
+ },
+ {
+  "id": "int-l-nursing-association-for-clinical-s__inacsl27",
+  "archive_url": "https://www.inacsl.org/past-and-future-annual-conferences",
+  "archive_evidence": "Past and Future Annual Conferences",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-06-10",
+    "end": "2026-06-13",
+    "location": "Oklahoma City, OK",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.inacsl.org/past-and-future-annual-conferences",
+    "evidence": "INACSL26 June 10-13, 2026 Oklahoma City, OK",
+    "detail_url": "https://www.inacsl.org/inacsl26"
+   },
+   {
+    "start": "2025-06-19",
+    "end": "2025-06-22",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.inacsl.org/past-and-future-annual-conferences",
+    "evidence": "INACSL25 June 19-22, 2025 Denver, CO",
+    "detail_url": null
+   },
+   {
+    "start": "2024-06-12",
+    "end": "2024-06-15",
+    "location": "Raleigh, NC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.inacsl.org/past-and-future-annual-conferences",
+    "evidence": "INACSL24 June 12-15, 2024 Raleigh, NC",
+    "detail_url": null
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "american-college-of-surgeons__innovation-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Innovation Summit page shows only Mar 11-12, 2027 (Chicago). A 'Surgeons and Engineers Archive' exists (2026 abstracts page) but index URL returned 404 and the 2026 page had no dates; no past edition recorded."
+ },
+ {
+  "id": "american-association-of-neuroscience-nur__international-neuroscience-nursing-research-sympos",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-01-23",
+    "end": "2026-01-23",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://aann.org/meetings/research-symposium/research-symposium-registration",
+    "evidence": "The next INNRS will be held on Friday, January 23, 2026.",
+    "detail_url": null
+   }
+  ],
+  "note": "Registration form PDF agrees: 'Virtual International Neuroscience Nursing Research Symposium Friday, January 23, 2026'. No past-symposia index found."
+ },
+ {
+  "id": "sigma-theta-tau-international__international-nursing-research-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-07-16",
+    "end": "2026-07-18",
+    "location": "Toronto, ON, Canada",
+    "format": "in person",
+    "theme": "Discovery Into Action: The Future of Nursing Research Starts Here",
+    "source_url": "https://web.cvent.com/event/d944868a-e4b2-4caf-93d9-fd6a00787c5b/summary",
+    "evidence": "July 16, 2026 – July 18, 2026",
+    "detail_url": null
+   },
+   {
+    "start": "2025-07-17",
+    "end": "2025-07-20",
+    "location": "Seattle, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=40b50b2c-f3b8-479b-83c3-0193497fd38c&Home=/home",
+    "evidence": "July 17-20, 2025",
+    "detail_url": null
+   },
+   {
+    "start": "2024-07-25",
+    "end": "2024-07-28",
+    "location": "Singapore",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=37048af8-bbee-4fd4-8d8c-018e9f6ee680&Home=%2Fhome",
+    "evidence": "Thu, Jul 25, 2024 09:00 AM",
+    "detail_url": null
+   }
+  ],
+  "note": "sigmanursing.org congress page returned no body text to WebFetch; no archive page found. 2026 = 37th (Sigma Cvent registration site), 2025 = 36th, 2024 = 35th (virtual component 6-8 Aug 2024). CHECK: known edition 2027-07-16 shares month/day with the 2026 edition's start; verify it is not the 2026 date with a wrong year."
+ },
+ {
+  "id": "international-society-for-heart-and-lung__ishlt-annual-meeting",
+  "archive_url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings",
+  "archive_evidence": "Past Annual Meetings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-22",
+    "end": "2026-04-25",
+    "location": "Toronto, ON, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings",
+    "evidence": "22 to 25 April, 2026",
+    "detail_url": "https://www.ishlt.org/event-calendar/event/2026/04/22/default-calendar/46th-annual-meeting---scientific-sessions"
+   },
+   {
+    "start": "2025-04-27",
+    "end": "2025-04-30",
+    "location": "Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings",
+    "evidence": "27 to 30 April, 2025",
+    "detail_url": "https://www.ishlt.org/event-calendar/event/2025/04/27/default-calendar/45th-annual-meeting-scientific-sessions"
+   },
+   {
+    "start": "2024-04-10",
+    "end": "2024-04-13",
+    "location": "Prague, Czech Republic",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings",
+    "evidence": "10 to 13 April, 2024",
+    "detail_url": "https://www.ishlt.org/event-calendar/event/2024/04/10/default-calendar/44th-annual-meeting-scientific-sessions"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "international-society-of-psychiatric-men__ispn-annual-conference",
+  "archive_url": "https://www.ispn-psych.org/past-conferences",
+  "archive_evidence": "Past Conferences",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-18",
+    "end": "2026-03-21",
+    "location": "Seattle, WA",
+    "format": "in person",
+    "theme": "Innovate, Integrate, INSPIRE - Charting the Future of Psychiatric Nursing",
+    "source_url": "https://www.ispn-psych.org/past-conferences",
+    "evidence": "March 18-21, 2026 | Grand Hyatt Seattle, Seattle, WA",
+    "detail_url": "https://www.ispn-psych.org/assets/2026_Conference/ISPN%202026%20Program%20v10.pdf"
+   },
+   {
+    "start": "2025-03-19",
+    "end": "2025-03-22",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": "Advancing Psychiatric Mental Health Nursing: Innovation, Practice, and Culture",
+    "source_url": "https://www.ispn-psych.org/past-conferences",
+    "evidence": "March 19-22, 2025 | Marriott Hotel, New Orleans, LA",
+    "detail_url": "https://www.ispn-psych.org/assets/2025_Conference/ISPN%202025%20SAAG%20v5%20%281%29.pdf"
+   },
+   {
+    "start": "2024-04-03",
+    "end": "2024-04-06",
+    "location": "Providence, RI",
+    "format": "in person",
+    "theme": "Psychiatric-Mental Health Nurses: The Power of Leading, Connecting, and Healing",
+    "source_url": "https://www.ispn-psych.org/past-conferences",
+    "evidence": "April 3-6, 2024 | Omni Hotel, Providence, RI",
+    "detail_url": "https://www.ispn-psych.org/assets/2024_Conference/2024%20Final%20Program%20v8.pdf"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "japan-academy-of-nursing-science__jans-annual-conference",
+  "archive_url": "https://www.jans.or.jp/english/meetings/past/",
+  "archive_evidence": "Past Scientific Meetings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-12-06",
+    "end": "2025-12-07",
+    "location": "Niigata, Japan",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.jans.or.jp/english/meetings/past/",
+    "evidence": "第45回（2025）新潟 2025.12.6～12.7",
+    "detail_url": "https://www.jans.or.jp/english/slides/academic-conference45/"
+   },
+   {
+    "start": "2024-12-07",
+    "end": "2024-12-08",
+    "location": "Kumamoto, Japan",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.jans.or.jp/english/meetings/past/",
+    "evidence": "The 44th 2024.12.7-12.8",
+    "detail_url": "https://www.jans.or.jp/english/slides/academic-conference44/"
+   },
+   {
+    "start": "2023-12-09",
+    "end": "2023-12-10",
+    "location": "Shimonoseki (Yamaguchi), Japan",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.jans.or.jp/english/meetings/past/",
+    "evidence": "The 43rd edition, 2023.12.9-12.10",
+    "detail_url": "https://www.jans.or.jp/english/slides/academic-conference43/"
+   }
+  ],
+  "note": "convention.jtbcom.co.jp/jans46 failed (too many redirects). Format assumed in person is not stated on archive page; 45th microsite (shinsen-mc.co.jp/jans45) not checked for hybrid option."
+ },
+ {
+  "id": "american-society-of-nephrology__kidney-week",
+  "archive_url": "https://www.asn-online.org/education/kidneyweek/archives/past.aspx",
+  "archive_evidence": "Kidney Week: Past Meetings",
+  "proceedings_url": "https://www.asn-online.org/education/kidneyweek/archives/",
+  "past_editions": [
+   {
+    "start": "2025-11-05",
+    "end": "2025-11-09",
+    "location": "Houston, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.asn-online.org/education/kidneyweek/archives/past.aspx",
+    "evidence": "Kidney Week 2025 Location Houston, TX Dates November 5 - 9",
+    "detail_url": "https://www.asn-online.org/education/kidneyweek/2025/program-search-abstract.aspx"
+   },
+   {
+    "start": "2024-10-23",
+    "end": "2024-10-27",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.asn-online.org/education/kidneyweek/archives/past.aspx",
+    "evidence": "Kidney Week 2024 Location San Diego, CA Dates October 23 - 27",
+    "detail_url": "https://www.asn-online.org/education/kidneyweek/archives/KW24Abstracts.pdf"
+   },
+   {
+    "start": "2023-11-01",
+    "end": "2023-11-05",
+    "location": "Philadelphia, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.asn-online.org/education/kidneyweek/archives/past.aspx",
+    "evidence": "Kidney Week 2023 Location Philadelphia, PA Dates November 1 - 5",
+    "detail_url": "https://www.asn-online.org/education/kidneyweek/archives/KW23Abstracts.pdf"
+   }
+  ],
+  "note": "Year is in the entry heading, not the date line. Future-meetings page lists only Kidney Week 2027 (Oct 27-31, San Diego)."
+ },
+ {
+  "id": "society-of-hospital-medicine__leadership-academy",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-20",
+    "end": "2025-10-23",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://education.hospitalmedicine.org/Public/Catalog/Details.aspx?id=ZS0/ZPJGWACuNK9/Cr6VZw%3D%3D",
+    "evidence": "October 20-23, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-academies page; 2025 dates from SHM Learning catalog (on-demand 'Leadership Academy 2025: Mastering Teamwork'), which gives no location. connect.hospitalmedicine.org event page could not be fetched (robots error)."
+ },
+ {
+  "id": "american-nurses-credentialing-center__magnet-pathway-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-08",
+    "end": "2025-10-10",
+    "location": "Atlanta, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://magnetpathwaycon.nursingworld.org/faqs-0",
+    "evidence": "The co-located Magnet & Pathway Conference™ will be held in person, in Atlanta, GA, October 8-10, 2025, at the Georgia World Congress Center.",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-30",
+    "end": "2024-11-01",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/news/news-releases/2024/ancc-opens-registration-the-2024-national-magnet-conference-and-pathway-to-excellence-conference-comes-to-new-orleans/",
+    "evidence": "in New Orleans, Louisiana at the New Orleans Ernest N. Morial Convention Center from Oct. 30 - Nov. 1",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-conferences index found. 2024 evidence sentence has no year itself; year comes from the ANA news release headline ('The 2024 National Magnet Conference...')."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__mid-year-assembly",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-25",
+    "end": "2026-04-29",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aana.com/wp-content/uploads/2025/11/MYA-26-Exhibitor-Prospectus.pdf",
+    "evidence": "April 25-29, 2026 + #AANAMYA",
+    "detail_url": null
+   }
+  ],
+  "note": "CONTRADICTION: 2026 exhibitor prospectus says April 25-29, 2026; AANA attend page and 2026 attendee-list PDF say April 24-29 (24th likely a pre-meeting day). AANA events list shows only future MYAs (2027-2030)."
+ },
+ {
+  "id": "midwest-nursing-research-society__mnrs-annual-research-conference",
+  "archive_url": "https://mnrs.org/annual-conference/past-conferences/",
+  "archive_evidence": "48th Annual Research Conference - Minneapolis, MN, 2024 >",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-30",
+    "end": "2026-04-02",
+    "location": "St. Louis, MO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://mnrs.org/mnrs-50th-annual-research-conference/",
+    "evidence": "The MNRS 50th Annual Research Conference took place March 30th through April 2nd, 2026, at the St. Louis Union Station Hotel by Hilton in St. Louis, Missouri.",
+    "detail_url": "https://mnrs.org/mnrs-50th-annual-research-conference/"
+   },
+   {
+    "start": "2025-03-26",
+    "end": "2025-03-29",
+    "location": "Indianapolis, IN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://mnrs.org/mnrs-49th-annual-research-conference/",
+    "evidence": "The MNRS 49th Annual Research Conference took place March 26-29, 2025 at the Indiana Convention Center",
+    "detail_url": "https://mnrs.org/mnrs-49th-annual-research-conference/"
+   }
+  ],
+  "note": "Past Conferences page lists 48th (Minneapolis, 2024) and earlier without dates, so 2024 omitted. 2025 city inferred from venue (Indiana Convention Center)."
+ },
+ {
+  "id": "society-of-critical-care-medicine__multiprofessional-critical-care-review-adult-in-pe",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-07-23",
+    "end": "2025-07-25",
+    "location": "Mount Prospect, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://sccm.org/education-center/educational-programming/multiprofessional-critical-care-review/critical-care-review-adult/mccrc-adult-in-person-course",
+    "evidence": "July 23-25, 2025, at SCCM Headquarters in Mount Prospect, Illinois",
+    "detail_url": null
+   }
+  ],
+  "note": "Course page still shows the 2025 course with 'Registration is closed'; no 2026 in-person date and no past-course archive found."
+ },
+ {
+  "id": "society-of-hospital-medicine__multisite-leaders-in-hospital-medicine-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Summit page shows only Sept 17-18, 2026 (Philadelphia). A 'Multisite Leaders in Hospital Medicine Summit 2025' on-demand course exists on SHM Learning but gives no event dates."
+ },
+ {
+  "id": "american-academy-of-physician-associates__musculoskeletal-galaxy",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-07-27",
+    "end": "2025-07-30",
+    "location": "Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2025-musculoskeletal-galaxy/",
+    "evidence": "July 27, 2025 - July 30, 2025",
+    "detail_url": "https://www.aapa.org/cme-calendar/2025-musculoskeletal-galaxy/"
+   }
+  ],
+  "note": "No past-events index. AAPA 2025 page gives MGM Grand Hotel Las Vegas (an aggregator listing says Austin; ignored)."
+ },
+ {
+  "id": "national-association-of-clinical-nurse-s__nacns-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-03-10",
+    "end": "2025-03-13",
+    "location": "Boston, MA",
+    "format": "in person",
+    "theme": "INNOVATE",
+    "source_url": "https://nacns.org/news-events/annual-conference/2025-annual-conference/",
+    "evidence": "March 10 – 13, 2025",
+    "detail_url": "https://nacns.org/news-events/annual-conference/2025-annual-conference/"
+   }
+  ],
+  "note": "No past-conferences index found. Known 2026 edition confirmed by recap: 'CNSs gathered in San Diego March 9 - 12, 2026'."
+ },
+ {
+  "id": "national-academy-of-medicine__nam-annual-meeting",
+  "archive_url": "https://nam.edu/events/annual-meeting/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-19",
+    "end": "2025-10-20",
+    "location": "Washington, DC",
+    "format": "hybrid",
+    "theme": "Frontiers of AI & Health: Care, Discovery, and Education",
+    "source_url": "https://nam.edu/wp-content/uploads/2025/09/PublicAgendaCventFinal.pdf",
+    "evidence": "Sunday, October 19, 2025 and Monday, October 20, 2025",
+    "detail_url": "https://nam.edu/event/2025-nam-annual-meeting/"
+   }
+  ],
+  "note": "Annual Meeting page links past meetings 2015-2025 by title but no verbatim 'past' heading captured, so archive_evidence null. 2025 event page returned HTTP 500; dates from agenda PDF. Format hybrid based on page text 'join us in Washington, DC or online'. Earlier years' dates not on index page."
+ },
+ {
+  "id": "national-association-of-neonatal-nurses__nann-annual-conference",
+  "archive_url": "https://nann.org/education/past-conferences/",
+  "archive_evidence": "Future and Past NANN Conference Dates and Locations",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-09-18",
+    "end": "2024-09-20",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nann.org/education/past-conferences/",
+    "evidence": "NANN's 40th Annual Conference September 18-20, 2024 Orlando, FL",
+    "detail_url": null
+   },
+   {
+    "start": "2023-09-26",
+    "end": "2023-09-28",
+    "location": "Anaheim, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nann.org/education/past-conferences/",
+    "evidence": "NANN's 39th Annual Conference September 26 – 28, 2023 Anaheim, CA",
+    "detail_url": null
+   }
+  ],
+  "note": "GAP: organizer page shows no 2025 conference entry; 2025 edition not found."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__napnap-new-jersey-chapter-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Chapter home page has no conference dates or past-conference info; nothing found."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__national-conference-on-pediatric-health-care",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-17",
+    "end": "2026-03-21",
+    "location": "Pittsburgh, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.napnap.org/event/47th-national-conference-on-pediatric-health-care/",
+    "evidence": "March 17-21, 2026",
+    "detail_url": "https://www.napnap.org/event/47th-national-conference-on-pediatric-health-care/"
+   }
+  ],
+  "note": "No past-conferences index; napnap.org 'Future Conference Dates' lists 2027-2029 only."
+ },
+ {
+  "id": "florida-association-of-neonatal-nurse-pr__national-neonatal-nurse-practitioner-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "FANNP page covers only 2026 (37th, Oct 13-17, 2026) plus future dates; 2025 (36th) seen only on an aggregator, not used."
+ },
+ {
+  "id": "academy-of-neonatal-nursing__national-neonatal-nurses-conference-fall",
+  "archive_url": "https://www.academyonline.org/page/PastConferences",
+  "archive_evidence": "Past ANN Conferences",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-09-08",
+    "end": "2026-09-11",
+    "location": "Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.academyonline.org/page/FallConference",
+    "evidence": "September 8–11, 2026",
+    "detail_url": "https://www.academyonline.org/page/FallConference"
+   },
+   {
+    "start": "2025-09-03",
+    "end": "2025-09-06",
+    "location": "Arlington, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.academyonline.org/page/PastConferences",
+    "evidence": "Fall 2025 National Neonatal Nurses Conference Neonatal | Advanced Practice | Mother Baby Hyatt Regency Crystal City Arlington, Virginia September 3-6, 2025",
+    "detail_url": null
+   },
+   {
+    "start": "2024-09-04",
+    "end": "2024-09-07",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.academyonline.org/page/PastConferences",
+    "evidence": "Fall 2024 National Neonatal Nurses Conference Neonatal | Advanced Practice | Mother Baby Sheraton New Orleans New Orleans, Louisiana September 4-7, 2024",
+    "detail_url": null
+   }
+  ],
+  "note": "Fall 2026 (Nashville, Gaylord Opryland) ended Sept 11, 2026, so it counts as past; known_editions was empty."
+ },
+ {
+  "id": "aacn-critical-care-nurses__national-teaching-institute-nti",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-05-17",
+    "end": "2026-05-20",
+    "location": "San Diego, CA",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aacn.org/newsroom/registration-opens-for-aacns-nti-2026",
+    "evidence": "The American Association of Critical-Care Nurses will hold the National Teaching Institute & Critical Care Exposition in San Diego, May 17-20, 2026, followed by a virtual event June 15-17.",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-NTI index found. NTI 2025 (Houston) tab exists but dates were not captured."
+ },
+ {
+  "id": "neurocritical-care-society__ncs-annual-meeting",
+  "archive_url": "https://www.neurocriticalcare.org/Events/Annual-Meeting/Past-Future-Annual-Meetings",
+  "archive_evidence": "Past & Future Annual Meetings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-16",
+    "end": "2025-09-19",
+    "location": "Montréal, QC, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.neurocriticalcare.org/Portals/0/NCS%202025%20Annual%20Meeting_Accreditation%20Overview%20_%20Final_9_16_25.pdf",
+    "evidence": "23rd Annual Neurocritical Care Society Meeting September 16-19, 2025 Montreal, Quebec",
+    "detail_url": null
+   }
+  ],
+  "note": "Past & Future page lists 2025 Montréal, 2024 San Diego, 2023 Phoenix as image tiles without dates; 2024/2023 omitted."
+ },
+ {
+  "id": "new-jersey-emergency-nurses-association__nj-emergency-care-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-18",
+    "end": "2026-03-20",
+    "location": "Atlantic City, NJ",
+    "format": "in person",
+    "theme": "Nurses Rock!",
+    "source_url": "https://www.newjerseyena.org/masterevents/emergency-care-conference-2026-nurses-rock",
+    "evidence": "Wednesday, March 18, 2026 through Friday, March 20, 2026",
+    "detail_url": "https://www.newjerseyena.org/ecc2026"
+   },
+   {
+    "start": "2025-03-19",
+    "end": "2025-03-21",
+    "location": "Atlantic City, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.newjerseyena.org/masterevents/46th-annual-emergency-care-conference",
+    "evidence": "March 19-21, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-conferences index found; editions from NJENA event pages."
+ },
+ {
+  "id": "new-jersey-association-of-nurse-anesthet__njana-fall-meeting",
+  "archive_url": "https://njana.com/2026-fall-meeting/",
+  "archive_evidence": "2025 Fall Conference",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-04",
+    "end": "2025-10-04",
+    "location": "Princeton, NJ",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://njana.com/2025-fall-conference/",
+    "evidence": "Saturday, October 4, 2025",
+    "detail_url": "https://njana.com/2025-fall-meeting-resources/"
+   }
+  ],
+  "note": "2026 Fall Meeting page links past fall meetings (2025, 2024, 2023, 2022, 2020). 2024 page gave no verbatim date, so omitted."
+ },
+ {
+  "id": "new-jersey-association-of-nurse-anesthet__njana-spring-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-18",
+    "end": "2026-04-18",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://njana.com/2026-spring-conference/",
+    "evidence": "The New Jersey Association of Nurse Anesthetists (NJANA) is proud to present the Virtual Spring Conference on Saturday, April 18, 2026.",
+    "detail_url": "https://njana.com/2026-spring-conference-resources/"
+   },
+   {
+    "start": "2025-04-05",
+    "end": "2025-04-05",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://njana.com/2025-spring-conference/",
+    "evidence": "Saturday, April 5, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "njana.com/meetings-events refers to past conference resources (2020-2025) but no verbatim archive text captured."
+ },
+ {
+  "id": "new-jersey-league-for-nursing__njln-annual-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-25",
+    "end": "2026-03-26",
+    "location": "Atlantic City, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.njln.org/docs/Sample_NJLN_Abstract_Format-2025-2026.pdf",
+    "evidence": "2026 NJLN CONVENTION MARCH 25 – 26, HARRAH'S RESORT, ATLANTIC CITY",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-conventions page found. 2027 call-for-abstracts page date text is truncated ('Wednesday, March 31, and Thursday, April')."
+ },
+ {
+  "id": "national-league-for-nursing__nln-education-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "summit.nln.org links a '2025 RECAP' without dates; NLN news says the 2025 Summit was in Orlando with a keynote 'Friday, September 19', but full 2025 dates not found, so omitted."
+ },
+ {
+  "id": "nebraska-nurses-association__nna-annual-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-01",
+    "end": "2025-10-03",
+    "location": "Kearney, NE",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://members.nebraskanurses.org/calendar/details/2025-nna-annual-convention-1383277",
+    "evidence": "October 1-3, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "Calendar lists Oct 1 (evening PAC fundraiser) through Oct 3; main sessions Oct 2-3. No past-conventions page found."
+ }
+]

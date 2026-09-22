@@ -1,0 +1,713 @@
+[
+ {
+  "id": "association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi",
+  "archive_url": "https://oncologypas.org/past-events/",
+  "archive_evidence": "Below is an archive of previous APAO events",
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Past Events page exists but only lists the 2026 symposium (Aug 13-16, NYC, already known) and a '2025 Photo Gallery' (https://oncologypas.org/symposium/gallery/) with no dates/location on the page; no verbatim 2025 dates found."
+ },
+ {
+  "id": "pennsylvania-society-of-physician-associ__annual-pspa-fall-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "PSPA annual-conference page and Future Conference Locations page list only 2026-2029; no organizer past-conference page found (only aggregators such as AAPA/eMedEvents listings for 49th/50th, not used)."
+ },
+ {
+  "id": "association-of-neurosurgical-physician-a__anspa-annual-cme-meeting-at-cns",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "ANSPA homepage and meeting news page show only 2026 (Nov 1, Washington, DC). The news URL slug says '2025' but content is the 2026 meeting. No past-meetings page found."
+ },
+ {
+  "id": "american-organization-for-nursing-leader__aonl-annual-conference",
+  "archive_url": "https://inspiringleaders.aonl.org/past-future-conferences",
+  "archive_evidence": "Past & Future Conferences",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-03-30",
+    "end": "2025-04-02",
+    "location": "Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://inspiringleaders.aonl.org/past-future-conferences",
+    "evidence": "AONL 2025 Boston March 30-April 2",
+    "detail_url": null
+   },
+   {
+    "start": "2024-04-08",
+    "end": "2024-04-11",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://inspiringleaders.aonl.org/past-future-conferences",
+    "evidence": "AONL 2024 New Orleans April 8-11",
+    "detail_url": null
+   },
+   {
+    "start": "2023-05-01",
+    "end": "2023-05-04",
+    "location": "Anaheim, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://inspiringleaders.aonl.org/past-future-conferences",
+    "evidence": "AONL 2023 Anaheim, Calif. May 1-4",
+    "detail_url": null
+   }
+  ],
+  "note": "Year label and date line are separate elements on the page (heading 'AONL 2025' then 'Boston March 30-April 2'); evidence joins them. Page lists AONL 2026 Chicago March 29-April 1, matching known edition."
+ },
+ {
+  "id": "association-of-pulmonary-advanced-practi__apapp-annual-national-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "pulmapplive.com and pulmapp.com show only 2027 conference and '2026 Annual Conference Webcasts'; no past-edition dates on organizer sites (2025 Nashville appears only on aggregators, not used)."
+ },
+ {
+  "id": "organization-of-nurse-leaders-of-new-jer__apn-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Glue Up event page covers only 2026 (Nov 19, Princeton); no past APN conference listing found."
+ },
+ {
+  "id": "american-psychiatric-nurses-association__apna-annual-conference",
+  "archive_url": "https://www.apna.org/apna-annual-conference/",
+  "archive_evidence": "APNA 39th Annual Conference",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-15",
+    "end": "2025-10-18",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": "Empowered to Innovate and Collaborate: PMH Nurses Shaping Care Excellence",
+    "source_url": "https://www.apna.org/apna-annual-conference/",
+    "evidence": "APNA 39th Annual Conference ... October 15-18, 2025 New Orleans, LA",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-09",
+    "end": "2024-10-12",
+    "location": "Louisville, KY",
+    "format": "in person",
+    "theme": "Bringing Connection to Life for Ourselves, Those We Serve, & Each Other",
+    "source_url": "https://www.apna.org/apna-annual-conference/",
+    "evidence": "APNA 38th Annual Conference ... October 9-12, 2024 Louisville, KY",
+    "detail_url": null
+   },
+   {
+    "start": "2023-10-04",
+    "end": "2023-10-07",
+    "location": "Disney's Coronado Springs Resort (Lake Buena Vista, FL)",
+    "format": "in person",
+    "theme": "Psychiatric-Mental Health Nurses: Novel IDEAS Moving Whole Health Forward",
+    "source_url": "https://www.apna.org/apna-annual-conference/",
+    "evidence": "APNA 37th Annual Conference ... October 4-7, 2023 Disney's Coronado Springs Resort",
+    "detail_url": null
+   }
+  ],
+  "note": "Past conferences listed in a 'Past Conferences' section of the main conference page. Session recordings archive: https://e-learning.apna.org/annual-conference-session-archives (recordings, not abstracts). 2023 location given only as the resort name."
+ },
+ {
+  "id": "american-society-of-clinical-oncology__asco-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-05-29",
+    "end": "2026-06-02",
+    "location": "Chicago, IL",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.asco.org/about-asco/press-center/news-releases/new-research-highlights-lifestyle-treatment-strategies-2026-annual-meeting",
+    "evidence": "The 2026 ASCO Annual Meeting will take place May 29-June 2 in Chicago and online",
+    "detail_url": "https://meetings.asco.org/meetings/2026-asco-annual-meeting/335/program-guide/scheduled-sessions"
+   }
+  ],
+  "note": "No past-meetings list page found (meetings.asco.org is a JS app, WebFetch returned no content). 2026 dates from ASCO press release."
+ },
+ {
+  "id": "american-society-of-hematology__ash-annual-meeting-and-exposition",
+  "archive_url": "https://www.hematology.org/meetings/annual-meeting/past-meetings",
+  "archive_evidence": "Past ASH Annual Meetings",
+  "proceedings_url": "https://ashpublications.org/blood/issue/146/Supplement%201",
+  "past_editions": [
+   {
+    "start": "2025-12-06",
+    "end": "2025-12-09",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.hematology.org/meetings/annual-meeting/past-meetings",
+    "evidence": "December 6-9, 2025 | Orlando, FL",
+    "detail_url": "https://ashpublications.org/blood/issue/146/Supplement%201"
+   },
+   {
+    "start": "2024-12-07",
+    "end": "2024-12-10",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.hematology.org/meetings/annual-meeting/past-meetings",
+    "evidence": "December 7-10, 2024 | San Diego, CA",
+    "detail_url": "https://ashpublications.org/blood/issue/144/Supplement%201"
+   },
+   {
+    "start": "2023-12-09",
+    "end": "2023-12-12",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.hematology.org/meetings/annual-meeting/past-meetings",
+    "evidence": "December 9-12, 2023 | San Diego, CA",
+    "detail_url": "https://ashpublications.org/blood/issue/142/Supplement%201"
+   }
+  ],
+  "note": "67th/66th/65th meetings. detail_url = Blood abstract supplements linked from the past-meetings page; webcasts also linked (academy.hematology.org)."
+ },
+ {
+  "id": "american-society-for-parenteral-and-ente__aspen-nutrition-science-practice-conference",
+  "archive_url": "https://nutritioncare.org/webinar-recordings/",
+  "archive_evidence": "Webinars and Conferences are recorded and available on demand 24/7.",
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Recordings page links the ASPEN eLearning store but lists no past-conference dates. ASPEN 2025 eLearning page shows only session dates (March 22-25, 2025) without a conference date/location statement, so not recorded. ASPEN26 dates not found on organizer site. JPEN conference-abstracts collection exists (aspenjournals.onlinelibrary.wiley.com) but was not fetched."
+ },
+ {
+  "id": "american-thoracic-society__ats-international-conference",
+  "archive_url": "https://site.thoracic.org/conference/about/conference-history/past-annual-meetings-international-conferences",
+  "archive_evidence": "Past Annual Meetings / International Conferences",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-05-15",
+    "end": "2026-05-20",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://site.thoracic.org/events/ats-international-conference",
+    "evidence": "Friday, May 15 — Wednesday, May 20 ... Orange County Convention Center, Orlando, Florida",
+    "detail_url": null
+   },
+   {
+    "start": "2025-05-17",
+    "end": "2025-05-21",
+    "location": "San Francisco, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://site.thoracic.org/events/ats-2025-international-conference",
+    "evidence": "Saturday, May 17 — Wednesday, May 21 ... San Francisco, CA",
+    "detail_url": null
+   }
+  ],
+  "note": "CONTRADICTION: past-meetings table lists year/city/attendance only (no dates) and shows '2025' twice (San Francisco 13,329 and Orlando 12,907); Orlando was 2026 per the ATS event page. Edition date text has no year; year taken from each event page's title ('ATS International Conference 2026' / 'ATS 2025 International Conference')."
+ },
+ {
+  "id": "association-for-vascular-access__ava-annual-scientific-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Organizer past-meetings page https://www.avainfo.org/page/PastAVASM found via search but WebFetch returned HTTP 403; no verbatim text obtained, so nothing recorded."
+ },
+ {
+  "id": "association-of-women-s-health-obstetric-__awhonn-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "awhonnconvention.org home and Future Dates page list only 2027-2029. 2026 convention site (awhonn26.smallworldlabs.com) could not be fetched (robots/disconnect); awhonn.org 2026 page had no dates."
+ },
+ {
+  "id": "board-of-certification-for-emergency-nur__bcen-learn-live",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "BCEN Learn Live page shows only 2027 (July 20-22, Las Vegas) and says 'Stream past conference sessions on-demand on BCEN Learn' (https://learn.bcen.org/learn/public/catalog/view/7); no past dates found."
+ },
+ {
+  "id": "sigma-theta-tau-international__biennial-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Convention page references 'The 48th Biennial Convention 2025' in Indianapolis (Flickr highlights) but gives no dates; /connect-engage/meetings-events/convention still shows 46th (2021) content. Not recorded."
+ },
+ {
+  "id": "national-academy-of-medicine__catalyzing-healthy-longevity-global-innovator-summ",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Summit page describes 2026 as culmination of a seven-year competition; no prior summit editions listed."
+ },
+ {
+  "id": "american-college-of-chest-physicians__chest-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-19",
+    "end": "2025-10-22",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.chestphysician.org/annual-meeting/news/mark-your-calendars-for-chest-2025-in-chicago/",
+    "evidence": "at CHEST 2025, October 19 to 22, in Chicago.",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-meetings list page on chestnet.org (post-event page lists only 2026-2033). journal.chestnet.org/meetings (abstract supplements) returned 403. 2025 from CHEST Physician (CHEST publication). Minor: CHEST page says 2026 is 'October 18 to 21' with premeeting courses Oct 17 (known start 2026-10-17). Page also lists 2032 New Orleans and 2033 Chicago."
+ },
+ {
+  "id": "american-college-of-surgeons__clinical-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-04",
+    "end": "2025-10-07",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2025/julyaugust-2025-volume-110-issue-7/clinical-congress-2025-in-chicago-will-ignite-big-ideas-bold-advances/",
+    "evidence": "the ACS Clinical Congress will return to Chicago, Illinois, with thousands of surgeons and medical professionals coming together October 4–7",
+    "detail_url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2025/november-december-2025-volume-110-issue-10/clinical-congress-2025-highlights/"
+   },
+   {
+    "start": "2024-10-19",
+    "end": "2024-10-22",
+    "location": "San Francisco, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/julyaugust-2024-volume-109-issue-7/get-ready-for-clinical-congress-2024-in-san-francisco/",
+    "evidence": "to attend Clinical Congress 2024, October 19–22.",
+    "detail_url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/november-december-2024-volume-109-issue-10/clinical-congress-2024-highlights/"
+   }
+  ],
+  "note": "No past-meetings list page found; facs.org Clinical Congress 2025 URL now shows 2026 content. Dates from ACS Bulletin preview articles (year in article title/URL); detail_url = Bulletin highlights articles."
+ },
+ {
+  "id": "american-psychiatric-nurses-association__clinical-psychopharmacology-institute",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "CPI page links 2026 session recordings (https://e-learning.apna.org/2026-apna-clinical-psychopharmacology-institute) but neither page gives 2026 dates/location."
+ },
+ {
+  "id": "consortium-for-advanced-practice-provide__consortium-for-advanced-practice-providers-annual-",
+  "archive_url": "https://www.apppostgradtraining.com/about-us/events/",
+  "archive_evidence": "7th Annual Conference!",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-07-22",
+    "end": "2024-07-23",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.apppostgradtraining.com/about-us/events/",
+    "evidence": "July 22-23, 2024 ... The Westin San Diego Bayview, San Diego, California",
+    "detail_url": null
+   }
+  ],
+  "note": "Events page is a running news list, not a formal archive. No 2025 conference entry on the page. 2024 had pre-conference workshops July 21. Page also lists a virtual 2021 conference (July 26-27, 2021). Evidence text is as returned by the fetch tool's extraction."
+ },
+ {
+  "id": "society-of-critical-care-medicine__critical-care-congress",
+  "archive_url": "https://www.sccm.org/annual-congress/past-congress-resources",
+  "archive_evidence": "Search past Critical Care Congress locations and resources.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-22",
+    "end": "2026-03-24",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sccm.org/annual-congress/past-congress-resources",
+    "evidence": "March 22-24, 2026 Chicago, Illinois, USA",
+    "detail_url": "https://congress2026.eventscribe.net/"
+   },
+   {
+    "start": "2025-02-23",
+    "end": "2025-02-25",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sccm.org/annual-congress/past-congress-resources",
+    "evidence": "February 23-25, 2025 Orlando, Florida, USA",
+    "detail_url": "https://congress2025.eventscribe.net/"
+   },
+   {
+    "start": "2024-01-21",
+    "end": "2024-01-23",
+    "location": "Phoenix, AZ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sccm.org/annual-congress/past-congress-resources",
+    "evidence": "January 21-23, 2024 Phoenix, Arizona, USA",
+    "detail_url": null
+   }
+  ],
+  "note": "Past Congress Resources page links Pocket Pal PDFs and session-highlight playlists per year. detail_url for 2026/2025 are SCCM eventscribe program sites (seen in search, not fetched)."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__deans-annual-meeting",
+  "archive_url": "https://www.aacnnursing.org/deans-meeting/past-conferences",
+  "archive_evidence": "Past Deans Annual Meetings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-29",
+    "end": "2026-03-31",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": "The Future in Focus: Advancing Deans' Strategic Leadership",
+    "source_url": "https://www.aacnnursing.org/deans-meeting/past-conferences",
+    "evidence": "March 29–31, 2026 The Fairmont | Washington, DC",
+    "detail_url": "https://www.aacnnursing.org/deans-meeting/past-conferences/2026-deans-meeting-presentations"
+   },
+   {
+    "start": "2025-03-29",
+    "end": "2025-03-31",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": "Leading Academic Nursing: Navigating Change with Ingenuity and Courage",
+    "source_url": "https://www.aacnnursing.org/deans-meeting/past-conferences",
+    "evidence": "March 29–31, 2025 The Fairmont | Washington, DC",
+    "detail_url": "https://www.aacnnursing.org/deans-meeting/past-conferences/2025-deans-meeting-presentations"
+   }
+  ],
+  "note": "Oddity: past-conferences page also shows a future 2028 entry (March 19–21, 2028, The Fairmont). No 2024 entry on page."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__delaware-valley-chapter-fall-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "padelvalnapnap.org blocked by robots.txt for WebFetch; not checked further."
+ },
+ {
+  "id": "texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "No organizer page for past District 9 conferences found in search."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__doctoral-education-conference",
+  "archive_url": "https://www.aacnnursing.org/doctoral-conference/past-conferences",
+  "archive_evidence": "2026 Doctoral Education Conference",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-01-14",
+    "end": "2026-01-16",
+    "location": "Bonita Springs, FL",
+    "format": "in person",
+    "theme": "The Future in Focus: Leading Research, Scholarship, and Doctoral Education Forward",
+    "source_url": "https://www.aacnnursing.org/doctoral-conference/past-conferences",
+    "evidence": "January 14–16, 2026 Bonita Springs, FL",
+    "detail_url": null
+   },
+   {
+    "start": "2025-01-16",
+    "end": "2025-01-18",
+    "location": "Coronado, CA",
+    "format": "in person",
+    "theme": "Navigating Complexity in Doctoral Nursing Education: Ingenuity, Impact, Influence",
+    "source_url": "https://www.aacnnursing.org/doctoral-conference/past-conferences",
+    "evidence": "January 16–18, 2025 Coronado, CA",
+    "detail_url": "https://www.aacnnursing.org/doctoral-conference/past-conferences/2025"
+   }
+  ],
+  "note": "Past-conferences page also lists 2028 (January 11-13, 2028, Naples Grande Beach Resort)."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__edge-nurse-anesthesia-educators",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-02-04",
+    "end": null,
+    "location": null,
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://edge26.eventscribe.net/reports/dynamicprogram.asp",
+    "evidence": "Wednesday, February 4, 2026",
+    "detail_url": "https://edge26.eventscribe.net/reports/dynamicprogram.asp"
+   }
+  ],
+  "note": "Only the 2026 EDGE program site (AANA eventscribe) gave a date; start only verbatim, end date and city not verbatim (program suggests Feb 4-7, 2026). aana.com/premier-event/edge/ still shows 2026 Dallas content (conflicts with EDGE 2027 Dallas page?) — unverified. No archive page found."
+ },
+ {
+  "id": "extracorporeal-life-support-organization__elso-annual-conference",
+  "archive_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+  "archive_evidence": "Past ELSO Meetings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-27",
+    "end": "2025-09-30",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+    "evidence": "36th Annual ELSO Conference September 27, 2025 - September 30, 2025 Washington DC",
+    "detail_url": "https://cvent.me/9498r4"
+   },
+   {
+    "start": "2024-09-28",
+    "end": "2024-10-01",
+    "location": "Detroit, MI",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+    "evidence": "35th Annual ELSO Conference September 28, 2024 - October 1, 2024 Detroit",
+    "detail_url": "https://cvent.me/oXB0NK"
+   },
+   {
+    "start": "2023-09-28",
+    "end": "2023-10-01",
+    "location": "Seattle, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+    "evidence": "34th Annual ELSO Conference September 28, 2023 - October 1, 2023 Hyatt Regency Seattle, WA",
+    "detail_url": "https://cvent.me/YBPx05"
+   }
+  ],
+  "note": "CONTRADICTION: elso.org meetings page gives 37th Annual Conference as September 28–October 1, 2026 (Nashville); known edition start is 2026-09-29."
+ },
+ {
+  "id": "elso-latin-america__elso-latam-congress",
+  "archive_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+  "archive_evidence": "Past ELSO Meetings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-11-14",
+    "end": "2024-11-16",
+    "location": "Buenos Aires, Argentina",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+    "evidence": "6th LATAM Conference November 14, 2024 - November 16, 2024 Buenos Aires Argentina",
+    "detail_url": "https://www.elsolatam2024.org/"
+   }
+  ],
+  "note": "Only one LATAM edition on ELSO past-meetings page; 2026 is the VII Congreso (San Jose, Costa Rica, Nov 4-6, 2026)."
+ },
+ {
+  "id": "emergency-nurses-association__emergency-nursing-ena-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-17",
+    "end": "2025-09-20",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ena.org/news-publications/newsroom/new-orleans-announced-host-city-emergency-nursing-2025",
+    "evidence": "From Sept. 17-20, 2025, Emergency Nursing 2025 will draw thousands of emergency nurses to Louisiana",
+    "detail_url": null
+   }
+  ],
+  "note": "No ENA past-conference archive found; ena.org Emergency Nursing 2025 event page returned 403. Date from ENA newsroom announcement (headline names New Orleans)."
+ },
+ {
+  "id": "national-registry-of-emts-american-ambul__ems-association-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "NREMT news (dated March 03, 2026) says the first-ever EMS Association Summit was 'held February 17–19 at the Margaritaville Hotel' (Kansas City, KS) but gives no year next to the dates; not recorded per no-guess rule (likely Feb 2026)."
+ },
+ {
+  "id": "eastern-nursing-research-society__enrs-annual-scientific-sessions",
+  "archive_url": "https://www.enrs-go.org/conference-archives",
+  "archive_evidence": "Conference Archives",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-04-03",
+    "end": "2025-04-04",
+    "location": "Philadelphia, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://enrs.memberclicks.net/2025-conference",
+    "evidence": "37th Annual Scientific Sessions Loews Philadelphia Hotel Philadelphia, PA April 3 – 4, 2025",
+    "detail_url": "https://enrs.memberclicks.net/2025-conference"
+   }
+  ],
+  "note": "2026 (38th, Boston) conference site gave no dates. Archive page's '2023 Conference' link points to the 2024 URL (page error). 2024 conference page not fetched (budget)."
+ },
+ {
+  "id": "elso-european-chapter__euroelso-congress",
+  "archive_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+  "archive_evidence": "Past ELSO Meetings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-05-06",
+    "end": "2026-05-09",
+    "location": "Dublin, Ireland",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+    "evidence": "14th Annual EuroELSO Congress May 6, 2026 - May 9, 2026 Dublin, Ireland",
+    "detail_url": "https://euroelso-congress.com/impressions-euroelso-2026/"
+   },
+   {
+    "start": "2025-04-23",
+    "end": "2025-04-26",
+    "location": "Milan, Italy",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+    "evidence": "13th Annual EuroELSO Congress April 23, 2025 - April 26, 2025 Milan, Italy",
+    "detail_url": null
+   },
+   {
+    "start": "2024-04-24",
+    "end": "2024-04-27",
+    "location": "Krakow, Poland",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+    "evidence": "12th Annual EURO-ELSO Meeting April 24, 2024 - April 27, 2024 Krakow, Poland",
+    "detail_url": null
+   }
+  ],
+  "note": "Listed on the parent ELSO past-meetings page; euroelso-congress.com only links impressions for 2026 and 2023 (Lisbon)."
+ },
+ {
+  "id": "fellows-of-the-aanp__fellows-winter-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "FAANP awards page mentions 'the following Fellows Winter Meeting' only; no dates or past meetings."
+ },
+ {
+  "id": "forum-of-nurses-in-advanced-practice-nj__fnap-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "ENP Network event page covers only 2026 (Nov 13, Fairfield NJ); no past listing."
+ },
+ {
+  "id": "florida-nurse-practitioner-network__fnpn-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Events page links 'FNPN PAST CONFERENCES' (https://fnpn.enpnetwork.com/page/37414-fnpn-past-conferences) but WebFetch blocked by robots.txt; no verbatim text obtained."
+ },
+ {
+  "id": "sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "SCCM conference calendar lists only the 10/19/2026 - 10/20/2026 RWJUH FCCS course; no past course listing."
+ },
+ {
+  "id": "georgia-association-for-nursing-educatio__gane-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-02-12",
+    "end": "2026-02-14",
+    "location": "Lake Oconee (Greensboro), GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://gane.nursingnetwork.com/nursing-news/203680-gane-2026-at-the-ritz-carlton-reynolds-resort-lake-oconee-2-12-26-2-14-26",
+    "evidence": "GANE 2026 at the Ritz-Carlton Reynolds Resort, Lake Oconee: 2/12/26 - 2/14/26",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-conference archive page; 2026 from GANE news post."
+ },
+ {
+  "id": "gerontological-advanced-practice-nurses-__gapna-engage-annual-conference",
+  "archive_url": "https://www.gapna.org/education/past-conferences",
+  "archive_evidence": "2024 GAPNA Conferences",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-11",
+    "end": "2025-09-13",
+    "location": "Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.gapna.org/sites/default/files/documents/conference/2025/gapna2025annualprospectuswapp.pdf",
+    "evidence": "September 11-13, 2025 at the Paris Las Vegas in Las Vegas, NV",
+    "detail_url": "https://library.gapna.org/p/cf/2025-gapna-annual-conference-8528"
+   }
+  ],
+  "note": "Past Conferences page lists 2021-2024 packages (online library) without dates. 2025 dates from GAPNA exhibitor prospectus PDF."
+ },
+ {
+  "id": "gerontological-advanced-practice-nurses-__gapna-pharmacon",
+  "archive_url": "https://www.gapna.org/education/past-conferences",
+  "archive_evidence": "2024 Pharmacology Conference",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-03-06",
+    "end": "2025-03-07",
+    "location": "Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.gapna.org/sites/default/files/documents/conference/2025-pharma/Pharmacology_EP_25.pdf",
+    "evidence": "Pharmacology Conference– Nashville, TN March 6-7, 2025 | Sonesta Nashville",
+    "detail_url": null
+   }
+  ],
+  "note": "Past Conferences page names 2024 Pharmacology Conference (Chicago, IL) and 2023 (Honolulu, HI) without dates. 2025 from exhibit schedule PDF."
+ },
+ {
+  "id": "aorn__global-surgical-conference-expo",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-11",
+    "end": "2026-04-14",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aorn.org/article/aorn-expo-2026-showcases-evidence-based-education-and--hands-on-learning-for-perioperative-nurses",
+    "evidence": "The 2026 AORN Global Surgical Conference & Expo returns April 11–14 in New Orleans",
+    "detail_url": null
+   }
+  ],
+  "note": "No AORN past-conference archive page found; 2026 from AORN article."
+ }
+]

@@ -1,0 +1,631 @@
+[
+ {
+  "id": "pennsylvania-association-of-nurse-anesth__pana-spring-symposium",
+  "found": [
+   {
+    "start": "2023-05-04",
+    "end": "2023-05-07",
+    "location": "Hotel Hershey, Hershey, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.pana.org/page/FutureSymposia",
+    "evidence": "Spring Symposium - May 4-7, 2023, Hotel Hershey",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-05-02",
+    "end": "2024-05-05",
+    "location": "Hotel Hershey, Hershey, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.pana.org/page/FutureSymposia",
+    "evidence": "Spring Symposium - May 2-5, 2024, Hotel Hershey",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Both years listed on the organizer's FutureSymposia page."
+ },
+ {
+  "id": "pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference",
+  "found": [
+   {
+    "start": "2023-11-09",
+    "end": "2023-11-11",
+    "location": "Lancaster Marriott at Penn Square, Lancaster, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://pacnp.enpnetwork.com/nurse-practitioner-news/219645-make-plans-to-join-us-in-lancaster-for-the-2023-annual-conference",
+    "evidence": "educational sessions on Nov. 9-11, 2023 ... join us at the Lancaster Marriott at Penn Square in Lancaster, PA!",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-11-14",
+    "end": "2024-11-16",
+    "location": "Seven Springs Conference Center, Seven Springs, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://pacnp.enpnetwork.com/nurse-practitioner-news/222620-register-to-join-us-at-seven-springs-in-november-",
+    "evidence": "Join us on Nov. 14-16, 2024 at the Seven Springs Conference Center in Seven Springs, PA.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "www.pacnp.org returned 403, so both editions come from PCNP's own news feed on its pacnp.enpnetwork.com subsite (pre-event announcements). The 2023 edition is PCNP's 20th Annual Conference."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__pediatric-virtual-symposium",
+  "found": [
+   {
+    "start": "2023-10-06",
+    "end": "2023-10-06",
+    "location": "Virtual (live online)",
+    "format": "virtual",
+    "theme": "2023 Targeted Topics",
+    "source_url": "https://www.napnap.org/event/pediatric-symposium-2023-targeted-topics/",
+    "evidence": "10/6/2023 @ 11:00 am - 5:00 pm",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-18",
+    "end": "2024-10-18",
+    "location": "Virtual (live online)",
+    "format": "virtual",
+    "theme": "2024 Targeted Topics",
+    "source_url": "https://www.napnap.org/event/pediatric-virtual-symposium-2024-targeted-topics/",
+    "evidence": "10/18/2024 @ 11:00 am - 5:45 pm",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": null,
+  "note": "2025: NAPNAP has a '2025 Pediatric Virtual Symposium' timer post, but no organizer page with the date could be fetched (the napnap.org 2025 event URL returns 404 and the membersuite page is empty). Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "the-nurse-practitioners-of-new-york__pharm-day-conference",
+  "found": [
+   {
+    "start": "2023-11-17",
+    "end": "2023-11-17",
+    "location": "Virtual (Zoom webinar)",
+    "format": "virtual",
+    "theme": "Diabetes, Heart Failure and Metabolic Pharmacology",
+    "source_url": "https://npny.enpnetwork.com/nurse-practitioner-news/220424-join-npny-11-17-annual-pharmacology-conference-virtual-diabetes-heart-failure-and-metabolic-pharmacology",
+    "evidence": "Friday November 17, 2023 ... 7:00 am to 2:15 pm ... Virtual Zoom Webinar",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-11-15",
+    "end": "2024-11-15",
+    "location": "Virtual (Zoom webinar)",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://npny.enpnetwork.com/nurse-practitioner-events/144392-2024-annual-npny-pharmacology-virtual-program-for-nps-earn-6-pharm-ces",
+    "evidence": "Friday, November 15, 2024 at 8:00am ET - 3:30pm ET",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": null,
+  "note": "NPNY calls these editions its 'Annual Pharmacology Conference/Program'; they are taken to be the Pharm Day series, so check that the naming matches the 2026 entry. No 2025 edition is listed on npny.enpnetwork.com. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "philippine-nurses-association-of-america__pnaa-national-convention",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "domain blocked: mypnaa.org pages are disallowed by robots.txt for WebFetch. The 44th (2023, convention cruise) and 45th (2024) conventions exist but could not be verified on the organizer's site."
+ },
+ {
+  "id": "pennsylvania-organization-of-nurse-leade__ponl-annual-nursing-leadership-conference",
+  "found": [
+   {
+    "start": "2023-09-28",
+    "end": "2023-09-29",
+    "location": "Hilton Harrisburg, Harrisburg, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ponl.net/event-5153394",
+    "evidence": "Thursday, September 28, 2023 ... Friday, September 29, 2023 ... Hilton Harrisburg, Harrisburg, PA",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-09-26",
+    "end": "2024-09-27",
+    "location": "Hilton Harrisburg, Harrisburg, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ponl.net/event-5466805",
+    "evidence": "Thursday, September 26, 2024 ... Friday, September 27, 2024 ... Hilton Harrisburg, Harrisburg, PA",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-10-23",
+    "end": "2025-10-24",
+    "location": "Hilton Harrisburg, Harrisburg, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ponl.net/event-5909342",
+    "evidence": "October 23–24, 2025 ... Hilton Harrisburg | Harrisburg, PA",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "All three years come from PONL event-calendar pages."
+ },
+ {
+  "id": "new-jersey-state-nurses-association__professional-conference-annual-meeting",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: njsna.org event listings (current and past views) show only 2026 items. Results under nejsna.memberclicks.net were not used because that 'NJSNA' could be a different association (the school nurses). Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "american-nurses-credentialing-center__professional-development-practice-summit",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "The series did not exist before 2026. An ANCC news release (Apr 16, 2026) calls the Orlando 2026 meeting 'the inaugural Professional Development & Practice (PDP) Summit', and the 2026 page says it 'combines the strengths of the ANCC TTP Symposium, NCPD Summit...' (predecessor meetings, e.g. a 2024 NCPD Summit Oct 28-29 in New Orleans that appears only in page metadata; not recorded). Contradiction: pdpsummit.nursingworld.org also shows 'Highlights from the 2025 Conference' with no date."
+ },
+ {
+  "id": "american-organization-for-nursing-leader__professional-governance-leadership-conference",
+  "found": [
+   {
+    "start": "2023-06-26",
+    "end": "2023-06-27",
+    "location": "Hilton Denver City Center, Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aonl.org/education-events/professional-governance-conference/june26-27-2023",
+    "evidence": "Mon, Jun 26, 2023, 08:00 AM CDT – Tue, Jun 27, 2023, 05:00 PM CDT ... Hilton Denver City Center in Denver, Colo",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-06-27",
+    "end": "2024-06-28",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aonl.org/news/AONL-seeks-professional-governance-abstracts",
+    "evidence": "the 2024 AONL Professional Governance Leadership Conference on June 27-28, 2024 in Chicago",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-08-10",
+    "end": "2025-08-12",
+    "location": "San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aonl.org/news/AONL-AONL-opens-call-for-professional-governance-abstracts",
+    "evidence": "Leadership Conference on Professional Governance on Aug. 10-12, 2025 in San Antonio.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": "https://www.aonl.org/education-events/professional-governance-overview",
+  "note": "The 2024 and 2025 dates come from AONL call-for-abstracts news releases, which announced the dates before the meetings. No venue is named for those two years."
+ },
+ {
+  "id": "hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Not held in those years. The organizer's page calls the Dec 4–6, 2026 Orlando meeting the 'Second annual event', so the first edition was in 2025."
+ },
+ {
+  "id": "national-commission-on-certification-of-__represent-nccpa-summit",
+  "found": [],
+  "still_missing": [
+   2023,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Biennial, so not held in 2023 or 2025. The organizer's page says 'The inaugural Summit was held in 2022', followed by the 2024 event, and the next is Sept 18–19, 2026 in Atlanta."
+ },
+ {
+  "id": "penn-medicine-center-for-resuscitation-s__revive",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable. revive-conference.com shows only 2026 highlights and 2027, and the Penn Center for Resuscitation Science news page mentions REVIVE 2026 with no dates. No organizer page mentions a 2023–2025 edition; the series probably began in 2026, but the organizer does not say so. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-hosted-courses-at-geisinger",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable. SCCM's conference calendar is a rolling list of hosted courses (FCCS etc.) that shows only events from Sept 2026 on; it has no past editions and no archive. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-hosted-courses-elsewhere-in-the-us",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable. SCCM's conference calendar is a rolling list of hosted courses (FCCS etc.) that shows only events from Sept 2026 on; it has no past editions and no archive. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked. This is also a group of many courses rather than a single meeting series."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-new-jersey-chapter-meetings",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable. The SCCM Connect NJ Chapter community page has no event listings (only the mission, leadership and a discussion board). Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-virtual-sessions",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable. SCCM's conference calendar is a rolling list of hosted courses (FCCS etc.) that shows only events from Sept 2026 on; it has no past editions and no archive. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "society-of-dermatology-physician-associa__sdpa-annual-fall-dermatology-conference",
+  "found": [
+   {
+    "start": "2023-10-25",
+    "end": "2023-10-29",
+    "location": "Grand Hyatt Nashville, Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.dermpa.org/events/sdpa-21st-annual-fall-dermatology-conference",
+    "evidence": "Wednesday, October 25 - Monday, October 29, 2023 ... Grand Hyatt Nashville Nashville, Tennessee",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-11-13",
+    "end": "2024-11-17",
+    "location": "Fontainebleau, Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.dermpa.org/events/sdpa-22nd-annual-fall-dermatology-conference",
+    "evidence": "Wednesday, November 13 - Sunday, November 17, 2024 ... Fontainebleau Las Vegas, Nevada",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "21st (2023) and 22nd (2024) Fall conferences. The 2023 page labels Oct 29 a 'Monday', but Oct 29, 2023 was a Sunday; the numeric date was kept."
+ },
+ {
+  "id": "society-of-dermatology-physician-associa__sdpa-annual-summer-dermatology-conference",
+  "found": [
+   {
+    "start": "2023-06-22",
+    "end": "2023-06-25",
+    "location": "Westin Copley Place, Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.dermpa.org/events/2023-sdpa-annual-summer-dermatology-conference",
+    "evidence": "Wednesday, June 22 - Monday, June 25, 2023 ... Westin Copley Place Boston, Massachusetts",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-06-05",
+    "end": "2024-06-09",
+    "location": "Hilton San Diego Bayfront, San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.dermpa.org/events/2024-sdpa-annual-summer-dermatology-conference",
+    "evidence": "Wednesday, June 5 - Monday, June 9, 2024 ... Hilton San Diego Bayfront San Diego, California",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The organizer's weekday labels don't match the calendar: June 22, 2023 was a Thursday and June 25 a Sunday; June 9, 2024 was a Sunday. The numeric dates were kept, but spot-check them if possible."
+ },
+ {
+  "id": "society-of-hospital-medicine__shm-converge",
+  "found": [
+   {
+    "start": "2023-03-26",
+    "end": "2023-03-29",
+    "location": "Austin, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.hospitalmedicine.org/news-publications/press-releases/society-of-hospital-medicine-brings-annual-conference-shm-converge-to-austin-tx/",
+    "evidence": "SHM Converge, to Austin, TX, from March 26-29, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-04-12",
+    "end": "2024-04-15",
+    "location": "San Diego Convention Center, San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://shmconverge.hospitalmedicine.org/wp-content/uploads/2023/11/BIZ-23-0029-Converge-2024-Partner-Catalog-FNL.pdf",
+    "evidence": "April 12–15, 2024 San Diego, California",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": "https://shmabstracts.org/meetings-archive/",
+  "note": "2025 (Las Vegas): the only organizer text found is an SHM Meeting News Central article saying 'The annual conference kicked off on Tuesday, April 23'. That gives no end date, and April 23, 2025 was a Wednesday, so it was not recorded. The web-search budget ran out before a better source could be found."
+ },
+ {
+  "id": "society-of-thoracic-surgeons__sts-annual-meeting",
+  "found": [
+   {
+    "start": "2023-01-21",
+    "end": "2023-01-23",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sts.org/calendar-of-events/sts-59th-annual-meeting",
+    "evidence": "Jan 21–23, 2023 ... San Diego, California",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-01-27",
+    "end": "2024-01-29",
+    "location": "Henry B. González Convention Center, San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sts.org/calendar-of-events/60th-sts-annual-meeting",
+    "evidence": "Jan 27–29, 2024 ... San Antonio, TX",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "59th (2023) and 60th (2024) Annual Meetings."
+ },
+ {
+  "id": "society-for-vascular-nursing__svn-annual-conference",
+  "found": [
+   {
+    "start": "2023-06-14",
+    "end": "2023-06-15",
+    "location": "National Harbor, MD",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.svnnet.org/page/PastConferences",
+    "evidence": "2023 Annual ConferenceJune 14-15, 2023, National Harbor, MD",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "texas-nurses-association__tna-annual-conference",
+  "found": [
+   {
+    "start": "2023-06-09",
+    "end": "2023-06-10",
+    "location": "Hyatt Regency Houston/Galleria, Houston, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.texasnurses.org/events/EventDetails.aspx?id=1713539",
+    "evidence": "6/9/2023 to 6/10/2023 ... Hyatt Regency Houston/Galleria 2626 Sage Rd Houston, Texas 77056",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-05-31",
+    "end": "2024-06-01",
+    "location": "United States (venue not stated by organizer)",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.texasnurses.org/events/EventDetails.aspx?id=1785196&group=",
+    "evidence": "5/31/2024 to 6/1/2024",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The 2023 event page is titled 'TNA Annual Meeting - Houston, TX - June 9 & 10, 2023'. The 2024 'TNA Annual Conference' page gives the dates but only 'United States' as the location ('More information coming soon'), so the 2024 city is unknown and the in-person format is assumed."
+ },
+ {
+  "id": "texas-nurse-practitioners__tnp-annual-conference-and-skills-workshops",
+  "found": [
+   {
+    "start": "2025-09-25",
+    "end": "2025-09-28",
+    "location": "Hilton Anatole, Dallas, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://texasnp.org/tnp2024annualrecap/",
+    "evidence": "Mark your calendar now for next year! September 25-28, 2025 at the Hilton Anatole in Dallas, TX.",
+    "detail_url": "https://texasnp.org/2025annualrecap/",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "The 2025 dates come from the save-the-date on the 2024 recap page. The 2024 recap (texasnp.org/tnp2024annualrecap/) confirms a 2024 edition but states no dates. login.texasnp.org (event registration pages for 2024 and 2025) returned 403 (domain blocked). No 2023 recap page exists (404). Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "texas-nurse-practitioners__tnp-pharmacology-conference",
+  "found": [
+   {
+    "start": "2024-04-18",
+    "end": "2024-04-20",
+    "location": "Hyatt Regency Hill Country Resort, San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://texasnp.org/pharma-2024/",
+    "evidence": "April 18-20, 2024 ... Hyatt Hill Country Resort in San Antonio",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023,
+   2025
+  ],
+  "archive_url": null,
+  "note": "2025: texasnp.org/pharma2025recap/ confirms a 2025 edition but gives only the 2026 dates (April 23-25, 2026). 2023: no organizer page found (texasnp.org/pharma-2023/ returns 404). Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "american-college-of-surgeons__tqip-annual-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Not findable. The facs.org TQIP conference page covers only 2025 onward. tqip24.eventscribe.net returned 403 (domain blocked), and tqip23.eventscribe.net shows only a login page. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "transcultural-nursing-society__transcultural-nursing-society-annual-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable. tcns.org shows only the 52nd (2026) conference and has no past-conference archive. By numbering, the 2023–2025 editions would be the 49th–51st, but none could be verified. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__transform",
+  "found": [
+   {
+    "start": "2023-11-30",
+    "end": "2023-12-02",
+    "location": "Hilton Orlando Buena Vista Palace, Lake Buena Vista, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacnnursing.org/portals/0/pdfs/conferences-webinars/Transform-prospectus.pdf",
+    "evidence": "Transform 2023 Hilton Orlando Buena Vista Palace Lake Buena Vista, FL November 30-December 2, 2023",
+    "detail_url": "https://www.aacnnursing.org/transform/poster-showcase",
+    "via": "organizer"
+   },
+   {
+    "start": "2024-12-05",
+    "end": "2024-12-07",
+    "location": "Hyatt Regency New Orleans, New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=UDMRCRLB",
+    "evidence": "December 5 – 7, 2024 (Thursday – Saturday) ... Hyatt Regency New Orleans New Orleans, Louisiana",
+    "detail_url": "https://www.aacnnursing.org/transform/on-demand-experience",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The past-conferences page skips 2023 and 2024. The 2023 edition comes from AACN's own exhibit prospectus PDF. The 2024 edition comes from AACN's official Transform 2024 call-for-abstracts portal, hosted by the vendor abstractscorecard.com rather than aacnnursing.org; aacnnursing.org confirms the 2024 edition (on-demand access opened Dec 16, 2024) but gives no dates."
+ },
+ {
+  "id": "aacn-southeastern-pennsylvania-chapter__trends-in-acute-critical-care-nursing",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "domain blocked (partly): the chapter homepage shows only TRENDS 2026, and its subpages on aacnsepa.nursingnetwork.com are disallowed by robots.txt for WebFetch."
+ },
+ {
+  "id": "society-for-vascular-surgery__vascular-annual-meeting-vam",
+  "found": [
+   {
+    "start": "2023-06-14",
+    "end": "2023-06-17",
+    "location": "National Harbor, MD",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://vascular.org/vascular-specialists/education-and-meetings/meetings/2023-vascular-annual-meeting",
+    "evidence": "Wed, Jun 14 - Sat, Jun 17, 2023",
+    "detail_url": "https://2023svsvam.eventscribe.net/",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The location 'National Harbor, Maryland' appears on the same SVS meeting page. The past-VAMs page links VAM23 but gives no dates."
+ },
+ {
+  "id": "american-academy-of-physician-associates__we-are-family-medicine",
+  "found": [],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "Not findable. aapa.org event pages show only 2026 and 2027; no 2023 edition is mentioned, and it is unknown whether the series existed in 2023. The web-search budget ran out. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ },
+ {
+  "id": "international-association-for-the-study-__world-congress-on-pain",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "2024: IASP's page mentions the '2024 World Congress on Pain held in Amsterdam' (50th Anniversary) but gives no dates, so it was not recorded. 2023 and 2025: probably not held (the congress seems to run in even years), but no IASP page fetched says it is biennial. Wayback Machine (web.archive.org) returned SITE_BLOCKED in this environment, so no archived copies could be checked."
+ }
+]

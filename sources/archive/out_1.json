@@ -1,0 +1,851 @@
+[
+ {
+  "id": "organization-of-nurse-leaders-of-new-jer__annual-administrative-evening-night-supervisor-vir",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-18",
+    "end": "2025-09-18",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://onlnj.glueup.com/event/8th-annual-administrative-evening-night-supervisor-virtual-conference-116763/",
+    "evidence": "September 18, 2025 (8:00 AM - 3:00 PM / EDT)",
+    "detail_url": "https://onlnj.glueup.com/event/8th-annual-administrative-evening-night-supervisor-virtual-conference-116763/"
+   },
+   {
+    "start": "2024-09-19",
+    "end": "2024-09-19",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://onlnj.glueup.com/event/7th-annual-administrative-evening-night-supervisor-virtual-conference-101101/",
+    "evidence": "September 19, 2024 (8:00 AM - 2:00 PM / EDT)",
+    "detail_url": "https://onlnj.glueup.com/event/7th-annual-administrative-evening-night-supervisor-virtual-conference-101101/"
+   },
+   {
+    "start": "2023-09-14",
+    "end": "2023-09-14",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://onlnj.glueup.com/event/6th-annual-administrative-evening-night-supervisor-virtual-conference-82563/",
+    "evidence": "Sep 14, 2023 (8:00 AM - 2:00 PM) (EDT)",
+    "detail_url": "https://onlnj.glueup.com/event/6th-annual-administrative-evening-night-supervisor-virtual-conference-82563/"
+   }
+  ],
+  "note": "No past-events listing page found; editions taken from ONLNJ's individual Glue Up event pages (8th/7th/6th)."
+ },
+ {
+  "id": "aacn-central-new-jersey-chapter__critical-care-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Chapter site (centralnjaacn.nursingnetwork.com) shows no past-events listing; no prior symposium (8th/7th) page found in search. Nothing recorded."
+ },
+ {
+  "id": "american-academy-of-ambulatory-care-nurs__aaacn-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-05-20",
+    "end": "2025-05-24",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://ajj.swoogo.com/aaacn25/7097283",
+    "evidence": "Join us May 20-24, 2025, at the stunning Sheraton San Diego Hotel & Marina",
+    "detail_url": "https://ajj.swoogo.com/aaacn25/7097283"
+   }
+  ],
+  "note": "No past-conferences page on aaacn.org (homepage and /events/annual-conference list only 2027-2030). 2025 dates from aaacn.org/events/2025-aaacn-annual-conference, which 302-redirects to the official registration microsite ajj.swoogo.com/aaacn25."
+ },
+ {
+  "id": "american-academy-of-dermatology__aad-annual-meeting",
+  "archive_url": "https://www.aad.org/member/meetings/archive",
+  "archive_evidence": "Access the Academy's meetings archive to claim CME, download certificates of attendance, or explore meetings on demand.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-27",
+    "end": "2026-03-31",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aad.org/member/meetings/archive",
+    "evidence": "2026 AAD Annual Meeting. Denver, Colorado. March 27-31, 2026.",
+    "detail_url": "https://meetings.aad.org/AM2026"
+   }
+  ],
+  "note": "CONTRADICTION: meetings.aad.org/AM2026 reads 'San Francisco · Mar 27 – 31' while the aad.org archive page says Denver, Colorado; location taken from the archive page, verify. Archive page does not list 2025/2024 dates."
+ },
+ {
+  "id": "american-academy-of-emergency-nurse-prac__aaenp-national-conference-emergnp",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Old aaenp-natl.org pages for the 2025 conference (emergnp-agenda, 2025agenda, emergnp-2025-wrap-up, jevents detail) all returned HTTP 404 on WebFetch; site appears rebuilt. No past-conferences page found. Nothing recorded."
+ },
+ {
+  "id": "american-association-for-men-in-nursing__aamn-annual-conference",
+  "archive_url": "https://www.aamn.org/national-events",
+  "archive_evidence": "Past Conference Highlights",
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Past Conference Highlights lists '2025 Orlando', '2024 St.Louis', '2023 New Orleans' without dates; aamn.org/2025-annual-conference returned 404. No dates, so no editions recorded."
+ },
+ {
+  "id": "american-academy-of-neurology__aan-annual-meeting",
+  "archive_url": "https://www.aan.com/events/on-demand-and-past-events/",
+  "archive_evidence": "Access on-demand recordings, view past conference dates, and see a summary of past AAN Events.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-18",
+    "end": "2026-04-22",
+    "location": "Chicago, IL",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aan.com/events/on-demand-and-past-events/",
+    "evidence": "2026: April 18-22 Chicago, IL and online",
+    "detail_url": "https://www.aan.com/events/2026-annual-meeting"
+   },
+   {
+    "start": "2025-04-05",
+    "end": "2025-04-09",
+    "location": "San Diego, CA",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aan.com/events/on-demand-and-past-events/",
+    "evidence": "2025: April 5-9 San Diego, CA and online",
+    "detail_url": "https://www.aan.com/events/2025-annual-meeting"
+   },
+   {
+    "start": "2024-04-13",
+    "end": "2024-04-18",
+    "location": "Denver, CO",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aan.com/events/on-demand-and-past-events/",
+    "evidence": "2024: April 13-18 Denver, CO and online",
+    "detail_url": "https://www.aan.com/events/2024-annual-meeting"
+   }
+  ],
+  "note": "2026 also confirmed on its archive page: 'The 78th Annual Meeting took place in Chicago and online April 18-22, 2026.'"
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__aana-annual-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-08-21",
+    "end": "2026-08-25",
+    "location": "Boston, MA",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aana.com/premier-event/annual-congress/",
+    "evidence": "August 21-25, 2026 in Boston and online",
+    "detail_url": "https://aana2026.eventscribe.net/"
+   }
+  ],
+  "note": "No past-congress archive page found on aana.com; premier-event page covers only 2026 and 2027."
+ },
+ {
+  "id": "american-association-of-neuroscience-nur__aann-annual-conference",
+  "archive_url": "https://aann.org/meetings/past-meetings",
+  "archive_evidence": "Past AANN Conferences & Symposia",
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Past page lists 2025 New Orleans, 2024 Salt Lake City, 2023 Orlando (with themes) but no dates; no editions recorded per no-guess rule."
+ },
+ {
+  "id": "american-association-of-nurse-practition__aanp-national-conference",
+  "archive_url": "https://www.aanp.org/events/archive",
+  "archive_evidence": "Events Archive",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-06-23",
+    "end": "2026-06-27",
+    "location": "Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aanp.org/events/archive",
+    "evidence": "June 23, 2026 – June 27, 2026 - Conferences 2026 AANP National Conference",
+    "detail_url": "https://www.aanp.org/events/2026-aanp-national-conference"
+   },
+   {
+    "start": "2025-06-17",
+    "end": "2025-06-22",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aanp.org/events/2025-aanp-national-conference",
+    "evidence": "June 17, 2025 – June 22, 2025 San Diego, California",
+    "detail_url": "https://www.aanp.org/events/2025-aanp-national-conference"
+   }
+  ],
+  "note": "Events Archive first page shows only 2026 items; 2025 from its own event page. A separate on-demand '2026 AANP National Conference — Online' ran July 7–Sept 9, 2026 (not recorded as an edition)."
+ },
+ {
+  "id": "american-academy-of-orthopaedic-surgeons__aaos-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "No past-meetings page found (future-meetings page lists 2027/2028 only). CONTRADICTION: AAOS FAQ page reads 'AAOS 2026 Meeting Dates: Wednesday, March 3 – Saturday, March 6' (New Orleans), but March 3, 2026 is a Tuesday and those weekdays match 2027 (known edition 2027-03-03); page appears stale/mislabelled, so 2026 not recorded."
+ },
+ {
+  "id": "american-academy-of-pediatrics__aap-national-conference-exhibition",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-26",
+    "end": "2025-09-30",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://archive.aapexperience.org/",
+    "evidence": "AAP Experience: National Conference & Exhibition – September 26 -30 2025",
+    "detail_url": "https://archive.aapexperience.org/"
+   }
+  ],
+  "note": "No multi-year past-conferences list found; 2025 from archived official microsite archive.aapexperience.org (location Denver per that page's WebFetch summary, verbatim quote had dates only)."
+ },
+ {
+  "id": "american-academy-of-physician-associates__aapa-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-05-16",
+    "end": "2025-05-20",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/conference-2025/",
+    "evidence": "Join us at AAPA 2025 in Denver May 16-20",
+    "detail_url": "https://www.aapa.org/conference-2025/"
+   }
+  ],
+  "note": "CONTRADICTION on aapa.org/conference-2025: logo text 'Denver/May 17-21' vs body 'Join us at AAPA 2025 in Denver May 16-20' (CME Fri May 16–Tue May 20); body dates used. AAPA 2024 Houston confirmed by aapa.org highlights article but no dates, so omitted. No aapa.org past-conferences page found (pahx.org list is a separate society, not used)."
+ },
+ {
+  "id": "american-academy-of-physician-associates__aapa-executive-leadership-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-03-03",
+    "end": "2025-03-05",
+    "location": "McLean, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2025-executive-leadership-conference/",
+    "evidence": "March 3, 2025 - March 5, 2025",
+    "detail_url": "https://www.aapa.org/cme-calendar/2025-executive-leadership-conference/"
+   },
+   {
+    "start": "2024-02-19",
+    "end": "2024-02-21",
+    "location": "La Jolla, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2024-executive-leadership-conference/",
+    "evidence": "February 19, 2024 - February 21, 2024",
+    "detail_url": "https://www.aapa.org/cme-calendar/2024-executive-leadership-conference/"
+   }
+  ],
+  "note": "No archive page; editions from AAPA CME-calendar pages. 2025 venue Ritz Carlton Tysons Corner; 2024 Hilton La Jolla Torrey Pines."
+ },
+ {
+  "id": "american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-09-28",
+    "end": "2023-09-30",
+    "location": "Arlington, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/aapa-leadership-and-advocacy-summit/",
+    "evidence": "September 28, 2023 - September 30, 2023",
+    "detail_url": "https://www.aapa.org/cme-calendar/aapa-leadership-and-advocacy-summit/"
+   }
+  ],
+  "note": "2025 and 2024 LAS dates not found on aapa.org (only a Facebook post mentioning Sept 18-20, not used; on-demand products exist on cme.aapa.org). Another CME-calendar page lists a March 4-5, 2017 LAS (older)."
+ },
+ {
+  "id": "american-association-of-surgical-physici__aaspa-annual-virtual-surgical-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "aaspa.com homepage mentions only the 2026 conference; no past-conferences page found. 2025 info only on social media/aggregators (not used)."
+ },
+ {
+  "id": "american-association-for-thoracic-surger__aats-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-05-02",
+    "end": "2026-05-05",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://events.aats.org/am26",
+    "evidence": "May 2-5 2026; McCormick Place Lakeside Center | Chicago, IL, USA",
+    "detail_url": "https://events.aats.org/am26"
+   },
+   {
+    "start": "2025-05-02",
+    "end": "2025-05-05",
+    "location": "Seattle, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://events.aats.org/am25",
+    "evidence": "May 2-5 2025; Seattle Convention Center | Summit, Seattle, WA, USA",
+    "detail_url": "https://events.aats.org/am25"
+   }
+  ],
+  "note": "aats.org/events/past-events lists webinars/smaller meetings, not Annual Meetings, so not used as archive_url. Editions from the official microsites for the 106th and 105th meetings."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__academic-nursing-leadership-conference",
+  "archive_url": "https://www.aacnnursing.org/anlc/past-conferences",
+  "archive_evidence": "Past Presentations | Academic Nursing Leadership Conference",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-11-01",
+    "end": "2025-11-03",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": "The Future in Focus: Empowering Academic Nursing Leaders to Drive Innovation",
+    "source_url": "https://www.aacnnursing.org/anlc/past-conferences",
+    "evidence": "November 1–3, 2025",
+    "detail_url": "https://www.aacnnursing.org/anlc/past-conferences/2025-anlc-presentations"
+   },
+   {
+    "start": "2024-10-14",
+    "end": "2024-10-16",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": "Leading Academic Nursing: Navigating Change with Ingenuity and Courage",
+    "source_url": "https://www.aacnnursing.org/anlc/past-conferences",
+    "evidence": "October 14–16, 2024",
+    "detail_url": "https://www.aacnnursing.org/anlc/past-presentations/2024"
+   }
+  ],
+  "note": "archive_evidence is the page title. Past page lists only 2025 and 2024; no 2023 entry."
+ },
+ {
+  "id": "american-college-of-cardiology__acc-27-annual-scientific-session",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-28",
+    "end": "2026-03-30",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.acc.org/latest-in-cardiology/features/meeting-coverage/2026/acc-2026-meeting-coverage",
+    "evidence": "March 28–30, 2026 in New Orleans, LA",
+    "detail_url": "https://www.acc.org/latest-in-cardiology/features/meeting-coverage/2026/acc-2026-meeting-coverage"
+   }
+  ],
+  "note": "No past-meetings page; future-meetings page lists ACC.28/ACC.29 only. ACC.26 from ACC's meeting-coverage page."
+ },
+ {
+  "id": "american-college-of-emergency-physicians__acep-scientific-assembly",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "No past-dates page (Future Dates lists ACEP27–ACEP32). ACEP25 coverage page says 'ACEP25 in Salt Lake City' but no verbatim date range, so omitted."
+ },
+ {
+  "id": "american-college-of-gastroenterology__acg-advanced-practice-provider-leadership-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-24",
+    "end": "2025-10-24",
+    "location": "Phoenix, AZ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://acgmeetings.gi.org/wp-content/uploads/2025/05/25ACG-Schedule-at-a-Glance-web.pdf",
+    "evidence": "Advanced Practice Provider Leadership Summit ... 1:30 pm - 6:00 pm ... Friday, October 24",
+    "detail_url": null
+   }
+  ],
+  "note": "From the ACG 2025 Schedule-at-a-Glance PDF (header 'OCTOBER 24 - 29, 2025 | PHOENIX, ARIZONA'). No archive page."
+ },
+ {
+  "id": "american-college-of-gastroenterology__acg-annual-scientific-meeting-postgraduate-course",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-24",
+    "end": "2025-10-29",
+    "location": "Phoenix, AZ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://acgmeetings.gi.org/wp-content/uploads/2025/05/25ACG-Schedule-at-a-Glance-web.pdf",
+    "evidence": "OCTOBER 24 - 29, 2025 | PHOENIX, ARIZONA",
+    "detail_url": "https://acg2025.eventscribe.net/"
+   }
+  ],
+  "note": "No past-meetings page found (gi.org has future-dates only)."
+ },
+ {
+  "id": "american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-02",
+    "end": "2026-03-04",
+    "location": "Houston, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://ache2025.eventscribe.net/",
+    "evidence": "March 2–4, 2026, Monday–Wednesday | Houston, Texas",
+    "detail_url": "https://ache2025.eventscribe.net/"
+   }
+  ],
+  "note": "No past-Congress page; congress.ache.org now shows 2027. 2026 dates from ACHE's eventscribe microsite (URL slug says ache2025 but page is titled 2026 Congress)."
+ },
+ {
+  "id": "american-college-of-nurse-midwives__acnm-annual-meeting-exhibition",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "www.midwife.org/past-acnm-meetings-and-events returned 404; midwife.org/conferences and annualmeeting.midwife.org now show only 2026. Search snippets cite '70th Annual Meeting | October 10-13, 2025' but not verifiable on a fetched page, so omitted."
+ },
+ {
+  "id": "american-college-of-physicians__acp-internal-medicine-meeting",
+  "archive_url": "https://www.acponline.org/about-acp/who-we-are-what-we-do/history-of-acp/annual-sessioninternal-medicine-meeting-dates-and-locations",
+  "archive_evidence": "Annual Session/Internal Medicine Meeting - Dates and Locations",
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Archive table gives year/city/registration (2025 New Orleans, 2024 Boston) without day-level dates; 2026 San Francisco shown on annualmeeting.acponline.org without verbatim dates. No editions recorded."
+ },
+ {
+  "id": "american-college-of-rheumatology__acr-convergence",
+  "archive_url": "https://acrabstracts.org/meetings-archive/",
+  "archive_evidence": "Abstracts are available for the meetings listed below. Click on an entry to view abstracts for that meeting.",
+  "proceedings_url": "https://acrabstracts.org/meetings-archive/",
+  "past_editions": [
+   {
+    "start": "2025-10-24",
+    "end": "2025-10-29",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://acrabstracts.org/meetings/acr-convergence-2025/",
+    "evidence": "October 24-29, 2025. Chicago, Illinois.",
+    "detail_url": "https://acrabstracts.org/meetings/acr-convergence-2025/"
+   },
+   {
+    "start": "2024-11-14",
+    "end": "2024-11-19",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://acrabstracts.org/meetings-archive/",
+    "evidence": "ACR Convergence 2024 November 14-19, 2024 • Washington, DC",
+    "detail_url": null
+   },
+   {
+    "start": "2023-11-10",
+    "end": "2023-11-15",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://acrabstracts.org/meetings-archive/",
+    "evidence": "ACR Convergence 2023 November 10-15, 2023 • San Diego, CA",
+    "detail_url": null
+   }
+  ],
+  "note": "acrabstracts.org is ACR's official abstracts site. Meetings-archive page did not yet list 2025; 2025 from its own abstracts page."
+ },
+ {
+  "id": "rwjbarnabas-health__acute-and-critical-care-app-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-06-24",
+    "end": "2024-06-25",
+    "location": "Piscataway, NJ",
+    "format": "hybrid",
+    "theme": "2ND ANNUAL",
+    "source_url": "https://www.rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf",
+    "evidence": "Monday, June 24, 2024 ... Virtual/Online; Tuesday, June 25, 2024 ... Ernest Mario School of Pharmacy, 160 Frelinghuysen Road, Piscataway, NJ",
+    "detail_url": "https://www.rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf"
+   },
+   {
+    "start": "2023-06-27",
+    "end": "2023-06-28",
+    "location": "Piscataway, NJ",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/events/event/?event=32770",
+    "evidence": "Tuesday, June 27th, 2023 - Day 1 (Virtual) and Wednesday, June 28th, 2023 - Day 2 (Hands On)",
+    "detail_url": "https://www.rwjbh.org/events/event/?event=32770"
+   }
+  ],
+  "note": "The series' org_url PDF is itself the 2nd annual (2024) program. 1st annual (2023) titled 'The First Annual Acute and Critical Care Symposium'. No later edition or archive page found. theme field on 2024 holds edition label only."
+ },
+ {
+  "id": "american-diabetes-association__ada-scientific-sessions",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-06-05",
+    "end": "2026-06-08",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://diabetes.org/newsroom/press-releases/american-diabetes-association-debuts-2026-scientific-sessions-driving",
+    "evidence": "The American Diabetes Association® (ADA) will host the 2026 Scientific Sessions from June 5-8 in New Orleans.",
+    "detail_url": "https://professional.diabetes.org/sites/dpro/files/2026-05/SS26_Program_Digital_051326.pdf"
+   }
+  ],
+  "note": "No past-meetings archive found on professional.diabetes.org/meetings."
+ },
+ {
+  "id": "academy-of-neonatal-nursing__advanced-practice-neonatal-nurses-conference",
+  "archive_url": "https://www.academyonline.org/page/PastConferences",
+  "archive_evidence": "Past ANN Conferences - Academy of Neonatal Nursing",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-04-09",
+    "end": "2025-04-12",
+    "location": "Austin, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.academyonline.org/page/PastConferences",
+    "evidence": "Spring 2025 National Advanced Practice Neonatal Nurses Conference ... Austin, Texas ... April 9-12, 2025",
+    "detail_url": "https://www.academyonline.org/page/Spring2025AP"
+   },
+   {
+    "start": "2024-03-06",
+    "end": "2024-03-09",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.academyonline.org/page/PastConferences",
+    "evidence": "Spring 2024 National Advanced Practice Neonatal Nurses Conference ... San Diego, California ... March 6-9, 2024",
+    "detail_url": null
+   },
+   {
+    "start": "2023-04-26",
+    "end": "2023-04-29",
+    "location": "Honolulu, HI",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.academyonline.org/page/PastConferences",
+    "evidence": "Spring 2023 National Advanced Practice Neonatal Nurses Conference ... Honolulu, Hawaii ... April 26-29, 2023",
+    "detail_url": null
+   }
+  ],
+  "note": "archive_evidence is page title. Spring 2026 edition (apparently April 21-24, 2026, Hawaii per program page) is not on the past page and no single verbatim date/location line was obtained, so omitted."
+ },
+ {
+  "id": "advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ",
+  "archive_url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/",
+  "archive_evidence": "Past Summits",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-10",
+    "end": "2025-09-13",
+    "location": "Philadelphia, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/",
+    "evidence": "Annual Conference (Summit) – S18E1 ... September 10-13, 2025 ... Sonesta Philadelphia Rittenhouse Square, Philadelphia, PA",
+    "detail_url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/presentations/?pid=55984"
+   },
+   {
+    "start": "2024-09-18",
+    "end": "2024-09-21",
+    "location": "Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/",
+    "evidence": "Annual Conference (Summit) – S17E1 ... September 18-21, 2024 ... Sonesta Hotel Nashville Airport, Nashville, TN",
+    "detail_url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/presentations/?pid=51864"
+   },
+   {
+    "start": "2023-09-13",
+    "end": "2023-09-16",
+    "location": "Park City, UT",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/",
+    "evidence": "September 13-16, 2023 ... Grand Summit Hotel, Park City - Canyons Village",
+    "detail_url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/presentations/?pid=48710"
+   }
+  ],
+  "note": "Past Summits page already lists the known 2026 edition (S19E1, Sept 16-19, 2026, San Antonio)."
+ },
+ {
+  "id": "american-geriatrics-society__ags-annual-scientific-meeting",
+  "archive_url": "https://meeting.americangeriatrics.org/about/past-future-meetings",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Past & Future Meetings page (found via search) could not be fetched: WebFetch read timeout x2 and fetch error x1; AGS press-release page also failed to fetch. No verbatim text, so archive_evidence null and no editions."
+ },
+ {
+  "id": "american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "2026 Amplify Informatics Conference page (amia.org/education-events/2026-amplify-informatics-conference) confirms Denver, CO and that it concluded, but no dates were extractable; omitted. AMIA calendar-archive page is paginated (399 events) and first page shows only 2019-2021."
+ },
+ {
+  "id": "american-medical-informatics-association__amia-annual-symposium",
+  "archive_url": "https://amia.org/education-events/calendar-archive",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-11-15",
+    "end": "2025-11-19",
+    "location": "Atlanta, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://amia.org/education-events/amia-2025-annual-symposium",
+    "evidence": "November 15 - 19 Atlanta, GA",
+    "detail_url": "https://amia.org/education-events/amia-2025-annual-symposium"
+   }
+  ],
+  "note": "Year for 2025 comes from the page title 'AMIA 2025 Annual Symposium' (date line itself has no year); matches AMIA prospectus title '2025 Annual Symposium November 15–19, 2025 Atlanta, Georgia'. Calendar archive exists but WebFetch saw only first page (2019-2021 items); archive_evidence null."
+ },
+ {
+  "id": "american-society-of-extracorporeal-techn__amsect-international-conference",
+  "archive_url": "https://amsect.org/events-education/international-conference-archive",
+  "archive_evidence": "2025 // 63rd AmSECT International",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-25",
+    "end": "2026-03-29",
+    "location": "Austin, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://amsect.org/events-education/international-conference-archive/recap-2026",
+    "evidence": "held March 25–29, 2026 at the Austin Marriott Downtown in Austin, Texas",
+    "detail_url": "https://amsect.org/events-education/international-conference-archive/recap-2026"
+   },
+   {
+    "start": "2025-03-19",
+    "end": "2025-03-23",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://amsect.org/events-education/international-conference-archive",
+    "evidence": "March 19-23, 2025",
+    "detail_url": "https://amsect.org/events-education/international-conference/recap-2025"
+   },
+   {
+    "start": "2024-03-21",
+    "end": "2024-03-24",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://amsect.org/events-education/international-conference-archive",
+    "evidence": "March 21-24, 2024",
+    "detail_url": "https://amsect.org/events-education/amsect-62nd-international-conference"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "american-nurses-enterprise-ana-ancc__ane-research-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-06",
+    "end": "2025-10-07",
+    "location": "Atlanta, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://magnetpathwaycon.nursingworld.org/ana-enterprise-research-symposium-1",
+    "evidence": "October 6 & 7 Atlanta, GA",
+    "detail_url": "https://magnetpathwaycon.nursingworld.org/ana-enterprise-research-symposium-1"
+   }
+  ],
+  "note": "Year from page title 'Research Symposium | 2025 Magnet Pathway Conference' (date line has no year). 2024 symposium was in New Orleans per an ANA news release but dates not fetched. No archive page."
+ },
+ {
+  "id": "aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-02-05",
+    "end": "2025-02-08",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf",
+    "evidence": "DENVER, CO ◊ FEBRUARY 5 - 8, 2025",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-20",
+    "end": "2024-03-23",
+    "location": "Phoenix, AZ",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://aahpm.org/assembly/attend",
+    "evidence": "Mark your calendars for March 20-23, 2024. Virtually or in Phoenix, AZ",
+    "detail_url": null
+   }
+  ],
+  "note": "Same event as series american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care (duplicate series). The 2026 edition (known there as 2026-03-04) is not in this series' known_editions but no verbatim organizer text for 2026 was fetched. aahpm.org/assembly/attend is stale (still promotes 2024). No past-assemblies page found."
+ },
+ {
+  "id": "american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-02-05",
+    "end": "2025-02-08",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf",
+    "evidence": "DENVER, CO ◊ FEBRUARY 5 - 8, 2025",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-20",
+    "end": "2024-03-23",
+    "location": "Phoenix, AZ",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://aahpm.org/assembly/attend",
+    "evidence": "Mark your calendars for March 20-23, 2024. Virtually or in Phoenix, AZ",
+    "detail_url": null
+   }
+  ],
+  "note": "Duplicate of series aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care; consider merging. No past-assemblies page found."
+ },
+ {
+  "id": "organization-of-nurse-leaders-of-new-jer__annual-meeting-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-30",
+    "end": "2026-05-01",
+    "location": "Princeton, NJ",
+    "format": "in person",
+    "theme": "From Idea to Execution: Lead, Innovate and Elevate",
+    "source_url": "https://www.onlnj.org/annual-meeting-conference",
+    "evidence": "April 30th and May 1, 2026, at the Princeton Marriott at Forrestal, 100 College Road East, Princeton NJ, 08540",
+    "detail_url": null
+   },
+   {
+    "start": "2025-04-10",
+    "end": "2025-04-11",
+    "location": "Princeton, NJ",
+    "format": "in person",
+    "theme": "Limitless Transformational Leadership",
+    "source_url": "https://onlnj.glueup.com/event/2025-annual-meeting-conference-123479/",
+    "evidence": "April 10 & 11, 2025 (EDT) Princeton Marriott at Forrestal",
+    "detail_url": "https://www.onlnj.org/sites/default/files/content-files/2025%20Program.pdf"
+   },
+   {
+    "start": "2024-05-02",
+    "end": "2024-05-03",
+    "location": "Princeton, NJ",
+    "format": "in person",
+    "theme": "Nurse Leaders Cultivating a Healthy Work Environment",
+    "source_url": "https://onlnj.glueup.com/event/2024-annual-meeting-conference-100740/",
+    "evidence": "May 2 & 3, 2024 (EDT) Princeton Marriott at Forrestal",
+    "detail_url": "https://onlnj.glueup.com/event/2024-annual-meeting-conference-100740/"
+   }
+  ],
+  "note": "known_editions was empty; 2026 edition (Apr 30-May 1, 2026) is past and was not listed. onlnj.org page links the 2025 Program Book PDF."
+ },
+ {
+  "id": "nebraska-nurse-practitioners__annual-nnp-conference-exhibition",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-02-19",
+    "end": "2026-03-19",
+    "location": "Online",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://nebraskanp.enpnetwork.com/nurse-practitioner-events/146605-34th-annual-nebraska-nurse-practitioner-conference",
+    "evidence": "Thursday, February 19, 2026 at 7:00am CT - Thursday, March 19, 2026 at 11:45pm CT",
+    "detail_url": "https://nebraskanp.enpnetwork.com/nurse-practitioner-events/146605-34th-annual-nebraska-nurse-practitioner-conference"
+   }
+  ],
+  "note": "CAUTION: the 34th conference event page lists 'Webinar/Online' and a month-long window, which may be the online/access listing rather than the in-person dates; a separate '34th Annual ... Exhibitor Day' event page exists (not fetched). Verify before publishing."
+ },
+ {
+  "id": "organization-of-nurse-leaders-of-new-jer__annual-nurse-leader-and-aspiring-nurse-leader-conf",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-25",
+    "end": "2023-10-25",
+    "location": "Monroe Township, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://onlnj.glueup.com/event/annual-nurse-leader-and-aspiring-nurse-leader-program-85919/",
+    "evidence": "October 25, 2023, 8:00 AM - 3:30 PM (EDT) Forsgate Country Club, 375 Forsgate Drive, Monroe Township, New Jersey",
+    "detail_url": "https://onlnj.glueup.com/event/annual-nurse-leader-and-aspiring-nurse-leader-program-85919/"
+   }
+  ],
+  "note": "Earlier edition titled 'Annual Nurse Leader and Aspiring Nurse Leader Program'. 2024/2025 editions not found; older 'Workshop' and 'Virtual Workshop' Glue Up pages exist (not fetched). No archive page."
+ }
+]

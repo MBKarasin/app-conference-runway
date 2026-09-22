@@ -1,0 +1,81 @@
+{
+  "group": "F",
+  "series": [
+    {
+      "id": "cooper-app-symposium",
+      "name": "Advanced Practice Provider Symposium",
+      "org": "Cooper University Health Care",
+      "org_url": "https://www.cooperhealth.org/center/center-advanced-practice/news-and-events-app",
+      "professions": ["NP", "PA", "CRNA", "CNS"],
+      "specialty": ["advanced practice", "acute care", "primary care"],
+      "audience": ["clinician", "leader"],
+      "kind": "symposium",
+      "region": "near",
+      "recurrence": "annual, typically September",
+      "editions": [
+        {
+          "start": "2024-11-01", "end": "2024-11-01",
+          "location": "DoubleTree by Hilton Cherry Hill, Cherry Hill, NJ",
+          "format": "in person", "theme": null, "call": {"status": "closed"},
+          "source_url": "https://www.cooperhealth.org/sites/default/files/CME%202024/APP%20Symposium/2024%20APP%20Symposium-Schedule-final%20vertical.pdf",
+          "evidence": "Cooper University Health Care 2024 Advanced Practice Provider Symposium Friday, November 1, 2024",
+          "checked": "2026-09-21", "source_reviewed": true
+        },
+        {
+          "start": "2025-09-23", "end": "2025-09-23",
+          "location": "DoubleTree by Hilton Cherry Hill, Cherry Hill, NJ",
+          "format": "in person", "theme": null, "call": {"status": "closed"},
+          "source_url": "https://www.cooperhealth.org/sites/default/files/2026-03/Cooper-University-Health-Care-2025-Annual-Report.pdf",
+          "evidence": "2025 Advanced Practice Provider (APP) Symposium on September 23",
+          "checked": "2026-09-21", "source_reviewed": true
+        },
+        {
+          "start": "2026-09-23",
+          "end": "2026-09-23",
+          "location": "DoubleTree by Hilton Cherry Hill, Cherry Hill, NJ",
+          "format": "in person",
+          "theme": null,
+          "call": {"status": "none"},
+          "source_url": "https://cooperhealth.cloud-cme.com/course/courseoverview?EID=34905&P=0&formid=232",
+          "evidence": "Wednesday, September 23, 2026, 7:00 AM - 3:30 PM, DoubleTree by Hilton Cherry Hill, Cherry Hill, NJ",
+          "checked": "2026-09-21",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "id": "stony-brook-app-symposium",
+      "name": "Stony Brook Medicine Advanced Practice Provider Symposium",
+      "org": "Stony Brook Medicine",
+      "org_url": "https://cme.stonybrookmedicine.edu/",
+      "professions": ["NP", "PA"],
+      "specialty": ["advanced practice", "acute care", "primary care"],
+      "audience": ["clinician", "leader"],
+      "kind": "symposium",
+      "region": "near",
+      "recurrence": "annual, typically September",
+      "editions": [
+        {
+          "start": "2025-09-25", "end": "2025-09-25",
+          "location": "MART Auditorium, Stony Brook, NY",
+          "format": "hybrid", "theme": "Building Bridges and Breaking Barriers", "call": {"status": "closed"},
+          "source_url": "https://cme.stonybrookmedicine.edu/continuing-medical-education/conferences/254/stony-brook-medicine-inaugural-advanced-practice-providers-symposium-building-bridges-and-breaking/9/25/2025",
+          "evidence": "Thursday, September 25, 2025 ... MART Auditorium - Stony Brook, NY ... Online Streaming Available",
+          "checked": "2026-09-21", "source_reviewed": true
+        },
+        {
+          "start": "2026-09-24",
+          "end": "2026-09-24",
+          "location": "MART Auditorium, Stony Brook, NY",
+          "format": "hybrid",
+          "theme": null,
+          "call": {"status": "none"},
+          "source_url": "https://cme.stonybrookmedicine.edu/continuing-medical-education/conferences/283/stony-brook-medicine-2nd-annual-advanced-practice-provider-symposium-2026/9/24/2026",
+          "evidence": "Stony Brook Medicine 2nd Annual Advanced Practice Provider Symposium - 2026 ... Thursday, September 24, 2026 ... MART Auditorium - Stony Brook, NY ... Online Streaming Available",
+          "checked": "2026-09-21",
+          "source_reviewed": true
+        }
+      ]
+    }
+  ]
+}

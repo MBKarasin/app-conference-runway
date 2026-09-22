@@ -1,0 +1,512 @@
+{
+  "group": "global-expansion-2026-09-21",
+  "series": [
+    {
+      "name": "NPAO Annual Conference",
+      "org": "Nurse Practitioners' Association of Ontario (NPAO)",
+      "org_url": "https://npao.org/",
+      "professions": [
+        "NP"
+      ],
+      "specialty": [
+        "primary care",
+        "advanced practice"
+      ],
+      "audience": [
+        "clinician",
+        "leader"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-09-23",
+          "end": "2026-09-25",
+          "location": "Toronto, ON, Canada",
+          "format": "in person",
+          "source_url": "https://npao.org/wp-content/uploads/2026/02/2026-NEW-Sponsorship-Prospectus-Annual-Conference.pdf",
+          "evidence": "NPAO ANNUAL CONFERENCE ... September 23 - 25, 2026 ... Sheraton Toronto Airport & Conference Centre",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "NPAM Annual Conference",
+      "org": "Nurse Practitioner Association of Manitoba (NPAM)",
+      "org_url": "https://nursepractitioner.ca/",
+      "professions": [
+        "NP"
+      ],
+      "specialty": [
+        "advanced practice"
+      ],
+      "audience": [
+        "clinician",
+        "leader"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-10-23",
+          "end": "2026-10-23",
+          "location": "Winnipeg, MB, Canada",
+          "format": "in person",
+          "source_url": "https://nursepractitioner.ca/news-events/2026-npam-conference/",
+          "evidence": "The 2026 16th annual NPAM Conference will be held in-person at the Victoria Inn (1808 Wellington Ave, Winnipeg) on Friday, October 23, 2026.",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "CANO/ACIO Annual Conference",
+      "org": "Canadian Association of Nurses in Oncology (CANO/ACIO)",
+      "org_url": "https://www.cano-acio.ca/",
+      "professions": [
+        "NP",
+        "Nursing"
+      ],
+      "specialty": [
+        "oncology"
+      ],
+      "audience": [
+        "clinician",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-10-22",
+          "end": "2026-10-25",
+          "location": "Montréal, QC, Canada",
+          "format": "in person",
+          "source_url": "https://www.cano-acio.ca/page/cano2026",
+          "evidence": "38th Annual CANO/ACIO Conference, taking place October 22–25, 2026",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "NZNO Primary Health Care Nurses Symposium",
+      "org": "New Zealand Nurses Organisation (NZNO)",
+      "org_url": "https://www.nzno.org.nz/",
+      "professions": [
+        "NP",
+        "Nursing"
+      ],
+      "specialty": [
+        "primary care"
+      ],
+      "audience": [
+        "clinician",
+        "leader"
+      ],
+      "kind": "symposium",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-10-09",
+          "end": "2026-10-10",
+          "location": "Christchurch, New Zealand",
+          "format": "in person",
+          "theme": "Protecting our future in Primary Health - Stronger Together",
+          "source_url": "https://www.nzno.org.nz/groups/colleges_sections/colleges/college_of_primary_health_care_nurses/upcoming_events",
+          "evidence": "Venue: Rydges Christchurch, 30 Latimer Square, Christchurch Dates: 9-10 October 2026",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "NZNO AGM and Conference",
+      "org": "New Zealand Nurses Organisation (NZNO)",
+      "org_url": "https://www.nzno.org.nz/",
+      "professions": [
+        "Nursing"
+      ],
+      "specialty": [
+        "nursing leadership"
+      ],
+      "audience": [
+        "clinician",
+        "leader"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-09-22",
+          "end": "2026-09-24",
+          "location": "Rotorua, New Zealand",
+          "format": "in person",
+          "source_url": "https://na.eventscloud.com/ereg/index.php?eventid=877502",
+          "evidence": "Tuesday 22, Wednesday 23, and Thursday 24 September 2026 Novotel Rotorua Lakeside",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "ANZSPM Biennial Conference",
+      "org": "Australia and New Zealand Society of Palliative Medicine (ANZSPM)",
+      "org_url": "https://www.anzspm.org.au/",
+      "professions": [
+        "NP",
+        "Nursing",
+        "Multidisciplinary"
+      ],
+      "specialty": [
+        "palliative care"
+      ],
+      "audience": [
+        "clinician"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "biennial",
+      "np_pa_basis": "The organizer offers nurse practitioner registration for this palliative medicine meeting.",
+      "editions": [
+        {
+          "start": "2026-09-24",
+          "end": "2026-09-26",
+          "location": "Launceston, Australia",
+          "format": "in person",
+          "source_url": "https://www.racp.edu.au/news-and-events/all-events/event-details?id=1681d7af-bbb2-61c2-b08b-ff01001c3177",
+          "evidence": "Date: 24 Sep 2026 at 8:00 AM to 26 Sep 2026 at 6:00 PM",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "ICN Congress",
+      "org": "International Council of Nurses (ICN)",
+      "org_url": "https://www.icn.ch/",
+      "professions": [
+        "NP",
+        "Nursing"
+      ],
+      "specialty": [
+        "global health",
+        "nursing leadership"
+      ],
+      "audience": [
+        "clinician",
+        "leader",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "biennial",
+      "editions": [
+        {
+          "start": "2027-07-08",
+          "end": "2027-07-11",
+          "location": "Taipei, Taiwan",
+          "format": "in person",
+          "source_url": "https://www.icn.ch/events/icn-congress-2027-worlds-largest-international-gathering-nurses",
+          "evidence": "08 July - 11 July 2027 ... Taipei",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "ACNAP Congress",
+      "org": "European Society of Cardiology, Association of Cardiovascular Nursing & Allied Professions (ACNAP)",
+      "org_url": "https://www.escardio.org/",
+      "professions": [
+        "NP",
+        "PA",
+        "Nursing",
+        "Multidisciplinary"
+      ],
+      "specialty": [
+        "cardiology"
+      ],
+      "audience": [
+        "clinician",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2027-06-11",
+          "end": "2027-06-12",
+          "location": "Sophia Antipolis, France",
+          "format": "in person",
+          "source_url": "https://www.escardio.org/events/congresses/acnap-congress/",
+          "evidence": "ACNAP 2027 11 - 12 Jun 2027 Sophia Antipolis, France",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "Congresso Brasileiro de Enfermagem (CBEn)",
+      "org": "Associação Brasileira de Enfermagem (ABEn)",
+      "org_url": "https://www.abennacional.org.br/",
+      "professions": [
+        "Nursing"
+      ],
+      "specialty": [
+        "nursing leadership",
+        "research"
+      ],
+      "audience": [
+        "clinician",
+        "leader",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-11-08",
+          "end": "2026-11-12",
+          "location": "Brasília, Brazil",
+          "format": "in person",
+          "source_url": "https://eventosaben.org.br/76cben/",
+          "evidence": "8 a 12 de novembro de 2026, em Brasília (DF)",
+          "source_reviewed": true,
+          "checked": "2026-09-21",
+          "source_language": "Portuguese"
+        }
+      ]
+    },
+    {
+      "name": "SOBENFEE Wound Care Congress",
+      "org": "Sociedade Brasileira de Enfermagem em Feridas e Estética (SOBENFEE)",
+      "org_url": "https://www.sobenfee.org.br/",
+      "professions": [
+        "Nursing"
+      ],
+      "specialty": [
+        "wound care"
+      ],
+      "audience": [
+        "clinician",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-11-25",
+          "end": "2026-11-27",
+          "location": "São Paulo, Brazil",
+          "format": "in person",
+          "source_url": "https://www.sobenfee.org.br/congresso",
+          "evidence": "25 A 27 NOVEMBRO ... CENTRO DE CONVENÇÕES FREI CANECA ... SÃO PAULO",
+          "source_reviewed": true,
+          "checked": "2026-09-21",
+          "source_language": "Portuguese"
+        }
+      ]
+    },
+    {
+      "name": "Qatar Health Congress",
+      "org": "Hamad Medical Corporation",
+      "org_url": "https://hamad.qa/",
+      "professions": [
+        "NP",
+        "PA",
+        "Nursing",
+        "Multidisciplinary"
+      ],
+      "specialty": [
+        "critical care",
+        "trauma"
+      ],
+      "audience": [
+        "clinician",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "np_pa_basis": "Includes trauma nursing, critical care and interdisciplinary clinical education.",
+      "editions": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-14",
+          "location": "Doha, Qatar",
+          "format": "in person",
+          "source_url": "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx",
+          "evidence": "The Qatar Health Congress 2026, held from 11 to 14 November at the Sheraton-Grand Doha Resort & Convention Hotel",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "Padjadjaran International Nursing Conference",
+      "org": "Universitas Padjadjaran Faculty of Nursing",
+      "org_url": "https://pinc.fkep.unpad.ac.id/",
+      "professions": [
+        "Nursing"
+      ],
+      "specialty": [
+        "research",
+        "nursing education"
+      ],
+      "audience": [
+        "clinician",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-11-06",
+          "end": "2026-11-07",
+          "location": "Jatinangor, Indonesia",
+          "format": "in person",
+          "source_url": "https://pinc.fkep.unpad.ac.id/",
+          "evidence": "The conference will be held on November 6–7, 2026, at Suharyati Hall, Faculty of Nursing, Universitas Padjadjaran, Jatinangor",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "African-Diaspora Nursing Alliance Ghana Conference",
+      "org": "African-Diaspora Nursing Alliance (A-DNA)",
+      "org_url": "https://campaign.g-dna.org/",
+      "professions": [
+        "Nursing"
+      ],
+      "specialty": [
+        "global health",
+        "nursing leadership"
+      ],
+      "audience": [
+        "clinician",
+        "leader"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": null,
+      "editions": [
+        {
+          "start": "2027-01-07",
+          "end": "2027-01-09",
+          "location": "Accra, Ghana",
+          "format": "in person",
+          "source_url": "https://campaign.g-dna.org/register",
+          "evidence": "7–9 January 2027 ... Kofi Ohene-Konadu Auditorium, UPSA, Accra, Ghana",
+          "source_reviewed": true,
+          "checked": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "name": "Japan Society of Nurse Practitioner Annual Meeting",
+      "org": "Japan Society of Nurse Practitioner",
+      "org_url": "https://js-np.jp/",
+      "professions": [
+        "NP"
+      ],
+      "specialty": [
+        "advanced practice"
+      ],
+      "audience": [
+        "clinician",
+        "academic"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual",
+      "editions": [
+        {
+          "start": "2026-11-21",
+          "end": "2026-11-23",
+          "location": "Osaka, Japan",
+          "format": "in person",
+          "source_url": "https://jsnp2026.jp/program.html",
+          "evidence": "会期：2026年11月21日（土）～11月23日（月・祝）／会場：森ノ宮医療大学（大阪市住之江区）",
+          "note": "Organizer index lists November 21–22, while the dedicated 2026 program lists November 21–23; the program date is used here. Verify before travel.",
+          "source_reviewed": true,
+          "checked": "2026-09-21",
+          "source_language": "Japanese"
+        }
+      ]
+    },
+    {
+      "name": "Global Nursing Education Innovation Conference",
+      "org": "Peking University School of Nursing",
+      "org_url": "https://nursing.bjmu.edu.cn/",
+      "professions": [
+        "Nursing"
+      ],
+      "specialty": [
+        "nursing education"
+      ],
+      "audience": [
+        "academic",
+        "leader"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": null,
+      "editions": [
+        {
+          "start": "2026-10-10",
+          "end": "2026-10-11",
+          "location": "Beijing, China",
+          "format": "in person",
+          "source_url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/a57ea09151854531af704e88ad5c7107.htm",
+          "evidence": "2026年10月10日至11日举办“2026全球护理教育创新与高质量发展国际会议”",
+          "source_reviewed": true,
+          "checked": "2026-09-21",
+          "source_language": "Chinese"
+        }
+      ]
+    },
+    {
+      "name": "Interdisciplinary Nursing Research Forum",
+      "org": "Peking University School of Nursing",
+      "org_url": "https://nursing.bjmu.edu.cn/",
+      "professions": [
+        "Nursing"
+      ],
+      "specialty": [
+        "nursing research"
+      ],
+      "audience": [
+        "academic",
+        "clinician"
+      ],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": null,
+      "editions": [
+        {
+          "start": "2026-10-17",
+          "end": "2026-10-18",
+          "location": "Zhangzhou, China",
+          "format": "in person",
+          "source_url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm",
+          "evidence": "2026跨学科护理研究学术论坛”将于2026年10月17 - 18日在福建漳州市芗江酒店举办",
+          "source_reviewed": true,
+          "checked": "2026-09-21",
+          "source_language": "Chinese"
+        }
+      ]
+    }
+  ]
+}

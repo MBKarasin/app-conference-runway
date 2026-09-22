@@ -1,0 +1,707 @@
+[
+ {
+  "id": "aacn-central-new-jersey-chapter__critical-care-symposium",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Chapter's nursingnetwork.com page shows only the 9th (Sept 17-18, 2026); a 7th Annual symposium page exists but event date/location are behind login. 2023-2025 editions not findable on organizer site; wayback blocked."
+ },
+ {
+  "id": "american-academy-of-ambulatory-care-nurs__aaacn-annual-conference",
+  "found": [
+   {
+    "start": "2023-04-11",
+    "end": "2023-04-15",
+    "location": "Omni Orlando Resort at ChampionsGate, Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://aaacn.org/sites/default/files/documents/conference/2023/AAACN_23_call_poster_abstracts.pdf",
+    "evidence": "2023 Annual Conference April 11-15, 2023 Omni Orlando Resort at ChampionsGate Orlando, FL",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-04-02",
+    "end": "2024-04-06",
+    "location": "Hilton Chicago, Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aaacn.org/sites/default/files/documents/conference/2024/AAACN_24_call_poster_abstracts.pdf",
+    "evidence": "2024 Annual Conference April 2-6, 2024 Hilton Chicago Chicago, IL",
+    "detail_url": "https://library.aaacn.org/conferences/248/view",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-academy-of-dermatology__aad-annual-meeting",
+  "found": [
+   {
+    "start": "2023-03-17",
+    "end": "2023-03-21",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aad.org/member/meetings/archive/handouts",
+    "evidence": "2023 Annual Meeting, New Orleans, LA, March 17-21",
+    "detail_url": "https://www.aad.org/member/meetings/archive/handouts",
+    "via": "organizer"
+   },
+   {
+    "start": "2024-03-08",
+    "end": "2024-03-12",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aad.org/member/meetings/archive/handouts",
+    "evidence": "2024 Annual Meeting, San Diego, CA, March 8-12",
+    "detail_url": "https://www.aad.org/member/meetings/archive/handouts",
+    "via": "organizer"
+   },
+   {
+    "start": "2025-03-07",
+    "end": "2025-03-11",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aad.org/member/meetings/archive/handouts",
+    "evidence": "2025 Annual Meeting, Orlando, FL, March 7-11",
+    "detail_url": "https://www.aad.org/member/meetings/archive/handouts",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": "https://www.aad.org/member/meetings/archive/handouts",
+  "note": "Given archive_url (/member/meetings/archive) shows only 2026/2027; dates found on the handouts archive page."
+ },
+ {
+  "id": "american-academy-of-emergency-nurse-prac__aaenp-national-conference-emergnp",
+  "found": [
+   {
+    "start": "2023-03-31",
+    "end": "2023-04-02",
+    "location": "Hempstead, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aaenp-natl.org/emergnp-2023-call-for-content",
+    "evidence": "to be held March 31 - April 2, 2023 in Hempstead, New York.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "2024 and 2025 EmergNP pages on aaenp-natl.org (2024-emergnp-homepage, 2024-registration, 2024speakers, emergnp-2025-wrap-up, 2025-registration) now return 404 after site relaunch; wayback blocked. Not findable."
+ },
+ {
+  "id": "american-association-for-men-in-nursing__aamn-annual-conference",
+  "found": [
+   {
+    "start": "2023-10-19",
+    "end": "2023-10-21",
+    "location": "Astor Crowne Plaza, New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aamn.org/2023-annual-conference",
+    "evidence": "OCTOBER 19-21, 2023 ... the Astor Crowne Plaza ... NEW ORLEANS, LOUISIANA",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-17",
+    "end": "2024-10-19",
+    "location": "Royal Sonesta Chase Park Plaza Hotel, St. Louis, MO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aamn.org/2024-annual-conference",
+    "evidence": "OCTOBER 17-19, 2024",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": null,
+  "note": "2025: national-events page lists '2025 Orlando' and /events names Wyndham Lake Buena Vista at Disney Springs Resort (44th Annual Conference) but no dated text; /2025-annual-conference returns 404."
+ },
+ {
+  "id": "american-academy-of-neurology__aan-annual-meeting",
+  "found": [
+   {
+    "start": "2023-04-22",
+    "end": "2023-04-27",
+    "location": "Boston, MA",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aan.com/events/on-demand-and-past-events/",
+    "evidence": "2023: April 22-27 Boston, MA and online",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__aana-annual-congress",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "aana.com event pages for 2023/2024 Congress return 404 (calendar.aana.com redirects to /events). Only undated-range evidence: FAANA program book 'ANNUAL CONGRESS | SAN DIEGO | AUGUST 3, 2024' (single day, not the span) and 2025 attendee list header 'ANNUAL CONGRESS + AUGUST 9-13 + NASHVILLE, TN' (no year in text) — not recorded per rules."
+ },
+ {
+  "id": "american-association-of-neuroscience-nur__aann-annual-conference",
+  "found": [
+   {
+    "start": "2023-03-18",
+    "end": "2023-03-21",
+    "location": "Loews Sapphire Falls Resort at Universal Orlando, Orlando, FL",
+    "format": "in person",
+    "theme": "Celebrating the Value and Impact of Neuroscience Nurses",
+    "source_url": "https://aann.org/uploads/Meetings/2023/AANN23_ConBro_WEB.pdf",
+    "evidence": "Saturday, March 18–Tuesday, March 21, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-03-17",
+    "end": "2024-03-19",
+    "location": "Hyatt Regency Salt Lake City, Salt Lake City, UT",
+    "format": "in person",
+    "theme": "Train the Brain: Advancing Neuroscience Nursing Education",
+    "source_url": "https://aann.org/uploads/Meetings/2024/24_AC_Abstract_Submission_Instructions.pdf",
+    "evidence": "March 17-19, 2024 Hyatt Regency Salt Lake City, Salt Lake City, UT",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-03-16",
+    "end": "2025-03-18",
+    "location": "Sheraton New Orleans Hotel, New Orleans, LA",
+    "format": "in person",
+    "theme": "Brainstorming: Inspiration, Innovation, and All that Jazz",
+    "source_url": "https://aann.org/uploads/Meetings/2025/AANN25_Annual_Conf_Bro_v4.pdf",
+    "evidence": "Sunday, March 16, to Tuesday, March 18, 2025",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Themes/cities also on https://aann.org/meetings/past-meetings."
+ },
+ {
+  "id": "american-association-of-nurse-practition__aanp-national-conference",
+  "found": [
+   {
+    "start": "2023-06-20",
+    "end": "2023-06-25",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aanp.org/news-feed/follow-your-must-a-recap-of-the-2023-aanp-national-conference",
+    "evidence": "The American Association of Nurse Practitioners® (AANP) 2023 National Conference took place from June 20-25 in New Orleans, Louisiana",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-06-25",
+    "end": "2024-06-30",
+    "location": "Music City Center, Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://storage.aanp.org/www/documents/events/2024-AANP-Natl-Conf_Brochure.pdf",
+    "evidence": "June 25-30, 2024 Nashville",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Given archive_url lists only 2025+."
+ },
+ {
+  "id": "american-academy-of-orthopaedic-surgeons__aaos-annual-meeting",
+  "found": [
+   {
+    "start": "2023-03-07",
+    "end": "2023-03-10",
+    "location": "Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-2023-annual-meeting-online-press-kit/",
+    "evidence": "the AAOS 2023 Annual Meeting in Las Vegas, March 7-10, 2023.",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-02-12",
+    "end": "2024-02-16",
+    "location": "San Francisco, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-2024-annual-meeting-online-press-kit/",
+    "evidence": "as presented at the AAOS 2024 Annual Meeting in San Francisco, February 12-16, 2024.",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-03-10",
+    "end": "2025-03-14",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-2025-annual-meeting-press-kit/",
+    "evidence": "the AAOS 2025 Annual Meeting in San Diego, March 10-14, 2025.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-academy-of-pediatrics__aap-national-conference-exhibition",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "publications.aap.org (AAP News articles on 2023/2024 NCE) returned 403 — domain blocked. aapexperience23/24.eventscribe.net and downloads.aap.org schedule PDF show no dates. Not recorded."
+ },
+ {
+  "id": "american-academy-of-physician-associates__aapa-conference",
+  "found": [
+   {
+    "start": "2023-05-20",
+    "end": "2023-05-24",
+    "location": "Music City Center, Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/wp-content/uploads/2022/06/2023-AAPA-Exhibitor-Rules-and-Regulations-1.pdf",
+    "evidence": "AAPA CONFERENCE 2023 May 20-24 Exhibit Dates: May 20-22 Music City Center Nashville",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-05-18",
+    "end": "2024-05-22",
+    "location": "Houston, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://aapa.org/conference/special-events/aapa-2024-savenger-hunt",
+    "evidence": "May 18 – 22, 2024 | Houston, TX",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-academy-of-physician-associates__aapa-executive-leadership-conference",
+  "found": [
+   {
+    "start": "2023-03-06",
+    "end": "2023-03-08",
+    "location": "The Ritz Carlton, Tysons Corner, McLean, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/executive-leadership-conference-2023/",
+    "evidence": "March 6, 2023 - March 8, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit",
+  "found": [],
+  "still_missing": [
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "AAPA cme-calendar has 2023 LAS (Sept 28-30, 2023, already on file) but no 2024/2025 pages found; cme.aapa.org on-demand 'LAS 2024'/'LAS 2025' products confirm editions were held but show no live dates/location. WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-association-of-surgical-physici__aaspa-annual-virtual-surgical-cme-conference",
+  "found": [
+   {
+    "start": "2023-08-30",
+    "end": "2023-09-01",
+    "location": "Mass General Brigham, Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aaspa.com/2023-annual-cme-meeting",
+    "evidence": "Wednesday, August 30 – friday, September 1, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-08-28",
+    "end": "2024-08-30",
+    "location": "Mass General Brigham Assembly Row, 399 Revolution Drive, Somerville, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aaspa.com/2024-annual-cme-meeting",
+    "evidence": "Wednesday, August 28 – friday, august 30, 2024",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": null,
+  "note": "2023 and 2024 editions were the in-person 'Annual CME Meeting' (not virtual). 2025: https://www.aaspa.com/2025-annual-cme-meeting is disallowed by robots.txt for the fetch tool — treated as blocked."
+ },
+ {
+  "id": "american-association-for-thoracic-surger__aats-annual-meeting",
+  "found": [
+   {
+    "start": "2023-05-06",
+    "end": "2023-05-09",
+    "location": "Los Angeles Convention Center, Los Angeles, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://events.aats.org/am23",
+    "evidence": "May 6 - 9, 2023",
+    "detail_url": "https://events.aats.org/am23",
+    "via": "organizer"
+   },
+   {
+    "start": "2024-04-27",
+    "end": "2024-04-30",
+    "location": "Metro Toronto Convention Centre, Toronto, ON, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://events.aats.org/am24",
+    "evidence": "April 27 - 30, 2024",
+    "detail_url": "https://events.aats.org/am24",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "103rd (2023) and 104th (2024) Annual Meetings."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__academic-nursing-leadership-conference",
+  "found": [
+   {
+    "start": "2023-10-28",
+    "end": "2023-10-30",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacnnursing.org/news-data/all-news/excellence-recognized-at-the-2023-academic-nursing-leadership-conference",
+    "evidence": "Excellence Recognized at the 2023 Academic Nursing Leadership Conference ... The conference was held October 28-30, in Washington, DC.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Year comes from the news release headline on the same page; past-conferences page lists only 2024-2025."
+ },
+ {
+  "id": "american-college-of-cardiology__acc-27-annual-scientific-session",
+  "found": [
+   {
+    "start": "2023-03-04",
+    "end": "2023-03-06",
+    "location": "New Orleans, LA",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.acc.org/-/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/ACC23/2023/01/ACC23WCC-Social-Media-Toolkit-GENERAL-UPLOADED-Jan-23-2023.ashx/1000",
+    "evidence": "March 4 – 6, 2023 | New Orleans",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-04-06",
+    "end": "2024-04-08",
+    "location": "Atlanta, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/03/01/01/42/Editors-Corner-ACC24-Here-at-Last",
+    "evidence": "ACC.24 in Atlanta from April 6-8",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-03-29",
+    "end": "2025-03-31",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.expo.acc.org/ACC25/CUSTOM/PDF25/ACC25ScheduleAtAGlance.pdf",
+    "evidence": "MARCH 29 – 31, 2025 · CHICAGO",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "2023 was ACC.23 together with World Congress of Cardiology (ACC.23/WCC), hybrid. 2024 year taken from meeting name 'ACC.24'."
+ },
+ {
+  "id": "american-college-of-emergency-physicians__acep-scientific-assembly",
+  "found": [
+   {
+    "start": "2023-10-09",
+    "end": "2023-10-12",
+    "location": "Philadelphia, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.emergencyphysicians.org/press-releases/2023/9-11-23-the-emergency-medicine-community-will-come-together-for-acep23",
+    "evidence": "will meet October 9-12 in Philadelphia, Pennsylvania for ACEP23",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-09-29",
+    "end": "2024-10-02",
+    "location": "Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.emergencyphysicians.org/press-releases/2024/acep24-worlds-largest-emergency-medicine-conference-heads-to-las-vegas",
+    "evidence": "during ACEP24, the world's largest emergency medicine conference, presented by the American College of Emergency Physicians (ACEP) from September 29-October 2 in Las Vegas.",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-09-07",
+    "end": "2025-09-10",
+    "location": "Salt Lake City, UT",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.emergencyphysicians.org/press-releases/2025/8-26-25-emergency-medicines-premier-meeting-acep25-set-for-salt-lake-city",
+    "evidence": "ACEP25, the world's largest emergency medicine conference, presented by the American College of Emergency Physicians (ACEP) from September 7-10 in Salt Lake City.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Sources are ACEP's own press site (emergencyphysicians.org; acep.org newsroom redirects there). 2023 dates corroborated by acep.org CME form 'ACEP23 Scientific Assembly October 9-12, 2023'."
+ },
+ {
+  "id": "american-college-of-gastroenterology__acg-advanced-practice-provider-leadership-summit",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Organizer page shows only the 2026 summit; no 2023/2024 edition found on acgmeetings.gi.org (summit may not have existed before 2025 — unconfirmed). WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-college-of-gastroenterology__acg-annual-scientific-meeting-postgraduate-course",
+  "found": [
+   {
+    "start": "2023-10-20",
+    "end": "2023-10-25",
+    "location": "Vancouver Convention Centre, Vancouver, BC, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://acgmeetings.gi.org/wp-content/uploads/2023/04/ACG_2023_Abstract_Submission_Instructions_0208rev2.pdf",
+    "evidence": "OCTOBER 20-25, 2023 | Vancouver, Canada",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-25",
+    "end": "2024-10-30",
+    "location": "Pennsylvania Convention Center, Philadelphia, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://acgmeetings.gi.org/wp-content/uploads/2024/08/ACG2024_Prelim_Program_web.pdf",
+    "evidence": "OCTOBER 25–30, 2024 | PHILADELPHIA, PA",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "congress.ache.org and ACHE news releases show only 2027+; no archive page found. WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-college-of-nurse-midwives__acnm-annual-meeting-exhibition",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "annualmeeting.midwife.org and midwife.org show only the 2026 meeting (plus a 2025 photo gallery link without dates). WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-college-of-physicians__acp-internal-medicine-meeting",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "ACP history page (given archive_url) lists cities only — 2023 San Diego, 2024 Boston, 2025 New Orleans — with no dates; annualmeeting.acponline.org shows only 2026-2027. Dates not recorded."
+ },
+ {
+  "id": "rwjbarnabas-health__acute-and-critical-care-app-symposium",
+  "found": [],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": null,
+  "note": "Organizer PDF is the 2nd Annual (June 24-25, 2024, already on file). No 2025 edition page found on rwjbh.org. WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-diabetes-association__ada-scientific-sessions",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "professional.diabetes.org shows only 2027+; diabetes.org newsroom lists no 2023-2025 sessions releases; diabetesjournals.org (ADA abstract supplements) returned 403 — domain blocked."
+ },
+ {
+  "id": "american-geriatrics-society__ags-annual-scientific-meeting",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Given archive_url (meeting.americangeriatrics.org/about/past-future-meetings) timed out on 3 attempts; homepage shows only 2026 virtual meeting. Not findable this run."
+ },
+ {
+  "id": "american-hospital-association__aha-leadership-summit",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "leadershipsummit.aha.org shows only 2026/2027; no past-summits page (404). WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati",
+  "found": [
+   {
+    "start": "2025-03-10",
+    "end": "2025-03-13",
+    "location": "Pittsburgh, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://amia.org/education-events/amia-2024-informatics-summit",
+    "evidence": "Save the date for Informatics Summit 2025 in Pittsburgh, March 10-13.",
+    "detail_url": "https://amia.org/education-events/amia-2025-informatics-summit",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Amplify is the 2027 merger of Informatics Summit + Clinical Informatics Conference; 2025 recorded as the Informatics Summit. AMIA 2023/2024 Informatics Summit pages exist but give no dates; calendar-archive covers only 2019-2021."
+ },
+ {
+  "id": "american-medical-informatics-association__amia-annual-symposium",
+  "found": [
+   {
+    "start": "2024-11-09",
+    "end": "2024-11-13",
+    "location": "San Francisco, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://amia.org/education-events/amia-2024-annual-symposium",
+    "evidence": "Join thousands of colleagues in San Francisco, November 9-13 for the AMIA 2024 Annual Symposium.",
+    "detail_url": "https://amia.org/education-events/amia-2024-annual-symposium",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "2023: organizer page (amia-2023-annual-symposium) mentions New Orleans but gives no meeting dates; calendar-archive stops at 2021."
+ },
+ {
+  "id": "american-society-of-extracorporeal-techn__amsect-international-conference",
+  "found": [],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "Given archive_url lists only 2024-2026; no 2023 (61st) page found. WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-nurses-enterprise-ana-ancc__ane-research-symposium",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Organizer page describes only 2025/2026; 2024 symposium infographic PDF has no date/location. 2023 not found. WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care",
+  "found": [],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "aahpm.org annual-assembly page shows only 2026; guessed past-assemblies path returned 403. 2023 not found. WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ },
+ {
+  "id": "american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care",
+  "found": [],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "Duplicate series of the AAHPM/HPNA Annual Assembly; same result — 2023 not found on aahpm.org. WebSearch budget exhausted mid-run; web.archive.org blocked by fetch tool so no wayback lookups possible."
+ }
+]

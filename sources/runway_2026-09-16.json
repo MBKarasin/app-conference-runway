@@ -1,0 +1,2794 @@
+{
+ "rows": [
+  {
+   "id": "cnj-aacn",
+   "s": "2026-09-17",
+   "e": "2026-09-17",
+   "dl": "Sep 17",
+   "name": "9th Critical Care Symposium",
+   "org": "AACN Central New Jersey Chapter",
+   "where": "The Grand Marquis, Old Bridge, NJ",
+   "reg": "near",
+   "track": "acute",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": "Caring with Purpose: Improving Outcomes in Critical Care",
+   "src": [
+    "G",
+    1
+   ],
+   "url": "https://centralnjaacn.nursingnetwork.com/nursing-events/152248-aacn-central-new-jersey-chapter-s-9th-critical-care-symposium"
+  },
+  {
+   "id": "nln-2026",
+   "s": "2026-09-23",
+   "e": "2026-09-25",
+   "dl": "Sep 23–25",
+   "name": "NLN Education Summit",
+   "org": "National League for Nursing",
+   "where": "Washington Hilton, Washington, DC",
+   "reg": "near",
+   "track": "edu",
+   "call": {
+    "st": "none",
+    "t": "No open call"
+   },
+   "theme": "Beyond the Storm: Reshaping Resilience and Recovery",
+   "src": [
+    "G",
+    2
+   ],
+   "url": "https://summit.nln.org/"
+  },
+  {
+   "id": "elso-37",
+   "s": "2026-09-29",
+   "e": "2026-10-01",
+   "dl": "Sep 29–Oct 1",
+   "name": "ELSO Annual Conference (37th)",
+   "org": "Extracorporeal Life Support Organization",
+   "where": "Gaylord Opryland, Nashville, TN",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": "Relentless Curiosity",
+   "note": "Pre-conference Sep 28",
+   "src": [
+    "G",
+    3
+   ],
+   "url": "https://web.cvent.com/event/ae2756fc-1703-417b-b139-53619b253cbf/summary"
+  },
+  {
+   "id": "iccm-app",
+   "s": "2026-10-13",
+   "e": "2026-10-13",
+   "dl": "Oct 13",
+   "name": "ICCM Summit for Advanced Practice Providers",
+   "org": "Institute for Critical Care Medicine, Mount Sinai",
+   "where": "Mount Sinai Hospital, Hess Building, New York, NY",
+   "reg": "near",
+   "track": "acute",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "note": "Simulation workshops: POCUS, vascular access",
+   "src": [
+    "G",
+    4
+   ],
+   "url": "https://critcaresummit.com/"
+  },
+  {
+   "id": "aacn-anlc",
+   "s": "2026-10-25",
+   "e": "2026-10-27",
+   "dl": "Oct 25–27",
+   "name": "Academic Nursing Leadership Conference",
+   "org": "AACN (Colleges of Nursing)",
+   "where": "JW Marriott, Washington, DC",
+   "reg": "near",
+   "track": "edu",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    5
+   ],
+   "url": "https://www.aacnnursing.org/anlc"
+  },
+  {
+   "id": "elso-latam",
+   "s": "2026-11-04",
+   "e": "2026-11-06",
+   "dl": "Nov 4–6",
+   "name": "ELSO LATAM Congress (VII)",
+   "org": "ELSO Latin America",
+   "where": "Hotel Intercontinental, San José, Costa Rica",
+   "reg": "intl",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed Jul 14"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    6
+   ],
+   "url": "https://www.elso.org/ecmo-education/elso-meetings.aspx"
+  },
+  {
+   "id": "nonpf-fall",
+   "s": "2026-11-05",
+   "e": "2026-11-06",
+   "dl": "Nov 5–6",
+   "name": "NONPF Fall Conference",
+   "org": "National Organization of Nurse Practitioner Faculties",
+   "where": "Tucson, AZ",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "none",
+    "t": "No call posted"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    7
+   ],
+   "url": "https://www.nonpf.org/page/events"
+  },
+  {
+   "id": "fnap",
+   "s": "2026-11-13",
+   "e": "2026-11-13",
+   "dl": "Nov 13",
+   "name": "FNAP Annual Conference",
+   "org": "Forum of Nurses in Advanced Practice (NJ)",
+   "where": "DoubleTree by Hilton, Fairfield, NJ",
+   "reg": "near",
+   "track": "app",
+   "call": {
+    "st": "closed",
+    "t": "Closed Aug 14"
+   },
+   "theme": "Breaking Barriers to NP Practice",
+   "note": "6.5 CE · early-bird registration through Sep 30",
+   "src": [
+    "G",
+    8
+   ],
+   "url": "https://fnap.enpnetwork.com/nurse-practitioner-events/150126-fnap-2026-annual-conference"
+  },
+  {
+   "id": "onlnj-apn",
+   "s": "2026-11-19",
+   "e": "2026-11-19",
+   "dl": "Nov 19",
+   "name": "APN Conference",
+   "org": "Organization of Nurse Leaders of New Jersey",
+   "where": "NJ Hospital Association, Princeton, NJ",
+   "reg": "near",
+   "track": "app",
+   "call": {
+    "st": "none",
+    "t": "Invited program"
+   },
+   "theme": "So, You Want to Be an Effective Leader",
+   "src": [
+    "G",
+    9
+   ],
+   "url": "https://onlnj.glueup.com/event/apn-conference-188869/"
+  },
+  {
+   "id": "aacn-transform",
+   "s": "2026-12-03",
+   "e": "2026-12-05",
+   "dl": "Dec 3–5",
+   "name": "Transform",
+   "org": "AACN (Colleges of Nursing)",
+   "where": "JW Marriott, Indianapolis, IN",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed Aug 17"
+   },
+   "theme": "Embracing Technology, Building Connections, and Preparing Practice-Ready Graduates",
+   "src": [
+    "G",
+    10
+   ],
+   "url": "https://www.aacnnursing.org/transform"
+  },
+  {
+   "id": "aacn-doctoral",
+   "s": "2027-01-12",
+   "e": "2027-01-14",
+   "dl": "Jan 12–14",
+   "name": "Doctoral Education Conference",
+   "org": "AACN (Colleges of Nursing)",
+   "where": "Hotel del Coronado, Coronado, CA",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed Aug 24"
+   },
+   "theme": "From Discovery to Impact: Scholarship in Doctoral Nursing Education",
+   "src": [
+    "G",
+    11
+   ],
+   "url": "https://www.aacnnursing.org/doctoral-conference"
+  },
+  {
+   "id": "imsh",
+   "s": "2027-01-23",
+   "e": "2027-01-27",
+   "dl": "Jan 23–27",
+   "name": "IMSH 2027",
+   "org": "Society for Simulation in Healthcare",
+   "where": "Ernest N. Morial Convention Center, New Orleans, LA",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed May 27"
+   },
+   "theme": "In Concert (proposed theme)",
+   "src": [
+    "G",
+    12
+   ],
+   "url": "https://imsh2027.org/about"
+  },
+  {
+   "id": "sts-63",
+   "s": "2027-01-28",
+   "e": "2027-01-31",
+   "dl": "Jan 28–31",
+   "name": "STS Annual Meeting (63rd)",
+   "org": "Society of Thoracic Surgeons",
+   "where": "San Diego Convention Center, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed Aug 31"
+   },
+   "theme": "Excellence. Evidence. Impact.",
+   "src": [
+    "G",
+    13
+   ],
+   "url": "https://www.sts.org/calendar-of-events/63rd-sts-annual-meeting"
+  },
+  {
+   "id": "aanp-hpc",
+   "s": "2027-02-07",
+   "e": "2027-02-09",
+   "dl": "Feb 7–9",
+   "name": "Health Policy Conference",
+   "org": "American Association of Nurse Practitioners",
+   "where": "Grand Hyatt Washington, Washington, DC",
+   "reg": "near",
+   "track": "app",
+   "call": {
+    "st": "none",
+    "t": "Invited program"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    14
+   ],
+   "url": "https://www.aanp.org/events/2027-hpc"
+  },
+  {
+   "id": "aacn-deans",
+   "s": "2027-03-14",
+   "e": "2027-03-16",
+   "dl": "Mar 14–16",
+   "name": "Deans Annual Meeting",
+   "org": "AACN (Colleges of Nursing)",
+   "where": "Fairmont Georgetown, Washington, DC",
+   "reg": "near",
+   "track": "edu",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "tags": [
+    "Deans & directors only"
+   ],
+   "src": [
+    "G",
+    16
+   ],
+   "url": "https://www.aacnnursing.org/deans-meeting"
+  },
+  {
+   "id": "njena-ecc",
+   "s": "2027-03-17",
+   "e": "2027-03-19",
+   "dl": "Mar 17–19",
+   "name": "NJ Emergency Care Conference",
+   "org": "New Jersey Emergency Nurses Association",
+   "where": "Hard Rock Hotel & Casino, Atlantic City, NJ",
+   "reg": "near",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Speakers: closes Sep 18",
+    "d": "2026-09-18"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    17
+   ],
+   "url": "https://www.newjerseyena.org/2027-call-for-speakers"
+  },
+  {
+   "id": "amsect-65",
+   "s": "2027-03-17",
+   "e": "2027-03-21",
+   "dl": "Mar 17–21",
+   "name": "AmSECT International Conference (65th)",
+   "org": "American Society of ExtraCorporeal Technology",
+   "where": "Nashville, TN (venue not yet posted)",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Closes Nov 23",
+    "d": "2026-11-23",
+    "dag": "amsect"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    18
+   ],
+   "url": "https://amsect.org/events-education/international-conference"
+  },
+  {
+   "id": "njln",
+   "s": "2027-03-31",
+   "e": "2027-04-01",
+   "dl": "Mar 31–Apr 1",
+   "name": "NJLN Annual Convention",
+   "org": "New Jersey League for Nursing",
+   "where": "Harrah's Resort, Atlantic City, NJ",
+   "reg": "near",
+   "track": "edu",
+   "call": {
+    "st": "open",
+    "t": "Podium & poster: closes Oct 5",
+    "d": "2026-10-05"
+   },
+   "theme": "The Art & Science of Nursing: Where Knowledge, Compassion, and Leadership Converge",
+   "src": [
+    "G",
+    19
+   ],
+   "url": "https://www.njln.org/call_for_abstracts.php"
+  },
+  {
+   "id": "enrs-39",
+   "s": "2027-03-31",
+   "e": "2027-04-02",
+   "dl": "Mar 31–Apr 2",
+   "name": "ENRS Annual Scientific Sessions (39th)",
+   "org": "Eastern Nursing Research Society",
+   "where": "Loews Philadelphia, PA",
+   "reg": "near",
+   "track": "edu",
+   "call": {
+    "st": "open",
+    "t": "Papers, posters, symposia: closes Oct 28 · student posters Dec 18",
+    "d": "2026-10-28",
+    "df": "2026-12-18"
+   },
+   "theme": "Forging Bridges: Connecting to Advanced Nursing Science in a Changing Research Landscape",
+   "src": [
+    "G",
+    32
+   ],
+   "url": "https://enrs2027conference.oa-event.com/abstracts"
+  },
+  {
+   "id": "revive",
+   "s": "2027-04-10",
+   "e": "2027-04-10",
+   "dl": "Apr 10",
+   "name": "REVIVE 2027",
+   "org": "Penn Medicine Center for Resuscitation Science",
+   "where": "Jordan Medical Education Center, Philadelphia, PA",
+   "reg": "near",
+   "track": "acute",
+   "fmt": "In person & virtual",
+   "call": {
+    "st": "none",
+    "t": "Invited faculty"
+   },
+   "theme": "Cutting Edge Resuscitation for the Real World",
+   "src": [
+    "G",
+    20
+   ],
+   "url": "https://www.revive-conference.com/"
+  },
+  {
+   "id": "aorn",
+   "s": "2027-04-10",
+   "e": "2027-04-13",
+   "dl": "Apr 10–13",
+   "name": "Global Surgical Conference & Expo",
+   "org": "AORN",
+   "where": "Philadelphia, PA",
+   "reg": "near",
+   "track": "spec",
+   "call": {
+    "st": "tba",
+    "t": "Not posted on expo page"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    21
+   ],
+   "url": "https://www.aorn.org/surgical-expo"
+  },
+  {
+   "id": "ishlt-47",
+   "s": "2027-04-14",
+   "e": "2027-04-17",
+   "dl": "Apr 14–17",
+   "name": "ISHLT Annual Meeting (47th)",
+   "org": "International Society for Heart and Lung Transplantation",
+   "where": "ICC Sydney, Australia",
+   "reg": "intl",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Closes Sep 29",
+    "d": "2026-09-29"
+   },
+   "theme": null,
+   "note": "Pre-conference day Apr 13",
+   "src": [
+    "G",
+    22
+   ],
+   "url": "https://www.ishlt.org/annual-meeting"
+  },
+  {
+   "id": "nonpf-53",
+   "s": "2027-04-14",
+   "e": "2027-04-18",
+   "dl": "Apr 14–18",
+   "name": "NONPF Annual Conference (53rd)",
+   "org": "National Organization of Nurse Practitioner Faculties",
+   "where": "Sheraton New Orleans, LA",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "open",
+    "t": "Abstracts, DNP projects, reviewers: close Sep 23",
+    "d": "2026-09-23"
+   },
+   "theme": "Igniting Innovation and Excellence in NP Education",
+   "src": [
+    "G",
+    23
+   ],
+   "url": "https://web.cvent.com/event/9758b4f4-66e4-45f6-9375-8e4a198a80c0/summary"
+  },
+  {
+   "id": "euroelso",
+   "s": "2027-04-28",
+   "e": "2027-05-01",
+   "dl": "Apr 28–May 1",
+   "name": "EuroELSO Congress",
+   "org": "ELSO European chapter",
+   "where": "Austria Center Vienna, Austria",
+   "reg": "intl",
+   "track": "acute",
+   "call": {
+    "st": "soon",
+    "t": "Opens Oct 2026 · closes early Jan 2027",
+    "od": "Oct 2026",
+    "odd": "2026-10-31"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    24
+   ],
+   "url": "https://euroelso-congress.com/"
+  },
+  {
+   "id": "aats-107",
+   "s": "2027-05-01",
+   "e": "2027-05-04",
+   "dl": "May 1–4",
+   "name": "AATS Annual Meeting (107th)",
+   "org": "American Association for Thoracic Surgery",
+   "where": "Los Angeles Convention Center, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Closes Oct 13",
+    "d": "2026-10-13"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    25
+   ],
+   "url": "https://events.aats.org/am27"
+  },
+  {
+   "id": "nti",
+   "s": "2027-05-02",
+   "e": "2027-05-05",
+   "dl": "May 2–5",
+   "name": "National Teaching Institute (NTI)",
+   "org": "AACN (Critical-Care Nurses)",
+   "where": "Indiana Convention Center, Indianapolis, IN",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "postponed",
+    "t": "Sessions closed · posters postponed",
+    "od": "TBA"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    26
+   ],
+   "url": "https://www.aacn.org/conferences-and-events/nti"
+  },
+  {
+   "id": "inacsl27",
+   "s": "2027-06-09",
+   "e": "2027-06-12",
+   "dl": "Jun 9–12",
+   "name": "INACSL27",
+   "org": "Int'l Nursing Association for Clinical Simulation & Learning",
+   "where": "Phoenix, AZ",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "open",
+    "t": "Closes Oct 26",
+    "d": "2026-10-26"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    27
+   ],
+   "url": "https://www.inacsl.org/inacsl27"
+  },
+  {
+   "id": "aanp-nc",
+   "s": "2027-06-15",
+   "e": "2027-06-19",
+   "dl": "Jun 15–19",
+   "name": "AANP National Conference",
+   "org": "American Association of Nurse Practitioners",
+   "where": "New Orleans, LA",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "closed",
+    "t": "Closed Jul 14"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    28
+   ],
+   "url": "https://www.aanp.org/events/2027-aanp-national-conference"
+  },
+  {
+   "id": "apapp",
+   "s": "2027-06-17",
+   "e": "2027-06-19",
+   "dl": "Jun 17–19",
+   "name": "APAPP Annual National Conference (4th)",
+   "org": "Association of Pulmonary Advanced Practice Providers",
+   "where": "Hyatt Regency New Orleans, LA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    29
+   ],
+   "url": "https://www.pulmapplive.com/"
+  },
+  {
+   "id": "sigma-inrc",
+   "s": "2027-07-16",
+   "e": "2027-07-18",
+   "dl": "Jul 16–18",
+   "name": "International Nursing Research Congress (38th)",
+   "org": "Sigma Theta Tau International",
+   "where": "Dublin, Ireland",
+   "reg": "intl",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed Sep 13"
+   },
+   "theme": "Evidence That Connects: Advancing Nursing Research for a Changing World",
+   "src": [
+    "G",
+    30
+   ],
+   "url": "https://www.sigmanursing.org/events/international-nursing-research-congress"
+  },
+  {
+   "id": "nln-2027",
+   "s": "2027-09-16",
+   "e": "2027-09-18",
+   "dl": "Sep 16–18",
+   "name": "NLN Education Summit",
+   "org": "National League for Nursing",
+   "where": "Phoenix, AZ",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    2,
+    "2027"
+   ],
+   "url": "https://www.nln.org/events/upcoming"
+  },
+  {
+   "id": "sigma-bc",
+   "s": "2027-10-29",
+   "e": "2027-11-01",
+   "dl": "Oct 29–Nov 1",
+   "name": "Biennial Convention (49th)",
+   "org": "Sigma Theta Tau International",
+   "where": "Denver, CO",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "soon",
+    "t": "Opens Oct 1, 2026",
+    "od": "Oct 1",
+    "odd": "2026-10-01"
+   },
+   "theme": null,
+   "src": [
+    "G",
+    31
+   ],
+   "url": "https://www.sigmanursing.org/events/biennial-convention"
+  },
+  {
+   "id": "sccm-congress",
+   "s": "2027-03-14",
+   "e": "2027-03-16",
+   "dl": "Mar 14–16",
+   "name": "Critical Care Congress",
+   "org": "Society of Critical Care Medicine",
+   "where": "San Diego Convention Center, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed Sep 3"
+   },
+   "theme": null,
+   "note": "Early registration rate through Dec 18, 2026 · next Congress Apr 9–11, 2028, Baltimore",
+   "sub": [
+    "Mar 12 or 13 · Critical Care Ultrasound: Adult; Pediatric & Neonatal (hands-on)",
+    "Mar 12 or 13 · Airway and Mechanical Ventilation Management (hands-on)",
+    "Mar 12–13 · ELSO ECMO Simulation Course (Hilton San Diego Bayfront)",
+    "Mar 13 · Critical Care Ultrasound: Advanced Echocardiography (half day)",
+    "Mar 13 · Deep Dives: Refractory Shock · LLM Context Crafting and Safe AI",
+    "Mar 13 · VitalTalk: Mastering Tough Conversations (Hilton San Diego Bayfront)",
+    "Mar 13 · Discovery Critical Care Innovation Incubator",
+    "Mar 15 or 16 · Ultrasound-Guided Procedures for the Critically Ill workshop (Hilton San Diego Bayfront)"
+   ],
+   "src": [
+    "H",
+    "congress"
+   ],
+   "url": "https://sccm.org/annual-congress/critical-care-conference"
+  },
+  {
+   "id": "sccm-fccs-rwjuh",
+   "s": "2026-10-19",
+   "e": "2026-10-20",
+   "dl": "Oct 19–20",
+   "name": "Fundamental Critical Care Support (FCCS)",
+   "org": "SCCM course hosted by Robert Wood Johnson University Hospital",
+   "where": "New Brunswick, NJ",
+   "reg": "near",
+   "track": "acute",
+   "call": {
+    "st": "none",
+    "t": "Course"
+   },
+   "theme": null,
+   "tags": [
+    "Hosted course"
+   ],
+   "note": "Registration through the host institution",
+   "src": [
+    "H",
+    "hosted",
+    "Robert Wood Johnson"
+   ],
+   "url": "https://sccm.org/education-center/conference-calendar"
+  },
+  {
+   "id": "sccm-geisinger",
+   "s": "2026-10-05",
+   "e": "2026-11-04",
+   "dl": "Oct 5–Nov 4",
+   "name": "SCCM hosted courses at Geisinger",
+   "org": "Society of Critical Care Medicine",
+   "where": "Danville, PA",
+   "reg": "near",
+   "track": "acute",
+   "call": {
+    "st": "none",
+    "t": "Courses"
+   },
+   "theme": null,
+   "tags": [
+    "Hosted courses"
+   ],
+   "sub": [
+    "Oct 5–6 · FCCS",
+    "Oct 19–20 · FCCS: Pediatrics",
+    "Oct 26 · Critical Care Ultrasound: Adult (Geisinger Commonwealth School of Medicine)",
+    "Nov 3–4 · FCCS"
+   ],
+   "src": [
+    "H",
+    "hosted",
+    "Geisinger"
+   ],
+   "url": "https://sccm.org/education-center/conference-calendar"
+  },
+  {
+   "id": "sccm-hosted-us",
+   "s": "2026-09-17",
+   "e": "2027-11-12",
+   "dl": "Sep 2026–Nov 2027",
+   "name": "SCCM hosted courses elsewhere in the US",
+   "org": "Society of Critical Care Medicine",
+   "where": "29 listings in 14 states",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "none",
+    "t": "Courses"
+   },
+   "theme": null,
+   "tags": [
+    "Hosted courses"
+   ],
+   "note": "FCCS, FCCS: Pediatrics, Obstetrics and Surgical, and Critical Care Ultrasound — see SCCM's events calendar",
+   "src": [
+    "H",
+    "hosted-other"
+   ],
+   "url": "https://sccm.org/education-center/conference-calendar"
+  },
+  {
+   "id": "sccm-virtual",
+   "s": "2026-09-17",
+   "e": "2026-09-25",
+   "dl": "Sep 17–25",
+   "name": "SCCM virtual sessions",
+   "org": "Society of Critical Care Medicine",
+   "where": "Online",
+   "reg": "virtual",
+   "track": "acute",
+   "fmt": "Virtual",
+   "call": {
+    "st": "none",
+    "t": "—"
+   },
+   "theme": null,
+   "sub": [
+    "Sep 17 · IMEA Virtual Networking Session",
+    "Sep 24 · Discovery Clinical Investigators Meeting",
+    "Sep 25 · Acute TMA to aHUS webcast",
+    "Monthly, 3rd Friday · Journal Club: Spotlight on Pharmacy"
+   ],
+   "src": [
+    "H",
+    "virtual"
+   ],
+   "url": "https://sccm.org/education-center/conference-calendar"
+  },
+  {
+   "id": "aan-hpc-26",
+   "s": "2026-10-08",
+   "e": "2026-10-10",
+   "dl": "Oct 8–10",
+   "name": "Health Policy Conference",
+   "org": "American Academy of Nursing",
+   "where": "Marriott Marquis, Washington, DC",
+   "reg": "near",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed Apr 3"
+   },
+   "theme": "Digital Health: Promise, Responsibility",
+   "src": [
+    "F1",
+    "American Academy of Nursing",
+    "2026-10-08"
+   ],
+   "url": "https://www.academypolicyconference.com/"
+  },
+  {
+   "id": "aan-hpc-27",
+   "s": "2027-10-07",
+   "e": "2027-10-09",
+   "dl": "Oct 7–9",
+   "name": "Health Policy Conference",
+   "org": "American Academy of Nursing",
+   "where": "Location not yet posted",
+   "reg": "tba",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "American Academy of Nursing",
+    "2027-10-07"
+   ],
+   "url": "https://aannet.org/page/EventsOverview"
+  },
+  {
+   "id": "acnm-71",
+   "s": "2026-10-09",
+   "e": "2026-10-12",
+   "dl": "Oct 9–12",
+   "name": "ACNM Annual Meeting & Exhibition",
+   "org": "American College of Nurse-Midwives",
+   "where": "Kansas City Convention Center, MO",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "closed",
+    "t": "Closed Mar 1"
+   },
+   "theme": "This Is Our Moment: Midwives Transforming the World",
+   "src": [
+    "F1",
+    "Nurse-Midwives",
+    "2026-10-09"
+   ],
+   "url": "https://annualmeeting.midwife.org/"
+  },
+  {
+   "id": "aana-edge",
+   "s": "2027-02-25",
+   "e": "2027-02-28",
+   "dl": "Feb 25–28",
+   "name": "EDGE (nurse anesthesia educators)",
+   "org": "American Association of Nurse Anesthesiology",
+   "where": "Sheraton Dallas, TX",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "Anesthesiology",
+    "2027-02-25"
+   ],
+   "url": "https://www.aana.com/event/edge-2027/"
+  },
+  {
+   "id": "aana-mya",
+   "s": "2027-04-16",
+   "e": "2027-04-21",
+   "dl": "Apr 16–21",
+   "name": "Mid-Year Assembly",
+   "org": "American Association of Nurse Anesthesiology",
+   "where": "JW Marriott, Washington, DC",
+   "reg": "near",
+   "track": "spec",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "Anesthesiology",
+    "2027-04-16"
+   ],
+   "url": "https://www.aana.com/event/mid-year-assembly-2027/"
+  },
+  {
+   "id": "aana-congress",
+   "s": "2027-08-08",
+   "e": "2027-08-12",
+   "dl": "Aug 8–12",
+   "name": "AANA Annual Congress",
+   "org": "American Association of Nurse Anesthesiology",
+   "where": "Ernest N. Morial Convention Center, New Orleans, LA",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "open",
+    "t": "Closes Sep 24 (noon CT)",
+    "d": "2026-09-24"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "Anesthesiology",
+    "2027-08-08"
+   ],
+   "url": "https://www.aana.com/event/aana-annual-congress-2027/"
+  },
+  {
+   "id": "awhonn-27",
+   "s": "2027-06-19",
+   "e": "2027-06-23",
+   "dl": "Jun 19–23",
+   "name": "AWHONN Convention",
+   "org": "Association of Women's Health, Obstetric and Neonatal Nurses",
+   "where": "Gaylord Opryland, Nashville, TN",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "open",
+    "t": "Posters & podium: closes Oct 13",
+    "d": "2026-10-13"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "Women's Health",
+    "2027-06-19"
+   ],
+   "url": "https://awhonnconvention.org/"
+  },
+  {
+   "id": "ancc-mp-26",
+   "s": "2026-10-29",
+   "e": "2026-10-31",
+   "dl": "Oct 29–31",
+   "name": "Magnet & Pathway Conference",
+   "org": "American Nurses Credentialing Center",
+   "where": "McCormick Place, Chicago, IL",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "American Nurses Association",
+    "2026-10-29"
+   ],
+   "url": "https://magnetpathwaycon.nursingworld.org/"
+  },
+  {
+   "id": "ane-rs-26",
+   "s": "2026-10-27",
+   "e": "2026-10-28",
+   "dl": "Oct 27–28",
+   "name": "ANE Research Symposium",
+   "org": "American Nurses Enterprise (ANA/ANCC)",
+   "where": "Chicago, IL",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": "Discovery to Impact: Advancing Research for a Healthier Future",
+   "note": "Workshops Oct 27, symposium Oct 28",
+   "src": [
+    "F1",
+    "American Nurses Association",
+    "ANE Research Symposium"
+   ],
+   "url": "https://www.nursingworld.org/ancc/nursing-research/researchsymposium/"
+  },
+  {
+   "id": "ancc-pdp",
+   "s": "2027-04-17",
+   "e": "2027-04-20",
+   "dl": "Apr 17–20",
+   "name": "Professional Development & Practice Summit",
+   "org": "American Nurses Credentialing Center",
+   "where": "San Antonio, TX",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "American Nurses Association",
+    "Professional Development"
+   ],
+   "url": "https://pdpsummit.nursingworld.org/"
+  },
+  {
+   "id": "ancc-mp-27",
+   "s": "2027-10-07",
+   "e": "2027-10-09",
+   "dl": "Oct 7–9",
+   "name": "Magnet & Pathway Conference",
+   "org": "American Nurses Credentialing Center",
+   "where": "Orlando, FL",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "soon",
+    "t": "Opens Oct 31 · closes Dec 14 (noon ET)",
+    "d": "2026-12-14",
+    "od": "Oct 31",
+    "odd": "2026-10-31"
+   },
+   "theme": null,
+   "src": [
+    "F1",
+    "American Nurses Association",
+    "2027-10-07"
+   ],
+   "url": "https://magnetpathwaycon.nursingworld.org/"
+  },
+  {
+   "id": "pnaa-27",
+   "s": "2027-07-17",
+   "e": "2027-07-24",
+   "dl": "Jul 17–24",
+   "name": "PNAA National Convention",
+   "org": "Philippine Nurses Association of America",
+   "where": "Inter-island cruise, Hawaii",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": "Voyage to Excellence. Navigating the Future with Passion, Purpose and Pride.",
+   "src": [
+    "F1",
+    "Philippine",
+    "2027-07-17"
+   ],
+   "url": "https://mypnaa.org/events"
+  },
+  {
+   "id": "jans-46",
+   "s": "2026-12-12",
+   "e": "2026-12-13",
+   "dl": "Dec 12–13",
+   "name": "JANS Annual Conference (46th)",
+   "org": "Japan Academy of Nursing Science",
+   "where": "Tokyo International Forum, Japan",
+   "reg": "intl",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed Jun 4"
+   },
+   "theme": "ケアで社会をつくる (“Building society through care,” unofficial translation)",
+   "note": "Includes an English Session",
+   "src": [
+    "F2",
+    "Japan Academy",
+    "2026-12-12"
+   ],
+   "url": "https://convention.jtbcom.co.jp/jans46/"
+  },
+  {
+   "id": "jans-47",
+   "s": "2027-11-27",
+   "e": "2027-11-28",
+   "dl": "Nov 27–28",
+   "name": "JANS Annual Conference (47th)",
+   "org": "Japan Academy of Nursing Science",
+   "where": "Sapporo Convention Center, Japan",
+   "reg": "intl",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "F2",
+    "Japan Academy",
+    "2027-11-27"
+   ],
+   "url": "https://www.jans.or.jp/meetings/schedule/"
+  },
+  {
+   "id": "ava-40",
+   "s": "2026-10-03",
+   "e": "2026-10-05",
+   "dl": "Oct 3–5",
+   "name": "AVA Annual Scientific Meeting (40th)",
+   "org": "Association for Vascular Access",
+   "where": "Gaylord Texan, Grapevine, TX",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed Jan 4"
+   },
+   "theme": null,
+   "note": "Pre-meeting workshops Oct 2",
+   "dag": "ava",
+   "src": [
+    "F2",
+    "Association for Vascular Access",
+    "2026-10-03"
+   ],
+   "url": "https://www.avainfo.org"
+  },
+  {
+   "id": "bcen-ll",
+   "s": "2027-07-20",
+   "e": "2027-07-22",
+   "dl": "Jul 20–22",
+   "name": "BCEN Learn Live",
+   "org": "Board of Certification for Emergency Nursing",
+   "where": "Palms Casino Resort, Las Vegas, NV",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "F2",
+    "Emergency Nursing",
+    "2027-07-20"
+   ],
+   "url": "https://bcen.org/bcen-learn-live/"
+  },
+  {
+   "id": "njsna-26",
+   "s": "2026-10-08",
+   "e": "2026-10-08",
+   "dl": "Oct 8",
+   "name": "Professional Conference & Annual Meeting",
+   "org": "New Jersey State Nurses Association",
+   "where": "Online (8 a.m.–1 p.m.)",
+   "reg": "virtual",
+   "track": "edu",
+   "fmt": "Virtual",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": "Year of the Power of Nurses",
+   "note": "Topic: artificial intelligence and nursing",
+   "src": [
+    "F2",
+    "New Jersey State Nurses",
+    "2026-10-08"
+   ],
+   "url": "https://njsna.org/event/njsna-annual-meeting-remote/"
+  },
+  {
+   "id": "npny-pharm",
+   "s": "2026-11-21",
+   "e": "2026-11-21",
+   "dl": "Nov 21",
+   "name": "Pharm Day Conference",
+   "org": "The Nurse Practitioners of New York",
+   "where": "Venue not yet posted",
+   "reg": "tba",
+   "track": "app",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2c",
+    "Nurse Practitioners of New York",
+    "2026-11-21"
+   ],
+   "url": "https://npny.enpnetwork.com/"
+  },
+  {
+   "id": "nacct-26",
+   "s": "2026-10-21",
+   "e": "2026-10-25",
+   "dl": "Oct 21–25",
+   "name": "North American Congress of Clinical Toxicology (NACCT)",
+   "org": "America's Poison Centers & American Academy of Clinical Toxicology",
+   "where": "Town and Country Resort, San Diego, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed May 4"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Poison",
+    "2026-10-21"
+   ],
+   "url": "https://www.clintox.org/nacct"
+  },
+  {
+   "id": "nacct-27",
+   "s": "2027-09-15",
+   "e": "2027-09-19",
+   "dl": "Sep 15–19",
+   "name": "North American Congress of Clinical Toxicology (NACCT)",
+   "org": "America's Poison Centers & American Academy of Clinical Toxicology",
+   "where": "Charlotte, NC",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Poison",
+    "2027-09-15"
+   ],
+   "url": "https://www.clintox.org/nacct"
+  },
+  {
+   "id": "acc27",
+   "s": "2027-04-10",
+   "e": "2027-04-12",
+   "dl": "Apr 10–12",
+   "name": "ACC.27 Annual Scientific Session",
+   "org": "American College of Cardiology",
+   "where": "George R. Brown Convention Center, Houston, TX",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Abstracts & cases: close Oct 6 (1 p.m. ET)",
+    "d": "2026-10-06"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Cardiology",
+    "2027-04-10"
+   ],
+   "url": "https://accscientificsession.acc.org/"
+  },
+  {
+   "id": "acs-cc-26",
+   "s": "2026-09-26",
+   "e": "2026-09-29",
+   "dl": "Sep 26–29",
+   "name": "Clinical Congress",
+   "org": "American College of Surgeons",
+   "where": "Walter E. Washington Convention Center, Washington, DC",
+   "reg": "near",
+   "track": "acute",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "closed",
+    "t": "Closed Mar 2"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Surgeons",
+    "2026-09-26"
+   ],
+   "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/clinical-congress-2026/"
+  },
+  {
+   "id": "acs-cc-27",
+   "s": "2027-10-16",
+   "e": "2027-10-19",
+   "dl": "Oct 16–19",
+   "name": "Clinical Congress",
+   "org": "American College of Surgeons",
+   "where": "San Diego, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "soon",
+    "multi": true,
+    "t": "Abstracts open Dec 2026 · general-session proposals (ACS Fellows) close Oct 14",
+    "od": "Dec 2026",
+    "odd": "2026-12-31"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Surgeons",
+    "2027-10-16"
+   ],
+   "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/clinical-congress-2027/"
+  },
+  {
+   "id": "acs-tqip-26",
+   "s": "2026-11-13",
+   "e": "2026-11-15",
+   "dl": "Nov 13–15",
+   "name": "TQIP Annual Conference",
+   "org": "American College of Surgeons",
+   "where": "Anaheim Convention Center, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": "Collaboration: Better Together",
+   "src": [
+    "R2a",
+    "Surgeons",
+    "2026-11-13"
+   ],
+   "url": "https://www.facs.org/quality-programs/trauma/quality/trauma-quality-improvement-program/conference/"
+  },
+  {
+   "id": "acs-tqip-27",
+   "s": "2027-11-15",
+   "e": "2027-11-17",
+   "dl": "Nov 15–17",
+   "name": "TQIP Annual Conference",
+   "org": "American College of Surgeons",
+   "where": "Las Vegas, NV",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Surgeons",
+    "2027-11-15"
+   ],
+   "url": "https://www.facs.org/quality-programs/trauma/quality/trauma-quality-improvement-program/conference/"
+  },
+  {
+   "id": "acs-innov",
+   "s": "2027-03-11",
+   "e": "2027-03-12",
+   "dl": "Mar 11–12",
+   "name": "Innovation Summit",
+   "org": "American College of Surgeons",
+   "where": "Chicago, IL",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Surgeons",
+    "2027-03-11"
+   ],
+   "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/"
+  },
+  {
+   "id": "hrs-27",
+   "s": "2027-05-13",
+   "e": "2027-05-16",
+   "dl": "May 13–16",
+   "name": "Heart Rhythm 2027",
+   "org": "Heart Rhythm Society",
+   "where": "Moscone Center, San Francisco, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Session proposals: close Nov 1 · abstracts Oct 1–Dec 16",
+    "d": "2026-11-01",
+    "df": "2026-12-16"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Heart Rhythm",
+    "2027-05-13"
+   ],
+   "url": "https://heartrhythm.com/"
+  },
+  {
+   "id": "hrx-26",
+   "s": "2026-09-18",
+   "e": "2026-09-20",
+   "dl": "Sep 18–20",
+   "name": "HRX Live",
+   "org": "Heart Rhythm Society",
+   "where": "Signia by Hilton, Atlanta, GA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Heart Rhythm",
+    "2026-09-18"
+   ],
+   "url": "https://experiencehrx.com/"
+  },
+  {
+   "id": "ncs-26",
+   "s": "2026-10-20",
+   "e": "2026-10-23",
+   "dl": "Oct 20–23",
+   "name": "NCS Annual Meeting",
+   "org": "Neurocritical Care Society",
+   "where": "Seattle Convention Center, WA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": "Reaching New Heights",
+   "src": [
+    "R2a",
+    "Neurocritical",
+    "2026-10-20"
+   ],
+   "url": "https://www.neurocriticalcare.org/Events/Annual-Meeting"
+  },
+  {
+   "id": "ncs-27",
+   "s": "2027-09-27",
+   "e": "2027-09-30",
+   "dl": "Sep 27–30",
+   "name": "NCS Annual Meeting",
+   "org": "Neurocritical Care Society",
+   "where": "Hyatt Regency New Orleans, LA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Neurocritical",
+    "2027-09-27"
+   ],
+   "url": "https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027"
+  },
+  {
+   "id": "shm-converge",
+   "s": "2027-03-30",
+   "e": "2027-04-02",
+   "dl": "Mar 30–Apr 2",
+   "name": "SHM Converge",
+   "org": "Society of Hospital Medicine",
+   "where": "Mandalay Bay, Las Vegas, NV",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Research, innovations, vignettes: close Nov 23",
+    "d": "2026-11-23"
+   },
+   "theme": null,
+   "note": "Pre-courses Mar 30",
+   "src": [
+    "R2a",
+    "Hospital Medicine",
+    "2027-03-30"
+   ],
+   "url": "https://shmconverge.hospitalmedicine.org/"
+  },
+  {
+   "id": "shm-multisite",
+   "s": "2026-09-17",
+   "e": "2026-09-18",
+   "dl": "Sep 17–18",
+   "name": "Multisite Leaders in Hospital Medicine Summit",
+   "org": "Society of Hospital Medicine",
+   "where": "Philadelphia, PA",
+   "reg": "near",
+   "track": "acute",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Hospital Medicine",
+    "2026-09-17"
+   ],
+   "url": "https://www.hospitalmedicine.org/event/conferences/"
+  },
+  {
+   "id": "shm-academy",
+   "s": "2026-10-19",
+   "e": "2026-10-22",
+   "dl": "Oct 19–22",
+   "name": "Leadership Academy",
+   "org": "Society of Hospital Medicine",
+   "where": "JW Marriott Camelback Inn, Scottsdale, AZ",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Hospital Medicine",
+    "2026-10-19"
+   ],
+   "url": "https://www.hospitalmedicine.org/event/conferences/"
+  },
+  {
+   "id": "svn-27",
+   "s": "2027-06-02",
+   "e": "2027-06-03",
+   "dl": "Jun 2–3",
+   "name": "SVN Annual Conference",
+   "org": "Society for Vascular Nursing",
+   "where": "San Diego, CA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Vascular Nursing",
+    "2027-06-02"
+   ],
+   "url": "https://www.svnnet.org/page/annualconference"
+  },
+  {
+   "id": "aann-27",
+   "s": "2027-03-13",
+   "e": "2027-03-16",
+   "dl": "Mar 13–16",
+   "name": "AANN Annual Conference",
+   "org": "American Association of Neuroscience Nurses",
+   "where": "The Westin Seattle, WA",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "open",
+    "t": "Closes Oct 2",
+    "d": "2026-10-02"
+   },
+   "theme": "Uniting Expertise, Elevating Care",
+   "src": [
+    "R2a",
+    "Neuroscience",
+    "2027-03-13"
+   ],
+   "url": "https://aann.org/meetings/annual-educational-conference"
+  },
+  {
+   "id": "aann-innrs",
+   "s": "2027-01-29",
+   "e": "2027-01-29",
+   "dl": "Jan 29",
+   "name": "International Neuroscience Nursing Research Symposium",
+   "org": "American Association of Neuroscience Nurses",
+   "where": "Online",
+   "reg": "virtual",
+   "track": "edu",
+   "fmt": "Virtual",
+   "call": {
+    "st": "open",
+    "t": "Closes Oct 2",
+    "d": "2026-10-02"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Neuroscience",
+    "2027-01-29"
+   ],
+   "url": "https://aann.org/meetings/virtual-innrs"
+  },
+  {
+   "id": "iasp-wcp",
+   "s": "2026-10-26",
+   "e": "2026-10-30",
+   "dl": "Oct 26–30",
+   "name": "World Congress on Pain",
+   "org": "International Association for the Study of Pain",
+   "where": "BITEC, Bangkok, Thailand",
+   "reg": "intl",
+   "track": "spec",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Study of Pain",
+    "2026-10-26"
+   ],
+   "url": "https://worldcongressonpain.secure-platform.com/a/"
+  },
+  {
+   "id": "nam-am",
+   "s": "2026-10-18",
+   "e": "2026-10-19",
+   "dl": "Oct 18–19",
+   "name": "NAM Annual Meeting",
+   "org": "National Academy of Medicine",
+   "where": "National Academy of Sciences Building, Washington, DC",
+   "reg": "near",
+   "track": "edu",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": "Harnessing Science, Prevention, and Innovation in Chronic Disease",
+   "tags": [
+    "Public sessions open"
+   ],
+   "src": [
+    "R2a",
+    "National Academy of Medicine",
+    "2026-10-18"
+   ],
+   "url": "https://nam.edu/event/2026-annual-meeting-chronic-disease/"
+  },
+  {
+   "id": "nam-summit",
+   "s": "2026-10-20",
+   "e": "2026-10-20",
+   "dl": "Oct 20",
+   "name": "Catalyzing Healthy Longevity: Global Innovator Summit",
+   "org": "National Academy of Medicine",
+   "where": "Washington, DC",
+   "reg": "near",
+   "track": "edu",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "National Academy of Medicine",
+    "2026-10-20"
+   ],
+   "url": "https://nam.edu/event/2026-healthy-longevity-global-innovator-summit/"
+  },
+  {
+   "id": "amia-26",
+   "s": "2026-11-07",
+   "e": "2026-11-11",
+   "dl": "Nov 7–11",
+   "name": "AMIA Annual Symposium",
+   "org": "American Medical Informatics Association",
+   "where": "Dallas, TX",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": "Harnessing Informatics to Accelerate Learning Health Systems",
+   "src": [
+    "R2a",
+    "Informatics",
+    "2026-11-07"
+   ],
+   "url": "https://amia.org/education-events/amia-2026-annual-symposium"
+  },
+  {
+   "id": "amia-amplify",
+   "s": "2027-04-12",
+   "e": "2027-04-15",
+   "dl": "Apr 12–15",
+   "name": "AMIA Amplify (Informatics Summit + Clinical Informatics Conference)",
+   "org": "American Medical Informatics Association",
+   "where": "Atlanta, GA",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "closed",
+    "t": "Closed Sep 3"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Informatics",
+    "2027-04-12"
+   ],
+   "url": "https://amia.org/education-events/2027-amplify-informatics-conference"
+  },
+  {
+   "id": "aonl-27",
+   "s": "2027-04-12",
+   "e": "2027-04-15",
+   "dl": "Apr 12–15",
+   "name": "AONL Annual Conference",
+   "org": "American Organization for Nursing Leadership",
+   "where": "Phoenix, AZ",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Nursing Leadership",
+    "2027-04-12"
+   ],
+   "url": "https://inspiringleaders.aonl.org/"
+  },
+  {
+   "id": "aonl-pglc",
+   "s": "2027-06-06",
+   "e": "2027-06-08",
+   "dl": "Jun 6–8",
+   "name": "Professional Governance Leadership Conference",
+   "org": "American Organization for Nursing Leadership",
+   "where": "Atlanta, GA",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2a",
+    "Nursing Leadership",
+    "2027-06-06"
+   ],
+   "url": "https://professionalgov.aonl.org/"
+  },
+  {
+   "id": "aap-26",
+   "s": "2026-10-02",
+   "e": "2026-10-06",
+   "dl": "Oct 2–6",
+   "name": "AAP National Conference & Exhibition",
+   "org": "American Academy of Pediatrics",
+   "where": "San Diego Convention Center, CA",
+   "reg": "us",
+   "track": "spec",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Pediatrics",
+    "2026-10-02"
+   ],
+   "url": "https://aapexperience.org/"
+  },
+  {
+   "id": "aap-27",
+   "s": "2027-10-15",
+   "e": "2027-10-19",
+   "dl": "Oct 15–19",
+   "name": "AAP National Conference & Exhibition",
+   "org": "American Academy of Pediatrics",
+   "where": "McCormick Place, Chicago, IL",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "open",
+    "t": "General session proposals: due Nov 20 · abstracts open Feb 2027",
+    "d": "2026-11-20",
+    "multi": true,
+    "dag": "aap"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Pediatrics",
+    "2027-10-15"
+   ],
+   "url": "https://aapexperience.org/future-dates/"
+  },
+  {
+   "id": "napnap-48",
+   "s": "2027-03-21",
+   "e": "2027-03-24",
+   "dl": "Mar 21–24",
+   "name": "National Conference on Pediatric Health Care (48th)",
+   "org": "National Association of Pediatric Nurse Practitioners",
+   "where": "SAFE Credit Union Convention Center, Sacramento, CA",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "note": "Pre-conference day Mar 20",
+   "src": [
+    "R2b",
+    "NAPNAP",
+    "2027-03-21"
+   ],
+   "url": "https://www.napnap.org/national-conference/"
+  },
+  {
+   "id": "napnap-virtual",
+   "s": "2026-10-09",
+   "e": "2026-10-09",
+   "dl": "Oct 9",
+   "name": "Pediatric Virtual Symposium",
+   "org": "National Association of Pediatric Nurse Practitioners",
+   "where": "Online (11 a.m.–6 p.m. ET; on demand through Dec 31)",
+   "reg": "virtual",
+   "track": "spec",
+   "fmt": "Virtual",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "NAPNAP",
+    "2026-10-09"
+   ],
+   "url": "https://www.napnap.org/specialty-symposium/"
+  },
+  {
+   "id": "napnap-delval",
+   "s": "2026-10-16",
+   "e": "2026-10-16",
+   "dl": "Oct 16",
+   "name": "Delaware Valley Chapter Fall Conference",
+   "org": "National Association of Pediatric Nurse Practitioners",
+   "where": "Drexelbrook, Drexel Hill, PA",
+   "reg": "near",
+   "track": "spec",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": "From Clinic to Crisis: A Case-Based Journey Through Pediatric Care",
+   "src": [
+    "R2b",
+    "NAPNAP",
+    "2026-10-16"
+   ],
+   "url": "https://padelvalnapnap.org/?mec-events=fall-conference"
+  },
+  {
+   "id": "nann-43",
+   "s": "2027-10-05",
+   "e": "2027-10-08",
+   "dl": "Oct 5–8",
+   "name": "NANN Annual Conference (43rd)",
+   "org": "National Association of Neonatal Nurses",
+   "where": "Las Vegas, NV",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "soon",
+    "t": "Opens Oct 1 · first call closes Jan 5, 2027",
+    "d": "2027-01-05",
+    "multi": true,
+    "od": "Oct 1",
+    "odd": "2026-10-01"
+   },
+   "theme": null,
+   "dag": "nann",
+   "src": [
+    "R2b",
+    "Neonatal Nurses (NANN)",
+    "2027-10-05"
+   ],
+   "url": "https://nann.org/education/submit-abstract/"
+  },
+  {
+   "id": "ann-spring",
+   "s": "2027-04-08",
+   "e": "2027-04-10",
+   "dl": "Apr 8–10",
+   "name": "Advanced Practice Neonatal Nurses Conference",
+   "org": "Academy of Neonatal Nursing",
+   "where": "Louisville, KY",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Academy of Neonatal Nursing",
+    "2027-04-08"
+   ],
+   "url": "https://www.academyonline.org/page/conferences"
+  },
+  {
+   "id": "fannp-26",
+   "s": "2026-10-13",
+   "e": "2026-10-17",
+   "dl": "Oct 13–17",
+   "name": "National Neonatal Nurse Practitioner Symposium",
+   "org": "Florida Association of Neonatal Nurse Practitioners",
+   "where": "Sheraton Sand Key Resort, Clearwater Beach, FL",
+   "reg": "us",
+   "track": "spec",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "closed",
+    "t": "Closed Jul 15"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Florida Association of Neonatal",
+    "2026-10-13"
+   ],
+   "url": "https://fannp.org/_pages24/conferenceinfo.html"
+  },
+  {
+   "id": "fannp-27",
+   "s": "2027-10-26",
+   "e": "2027-10-30",
+   "dl": "Oct 26–30",
+   "name": "National Neonatal Nurse Practitioner Symposium",
+   "org": "Florida Association of Neonatal Nurse Practitioners",
+   "where": "Sheraton Sand Key Resort, Clearwater Beach, FL",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Florida Association of Neonatal",
+    "2027-10-26"
+   ],
+   "url": "https://fannp.org/"
+  },
+  {
+   "id": "apna-26",
+   "s": "2026-10-28",
+   "e": "2026-10-31",
+   "dl": "Oct 28–31",
+   "name": "APNA Annual Conference",
+   "org": "American Psychiatric Nurses Association",
+   "where": "Phoenix Convention Center, AZ",
+   "reg": "us",
+   "track": "spec",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": "Building on Strengths: A Resiliency Journey to Improve Wellness & Advance Care",
+   "src": [
+    "R2b",
+    "Psychiatric Nurses Association",
+    "2026-10-28"
+   ],
+   "url": "https://www.apna.org/apna-annual-conference/"
+  },
+  {
+   "id": "apna-cpi",
+   "s": "2027-06-10",
+   "e": "2027-06-13",
+   "dl": "Jun 10–13",
+   "name": "Clinical Psychopharmacology Institute",
+   "org": "American Psychiatric Nurses Association",
+   "where": "Reston, VA",
+   "reg": "us",
+   "track": "spec",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "none",
+    "t": "Curated program"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Psychiatric Nurses Association",
+    "2027-06-10"
+   ],
+   "url": "https://www.apna.org/events/clinical-psychopharmacology-institute/"
+  },
+  {
+   "id": "apna-27",
+   "s": "2027-10-27",
+   "e": "2027-10-30",
+   "dl": "Oct 27–30",
+   "name": "APNA Annual Conference",
+   "org": "American Psychiatric Nurses Association",
+   "where": "Minneapolis, MN",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "tba",
+    "t": "Not yet open"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Psychiatric Nurses Association",
+    "2027-10-27"
+   ],
+   "url": "https://www.apna.org/events/"
+  },
+  {
+   "id": "ispn-27",
+   "s": "2027-03-17",
+   "e": "2027-03-20",
+   "dl": "Mar 17–20",
+   "name": "ISPN Annual Conference",
+   "org": "International Society of Psychiatric-Mental Health Nurses",
+   "where": "Renaissance Asheville Downtown, NC",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "closed",
+    "t": "Closed Aug 31"
+   },
+   "theme": "Psychiatric Nursing in a Changing World: Lead Through Crisis, Innovation, and Transformation.",
+   "src": [
+    "R2b",
+    "Psychiatric-Mental Health",
+    "2027-03-17"
+   ],
+   "url": "https://www.ispn-psych.org/2027-annual-conference"
+  },
+  {
+   "id": "tcns-26",
+   "s": "2026-10-14",
+   "e": "2026-10-17",
+   "dl": "Oct 14–17",
+   "name": "Transcultural Nursing Society Annual Conference",
+   "org": "Transcultural Nursing Society",
+   "where": "Embassy Suites Riverwalk, San Antonio, TX",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "closed",
+    "t": "Closed Jun 1"
+   },
+   "theme": "Transcultural Nursing: Building Bridges for Global Health Equity",
+   "src": [
+    "R2b",
+    "Transcultural",
+    "2026-10-14"
+   ],
+   "url": "https://www.tcns.org/annualconference/"
+  },
+  {
+   "id": "aahpm-hpna",
+   "s": "2027-03-17",
+   "e": "2027-03-20",
+   "dl": "Mar 17–20",
+   "name": "Annual Assembly of Hospice and Palliative Care",
+   "org": "AAHPM & Hospice and Palliative Nurses Association",
+   "where": "David L. Lawrence Convention Center, Pittsburgh, PA",
+   "reg": "near",
+   "track": "spec",
+   "call": {
+    "st": "open",
+    "t": "Fall call (early career, late-breaking, RAPiD posters): closes Sep 28",
+    "d": "2026-09-28"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Hospice and Palliative",
+    "2027-03-17"
+   ],
+   "url": "https://aahpm.org/education-events/annual-assembly/"
+  },
+  {
+   "id": "hpna-27",
+   "s": "2027-09-22",
+   "e": "2027-09-24",
+   "dl": "Sep 22–24",
+   "name": "HPNA Annual Conference",
+   "org": "Hospice and Palliative Nurses Association",
+   "where": "Renaissance Orlando at SeaWorld, FL",
+   "reg": "us",
+   "track": "spec",
+   "call": {
+    "st": "soon",
+    "t": "Opens Nov 9 · closes Jan 18, 2027",
+    "d": "2027-01-18",
+    "od": "Nov 9",
+    "odd": "2026-11-09"
+   },
+   "theme": null,
+   "src": [
+    "R2b",
+    "Hospice and Palliative",
+    "2027-09-22"
+   ],
+   "url": "https://www.advancingexpertcare.org/2027-hpna-annual-conference/"
+  },
+  {
+   "id": "njana-fall",
+   "s": "2026-10-03",
+   "e": "2026-10-03",
+   "dl": "Oct 3",
+   "name": "NJANA Fall Meeting",
+   "org": "New Jersey Association of Nurse Anesthetists",
+   "where": "NJHA Conference Center, Princeton, NJ",
+   "reg": "near",
+   "track": "spec",
+   "fmt": "Hybrid",
+   "call": {
+    "st": "none",
+    "t": "No call posted"
+   },
+   "theme": null,
+   "src": [
+    "R2c",
+    "Nurse Anesthetists",
+    "2026-10-03"
+   ],
+   "url": "https://njana.com/2026-fall-meeting/"
+  },
+  {
+   "id": "onlnj-admin",
+   "s": "2026-09-17",
+   "e": "2026-09-17",
+   "dl": "Sep 17",
+   "name": "9th Annual Administrative (Evening/Night) Supervisor Virtual Conference",
+   "org": "Organization of Nurse Leaders of New Jersey",
+   "where": "Online",
+   "reg": "virtual",
+   "track": "edu",
+   "fmt": "Virtual",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "R2c",
+    "Organization of Nurse Leaders",
+    "2026-09-17"
+   ],
+   "url": "https://onlnj.glueup.com/event/9th-annual-administrative-evening-night-supervisor-virtual-conference-183349/"
+  },
+  {
+   "id": "onlnj-leader",
+   "s": "2026-09-25",
+   "e": "2026-09-25",
+   "dl": "Sep 25",
+   "name": "Annual Nurse Leader and Aspiring Nurse Leader Conference",
+   "org": "Organization of Nurse Leaders of New Jersey",
+   "where": "NJ Hospital Association, Princeton, NJ",
+   "reg": "near",
+   "track": "edu",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": "So, You Want to Be an Effective Leader",
+   "src": [
+    "R2c",
+    "Organization of Nurse Leaders",
+    "2026-09-25"
+   ],
+   "url": "https://onlnj.glueup.com/event/annual-nurse-leader-and-aspiring-nurse-leader-conference-188868/"
+  },
+  {
+   "id": "nnp-35",
+   "s": "2027-02-18",
+   "e": "2027-02-19",
+   "dl": "Feb 18–19",
+   "name": "Annual NNP Conference & Exhibition (35th)",
+   "org": "Nebraska Nurse Practitioners",
+   "where": "Lincoln Marriott Cornhusker, Lincoln, NE",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2c",
+    "Nebraska Nurse Practitioners",
+    "2027-02-18"
+   ],
+   "url": "https://nebraskanp.enpnetwork.com/nurse-practitioner-events/150149-35th-annual-nnp-conference-exhibition"
+  },
+  {
+   "id": "nna-conv",
+   "s": "2026-10-01",
+   "e": "2026-10-02",
+   "dl": "Oct 1–2",
+   "name": "NNA Annual Convention",
+   "org": "Nebraska Nurses Association",
+   "where": "Younes Conference Center North, Kearney, NE",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": "120 Years of Nursing Excellence: Honoring Our Legacy, Shaping the Future",
+   "src": [
+    "R2c",
+    "Nebraska Nurses Association",
+    "2026-10-01"
+   ],
+   "url": "https://nebraskanurses.org/convention/"
+  },
+  {
+   "id": "tnp-26",
+   "s": "2026-09-24",
+   "e": "2026-09-27",
+   "dl": "Sep 24–27",
+   "name": "TNP Annual Conference and Skills Workshops",
+   "org": "Texas Nurse Practitioners",
+   "where": "Moody Gardens, Galveston, TX",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "note": "Workshops Sep 24; conference Sep 25–27",
+   "src": [
+    "R2c",
+    "Texas Nurse Practitioners",
+    "2026-09-24"
+   ],
+   "url": "https://texasnp.org/annual-conference-2026/"
+  },
+  {
+   "id": "tnp-pharm",
+   "s": "2027-04-22",
+   "e": "2027-04-24",
+   "dl": "Apr 22–24",
+   "name": "TNP Pharmacology Conference",
+   "org": "Texas Nurse Practitioners",
+   "where": "Hyatt Regency Hill Country Resort, San Antonio, TX",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2c",
+    "Texas Nurse Practitioners",
+    "2027-04-22"
+   ],
+   "url": "https://texasnp.org/calendar/"
+  },
+  {
+   "id": "tnp-27",
+   "s": "2027-09-08",
+   "e": "2027-09-12",
+   "dl": "Sep 8–12",
+   "name": "TNP Annual Conference and Skills Workshops",
+   "org": "Texas Nurse Practitioners",
+   "where": "Kalahari Resort, Round Rock, TX",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "open",
+    "t": "Presentations close Feb 1, 2027 · posters Feb 8",
+    "d": "2027-02-01",
+    "df": "2027-02-08"
+   },
+   "theme": null,
+   "dag": "tnp",
+   "src": [
+    "R2c",
+    "Texas Nurse Practitioners",
+    "2027-09-08"
+   ],
+   "url": "https://texasnp.org/calendar/"
+  },
+  {
+   "id": "tna-27",
+   "s": "2027-06-09",
+   "e": "2027-06-11",
+   "dl": "Jun 9–11",
+   "name": "TNA Annual Conference",
+   "org": "Texas Nurses Association",
+   "where": "Omni Corpus Christi Hotel, TX",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "open",
+    "t": "Closes Nov 1",
+    "d": "2026-11-01"
+   },
+   "theme": "Navigating New Horizons in Nursing",
+   "src": [
+    "R2c",
+    "Texas Nurses Association",
+    "2027-06-09"
+   ],
+   "url": "https://www.texasnurses.org/page/newhorizons"
+  },
+  {
+   "id": "tna-d9",
+   "s": "2026-09-25",
+   "e": "2026-09-25",
+   "dl": "Sep 25",
+   "name": "District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care",
+   "org": "Texas Nurses Association",
+   "where": "Memorial Hermann Memorial City Medical Center, Houston, TX",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "R2c",
+    "Texas Nurses Association",
+    "2026-09-25"
+   ],
+   "url": "https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263"
+  },
+  {
+   "id": "gane-27",
+   "s": "2027-02-25",
+   "e": "2027-02-27",
+   "dl": "Feb 25–27",
+   "name": "GANE Conference",
+   "org": "Georgia Association for Nursing Education",
+   "where": "Augusta Marriott at the Convention Center, GA",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "open",
+    "t": "Podium & poster: closes Oct 1 (5 p.m.)",
+    "d": "2026-10-01"
+   },
+   "theme": "Excellence and Innovation In Nursing Education",
+   "src": [
+    "R2c",
+    "Georgia Association",
+    "2027-02-25"
+   ],
+   "url": "https://gane.nursingnetwork.com/nursing-events/152478-2027-gane-conference"
+  },
+  {
+   "id": "mnrs-51",
+   "s": "2027-03-31",
+   "e": "2027-04-03",
+   "dl": "Mar 31–Apr 3",
+   "name": "MNRS Annual Research Conference (51st)",
+   "org": "Midwest Nursing Research Society",
+   "where": "Amway Grand Plaza & DeVos Place, Grand Rapids, MI",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "open",
+    "t": "Competitive abstracts: close Oct 2",
+    "d": "2026-10-02"
+   },
+   "theme": "Bridging Healthcare Access through Nursing Scholarship, Partnership, Policy, and Practice",
+   "src": [
+    "R2d",
+    "Midwest Nursing",
+    "2027-03-31"
+   ],
+   "url": "https://mnrs.org/51st-annual-research-conference/"
+  },
+  {
+   "id": "nsna-midyear",
+   "s": "2026-10-29",
+   "e": "2026-10-31",
+   "dl": "Oct 29–31",
+   "name": "NSNA MidYear Conference (44th)",
+   "org": "National Student Nurses' Association",
+   "where": "Charlotte Convention Center, NC",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "open",
+    "t": "Speaker abstracts: close Sep 18",
+    "d": "2026-09-18"
+   },
+   "theme": "Driven by Purpose. Guided by Legacy.",
+   "src": [
+    "R2d",
+    "Student Nurses",
+    "2026-10-29"
+   ],
+   "url": "https://nsna.glueup.com/event/nsna-44th-midyear-conference-183945/"
+  },
+  {
+   "id": "nsna-75",
+   "s": "2027-03-31",
+   "e": "2027-04-03",
+   "dl": "Mar 31–Apr 3",
+   "name": "NSNA Annual Convention (75th)",
+   "org": "National Student Nurses' Association",
+   "where": "Disney's Coronado Springs Resort, Lake Buena Vista, FL",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": "75 Years of Magic in Nursing",
+   "src": [
+    "R2d",
+    "Student Nurses",
+    "2027-03-31"
+   ],
+   "url": "https://nsna.glueup.com/event/nsna-75th-annual-convention-184130/"
+  },
+  {
+   "id": "aamn-51",
+   "s": "2026-10-15",
+   "e": "2026-10-17",
+   "dl": "Oct 15–17",
+   "name": "AAMN Annual Conference",
+   "org": "American Association for Men in Nursing",
+   "where": "Horseshoe Las Vegas, NV",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "tba",
+    "t": "Not posted"
+   },
+   "theme": null,
+   "src": [
+    "R2d",
+    "Men in Nursing",
+    "2026-10-15"
+   ],
+   "url": "https://www.aamn.org/2026-annual-conference"
+  },
+  {
+   "id": "aacn-nap",
+   "s": "2027-04-20",
+   "e": "2027-04-22",
+   "dl": "Apr 20–22",
+   "name": "Nursing Advancement Professionals Conference",
+   "org": "AACN (Colleges of Nursing)",
+   "where": "Garden Grove (Anaheim), CA",
+   "reg": "us",
+   "track": "edu",
+   "call": {
+    "st": "none",
+    "t": "No call"
+   },
+   "theme": null,
+   "src": [
+    "R2d",
+    "Nursing Advancement",
+    "2027-04-20"
+   ],
+   "url": "https://www.aacnnursing.org/nap-conference"
+  },
+  {
+   "id": "nccpa-summit",
+   "s": "2026-09-18",
+   "e": "2026-09-19",
+   "dl": "Sep 18–19",
+   "name": "REPRESENT! NCCPA Summit",
+   "org": "National Commission on Certification of Physician Assistants",
+   "where": "Emory Conference Center Hotel, Atlanta, GA",
+   "reg": "us",
+   "track": "app",
+   "call": {
+    "st": "closed",
+    "t": "Closed"
+   },
+   "theme": null,
+   "note": "Free registration",
+   "src": [
+    "R2d",
+    "Physician Assistants",
+    "2026-09-18"
+   ],
+   "url": "https://www.nccpa.net/represent-summit/"
+  },
+  {
+   "id": "eas-27",
+   "s": "2027-02-09",
+   "e": "2027-02-11",
+   "dl": "Feb 9–11",
+   "name": "EMS Association Summit",
+   "org": "National Registry of EMTs, American Ambulance Association & NAEMT",
+   "where": "Lexington, KY",
+   "reg": "us",
+   "track": "acute",
+   "call": {
+    "st": "closed",
+    "t": "Closed Sep 15"
+   },
+   "theme": null,
+   "src": [
+    "R2d",
+    "Emergency Medical Technicians",
+    "2027-02-09"
+   ],
+   "url": "https://www.nremt.org/News/National-Registry-Opens-Call-for-Speakers-for-2027"
+  }
+ ],
+ "tba": [
+  {
+   "id": "rwjbh-app",
+   "name": "Acute and Critical Care APP Symposium",
+   "org": "RWJBarnabas Health",
+   "track": "acute",
+   "reg": "near",
+   "text": "2027 date not yet posted. Earlier editions: Jun 27–28, 2023 and Jun 24–25, 2024, Rutgers Ernest Mario School of Pharmacy, Piscataway, NJ.",
+   "src": [
+    "H",
+    "rwjbh"
+   ],
+   "url": "https://www.rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf"
+  },
+  {
+   "id": "trends",
+   "name": "TRENDS in Acute & Critical Care Nursing",
+   "org": "AACN Southeastern Pennsylvania Chapter",
+   "track": "acute",
+   "reg": "near",
+   "text": "2027 not yet posted. 2026 edition: Mar 10–11, Jefferson Dixon Campus, Horsham, PA.",
+   "src": [
+    "G",
+    33
+   ],
+   "url": "https://aacnsepa.nursingnetwork.com/"
+  },
+  {
+   "id": "sccm-nj",
+   "name": "SCCM New Jersey Chapter meetings",
+   "org": "Society of Critical Care Medicine",
+   "track": "acute",
+   "reg": "near",
+   "text": "No meetings posted publicly; the chapter lists a contact email on its SCCM Connect page.",
+   "src": [
+    "H",
+    "chapters"
+   ],
+   "url": "https://connect.sccm.org/communities/community-home?CommunityKey=98bfacdc-71e0-4dbd-9ea0-0615e048fef0"
+  },
+  {
+   "id": "sccm-mccrc",
+   "name": "Multiprofessional Critical Care Review: Adult (in person)",
+   "org": "Society of Critical Care Medicine",
+   "track": "acute",
+   "reg": "us",
+   "text": "No 2026 or 2027 date posted; last edition Jul 23–25, 2025, SCCM headquarters, Mount Prospect, IL.",
+   "src": [
+    "H",
+    "mccrc"
+   ],
+   "url": "https://sccm.org/education-center/educational-programming/multiprofessional-critical-care-review/critical-care-review-adult/mccrc-adult-in-person-course"
+  },
+  {
+   "id": "onlnj-annual",
+   "name": "Annual Meeting & Conference",
+   "org": "Organization of Nurse Leaders of New Jersey",
+   "track": "edu",
+   "reg": "near",
+   "text": "2027 spring meeting not yet posted.",
+   "src": [
+    "R2c",
+    "Organization of Nurse Leaders",
+    "Annual Meeting"
+   ],
+   "url": "https://onlnj.org/annual-meeting-conference"
+  },
+  {
+   "id": "njana-spring",
+   "name": "NJANA Spring Conference",
+   "org": "New Jersey Association of Nurse Anesthetists",
+   "track": "spec",
+   "reg": "near",
+   "text": "2027 date not yet posted.",
+   "src": [
+    "R2c",
+    "Nurse Anesthetists",
+    "Spring"
+   ],
+   "url": "https://njana.com/meetings-events/"
+  },
+  {
+   "id": "napnap-nj",
+   "name": "NAPNAP New Jersey Chapter conference",
+   "org": "National Association of Pediatric Nurse Practitioners",
+   "track": "spec",
+   "reg": "near",
+   "text": "No upcoming conference posted.",
+   "src": [
+    "R2b",
+    "NAPNAP",
+    "New Jersey"
+   ],
+   "url": "https://community.napnap.org/newjerseychapter/home"
+  },
+  {
+   "id": "ava-27",
+   "name": "AVA Annual Scientific Meeting 2027",
+   "org": "Association for Vascular Access",
+   "track": "acute",
+   "reg": "us",
+   "text": "Not yet posted.",
+   "src": [
+    "F2",
+    "Association for Vascular Access",
+    "2027"
+   ],
+   "url": "https://www.avainfo.org"
+  },
+  {
+   "id": "aamn-27",
+   "name": "AAMN Annual Conference 2027",
+   "org": "American Association for Men in Nursing",
+   "track": "edu",
+   "reg": "us",
+   "text": "Only “October” posted.",
+   "src": [
+    "R2d",
+    "Men in Nursing",
+    "2027"
+   ],
+   "url": "https://www.aamn.org"
+  },
+  {
+   "id": "acnm-summit",
+   "name": "Health Policy Summit & Hill Day",
+   "org": "American College of Nurse-Midwives",
+   "track": "spec",
+   "reg": "tba",
+   "text": "Next date not yet posted.",
+   "src": [
+    "F1",
+    "Nurse-Midwives",
+    "Health Policy Summit"
+   ],
+   "url": "https://healthpolicysummit.midwife.org/"
+  },
+  {
+   "id": "tcns-27",
+   "name": "Transcultural Nursing Society Annual Conference 2027",
+   "org": "Transcultural Nursing Society",
+   "track": "spec",
+   "reg": "us",
+   "text": "Dates not posted; call for abstracts opens November 2026.",
+   "src": [
+    "R2b",
+    "Transcultural",
+    "2027"
+   ],
+   "url": "https://www.tcns.org/callforabstracts/"
+  },
+  {
+   "id": "fnpn-27",
+   "name": "FNPN Annual Conference 2027",
+   "org": "Florida Nurse Practitioner Network",
+   "track": "app",
+   "reg": "us",
+   "text": "Not yet posted.",
+   "src": [
+    "R2c",
+    "Florida Nurse Practitioner",
+    "2027"
+   ],
+   "url": "https://fnpn.enpnetwork.com/nurse-practitioner-events"
+  },
+  {
+   "id": "ann-fall",
+   "name": "National Neonatal Nurses Conference (fall) 2027",
+   "org": "Academy of Neonatal Nursing",
+   "track": "spec",
+   "reg": "us",
+   "text": "Not yet posted.",
+   "src": [
+    "R2b",
+    "Academy of Neonatal Nursing",
+    "Fall"
+   ],
+   "url": "https://www.academyonline.org/page/conferences"
+  },
+  {
+   "id": "faanp-winter",
+   "name": "Fellows Winter Meeting",
+   "org": "Fellows of the AANP",
+   "track": "app",
+   "reg": "us",
+   "text": "Fellows only; dates not public.",
+   "src": [
+    "R2d",
+    "Fellows",
+    "Winter"
+   ],
+   "url": "https://www.aanp.org/membership/fellows-program/faanp-awards"
+  }
+ ],
+ "daggers": {
+  "ava": "AVA's own site blocks automated reading; dates come from AVA's call-for-presentations portal and flyer. One exhibitor lists Oct 2–4.",
+  "nann": "NANN's own pages disagree on the start date (Oct 5 vs Oct 6).",
+  "tnp": "TNP's calendar says Sep 8–12; its call page says Sep 9 onward.",
+  "amsect": "AmSECT's page does not print the year of the Nov 23 deadline; 2026 is implied.",
+  "aap": "The page lists the Nov 20 due date without saying “open”."
+ }
+}

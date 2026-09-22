@@ -1,0 +1,35 @@
+{
+  "group": "student-opportunities-2026-09-21",
+  "series": [
+    {
+      "name": "Student Policy Summit",
+      "org": "American Association of Colleges of Nursing (AACN)",
+      "org_url": "https://www.aacnnursing.org/sps",
+      "professions": ["NP", "CRNA", "CNS", "CNM", "Nursing"],
+      "specialty": ["advocacy", "nursing education"],
+      "audience": ["student"],
+      "kind": "summit",
+      "region": "us",
+      "recurrence": null,
+      "editions": [
+        {
+          "start": "2027-03-15",
+          "end": "2027-03-16",
+          "location": "Rosslyn, Arlington, VA",
+          "format": "in person",
+          "source_url": "https://www.aacnnursing.org/sps",
+          "evidence": "2027 Student Policy Summit March 15-16, 2027 | Rosslyn, VA ... baccalaureate and graduate nursing students enrolled at AACN member institutions ... up to two students per AACN member school",
+          "source_reviewed": true,
+          "checked": "2026-09-21",
+          "student": {
+            "category": "student",
+            "kind": "Graduate nursing student summit",
+            "detail": "Open to baccalaureate and graduate nursing students at AACN member schools; participation is limited to two students per school.",
+            "url": "https://www.aacnnursing.org/sps",
+            "roles": ["NP", "AGACNP", "CRNA", "CNS", "CNM", "Nursing"]
+          }
+        }
+      ]
+    }
+  ]
+}

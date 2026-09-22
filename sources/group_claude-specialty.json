@@ -1,0 +1,502 @@
+{
+ "group": "claude-specialty",
+ "series": [
+  {
+   "id": "pcna-cardiovascular-nursing-symposium",
+   "name": "Cardiovascular Nursing Symposium",
+   "org": "Preventive Cardiovascular Nurses Association (PCNA)",
+   "org_url": "https://pcna.net/events-news/cardiovascular-nursing-symposium/",
+   "professions": [
+    "NP",
+    "RN"
+   ],
+   "specialty": [
+    "cardiovascular",
+    "cardiology",
+    "prevention"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "editions": [
+    {
+     "start": "2027-04-15",
+     "end": "2027-04-17",
+     "location": "Austin, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": "2026-08-07",
+      "closes": "2026-12-04",
+      "text": "August 7, 2026: Call for Abstracts opens ... Abstracts are due Friday, December 4, 2026, at 11:59 PM CT.",
+      "url": "https://pcna.net/events-news/cardiovascular-nursing-symposium/call-for-abstracts/"
+     },
+     "source_url": "https://pcna.net/events-news/cardiovascular-nursing-symposium/",
+     "evidence": "2027 Cardiovascular Nursing Symposium Austin, TX | April 15-17 ... the premier conference for nurses and advanced practice nurses interested in cardiovascular disease prevention and management",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2026-04-11",
+     "end": null,
+     "location": "Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://pcna.net/events-news/cardiovascular-nursing-symposium/",
+     "evidence": "PCNAAS-4-11-2025-Orlando (image caption referencing prior symposium)",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": true,
+   "np_pa_basis_evidence": "premier conference for nurses and advanced practice nurses"
+  },
+  {
+   "id": "dna-annual-convention",
+   "name": "DNA Annual Convention",
+   "org": "Dermatology Nurses' Association (DNA)",
+   "org_url": "https://convention.dnanurse.org/",
+   "professions": [
+    "NP",
+    "PA",
+    "RN"
+   ],
+   "specialty": [
+    "dermatology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2026-03-25",
+     "end": "2026-03-28",
+     "location": "Denver, CO",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": "2025-12-31",
+      "text": "Deadline to Submit: December 31, 2025",
+      "url": "https://convention.dnanurse.org/"
+     },
+     "source_url": "https://convention.dnanurse.org/",
+     "evidence": "March 25-28th, 2026 ... Denver, Colorado; 44th Annual Convention; NP Forum / NP Forum Schedule pages present",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": true,
+   "np_pa_basis_evidence": "NP Forum / NP Forum Schedule pages present"
+  },
+  {
+   "id": "naon-annual-congress",
+   "name": "NAON Annual Congress",
+   "org": "National Association of Orthopaedic Nurses (NAON)",
+   "org_url": "https://www.orthonurse.org/Events/Congress",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "orthopaedic"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically May",
+   "editions": [
+    {
+     "start": "2027-05-01",
+     "end": "2027-05-03",
+     "location": "Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": "2026-06-15",
+      "closes": "2026-08-12",
+      "text": "Proposal Deadline: August 12, 2026",
+      "url": "https://www.orthonurse.org/Events/Congress/Call-for-Proposals"
+     },
+     "source_url": "https://www.orthonurse.org/Events/Congress",
+     "evidence": "47th Annual Congress ... May 1-3, 2027 ... Orlando, Florida; The Call for Proposals is now open",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": false,
+   "np_pa_basis_evidence": "no NP/APRN CE or NP track found on fetched pages"
+  },
+  {
+   "id": "suna-urologic-conference",
+   "name": "UroLogic (SUNA Annual/Advanced UroLogic Conference)",
+   "org": "Society of Urologic Nurses and Associates (SUNA)",
+   "org_url": "https://www.suna.org/events",
+   "professions": [
+    "NP",
+    "PA",
+    "RN"
+   ],
+   "specialty": [
+    "urology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-02-20",
+     "end": "2026-02-22",
+     "location": "Las Vegas, NV",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.suna.org/2026-urologic",
+     "evidence": "accredited, offering you the chance to earn valuable continuing education credits ... advanced practice registered nurses, nurse practitioners, physician assistants; schedule shows Friday, February 20, 2026 through Sunday, February 22, 2026",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": true,
+   "np_pa_basis_evidence": "advanced practice registered nurses, nurse practitioners, physician assistants named as audience; CE credits offered"
+  },
+  {
+   "id": "wocnext",
+   "name": "WOCNext",
+   "org": "Wound, Ostomy and Continence Nurses Society (WOCN Society)",
+   "org_url": "https://www.wocn.org/events/wocnext/",
+   "professions": [
+    "NP",
+    "RN"
+   ],
+   "specialty": [
+    "wound",
+    "ostomy",
+    "continence"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically June",
+   "editions": [
+    {
+     "start": "2027-06-14",
+     "end": "2027-06-16",
+     "location": "Savannah Convention Center, Savannah, GA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": null,
+      "text": "Submit Your Abstract for WOCNext!",
+      "url": "https://www.wocnext.org/event-information"
+     },
+     "source_url": "https://www.wocnext.org/event-information",
+     "evidence": "Monday, June 14 - Wednesday, June 16, 2027, at the Savannah Convention Center in Savannah, Georgia; 35+ Contact Hours",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": false,
+   "np_pa_basis_evidence": "35+ Contact Hours mentioned but no NP/APRN-specific CE or NP track found on fetched page"
+  },
+  {
+   "id": "anna-national-symposium",
+   "name": "ANNA National Symposium",
+   "org": "American Nephrology Nurses Association (ANNA)",
+   "org_url": "https://www.annanurse.org/event/national-symposium/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "nephrology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "editions": [
+    {
+     "start": "2027-04-17",
+     "end": "2027-04-21",
+     "location": "Rosen Shingle Creek Hotel, Orlando, FL",
+     "format": "hybrid",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": null,
+      "text": "actively seeking poster presentations ... Prizes up to $1,500 will be awarded to top-rated poster presentations",
+      "url": "https://www.annanurse.org/event/national-symposium/"
+     },
+     "source_url": "https://www.annanurse.org/event/national-symposium/",
+     "evidence": "April 17-21, 2027 ... Rosen Shingle Creek Hotel - Orlando, Florida",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2026-04-25",
+     "end": "2026-04-28",
+     "location": "New Orleans, LA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.annanurse.org/event/national-symposium/",
+     "evidence": "The 2026 National Symposium was held in New Orleans from April 25-28, 2026",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": false,
+   "np_pa_basis_evidence": "no NP/APRN CE or NP track found on fetched page"
+  },
+  {
+   "id": "sgna-annual-course",
+   "name": "SGNA Annual Course",
+   "org": "Society of Gastroenterology Nurses and Associates (SGNA)",
+   "org_url": "https://www.sgna.org/Annual-Course",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "gastroenterology",
+    "endoscopy"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically May",
+   "editions": [
+    {
+     "start": "2027-05-22",
+     "end": "2027-05-24",
+     "location": "New Orleans, LA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": null,
+      "closes": null,
+      "text": "Registration will open in fall 2026 ... Call for Poster Abstracts",
+      "url": "https://www.sgna.org/Annual-Course"
+     },
+     "source_url": "https://www.sgna.org/Annual-Course",
+     "evidence": "54th Annual Course ... May 22-24, 2027 ... New Orleans, Louisiana; accredited as a provider of nursing continuing professional development by the American Nurses Credentialing Center's Commission on Accreditation",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": false,
+   "np_pa_basis_evidence": "general ANCC-accredited CE only; no NP/APRN-specific CE or NP track found on fetched page"
+  },
+  {
+   "id": "itns-annual-symposium",
+   "name": "ITNS Annual Symposium",
+   "org": "International Transplant Nurses Society (ITNS)",
+   "org_url": "https://www.itns.org/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "transplant"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-25",
+     "end": "2026-09-27",
+     "location": "Huntington Convention Center of Cleveland, Cleveland, OH",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.itns.org/",
+     "evidence": "The 34th Annual ITNS Symposium ... on the beautiful shores of Lake Erie in Cleveland, Ohio ... Huntington Convention Center of Cleveland",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": false,
+   "np_pa_basis_evidence": "CE/CEPTC page exists but no NP/APRN-specific content confirmed in fetched text"
+  },
+  {
+   "id": "aspmn-national-conference",
+   "name": "ASPMN Annual/National Conference",
+   "org": "American Society for Pain Management Nursing (ASPMN)",
+   "org_url": "https://aspmn.org/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "pain management"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September/October",
+   "editions": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-24",
+     "location": "Pittsburgh, PA",
+     "format": "in person",
+     "theme": "Pain Management and Technology: Navigating the Currents",
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-07-14",
+      "text": "Poster-Only submissions will remain open until Tuesday, July 14, 2026, at 11:59 pm EST",
+      "url": "https://www.aspmn.org/2026_call_for_abstracts.php"
+     },
+     "source_url": "https://www.aspmn.org/2026_call_for_abstracts.php",
+     "evidence": "Pittsburgh, PA from October 21-24, 2026",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": false,
+   "np_pa_basis_evidence": "no NP/APRN CE or NP track found on fetched pages"
+  },
+  {
+   "id": "aaohn-national-conference",
+   "name": "AAOHN National Conference",
+   "org": "American Association of Occupational Health Nurses (AAOHN)",
+   "org_url": "https://www.aaohn.org/Events/National-Conference",
+   "professions": [
+    "NP",
+    "RN"
+   ],
+   "specialty": [
+    "occupational health"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "virtual",
+   "recurrence": "annual, typically June",
+   "editions": [
+    {
+     "start": "2027-06-01",
+     "end": null,
+     "location": "Virtual",
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": null,
+      "closes": null,
+      "text": "call for speakers page exists at the conference section",
+      "url": "https://www.aaohn.org/Events/National-Conference/Call-for-Session-Proposals"
+     },
+     "source_url": "https://www.aaohn.org/Events/National-Conference",
+     "evidence": "the 2027 AAOHN National Conference, an all-virtual experience ... Continuing nursing education opportunities will be available",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": false,
+   "np_pa_basis_evidence": "general nursing CE only; no NP/APRN-specific CE confirmed on fetched page"
+  },
+  {
+   "id": "dnps-of-color-annual-conference",
+   "name": "DNPs of Color Annual Conference",
+   "org": "DNPs of Color",
+   "org_url": "https://conference.dnpsofcolor.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "doctoral education",
+    "advanced practice nursing",
+    "health equity"
+   ],
+   "audience": [
+    "clinician",
+    "academic",
+    "leader"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-15",
+     "end": "2026-10-18",
+     "location": "Detroit, MI",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://conference.dnpsofcolor.org/",
+     "evidence": "October 15 -18, 2026 Detroit, MI ... Attendees can earn up to 15.0 accredited contact hours / CEUs",
+     "checked": "2026-09-21"
+    }
+   ],
+   "np_pa_basis": true,
+   "np_pa_basis_evidence": "Clinical Practice Track on demand advances your clinical practice with access to on demand to clinical practice topics sponsored by NPACE"
+  }
+ ],
+ "not_found": [
+  {
+   "org": "American Association of Heart Failure Nurses (AAHFN)",
+   "url": "https://www.aahfn.org/page/FutureAnnualMeeting",
+   "reason": "page unreachable - site returned 403 client error on multiple pages (FutureAnnualMeeting, AAHFNEvents, page/21AM); homepage fetch returned stale/inconsistent cached content (2016 meeting) not usable as current evidence"
+  },
+  {
+   "org": "Doctors of Nursing Practice, Inc. (DNP Inc.) - National DNP Conference",
+   "url": "https://www.doctorsofnursingpractice.org/",
+   "reason": "page unreachable - repeated ROBOTS_DISALLOWED / robots.txt fetch failures on homepage and individual event pages (18th National DNP Conference page, 2026 Doctoral Education Conference page); events/list page did fetch but did not show the National DNP Conference"
+  },
+  {
+   "org": "Association of Women's Health, Obstetric and Neonatal Nurses (AWHONN)",
+   "url": "https://awhonnconvention.org/future-dates/",
+   "reason": "not NP-relevant - future-dates page gives Convention dates (2027-2029) but no NP/APRN CE or NP track mentioned; AWHONN membership is predominantly staff RN, not APRN-focused"
+  }
+ ],
+ "_ported": "from Claude v4 build (2026-09-21), merged 2026-09-22"
+}

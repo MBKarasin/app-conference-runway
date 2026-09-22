@@ -1,0 +1,941 @@
+{
+ "group": "A",
+ "series": [
+  {
+   "id": "aapa-conference",
+   "name": "AAPA Conference",
+   "org": "American Academy of Physician Associates (AAPA)",
+   "org_url": "https://www.aapa.org/conference/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician",
+    "leader"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically May",
+   "editions": [
+    {
+     "start": "2026-05-15",
+     "end": "2026-05-19",
+     "location": "New Orleans, LA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "AAPA 2026 | May 15 – 19, 2026 | New Orleans",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-05-21",
+     "end": "2027-05-25",
+     "location": "Phoenix, AZ",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-07-31",
+      "text": "The deadline to apply is July 31, 2026 (call for presentations; selected presenters informed by late fall of 2026)",
+      "url": "https://www.aapa.org/events/aapa-call-for-presentations/"
+     },
+     "source_url": "https://www.aapa.org/wp-content/uploads/2026/05/AC-27.002-AAPA-2027-Conference-Website_Agenda-PDF-8.5x11in-4.23.26.pdf",
+     "evidence": "Phoenix • May 21-25, 2027 • aapa.org/conference",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-05-19",
+     "end": "2028-05-23",
+     "location": null,
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "AAPA 2028 | May 19 – 23, 2028",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-04-27",
+     "end": "2029-05-01",
+     "location": null,
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "AAPA 2029 | April 27 – May 1, 2029",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-05-17",
+     "end": "2030-05-21",
+     "location": null,
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "AAPA 2030 | May 17 – 21, 2030",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aapa-leadership-advocacy-summit",
+   "name": "AAPA Leadership and Advocacy Summit",
+   "org": "American Academy of Physician Associates (AAPA)",
+   "org_url": "https://www.aapa.org/events/leadership-advocacy-summit/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "leadership",
+    "advocacy"
+   ],
+   "audience": [
+    "leader"
+   ],
+   "kind": "summit",
+   "region": "near",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-24",
+     "end": "2026-09-26",
+     "location": "Ritz-Carlton Pentagon City, Arlington, VA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/leadership-advocacy-summit/",
+     "evidence": "Sept. 24–26, 2026 at the Ritz-Carlton, Pentagon City",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aapa-executive-leadership-conference",
+   "name": "AAPA Executive Leadership Conference",
+   "org": "American Academy of Physician Associates (AAPA)",
+   "org_url": "https://www.aapa.org/events/elc/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "leadership"
+   ],
+   "audience": [
+    "leader"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically February/March",
+   "editions": [
+    {
+     "start": "2026-02-23",
+     "end": "2026-02-25",
+     "location": "Clearwater Beach Sheraton Resort on Sand Key, Clearwater Beach, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/elc/",
+     "evidence": "Monday, Feb. 23 – Wednesday, Feb. 25 ... Clearwater Beach Sheraton Resort on Sand Key, 1160 Gulf Blvd, Clearwater Beach, FL 33767",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-03-01",
+     "end": "2027-03-03",
+     "location": "Palm Springs, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "Executive Leadership Conference | March 1 – 3, 2027, Palm Springs, Calif.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aapa-we-are-family-medicine",
+   "name": "We Are Family (Medicine)",
+   "org": "American Academy of Physician Associates (AAPA)",
+   "org_url": "https://www.aapa.org/events/we-are-family-medicine/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "family medicine",
+    "primary care"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "virtual",
+   "recurrence": "annual, typically January",
+   "editions": [
+    {
+     "start": "2026-01-31",
+     "end": "2026-02-02",
+     "location": null,
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "2026 We Are Family (Medicine) | January 31 – February 2, 2026",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-01-16",
+     "end": "2027-01-18",
+     "location": null,
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "We Are Family (Medicine) | January 16 – 18, 2027, Virtual",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aapa-musculoskeletal-galaxy",
+   "name": "Musculoskeletal Galaxy",
+   "org": "American Academy of Physician Associates (AAPA)",
+   "org_url": "https://www.aapa.org/events/musculoskeletal-galaxy/",
+   "professions": [
+    "PA",
+    "NP"
+   ],
+   "specialty": [
+    "orthopaedics",
+    "musculoskeletal"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically June",
+   "editions": [
+    {
+     "start": "2026-06-05",
+     "end": "2026-06-08",
+     "location": "Hilton Chicago, Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "2026 Musculoskeletal Galaxy | June 5 – 8, 2026 | Chicago",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aapa-hospital-medicine-essentials",
+   "name": "Hospital Medicine Essentials",
+   "org": "American Academy of Physician Associates (AAPA)",
+   "org_url": "https://www.aapa.org/events/hospital-medicine-essentials/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "hospital medicine"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically late summer",
+   "editions": [
+    {
+     "start": "2026-08-30",
+     "end": "2026-09-02",
+     "location": "DoubleTree by Hilton Hotel Nashville Downtown, Nashville, TN",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "2026 Hospital Medicine Essentials | Aug. 30 – Sept. 2, 2026 | Nashville, Tenn.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "psych-congress-pa-institute",
+   "name": "Psych Congress PA Institute",
+   "org": "HMP Global in partnership with the American Academy of Physician Associates (AAPA)",
+   "org_url": "https://www.hmpglobalevents.com/psych-congress-pa-institute",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "psychiatry",
+    "behavioral health"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically December",
+   "editions": [
+    {
+     "start": "2026-12-04",
+     "end": "2026-12-06",
+     "location": "Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Page shows a 'Call for Posters' link; no deadline listed",
+      "url": "https://www.hmpglobalevents.com/psych-congress-pa-institute"
+     },
+     "source_url": "https://www.aapa.org/events/",
+     "evidence": "2026 Psych Congress PA Institute | Dec. 4-6, 2026 | Orlando, Fla.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "paea-education-forum",
+   "name": "PAEA Education Forum",
+   "org": "Physician Assistant Education Association (PAEA)",
+   "org_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "education"
+   ],
+   "audience": [
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-05",
+     "end": "2026-10-10",
+     "location": "Austin, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+     "evidence": "October 5-10, 2026, in Austin, Texas",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-11",
+     "end": "2027-10-16",
+     "location": "Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+     "evidence": "October 11-16, 2027, in Chicago, Illinois",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-10-16",
+     "end": "2028-10-21",
+     "location": "Seattle, WA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+     "evidence": "October 16-21, 2028, in Seattle, Washington",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-10-29",
+     "end": "2029-11-03",
+     "location": "Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+     "evidence": "October 29-November 3, 2029, in Washington, D.C.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-10-13",
+     "end": "2030-10-17",
+     "location": "Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+     "evidence": "October 13-17, 2030, in Orlando, Florida",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nccpa-represent-summit",
+   "name": "REPRESENT! NCCPA Summit",
+   "org": "National Commission on Certification of Physician Assistants (NCCPA)",
+   "org_url": "https://www.nccpa.net/represent-summit/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "diversity",
+    "workforce"
+   ],
+   "audience": [
+    "clinician",
+    "leader",
+    "academic"
+   ],
+   "kind": "summit",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-18",
+     "end": "2026-09-19",
+     "location": "Emory Conference Center, Atlanta, GA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-07-01",
+      "text": "July 1, 2026, at 11:59 PM ET – Deadline for Poster Abstracts",
+      "url": "https://www.nccpa.net/wp-content/uploads/2025/12/2026-REPRESENT-Summit_Call-for-Posters-1.pdf"
+     },
+     "source_url": "https://www.nccpa.net/represent-summit/",
+     "evidence": "September 18–19, 2026, in Atlanta, GA",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aaspa-virtual-surgical-cme",
+   "name": "AASPA Annual Virtual Surgical CME Conference",
+   "org": "American Association of Surgical Physician Assistants (AASPA)",
+   "org_url": "https://www.aaspa.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "surgery"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "virtual",
+   "recurrence": "annual, typically August",
+   "editions": [
+    {
+     "start": "2026-08-19",
+     "end": "2026-08-21",
+     "location": null,
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aaspa.com/",
+     "evidence": "August 19th through August 21st, 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "sdpa-summer-dermatology-conference",
+   "name": "SDPA Annual Summer Dermatology Conference",
+   "org": "Society of Dermatology Physician Associates (SDPA)",
+   "org_url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "dermatology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically June",
+   "editions": [
+    {
+     "start": "2026-06-10",
+     "end": "2026-06-14",
+     "location": "Hyatt Regency Denver at Colorado Convention Center, Denver, CO",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://web.cvent.com/event/a2dcef57-17a6-444f-96bd-40db1178fd7a/summary",
+     "evidence": "Wednesday, June 10 – Sunday, June 14  Hyatt Regency Denver at Colorado Convention Center",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-06-09",
+     "end": "2027-06-13",
+     "location": null,
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences",
+     "evidence": "Jun 9 - 13 2027 SDPA Annual Summer Dermatology Conference",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-06-07",
+     "end": "2028-06-11",
+     "location": null,
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences",
+     "evidence": "Jun 7 - 11 2028 SDPA Annual Summer Dermatology Conference",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "sdpa-fall-dermatology-conference",
+   "name": "SDPA Annual Fall Dermatology Conference",
+   "org": "Society of Dermatology Physician Associates (SDPA)",
+   "org_url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "dermatology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically November",
+   "editions": [
+    {
+     "start": "2026-11-11",
+     "end": "2026-11-15",
+     "location": "Hollywood, FL",
+     "format": "in person",
+     "theme": "DermScape: Charting the Future of Dermatology Together",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences",
+     "evidence": "Nov 11 - 15 2026 SDPA 24th Annual Fall Dermatology Conference",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-11-10",
+     "end": "2027-11-14",
+     "location": null,
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences",
+     "evidence": "Nov 10 - 14 2027 SDPA 25th Annual Fall Dermatology Conference",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "apao-annual-symposium",
+   "name": "Annual Oncology Symposium for the Healthcare Provider presented by APAO",
+   "org": "Association of PAs in Oncology (APAO)",
+   "org_url": "https://oncologypas.org/events",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "oncology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically August/September",
+   "editions": [
+    {
+     "start": "2026-08-13",
+     "end": "2026-08-16",
+     "location": "New York Marriott Marquis, New York, NY",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-06-01",
+      "text": "All poster abstracts must be submitted by June 1, 2026, for consideration as a poster.",
+      "url": "https://oncologypas.org/event/2026-annual-symposium/"
+     },
+     "source_url": "https://oncologypas.org/event/2026-annual-symposium/",
+     "evidence": "29th Annual Oncology Symposium for the Healthcare Provider presented by APAO - August 13 to August 16, 2026",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-09-23",
+     "end": "2027-09-26",
+     "location": "San Antonio Marriott Rivercenter, San Antonio, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://oncologypas.org/event/2026-annual-symposium/",
+     "evidence": "30th Annual Oncology Symposium for the Healthcare Provider presented by APAO ... September 23-26, 2027 ... San Antonio Marriott Rivercenter on the River Walk",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "anspa-annual-cme-meeting",
+   "name": "ANSPA Annual CME Meeting at CNS",
+   "org": "Association of Neurosurgical Physician Assistants (ANSPA)",
+   "org_url": "https://anspa.mypanetwork.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "neurosurgery"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, held with the CNS Annual Meeting",
+   "editions": [
+    {
+     "start": "2026-11-01",
+     "end": "2026-11-01",
+     "location": "Washington Convention Center, Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://anspa.mypanetwork.com/",
+     "evidence": "ANSPA 2026 Annual CME Meeting at CNS Washington Convention Center Washington, DC November 1st, 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "shm-converge",
+   "name": "SHM Converge",
+   "org": "Society of Hospital Medicine (SHM)",
+   "org_url": "https://shmconverge.hospitalmedicine.org/",
+   "professions": [
+    "MD",
+    "PA",
+    "NP"
+   ],
+   "specialty": [
+    "hospital medicine"
+   ],
+   "audience": [
+    "clinician",
+    "leader",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March/April",
+   "editions": [
+    {
+     "start": "2027-03-30",
+     "end": "2027-04-02",
+     "location": "Mandalay Bay Resort & Casino, Las Vegas, NV",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": "2026-09-11",
+      "closes": "2026-11-23",
+      "text": "Submissions are open from September 11 through November 23, 2026. (no time zone stated)",
+      "url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=EQLVXWNI"
+     },
+     "source_url": "https://shmconverge.hospitalmedicine.org/",
+     "evidence": "March 30 - April 2, 2027 ... Mandalay Bay Resort & Casino",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "pspa-fall-cme-conference",
+   "name": "Annual PSPA Fall CME Conference",
+   "org": "Pennsylvania Society of Physician Associates (PSPA)",
+   "org_url": "https://www.pspa.net/events-and-cme/annual-conference/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October–December",
+   "editions": [
+    {
+     "start": "2026-12-02",
+     "end": "2026-12-05",
+     "location": "Hershey Lodge, Hershey, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Poster page says 'Abstracts must be submitted no later than 11:59 p.m. on September 8.' — no year or time zone given",
+      "url": "https://site.pspa.net/poster-presentations/"
+     },
+     "source_url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/",
+     "evidence": "December 2 – 5, 2026 51st Annual PSPA Fall CME Conference Hershey Lodge Hershey, PA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-20",
+     "end": "2027-10-23",
+     "location": "Bayfront Convention Center, Erie, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": "2026-12-31",
+      "text": "The deadline for submission is December 31, 2026. (speaker application)",
+      "url": "https://www.pspa.net/events-and-cme/annual-conference/speaker-application/"
+     },
+     "source_url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/",
+     "evidence": "October 20 – 23, 2027 52nd Annual PSPA Fall CME Conference Bayfront Convention Center, Courtyard by Marriott Erie Bayfront Erie, PA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-11-29",
+     "end": "2028-12-01",
+     "location": "Hershey Lodge, Hershey, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/",
+     "evidence": "November 29 – December 1, 2028 53rd Annual PSPA Fall CME Conference Hershey Lodge Hershey, PA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-10-31",
+     "end": "2029-11-03",
+     "location": "Kalahari Resorts & Conventions, Pocono Manor, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/",
+     "evidence": "October 31 – November 3, 2029 54th Annual PSPA Fall CME Conference Kalahari Resorts & Conventions Pocono Manor, PA",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "Society of Emergency Medicine PAs (SEMPA) – SEMPA 360",
+   "url": "https://sempa.org/page/sempa-360-2026",
+   "reason": "page unreachable (403); other sempa.org pages fetched show only stale 2018/2020 dates; no 2026/2027 dates verifiable"
+  },
+  {
+   "org": "Association of PAs in Cardiothoracic and Vascular Surgery (APACVS)",
+   "url": "https://www.apacvs.org/page/FutureMeetings",
+   "reason": "apacvs.org pages unreachable (403); apacvs2026.com exhibitor page names 2026 45th Annual Meeting in Milwaukee but gives only exhibit hours (June 10-12), not meeting dates"
+  },
+  {
+   "org": "PAs in Orthopaedic Surgery (PAOS)",
+   "url": "https://paos.org/mpage/Attend",
+   "reason": "event pages unreachable (403); homepage shows only 2025 events"
+  },
+  {
+   "org": "New York State Society of PAs (NYSSPA)",
+   "url": "https://www.nysspa.org/page/NYSSPA2026",
+   "reason": "all nysspa.org pages unreachable (403)"
+  },
+  {
+   "org": "New Jersey State Society of PAs (NJSSPA)",
+   "url": "https://njsspa.mypanetwork.com/physician-assistant-events",
+   "reason": "no NJSSPA-run annual conference posted; events page lists only third-party CME"
+  },
+  {
+   "org": "American Academy of Nephrology PAs (AANPA)",
+   "url": "https://aanpa.org/",
+   "reason": "no conference dates posted"
+  },
+  {
+   "org": "AAPA Musculoskeletal Galaxy 2027",
+   "url": "https://www.aapa.org/events/",
+   "reason": "listed as 'Summer 2027, Location TBD' — no dates"
+  },
+  {
+   "org": "PAEA Education Forum call for proposals 2027",
+   "url": "https://paeaonline.org/deadlines",
+   "reason": "no proposal deadline posted"
+  }
+ ]
+}

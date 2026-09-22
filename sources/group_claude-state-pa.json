@@ -1,0 +1,984 @@
+{
+ "group": "claude-state-pa",
+ "series": [
+  {
+   "id": "njsspa-annual-cme-conference",
+   "name": "NJSSPA Annual CME Conference",
+   "org": "New Jersey State Society of Physician Associates (NJSSPA)",
+   "org_url": "https://njsspa.mypanetwork.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October (no 2025/2026 edition posted as of check date)",
+   "editions": [
+    {
+     "start": "2024-10-19",
+     "end": "2024-10-19",
+     "location": "Crowne Plaza Princeton - Conference Center, an IHG Hotel, Plainsboro Township, NJ",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://njsspa.mypanetwork.com/physician-assistant-events/1165-2024-njsspa-cme-conference",
+     "evidence": "Saturday, October 19, 2024 at 7:30am ET - 6:00pm ET ... Crowne Plaza Princeton - Conference Center, an IHG Hotel, 870 Scudders Mill Road, Plainsboro Township, NJ 08536",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "connapa-charter-oak-conference",
+   "name": "Charter Oak Conference",
+   "org": "Connecticut Academy of Physician Associates (ConnAPA)",
+   "org_url": "https://connapa.org/cocconference/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2026-03-21",
+     "end": "2026-03-23",
+     "location": "Water's Edge Resort & Spa, Westbrook, CT",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://connapa.org/cocconference/",
+     "evidence": "Join us in celebrating the 40th Annual Charter Oak Conference, taking place March 21–23, 2026, at Water's Edge Resort & Spa in Westbrook, CT.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mdapa-annual-cme-conference",
+   "name": "MdAPA Annual CME Conference",
+   "org": "Maryland Academy of Physician Assistants (MdAPA)",
+   "org_url": "https://mdapa.org/2026-Annual-Conference",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically August",
+   "editions": [
+    {
+     "start": "2026-08-19",
+     "end": "2026-08-22",
+     "location": "Hyatt Regency, Cambridge, MD",
+     "format": "in person",
+     "theme": "Your Light Matters: Let it G.L.O.W.",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Call for 2026 Conference Speakers page exists but no submission deadline captured in fetched content",
+      "url": "https://mdapa.org/Call-for-Speakers"
+     },
+     "source_url": "https://mdapa.org/event-6662277",
+     "evidence": "19 Aug 2026 ... 22 Aug 2026 ... Hyatt Regency, Cambridge, MD",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "capa-capacon",
+   "name": "CAPACon",
+   "org": "California Academy of Physician Associates (CAPA)",
+   "org_url": "https://www.capanet.org/capacon2026/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-25",
+     "end": "2026-09-27",
+     "location": "Grand Hyatt Indian Wells Resort & Villas, Indian Wells, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-05-29",
+      "text": "Abstracts Due: Now Extended until May 29th!",
+      "url": "https://www.capanet.org/capacon2026/"
+     },
+     "source_url": "https://www.capanet.org/capacon2026/",
+     "evidence": "Held September 25–27, 2026 at the stunning Grand Hyatt Indian Wells Resort & Villas",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "oapa-annual-conference",
+   "name": "OAPA Annual Conference",
+   "org": "Ohio Association of Physician Assistants (OAPA)",
+   "org_url": "https://www.ohiopa.com/aws/OAPA/pt/sp/fall-conference",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically August",
+   "editions": [
+    {
+     "start": "2026-08-27",
+     "end": "2026-08-29",
+     "location": "Westin Cleveland Downtown, Cleveland, OH",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.ohiopa.com/aws/OAPA/pt/sp/fall-conference",
+     "evidence": "Thursday, August 27, 2026 / Friday, August 28, 2026 / Saturday, August 29, 2026 ... Westin Cleveland Downtown (777 Saint Clair Avenue NE, Cleveland, OH 44114)",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "gapa-summer-cme-conference",
+   "name": "GAPA Summer CME Conference",
+   "org": "Georgia Association of Physician Assistants (GAPA)",
+   "org_url": "https://gapa.net/cme-conference-2/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically summer (June-July)",
+   "editions": [
+    {
+     "start": "2027-07-01",
+     "end": "2027-07-03",
+     "location": "Sandestin Golf & Beach Resort, Sandestin, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://gapa.net/cme-conference-2/",
+     "evidence": "The 2027 GAPA Summer CME Conference will be held at the Sandestin Golf & Beach Resort on July 1-3.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ncapa-summer-conference",
+   "name": "NCAPA Annual Summer Conference",
+   "org": "North Carolina Academy of Physician Associates (NCAPA)",
+   "org_url": "https://ncapa.org/summer-cme-conference/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically August",
+   "editions": [
+    {
+     "start": "2026-08-16",
+     "end": "2026-08-21",
+     "location": "North Myrtle Beach, SC",
+     "format": "in person",
+     "theme": "50th Summer Conference",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": "Early bird registration discount by May 31, 2026",
+      "url": "https://ncapa.org/summer-cme-conference/"
+     },
+     "source_url": "https://ncapa.org/summer-cme-conference/",
+     "evidence": "Approval is valid from 8/17/2026 to 8/21/2026 ... Held in North Myrtle Beach, SC; homepage: Celebrate 50 years of NCAPA at our Annual Summer Conference in Myrtle Beach...August 16–21",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "vapa-summer-conference",
+   "name": "VAPA Summer Conference",
+   "org": "Virginia Academy of PAs (VAPA)",
+   "org_url": "https://www.vapa.org/events/2026VAPASummerConference/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically July",
+   "editions": [
+    {
+     "start": "2026-07-19",
+     "end": "2026-07-23",
+     "location": "Marriott Virginia Beach Oceanfront, Virginia Beach, VA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.vapa.org/events/2026VAPASummerConference/",
+     "evidence": "July 19-23, 2026 at the Marriott Virginia Beach Oceanfront",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mapa-mi-fall-cme-conference",
+   "name": "MAPA Fall CME Conference",
+   "org": "Michigan Academy of Physician Associates (MAPA)",
+   "org_url": "https://www.michiganpa.org/events/2026-mapa-fall-cme-conference",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-15",
+     "end": "2026-10-17",
+     "location": "Grand Traverse Resort and Spa, Williamsburg, MI",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": "Speaker confirmation deadline July 1, 2026; slide upload deadline September 30, 2026",
+      "url": null
+     },
+     "source_url": "https://www.michiganpa.org/events/2026-mapa-fall-cme-conference",
+     "evidence": "Thursday, October 15, 2026 to Saturday, October 17, 2026 Grand Traverse Resort and Spa",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "wapa-fall-conference",
+   "name": "WAPA Fall Conference",
+   "org": "Washington Academy of Physician Associates (WAPA)",
+   "org_url": "https://wapa.com/events/wapa-fall-conference-2026/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically fall (September-November)",
+   "editions": [
+    {
+     "start": "2026-11-01",
+     "end": "2026-11-04",
+     "location": "Hyatt Regency Lake Washington, Renton, WA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://wapa.com/events/wapa-fall-conference-2026/",
+     "evidence": "Dates: November 1st-4th Location: Hyatt Regency Lake Washington in Renton, WA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-09-30",
+     "end": "2027-09-30",
+     "location": "Great Wolf Lodge",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://wapa.com/events/wapa-fall-conference-2027/",
+     "evidence": "WAPA Fall Conference 2027 (September 30, 2027 at Great Wolf Lodge)",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "akapa-all-alaska-medical-conference",
+   "name": "All-Alaska Medical Conference",
+   "org": "Alaska Academy of Physician Associates",
+   "org_url": "https://www.akapa.org",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-14",
+     "end": "2026-10-14",
+     "location": "BP Energy Center, Anchorage, AK",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.akapa.org",
+     "evidence": "2026 All-Alaska Medical Conference ... BP Energy Center, 1014 Energy Ct, Anchorage, AK 99508 ... October 14, 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "hapa-aloha-medical-conference",
+   "name": "Aloha Medical Conference",
+   "org": "Hawaii Academy of PAs",
+   "org_url": "https://hapa.mypanetwork.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-19",
+     "end": "2026-10-23",
+     "location": "Waikiki Beach Marriott Resort & Spa, Honolulu, HI",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://hapa.mypanetwork.com/",
+     "evidence": "36th Aloha Medical Conference will be held at the Waikiki Beach Marriott Resort & Spa in Honolulu, Hawaii from October 19-23, 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "inapa-annual-conference",
+   "name": "Indiana Academy of PAs Annual Conference",
+   "org": "Indiana Academy of PAs",
+   "org_url": "https://www.indianapas.org",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-29",
+     "end": "2026-10-30",
+     "location": "502 East Event Centre, Carmel, IN",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.indianapas.org",
+     "evidence": "October 29-30, 2026 ... 502 East Event Centre in Carmel, Indiana",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ipas-fall-cme-conference",
+   "name": "IPAS Fall CME Conference (Healthcare in the Heartland)",
+   "org": "Iowa Physician Associates Society (IPAS)",
+   "org_url": "https://www.iapasociety.org",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-26",
+     "end": "2026-10-27",
+     "location": "Coralville, IA",
+     "format": "in person",
+     "theme": "Healthcare in the Heartland",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.iapasociety.org",
+     "evidence": "October 26-27, 2026 | Coralville, Iowa",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "kapa-heart-of-america-cme",
+   "name": "KAPA Heart of America CME and Annual Members Meeting",
+   "org": "Kansas Academy of Physician Associates",
+   "org_url": "https://kansaspa.mypanetwork.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-15",
+     "end": "2026-10-17",
+     "location": "Aloft Wichita, Wichita, KS",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://kansaspa.mypanetwork.com/",
+     "evidence": "KAPA Heart of America CME and Annual Members Meeting ... October 15-17, 2026 ... Aloft Wichita, Wichita, KS",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mapa-mn-annual-conference",
+   "name": "MAPA Annual Conference",
+   "org": "Minnesota Academy of Physician Associates (MAPA)",
+   "org_url": "https://www.MinnesotaPA.org",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-24",
+     "end": "2026-09-25",
+     "location": "Breezy Point Resort, Breezy Point, MN",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.MinnesotaPA.org",
+     "evidence": "Mark your calendars now for September 24 & 25th at the Breezy Point Resort in Breezy Point, MN.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mapa-me-spring-cme-conference",
+   "name": "MAPA Spring CME Conference",
+   "org": "Maine Association of Physician Associates (MAPA)",
+   "org_url": "https://mainepa.mypanetwork.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically spring (April)",
+   "editions": [
+    {
+     "start": "2027-04-02",
+     "end": "2027-04-03",
+     "location": "AC Hotel Portland Downtown/Waterfront, Portland, ME",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "If you are interested in presenting on a topic, please send proposal/inquiries via email (call for presenters open, no deadline stated)",
+      "url": null
+     },
+     "source_url": "https://mainepa.mypanetwork.com/",
+     "evidence": "2027 Spring CME Conference ... April 2-3, 2027 ... AC Hotel Portland Downtown/Waterfront in Portland, Maine. Registration will open late fall.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "napa-ne-spring-cme-conference",
+   "name": "NAPA Spring CME Conference",
+   "org": "Nebraska Academy of PAs (NAPA)",
+   "org_url": "https://www.nebraskapa.org",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically spring (April)",
+   "editions": [
+    {
+     "start": "2027-04-07",
+     "end": "2027-04-09",
+     "location": "Holiday Inn & Convention Center, Kearney, NE",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.nebraskapa.org",
+     "evidence": "2027 Spring CME Conference April 7-9, 2027 ... Holiday Inn & Convention Center in Kearney, Nebraska",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nhspa-summer-cme-conference",
+   "name": "NHSPA & NHOA Summer CME Conference",
+   "org": "New Hampshire Society of Physician Associates (NHSPA)",
+   "org_url": "https://nhspa.mypanetwork.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically summer (July)",
+   "editions": [
+    {
+     "start": "2026-07-31",
+     "end": "2026-07-31",
+     "location": "Venue not stated on source page",
+     "format": "in person",
+     "theme": "Diabetes in Depth: Complications, Comorbidities, & Care Strategies",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://nhspa.mypanetwork.com/",
+     "evidence": "Registration Now Open for the NHSPA & NHOA, Summer CME Conference, Friday July 31st, 2026 ... Diabetes in Depth: Complications, Comorbidities, & Care Strategies",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "oapa-53rd-annual-cme-conference",
+   "name": "OAPA Annual CME Conference",
+   "org": "Oklahoma Academy of Physician Associates (OAPA)",
+   "org_url": "https://www.okpa.org",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September-October",
+   "editions": [
+    {
+     "start": "2026-09-30",
+     "end": "2026-10-02",
+     "location": "Embassy Suites Downtown OKC, Oklahoma City, OK",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.okpa.org/events/annual-oapa-fall-cme-conference-2026/",
+     "evidence": "53rd Annual OAPA CME Conference ... September 30 - October 2, 2026 at Embassy Suites Downtown OKC 741 N Phillips Ave., Oklahoma City, OK, 73104",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ospa-fall-conference",
+   "name": "OSPA Fall Conference",
+   "org": "Oregon Society of Physician Associates (OSPA)",
+   "org_url": "https://www.oregonpa.org",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-18",
+     "end": "2026-09-20",
+     "location": "Riverhouse on the Deschutes, Bend, OR",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": null,
+      "closes": null,
+      "text": "Call for Proposals coming April 15!",
+      "url": "https://oregonpa.org/events/ospa-fall-conference-2026-2/"
+     },
+     "source_url": "https://oregonpa.org/events/ospa-fall-conference-2026-2/",
+     "evidence": "September 18th–20th at the scenic Riverhouse on the Deschutes in Bend, Oregon",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "wapa-wy-annual-conference",
+   "name": "WAPA Annual Conference (joint with WMS)",
+   "org": "Wyoming Association of PAs (WAPA)",
+   "org_url": "https://wapa.mypanetwork.com/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically November",
+   "editions": [
+    {
+     "start": "2025-11-14",
+     "end": "2025-11-15",
+     "location": "Laramie, WY",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://wapa.mypanetwork.com/",
+     "evidence": "The 2025 Annual WAPA conference will be a joint event with WMS in Laramie, November 14-15.",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "New York State Society of Physician Associates (NYSSPA)",
+   "url": "https://www.nysspa.org/page/NYSSPA2026",
+   "reason": "page unreachable - WebFetch returned 403 client error on nysspa.org root, /default.aspx, /page/NYSSPA2026, /events/event_list.asp, and /events/EventDetails.aspx?id=1987069 (NYSSPA 2026 CME Conference event page, found via search but blocked on fetch)"
+  },
+  {
+   "org": "New Jersey State Society of Physician Associates (NJSSPA)",
+   "url": "https://njsspa.mypanetwork.com/physician-assistant-events",
+   "reason": "no 2025 or 2026 conference dates posted on chapter's own site as of check date; most recent posted edition is 2024 (already occurred)"
+  },
+  {
+   "org": "Massachusetts Association of Physician Associates (MAPA)",
+   "url": "https://mass-pa.com/",
+   "reason": "page unreachable - WebFetch returned 403 client error on mass-pa.com for /page/2025FallAgenda, /page/2026APPConferenceRegistrationRates, /events/event_list.asp, /news/, /event/2024FallConf; root page loaded once but showed only stale 2020 content"
+  },
+  {
+   "org": "Delaware Academy of Physician Assistants (DAPA)",
+   "url": "https://www.delawarepas.org/annual-conference",
+   "reason": "no dates posted; page states Fall Conference was cancelled in 2020 and no updated info since"
+  },
+  {
+   "org": "District of Columbia Academy of Physician Assistants (DCAPA)",
+   "url": "https://dcapa.mypanetwork.com/physician-assistant-events",
+   "reason": "no DCAPA-hosted annual conference dates found; events page lists only external CME providers"
+  },
+  {
+   "org": "Texas Academy of Physician Assistants (TAPA)",
+   "url": "https://tapa.org/page/annualconference",
+   "reason": "page unreachable - WebFetch returned 403 client error on tapa.org root, /page/annualconference, and /events/event_list.asp"
+  },
+  {
+   "org": "Illinois Academy of PAs (IAPA)",
+   "url": "https://www.illinoispa.org/events",
+   "reason": "2026 Fall CME Conference call for presentations is posted but no specific dates given on the page"
+  },
+  {
+   "org": "Florida Academy of PAs (FAPA)",
+   "url": "https://fapaonline.org/page/UpcomingSymposium",
+   "reason": "page unreachable - WebFetch returned 403 client error on fapaonline.org root, /page/UpcomingSymposium, and /events/event_list.asp. Note: floridafapa.org is an unrelated organization (Florida Foster and Adoptive Parent Association), not the PA chapter."
+  },
+  {
+   "org": "Alabama Society of PAs",
+   "url": "http://www.myaspa.org",
+   "reason": "no conference dates found on homepage or events page"
+  },
+  {
+   "org": "Idaho Academy of PAs",
+   "url": "http://www.Idahopa.org",
+   "reason": "page states 'The upcoming calendar is currently empty'"
+  },
+  {
+   "org": "Arkansas Academy of PAs (ARAPA)",
+   "url": "https://arapa.mypanetwork.com/page/1592-2026-cme-conference",
+   "reason": "conference page exists (ARAPA 2026 CME Conference referenced on homepage) but the specific page is disallowed by robots.txt for fetching"
+  },
+  {
+   "org": "Colorado Academy of Physician Associates (CAPA)",
+   "url": "https://www.coloradopas.org/2026-CAPA-Annual-CME-Conference",
+   "reason": "page exists but fetched content was inconsistent/insufficient to confirm a verbatim date range and venue (partial references to April 10 and '3.18' with Colorado Springs Marriott implied only via meta-keywords)"
+  },
+  {
+   "org": "Louisiana Academy of PAs (LAPA)",
+   "url": "https://ourlapa.org/",
+   "reason": "page confirms an annual CME conference held each September and references a 2026 conference banner image, but specific dates and venue for 2026 are not stated in accessible page content"
+  },
+  {
+   "org": "Nevada Academy of Physician Associates",
+   "url": "https://nevadapa.mypanetwork.com/",
+   "reason": "no NAPA-hosted annual conference dates found; only external CME dinner events and a mention of a past 2025 Red Rock CME/CE Conference"
+  },
+  {
+   "org": "New Mexico Academy of PAs (NMAPA)",
+   "url": "https://nmapa.mypanetwork.com/",
+   "reason": "a '45th Annual Primary Care Conference' postcard image is referenced for 2026 but the linked event page 404'd and no dates/venue could be confirmed"
+  },
+  {
+   "org": "North Dakota Academy of PAs (NDAPA)",
+   "url": "https://ndapa.mypanetwork.com/",
+   "reason": "no NDAPA-hosted annual conference dates found on chapter site"
+  },
+  {
+   "org": "Missouri Academy of PAs (MOAPA)",
+   "url": "https://www.moapa.org/",
+   "reason": "site mentions an 'Annual CME Conference' as a member benefit but no dates/venue posted; only PA Week regional social events found with dates"
+  },
+  {
+   "org": "PA Academy of Vermont (PAAV)",
+   "url": "https://paav.mypanetwork.com/page/1349-2026-conference",
+   "reason": "page unreachable - disallowed by robots.txt"
+  },
+  {
+   "org": "Rhode Island Academy of PAs (RIAPA)",
+   "url": "https://riapa.org/",
+   "reason": "only a PA Week celebration event found; no annual conference dates/venue posted"
+  },
+  {
+   "org": "South Dakota Academy of PAs",
+   "url": "http://www.sdapa.net",
+   "reason": "conference listed only as a navigation link with no dates/venue content"
+  },
+  {
+   "org": "Utah Academy of PAs (UAPA)",
+   "url": "https://utahapa.mypanetwork.com/page/1572-2027-red-rock-cme-conference",
+   "reason": "a 2027 Red Rock CME Conference is referenced in navigation but that specific page is disallowed by robots.txt; no 2026 conference found"
+  },
+  {
+   "org": "West Virginia Association of PAs (WVAPA)",
+   "url": "https://wvapa.mypanetwork.com/physician-assistant-events",
+   "reason": "only external CME provider events found; no WVAPA-hosted 2025/2026 conference dates posted; CME Conference Committee page blocked by robots.txt"
+  },
+  {
+   "org": "Wisconsin Academy of PAs (WAPA)",
+   "url": "http://www.wapa.org/",
+   "reason": "page unreachable for conference sub-pages - WebFetch returned 403 client error; homepage shows only stale 2018 conference date"
+  },
+  {
+   "org": "Arizona State Association of PAs (ASAPA)",
+   "url": "http://www.asapa.org",
+   "reason": "homepage confirmed as official site but no 2026 conference dates posted; most recent dated event shown was a 2020 virtual CME conference"
+  },
+  {
+   "org": "Kentucky Academy of PAs",
+   "url": "",
+   "reason": "not checked - no website URL listed on AAPA chapter directory page; WebSearch budget for this session was exhausted before a search could locate one; a guessed domain (kyapa.net) had a certificate error"
+  },
+  {
+   "org": "Mississippi Academy of PAs",
+   "url": "",
+   "reason": "not checked - no website URL listed on AAPA chapter directory page; WebSearch budget exhausted; a guessed domain (msapa.net) resolved to an unrelated accountants' association"
+  },
+  {
+   "org": "Montana Academy of PAs",
+   "url": "",
+   "reason": "not checked - no website URL listed on AAPA chapter directory page; WebSearch budget exhausted; a guessed domain (mtapa.org) failed DNS resolution"
+  },
+  {
+   "org": "South Carolina Academy of PAs",
+   "url": "",
+   "reason": "not checked - no website URL listed on AAPA chapter directory page; WebSearch budget exhausted; a guessed domain (scapa.net) is a parked/for-sale domain, not the chapter's site"
+  },
+  {
+   "org": "Tennessee Academy of Physician Associates",
+   "url": "",
+   "reason": "not checked - no website URL listed on AAPA chapter directory page; WebSearch budget exhausted; a guessed domain (tnapa.org) resolved to an unrelated urban planning association"
+  }
+ ],
+ "_ported": "from Claude v4 build (2026-09-21), merged 2026-09-22"
+}

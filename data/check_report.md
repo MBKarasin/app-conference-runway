@@ -1,0 +1,168 @@
+# Weekly source check — 2026-09-22
+
+Editions checked: 713 · verified 554 · not found 33 · unreachable 126
+
+## Date not found on the organizer page (33)
+
+- Leadership Academy — 2023-10-23 — not on page: date — https://shmleadershipacademy.org/wp-content/uploads/2023/09/LDR23_IM-Schedule.pdf
+- Transform — 2023-11-30 — not on page: date, year — https://www.aacnnursing.org/portals/0/pdfs/conferences-webinars/Transform-prospectus.pdf
+- Health Policy Conference — 2024-01-27 — not on page: date — https://storage.aanp.org/www/documents/events/2024-AANP-HP-Conference-Draft-Agenda.pdf
+- Global Surgical Conference & Expo — 2024-03-09 — not on page: year — https://www.aorn.org/article/-in-category/categories/expo
+- Vascular Annual Meeting (VAM) — 2024-06-19 — not on page: date — https://vascular.org/2024-vascular-annual-meeting
+- National Hospitalist Day — 2025-03-06 — not on page: year — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/downloads/
+- Vascular Annual Meeting (VAM) — 2025-06-04 — not on page: date — https://vascular.org/vam-2025
+- HRX Live — 2025-09-04 — not on page: date — https://experiencehrx.com/hrx-live/
+- NCS Annual Meeting — 2025-09-16 — not on page: name — https://www.neurocriticalcare.org/Portals/0/NCS%202025%20Annual%20Meeting_Accreditation%20Overview%20_%20Final_9_16_25.pdf
+- International Neuroscience Nursing Research Symposium — 2026-01-23 — not on page: date — https://aann.org/meetings/research-symposium/research-symposium-registration
+- UroLogic (SUNA Annual/Advanced UroLogic Conference) — 2026-02-20 — not on page: date — https://www.suna.org/2026-urologic
+- AANN Annual Conference — 2026-03-21 — not on page: date — https://aann.org/meetings/future-meetings
+- AAD Annual Meeting — 2026-03-27 — not on page: date — https://www.aad.org/member/meetings/archive
+- Cardiovascular Nursing Symposium — 2026-04-11 — not on page: date — https://pcna.net/events-news/cardiovascular-nursing-symposium/
+- AGS Annual Scientific Meeting — 2026-04-30 — not on page: date — https://meeting.americangeriatrics.org/
+- Oncology Nursing Month — 2026-05-01 — not on page: date — https://www.ons.org/oncology-nursing-month
+- National Critical Care Awareness and Recognition Month — 2026-05-01 — not on page: date — https://www.sccm.org/about-sccm/critical-care-awareness-month
+- National Nurses Week — 2026-05-06 — not on page: date — https://pages.nursingworld.org/nursesweek26
+- Vascular Annual Meeting (VAM) — 2026-06-10 — not on page: date — https://vam26.vascular.org/
+- SDPA Annual Summer Dermatology Conference — 2026-06-10 — not on page: date — https://web.cvent.com/event/a2dcef57-17a6-444f-96bd-40db1178fd7a/summary
+- AHA Leadership Summit — 2026-07-12 — not on page: date — https://leadershipsummit.aha.org/
+- NCAPA Annual Summer Conference — 2026-08-16 — not on page: date — https://ncapa.org/summer-cme-conference/
+- NZNO AGM and Conference — 2026-09-22 — not on page: date — https://na.eventscloud.com/ereg/index.php?eventid=877502
+- SEOC Oncology Nursing Congress — 2026-11-19 — not on page: date — https://seoc.cl/congreso-2026
+- International Nursing Specialties and Research Congress — 2026-11-19 — not on page: date, name — https://congresoenfermeria.ufro.cl/
+- National Postgraduate Nursing Congress — 2026-11-26 — not on page: date, name — https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/
+- JANS Annual Conference — 2026-12-12 — not on page: name — https://convention.jtbcom.co.jp/jans46/outline.html
+- Sunflower Conference — 2027-02-19 — not on page: date, name — https://kapn.enpnetwork.com/
+- ENRS Annual Scientific Sessions — 2027-03-31 — not on page: date, year, name — https://enrs2027conference.oa-event.com/abstracts
+- Oncology Nursing Month — 2027-05-01 — not on page: date, year — https://www.ons.org/oncology-nursing-month
+- AAOHN National Conference — 2027-06-01 — not on page: date — https://www.aaohn.org/Events/National-Conference
+- PNAA National Convention — 2027-07-17 — not on page: date, year — https://mypnaa.org/events
+- JANS Annual Conference — 2027-11-27 — not on page: name — https://www.jans.or.jp/meetings/schedule/
+
+## Could not read the page (126)
+
+- IMSH — 2023-01-21 — URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostn — https://imsh2023.org/about
+- Fundamental Critical Care Support (FCCS) — 2023-01-26 — HTTP 403 — https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf
+- Health Policy Conference — 2023-01-29 — page has almost no readable text (75 chars; likely JavaScript-only) — https://www.aanp.org/events/2023-hpc
+- NACNS Annual Conference — 2023-03-08 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nacns.org/wp-content/uploads/2023/03/NACNS-2023-Annual-Conference-Program-Guide-digital.pdf
+- Fundamental Critical Care Support (FCCS) — 2023-03-13 — HTTP 403 — https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf
+- SHM Converge — 2023-03-26 — HTTP 404 — https://www.hospitalmedicine.org/news-publications/press-releases/society-of-hospital-medicine-brings-annual-conference-shm-converge-to-austin-tx/
+- AAENP National Conference: EmergNP — 2023-03-31 — HTTP 404 — https://www.aaenp-natl.org/emergnp-2023-call-for-content
+- Advanced Practice Neonatal Nurses Conference — 2023-04-26 — HTTP 403 — https://www.academyonline.org/page/PastConferences
+- BCEN Learn Live — 2023-05-15 — HTTP 404 — https://bcen.org/bcen-learn-live/phoenix-2024/may-2023-agenda/
+- National Teaching Institute (NTI) — 2023-05-22 — HTTP 403 — https://www.aacn.org/newsroom/nti-2023-begins-in-philadelphia
+- ASCO Annual Meeting — 2023-06-02 — URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway> — https://old-prod.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-be-presented-during-2023-asco
+- Fundamental Critical Care Support (FCCS) — 2023-06-12 — HTTP 403 — https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf
+- AWHONN Convention — 2023-06-17 — page has almost no readable text (242 chars; likely JavaScript-only) — https://awhonn.confex.com/awhonn/2023/meetingapp.cgi/Home/0
+- AANP National Conference — 2023-06-20 — page has almost no readable text (75 chars; likely JavaScript-only) — https://www.aanp.org/news-feed/follow-your-must-a-recap-of-the-2023-aanp-national-conference
+- Professional Governance Leadership Conference — 2023-06-26 — HTTP 404 — https://www.aonl.org/education-events/professional-governance-conference/june26-27-2023
+- Acute and Critical Care APP Symposium — 2023-06-27 — HTTP 403 — https://www.rwjbh.org/events/event/?event=32770
+- AASPA Annual Virtual Surgical CME Conference — 2023-08-30 — robots.txt disallows — https://www.aaspa.com/2023-annual-cme-meeting
+- National Neonatal Nurses Conference (fall) — 2023-09-06 — HTTP 403 — https://www.academyonline.org/page/PastConferences
+- PAEA Education Forum — 2023-10-11 — page has almost no readable text (0 chars; likely JavaScript-only) — https://e1.nmcdn.io/assets/paea/wp-content/uploads/2024/03/2023-Forum-Event-Summary.pdf
+- AAMN Annual Conference — 2023-10-19 — HTTP 404 — https://www.aamn.org/2023-annual-conference
+- Fundamental Critical Care Support (FCCS) — 2023-10-19 — HTTP 403 — https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf
+- National Nurse Practitioner Week — 2023-11-12 — page has almost no readable text (75 chars; likely JavaScript-only) — https://www.aanp.org/news-feed/nurse-practitioner-profession-grows-to-385-000-strong
+- BCEN Learn Live — 2023-11-13 — HTTP 404 — https://bcen.org/bcen-learn-live/phoenix-2024/nov-2023-speaker-information/
+- IMSH — 2024-01-20 — URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway> — https://imsh2024.org/about
+- MNRS Annual Research Conference — 2024-02-28 — page has almost no readable text (0 chars; likely JavaScript-only) — https://mnrs.org/wp-content/uploads/2024/04/2024-MNRS-Program-Book.pdf
+- Advanced Practice Neonatal Nurses Conference — 2024-03-06 — HTTP 403 — https://www.academyonline.org/page/PastConferences
+- NACNS Annual Conference — 2024-03-10 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nacns.org/news-events/annual-conference/2024-annual-conference/
+- Annual Assembly of Hospice and Palliative Care — 2024-03-20 — HTTP 403 — https://aahpm.org/assembly/attend
+- Annual Assembly of Hospice and Palliative Care — 2024-03-20 — HTTP 403 — https://aahpm.org/assembly/attend
+- SHM Converge — 2024-04-12 — HTTP 404 — https://shmconverge.hospitalmedicine.org/wp-content/uploads/2023/11/BIZ-23-0029-Converge-2024-Partner-Catalog-FNL.pdf
+- BCEN Learn Live — 2024-05-05 — HTTP 404 — https://bcen.org/bcen-learn-live/may-2024-agenda/
+- Heart Rhythm — 2024-05-17 — HTTP 403 — https://heartrhythm.com/attend/heart-rhythm-2024
+- National Teaching Institute (NTI) — 2024-05-20 — HTTP 403 — https://www.aacn.org/newsroom/nti-2024-aacns-50th-conference-begins-in-denver
+- AWHONN Convention — 2024-06-07 — page has almost no readable text (240 chars; likely JavaScript-only) — https://awhonn.confex.com/awhonn/2024/meetingapp.cgi/Home/0
+- Acute and Critical Care APP Symposium — 2024-06-24 — HTTP 403 — https://www.rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf
+- MANP Annual Conference & Membership Meeting — 2024-07-14 — robots.txt disallows — https://msanp.enpnetwork.com/nurse-practitioner-events
+- AASPA Annual Virtual Surgical CME Conference — 2024-08-28 — robots.txt disallows — https://www.aaspa.com/2024-annual-cme-meeting
+- Annual Oncology Symposium for the Healthcare Provider presented by APAO — 2024-08-29 — HTTP 404 — https://www.apao.cc/assets/Conference/2024Symposium/APAO%202024%2027th%20Annual%20Symposium%20EP%20PRINT.pdf
+- National Neonatal Nurses Conference (fall) — 2024-09-04 — HTTP 403 — https://www.academyonline.org/page/PastConferences
+- HRX Live — 2024-09-05 — HTTP 403 — https://www.hrsonline.org/news/hrx2024-pressrelease/
+- NPWH Annual Women's Healthcare Conference — 2024-09-25 — HTTP 403 — https://npwh.org/news/674033/
+- National Neonatal Nurse Practitioner Symposium — 2024-10-15 — HTTP 404 — https://fannp.org/_downloads/FANNP24Conference.pdf
+- IDWeek — 2024-10-16 — HTTP 404 — https://idweek.org/wp-content/uploads/2024/06/1218-IDWeek-Exhibitor-Prospectus-202422.pdf
+- AAMN Annual Conference — 2024-10-17 — HTTP 404 — https://www.aamn.org/2024-annual-conference
+- NPA Annual Conference (NP26) — 2024-10-17 — HTTP 403 — https://www.thenpa.org/page/Conferences
+- Advanced Practice Provider Symposium — 2024-11-01 — HTTP 403 — https://www.cooperhealth.org/sites/default/files/CME%202024/APP%20Symposium/2024%20APP%20Symposium-Schedule-final%20vertical.pdf
+- AMIA Annual Symposium — 2024-11-09 — HTTP 403 — https://amia.org/education-events/amia-2024-annual-symposium
+- Fundamental Critical Care Support (FCCS) — 2025-01-09 — HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
+- National CRNA Week — 2025-01-19 — page has almost no readable text (85 chars; likely JavaScript-only) — https://www.aana.com/event/national-crna-week-2025/
+- Annual Assembly of Hospice and Palliative Care — 2025-02-05 — HTTP 403 — https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf
+- Annual Assembly of Hospice and Palliative Care — 2025-02-05 — HTTP 403 — https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf
+- AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2025-03-10 — HTTP 403 — https://amia.org/education-events/amia-2025-informatics-summit
+- NACNS Annual Conference — 2025-03-10 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nacns.org/news-events/annual-conference/2025-annual-conference/
+- Fundamental Critical Care Support (FCCS) — 2025-03-13 — HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
+- ACC.27 Annual Scientific Session — 2025-03-29 — HTTP 404 — https://www.expo.acc.org/ACC25/CUSTOM/PDF25/ACC25ScheduleAtAGlance.pdf
+- Advanced Practice Neonatal Nurses Conference — 2025-04-09 — HTTP 403 — https://www.academyonline.org/page/PastConferences
+- Heart Rhythm — 2025-04-24 — HTTP 403 — https://heartrhythm.com/attend/heart-rhythm-2025
+- National Teaching Institute (NTI) — 2025-05-19 — HTTP 403 — https://www.aacn.org/newsroom/nti-2025-begins-in-new-orleans
+- ASCO Annual Meeting — 2025-05-30 — HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-2025-asco-annual-meeting
+- Fundamental Critical Care Support (FCCS) — 2025-06-05 — HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
+- AWHONN Convention — 2025-06-21 — page has almost no readable text (242 chars; likely JavaScript-only) — https://awhonn.confex.com/awhonn/2025/meetingapp.cgi/Home/0
+- National Neonatal Nurses Conference (fall) — 2025-09-03 — HTTP 403 — https://www.academyonline.org/page/PastConferences
+- Advanced Practice Provider Symposium — 2025-09-23 — HTTP 403 — https://www.cooperhealth.org/sites/default/files/2026-03/Cooper-University-Health-Care-2025-Annual-Report.pdf
+- TNP Annual Conference and Skills Workshops — 2025-09-25 — page has almost no readable text (0 chars; likely JavaScript-only) — https://texasnp.org/wp-content/uploads/2025/07/C6-TNP-Pulse-Magazine-Summer-2025-Singles.pdf
+- NPWH Annual Women's Healthcare Conference — 2025-10-01 — HTTP 403 — https://npwh.org/events/eventdetails.aspx?id=1834358
+- ANE Research Symposium — 2025-10-06 — HTTP 404 — https://magnetpathwaycon.nursingworld.org/ana-enterprise-research-symposium-1
+- Magnet & Pathway Conference — 2025-10-08 — HTTP 404 — https://magnetpathwaycon.nursingworld.org/faqs-0
+- Fundamental Critical Care Support (FCCS) — 2025-10-09 — HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
+- AMIA Annual Symposium — 2025-11-15 — HTTP 403 — https://amia.org/education-events/amia-2025-annual-symposium
+- NPAM Fall Conference — 2025-11-15 — HTTP 403 — https://www.npamonline.org/events/EventDetails.aspx?id=1969593&group=
+- Psych Congress PA Institute — 2025-12-11 — HTTP 404 — https://www.aapa.org/cme-calendar/pa-institute-2025/
+- National CRNA Week — 2026-01-18 — page has almost no readable text (84 chars; likely JavaScript-only) — https://www.aana.com/advocacy/national-crna-week/
+- EDGE (nurse anesthesia educators) — 2026-02-04 — HTTP 403 — https://edge26.eventscribe.net/reports/dynamicprogram.asp
+- GANE Conference — 2026-02-12 — HTTP 404 — https://gane.nursingnetwork.com/nursing-news/203680-gane-2026-at-the-ritz-carlton-reynolds-resort-lake-oconee-2-12-26-2-14-26
+- ACHE Congress on Healthcare Leadership — 2026-03-02 — HTTP 403 — https://ache2026.eventscribe.net/agenda.asp?all=1&pfp=FullSchedule
+- Annual Assembly of Hospice and Palliative Care — 2026-03-04 — HTTP 403 — https://aahpm.org/education-events/annual-assembly/
+- NACNS Annual Conference — 2026-03-09 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nacns.org/news-events/annual-conference/2026-annual-conference/
+- DNA Annual Convention — 2026-03-25 — page has almost no readable text (75 chars; likely JavaScript-only) — https://convention.dnanurse.org/
+- NONPF Annual Conference — 2026-04-15 — HTTP 403 — https://www.nonpf.org/events/EventDetails.aspx?id=1958293
+- Heart Rhythm — 2026-04-23 — HTTP 403 — https://heartrhythm.com/heart-rhythm-2026
+- TNP Pharmacology Conference — 2026-04-23 — HTTP 403 — https://login.texasnp.org/events/EventDetails.aspx?id=1986716
+- National Teaching Institute (NTI) — 2026-05-17 — HTTP 403 — https://www.aacn.org/newsroom/registration-opens-for-aacns-nti-2026
+- ASCO Annual Meeting — 2026-05-29 — HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/new-research-highlights-lifestyle-treatment-strategies-2026-annual-meeting
+- AASPA Annual Virtual Surgical CME Conference — 2026-08-19 — robots.txt disallows — https://www.aaspa.com/
+- AANA Annual Congress — 2026-08-21 — page has almost no readable text (1 chars; likely JavaScript-only) — https://www.aana.com/premier-event/annual-congress/
+- Clinical Nurse Specialist Recognition Week — 2026-09-01 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nacns.org/event/cns-week-2026/
+- National Neonatal Nurses Conference (fall) — 2026-09-08 — HTTP 403 — https://www.academyonline.org/page/FallConference
+- OSPA Fall Conference — 2026-09-18 — page has almost no readable text (1 chars; likely JavaScript-only) — https://oregonpa.org/events/ospa-fall-conference-2026-2/
+- NPWH Annual Women's Healthcare Conference — 2026-09-23 — HTTP 403 — https://npwh.org/m/event_details.asp?id=1984651
+- NLN Education Summit — 2026-09-23 — HTTP 403 — https://summit.nln.org/
+- NPAO Annual Conference — 2026-09-23 — page has almost no readable text (1 chars; likely JavaScript-only) — https://npao.org/wp-content/uploads/2026/02/2026-NEW-Sponsorship-Prospectus-Annual-Conference.pdf
+- District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care — 2026-09-25 — HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
+- AVA Annual Scientific Meeting — 2026-10-01 — HTTP 403 — https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400
+- NNA Annual Convention — 2026-10-01 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nebraskanurses.org/convention/
+- NPA Annual Conference (NP26) — 2026-10-01 — HTTP 403 — https://www.thenpa.org/page/NP26
+- V&VN VS Annual Congress — 2026-10-01 — robots.txt disallows — https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs
+- ACEP Scientific Assembly — 2026-10-05 — HTTP 403 — https://www.acep.org/acep26/
+- ONAN Oncology Nursing Conference — 2026-10-07 — page has almost no readable text (20 chars; likely JavaScript-only) — https://onanigeria.org/registration
+- ICCM Summit for Advanced Practice Providers — 2026-10-13 — page has almost no readable text (1 chars; likely JavaScript-only) — https://critcaresummit.com/
+- CANO/ACIO Annual Conference — 2026-10-22 — HTTP 403 — https://www.cano-acio.ca/page/cano2026
+- IPAS Fall CME Conference (Healthcare in the Heartland) — 2026-10-26 — HTTP 403 — https://www.iapasociety.org
+- WAPA Fall Conference — 2026-11-01 — page has almost no readable text (1 chars; likely JavaScript-only) — https://wapa.com/events/wapa-fall-conference-2026/
+- NONPF Fall Conference — 2026-11-05 — HTTP 403 — https://www.nonpf.org/page/futureconferences
+- IAANMP Annual National Conference — 2026-11-06 — page has almost no readable text (75 chars; likely JavaScript-only) — https://iaanmp.com/category/conferences/
+- Padjadjaran International Nursing Conference — 2026-11-06 — HTTP 403 — https://pinc.fkep.unpad.ac.id/
+- AMIA Annual Symposium — 2026-11-07 — HTTP 403 — https://amia.org/education-events/amia-2026-annual-symposium
+- Qatar Health Congress — 2026-11-11 — page has almost no readable text (220 chars; likely JavaScript-only) — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
+- National CRNA Week — 2027-01-17 — page has almost no readable text (1 chars; likely JavaScript-only) — https://www.aana.com/event/national-crna-week-2027/
+- EDGE (nurse anesthesia educators) — 2027-02-25 — page has almost no readable text (1 chars; likely JavaScript-only) — https://www.aana.com/event/edge-2027/
+- NACNS Annual Conference — 2027-03-01 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nacns.org/news-events/annual-conference/2027-annual-conference/
+- Annual Assembly of Hospice and Palliative Care — 2027-03-17 — HTTP 403 — https://aahpm.org/education-events/annual-assembly/
+- Advanced Practice Neonatal Nurses Conference — 2027-04-08 — HTTP 403 — https://www.academyonline.org/page/conferences
+- AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — HTTP 403 — https://amia.org/education-events/2027-amplify-informatics-conference
+- AAAA Annual Conference — 2027-04-15 — robots.txt disallows — https://www.linkedin.com/posts/american-academy-of-anesthesiologists-assistants_aaaa2027-callforspeakers-anesthesiologistassistant-activity-7481057620322091008-Vu-Z
+- Mid-Year Assembly — 2027-04-16 — page has almost no readable text (84 chars; likely JavaScript-only) — https://www.aana.com/event/mid-year-assembly-2027/
+- National Teaching Institute (NTI) — 2027-05-02 — HTTP 403 — https://www.aacn.org/conferences-and-events/nti
+- ASCO Annual Meeting — 2027-06-04 — HTTP 403 — https://www.asco.org/annual-meeting/dates-know
+- AANA Annual Congress — 2027-08-08 — page has almost no readable text (85 chars; likely JavaScript-only) — https://www.aana.com/event/aana-annual-congress-2027/
+- WAPA Fall Conference — 2027-09-30 — page has almost no readable text (1 chars; likely JavaScript-only) — https://wapa.com/events/wapa-fall-conference-2027/
+- Health Policy Conference — 2027-10-07 — HTTP 403 — https://aannet.org/page/EventsOverview
+- ACEP Scientific Assembly — 2027-10-25 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
+- ASCO Annual Meeting — 2028-06-02 — HTTP 403 — https://www.asco.org/annual-meeting/dates-know
+- ACEP Scientific Assembly — 2028-09-17 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
+- ACEP Scientific Assembly — 2029-10-01 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
+- ACEP Scientific Assembly — 2030-10-17 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
+- ACEP Scientific Assembly — 2031-10-27 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates

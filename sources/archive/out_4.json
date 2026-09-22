@@ -1,0 +1,686 @@
+[
+ {
+  "id": "national-organization-of-nurse-practitio__nonpf-annual-conference",
+  "archive_url": "https://www.nonpf.org/page/pastconferences",
+  "archive_evidence": "Past Conference Resources",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-15",
+    "end": "2026-04-19",
+    "location": "Dallas, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nonpf.org/events/EventDetails.aspx?id=1958293",
+    "evidence": "April 15-19, 2026",
+    "detail_url": null
+   }
+  ],
+  "note": "Past Conference Resources page lists '51st Annual Conference: Re-envisioning NP Education to Lead the Future' with website/program links but no dates, so 2025 edition not recorded. 2026 (52nd) dates from organizer event page; venue 'Sheraton Dallas Hotel'."
+ },
+ {
+  "id": "national-organization-of-nurse-practitio__nonpf-fall-conference",
+  "archive_url": "https://www.nonpf.org/page/pastconferences",
+  "archive_evidence": "Past Conference Resources",
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Archive lists 'Fall Conference: Artificial Intelligence (AI) in NP Education' without dates. 2025 Fall Conference event page (EventDetails.aspx?id=1954212) and registration news item returned 403, so no dated past edition recorded."
+ },
+ {
+  "id": "america-s-poison-centers-american-academ__north-american-congress-of-clinical-toxicology-nac",
+  "archive_url": "https://www.clintox.org/nacct",
+  "archive_evidence": "Past Meetings",
+  "proceedings_url": "https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975",
+  "past_editions": [
+   {
+    "start": "2025-09-17",
+    "end": "2025-09-21",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.clintox.org/nacct",
+    "evidence": "2025 - September 17 - 21, Chicago, IL",
+    "detail_url": "https://clintox.app.neoncrm.com/event.jsp?event=158&"
+   },
+   {
+    "start": "2024-09-19",
+    "end": "2024-09-23",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.clintox.org/nacct",
+    "evidence": "2024 - September 19-23, Denver, CO",
+    "detail_url": null
+   },
+   {
+    "start": "2023-09-27",
+    "end": "2023-10-01",
+    "location": "Montreal, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.clintox.org/nacct",
+    "evidence": "2023 - September 27-October 1, Montreal, CAN",
+    "detail_url": null
+   }
+  ],
+  "note": "Past Meetings list on NACCT page goes back to 2001. proceedings_url is the 'NACCT 2025 Abstract Manuscript' link (Clinical Toxicology). 2025 detail_url is the organizer's after-the-fact CE/recordings page."
+ },
+ {
+  "id": "the-nurse-practitioner-association-new-y__npa-annual-conference-np26",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "NP25 event pages (thenpa.org/events/EventDetails.aspx?id=1964698 and /m/event_details.asp?id=1964698) returned 403. thenpa.org/page/Conferences lists no past conferences. No archive found."
+ },
+ {
+  "id": "national-association-of-nurse-practition__npwh-annual-women-s-healthcare-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-01",
+    "end": "2025-10-03",
+    "location": "Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://npwh.org/events/eventdetails.aspx?id=1834358",
+    "evidence": "10/1/2025 to 10/3/2025",
+    "detail_url": null
+   },
+   {
+    "start": "2024-09-25",
+    "end": "2024-09-28",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://npwh.org/news/674033/",
+    "evidence": "27th Annual NPWH Women's Healthcare Conference, September 25-28, 2024",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-conferences archive page found; www.npwh.org/events/conferences returned 403. 2025 edition title '28th Annual NPWH Women's Healthcare Conference (Las Vegas, NV)', venue Caesars Palace. The 2024 edition links to the organizer's 2024 registration announcement."
+ },
+ {
+  "id": "national-student-nurses-association__nsna-annual-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "nsna.org/meetings, /meetings.html and /nsna-calendar.html give no past dates or archive. Nothing recorded."
+ },
+ {
+  "id": "national-student-nurses-association__nsna-midyear-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "No past MidYear dates or archive found on nsna.org meetings/calendar pages."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__nursing-advancement-professionals-conference",
+  "archive_url": "https://www.aacnnursing.org/nap-conference/past-conferences",
+  "archive_evidence": "Past NAP Conference Presentations",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-02-17",
+    "end": "2026-02-18",
+    "location": "Lake Buena Vista, FL",
+    "format": "in person",
+    "theme": "The Power of Connection",
+    "source_url": "https://www.aacnnursing.org/nap-conference/past-conferences",
+    "evidence": "February 17–18, 2026",
+    "detail_url": null
+   },
+   {
+    "start": "2025-03-20",
+    "end": "2025-03-21",
+    "location": "Coronado, CA",
+    "format": "in person",
+    "theme": "How Technology is Shaping Nursing Advancement",
+    "source_url": "https://www.aacnnursing.org/nap-conference/past-conferences",
+    "evidence": "March 20–21, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "Only 2026 and 2025 listed on archive page. Main NAP page also has a typo for 2027 ('April 22–22, 2027' in body vs 'April 20–22, 2027' in header)."
+ },
+ {
+  "id": "oncology-nursing-society__ons-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-04-09",
+    "end": "2025-04-13",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ons.org/publications-research/voice/news-views/01-2025/celebrate-yesterday-and-transform-tomorrow-50th",
+    "evidence": "held from April 9–13, 2025, in Denver, CO",
+    "detail_url": null
+   }
+  ],
+  "note": "No past-congress archive page found (help-center article lists only future congresses; ons.org/congress/2025/schedule returned 403). 2025 (50th) dates from an ONS Voice article on ons.org."
+ },
+ {
+  "id": "physician-assistant-education-associatio__paea-education-forum",
+  "archive_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+  "archive_evidence": "Forum Event Summary Archives",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-10-05",
+    "end": "2024-10-10",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://paeaonline.org/events/2024-education-forum-fall-workshops",
+    "evidence": "October 5-10, 2024",
+    "detail_url": "https://e1.nmcdn.io/assets/paea/wp-content/uploads/2025/11/2024-PAEA-Forum-Summary.pdf"
+   }
+  ],
+  "note": "2025 Forum is on the archive page (on-demand at https://2025paeaforum.eventscribe.net/, 'Available Through March 15, 2026') but neither that page nor the redirecting event page showed dates/city, so it is not recorded. 2024 event title '2024 Education Forum and Fall Workshops' at Marriott Marquis Washington, DC; dates include fall workshops."
+ },
+ {
+  "id": "pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "pacnp.org pages returned 403 (tried /page/2025_Annual_Conference). Organizer has per-year pages (e.g. /page/2023_Annual_Conference) but none could be read."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__pediatric-virtual-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "napnap.org/specialty-symposium lists only the 2026 symposium; no past editions or archive."
+ },
+ {
+  "id": "the-nurse-practitioners-of-new-york__pharm-day-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "NPNY homepage links a 'Pharmacology Day 2015' photo page (https://npny.enpnetwork.com/page/19111-pharmacology-day-2015) but gives no dates; no recent past editions found."
+ },
+ {
+  "id": "philippine-nurses-association-of-america__pnaa-national-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-07-15",
+    "end": "2026-07-19",
+    "location": "Colorado Springs, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://mypnaa.org/PNAA47",
+    "evidence": "July 15-19, 2026",
+    "detail_url": "https://mypnaa.org/PNAA47"
+   },
+   {
+    "start": "2025-07-16",
+    "end": "2025-07-20",
+    "location": "Detroit, MI",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://mypnaa.org/PNAA46",
+    "evidence": "July 16-20, 2025",
+    "detail_url": "https://mypnaa.org/PNAA46"
+   }
+  ],
+  "note": "No archive page; per-convention pages (47th at Cheyenne Mountain Resort; 46th at The Westin Book Cadillac). mypnaa.org/PNAA45 returned 404."
+ },
+ {
+  "id": "new-jersey-state-nurses-association__professional-conference-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "njsna.org event pages found by search returned 404; no past-edition dates obtained."
+ },
+ {
+  "id": "american-nurses-credentialing-center__professional-development-practice-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-14",
+    "end": "2026-04-17",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/news/news-releases/2026-news-releases/american-nurses-credentialing-center-hosts-global-interprofessional-healthcare-summit-to-advance-practice/",
+    "evidence": "which took place in Orlando, Florida on April 14-17",
+    "detail_url": null
+   }
+  ],
+  "note": "Inaugural PDP Summit; year from the same news release's dateline 'Apr 20th 2026'. No archive page found."
+ },
+ {
+  "id": "american-organization-for-nursing-leader__professional-governance-leadership-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-06-14",
+    "end": "2026-06-16",
+    "location": "Indianapolis, IN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aonl.org/news/AONL-opens-Professional-Governance-Leadership-Conference-call-for-abstracts",
+    "evidence": "June 14-16, 2026, in Indianapolis",
+    "detail_url": null
+   }
+  ],
+  "note": "Conference site shows 'Thank You for Joining Us at PGLC 2026' but no past list/archive. Dates from AONL call-for-abstracts news item."
+ },
+ {
+  "id": "hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-12-11",
+    "end": "2025-12-13",
+    "location": "Lake Buena Vista, FL",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/pa-institute-2025/",
+    "evidence": "December 11-13, 2025",
+    "detail_url": "https://cme.aapa.org/learning-paths/psych-congress-pa-institute-on-demand-2025"
+   }
+  ],
+  "note": "Inaugural 2025 edition, from AAPA (partner organizer) CME calendar: Walt Disney World Dolphin Resort, 'offered in-person and via livestream'. No archive page."
+ },
+ {
+  "id": "national-commission-on-certification-of-__represent-nccpa-summit",
+  "archive_url": "https://www.nccpa.net/represent-summit/",
+  "archive_evidence": "Check out our photo gallery from the 2024 REPRESENT! NCCPA Summit",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-09-16",
+    "end": "2024-09-17",
+    "location": "Atlanta, GA",
+    "format": "in person",
+    "theme": "When They See Us",
+    "source_url": "https://www.nccpa.net/news/whentheyseeus/",
+    "evidence": "The biennial REPRESENT! NCCPA Summit 2024, \"When They See Us,\" was held on Sept. 16-17 in Atlanta",
+    "detail_url": null
+   }
+  ],
+  "note": "Biennial; 2022 inaugural summit mentioned without dates, so not recorded."
+ },
+ {
+  "id": "penn-medicine-center-for-resuscitation-s__revive",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-03-14",
+    "end": "2026-03-14",
+    "location": "Philadelphia, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://upenn.cloud-cme.com/REVIVE2026",
+    "evidence": "Saturday, March 14, 2026",
+    "detail_url": "https://www.revive-conference.com/about#revive26"
+   }
+  ],
+  "note": "Conference site has 'REVIVE 2026 in Review' highlights but no dates; dates from Penn's official CME course page."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-hosted-courses-at-geisinger",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "SCCM conference calendar shows only future events and no archive link."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-hosted-courses-elsewhere-in-the-us",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "SCCM conference calendar shows only future events and no archive link."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-new-jersey-chapter-meetings",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Not researched in depth: org_url is an SCCM Connect community page (likely login-gated); no public past-meeting list found."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-virtual-sessions",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "SCCM conference calendar shows only future events and no archive link."
+ },
+ {
+  "id": "society-of-dermatology-physician-associa__sdpa-annual-fall-dermatology-conference",
+  "archive_url": "https://learning.dermpa.org/conference-recordings",
+  "archive_evidence": "SDPA Learning Center: Conference Recordings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-11-06",
+    "end": "2025-11-09",
+    "location": "San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://learning.dermpa.org/conference-recordings",
+    "evidence": "This includes recordings from the 2025 Fall Dermatology Conference, which took place at the JW Marriott Hill Country in San Antonio, TX from November 6 through 9, 2025.",
+    "detail_url": "https://learning.dermpa.org/conference-recordings"
+   }
+  ],
+  "note": "Conference page lists only future dates; recordings page in SDPA Learning Center used as archive. archive_evidence heading as returned by fetch."
+ },
+ {
+  "id": "society-of-dermatology-physician-associa__sdpa-annual-summer-dermatology-conference",
+  "archive_url": "https://learning.dermpa.org/conference-recordings",
+  "archive_evidence": "SDPA Learning Center: Conference Recordings",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-06-25",
+    "end": "2025-06-29",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.dermpa.org/events/2025-sdpa-annual-summer-dermatology-conference",
+    "evidence": "Wednesday, June 25–Sunday, June 29, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "CONTRADICTION: recordings page says 2026 Summer conference was 'held in Denver, CO from June 11 to 14, 2026' whereas known edition start is 2026-06-10 (likely preconference day)."
+ },
+ {
+  "id": "society-of-hospital-medicine__shm-converge",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "No past-meetings list found on shmconverge or hospitalmedicine.org. On-demand page says Converge 2026 was in Nashville but gives no dates; not recorded."
+ },
+ {
+  "id": "society-of-thoracic-surgeons__sts-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-01-29",
+    "end": "2026-02-01",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sts.org/calendar-of-events/62nd-sts-annual-meeting",
+    "evidence": "Jan 29 – Feb 1, 2026",
+    "detail_url": null
+   },
+   {
+    "start": "2025-01-24",
+    "end": "2025-01-26",
+    "location": "Los Angeles, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sts.org/calendar-of-events/61st-sts-annual-meeting",
+    "evidence": "Jan 24–26, 2025",
+    "detail_url": null
+   }
+  ],
+  "note": "STS 'Annual Meeting Archive' URL from search (sts.org/meetings/sts-annual-meeting/annual-meeting-archive) returned 404, so archive_url left null. Dates from per-meeting calendar pages."
+ },
+ {
+  "id": "society-for-vascular-nursing__svn-annual-conference",
+  "archive_url": "https://www.svnnet.org/page/PastConferences",
+  "archive_evidence": "Past Conferences",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-06-10",
+    "end": "2026-06-11",
+    "location": "Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.svnnet.org/page/PastConferences",
+    "evidence": "2026 Annual ConferenceJune 10-11, Boston, MA",
+    "detail_url": "https://www.svnnet.org/resource/resmgr/documents/2026_program_final_for_print.pdf"
+   },
+   {
+    "start": "2025-06-10",
+    "end": "2025-06-11",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.svnnet.org/page/PastConferences",
+    "evidence": "2025 Annual ConferenceJune 10-11, New Orleans, LA",
+    "detail_url": "https://www.svnnet.org/resource/resmgr/2023_files/2025_svn_program_5.28.25.pdf"
+   },
+   {
+    "start": "2024-06-19",
+    "end": "2024-06-20",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.svnnet.org/page/PastConferences",
+    "evidence": "2024 Annual ConferenceJune 19-20, 2024,Chicago, IL",
+    "detail_url": "https://www.svnnet.org/resource/resmgr/2023_files/svn_2024_program_with_modera.pdf"
+   }
+  ],
+  "note": "Evidence strings are run together as on the page."
+ },
+ {
+  "id": "texas-nurses-association__tna-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-06-11",
+    "end": "2026-06-12",
+    "location": "Grapevine, TX",
+    "format": "in person",
+    "theme": "Strength in Unity, Excellence in Action",
+    "source_url": "https://www.texasnurses.org/page/SIU",
+    "evidence": "June 11-12, 2026",
+    "detail_url": "https://www.texasnurses.org/page/SIU"
+   },
+   {
+    "start": "2025-06-06",
+    "end": "2025-06-07",
+    "location": "Austin, TX",
+    "format": "in person",
+    "theme": "The Power of Us: Advancing Our Profession Together",
+    "source_url": "https://www.texasnurses.org/events/EventDetails.aspx?id=1947762",
+    "evidence": "June 6-7, 2025",
+    "detail_url": "https://www.texasnurses.org/page/PowerOfUs"
+   }
+  ],
+  "note": "No archive list; per-year pages. 2025 location (Renaissance Austin Hotel) from /page/PowerOfUs; 2025 date string taken from event listing and may be reformatted by the fetch tool - verify."
+ },
+ {
+  "id": "texas-nurse-practitioners__tnp-annual-conference-and-skills-workshops",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "2025 recap page (texasnp.org/2025annualrecap/) has no 2025 dates; login.texasnp.org event page returned 403. Recap confirms next edition 'September 24-27, 2026 at the Moody Gardens in Galveston, TX' (matches known)."
+ },
+ {
+  "id": "texas-nurse-practitioners__tnp-pharmacology-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-04-23",
+    "end": "2026-04-25",
+    "location": "San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://texasnp.org/pharma2025/",
+    "evidence": "Mark your calendar now for next year! April 23-25, 2026 at the Hyatt Regency Hill Country Resort & Spa in San Antonio, TX.",
+    "detail_url": "https://texasnp.org/pharma2026/"
+   }
+  ],
+  "note": "2026 dates come from the 2025 recap page's forward announcement (not from a post-event page). texasnp.org/pharma2024/ returned 404; 2025 dates not found."
+ },
+ {
+  "id": "american-college-of-surgeons__tqip-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-11-08",
+    "end": "2025-11-10",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": "Team Works",
+    "source_url": "https://www.facs.org/quality-programs/trauma/quality/trauma-quality-improvement-program/conference/",
+    "evidence": "The 2025 Trauma Quality Improvement Annual Conference (TQIP) drew more than 2,100 attendees to Chicago, November 8-10.",
+    "detail_url": "https://tqip25.eventscribe.net/login.asp"
+   }
+  ],
+  "note": "No archive list. Note conference page advertises 2027 (November 15–17, 2027, Las Vegas) as upcoming while known_editions includes 2026-11-13 - worth rechecking the 2026 edition."
+ },
+ {
+  "id": "transcultural-nursing-society__transcultural-nursing-society-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "tcns.org annual conference, conferences and home pages mention only the 52nd (Oct 14-17, 2026); no past editions found."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__transform",
+  "archive_url": "https://www.aacnnursing.org/transform/past-conferences",
+  "archive_evidence": "Past Transform Presentations",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-12-04",
+    "end": "2025-12-06",
+    "location": "Anaheim, CA",
+    "format": "in person",
+    "theme": "The Future in Focus: Advancing Practice-Ready Education in Baccalaureate and Master's Program",
+    "source_url": "https://www.aacnnursing.org/transform/past-conferences",
+    "evidence": "December 4–6",
+    "detail_url": "https://www.aacnnursing.org/transform/past-conferences/2025"
+   },
+   {
+    "start": "2022-12-01",
+    "end": "2022-12-03",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": "Connect, Innovate, & Inspire: New Approaches to Nursing Education",
+    "source_url": "https://www.aacnnursing.org/transform/past-conferences",
+    "evidence": "December 1–3",
+    "detail_url": "https://www.aacnnursing.org/Transform/Past-Presentations/2022"
+   }
+  ],
+  "note": "Year for each entry comes from its 'Transform 2025'/'Transform 2022' heading on the archive page. No 2023 or 2024 entry listed, although a 'Transform 2024 On-Demand Experience' page exists."
+ },
+ {
+  "id": "aacn-southeastern-pennsylvania-chapter__trends-in-acute-critical-care-nursing",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "note": "Chapter site shows only 2026 TRENDS (draft schedule, registration); no past editions or dates."
+ },
+ {
+  "id": "society-for-vascular-surgery__vascular-annual-meeting-vam",
+  "archive_url": "https://vascular.org/2025-vascular-annual-meeting/past-vams",
+  "archive_evidence": "Past VAMs",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2026-06-10",
+    "end": "2026-06-13",
+    "location": "Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://vam26.vascular.org/",
+    "evidence": "Join VAM26 June 10–13, 2026 in Boston for the premier vascular surgery meeting",
+    "detail_url": "https://vam26.vascular.org/"
+   },
+   {
+    "start": "2025-06-04",
+    "end": "2025-06-07",
+    "location": "New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://vascular.org/vam-2025",
+    "evidence": "June 4-7",
+    "detail_url": "https://vascular.org/vam-2025"
+   },
+   {
+    "start": "2024-06-19",
+    "end": "2024-06-22",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://vascular.org/2024-vascular-annual-meeting",
+    "evidence": "June 19-22, 2024",
+    "detail_url": "https://2024svsvam.eventscribe.net/"
+   }
+  ],
+  "note": "Past VAMs page lists VAM24/VAM23/VAM22 eventscribe links without dates. VAM25 year from page title '2025 Vascular Annual Meeting'. VAM26 evidence is the page meta description."
+ },
+ {
+  "id": "american-academy-of-physician-associates__we-are-family-medicine",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-01-11",
+    "end": "2025-01-13",
+    "location": "Savannah, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2025-we-are-family-medicine/",
+    "evidence": "January 11, 2025 - January 13, 2025",
+    "detail_url": null
+   },
+   {
+    "start": "2024-01-13",
+    "end": "2024-01-15",
+    "location": "Phoenix, AZ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2024-we-are-family-medicine/",
+    "evidence": "January 13, 2024 - January 15, 2024",
+    "detail_url": null
+   }
+  ],
+  "note": "No archive list; per-year AAPA CME calendar pages (2022 and 2023 pages also exist). 2025 format assumed in person (Hyatt Regency Savannah venue)."
+ },
+ {
+  "id": "international-association-for-the-study-__world-congress-on-pain",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": "https://posters.worldcongress2024.org/",
+  "past_editions": [],
+  "note": "IASP World Congress page describes the 2024 Amsterdam congress with recordings and poster abstracts, but no page fetched gave the 2024 dates verbatim (worldcongress2024.org content not readable), so not recorded."
+ }
+]

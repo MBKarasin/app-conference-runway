@@ -1,0 +1,5739 @@
+{
+ "002ad3b7a061": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aana.com/event/mid-year-assembly-2027/",
+  "why": "page has almost no readable text (84 chars; likely JavaScript-only)"
+ },
+ "005ebe05cdab": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://awhonn.confex.com/awhonn/2025/meetingapp.cgi/Home/0",
+  "why": "page has almost no readable text (242 chars; likely JavaScript-only)"
+ },
+ "0062195111b0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.asco.org/annual-meeting/dates-know",
+  "why": "HTTP 403"
+ },
+ "00fc146c3886": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/past-conferences/"
+ },
+ "0208cc313749": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/PastConferences",
+  "why": "HTTP 403"
+ },
+ "02afee0a6d0d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aorn.org/article/aorn-global-surgical-conference---expo-2025-heads-to-boston--for-an-unparalleled-perioperative-experience"
+ },
+ "0304073b0f36": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/aapa-leadership-and-advocacy-summit/"
+ },
+ "030e4d2d2d57": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/FutureSymposia"
+ },
+ "033e951cd131": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.emergencyphysicians.org/press-releases/2023/9-11-23-the-emergency-medicine-community-will-come-together-for-acep23"
+ },
+ "03a380258014": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/event/44th-national-conference-on-pediatric-health-care/"
+ },
+ "04f3430c8c7c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hematology.org/meetings/annual-meeting/past-meetings"
+ },
+ "0527bd5e3fed": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaacn.org/events/annual-conference"
+ },
+ "0669b0198bac": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ispn-psych.org/past-conferences"
+ },
+ "0674ef55bd04": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nyonl.nursingnetwork.com/nursing-events/142798-2024-nyonl-annual-meeting-and-leadership-conference"
+ },
+ "068ad5e18e97": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.revive-conference.com/"
+ },
+ "06c759e4d87a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://professional.diabetes.org/scientific-sessions"
+ },
+ "06fa9fc2c96e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/apn-conference-188869/"
+ },
+ "06fb2c953de6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aamn.org/2023-annual-conference",
+  "why": "HTTP 404"
+ },
+ "071abb00898f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaacn.org/events/annual-conference"
+ },
+ "077583ea7d7e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-2024-annual-meeting-online-press-kit/"
+ },
+ "08404cd571fb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx",
+  "why": "page has almost no readable text (220 chars; likely JavaScript-only)"
+ },
+ "087bcd57f48e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://web.cvent.com/event/9758b4f4-66e4-45f6-9375-8e4a198a80c0/summary"
+ },
+ "09391e1f6db0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://texasnp.org/calendar/"
+ },
+ "09a16f7b1253": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "0a2ff5b7cee1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nsna.glueup.com/event/nsna-75th-annual-convention-184130/"
+ },
+ "0aa80f2c74c7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://fh-ooe.at/konferenzen/anp2026"
+ },
+ "0ada99b1e1c5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://vtnpa.enpnetwork.com/"
+ },
+ "0b79c69409b5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sigmanursing.org/events/biennial-convention"
+ },
+ "0bacd426a95c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aipsq.com/formations/congres-annuel-de-laipsq"
+ },
+ "0d1b20e102a4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/PastConferences",
+  "why": "HTTP 403"
+ },
+ "0d243a7fca45": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://help.ons.org/support/solutions/articles/151000164013-when-and-where-are-the-future-ons-congress-events-taking-place-"
+ },
+ "0e593bbb8b12": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/quality-programs/trauma/quality/trauma-quality-improvement-program/conference/"
+ },
+ "0ed971a90348": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://inspiringleaders.aonl.org/past-future-conferences"
+ },
+ "10976499e525": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 1,
+  "last_verified": "2026-09-22T13:47:30Z",
+  "state": "unreachable",
+  "url": "https://aahpm.org/education-events/annual-assembly/",
+  "why": "HTTP 403"
+ },
+ "10c063f66214": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/deans-meeting/eds-for-deans"
+ },
+ "10eb020fa9c4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.asn-online.org/education/kidneyweek/2026/register-overview.aspx"
+ },
+ "10f33f303652": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "11867c027171": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sccm.org/annual-congress/past-congress-resources"
+ },
+ "119ee146ac85": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://site.thoracic.org/events/ats-2025-international-conference"
+ },
+ "11bec56c89c2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://hapa.mypanetwork.com/"
+ },
+ "12192d1eb884": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nebraskanp.enpnetwork.com/nurse-practitioner-events/146605-34th-annual-nebraska-nurse-practitioner-conference"
+ },
+ "1250fb0e2755": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=5df40ca8-103d-495c-a467-0185f36bd16f&Home=%2Fhome"
+ },
+ "12b654aab1f6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://annualmeeting.midwife.org/"
+ },
+ "12c14e0b11a5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ispn-psych.org/2027-annual-conference"
+ },
+ "12f61343a9cf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.asn-online.org/education/kidneyweek/archives/past.aspx"
+ },
+ "1330097601a4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://enrs.memberclicks.net/2023-conference"
+ },
+ "137dc503831a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://gane.nursingnetwork.com/nursing-news/203680-gane-2026-at-the-ritz-carlton-reynolds-resort-lake-oconee-2-12-26-2-14-26",
+  "why": "HTTP 404"
+ },
+ "141a39026003": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aaenp-natl.org/event/2026-aaenp-national-conference-emergnp/"
+ },
+ "14b645351008": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://fannp.org/"
+ },
+ "14df94db88e9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.expo.acc.org/ACC25/CUSTOM/PDF25/ACC25ScheduleAtAGlance.pdf",
+  "why": "HTTP 404"
+ },
+ "14f25ec744d0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "15ab68b3475c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://mnrs.org/wp-content/uploads/2024/04/2024-MNRS-Program-Book.pdf",
+  "why": "page has almost no readable text (0 chars; likely JavaScript-only)"
+ },
+ "15c1908427c7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nln.org/events/nln-summit/summit-2023-session-slides"
+ },
+ "15e5e5d8507c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://site.thoracic.org/about-us/news/lets-shape-the-future-of-respiratory-health-at-ats-2024"
+ },
+ "168119a896f1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://eventosaben.org.br/76cben/"
+ },
+ "16b0179f62ca": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aapa.org/conference/special-events/aapa-2024-savenger-hunt"
+ },
+ "16de91f3422d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://njana.com/2026-spring-conference/"
+ },
+ "16ee2e3c0b61": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acgmeetings.gi.org/registration/"
+ },
+ "1716efec9b0f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "174d866fa19e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aaspa.com/2023-annual-cme-meeting",
+  "why": "robots.txt disallows"
+ },
+ "177a0057cbf9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nebraskapa.org"
+ },
+ "17b3a93c102e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "180aa7ebb4a9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://fannp.org/_downloads/FANNP24Conference.pdf",
+  "why": "HTTP 404"
+ },
+ "184a1eb2a20c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.clintox.org/nacct"
+ },
+ "1856cb701061": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/deans-meeting"
+ },
+ "18c1c6dfa850": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://bcen.org/bcen-learn-live/may-2024-agenda/",
+  "why": "HTTP 404"
+ },
+ "18ef228c4c08": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mypnaa.org/PNAA46"
+ },
+ "190736c24248": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates"
+ },
+ "190a86b08a6d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sts.org/calendar-of-events/62nd-sts-annual-meeting"
+ },
+ "193b9f56396b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nln.org/events/upcoming"
+ },
+ "194ce1735b8f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.acep.org/sa/general-information/future-dates",
+  "why": "HTTP 403"
+ },
+ "19631b554751": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/sites/default/files/documents/conference/2025/gapna2025annualprospectuswapp.pdf"
+ },
+ "199e0768daa7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://site.thoracic.org/conference/attendees/future-conferences"
+ },
+ "19b4ff7f7de5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "19f78ae304ab": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://texasnp.org/calendar/"
+ },
+ "1a2941e28d69": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.svnnet.org/page/PastConferences"
+ },
+ "1a6415d7840a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://ndnp.enpnetwork.com/"
+ },
+ "1b19eb013850": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaacn.org/events/annual-conference"
+ },
+ "1b9bb4a85ace": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.racp.edu.au/news-and-events/all-events/event-details?id=1681d7af-bbb2-61c2-b08b-ff01001c3177"
+ },
+ "1bc2b0eb4adb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://idweek.org/wp-content/uploads/2024/06/1218-IDWeek-Exhibitor-Prospectus-202422.pdf",
+  "why": "HTTP 404"
+ },
+ "1d12e147865e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.asn-online.org/education/kidneyweek/archives/past.aspx"
+ },
+ "1d40aa02462e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://old-prod.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-be-presented-during-2023-asco",
+  "why": "URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>"
+ },
+ "1e03d76eed6e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/2024-we-are-family-medicine/"
+ },
+ "1eb42bf6224b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=37&Itemid=115&year=2023&month=09&day=29&title=nysana-fall-educational-meeting&uid=45ded6f51bce12d5be99f110a044664a"
+ },
+ "1fe000589136": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "1ff6a27ed013": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aad.org/member/meetings/events/locations"
+ },
+ "20467b982cf4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027"
+ },
+ "20c096854bba": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://ncapa.org/summer-cme-conference/",
+  "why": "not on page: date"
+ },
+ "2131658d67b2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mnrs.org/mnrs-49th-annual-research-conference/"
+ },
+ "214266eb4860": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.acnp.org.au/conference-home-page"
+ },
+ "215614b3e122": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ena.org/about-us/emergency-nurses-week"
+ },
+ "21b2fcc02093": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings"
+ },
+ "2212df653121": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://inspiringleaders.aonl.org/past-future-conferences"
+ },
+ "224e189b8a1c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.texasnurses.org/page/SIU"
+ },
+ "22609be08618": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pacnp.enpnetwork.com/nurse-practitioner-news/222620-register-to-join-us-at-seven-springs-in-november-"
+ },
+ "233d234aab2f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://site.thoracic.org/events/ats-international-conference"
+ },
+ "234505aeb649": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.neurocriticalcare.org/portals/0/docs/events/2023/Final_Prospectus_2023.pdf"
+ },
+ "244711dc3e57": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.inacsl.org/inacsl27"
+ },
+ "24752e2396f9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nationalappweek.com/"
+ },
+ "247d1b565c86": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://njana.com/2026-fall-meeting/"
+ },
+ "24d2887a8967": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sccm.org/annual-congress/past-congress-resources"
+ },
+ "250b367d592e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sts.org/calendar-of-events/63rd-sts-annual-meeting"
+ },
+ "255f3ac0ed15": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://paeaonline.org/events/2024-education-forum-fall-workshops"
+ },
+ "259331c36504": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npidaho.enpnetwork.com/"
+ },
+ "260f68c5cb83": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aann.org/meetings/virtual-innrs"
+ },
+ "261c169c53e9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.anesthetist.org/industry-calendar"
+ },
+ "2634ad103429": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/transform/past-conferences"
+ },
+ "269fb342e367": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.mpa2026.org/"
+ },
+ "273ab4936c7d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hospitalmedicine.org/event/conferences/"
+ },
+ "27adc53dd3fe": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.acep.org/sa/general-information/future-dates",
+  "why": "HTTP 403"
+ },
+ "27b71d387fea": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.svnnet.org/page/annualconference"
+ },
+ "27d1e043ae38": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nln.org/detail-pages/news/2025/03/26/pioneering-expert-in-artificial-intelligence-to-headline-national-league-for-nursing-2025-education-summit-focused-on-the-challenge-unraveling-the-mysteries-of-ai"
+ },
+ "281adacc944f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "2854d25554ae": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://dcnpweb.enpnetwork.com/nurse-practitioner-events"
+ },
+ "28634019fea8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.icn.ch/events/icn-congress-2027-worlds-largest-international-gathering-nurses"
+ },
+ "2891e7185321": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://pinc.fkep.unpad.ac.id/",
+  "why": "HTTP 403"
+ },
+ "28cb36124c46": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aad.org/member/meetings/archive/handouts"
+ },
+ "2990714b9e1b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://wapa.mypanetwork.com/"
+ },
+ "299a43afcc01": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ons.org/education-hub/events/congress/blog/rejuvenate-refocus-revitalize-heres-what-expect-48th-annual-ons"
+ },
+ "2b21ba57d72d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting/registration-information"
+ },
+ "2b4240065e0a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.jans.or.jp/meetings/schedule/",
+  "why": "not on page: name"
+ },
+ "2b995c9ce64e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.asco.org/annual-meeting/dates-know",
+  "why": "HTTP 403"
+ },
+ "2baa3d5fee7a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://critcaresummit.com/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "2be84b247742": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://diabetes.org/newsroom/press-releases/american-diabetes-association-debuts-2026-scientific-sessions-driving"
+ },
+ "2bedae9df083": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.cano-acio.ca/page/cano2026",
+  "why": "HTTP 403"
+ },
+ "2c19ddbecbae": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.MinnesotaPA.org"
+ },
+ "2c334a927b68": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nursepractitioner.ca/news-events/2026-npam-conference/"
+ },
+ "2cb4704b50ae": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://padelvalnapnap.org/?mec-events=fall-conference"
+ },
+ "2ce20bc15f79": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://imsh2024.org/about",
+  "why": "URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>"
+ },
+ "2d41c6dd5d42": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "2d8faec4e7af": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nursingworld.org/ancc/nursing-research/researchsymposium/"
+ },
+ "2daf24ccfd9d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://njana.com/2023-spring-conference/"
+ },
+ "2eb9e5be6405": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mdapa.org/event-6662277"
+ },
+ "2ec2c80a85dd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/a57ea09151854531af704e88ad5c7107.htm"
+ },
+ "2ef108b98b37": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mnrs.org/mnrs-50th-annual-research-conference/"
+ },
+ "2f1ad949d3f1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.onlnj.org/annual-meeting-conference"
+ },
+ "2f54aa22a89d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nursingworld.org/news/news-releases/2026-news-releases/american-nurses-credentialing-center-hosts-global-interprofessional-healthcare-summit-to-advance-practice/"
+ },
+ "2fbe67b81d88": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.rcn.org.uk/news-and-events/events/uk-rcn-advanced-nurse-practitioner-conference-02102026"
+ },
+ "2ff6b4497956": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://internationalmidwives.org/international-day-of-the-midwife-2026-toolkit-launch/"
+ },
+ "3025bb7590aa": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aann.org/uploads/February_2024_AANN_Leadership_Call_Minutes.pdf"
+ },
+ "3042ac5dd69e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/2024-musculoskeletal-galaxy/"
+ },
+ "304aa73befd0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "30d3a622031f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://amia.org/education-events/amia-2024-annual-symposium",
+  "why": "HTTP 403"
+ },
+ "3120ce066484": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+ },
+ "31f21fec28cb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://shmconverge.hospitalmedicine.org/"
+ },
+ "31f3d48b5a18": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://experiencehrx.com/pressrelease-hrx2023-aug282023/"
+ },
+ "323566ea8ee6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/transform/past-conferences"
+ },
+ "332b41158996": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.jans.or.jp/english/meetings/past/"
+ },
+ "334ed6bdac98": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.texasnurses.org/events/EventDetails.aspx?id=1785196&group="
+ },
+ "33b36a084b5b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acgmeetings.gi.org/wp-content/uploads/2025/05/25ACG-Schedule-at-a-Glance-web.pdf"
+ },
+ "33e44a877d60": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/PastConferences",
+  "why": "HTTP 403"
+ },
+ "341d49a57d61": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.clintox.org/nacct"
+ },
+ "346e4bdd9109": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://bcen.org/bcen-learn-live/"
+ },
+ "34cc11b1b8d3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://oregonpa.org/events/ospa-fall-conference-2026-2/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "34fcc9acbeb5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates"
+ },
+ "35115e0458b7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting"
+ },
+ "3552cf23439a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/Events"
+ },
+ "365588c0f079": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/transform"
+ },
+ "371badb11823": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": "2026-09-21T23:32:45Z",
+  "state": "unreachable",
+  "url": "https://texasnp.org/wp-content/uploads/2025/07/C6-TNP-Pulse-Magazine-Summer-2025-Singles.pdf",
+  "why": "page has almost no readable text (0 chars; likely JavaScript-only)"
+ },
+ "384a05727e13": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://convention.dnanurse.org/",
+  "why": "page has almost no readable text (75 chars; likely JavaScript-only)"
+ },
+ "38b3cf7758b7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.inacsl.org/past-and-future-annual-conferences"
+ },
+ "393f19ed017c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.svnnet.org/page/PastConferences"
+ },
+ "3969226e9778": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://enrs.memberclicks.net/2024-conference"
+ },
+ "399bb186d100": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acrabstracts.org/meetings/acr-convergence-2025/"
+ },
+ "3a60c3b22691": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aspmn.org/2026_call_for_abstracts.php"
+ },
+ "3aced7452ef5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nremt.org/News/National-Registry-Opens-Call-for-Speakers-for-2027"
+ },
+ "3b0963321583": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npaa.wildapricot.org/event-6575812"
+ },
+ "3c2ccdfe8f8a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.nonpf.org/events/EventDetails.aspx?id=1958293",
+  "why": "HTTP 403"
+ },
+ "3c78c2006608": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2025/julyaugust-2025-volume-110-issue-7/clinical-congress-2025-in-chicago-will-ignite-big-ideas-bold-advances/"
+ },
+ "3c7bfa80124d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.neurocriticalcare.org/Portals/0/NCS%202025%20Annual%20Meeting_Accreditation%20Overview%20_%20Final_9_16_25.pdf",
+  "why": "not on page: name"
+ },
+ "3d03f20f4b1c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aonl.org/news/AONL-AONL-opens-call-for-professional-governance-abstracts"
+ },
+ "3d05eaea0c63": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://professionalgov.aonl.org/"
+ },
+ "3d801e3f374f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://leadershipsummit.aha.org/"
+ },
+ "3d8a3d9936ff": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/elso-meetings.aspx"
+ },
+ "3df641684de7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nutritioncare.org/foundation/wp-content/uploads/sites/8/2025/01/Foundation-Grantee-Publications-Accomplishments.pdf"
+ },
+ "3e0dd95f6552": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://web.cvent.com/event/d944868a-e4b2-4caf-93d9-fd6a00787c5b/summary"
+ },
+ "3eeb6d0862dd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://storage.aanp.org/www/documents/events/2024-AANP-Natl-Conf_Brochure.pdf"
+ },
+ "3eecefb90b41": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.vcnp.net/events"
+ },
+ "3eed6aa06587": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.annanurse.org/event/national-symposium/"
+ },
+ "3faf7962e8e7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aann.org/uploads/Meetings/2023/AANN23_ConBro_WEB.pdf"
+ },
+ "3fcdedab340e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.ons.org/oncology-nursing-month",
+  "why": "not on page: date"
+ },
+ "40fa6b472356": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.masscrna.com/2027-northeast-nurse-anesthesiology-summit"
+ },
+ "4114beeb76f3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nyonl.nursingnetwork.com/nursing-events/146048-nyonl-annual-meeting-and-leadership-conference"
+ },
+ "4169d9ce47cd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.aaohn.org/Events/National-Conference",
+  "why": "not on page: date"
+ },
+ "41905a7783fb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aapa.org/cme-calendar/pa-institute-2025/",
+  "why": "HTTP 404"
+ },
+ "41c6ce3f8c5a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apdw2026manila.com/registration"
+ },
+ "41d98840563a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://hm.edu/aktuelles/veranstaltungen/veranstaltung_detailseite_504384.de.html"
+ },
+ "42229a0e81dc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/doctoral-conference/past-conferences"
+ },
+ "426f2f34845c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://jsnp2026.jp/program.html"
+ },
+ "427d6b168e80": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://meeting.americangeriatrics.org/",
+  "why": "not on page: date"
+ },
+ "429b76561d15": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/FutureSymposia"
+ },
+ "42a5794291d5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.texasnurses.org/page/newhorizons"
+ },
+ "432e4002da3f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.clintox.org/nacct"
+ },
+ "43335d5f76c7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://npwh.org/news/674033/",
+  "why": "HTTP 403"
+ },
+ "4337898c4a6f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.acc.org/-/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/ACC23/2023/01/ACC23WCC-Social-Media-Toolkit-GENERAL-UPLOADED-Jan-23-2023.ashx/1000"
+ },
+ "43862213a496": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aann.org/meetings/annual-educational-conference"
+ },
+ "4397bf8ed392": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.appexecutives.org/conferences/"
+ },
+ "43b69fed6ccf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/past-conferences/"
+ },
+ "445148664b5b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/events/2026-hpc"
+ },
+ "446c8135035a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf",
+  "why": "HTTP 403"
+ },
+ "44e6b5bee889": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npny.enpnetwork.com/nurse-practitioner-events/144392-2024-annual-npny-pharmacology-virtual-program-for-nps-earn-6-pharm-ces"
+ },
+ "4517cfa8be7c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/quality-programs/trauma/quality/trauma-quality-improvement-program/conference/"
+ },
+ "45504b46ea75": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event"
+ },
+ "455bd4326a37": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://annualmeeting.acponline.org/about/future-meetings"
+ },
+ "4589c35ea6d7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.suna.org/2026-urologic",
+  "why": "not on page: date"
+ },
+ "45ba4529f6fb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "460a16759e79": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.iapasociety.org",
+  "why": "HTTP 403"
+ },
+ "4631534802b4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting"
+ },
+ "46351b414865": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://capa-acam.ca/"
+ },
+ "4649639a37af": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aad.org/member/meetings-education/am27"
+ },
+ "46f7551fa32d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.icn.ch/events/icn-npapn-network-conference-2026"
+ },
+ "472f012841e1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://heartrhythm.com/attend/heart-rhythm-2025",
+  "why": "HTTP 403"
+ },
+ "479121152dc2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.ons.org/oncology-nursing-month",
+  "why": "not on page: date, year"
+ },
+ "47b8521ad757": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/doctoral-conference"
+ },
+ "47d2e79140e6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pdpsummit.nursingworld.org/"
+ },
+ "4863a641f541": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npconference.nnpbc.com/"
+ },
+ "4865deb2219a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.imsh2025.org/"
+ },
+ "488ad77b5fdd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acgmeetings.gi.org/wp-content/uploads/2023/04/ACG_2023_Abstract_Submission_Instructions_0208rev2.pdf"
+ },
+ "48961cb65987": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ponl.net/event-5153394"
+ },
+ "48ef8653cead": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.neurocriticalcare.org/Events/Annual-Meeting"
+ },
+ "49371a53501b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aorn.org/about-aorn/aorn-newsroom/periop-today-newsletter/-in-tags/tags/aorn-expo"
+ },
+ "494b633c9d1d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf",
+  "why": "HTTP 403"
+ },
+ "4963a35ef661": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.newjerseyena.org/masterevents/emergency-care-conference-2026-nurses-rock"
+ },
+ "4963c59b8b50": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/events/2027-hpc"
+ },
+ "4978a6693099": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-2025-annual-meeting-press-kit/"
+ },
+ "49d158f9cc60": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://events.aats.org/am26"
+ },
+ "49f13f3b7d42": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nhspa.mypanetwork.com/"
+ },
+ "4a3ec51c8f18": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.indianapas.org"
+ },
+ "4ad3c79ee3d5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://annualmeeting.acponline.org/about/future-meetings"
+ },
+ "4af5be3e26fb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://annualmeeting.acponline.org/about/future-meetings"
+ },
+ "4b3ff35a6342": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/"
+ },
+ "4b4058fa13a3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=82&Itemid=115&year=2026&month=09&day=18&title=fall-educational-meeting-2026-saratoga-springs&uid=d32527b6e593a1815dc0f4a78cfc357a"
+ },
+ "4b4e71143a72": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pulmapp.com/countdown-to-conferene/"
+ },
+ "4b6554deed4e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/submit-abstract/"
+ },
+ "4b9d4b80a1ae": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+  "why": "HTTP 403"
+ },
+ "4bde7c505ddd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aacn.org/newsroom/nti-2025-begins-in-new-orleans",
+  "why": "HTTP 403"
+ },
+ "4beb4321c569": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.npamonline.org/events/EventDetails.aspx?id=1969593&group=",
+  "why": "HTTP 403"
+ },
+ "4c478ec24cd4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.asco.org/about-asco/press-center/news-releases/new-research-highlights-lifestyle-treatment-strategies-2026-annual-meeting",
+  "why": "HTTP 403"
+ },
+ "4cfdbe82f5f3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://pages.nursingworld.org/nursesweek26",
+  "why": "not on page: date"
+ },
+ "4db836821dba": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://ajj.swoogo.com/aaacn25/7097283"
+ },
+ "4dd5c1ce3f89": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/clinical-congress-2027/"
+ },
+ "4f932ee1a38b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aann.org/uploads/February_2024_AANN_Leadership_Call_Minutes.pdf"
+ },
+ "5010c607ecdc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://events.aats.org/am27"
+ },
+ "50174aca501e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "5060d2186498": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ons.org/education-hub/events/ons-congress/schedule"
+ },
+ "510e499763c0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.tcns.org/annualconference/"
+ },
+ "51e706b5534b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://ache2026.eventscribe.net/agenda.asp?all=1&pfp=FullSchedule",
+  "why": "HTTP 403"
+ },
+ "51ef23154e50": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://wapa.com/events/wapa-fall-conference-2026/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "5266b94db0ae": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aan.com/events/on-demand-and-past-events/"
+ },
+ "5299ac8decc5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pacnp.enpnetwork.com/nurse-practitioner-news/219645-make-plans-to-join-us-in-lancaster-for-the-2023-annual-conference"
+ },
+ "52d255cae650": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aorn.org/events/perioperative-nurses-week"
+ },
+ "535eb791dab6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/2025-we-are-family-medicine/"
+ },
+ "53659a2097d9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ispn-psych.org/past-conferences"
+ },
+ "53bd4ec0ecfe": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://magnetpathwaycon.nursingworld.org/"
+ },
+ "54cc289b5016": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://archive.aapexperience.org/"
+ },
+ "54fd687f010f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://web.cvent.com/event/a2dcef57-17a6-444f-96bd-40db1178fd7a/summary",
+  "why": "not on page: date"
+ },
+ "55ce2f4bea7b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/engage26"
+ },
+ "563fdff9f17b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aamn.org/2026-annual-conference"
+ },
+ "565a5301b57e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/national-conference/"
+ },
+ "56608469cc1e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.escardio.org/events/congresses/acnap-congress/"
+ },
+ "567914f9db48": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nursingworld.org/news/news-releases/2024/ancc-opens-registration-the-2024-national-magnet-conference-and-pathway-to-excellence-conference-comes-to-new-orleans/"
+ },
+ "57a462f3b071": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/sites/default/files/documents/conference/2025-pharma/Pharmacology_EP_25.pdf"
+ },
+ "57b5dec02e0c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://shmconverge.hospitalmedicine.org/wp-content/uploads/2023/11/BIZ-23-0029-Converge-2024-Partner-Catalog-FNL.pdf",
+  "why": "HTTP 404"
+ },
+ "57b9fb5c8692": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/nap-conference/past-conferences"
+ },
+ "5803e9390c3d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.advancingexpertcare.org/2026-hpna-annual-conference/"
+ },
+ "585c5b695e74": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aana.com/advocacy/national-crna-week/",
+  "why": "page has almost no readable text (84 chars; likely JavaScript-only)"
+ },
+ "58b15548af8e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aana.com/event/national-crna-week-2025/",
+  "why": "page has almost no readable text (85 chars; likely JavaScript-only)"
+ },
+ "59436ef51332": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 3,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://storage.aanp.org/www/documents/events/2024-AANP-HP-Conference-Draft-Agenda.pdf",
+  "why": "not on page: date"
+ },
+ "5acad3c8d018": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/deans-meeting/past-conferences"
+ },
+ "5b1501c2a306": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-2025-asco-annual-meeting",
+  "why": "HTTP 403"
+ },
+ "5b58086a5261": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://anspa.mypanetwork.com/"
+ },
+ "5ba367d7d6bb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nursingworld.org/ana-enterprise/nurses-week-2024/"
+ },
+ "5c74b6afd77c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/"
+ },
+ "5c7ccd77a47e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mnnp.enpnetwork.com/"
+ },
+ "5ccce0949c32": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://awhonn.confex.com/awhonn/2023/meetingapp.cgi/Home/0",
+  "why": "page has almost no readable text (242 chars; likely JavaScript-only)"
+ },
+ "5dad5a31ae68": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ssih.org/healthcare-simulation-week-2026"
+ },
+ "5de0abb56935": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mcnp.enpnetwork.com/nurse-practitioner-events/147820-2026-new-england-regional-nurse-practitioner-conference"
+ },
+ "5e904b283505": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+  "why": "HTTP 403"
+ },
+ "5eaae6ccce7d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acrabstracts.org/meetings-archive/"
+ },
+ "5ec074c5a805": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aann.org/uploads/Meetings/2024/24_AC_Abstract_Submission_Instructions.pdf"
+ },
+ "60338275ad6c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.sccm.org/about-sccm/critical-care-awareness-month",
+  "why": "not on page: date"
+ },
+ "6045a7eb99a7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/"
+ },
+ "607d382aae81": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.hospitalmedicine.org/news-publications/press-releases/society-of-hospital-medicine-brings-annual-conference-shm-converge-to-austin-tx/",
+  "why": "HTTP 404"
+ },
+ "6096abcffa38": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://awhonn.confex.com/awhonn/2024/meetingapp.cgi/Home/0",
+  "why": "page has almost no readable text (240 chars; likely JavaScript-only)"
+ },
+ "60b19fa7fb93": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences"
+ },
+ "60cd1179df0e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/"
+ },
+ "61060a9b90f8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aorn.org/surgical-expo"
+ },
+ "6128f30f3412": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=UDMRCRLB"
+ },
+ "617623eeaf5b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://e1.nmcdn.io/assets/paea/wp-content/uploads/2024/03/2023-Forum-Event-Summary.pdf",
+  "why": "page has almost no readable text (0 chars; likely JavaScript-only)"
+ },
+ "61fbf984d79d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting"
+ },
+ "622efae52eb8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "62a2b34be0ee": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/Events"
+ },
+ "63030a7dee9b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aana.com/event/aana-annual-congress-2027/",
+  "why": "page has almost no readable text (85 chars; likely JavaScript-only)"
+ },
+ "633ff5f80868": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://shmleadershipacademy.org/wp-content/uploads/2024/07/BIZ-23-0032-SHM-Leadership-Academy-2024-Partnership-Catalog.pdf"
+ },
+ "6369f30e3963": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ena.org/news-publications/newsroom/new-orleans-announced-host-city-emergency-nursing-2025"
+ },
+ "637a8ed896be": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.annanurse.org/event/national-symposium/"
+ },
+ "63a7d8f134bb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aad.org/member/meetings/archive/handouts"
+ },
+ "63b4fd60df55": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://amia.org/education-events/2027-amplify-informatics-conference",
+  "why": "HTTP 403"
+ },
+ "63b7c7184bfb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/event/47th-national-conference-on-pediatric-health-care/"
+ },
+ "63ef4e7d0d47": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pcna.net/events-news/cardiovascular-nursing-symposium/"
+ },
+ "64715754b2b0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://inspiringleaders.aonl.org/"
+ },
+ "64773926d7e3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://professional.diabetes.org/scientific-sessions"
+ },
+ "6502f4b88370": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf",
+  "why": "HTTP 403"
+ },
+ "6517253d757b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aorn.org/article/aorn-expo-2026-showcases-evidence-based-education-and--hands-on-learning-for-perioperative-nurses"
+ },
+ "6533c62cd353": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/deans-meeting/past-conferences"
+ },
+ "65988669cf86": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apppostgradtraining.com/about-us/events/"
+ },
+ "664b334edcc3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/events/2023-sdpa-annual-summer-dermatology-conference"
+ },
+ "66500d4cb10c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "66615345878f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://experiencehrx.com/hrx-live/",
+  "why": "not on page: date"
+ },
+ "66c22879fe97": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.akapa.org"
+ },
+ "67a017b14a9f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.njln.org/call_for_abstracts.php"
+ },
+ "68ce1111918c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/julyaugust-2024-volume-109-issue-7/get-ready-for-clinical-congress-2024-in-san-francisco/"
+ },
+ "693365e6e2cf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://pcna.net/events-news/cardiovascular-nursing-symposium/",
+  "why": "not on page: date"
+ },
+ "693fbc226bfe": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://members.nebraskanurses.org/calendar/details/2025-nna-annual-convention-1383277"
+ },
+ "6953fdec554d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/2023-musculoskeletal-galaxy/"
+ },
+ "6a12608b0e5a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hkanm.hk/main/events-or-activities/ianpc-2025/conference/"
+ },
+ "6b3653108bcd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sobenfee.org.br/congresso"
+ },
+ "6b8a4d6d9faa": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aad.org/member/meetings/archive/handouts"
+ },
+ "6c3eeba48014": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://vascular.org/vam-2025",
+  "why": "not on page: date"
+ },
+ "6c648ae7c103": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/sps"
+ },
+ "6c866efe1f8d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 3,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/downloads/",
+  "why": "not on page: year"
+ },
+ "6cafddd99e11": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://bcen.org/bcen-learn-live/colorado-springs-2025/"
+ },
+ "6cb434b92dcd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/events/sdpa-22nd-annual-fall-dermatology-conference"
+ },
+ "6cfadbc4e525": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nna.gov.sg/events/sgh-wound-nursing-conference-2026/"
+ },
+ "6d195c56478c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://leadershipsummit.aha.org/",
+  "why": "not on page: date"
+ },
+ "6dae12cd91ee": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ache.org/Education-Events/Education-Catalog/2027/CONGRESS27"
+ },
+ "6db24e4a848d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://onanigeria.org/registration",
+  "why": "page has almost no readable text (20 chars; likely JavaScript-only)"
+ },
+ "6df13a544c57": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/events/2027-aanp-national-conference"
+ },
+ "6df659afe74a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://vascular.org/vascular-specialists/education-and-meetings/meetings/2023-vascular-annual-meeting"
+ },
+ "6e0a36f943a5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/tag/nicu-nurse/"
+ },
+ "6e29e140167f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/6th-annual-administrative-evening-night-supervisor-virtual-conference-82563/"
+ },
+ "6e8d92987926": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://amia.org/education-events/amia-2026-annual-symposium",
+  "why": "HTTP 403"
+ },
+ "6fc9d9374444": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.hrsonline.org/news/hrx2024-pressrelease/",
+  "why": "HTTP 403"
+ },
+ "700a0cdf7cfc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaacn.org/events/annual-conference"
+ },
+ "703c21ff1df9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://magnetpathwaycon.nursingworld.org/ana-enterprise-research-symposium-1",
+  "why": "HTTP 404"
+ },
+ "70ef5db04d3c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://fnap.enpnetwork.com/nurse-practitioner-events/150126-fnap-2026-annual-conference"
+ },
+ "71088bab3df2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/FutureSymposia"
+ },
+ "7111b734f1a9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://npwh.org/m/event_details.asp?id=1984651",
+  "why": "HTTP 403"
+ },
+ "71827b86e1b8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "71848cbefa29": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pacnp.enpnetwork.com/"
+ },
+ "71c8c7f9ec54": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aan.com/events/upcoming-events"
+ },
+ "725ce7abaff0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.advancingexpertcare.org/2027-hpna-annual-conference/"
+ },
+ "732fda0f5f48": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://heartrhythm.com/attend/heart-rhythm-2024",
+  "why": "HTTP 403"
+ },
+ "7439fe42fefc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400",
+  "why": "HTTP 403"
+ },
+ "745f68604794": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://events.aats.org/am24"
+ },
+ "7480ccc7ece5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/2025-annual-meeting-conference-123479/"
+ },
+ "74ad3e8baa9a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aan.com/events/upcoming-events"
+ },
+ "74b8b2119eef": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sts.org/calendar-of-events/sts-59th-annual-meeting"
+ },
+ "74bd1dde560c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings"
+ },
+ "751c879e18d6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://fannp.org/_pages24/conferenceinfo.html"
+ },
+ "75a70cdde26c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/sites/default/files/documents/conference/2024-pharma/Pharm_RB_24_web.pdf"
+ },
+ "75ba2fa2fbf6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/past-conferences/"
+ },
+ "75c789c89d9d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://delawareana.org/event-6571840"
+ },
+ "762c9d5f5d63": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.cooperhealth.org/sites/default/files/2026-03/Cooper-University-Health-Care-2025-Annual-Report.pdf",
+  "why": "HTTP 403"
+ },
+ "7656f2da8579": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": "2026-09-21T23:02:32Z",
+  "state": "unreachable",
+  "url": "https://nebraskanurses.org/convention/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "7688a1826ada": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/events/2024-sdpa-annual-summer-dermatology-conference"
+ },
+ "76cdebf2693e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://oncologypas.org/event/2026-annual-symposium/"
+ },
+ "781edc9e7cc3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://inspiringleaders.aonl.org/past-future-conferences"
+ },
+ "782b1bc13915": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sts.org/calendar-of-events/60th-sts-annual-meeting"
+ },
+ "785efb278b8a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.acep.org/acep26/",
+  "why": "HTTP 403"
+ },
+ "7913d6802dfa": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://bcen.org/bcen-learn-live/phoenix-2024/may-2023-agenda/",
+  "why": "HTTP 404"
+ },
+ "79603cac8cbb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acgmeetings.gi.org/app-leadership-summit/"
+ },
+ "796281e7de75": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "79688a93a373": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.delawareana.org/event-4998675"
+ },
+ "79d298e81fa1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences"
+ },
+ "79ff0d69f162": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://worldcongressonpain.secure-platform.com/a/"
+ },
+ "7a3a0f5853a6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/about/news/gapna-now-accepting-abstracts-2023-annual-conference"
+ },
+ "7af44496a886": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://nacns.org/news-events/annual-conference/2026-annual-conference/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "7b6f95d9ef1c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.newjerseyena.org/2027-call-for-speakers"
+ },
+ "7bb0f653efc7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-2023-annual-meeting-online-press-kit/"
+ },
+ "7bbae6a7436b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/PastConferences",
+  "why": "HTTP 403"
+ },
+ "7bdb3ef7b52f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+  "why": "HTTP 403"
+ },
+ "7c83d68f1860": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ons.org/education-hub/events/congress/blog/ignite-extraordinary-possibilities-impacting-cancer-care-ons"
+ },
+ "7cf8bfb08fec": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.delawareana.org/event-5945294"
+ },
+ "7d97c5aa4173": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/conference-2025/"
+ },
+ "7dad54030a4a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aaspa.com/",
+  "why": "robots.txt disallows"
+ },
+ "7dbab60d2919": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 3,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.aorn.org/article/-in-category/categories/expo",
+  "why": "not on page: year"
+ },
+ "7f016cb3e84c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 1,
+  "last_verified": "2026-09-22T13:47:30Z",
+  "state": "unreachable",
+  "url": "https://iaanmp.com/category/conferences/",
+  "why": "page has almost no readable text (75 chars; likely JavaScript-only)"
+ },
+ "7f44e47b77f4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/events/2025-hpc"
+ },
+ "7f7ced9e2366": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aacn.org/newsroom/registration-opens-for-aacns-nti-2026",
+  "why": "HTTP 403"
+ },
+ "7fc9bef22a02": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/"
+ },
+ "7fca18685d3c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hematology.org/meetings/annual-meeting"
+ },
+ "807b2ac66ecf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.texasnurses.org/events/EventDetails.aspx?id=1713539"
+ },
+ "80980004b2da": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://imsh2023.org/about",
+  "why": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostn"
+ },
+ "81375b6ab6f1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "819fe90fd52b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ena.org/emergency-nursing-2026"
+ },
+ "81ee4978eee5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nebraskanp.enpnetwork.com/nurse-practitioner-events/143088-33rd-annual-nebraska-nurse-practitioner-exhibitor-day"
+ },
+ "8205f93f06e7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ponl.net/event-5909342"
+ },
+ "823a00629439": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://na.eventscloud.com/ereg/index.php?eventid=877502",
+  "why": "not on page: date"
+ },
+ "825ae90df474": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs",
+  "why": "robots.txt disallows"
+ },
+ "82f4c3712ab7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.cooperhealth.org/sites/default/files/CME%202024/APP%20Symposium/2024%20APP%20Symposium-Schedule-final%20vertical.pdf",
+  "why": "HTTP 403"
+ },
+ "83f1ec75cfdb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://dnapn.de/8-international-congress-2025/"
+ },
+ "841fda73b38b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://gapa.net/cme-conference-2/"
+ },
+ "8471e103e884": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nutritioncare.org/conference/"
+ },
+ "848ee65d9d80": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://magnetpathwaycon.nursingworld.org/faqs-0",
+  "why": "HTTP 404"
+ },
+ "849c502a19bd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day"
+ },
+ "8522bb29810a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-conference/"
+ },
+ "853c02ff607a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aonl.org/news/AONL-seeks-professional-governance-abstracts"
+ },
+ "85a947e04684": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://npwh.org/events/eventdetails.aspx?id=1834358",
+  "why": "HTTP 403"
+ },
+ "86ed4355e3e5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://annualmeeting.acponline.org/about/future-meetings"
+ },
+ "873c689cc3ce": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/past-conferences/"
+ },
+ "87651078a9c4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://euroelso-congress.com/"
+ },
+ "87b64f3fc247": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting"
+ },
+ "87d8a71bddd9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://members.nebraskanurses.org/calendar/Details/2023-nna-annual-convention-836248?sourceTypeId=Website"
+ },
+ "884748a4ccbc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+  "why": "HTTP 403"
+ },
+ "88b3ca764089": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/wp-content/uploads/2022/06/2023-AAPA-Exhibitor-Rules-and-Regulations-1.pdf"
+ },
+ "890190479333": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+ },
+ "89122ea45979": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+ },
+ "8979d6dcb8cc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/FutureSymposia"
+ },
+ "89de4656498c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.thenpa.org/page/NP26",
+  "why": "HTTP 403"
+ },
+ "89f80320f5d9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.jans.or.jp/english/meetings/past/"
+ },
+ "8a0d140dd475": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/specialty-symposium/"
+ },
+ "8a9b1211a4c8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.idweek.org/"
+ },
+ "8ac026140ba2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/anlc"
+ },
+ "8b0b0c91a66d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://nacns.org/event/cns-week-2026/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "8b8599d1b6ec": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://njana.com/2025-spring-conference/"
+ },
+ "8bb9fb3d0b80": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://amia.org/education-events/amia-2025-annual-symposium",
+  "why": "HTTP 403"
+ },
+ "8c494ce97fa4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hematology.org/meetings/annual-meeting/past-meetings"
+ },
+ "8c7527e08d95": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nam.edu/wp-content/uploads/2025/09/PublicAgendaCventFinal.pdf"
+ },
+ "8c819e167a6e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://upenn.cloud-cme.com/REVIVE2026"
+ },
+ "8dacb8f4aa3f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/"
+ },
+ "8dcb9d2d26e2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apppostgradtraining.com/about-us/events/"
+ },
+ "8f05f4964c36": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://amsect.org/events-education/international-conference-archive/recap-2026"
+ },
+ "8f1ff085c19f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/PastConferences",
+  "why": "HTTP 403"
+ },
+ "8f38e757e5c7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ishlt.org/annual-meeting"
+ },
+ "906ae08c5491": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.svnnet.org/page/PastConferences"
+ },
+ "911f9b0863a8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/executive-leadership-conference-2023/"
+ },
+ "91590b0faa55": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "919004c82f9a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://wapa.com/events/wapa-fall-conference-2027/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "91aa160773fb": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://msanp.enpnetwork.com/nurse-practitioner-events",
+  "why": "robots.txt disallows"
+ },
+ "91ae0e5fac82": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sigmanursing.org/events/international-nursing-research-congress"
+ },
+ "9354067663ac": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://heartrhythm.com/heart-rhythm-2026",
+  "why": "HTTP 403"
+ },
+ "9404d0e33843": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://events.myconferencesuite.com/NPAC_National_Conference-2026/page/Program"
+ },
+ "94254bd5b443": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://events.mountsinaihealth.org/event/iccm-2025-summit-for-advanced-practice-practitioners"
+ },
+ "94849e847767": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/events/archive"
+ },
+ "94bc3d269ab8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ponl.net/event-6558469"
+ },
+ "95a63454c08f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaacn.org/sites/default/files/images/conference/AAACN%202026%20prospectus_FINAL.pdf"
+ },
+ "95ca82e4ab56": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://midwife.org/national-midwifery-week/"
+ },
+ "961ac1dcb9fa": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/FutureSymposia"
+ },
+ "962be55583ee": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aonl.org/news/AONL-opens-Professional-Governance-Leadership-Conference-call-for-abstracts"
+ },
+ "963955cba764": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaacn.org/sites/default/files/documents/conference/2024/AAACN_24_call_poster_abstracts.pdf"
+ },
+ "972625b6847e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.njln.org/docs/Sample_NJLN_Abstract_Format-2025-2026.pdf"
+ },
+ "97a2b66704e8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/elso-meetings.aspx"
+ },
+ "97d144074f9b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/8th-annual-administrative-evening-night-supervisor-virtual-conference-116763/"
+ },
+ "98b03d76d419": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sccm.org/annual-congress/past-congress-resources"
+ },
+ "98da2c267857": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "99b2fcf9fd9b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings"
+ },
+ "99dcf10cd70f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/Events"
+ },
+ "9b0e5c998b99": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nam.edu/event/womens-health-from-cells-to-society-nam-annual-meeting/"
+ },
+ "9b1a2e0da462": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/event/pediatric-virtual-symposium-2024-targeted-topics/"
+ },
+ "9c25bb01384b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263",
+  "why": "HTTP 403"
+ },
+ "9c8b12526014": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/nap-conference/past-conferences"
+ },
+ "9cd2de383a60": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 3,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://shmleadershipacademy.org/wp-content/uploads/2023/09/LDR23_IM-Schedule.pdf",
+  "why": "not on page: date"
+ },
+ "9dc31c4e839e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aapexperience.org/future-dates/"
+ },
+ "9e0e24120486": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://njsna.org/events/month/2026-10/"
+ },
+ "9e7ed3e7a6f3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=40b50b2c-f3b8-479b-83c3-0193497fd38c&Home=/home"
+ },
+ "9e9920ea7d2a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": "2026-09-21T23:32:45Z",
+  "state": "unreachable",
+  "url": "https://nacns.org/news-events/annual-conference/2024-annual-conference/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "9f0e3dbb33b1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "9fa932165f0a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://seoc.cl/congreso-2026",
+  "why": "not on page: date"
+ },
+ "a00f57dd940f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://awhonnconvention.org/"
+ },
+ "a070e613746b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/publication/conference-central-34/"
+ },
+ "a0ab65d57b0f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pana.org/page/SpringSymposium"
+ },
+ "a14bab2016f2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://texasnp.org/calendar/"
+ },
+ "a216c6ebe378": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mypnaa.org/PNAA47"
+ },
+ "a28bc07bb663": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/2024-executive-leadership-conference/"
+ },
+ "a3400aa377d9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://kapn.enpnetwork.com/",
+  "why": "not on page: date, name"
+ },
+ "a435e79a8991": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://professional.diabetes.org/scientific-sessions"
+ },
+ "a473427621a3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://help.ons.org/support/solutions/articles/151000164013-when-and-where-are-the-future-ons-congress-events-taking-place-"
+ },
+ "a4aa36e9f2f4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nzno.org.nz/groups/colleges_sections/colleges/college_of_primary_health_care_nurses/upcoming_events"
+ },
+ "a4c64b558932": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://amsect.org/events-education/international-conference"
+ },
+ "a4e8b28f0a89": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hematology.org/meetings/annual-meeting/past-meetings"
+ },
+ "a5058b911d13": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aacn.org/newsroom/nti-2024-aacns-50th-conference-begins-in-denver",
+  "why": "HTTP 403"
+ },
+ "a53f68556e14": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/quality-programs/trauma/quality/trauma-quality-improvement-program/conference/"
+ },
+ "a55905d747af": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://amsect.org/events-education/international-conference-archive"
+ },
+ "a5ace80185dd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://site.thoracic.org/conference/attendees/future-conferences"
+ },
+ "a65c4fb784a4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://edge26.eventscribe.net/reports/dynamicprogram.asp",
+  "why": "HTTP 403"
+ },
+ "a6986e02edc1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aana.com/event/national-crna-week-2027/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "a6b7b162566a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/past-conferences/"
+ },
+ "a6c1c050504e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://njsspa.mypanetwork.com/physician-assistant-events/1165-2024-njsspa-cme-conference"
+ },
+ "a6d420b9c423": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npny.enpnetwork.com/nurse-practitioner-news/220424-join-npny-11-17-annual-pharmacology-conference-virtual-diabetes-heart-failure-and-metabolic-pharmacology"
+ },
+ "a70f1737c4a9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mnrs.org/51st-annual-research-conference/"
+ },
+ "a8119fd95902": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://bcen.org/bcen-learn-live/destin-2025/"
+ },
+ "a82459f399b8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nam.edu/event/2026-healthy-longevity-global-innovator-summit/"
+ },
+ "a835d76694c5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aapexperience.org/future-dates/"
+ },
+ "a83ba760ec56": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/conferences",
+  "why": "HTTP 403"
+ },
+ "a88b0bb7fe2c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aaspa.com/2024-annual-cme-meeting",
+  "why": "robots.txt disallows"
+ },
+ "a8f08aeacf49": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.denosa.org.za/calling-for-abstracts-for-the-4th-brics-nursing-conference-to-be-held-on-21-22-october-2026-in-johannesburg-south-africa/"
+ },
+ "a8f8d986acc5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda"
+ },
+ "a9ff725ba15b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nsna.glueup.com/event/nsna-44th-midyear-conference-183945/"
+ },
+ "aa193f1ef6c6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.thenpa.org/page/Conferences",
+  "why": "HTTP 403"
+ },
+ "aa86467715d0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://campaign.g-dna.org/register"
+ },
+ "aaafa08aea25": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.inacsl.org/past-and-future-annual-conferences"
+ },
+ "ab75fe7ba3a1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting"
+ },
+ "ab7d80090f7d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+  "why": "HTTP 403"
+ },
+ "ac347521ac00": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://centralnjaacn.nursingnetwork.com/nursing-events/152248-aacn-central-new-jersey-chapter-s-9th-critical-care-symposium"
+ },
+ "ac47d60f3837": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/events/2025-sdpa-annual-summer-dermatology-conference"
+ },
+ "ace27eee10e0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://amsect.org/events-education/international-conference-archive"
+ },
+ "acf27c4896bf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.hospitalmedicine.org/event/conferences/"
+ },
+ "ad00946861ac": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://site.thoracic.org/conference/attendees/future-conferences"
+ },
+ "ad0c3446aed7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/leadership-advocacy-summit/"
+ },
+ "add6e167bd7f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aan.com/events/on-demand-and-past-events/"
+ },
+ "adffdd99fe90": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.even3.com.br/simposioenfermagem/"
+ },
+ "ae8d74eefdef": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/03/01/01/42/Editors-Corner-ACC24-Here-at-Last"
+ },
+ "b01af4df2451": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/elc/"
+ },
+ "b062d1d954a3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aaacn.org/sites/default/files/documents/conference/2023/AAACN_23_call_poster_abstracts.pdf"
+ },
+ "b0fecf259ec4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://njana.com/2025-fall-conference/"
+ },
+ "b10a88de0152": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://education.hospitalmedicine.org/Public/Catalog/Details.aspx?id=ZS0/ZPJGWACuNK9/Cr6VZw%3D%3D"
+ },
+ "b119c7e72d86": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/nap-conference"
+ },
+ "b165b6f4103b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://help.ons.org/support/solutions/articles/151000164013-when-and-where-are-the-future-ons-congress-events-taking-place-"
+ },
+ "b1ee9e11dcd2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acgmeetings.gi.org/wp-content/uploads/2025/05/25ACG-Schedule-at-a-Glance-web.pdf"
+ },
+ "b21869cd3ff1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acgmeetings.gi.org/wp-content/uploads/2024/08/ACG2024_Prelim_Program_web.pdf"
+ },
+ "b32ffbb674ac": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://summit.nln.org/",
+  "why": "HTTP 403"
+ },
+ "b38e8bf5fae0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.chestphysician.org/annual-meeting/news/mark-your-calendars-for-chest-2025-in-chicago/"
+ },
+ "b3acb5880da6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mainepa.mypanetwork.com/"
+ },
+ "b3e197405fe8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mnrs.org/mnrs-47th-annual-research-conference/"
+ },
+ "b3e96aab3259": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://magnetpathwaycon.nursingworld.org/"
+ },
+ "b3eca6b1adc8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pids.org/event/idweek-2025/"
+ },
+ "b44b4324cc8c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://gane.nursingnetwork.com/nursing-events/152478-2027-gane-conference"
+ },
+ "b48d447063b1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/anlc/past-conferences"
+ },
+ "b4e1a4663559": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://conference.manipal.edu/shelac2026/"
+ },
+ "b57f0a2c43fe": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "b582bf777bb8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nursingworld.org/news/news-releases/2025/american-nurses-enterprise-celebrates-the-power-of-nurses-during-national-nurses-week/"
+ },
+ "b5ed85970d92": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm"
+ },
+ "b5f5dc8b2f30": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.clintox.org/nacct"
+ },
+ "b623c6b810c0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 3,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.aacnnursing.org/portals/0/pdfs/conferences-webinars/Transform-prospectus.pdf",
+  "why": "not on page: date, year"
+ },
+ "b6326d42c990": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=37048af8-bbee-4fd4-8d8c-018e9f6ee680&Home=%2Fhome"
+ },
+ "b6e4326839f9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.crnasofmd.org/2026-mana-fall-meeting"
+ },
+ "b71bdb7aea9a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/past-conferences/"
+ },
+ "b886d4947bc9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/2023-annual-meeting-conference-70673/"
+ },
+ "b8e6fc4c38d2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+  "why": "HTTP 403"
+ },
+ "b9f577965d09": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.linkedin.com/posts/american-academy-of-anesthesiologists-assistants_aaaa2027-callforspeakers-anesthesiologistassistant-activity-7481057620322091008-Vu-Z",
+  "why": "robots.txt disallows"
+ },
+ "b9f5f06e5958": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pacnp.enpnetwork.com/nurse-practitioner-events/149679-2026-pcnp-annual-education-conference"
+ },
+ "b9ff4c8e1767": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "ba1fd203973c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://sccm.org/education-center/conference-calendar"
+ },
+ "ba22d422575b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/tag/nicu-nurse/"
+ },
+ "ba56633927f3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aan.com/events/on-demand-and-past-events/"
+ },
+ "bacd89dd5bbd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.apna.org/apna-annual-conference/"
+ },
+ "bb084d41d445": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://vam26.vascular.org/",
+  "why": "not on page: date"
+ },
+ "bb92281904a8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://wcapn.enpnetwork.com/nurse-practitioner-events"
+ },
+ "bbdd986bb239": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "bcd086186724": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/anlc/past-conferences"
+ },
+ "bd79efb5c97a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://vascular.org/2024-vascular-annual-meeting",
+  "why": "not on page: date"
+ },
+ "bd84ef01d78f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://inspiringleaders.aonl.org/past-future-conferences"
+ },
+ "bddf4c6417c1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.michiganpa.org/events/2026-mapa-fall-cme-conference"
+ },
+ "be27def23028": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://sccm.org/education-center/educational-programming/multiprofessional-critical-care-review/critical-care-review-adult/mccrc-adult-in-person-course"
+ },
+ "be3656bb5e69": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.newjerseyena.org/masterevents/46th-annual-emergency-care-conference"
+ },
+ "bf5d07dc23fe": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://healthpolicysummit.midwife.org/"
+ },
+ "bfb1cef79cb1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://mypnaa.org/events",
+  "why": "not on page: date, year"
+ },
+ "bfb74bf6a1f6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.capanet.org/capacon2026/"
+ },
+ "bfff1655d95c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.acep.org/sa/general-information/future-dates",
+  "why": "HTTP 403"
+ },
+ "c00b1f3b1de9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://rheumatology.org/annual-meeting"
+ },
+ "c0ca96e09ce8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://events.aats.org/am23"
+ },
+ "c175fba6d1d8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aana.com/wp-content/uploads/2025/11/MYA-26-Exhibitor-Prospectus.pdf"
+ },
+ "c18c6508872f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://aann.org/meetings/research-symposium/research-symposium-registration",
+  "why": "not on page: date"
+ },
+ "c1ce0f518355": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+ },
+ "c1d2fd591b73": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/events/event/?event=32770",
+  "why": "HTTP 403"
+ },
+ "c3635a8d8ce8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aamn.org/2024-annual-conference",
+  "why": "HTTP 404"
+ },
+ "c36a4f7d3dff": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.klinikum-stuttgart.de/aktuell-im-klinikum/veranstaltungen/termin/apn-kongress"
+ },
+ "c3d8a04559de": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/wp-content/uploads/2026/05/AC-27.002-AAPA-2027-Conference-Website_Agenda-PDF-8.5x11in-4.23.26.pdf"
+ },
+ "c3f5ebbd1056": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/about/monthlyeventscalendar"
+ },
+ "c444914a930c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nationalappweek.com/wp-content/uploads/2025/09/Event-Links-Flyer_2025.pdf"
+ },
+ "c44f5da0ade1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=48&Itemid=115&year=2024&month=10&day=05&title=nysana-fall-meeting-2024-&uid=c4491df62dcf9a02e371d0a15d87ec25"
+ },
+ "c453801a9986": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/9th-annual-administrative-evening-night-supervisor-virtual-conference-183349/"
+ },
+ "c45dffbcbe96": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.acep.org/sa/general-information/future-dates",
+  "why": "HTTP 403"
+ },
+ "c4b918cf665a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://npao.org/wp-content/uploads/2026/02/2026-NEW-Sponsorship-Prospectus-Annual-Conference.pdf",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "c5242c44bf9f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aaenp-natl.org/emergnp-2023-call-for-content",
+  "why": "HTTP 404"
+ },
+ "c53a3637f986": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aana.com/premier-event/annual-congress/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "c57ef2bdf074": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aacn.org/newsroom/nti-2023-begins-in-philadelphia",
+  "why": "HTTP 403"
+ },
+ "c6226c5e9add": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/",
+  "why": "not on page: date, name"
+ },
+ "c62cab081779": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://experiencehrx.com/"
+ },
+ "c67052688c46": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ispn-psych.org/past-conferences"
+ },
+ "c6a2b1c97bf6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://enrs.memberclicks.net/2025-conference"
+ },
+ "c72c73e5bf44": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.svnnet.org/page/PastConferences"
+ },
+ "c7cda51eaed5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.enfermeriacomunitaria.org/web/index.php/congreso2026"
+ },
+ "c89930e5abb8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.asn-online.org/education/kidneyweek/archives/future.aspx"
+ },
+ "c900261774bf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pulmapp.com/event/1st-annual-apapp-national-conference/"
+ },
+ "c9441e35d803": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ispn-psych.org/past-conferences"
+ },
+ "c9c1c01d81c2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nam.edu/event/bridging-science-practice-and-policy-to-advance-mental-health-nam-annual-meeting/"
+ },
+ "c9ffa7bfb548": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aan.com/events/upcoming-events"
+ },
+ "ca7bc3b7fac0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pspa.net/events-and-cme/annual-conference/future-conference-locations/"
+ },
+ "cb17fa090255": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.inacsl.org/past-and-future-annual-conferences"
+ },
+ "cc576affcd30": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/event/45th-national-conference-on-pediatric-health-care/"
+ },
+ "cc94836b090e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/event/46th-national-conference-on-pediatric-health-care/"
+ },
+ "cc9a24202cb0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://mnpa.org/event-6521849/Registration"
+ },
+ "ccbacdaed503": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings"
+ },
+ "cd48f1f07eaf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://oncologypas.org/event/2027-annual-symposium/"
+ },
+ "cd5899e27028": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://events.aats.org/am25"
+ },
+ "cd63abe4b71c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aapexperience.org/future-dates/"
+ },
+ "cd8684e3dfd5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/"
+ },
+ "cd91c80f50c3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaos.org/annual/attend/future-meetings/"
+ },
+ "cdb16ea6f5c3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ponl.net/event-5466805"
+ },
+ "ceca55093877": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.academypolicyconference.com/"
+ },
+ "cedaaf35d430": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.vapa.org/events/2026VAPASummerConference/"
+ },
+ "cee3a99cebf4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nysana.com/call-for-abstracts"
+ },
+ "cf2975597e47": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://aann.org/meetings/future-meetings",
+  "why": "not on page: date"
+ },
+ "cfbd12c5d3d8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nccpa.net/represent-summit/"
+ },
+ "d0b45cb18fd0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://convention.jtbcom.co.jp/jans46/outline.html",
+  "why": "not on page: name"
+ },
+ "d0d6ef51892a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://cme.stonybrookmedicine.edu/continuing-medical-education/conferences/283/stony-brook-medicine-2nd-annual-advanced-practice-provider-symposium-2026/9/24/2026"
+ },
+ "d127e081c886": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sgna.org/Annual-Course"
+ },
+ "d1cd01020525": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.jans.or.jp/english/meetings/past/"
+ },
+ "d1f1542b3fbc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/annual-nurse-leader-and-aspiring-nurse-leader-program-147727/"
+ },
+ "d256b6d3541c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nebraskanp.enpnetwork.com/nurse-practitioner-events/150149-35th-annual-nnp-conference-exhibition"
+ },
+ "d2ec0b7aa646": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://aahpm.org/assembly/attend",
+  "why": "HTTP 403"
+ },
+ "d32cd8f73f22": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/clinical-congress-2026/"
+ },
+ "d39d51cca847": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/news-feed/governors-join-with-patients-to-honor-nurse-practitioners-during-national-np-week"
+ },
+ "d3cca844a839": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+ },
+ "d3d84e31f4ee": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/pharmacon26"
+ },
+ "d48f8afb0ce2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ons.org/publications-research/voice/news-views/01-2025/celebrate-yesterday-and-transform-tomorrow-50th"
+ },
+ "d4941be329e3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nyonl.nursingnetwork.com/nursing-events/139707-nyonl-2023-annual-meeting-and-leadership-conference-unifying-our-voices-nurse-leaders-building-a-stronger-future"
+ },
+ "d4d9fb2509c4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://conference.dnpsofcolor.org/"
+ },
+ "d4e7559150f1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ena.org/events/emergency-nursing-2027"
+ },
+ "d535de733ee2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://acrabstracts.org/meetings-archive/"
+ },
+ "d60d8c29e6c8": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.neurocriticalcare.org/Portals/0/Annual%20Meeting/2024%20Annual%20Meeting/NCS%202024%20Digital%20AP_1.pdf?ver=3vfaF_Ra4mf_7Rzo9bLrHw%3D%3D"
+ },
+ "d641a0bcb11b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/7th-annual-administrative-evening-night-supervisor-virtual-conference-101101/"
+ },
+ "d682332fa521": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ons.org/education-hub/events/ons-congress/schedule"
+ },
+ "d68de6ea6c42": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aann.org/uploads/Meetings/2025/AANN25_Annual_Conf_Bro_v4.pdf"
+ },
+ "d6cf72ac03b2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 2,
+  "last_verified": "2026-09-21T23:32:45Z",
+  "state": "unreachable",
+  "url": "https://login.texasnp.org/events/EventDetails.aspx?id=1986716",
+  "why": "HTTP 403"
+ },
+ "d70de380f04c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://site.thoracic.org/about-us/news/bringing-together-the-global-respiratory-community-at-ats-2023"
+ },
+ "d78ac8440fe5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nna.gov.sg/events/apn-seminar-shaping-tomorrow-s-healthcare--digital-transformation---patient-safety/"
+ },
+ "d80b4f57152c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/"
+ },
+ "d8811ac8ad01": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.orthonurse.org/Events/Congress"
+ },
+ "d8a045cb8cc3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://cooperhealth.cloud-cme.com/course/courseoverview?EID=34905&P=0&formid=232"
+ },
+ "d901e593ae15": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aanp.org/events/2023-hpc",
+  "why": "page has almost no readable text (75 chars; likely JavaScript-only)"
+ },
+ "d99c10e3c6f2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://aapexperience.org/faq/"
+ },
+ "da0acddd86ed": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences"
+ },
+ "da9079800096": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://ssih.org/news/pulse-healthcare-simulation-week-2023-be-champion-your-success-story"
+ },
+ "db3fe663f2e9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.delawareana.org/event-5569467"
+ },
+ "db6c943ce1b9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aana.com/event/edge-2027/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "db80e502cbf5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://ebpom.org/product/ebpom-ireland-2026/"
+ },
+ "dba5b78e5caa": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/events/2025-aanp-national-conference"
+ },
+ "dbfaf50988f0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nam.edu/event/2026-annual-meeting-chronic-disease/"
+ },
+ "de36578f40cd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/annual-nurse-leader-and-aspiring-nurse-leader-program-85919/"
+ },
+ "de6ff800419e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/sites/default/files/documents/conference/2023-pharma/2023_pharma_sponsorship_form.pdf"
+ },
+ "de9898396c11": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx"
+ },
+ "df0c3e9bbf98": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://aannet.org/page/EventsOverview",
+  "why": "HTTP 403"
+ },
+ "df41d3af0294": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 2,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://congresoenfermeria.ufro.cl/",
+  "why": "not on page: date, name"
+ },
+ "df42be11a92a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sccm.org/annual-congress/past-congress-resources"
+ },
+ "df6d0bc5357c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.acc.org/latest-in-cardiology/features/meeting-coverage/2026/acc-2026-meeting-coverage"
+ },
+ "df9a0c25f975": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.emergencyphysicians.org/press-releases/2024/acep24-worlds-largest-emergency-medicine-conference-heads-to-las-vegas"
+ },
+ "e00fdc9661cd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://sccm.org/annual-congress/critical-care-conference"
+ },
+ "e0d90ed98507": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.inacsl.org/past-and-future-annual-conferences"
+ },
+ "e1d48bf2d6f9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://cme.stonybrookmedicine.edu/continuing-medical-education/conferences/254/stony-brook-medicine-inaugural-advanced-practice-providers-symposium-building-bridges-and-breaking/9/25/2025"
+ },
+ "e1d965344e5e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nyonl.nursingnetwork.com/nursing-events/150498-nyonl-34th-annual-meeting-and-leadership-conference"
+ },
+ "e2105c63aef2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/about/monthlyeventscalendar"
+ },
+ "e22d93b3c36f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates"
+ },
+ "e2417562156e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aonl.org/education-events/professional-governance-conference/june26-27-2023",
+  "why": "HTTP 404"
+ },
+ "e2d3b8e33ed3": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.acep.org/sa/general-information/future-dates",
+  "why": "HTTP 403"
+ },
+ "e36d67a762c5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/events/"
+ },
+ "e470552624fc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaos.org/annual/attend/future-meetings/"
+ },
+ "e48b8600d4b5": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.okpa.org/events/annual-oapa-fall-cme-conference-2026/"
+ },
+ "e524acf2fefa": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.sts.org/calendar-of-events/61st-sts-annual-meeting"
+ },
+ "e59429cb7eaf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/annual-nurse-leader-and-aspiring-nurse-leader-conference-188868/"
+ },
+ "e5ed700bcd49": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://aahpm.org/assembly/attend",
+  "why": "HTTP 403"
+ },
+ "e68909104a18": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/PastConferences",
+  "why": "HTTP 403"
+ },
+ "e68c8f327393": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pulmapplive.com/"
+ },
+ "e6aa4706acf0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.gapna.org/sites/default/files/documents/conference/2024/GAPNA_24_annual_prospectus_w_booking.pdf"
+ },
+ "e6cad22d3c73": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aanp.org/news-feed/follow-your-must-a-recap-of-the-2023-aanp-national-conference",
+  "why": "page has almost no readable text (75 chars; likely JavaScript-only)"
+ },
+ "e72f90bb9cdd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://connapa.org/cocconference/"
+ },
+ "e7405aabe655": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npac-aiipc.org/annual-conference/"
+ },
+ "e741fbbb48ca": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://nacns.org/wp-content/uploads/2023/03/NACNS-2023-Annual-Conference-Program-Guide-digital.pdf",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "e7a1899d6ebd": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/event/pediatric-symposium-2023-targeted-topics/"
+ },
+ "e869550c5c58": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+  "why": "HTTP 403"
+ },
+ "e878a052d3a2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://learning.dermpa.org/conference-recordings"
+ },
+ "e9ba48026efc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.itns.org/"
+ },
+ "ea2b2c1beee9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.napnap.org/event/new-jersey-chapter-fall-conference/"
+ },
+ "eb34fad968ca": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/2025-executive-leadership-conference/"
+ },
+ "eb9393a84dc4": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/news-data/all-news/excellence-recognized-at-the-2023-academic-nursing-leadership-conference"
+ },
+ "ebe140b66612": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://aahpm.org/education-events/annual-assembly/",
+  "why": "HTTP 403"
+ },
+ "ec3d49f053e2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aan.com/events/on-demand-and-past-events/"
+ },
+ "ee1eb9c0e631": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://heartrhythm.com/"
+ },
+ "ee76d4c7f3bf": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/conferences/sdpa-dermatology-conferences"
+ },
+ "ef091971e8ad": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 1,
+  "last_verified": "2026-09-22T13:47:30Z",
+  "state": "unreachable",
+  "url": "https://www.aanp.org/news-feed/nurse-practitioner-profession-grows-to-385-000-strong",
+  "why": "page has almost no readable text (75 chars; likely JavaScript-only)"
+ },
+ "ef1369c0ac84": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ssih.org/news/presidents-july-message-time-prepare-healthcare-simulation-week-2024"
+ },
+ "ef4dea3cff1c": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.texasnurses.org/events/EventDetails.aspx?id=1947762"
+ },
+ "f1003b097501": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aanp.org/news-feed/nurse-practitioners-recognized-nationwide-during-national-np-week"
+ },
+ "f138e831ff89": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://imsh2027.org/about"
+ },
+ "f1acde0c46a6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=69&Itemid=115&year=2025&month=09&day=19&title=nysana-fall-meeting-2025&uid=8b46927909619babde15299f77571895"
+ },
+ "f1bb99113eb6": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://bcen.org/bcen-learn-live/phoenix-2024/nov-2023-speaker-information/",
+  "why": "HTTP 404"
+ },
+ "f206e07262c2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npny.enpnetwork.com/"
+ },
+ "f21293985b2b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.nonpf.org/page/futureconferences",
+  "why": "HTTP 403"
+ },
+ "f21839125747": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.academyonline.org/page/FallConference",
+  "why": "HTTP 403"
+ },
+ "f224b69344a7": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.emergencyphysicians.org/press-releases/2025/8-26-25-emergency-medicines-premier-meeting-acep25-set-for-salt-lake-city"
+ },
+ "f306cd0b410d": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://npweek.aanp.org/press-releases-and-letters"
+ },
+ "f3363afa0f3f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.clintox.org/nacct"
+ },
+ "f358384e5a8a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aapa.org/cme-calendar/2025-musculoskeletal-galaxy/"
+ },
+ "f3e450448d39": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://nacns.org/news-events/annual-conference/2025-annual-conference/",
+  "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+ },
+ "f4cbd2d51dc1": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://pspa.net/wp-content/uploads/2024/06/PSPA-2024_Conference_Agenda-FINAL.pdf"
+ },
+ "f4eb59010957": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nann.org/education/past-conferences/"
+ },
+ "f51b0a709cbc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.wocnext.org/event-information"
+ },
+ "f5590a05975e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://amia.org/education-events/amia-2025-informatics-summit",
+  "why": "HTTP 403"
+ },
+ "f5a5b4d7c88f": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://imsh2026.org/about"
+ },
+ "f5db384fd34e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://nationalappweek.com/wp-content/uploads/2024/01/MKTG23-1974-NURSING-National-APP-Week-FLYER-Final.pdf"
+ },
+ "f6211d39cc95": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://capni.enpnetwork.com/nurse-practitioner-events/149380-capni-annual-conference-wed-thurs-feb-24-25-2027"
+ },
+ "f6bde5b6db82": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aaacn.org/events/ambulatory-care-nurses-week"
+ },
+ "f6bf71a4acf2": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day"
+ },
+ "f728d5279341": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://enrs2027conference.oa-event.com/abstracts",
+  "why": "not on page: date, year, name"
+ },
+ "f7399cfc88ee": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.nccpa.net/news/whentheyseeus/"
+ },
+ "f7b25d70bdd0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.aacnnursing.org/doctoral-conference/past-conferences"
+ },
+ "f8170fff748e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.asn-online.org/education/kidneyweek/archives/past.aspx"
+ },
+ "f84866552914": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 4,
+  "last_verified": null,
+  "state": "not_found",
+  "url": "https://www.aad.org/member/meetings/archive",
+  "why": "not on page: date"
+ },
+ "f903ce012d80": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://onlnj.glueup.com/event/2024-annual-meeting-conference-100740/"
+ },
+ "f9c0307ae4cc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://members.nebraskanurses.org/calendar/Details/2024-nna-annual-convention-1100319?rendermode=print"
+ },
+ "f9db071897b0": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://texasnp.org/pharma-2024/"
+ },
+ "fa9a528d3fba": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.dermpa.org/events/sdpa-21st-annual-fall-dermatology-conference"
+ },
+ "fb87e153ab0e": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.pspa.net/wp-content/uploads/2025/01/PSPA-News-Briefs-November-2024.pdf"
+ },
+ "fc952b75dcbc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 4,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.aacn.org/conferences-and-events/nti",
+  "why": "HTTP 403"
+ },
+ "fc96ae9dd16b": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": true,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://portal.advancingexpertcare.org/Portal/Shared_Content/Events/Event_Display.aspx?EventKey=25HPNACONF"
+ },
+ "fce48aeecb68": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.apao.cc/assets/Conference/2024Symposium/APAO%202024%2027th%20Annual%20Symposium%20EP%20PRINT.pdf",
+  "why": "HTTP 404"
+ },
+ "fce4c70fffdc": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://isapn.enpnetwork.com/nurse-practitioner-events/149858-2026-aprn-midwest-conference"
+ },
+ "fd758f180671": {
+  "checked": "2026-09-22T13:52:26Z",
+  "fails": 3,
+  "last_verified": null,
+  "state": "unreachable",
+  "url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+  "why": "HTTP 403"
+ },
+ "fdc9f3233f10": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://www.ohiopa.com/aws/OAPA/pt/sp/fall-conference"
+ },
+ "ff96990874e9": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": false,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://kansaspa.mypanetwork.com/"
+ },
+ "fff7c127c15a": {
+  "checked": "2026-09-22T13:52:26Z",
+  "evidence_match": null,
+  "fails": 0,
+  "last_verified": "2026-09-22T13:52:26Z",
+  "state": "verified",
+  "url": "https://accscientificsession.acc.org/"
+ }
+}

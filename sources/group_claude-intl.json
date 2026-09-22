@@ -1,0 +1,397 @@
+{
+ "group": "claude-intl",
+ "series": [
+  {
+   "id": "npac-pan-canadian-np-conference",
+   "name": "Pan-Canadian NP Conference (Annual NPAC Conference)",
+   "org": "Nurse Practitioner Association of Canada / Association des infirmières et infirmiers praticiens du Canada (NPAC-AIIPC)",
+   "org_url": "https://npac-aiipc.org/annual-conference/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician",
+    "leader",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically April/May",
+   "editions": [
+    {
+     "start": "2027-04-29",
+     "end": "2027-05-01",
+     "location": "Vancouver, BC, Canada",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": "2026-10-18",
+      "text": "Abstract submissions are now open and will close October 18, 2026, at 11:59 p.m. PST.",
+      "url": "https://npac-aiipc.org/annual-conference/"
+     },
+     "source_url": "https://npac-aiipc.org/annual-conference/",
+     "evidence": "April 29–May 1, 2027, in Vancouver, British Columbia",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2026-04-10",
+     "end": "2026-04-11",
+     "location": "Halifax Marriott Harbourfront Hotel, Halifax, NS, Canada",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://events.myconferencesuite.com/NPAC_National_Conference-2026/page/Program",
+     "evidence": "April 10 and 11, 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nnpbc-np-conference",
+   "name": "NNPBC NP Conference",
+   "org": "Nurses and Nurse Practitioners of British Columbia (NNPBC)",
+   "org_url": "https://npconference.nnpbc.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically May",
+   "editions": [
+    {
+     "start": "2026-05-29",
+     "end": "2026-05-30",
+     "location": "Sheraton Vancouver Wall Centre, Vancouver, BC, Canada",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://npconference.nnpbc.com/",
+     "evidence": "May 29-30, 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aipsq-congres-annuel",
+   "name": "Congrès annuel de l'AIPSQ",
+   "org": "Association des infirmières praticiennes spécialisées du Québec (AIPSQ)",
+   "org_url": "https://www.aipsq.com/formations/congres-annuel-de-laipsq",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically April",
+   "editions": [
+    {
+     "start": "2026-04-16",
+     "end": "2026-04-17",
+     "location": "Centre des congrès de Lévis, Lévis, QC, Canada",
+     "format": "hybrid",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aipsq.com/formations/congres-annuel-de-laipsq",
+     "evidence": "du 16 au 17 avril 2026 ... Lévis Centre des congrès ... Hybride (présentiel et virtuel)",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "capa-annual-conference",
+   "name": "Annual CAPA Conference & National PA Job Fair",
+   "org": "Canadian Association of Physician Assistants (CAPA-ACAM)",
+   "org_url": "https://capa-acam.ca/",
+   "professions": [
+    "PA"
+   ],
+   "specialty": [
+    "physician assistant practice"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-22",
+     "end": "2026-10-24",
+     "location": "Toronto, ON, Canada",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://capa-acam.ca/",
+     "evidence": "Join us in Toronto from October 22–24, 2026 for the 27th Annual CAPA Conference & 2nd Annual National PA Job Fair.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nhse-advancing-practice-week",
+   "name": "Advancing Practice Week",
+   "org": "NHS England Centre for Advancing Practice",
+   "org_url": "https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-conference/",
+   "professions": [
+    "NP",
+    "PA",
+    "RN"
+   ],
+   "specialty": [
+    "advanced clinical practice",
+    "multiprofessional"
+   ],
+   "audience": [
+    "clinician",
+    "leader",
+    "academic"
+   ],
+   "kind": "summit",
+   "region": "virtual",
+   "recurrence": "annual, typically November",
+   "editions": [
+    {
+     "start": "2026-11-08",
+     "end": "2026-11-14",
+     "location": "Online (Microsoft Teams)",
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-conference/",
+     "evidence": "Advancing Practice Week ... 8 to 14 November 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "hkanm-international-advanced-nursing-practice-conference",
+   "name": "International Advanced Nursing Practice Conference (IANPC)",
+   "org": "The Hong Kong Academy of Nursing and Midwifery (HKANM)",
+   "org_url": "https://www.hkanm.hk/main/",
+   "professions": [
+    "NP",
+    "CNS",
+    "RN"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician",
+    "leader",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "biennial (2021, 2023, 2025), typically November",
+   "editions": [
+    {
+     "start": "2025-11-14",
+     "end": "2025-11-16",
+     "location": "Hong Kong",
+     "format": "in person",
+     "theme": "Advanced Nursing Practice – Global Strategies for Better Health",
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.hkanm.hk/main/events-or-activities/ianpc-2025/conference/",
+     "evidence": "The 3rd International Advanced Nursing Practice Conference ... 14-16 November 2025",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "dnapn-international-congress",
+   "name": "Internationaler Kongress Advanced Practice Nursing & Advanced Nursing Practice",
+   "org": "Deutsches Netzwerk für ANP & APN g.e.V. (DNAPN)",
+   "org_url": "https://dnapn.de/",
+   "professions": [
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "periodic, typically September",
+   "editions": [
+    {
+     "start": "2025-09-04",
+     "end": "2025-09-05",
+     "location": "Medizinische Hochschule Hannover, Hannover, Germany",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2025-05-30",
+      "text": "The submission of abstracts is closed.",
+      "url": "https://dnapn.de/8-international-congress-2025/"
+     },
+     "source_url": "https://dnapn.de/8-international-congress-2025/",
+     "evidence": "8th International Congress Advanced Practice Nursing & Advanced Nursing Practice ... 4-5 September 2025",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "anp-kongress-austria",
+   "name": "ANP Kongress",
+   "org": "Fachhochschule Oberösterreich with Forum ANP Austria",
+   "org_url": "https://fh-ooe.at/konferenzen/anp2026",
+   "professions": [
+    "NP",
+    "CNS"
+   ],
+   "specialty": [
+    "advanced practice nursing"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "intl",
+   "recurrence": "annual, typically April",
+   "editions": [
+    {
+     "start": "2026-04-21",
+     "end": "2026-04-22",
+     "location": "Schlossmuseum Linz, Linz, Austria",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://fh-ooe.at/konferenzen/anp2026",
+     "evidence": "ANP Kongress 2026 ... 21. bis 22. April 2026 ... Schlossmuseum Linz, Schlossberg 1, 4020 Linz",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "Nurse Practitioners New Zealand (NPNZ)",
+   "url": "https://npnzconference.co.nz/",
+   "reason": "next edition posted only as 'Ōtautahi Christchurch May 2028' (no day dates); 2026 edition dates not shown on the pages read"
+  },
+  {
+   "org": "Nurse Practitioner Association of Alberta / Alberta Union of NPs",
+   "url": "https://albertanps.com/npaa-conference/",
+   "reason": "2026 conference held (no dates shown); 'The 2027 conference will be held in Edmonton' with no dates"
+  },
+  {
+   "org": "Saskatchewan Association of Nurse Practitioners (SANP)",
+   "url": "https://sasknp.org/event-6169422",
+   "reason": "only past edition shown (November 7-8, 2025, venue not on page); no 2026 dates found"
+  },
+  {
+   "org": "SingHealth (APN Conference)",
+   "url": "https://www.nna.gov.sg/events/singhealth-apn-conference-2026/",
+   "reason": "dates (24-25 July 2026, Academia, SGH Campus) found only on National Nursing Academy (MOH) listing, not SingHealth's own page; past event"
+  },
+  {
+   "org": "Irish Association of Advanced Nurse and Midwife Practitioners (IAANMP)",
+   "url": "https://iaanmp.com/",
+   "reason": "homepage cites 'Call for Poster Presentation Abstracts – IAANMP Annual Conference 2026. Deadline: Wednesday, 30th September 2026' but no conference date/venue found"
+  },
+  {
+   "org": "INMO Advanced Practice Section",
+   "url": "https://iaanmp.com/inmo-advanced-practice-section-conference-wednesday-27-may-2026-the-richmond-education-and-event-centre-dublin/",
+   "reason": "27 May 2026, Richmond Education and Event Centre, Dublin — seen only on IAANMP repost, not INMO's own page; past event"
+  },
+  {
+   "org": "Faculty of Physician Associates (RCP)",
+   "url": "https://rcpconferences.co.uk/fpa-conference",
+   "reason": "Faculty dissolved 31/12/24; final conference December 2024; no successor meeting"
+  },
+  {
+   "org": "United Kingdom Association of Physician Associates (UKAPA)",
+   "url": "https://www.ukapa.org.uk/conference/ukapa-2026-conference/",
+   "reason": "page unreachable (robots.txt disallowed); UKAPA 2026 conference exists per search result title"
+  },
+  {
+   "org": "Korean Association of Advanced Practice Nurses (KAAPN)",
+   "url": "https://kaapn.or.kr/new2/eng/sub01/1_2.php",
+   "reason": "page unreachable (robots.txt disallowed)"
+  },
+  {
+   "org": "Taiwan Association of Nurse Practitioners (TANP)",
+   "url": "https://tnpa.org.tw/news/index.php?c=&p=1&t=16",
+   "reason": "no 2026 annual meeting dates posted"
+  },
+  {
+   "org": "Nederlandse Associatie Physician Assistants (NAPA) / PA Invest Jaarcongres",
+   "url": "https://www.pa-invest.nl/",
+   "reason": "NAPA site has no congress dates; PA Invest site unreachable (robots.txt fetch timeout)"
+  },
+  {
+   "org": "Irish Society of Physician Associates (ISPA)",
+   "url": "https://ispaireland.ie/",
+   "reason": "page unreachable (403)"
+  }
+ ],
+ "_ported": "from Claude v4 build (2026-09-21), merged 2026-09-22"
+}

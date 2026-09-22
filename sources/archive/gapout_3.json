@@ -1,0 +1,753 @@
+[
+ {
+  "id": "fellows-of-the-aanp__fellows-winter-meeting",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: the AANP FAANP awards page says only that the Ford awardee keynotes 'the Winter Meeting of the Fellows', with no dates. No other organizer page found, the search budget ran out, and Wayback is blocked."
+ },
+ {
+  "id": "forum-of-nurses-in-advanced-practice-nj__fnap-annual-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: the FNAP ENP-network events list and the 2026 conference page show no past editions. The search budget ran out and Wayback is blocked."
+ },
+ {
+  "id": "florida-nurse-practitioner-network__fnpn-annual-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": "https://fnpn.enpnetwork.com/page/37414-fnpn-past-conferences",
+  "note": "Domain blocked: the FNPN past-conferences page (fnpn.enpnetwork.com/page/37414-fnpn-past-conferences) is disallowed by robots.txt for the fetcher. The events list shows only 2026 items."
+ },
+ {
+  "id": "sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs",
+  "found": [
+   {
+    "start": "2023-01-26",
+    "end": "2023-01-27",
+    "location": "Robert Wood Johnson University Hospital, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+    "evidence": "2023 Dates: January 26 & 27 March 13 & 14 June 12 & 13 October 19 & 20",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2023-03-13",
+    "end": "2023-03-14",
+    "location": "Robert Wood Johnson University Hospital, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+    "evidence": "2023 Dates: January 26 & 27 March 13 & 14 June 12 & 13 October 19 & 20",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2023-06-12",
+    "end": "2023-06-13",
+    "location": "Robert Wood Johnson University Hospital, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+    "evidence": "2023 Dates: January 26 & 27 March 13 & 14 June 12 & 13 October 19 & 20",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2023-10-19",
+    "end": "2023-10-20",
+    "location": "Robert Wood Johnson University Hospital, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf",
+    "evidence": "2023 Dates: January 26 & 27 March 13 & 14 June 12 & 13 October 19 & 20",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-01-09",
+    "end": "2025-01-10",
+    "location": "Robert Wood Johnson University Hospital, 1 Robert Wood Johnson Place, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+    "evidence": "Schedule 2025 Dates January 9 and 10 March 13 and 14 - SOLD OUT June 5 and 6 - SOLD OUT October 9 and 10 - SOLD OUT",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-03-13",
+    "end": "2025-03-14",
+    "location": "Robert Wood Johnson University Hospital, 1 Robert Wood Johnson Place, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+    "evidence": "Schedule 2025 Dates January 9 and 10 March 13 and 14 - SOLD OUT June 5 and 6 - SOLD OUT October 9 and 10 - SOLD OUT",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-06-05",
+    "end": "2025-06-06",
+    "location": "Robert Wood Johnson University Hospital, 1 Robert Wood Johnson Place, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+    "evidence": "Schedule 2025 Dates January 9 and 10 March 13 and 14 - SOLD OUT June 5 and 6 - SOLD OUT October 9 and 10 - SOLD OUT",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-10-09",
+    "end": "2025-10-10",
+    "location": "Robert Wood Johnson University Hospital, 1 Robert Wood Johnson Place, New Brunswick, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+    "evidence": "Schedule 2025 Dates January 9 and 10 March 13 and 14 - SOLD OUT June 5 and 6 - SOLD OUT October 9 and 10 - SOLD OUT",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2024
+  ],
+  "archive_url": null,
+  "note": "The course runs 3-4 times a year, so each 2023 and 2025 session is its own entry. The live RWJUH schedule page still shows the 2025 schedule (odd, since 2026 is on file; worth checking). The 2024 schedule was not found, and Wayback is blocked."
+ },
+ {
+  "id": "georgia-association-for-nursing-educatio__gane-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: the GANE nursingnetwork events list and the 2027 conference page show no past editions. The search budget ran out and Wayback is blocked."
+ },
+ {
+  "id": "gerontological-advanced-practice-nurses-__gapna-engage-annual-conference",
+  "found": [
+   {
+    "start": "2023-09-27",
+    "end": "2023-09-30",
+    "location": "Hyatt Regency New Orleans, New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.gapna.org/about/news/gapna-now-accepting-abstracts-2023-annual-conference",
+    "evidence": "September 27 – 30, 2023 ... Hyatt Regency New Orleans 601 Loyola Avenue New Orleans, LA 70113",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-09-12",
+    "end": "2024-09-14",
+    "location": "Marriott Rivercenter, San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.gapna.org/sites/default/files/documents/conference/2024/GAPNA_24_annual_prospectus_w_booking.pdf",
+    "evidence": "September 12-14, 2024 at the Marriott Rivercenter San Antonio.",
+    "detail_url": "https://www.gapna.org/sites/default/files/events/gapnaAnnual2024.pdf",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Both years come from GAPNA's own pages. The 2024 schedule PDF opens 'Thursday, September 12, 2024', which agrees with the prospectus."
+ },
+ {
+  "id": "gerontological-advanced-practice-nurses-__gapna-pharmacon",
+  "found": [
+   {
+    "start": "2023-04-25",
+    "end": "2023-04-29",
+    "location": "Honolulu, HI",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.gapna.org/sites/default/files/documents/conference/2023-pharma/2023_pharma_sponsorship_form.pdf",
+    "evidence": "GAPNA 2023 Pharmacology Conference April 25-29, 2023 / Honolulu, Hawaii",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-03-21",
+    "end": "2024-03-23",
+    "location": "Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.gapna.org/sites/default/files/documents/conference/2024-pharma/Pharm_RB_24_web.pdf",
+    "evidence": "Thursday, March 21, 2024 ... Saturday, March 23, 2024",
+    "detail_url": "https://www.gapna.org/sites/default/files/documents/conference/2024-pharma/Pharm_RB_24_web.pdf",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The 2024 dates come from the schedule PDF (times in Central). The Chicago location comes from GAPNA's past-conferences page ('2024 Pharmacology Conference ... Chicago, IL'). Before 2025 the meeting was called the Pharmacology Conference."
+ },
+ {
+  "id": "aorn__global-surgical-conference-expo",
+  "found": [
+   {
+    "start": "2023-04-01",
+    "end": "2023-04-04",
+    "location": "San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aorn.org/about-aorn/aorn-newsroom/periop-today-newsletter/-in-tags/tags/aorn-expo",
+    "evidence": "AORN Global Surgical Conference & Expo 2023 and to help onsite in San Antonio from April 1-4.",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-03-09",
+    "end": "2024-03-12",
+    "location": "Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aorn.org/article/-in-category/categories/expo",
+    "evidence": "AORN's premiere annual gathering of perioperative professionals returns to 'Music City USA' (Nashville) next March 9-12",
+    "detail_url": "https://www.aorn.org/article/call-for-aorn-expo-2024-speakers",
+    "via": "organizer"
+   },
+   {
+    "start": "2025-04-05",
+    "end": "2025-04-08",
+    "location": "Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aorn.org/article/aorn-global-surgical-conference---expo-2025-heads-to-boston--for-an-unparalleled-perioperative-experience",
+    "evidence": "The 2025 AORN Global Surgical Conference & Expo, the premier event for perioperative nurses and the entire surgical team, takes place April 5-8, 2025, in Boston, Massachusetts.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": "https://www.aorn.org/surgical-expo/about",
+  "note": "The 2024 sentence has no year. It sits in the AORN article 'Call for AORN Expo 2024 Speakers' (proposals due May 31, 2023), and the /surgical-expo/about page lists '2024: Nashville, Tennessee'. Treat 2024 as lower confidence."
+ },
+ {
+  "id": "american-association-of-nurse-practition__health-policy-conference",
+  "found": [
+   {
+    "start": "2023-01-29",
+    "end": "2023-01-31",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aanp.org/events/2023-hpc",
+    "evidence": "January 29, 2023 – January 31, 2023 ... Washington, District of Columbia",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-01-27",
+    "end": "2024-01-30",
+    "location": null,
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://storage.aanp.org/www/documents/events/2024-AANP-HP-Conference-Draft-Agenda.pdf",
+    "evidence": "2024 Health Policy Conference Program Saturday, January 27 4:30pm – 6:30pm",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The 2024 dates come from AANP's DRAFT agenda PDF, which runs Saturday Jan 27 to Tuesday Jan 30. The agenda names no venue, so location is null (probably Washington, DC, but that is not verified). /events/2024-hpc returns 404."
+ },
+ {
+  "id": "american-academy-of-nursing__health-policy-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Domain blocked: aannet.org returned 403 (the Academy's 2023 'Transforming Health, Driving Policy Conference' event page). academypolicyconference.com shows only 2026. It is unclear whether the earlier Transforming Health, Driving Policy conferences are the same series."
+ },
+ {
+  "id": "american-college-of-nurse-midwives__health-policy-summit-hill-day",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: healthpolicysummit.midwife.org shows only 2026, and the ACNM 2024 annual report names no Summit/Hill Day dates. It may be a new series. The search budget ran out and Wayback is blocked."
+ },
+ {
+  "id": "society-for-simulation-in-healthcare__healthcare-simulation-week",
+  "found": [
+   {
+    "start": "2023-09-18",
+    "end": "2023-09-22",
+    "location": "Global (virtual/local observances)",
+    "format": "virtual",
+    "theme": "Be a Champion of Your Success Story",
+    "source_url": "https://ssih.org/news/pulse-healthcare-simulation-week-2023-be-champion-your-success-story",
+    "evidence": "I'm talking about Healthcare Simulation Week 2023, Sept. 18-22.",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-09-16",
+    "end": "2024-09-20",
+    "location": "Global (virtual/local observances)",
+    "format": "virtual",
+    "theme": "Launchpad to Legacy: What's Your Next?",
+    "source_url": "https://www.ssih.org/news/presidents-july-message-time-prepare-healthcare-simulation-week-2024",
+    "evidence": "Taking place September 16-20, this year's theme, \"Launchpad to Legacy: What's Your Next?\"",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": null,
+  "note": "The 2024 sentence has no year, but it comes from the SSH article 'President's July Message: Time to Prepare for Healthcare Simulation Week 2024!'. For 2025, SSH says HSW 2025 happened (article 'A Week of Giving, A Year of Impact', Oct 1 2025) but no dates were found. Format is an awareness week, not a venue meeting."
+ },
+ {
+  "id": "heart-rhythm-society__heart-rhythm",
+  "found": [
+   {
+    "start": "2024-05-17",
+    "end": "2024-05-19",
+    "location": "Boston Convention and Exhibition Center, Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://heartrhythm.com/attend/heart-rhythm-2024",
+    "evidence": "When: Friday, May 17 - Sunday, May 19, 2024 Where: Boston Convention and Exhibition Center in Boston, MA",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "Domain blocked for 2023: heartrhythm.com/attend/2023 returned 403. The HRS (hrsonline.org) press release puts Heart Rhythm 2023 in New Orleans, starting 'on Thursday' (release dated May 15, 2023), but gives no verbatim date range. 2024 is recorded exactly as the organizer page states it (Fri-Sun); check whether a Thursday start day is left out."
+ },
+ {
+  "id": "american-academy-of-physician-associates__hospital-medicine-essentials",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: the AAPA page (a joint AAPA/SHM meeting, 2026 in Nashville) shows no past editions. AAPA did run an 'Adult Hospital Medicine Boot Camp' in 2023 and 2024, a different name that was not recorded as this series."
+ },
+ {
+  "id": "hospice-and-palliative-nurses-associatio__hpna-annual-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "No standalone HPNA Annual Conference was found before 2025. In 2023-2024 HPNA's portal lists 'The Annual Assembly of Hospice and Palliative Care' (2024: March 20-23, Phoenix, AZ), which HPNA co-hosted with AAHPM. It is a different meeting and was not recorded."
+ },
+ {
+  "id": "heart-rhythm-society__hrx-live",
+  "found": [
+   {
+    "start": "2023-09-21",
+    "end": "2023-09-23",
+    "location": "Summit (Seattle Convention Center), Seattle, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://experiencehrx.com/pressrelease-hrx2023-aug282023/",
+    "evidence": "HRX 2023 will take place in-person from September 21-23, 2023, at Seattle's new state-of-the-art convention center space, Summit.",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-09-05",
+    "end": "2024-09-07",
+    "location": "Signia by Hilton Atlanta, Atlanta, GA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.hrsonline.org/news/hrx2024-pressrelease/",
+    "evidence": "HRX 2024 will be held in person from September 5-7, 2024, at Atlanta's Signia by Hilton Atlanta.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": "https://experiencehrx.com/media/pressrelease-archives/",
+  "note": "The name was HRX before 'HRX Live'."
+ },
+ {
+  "id": "institute-for-critical-care-medicine-mou__iccm-summit-for-advanced-practice-providers",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Not findable: critcaresummit.com shows only the current edition, with no prior years or edition number. The Mount Sinai calendar has 2025 only. Wayback is blocked."
+ },
+ {
+  "id": "idsa-shea-hivma-pids-and-sidp-joint-meet__idweek",
+  "found": [
+   {
+    "start": "2024-10-16",
+    "end": "2024-10-19",
+    "location": "Los Angeles Convention Center South Hall, Los Angeles, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://idweek.org/wp-content/uploads/2024/06/1218-IDWeek-Exhibitor-Prospectus-202422.pdf",
+    "evidence": "Join us in Los Angeles, CA at the Los Angeles Convention Center South Hall Oct. 16 – 19",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "The 2024 quote has no year. It comes from the IDWeek '2024 Industry Partner Prospectus' PDF (uploaded 2024/06). For 2023, the prospectus PDF (Boston) returns 404, idweek.org/idweek-2024 also returns 404, IDSA articles give no dates, and Wayback is blocked."
+ },
+ {
+  "id": "society-for-simulation-in-healthcare__imsh",
+  "found": [
+   {
+    "start": "2023-01-21",
+    "end": "2023-01-25",
+    "location": "Orange County Convention Center - North Concourse, Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://imsh2023.org/about",
+    "evidence": "January 21-25, 2023 ... Orange County Convention Center - North Concourse | 9400 Universal Blvd. Orlando, FL 32819",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-01-20",
+    "end": "2024-01-24",
+    "location": "San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://imsh2024.org/about",
+    "evidence": "January 20-24, 2024 | San Diego, CA",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The 2024 line is from the 'Future IMSH dates' section of imsh2024.org/about."
+ },
+ {
+  "id": "int-l-nursing-association-for-clinical-s__inacsl27",
+  "found": [
+   {
+    "start": "2023-06-14",
+    "end": "2023-06-17",
+    "location": "Providence, RI",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.inacsl.org/past-and-future-annual-conferences",
+    "evidence": "INACSL23 June 14-17, 2023 Providence, RI",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-college-of-surgeons__innovation-summit",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: the ACS Innovation Summit page shows only the 2027 edition (March 11-12, 2027, Chicago) and no history. The exhibitor URL path (/surgical-simulation-summit/exhibitors) suggests it replaced the ACS Surgical Simulation Summit, but that is not confirmed, so no earlier editions were recorded."
+ },
+ {
+  "id": "american-association-of-neuroscience-nur__international-neuroscience-nursing-research-sympos",
+  "found": [
+   {
+    "start": "2024-01-19",
+    "end": "2024-01-19",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://aann.org/uploads/February_2024_AANN_Leadership_Call_Minutes.pdf",
+    "evidence": "INNRS took place on January 19, 2024 as a 100% virtual event",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-01-24",
+    "end": "2025-01-24",
+    "location": "Virtual",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://aann.org/uploads/February_2024_AANN_Leadership_Call_Minutes.pdf",
+    "evidence": "Planning is already underway for the next INNRS. January 24, 2025",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": "https://aann.org/meetings/past-meetings",
+  "note": "The 2025 date is the PLANNED date in Feb 2024 minutes. aann.org/meetings/research-symposium confirms INNRS 2025 took place ('Integra ... support INNRS 2025!') but gives no date; lower confidence. 2023 was not found: the past-meetings page has no 2023 INNRS entry."
+ },
+ {
+  "id": "sigma-theta-tau-international__international-nursing-research-congress",
+  "found": [
+   {
+    "start": "2023-07-20",
+    "end": "2023-07-23",
+    "location": "Abu Dhabi, United Arab Emirates",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=5df40ca8-103d-495c-a467-0185f36bd16f&Home=%2Fhome",
+    "evidence": "34th International Nursing Research Congress ... Thu, Jul 20, 2023 12:00 AM (ET) ... Sun, Jul 23, 2023 05:00 PM (ET) ... Abu Dhabi, United Arab Emirates",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "From Sigma's own event calendar (The Circle)."
+ },
+ {
+  "id": "international-society-for-heart-and-lung__ishlt-annual-meeting",
+  "found": [
+   {
+    "start": "2023-04-19",
+    "end": "2023-04-22",
+    "location": "Colorado Convention Center, Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ishlt.org/annual-meeting/other-annual-meetings/past-annual-meetings",
+    "evidence": "43rd Annual Meeting & Scientific Sessions 19 to 22 April, 2023 Past Annual Meeting In Person Education Colorado Convention Center",
+    "detail_url": "https://www.ishlt.org/event-calendar/event/2023/04/19/default-calendar/43rd-annual-meeting-scientific-sessions",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "international-society-of-psychiatric-men__ispn-annual-conference",
+  "found": [
+   {
+    "start": "2023-03-29",
+    "end": "2023-04-01",
+    "location": "Redondo Beach, CA",
+    "format": "in person",
+    "theme": "Psychiatric-Mental Health Nurses Joining Together for Critical Need: Addressing Diversity, Those Affected by War, Violence, and Health Inequities Across Populations",
+    "source_url": "https://www.ispn-psych.org/past-conferences",
+    "evidence": "25th Annual Conference ... March 29-April 1, 2023 Redondo Beach, California",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "society-of-hospital-medicine__leadership-academy",
+  "found": [
+   {
+    "start": "2023-10-23",
+    "end": "2023-10-26",
+    "location": null,
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://shmleadershipacademy.org/wp-content/uploads/2023/09/LDR23_IM-Schedule.pdf",
+    "evidence": "INFLUENTIAL MANAGEMENT ... OCTOBER 23-26, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-28",
+    "end": "2024-10-31",
+    "location": "Terranea Resort, Rancho Palos Verdes, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://shmleadershipacademy.org/wp-content/uploads/2024/07/BIZ-23-0032-SHM-Leadership-Academy-2024-Partnership-Catalog.pdf",
+    "evidence": "Terranea Resort Rancho Palos Verdes, CA October 28–31, 2024",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "The 2023 dates come from the Influential Management track schedule PDF. No venue was found for 2023, so location is null."
+ },
+ {
+  "id": "american-nurses-credentialing-center__magnet-pathway-conference",
+  "found": [],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "Only partly findable: ANA news releases (Oct 12-13, 2023) say the 2023 co-located ANCC National Magnet and Pathway to Excellence Conferences were held in Chicago and 'kick off' Oct 12. No verbatim start-end range was found, so nothing was recorded. Wayback is blocked."
+ },
+ {
+  "id": "maryland-association-of-nurse-anesthetis__mana-fall-meeting",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: crnasofmd.org links only the 2026 MANA Fall Meeting. The guessed /2025- and /2024-mana-fall-meeting URLs return 404. The search budget ran out and Wayback is blocked."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__mid-year-assembly",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Not findable: the AANA 2025 event page, the 2025 prospectus and the calendar day pages for 2023 and 2024 all return 404. The /mid-year-assembly-attend page now shows 2026 only. Wayback is blocked."
+ },
+ {
+  "id": "midwest-nursing-research-society__mnrs-annual-research-conference",
+  "found": [
+   {
+    "start": "2023-03-29",
+    "end": "2023-04-01",
+    "location": "Des Moines, IA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://mnrs.org/mnrs-47th-annual-research-conference/",
+    "evidence": "March 29 - April 1, 2023 ... Des Moines, Iowa",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-02-28",
+    "end": "2024-03-02",
+    "location": "Minneapolis, MN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://mnrs.org/wp-content/uploads/2024/04/2024-MNRS-Program-Book.pdf",
+    "evidence": "FEBRUARY 28 - MARCH 2, 2024 MINNEAPOLIS, MINNESOTA MNRS 48th ANNUAL RESEARCH CONFERENCE",
+    "detail_url": "https://mnrs.org/mnrs-48th-annual-research-conference/",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "47th (2023) and 48th (2024) editions."
+ },
+ {
+  "id": "society-of-critical-care-medicine__multiprofessional-critical-care-review-adult-in-pe",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "No in-person editions found for 2023 or 2024. SCCM's page shows only the in-person course for July 23-25, 2025, at SCCM headquarters. The 2024 MCCR: Adult (MCCRCA24ON) was an on-demand online course (released May 15, 2024). The in-person format may be new for 2025, but SCCM does not say so."
+ },
+ {
+  "id": "society-of-hospital-medicine__multisite-leaders-in-hospital-medicine-summit",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "The 2025 edition existed: SHM's learning catalog lists 'Multisite Leaders in Hospital Medicine Summit 2025' on demand. No dates or venue were found, and the connect.hospitalmedicine.org event page failed robots.txt (blocked). 2023 and 2024 were not found."
+ },
+ {
+  "id": "american-academy-of-physician-associates__musculoskeletal-galaxy",
+  "found": [
+   {
+    "start": "2023-06-10",
+    "end": "2023-06-14",
+    "location": "Hyatt Regency Austin, Austin, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2023-musculoskeletal-galaxy/",
+    "evidence": "June 10, 2023 - June 14, 2023 ... June 10, 2023 (Pre-Courses) ... June 11-14, 2023 (General Course)",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-06-05",
+    "end": "2024-06-09",
+    "location": "Marriott Portland Downtown Waterfront, Portland, OR",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2024-musculoskeletal-galaxy/",
+    "evidence": "June 5, 2024 - June 9, 2024",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Co-sponsored by AAPA and AAOS. The date ranges include pre-course days."
+ },
+ {
+  "id": "national-association-of-clinical-nurse-s__nacns-annual-conference",
+  "found": [
+   {
+    "start": "2023-03-08",
+    "end": "2023-03-11",
+    "location": "Marriott Portland Downtown Waterfront Hotel, Portland, OR",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nacns.org/wp-content/uploads/2023/03/NACNS-2023-Annual-Conference-Program-Guide-digital.pdf",
+    "evidence": "PROGRAM GUIDE nacns.org MARCH 8–11, 2023 Marriott Portland Downtown Waterfront Hotel Portland, Oregon",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-03-10",
+    "end": "2024-03-13",
+    "location": "New Orleans Marriott, New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nacns.org/news-events/annual-conference/2024-annual-conference/",
+    "evidence": "From March 10-13, 2024, join hundreds of colleagues at the only national conference dedicated to the clinical nurse specialist.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ }
+]

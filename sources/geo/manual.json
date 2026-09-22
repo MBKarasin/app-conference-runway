@@ -1,0 +1,126 @@
+{
+ "Emperor's Palace, Johannesburg, South Africa": {
+  "cc": "ZA",
+  "country": "South Africa",
+  "continent": "Africa",
+  "lat": -26.202,
+  "lon": 28.044,
+  "place": "Johannesburg",
+  "precision": "city"
+ },
+ "Auditório Monsenhor Salim, Campinas, Brazil": {
+  "cc": "BR",
+  "country": "Brazil",
+  "continent": "South America",
+  "lat": -22.906,
+  "lon": -47.061,
+  "place": "Campinas",
+  "precision": "city"
+ },
+ "Brisbane Convention & Exhibition Centre, Brisbane, Australia": {
+  "cc": "AU",
+  "country": "Australia",
+  "continent": "Oceania",
+  "lat": -27.468,
+  "lon": 153.028,
+  "place": "Brisbane",
+  "precision": "city"
+ },
+ "20 Cavendish Square, London, United Kingdom": {
+  "cc": "GB",
+  "country": "United Kingdom",
+  "continent": "Europe",
+  "lat": 51.509,
+  "lon": -0.126,
+  "place": "London",
+  "precision": "city"
+ },
+ "Kalahari Resort, Pocono Manor, PA": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "PA",
+  "region": "Northeast",
+  "lat": 41.0995,
+  "lon": -75.3682,
+  "place": "Pocono Manor (ZIP 18349 centroid)",
+  "precision": "zip"
+ },
+ "Kalahari Resorts & Conventions, Pocono Manor, PA": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "PA",
+  "region": "Northeast",
+  "lat": 41.0995,
+  "lon": -75.3682,
+  "place": "Pocono Manor (ZIP 18349 centroid)",
+  "precision": "zip"
+ },
+ "Mount Sinai Hospital, Hess Building, New York, NY": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "NY",
+  "region": "Northeast",
+  "lat": 40.6627,
+  "lon": -73.9387,
+  "place": "New York",
+  "precision": "city"
+ },
+ "Lake Oconee (Greensboro), GA": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "GA",
+  "region": "South",
+  "lat": 33.5636,
+  "lon": -83.1891,
+  "place": "Greensboro",
+  "precision": "city"
+ },
+ "Disney's Coronado Springs Resort (Lake Buena Vista, FL)": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "FL",
+  "region": "South",
+  "lat": 28.3773,
+  "lon": -81.5248,
+  "place": "Lake Buena Vista",
+  "precision": "city"
+ },
+ "Disney's Coronado Springs Resort, FL": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "FL",
+  "region": "South",
+  "lat": 28.3773,
+  "lon": -81.5248,
+  "place": "Lake Buena Vista",
+  "precision": "city"
+ },
+ "DoubleTree by Hilton, Fairfield, NJ": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "NJ",
+  "region": "Northeast",
+  "lat": 40.8825,
+  "lon": -74.3046,
+  "place": "Fairfield (ZIP 07004 centroid)",
+  "precision": "zip"
+ },
+ "Monroe Township, NJ": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "state": "NJ",
+  "region": "Northeast",
+  "lat": 40.3343,
+  "lon": -74.4325,
+  "place": "Monroe Township (ZIP 08831 centroid)",
+  "precision": "zip"
+ }
+}

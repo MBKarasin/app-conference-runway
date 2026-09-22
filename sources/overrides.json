@@ -1,0 +1,260 @@
+{
+ "_readme": "Curator corrections. 'aliases' folds a duplicate series into the kept one; 'series' and 'editions' patch fields by id; an edition with \"removed\": true is dropped.",
+ "aliases": {
+  "american-association-of-neuroscience-nur__neuroscience-nursing-annual-conference": "american-association-of-neuroscience-nur__aann-annual-conference"
+ },
+ "series": {},
+ "editions": {
+  "e8d98a25caca": {
+   "removed": true,
+   "_why": "This was a roll-up of 29 separate SCCM course listings over 14 months, not one conference."
+  },
+  "8f0aefce3cc4": {
+   "removed": true,
+   "_why": "This displayed four separate Geisinger-hosted SCCM courses as one continuous month-long event."
+  },
+  "43335d5f76c7": {
+   "source_url": "https://npwh.org/news/674033/",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "27th Annual NPWH Women’s Healthcare Conference, September 25-28, 2024"
+  },
+  "426f2f34845c": {
+   "date_conflict": true,
+   "compiled": "2026-09-21",
+   "note": "The Japan NP Society's index lists November 21–22; the dedicated 2026 program and poster list November 21–23. The three-day program range is shown. Confirm the final day before travel."
+  },
+  "85a947e04684": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "28th Annual NPWH Women's Healthcare Conference, October 1–3, 2025, Caesars Palace in Las Vegas."
+  },
+  "7c83d68f1860": {
+   "source_url": "https://www.ons.org/education-hub/events/congress/blog/ignite-extraordinary-possibilities-impacting-cancer-care-ons",
+   "source_reviewed": true,
+   "evidence": "The 2024 ONS Congress takes place April 24–28 in Washington, DC."
+  },
+  "f5590a05975e": {
+   "source_url": "https://amia.org/education-events/amia-2025-informatics-summit",
+   "source_reviewed": true,
+   "evidence": "AMIA 2025 Informatics Summit, March 10–13, Pittsburgh, PA."
+  },
+  "371badb11823": {
+   "source_url": "https://texasnp.org/wp-content/uploads/2025/07/C6-TNP-Pulse-Magazine-Summer-2025-Singles.pdf",
+   "source_reviewed": true,
+   "evidence": "TNP 2025 Annual Conference, September 25–28, Hilton Anatole, Dallas, TX."
+  },
+  "51e706b5534b": {
+   "source_url": "https://ache2026.eventscribe.net/agenda.asp?all=1&pfp=FullSchedule",
+   "source_reviewed": true,
+   "evidence": "ACHE 2026 Congress on Healthcare Leadership program, March 2–4, 2026, Houston, TX."
+  },
+  "d6cf72ac03b2": {
+   "source_url": "https://login.texasnp.org/events/EventDetails.aspx?id=1986716",
+   "source_reviewed": true,
+   "evidence": "2026 Pharmacology & Primary Care Conference, April 23–25, 2026, San Antonio, Texas."
+  },
+  "cd48f1f07eaf": {
+   "source_url": "https://oncologypas.org/event/2027-annual-symposium/",
+   "date_conflict": true,
+   "note": "The organizer's 2027 event page says September 23–26 in its title and body, but its structured date field says September 23–27. Confirm the final day before booking travel."
+  },
+  "e1d965344e5e": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "NYONL 34th Annual Meeting and Leadership Conference: September 27–29, 2026, Tarrytown, New York."
+  },
+  "75c789c89d9d": {
+   "source_url": "https://delawareana.org/event-6571840",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "Delaware Association of Nurse Anesthetists 2026 Annual Fall Meeting: October 10, Wilmington, Delaware."
+  },
+  "a8f8d986acc5": {
+   "source_url": "https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "Psych Congress PA Institute: December 4–6, 2026, Orlando, Florida."
+  },
+  "7fca18685d3c": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "68th ASH Annual Meeting and Exposition: December 12–15, 2026, New Orleans, Louisiana."
+  },
+  "5fbb7d8ba316": {
+   "removed": true,
+   "_why": "A broad nine-day virtual-sessions placeholder has no matching named event on the organizer calendar; individual SCCM sessions remain separately sourced."
+  },
+  "9c25bb01384b": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "TNA District 9 Conference: Friday, September 25, 2026, Memorial Hermann Memorial City Medical Center, Houston."
+  },
+  "d0b45cb18fd0": {
+   "source_url": "https://convention.jtbcom.co.jp/jans46/outline.html",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "The 46th Annual Conference of Japan Academy of Nursing Science: December 12–13, 2026, Tokyo International Forum."
+  },
+  "9e0e24120486": {
+   "source_url": "https://njsna.org/events/month/2026-10/",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "location": "Online",
+   "note": "The organizer's calendar lists the NJSNA 2026 Annual Meeting as virtual, 8 a.m.–1 p.m. on October 8.",
+   "evidence": "NJSNA 2026 Annual Meeting *VIRTUAL*: October 8, 8:00 a.m.–1:00 p.m."
+  },
+  "2baa3d5fee7a": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "Institute for Critical Care Medicine 2026 Summit for Advanced Practice Providers: October 13, 2026, New York or livestream."
+  },
+  "f21293985b2b": {
+   "source_url": "https://www.nonpf.org/page/futureconferences",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "2026 NONPF Fall Conference: November 5–6, Tucson, Arizona."
+  },
+  "6e8d92987926": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "AMIA 2026 Annual Symposium: November 7–11, Dallas, Texas."
+  },
+  "7656f2da8579": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "NNA Annual Convention: October 1–2, 2026, Kearney, Nebraska."
+  },
+  "89de4656498c": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "NP26 Annual Conference: October 1–4, 2026, Niagara Falls, New York."
+  },
+  "7439fe42fefc": {
+   "start": "2026-10-01",
+   "end": "2026-10-04",
+   "source_url": "https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "note": "Pre-meeting workshops start October 1; the main meeting runs October 2–4.",
+   "evidence": "AVA event: October 2–4, 2026, with pre-meeting workshops October 1."
+  },
+  "785efb278b8a": {
+   "source_url": "https://www.acep.org/acep26/",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "ACEP Scientific Assembly 2026: October 5–8, Chicago, Illinois."
+  },
+  "7111b734f1a9": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "Registration is now open for the 29th Annual NPWH Women’s Healthcare Conference, September 23–25, 2026, in Richmond, Virginia."
+  },
+  "98da2c267857": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "NACNS 2027 Annual Conference: March 1–4, 2027, Kansas City; student poster submission deadline September 27, 2026."
+  },
+  "b32ffbb674ac": {
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "2026 NLN Education Summit: September 23–25, Washington, DC."
+  },
+  "09391e1f6db0": {
+   "source_url": "https://texasnp.org/calendar/",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "September 24–27, 2026: TNP 2026 Annual Conference and Skills Workshops, Moody Gardens, Galveston."
+  },
+  "f306cd0b410d": {
+   "source_url": "https://npweek.aanp.org/press-releases-and-letters",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "2026 National Nurse Practitioner Week Is November 8-14"
+  },
+  "a6986e02edc1": {
+   "source_url": "https://www.aana.com/event/national-crna-week-2027/",
+   "source_reviewed": true,
+   "compiled": "2026-09-21",
+   "evidence": "National CRNA Week 2027: January 17, 2027 - January 23, 2027"
+  },
+  "3d8a3d9936ff": {
+   "start": "2026-09-28",
+   "source_url": "https://www.elso.org/ecmo-education/elso-meetings.aspx",
+   "note": "The organizer's meetings page lists September 28 to October 1; an earlier registration source listed September 29."
+  },
+  "95a63454c08f": {
+   "end": "2026-04-17",
+   "source_url": "https://www.aaacn.org/sites/default/files/images/conference/AAACN%202026%20prospectus_FINAL.pdf",
+   "note": "The organizer's conference prospectus and poster call list April 14 to 17; an oral abstracts notice lists April 18."
+  },
+  "d983c6b34b97": {
+   "removed": true,
+   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+  },
+  "bc1ed82321a6": {
+   "removed": true,
+   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+  },
+  "85dd540efc18": {
+   "removed": true,
+   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+  },
+  "96e3fec22ac3": {
+   "removed": true,
+   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+  },
+  "a2b5b8c2e1e7": {
+   "removed": true,
+   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+  }
+ },
+ "rules": {
+  "american-nurses-credentialing-center__certified-nurses-day": {
+   "type": "fixed",
+   "month": 3,
+   "day": 19
+  },
+  "society-for-simulation-in-healthcare__healthcare-simulation-week": {
+   "type": "weekday_after",
+   "month": 9,
+   "day": 11,
+   "weekday": 0,
+   "length": 5
+  },
+  "society-of-hospital-medicine__national-hospitalist-day": {
+   "type": "nth_weekday",
+   "month": 3,
+   "weekday": 3,
+   "n": 1
+  },
+  "american-nurses-association__national-nurses-week": {
+   "type": "fixed",
+   "month": 5,
+   "day": 6,
+   "end_day": 12
+  },
+  "american-academy-of-physician-associates__pa-week": {
+   "type": "fixed",
+   "month": 10,
+   "day": 6,
+   "end_day": 12
+  },
+  "international-confederation-of-midwives-__international-day-of-the-midwife": {
+   "type": "fixed",
+   "month": 5,
+   "day": 5
+  },
+  "international-council-of-nurses-icn__international-nurses-day": {
+   "type": "fixed",
+   "month": 5,
+   "day": 12
+  },
+  "oncology-nursing-society-ons__oncology-nursing-month": {
+   "type": "fixed",
+   "month": 5,
+   "day": 1,
+   "end_day": 31
+  }
+ }
+}

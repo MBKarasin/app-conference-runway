@@ -1,0 +1,292 @@
+{
+ "group": "D",
+ "series": [
+  {
+   "id": "aonl-annual-conference",
+   "name": "AONL Annual Conference",
+   "org": "American Organization for Nursing Leadership",
+   "org_url": "https://inspiringleaders.aonl.org/",
+   "professions": ["RN"],
+   "specialty": ["nursing leadership"],
+   "audience": ["leader"],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March-April",
+   "editions": [
+    {"start": "2026-03-29", "end": "2026-04-01", "location": "Chicago, IL", "format": "in person", "theme": null,
+     "call": {"status": "closed", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://inspiringleaders.aonl.org/past-future-conferences",
+     "evidence": "AONL 2026 Chicago March 29-April 1",
+     "checked": "2026-09-21"},
+    {"start": "2027-04-12", "end": "2027-04-15", "location": "Phoenix, AZ", "format": "in person", "theme": null,
+     "call": {"status": "soon", "opens": null, "closes": null, "text": "Get Ready! The AONL Call for Abstracts Opens Soon!", "url": "https://inspiringleaders.aonl.org/"},
+     "source_url": "https://inspiringleaders.aonl.org/",
+     "evidence": "April 12–15, 2027",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "ache-congress",
+   "name": "ACHE Congress on Healthcare Leadership",
+   "org": "American College of Healthcare Executives",
+   "org_url": "https://congress.ache.org/",
+   "professions": [],
+   "specialty": ["healthcare leadership"],
+   "audience": ["leader"],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {"start": "2027-03-22", "end": "2027-03-24", "location": "Music City Center, Nashville, TN", "format": "in person", "theme": null,
+     "call": {"status": "tba", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.ache.org/Education-Events/Education-Catalog/2027/CONGRESS27",
+     "evidence": "March 22–24, 2027  Monday–Wednesday",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "appex-leadership-summit",
+   "name": "Advanced Practice Provider (APRN & PA) Leadership Summit",
+   "org": "Advanced Practice Provider Executives, Inc. (APPex)",
+   "org_url": "https://www.appexecutives.org/conferences/",
+   "professions": ["NP", "PA", "CRNA", "CNS", "CNM"],
+   "specialty": ["app leadership"],
+   "audience": ["leader"],
+   "kind": "summit",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {"start": "2026-09-16", "end": "2026-09-19", "location": "Kimpton Santo San Antonio Riverwalk Hotel, San Antonio, TX", "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.appexecutives.org/conferences/",
+     "evidence": "Annual Conference (Summit): September 16-19, 2026 (Wed-Sat) at the Kimpton Santo San Antonio Riverwalk Hotel in San Antonio, TX",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "acg-app-leadership-summit",
+   "name": "ACG Advanced Practice Provider Leadership Summit",
+   "org": "American College of Gastroenterology",
+   "org_url": "https://acgmeetings.gi.org/app-leadership-summit/",
+   "professions": ["NP", "PA"],
+   "specialty": ["gastroenterology", "hepatology", "app leadership"],
+   "audience": ["leader", "clinician"],
+   "kind": "summit",
+   "region": "us",
+   "recurrence": "annual, held with the ACG Annual Scientific Meeting (October)",
+   "editions": [
+    {"start": "2026-10-09", "end": "2026-10-09", "location": "Nashville, TN", "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://acgmeetings.gi.org/app-leadership-summit/",
+     "evidence": "Friday, October 9, 2026 | 1:30 pm – 6:00 pm, Central Time (CT)",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "consortium-app-annual-conference",
+   "name": "Consortium for Advanced Practice Providers Annual Conference",
+   "org": "Consortium for Advanced Practice Providers (formerly National Nurse Practitioner Residency & Fellowship Training Consortium)",
+   "org_url": "https://www.apppostgradtraining.com/about-us/events/",
+   "professions": ["NP", "PA"],
+   "specialty": ["app postgraduate training", "residency and fellowship"],
+   "audience": ["leader", "academic"],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically July",
+   "editions": [
+    {"start": "2026-07-12", "end": "2026-07-14", "location": "Grand Hyatt Denver, Denver, CO", "format": "in person", "theme": "Building What's Next: Leadership, Workforce, and Innovation in APP Postgraduate Training",
+     "call": {"status": "closed", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.apppostgradtraining.com/about-us/events/",
+     "evidence": "Join us July 12–14, 2026, at the Grand Hyatt Denver for three days of connection, collaboration, and learning.",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "national-np-week",
+   "name": "National Nurse Practitioner Week",
+   "org": "American Association of Nurse Practitioners",
+   "org_url": "https://npweek.aanp.org/",
+   "professions": ["NP"],
+   "specialty": [],
+   "audience": ["clinician", "leader"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, November (no fixed rule stated by AANP)",
+   "editions": [
+    {"start": "2026-11-08", "end": "2026-11-14", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.aanp.org/about/about-the-american-association-of-nurse-practitioners-aanp/media/np-week",
+     "evidence": "NP Week 2026 will be held November 8-14, 2026.",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "national-pa-week",
+   "name": "PA Week",
+   "org": "American Academy of Physician Associates",
+   "org_url": "https://www.aapa.org/pas-go-beyond/pa-week/",
+   "professions": ["PA"],
+   "specialty": [],
+   "audience": ["clinician", "leader"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, October 6-12 (\"PA Week runs every year from October 6-12.\")",
+   "editions": [
+    {"start": "2026-10-06", "end": "2026-10-12", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.aapa.org/pas-go-beyond/pa-week/",
+     "evidence": "PA Week runs every year from October 6-12.",
+     "checked": "2026-09-21"},
+    {"start": "2027-10-06", "end": "2027-10-12", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.aapa.org/pas-go-beyond/pa-week/",
+     "evidence": "PA Week runs every year from October 6-12.",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "national-nurses-week",
+   "name": "National Nurses Week",
+   "org": "American Nurses Association",
+   "org_url": "https://www.nursingworld.org/education-events/national-nurses-week/history/",
+   "professions": ["RN", "NP", "CRNA", "CNS", "CNM"],
+   "specialty": [],
+   "audience": ["clinician", "leader"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, May 6-12 (permanent dates set by ANA Board in 1993; ends on Florence Nightingale's birthday)",
+   "editions": [
+    {"start": "2026-05-06", "end": "2026-05-12", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://pages.nursingworld.org/nursesweek26",
+     "evidence": "National Nurses Week, May 6–12, 2026",
+     "checked": "2026-09-21"},
+    {"start": "2027-05-06", "end": "2027-05-12", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.nursingworld.org/education-events/national-nurses-week/history/",
+     "evidence": "The ANA Board of Directors designated May 6 - 12 as permanent dates to observe National Nurses Week in 1994 and in all subsequent years.",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "national-crna-week",
+   "name": "National CRNA Week",
+   "org": "American Association of Nurse Anesthesiology",
+   "org_url": "https://www.aana.com/advocacy/national-crna-week/",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia"],
+   "audience": ["clinician", "leader"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, January (no fixed rule stated by AANA)",
+   "editions": [
+    {"start": "2026-01-18", "end": "2026-01-24", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.aana.com/advocacy/national-crna-week/",
+     "evidence": "Join us in honoring these trusted professionals and the lives they touch every day during National CRNA Week 2026, Jan. 18-24.",
+     "checked": "2026-09-21"},
+    {"start": "2027-01-17", "end": "2027-01-23", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.aana.com/advocacy/national-crna-week/",
+     "evidence": "Celebrate the rich history and promising future of these anesthesia experts Jan. 17-23, 2027, during National CRNA Week 2027.",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "certified-nurses-day",
+   "name": "Certified Nurses Day",
+   "org": "American Nurses Credentialing Center",
+   "org_url": "https://www.nursingworld.org/education-events/certified-nurses-day/",
+   "professions": ["RN", "NP", "CNS"],
+   "specialty": ["certification"],
+   "audience": ["clinician", "leader"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, March 19 (birthday of Dr. Margretta Madden Styles)",
+   "editions": [
+    {"start": "2026-03-19", "end": "2026-03-19", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.nursingworld.org/education-events/certified-nurses-day/",
+     "evidence": "occurs every March 19, the birthday of Dr. Margretta 'Gretta' Madden Styles",
+     "checked": "2026-09-21"},
+    {"start": "2027-03-19", "end": "2027-03-19", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.nursingworld.org/education-events/certified-nurses-day/",
+     "evidence": "occurs every March 19, the birthday of Dr. Margretta 'Gretta' Madden Styles",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "healthcare-simulation-week",
+   "name": "Healthcare Simulation Week",
+   "org": "Society for Simulation in Healthcare",
+   "org_url": "https://www.ssih.org/healthcare-simulation-week-2026",
+   "professions": [],
+   "specialty": ["simulation"],
+   "audience": ["academic", "clinician"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, September: \"the first week following September 11\"",
+   "editions": [
+    {"start": "2026-09-14", "end": "2026-09-18", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.ssih.org/healthcare-simulation-week-2026",
+     "evidence": "September 14-18, 2026",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "national-hospitalist-day",
+   "name": "National Hospitalist Day",
+   "org": "Society of Hospital Medicine",
+   "org_url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/",
+   "professions": ["MD", "NP", "PA"],
+   "specialty": ["hospital medicine"],
+   "audience": ["clinician"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, first Thursday in March",
+   "editions": [
+    {"start": "2027-03-04", "end": "2027-03-04", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/",
+     "evidence": "Save the Date for Next Year: Thursday, March 4, 2027!",
+     "checked": "2026-09-21"}
+   ]
+  },
+  {
+   "id": "critical-care-awareness-month",
+   "name": "National Critical Care Awareness and Recognition Month",
+   "org": "Society of Critical Care Medicine",
+   "org_url": "https://www.sccm.org/about-sccm/critical-care-awareness-month",
+   "professions": [],
+   "specialty": ["critical care"],
+   "audience": ["clinician"],
+   "kind": "observance",
+   "region": "us",
+   "recurrence": "annual, May",
+   "editions": [
+    {"start": "2026-05-01", "end": "2026-05-31", "location": null, "format": "in person", "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.sccm.org/about-sccm/critical-care-awareness-month",
+     "evidence": "May Is National Critical Care Awareness and Recognition Month ... Wear blue on Friday, May 15, 2026!",
+     "checked": "2026-09-21"}
+   ]
+  }
+ ],
+ "not_found": [
+  {"org": "ACHE", "url": "https://congress.ache.org/", "reason": "2026 Congress (past) dates not found verbatim on pages fetched; only 2027 listed. No NP/PA-specific content."},
+  {"org": "Consortium for Advanced Practice Providers", "url": "https://www.apppostgradtraining.com/2027conference/", "reason": "2027 conference page says 'Location and Dates Announced in Fall 2026'."},
+  {"org": "APPex", "url": "https://www.appexecutives.org/conferences/", "reason": "No 2027 Summit dates posted; 2026 Summit (Sept 16-19) just concluded. First WebFetch timed out, retry succeeded."},
+  {"org": "American Association of Advanced Practice Leaders (AAAPL)", "url": "https://www.aaapl.org/", "reason": "Real APP leadership nonprofit, but no conference dates on home page. 'ASAPL' as named not found."},
+  {"org": "AAPA Leadership & Advocacy Summit", "url": "https://www.aapa.org/cme-calendar/aapa-leadership-advocacy-summit/", "reason": "Only 2017 in-person listing and on-demand LAS (2024/2025) found; no current in-person dates posted."},
+  {"org": "AAMC", "url": "https://www.aamc.org/", "reason": "No APP track found."},
+  {"org": "Vizient", "url": "https://www.vizientinc.com/", "reason": "Not researched in depth; no public APP-specific meeting dates identified."},
+  {"org": "APPA", "url": null, "reason": "No real national 'APPA' APP organization with a conference identified."},
+  {"org": "AANP (NP Week)", "url": "https://npweek.aanp.org/", "reason": "No 2027 dates and no fixed rule posted; only 'held annually'. 2025 edition not shown."},
+  {"org": "SHM (National Hospitalist Day)", "url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/", "reason": "2026 edition (would be Mar 5 by the rule) omitted: exact date not printed on page."},
+  {"org": "SSH (Healthcare Simulation Week)", "url": "https://www.ssih.org/healthcare-simulation-week-2026", "reason": "2027 dates not posted; rule only."},
+  {"org": "SCCM (Critical Care Awareness Month)", "url": "https://www.sccm.org/about-sccm/critical-care-awareness-month", "reason": "2027 not posted; page does not explicitly state annual recurrence."},
+  {"org": "AAPA (PA Week)", "url": "https://www.aapa.org/pas-go-beyond/pa-week/", "reason": "No year-specific 2026/2027 dates printed; editions derived from stated rule 'every year from October 6-12'."}
+ ]
+}

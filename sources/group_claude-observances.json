@@ -1,0 +1,168 @@
+{
+ "group": "claude-observances",
+ "series": [
+  {
+   "id": "ons-oncology-nursing-month",
+   "name": "Oncology Nursing Month",
+   "org": "Oncology Nursing Society (ONS)",
+   "org_url": "https://www.ons.org/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "oncology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "observance",
+   "region": "virtual",
+   "recurrence": "annual, every May",
+   "editions": [
+    {
+     "start": "2026-05-01",
+     "end": "2026-05-31",
+     "location": "Virtual / nationwide observance",
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.ons.org/oncology-nursing-month",
+     "evidence": "Every May, Oncology Nursing Month celebrates the role oncology nurses play in patient care and the impact they have.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-05-01",
+     "end": "2027-05-31",
+     "location": "Virtual / nationwide observance",
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.ons.org/oncology-nursing-month",
+     "evidence": "Every May, Oncology Nursing Month celebrates the role oncology nurses play in patient care and the impact they have.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "icm-international-day-of-the-midwife",
+   "name": "International Day of the Midwife",
+   "org": "International Confederation of Midwives (ICM)",
+   "org_url": "https://internationalmidwives.org/",
+   "professions": [
+    "CNM"
+   ],
+   "specialty": [
+    "midwifery"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "observance",
+   "region": "virtual",
+   "recurrence": "annual, every May 5",
+   "editions": [
+    {
+     "start": "2026-05-05",
+     "end": "2026-05-05",
+     "location": "Virtual / nationwide observance",
+     "format": "virtual",
+     "theme": "One Million More Midwives",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://internationalmidwives.org/international-day-of-the-midwife-2026-toolkit-launch/",
+     "evidence": "As we prepare to celebrate the International Day of the Midwife (#IDM2026) on 5 May",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "icn-international-nurses-day",
+   "name": "International Nurses Day",
+   "org": "International Council of Nurses (ICN)",
+   "org_url": "https://www.icn.ch/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "nursing"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "observance",
+   "region": "virtual",
+   "recurrence": "annual, every May 12",
+   "editions": [
+    {
+     "start": "2026-05-12",
+     "end": "2026-05-12",
+     "location": "Virtual / nationwide observance",
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day",
+     "evidence": "IND is celebrated around the world every May 12, the anniversary of Florence Nightingale's birth.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-05-12",
+     "end": "2027-05-12",
+     "location": "Virtual / nationwide observance",
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day",
+     "evidence": "IND is celebrated around the world every May 12, the anniversary of Florence Nightingale's birth.",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "National Association of Pediatric Nurse Practitioners (NAPNAP)",
+   "url": "https://www.napnap.org/event/pediatric-nurse-practitioner-week",
+   "reason": "PNP Week page returns 404; only PNP Week 2022 page (3/21/2022 - 3/26/2022) found; no 2026/2027 dates"
+  },
+  {
+   "org": "National Hospice and Palliative Care Organization / National Alliance for Care at Home",
+   "url": "https://www.nhpco.org/resources/community-outreach-tools/national-hospice-and-palliative-care-month",
+   "reason": "sponsor page login required"
+  },
+  {
+   "org": "American Academy of Anesthesiologist Assistants (AAAA)",
+   "url": "https://www.anesthetist.org/advanced-providers-week",
+   "reason": "participant (not sponsor) page for National APP Week; shows 2025 dates 'September 22 - 26, 2025'"
+  }
+ ],
+ "_ported": "from Claude v4 build (2026-09-21), merged 2026-09-22"
+}

@@ -1,0 +1,1295 @@
+{
+ "group": "C",
+ "series": [
+  {
+   "id": "acep-scientific-assembly",
+   "name": "ACEP Scientific Assembly",
+   "org": "American College of Emergency Physicians",
+   "org_url": "https://www.acep.org/sa",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "emergency"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "np_pa_basis": "Registration category 'Nurse/NP/PA/Pharm' on https://www.acep.org/sa/registration/conference-pricing",
+   "editions": [
+    {
+     "start": "2026-10-05",
+     "end": "2026-10-08",
+     "location": "Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.acep.org/sa",
+     "evidence": "ACEP26 - Chicago, Illinois - October 5-8, 2026",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-25",
+     "end": "2027-10-28",
+     "location": "Boston, MA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.acep.org/sa/general-information/future-dates",
+     "evidence": "ACEP27 Scientific Assembly 10/25/2027 - 10/28/2027 Boston, Massachusetts",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-09-17",
+     "end": "2028-09-20",
+     "location": "Las Vegas, NV",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.acep.org/sa/general-information/future-dates",
+     "evidence": "ACEP28 Scientific Assembly 9/17/2028 - 9/20/2028 Las Vegas, Nevada",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-10-01",
+     "end": "2029-10-04",
+     "location": "Philadelphia, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.acep.org/sa/general-information/future-dates",
+     "evidence": "ACEP29 Scientific Assembly 10/1/2029 - 10/4/2029 Philadelphia, Pennsylvania",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-10-17",
+     "end": "2030-10-20",
+     "location": "San Francisco, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.acep.org/sa/general-information/future-dates",
+     "evidence": "ACEP30 Scientific Assembly 10/17/2030 - 10/20/2030 San Francisco, California",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2031-10-27",
+     "end": "2031-10-30",
+     "location": "Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.acep.org/sa/general-information/future-dates",
+     "evidence": "ACEP31 Scientific Assembly 10/27/2031 - 10/30/2031 Chicago, Illinois",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "chest-annual-meeting",
+   "name": "CHEST Annual Meeting",
+   "org": "American College of Chest Physicians",
+   "org_url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "pulmonary",
+    "critical care",
+    "sleep"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "np_pa_basis": "Registration category 'APPs, RTs, and retirees'; premeeting courses 'Critical Care Updates for Advanced Practice Providers' and 'Essential Critical Care Procedures for APPs: A Hands-On Course'",
+   "editions": [
+    {
+     "start": "2026-10-17",
+     "end": "2026-10-21",
+     "location": "Phoenix, AZ",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": "CHEST 2026 abstract call closed (deadline not restated on page)",
+      "url": "https://info.chestnet.org/chest-call-for-abstracts"
+     },
+     "source_url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting/registration-information",
+     "evidence": "Premeeting courses: October 17 CHEST Annual Meeting: October 18 to 21",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-24",
+     "end": "2027-10-27",
+     "location": "Vancouver, BC, Canada",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
+     "evidence": "2027: October 24-27 | Vancouver, BC, Canada",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-10-08",
+     "end": "2028-10-11",
+     "location": "Denver, CO",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
+     "evidence": "2028: October 8-11 | Denver, Colorado",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-10-07",
+     "end": "2029-10-10",
+     "location": "San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
+     "evidence": "2029: October 7-10 | San Diego, California",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-10-20",
+     "end": "2030-10-23",
+     "location": "Boston, MA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
+     "evidence": "2030: October 20-23 | Boston, Massachusetts",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2031-10-26",
+     "end": "2031-10-29",
+     "location": "Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
+     "evidence": "2031: October 26-29 | Orlando, Florida",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ats-international-conference",
+   "name": "ATS International Conference",
+   "org": "American Thoracic Society",
+   "org_url": "https://site.thoracic.org/conference",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "pulmonary",
+    "critical care",
+    "sleep"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically May",
+   "np_pa_basis": "WEAK: CME page says conference serves 'physicians, researchers, and advanced practice professionals' (https://site.thoracic.org/conference/program/continuing-medical-education-cme); ATS 2025 registration had 'PhD, RN, RT, and AP' member category. No NP/PA-specific credit statement found.",
+   "editions": [
+    {
+     "start": "2027-05-14",
+     "end": "2027-05-19",
+     "location": "New Orleans, LA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": "2026-11-04",
+      "text": "Deadline: 5 p.m. ET, Wednesday, Nov. 4, 2026",
+      "url": "https://site.thoracic.org/conference"
+     },
+     "source_url": "https://site.thoracic.org/conference/attendees/future-conferences",
+     "evidence": "May 14-19, 2027 | New Orleans, LA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-05-19",
+     "end": "2028-05-24",
+     "location": "San Francisco, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://site.thoracic.org/conference/attendees/future-conferences",
+     "evidence": "May 19-24, 2028 | San Francisco, CA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-05-18",
+     "end": "2029-05-23",
+     "location": "Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://site.thoracic.org/conference/attendees/future-conferences",
+     "evidence": "May 18-23, 2029 | Washington, DC",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "asco-annual-meeting",
+   "name": "ASCO Annual Meeting",
+   "org": "American Society of Clinical Oncology",
+   "org_url": "https://www.asco.org/annual-meeting",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "oncology"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically late May/early June",
+   "np_pa_basis": "CE page (2026): 'The American Nurses Credentialing Center (ANCC) accepts AMA PRA Category 1 Credits...' and 'NCCPA accepts AMA PRA Category 1 Credits...' (https://www.asco.org/annual-meeting/program/continuing-education). No explicit NP/PA registration category found for the Annual Meeting.",
+   "editions": [
+    {
+     "start": "2027-06-04",
+     "end": "2027-06-08",
+     "location": "McCormick Place, Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": "2026-11-04",
+      "closes": "2027-01-26",
+      "text": "Opens November 4, 2026; deadline January 26, 2027, at 11:59 PM ET; late-breaking March 8, 2027, at 12:00 PM ET",
+      "url": "https://www.asco.org/annual-meeting/dates-know"
+     },
+     "source_url": "https://www.asco.org/annual-meeting/dates-know",
+     "evidence": "June 4 - 8, 2027",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-06-02",
+     "end": "2028-06-06",
+     "location": "Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.asco.org/annual-meeting/dates-know",
+     "evidence": "June 2 - 6, 2028",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aan-annual-meeting",
+   "name": "AAN Annual Meeting",
+   "org": "American Academy of Neurology",
+   "org_url": "https://www.aan.com/events/annual-meeting",
+   "professions": [
+    "NP",
+    "PA",
+    "MD"
+   ],
+   "specialty": [
+    "neurology"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically April/May",
+   "np_pa_basis": "Registration: 'Non-physician includes Advanced Practice Provider, Business Administrator, and Researcher member types.' (https://www.aan.com/events/annual-meeting/registration)",
+   "editions": [
+    {
+     "start": "2027-05-01",
+     "end": "2027-05-05",
+     "location": "Washington, DC, and online",
+     "format": "hybrid",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": "2026-10-13",
+      "text": "All abstract submissions are due by 11:59 p.m. CT on Tuesday, October 13, 2026",
+      "url": "https://www.aan.com/events/annual-meeting/abstracts"
+     },
+     "source_url": "https://www.aan.com/events/upcoming-events",
+     "evidence": "Washington, DC, and online May 1-5, 2027",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-04-22",
+     "end": "2028-04-26",
+     "location": "Los Angeles, CA, and online",
+     "format": "hybrid",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aan.com/events/upcoming-events",
+     "evidence": "Los Angeles and online April 22-26, 2028",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-04-14",
+     "end": "2029-04-18",
+     "location": "Philadelphia, PA, and online",
+     "format": "hybrid",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aan.com/events/upcoming-events",
+     "evidence": "Philadelphia and online April 14-18, 2029",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aad-annual-meeting",
+   "name": "AAD Annual Meeting",
+   "org": "American Academy of Dermatology",
+   "org_url": "https://www.aad.org/member/meetings-education/am27",
+   "professions": [
+    "NP",
+    "PA",
+    "MD"
+   ],
+   "specialty": [
+    "dermatology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "np_pa_basis": "2026 non-member registration: PA/NP category 'Must be employed by an AAD member dermatologist... This category refers to the specific PA, NP, RN, LPN...' (https://www.aad.org/member/meetings-education/am26/registration/non-member) - 2026 page; 2027 equivalent not yet checked",
+   "editions": [
+    {
+     "start": "2027-03-19",
+     "end": "2027-03-23",
+     "location": "San Francisco, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": "2026-06-10",
+      "closes": "2026-09-02",
+      "text": "June 10 - Sept. 2, 2026, at 11:59 a.m. CST (late-breaking research guidelines to be posted late October/mid-November)",
+      "url": "https://www.aad.org/member/meetings-education/am27/faculty/abstracts"
+     },
+     "source_url": "https://www.aad.org/member/meetings-education/am27",
+     "evidence": "Save the Date - March 19-23, 2027 in San Francisco, California",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-03-17",
+     "end": "2028-03-21",
+     "location": "Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aad.org/member/meetings/events/locations",
+     "evidence": "2028: Washington, D.C., March 17-21",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "acp-internal-medicine-meeting",
+   "name": "ACP Internal Medicine Meeting",
+   "org": "American College of Physicians",
+   "org_url": "https://annualmeeting.acponline.org/",
+   "professions": [
+    "NP",
+    "PA",
+    "MD"
+   ],
+   "specialty": [
+    "internal medicine",
+    "hospital medicine",
+    "primary care"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "IM2027 registration lists 'ACP Physician and Non-Physician Affiliate Members'; Non-Physician Affiliate eligibility: 'physician assistants, nurse practitioners and other advanced practice nurses...' (https://www.acponline.org/membership/non-physician-affiliate-membership)",
+   "editions": [
+    {
+     "start": "2027-04-15",
+     "end": "2027-04-17",
+     "location": "Los Angeles, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": "2026-10-01",
+      "closes": null,
+      "text": "Abstract submissions for the 2027 Competitions will be open on or about October 1, 2026",
+      "url": "https://annualmeeting.acponline.org/about/internal-medicine-meeting-2027-frequently-asked-questions"
+     },
+     "source_url": "https://annualmeeting.acponline.org/about/future-meetings",
+     "evidence": "2027: April 15-17 Los Angeles, CA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-04-06",
+     "end": "2028-04-08",
+     "location": "Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://annualmeeting.acponline.org/about/future-meetings",
+     "evidence": "2028: April 6-8 Washington, DC",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-04-26",
+     "end": "2029-04-28",
+     "location": "San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://annualmeeting.acponline.org/about/future-meetings",
+     "evidence": "2029: April 26-28 San Diego, CA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-04-11",
+     "end": "2030-04-13",
+     "location": "Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://annualmeeting.acponline.org/about/future-meetings",
+     "evidence": "2030: April 11-13 Orlando, FL",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "idweek",
+   "name": "IDWeek",
+   "org": "IDSA, SHEA, HIVMA, PIDS and SIDP (joint meeting)",
+   "org_url": "https://www.idweek.org/",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "infectious diseases"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October",
+   "np_pa_basis": "APP track: premeeting 'Infectious Disease Clinical Bootcamp for APPs' (https://www.idweek.org/registration/); FAQ: 'IDWeek will offer CME/CNE/CPE/MOC credit.'",
+   "editions": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-24",
+     "location": "Walter E. Washington Convention Center, Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-04-30",
+      "text": "Thursday, April 30, 2026 at 11:59 p.m. ET; late breakers Aug. 4 at 11:59 p.m. ET",
+      "url": "https://www.idweek.org/abstracts/"
+     },
+     "source_url": "https://www.idweek.org/",
+     "evidence": "Oct. 21-24, 2026 | Washington, D.C.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aaos-annual-meeting",
+   "name": "AAOS Annual Meeting",
+   "org": "American Academy of Orthopaedic Surgeons",
+   "org_url": "https://www.aaos.org/annual/",
+   "professions": [
+    "NP",
+    "PA",
+    "MD"
+   ],
+   "specialty": [
+    "orthopaedics"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "np_pa_basis": "2026 rate sheet: 'Physician Assistant' member category and 'U.S. Allied Health: ... For example: RN, LPN, NP, PA, PA-C...' (https://www.aaos.org/globalassets/aaos-annual-meeting/attend/registration/registration-open/aaos-2026-reg-rates.pdf). Note FAQ: 'The AAOS is not accredited to offer credit for nurses and other Allied Health Professionals.'",
+   "editions": [
+    {
+     "start": "2027-03-03",
+     "end": "2027-03-06",
+     "location": "Venetian Convention & Expo Center, Las Vegas, NV",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-06-08",
+      "text": "Deadline Extended: Paper, Poster, and ePoster Abstract Applications Due June 8, 2026 (no time zone given)",
+      "url": "https://www.aaos.org/callforabstracts"
+     },
+     "source_url": "https://www.aaos.org/annual/attend/future-meetings/",
+     "evidence": "Las Vegas, Nevada — 2027 Wednesday, March 3 – Saturday, March 6 Venetian Convention & Expo Center",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-03-15",
+     "end": "2028-03-18",
+     "location": "San Diego Convention Center, San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aaos.org/annual/attend/future-meetings/",
+     "evidence": "San Diego, California — 2028 Wednesday, March 15 – Saturday, March 18 San Diego Convention Center",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ada-scientific-sessions",
+   "name": "ADA Scientific Sessions",
+   "org": "American Diabetes Association",
+   "org_url": "https://professional.diabetes.org/scientific-sessions",
+   "professions": [
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "endocrinology",
+    "diabetes"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically June",
+   "np_pa_basis": "2026 accreditation: 'This activity is designated for 29.5 AAPA Category 1 CME credits.'; ADA jointly accredited incl. ANCC (https://professional.diabetes.org/scientific-sessions/accreditation-statements). NP-specific statement not found.",
+   "editions": [
+    {
+     "start": "2027-06-18",
+     "end": "2027-06-21",
+     "location": "Walter E. Washington Convention Center, Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": "2026-09-28",
+      "closes": null,
+      "text": "Abstract Submission Opens September 28!",
+      "url": "https://professional.diabetes.org/scientific-sessions"
+     },
+     "source_url": "https://professional.diabetes.org/scientific-sessions",
+     "evidence": "June 18–21, 2027 at the Walter E. Washington Convention Center",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-06-09",
+     "end": "2028-06-12",
+     "location": "George R. Brown Convention Center, Houston, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://professional.diabetes.org/scientific-sessions",
+     "evidence": "June 9–12, 2028 at George R. Brown Convention Center, Houston, TX",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-06-08",
+     "end": "2029-06-11",
+     "location": "San Diego Convention Center, San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://professional.diabetes.org/scientific-sessions",
+     "evidence": "June 8–11, 2029 at San Diego Convention Center, San Diego, CA",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ags-annual-scientific-meeting",
+   "name": "AGS Annual Scientific Meeting",
+   "org": "American Geriatrics Society",
+   "org_url": "https://meeting.americangeriatrics.org/",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "geriatrics"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "virtual",
+   "recurrence": "annual, typically spring",
+   "np_pa_basis": "'Physicians, nurse practitioners, nurses, pharmacists, physician assistants, social workers...' (https://www.americangeriatrics.org/programs/ags-annual-scientific-meeting). Audience statement only; no NP/PA CE statement found.",
+   "editions": [
+    {
+     "start": "2026-04-30",
+     "end": "2026-05-02",
+     "location": "Virtual",
+     "format": "virtual",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://meeting.americangeriatrics.org/",
+     "evidence": "2026 Virtual Annual Scientific Meeting of the American Geriatrics Society (AGS) from April 30 - May 2 (pre-conference day: Wednesday, April 29)",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "acg-annual-scientific-meeting",
+   "name": "ACG Annual Scientific Meeting & Postgraduate Course",
+   "org": "American College of Gastroenterology",
+   "org_url": "https://acgmeetings.gi.org/",
+   "professions": [
+    "NP",
+    "PA",
+    "MD"
+   ],
+   "specialty": [
+    "gastroenterology",
+    "hepatology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "np_pa_basis": "APP track and registration: 'Advanced Practice Provider Leadership Summit' ('This course is open to NPs/PAs only'); categories 'Non-Member NP/PA/Allied Health/Practice Manager' and 'ACG Member Advanced Practice Provider/Associate Member'",
+   "editions": [
+    {
+     "start": "2026-10-09",
+     "end": "2026-10-14",
+     "location": "Nashville, TN",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": "2026 abstract call closed",
+      "url": "https://mediacdn.gi.org/acgmeetings/wp-content/uploads/2026/02/06202913/ACG_2026_Abstract_Submission_Instructions.pdf"
+     },
+     "source_url": "https://acgmeetings.gi.org/registration/",
+     "evidence": "October 9 – 14, 2026",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ash-annual-meeting",
+   "name": "ASH Annual Meeting and Exposition",
+   "org": "American Society of Hematology",
+   "org_url": "https://www.hematology.org/meetings/annual-meeting",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "CNS",
+    "MD"
+   ],
+   "specialty": [
+    "hematology",
+    "oncology"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically December",
+   "np_pa_basis": "Allied Health Professional registration category: 'nurse practitioners, registered nurses, physician assistants, clinical nurse specialists, and pharmacists without a PharmD.' (https://www.hematology.org/meetings/annual-meeting/registration-information)",
+   "editions": [
+    {
+     "start": "2026-12-12",
+     "end": "2026-12-15",
+     "location": "Ernest N. Morial Convention Center, New Orleans, LA, and online",
+     "format": "hybrid",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-08-04",
+      "text": "August 4, 2026, at 11:59 p.m. Pacific time; late-breaking abstract deadline October 28, 2026, at 11:59 pm. Pacific time",
+      "url": "https://www.hematology.org/meetings/annual-meeting"
+     },
+     "source_url": "https://www.hematology.org/meetings/annual-meeting",
+     "evidence": "December 12–15, 2026, in New Orleans, Louisiana, and online",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "acr-convergence",
+   "name": "ACR Convergence",
+   "org": "American College of Rheumatology",
+   "org_url": "https://rheumatology.org/annual-meeting",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "rheumatology"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically November",
+   "np_pa_basis": "Audience includes 'advance practice nurses, physician assistants' (https://rheumatology.org/meetings/acr-convergence); ARP registration rate (ARP = Association of Rheumatology Professionals) on registration page",
+   "editions": [
+    {
+     "start": "2026-11-06",
+     "end": "2026-11-11",
+     "location": "Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": "2026-09-22",
+      "text": "The call for late-breaking abstracts is now open. The submission deadline is September 22, noon ET.",
+      "url": "https://rheumatology.org/annual-meeting"
+     },
+     "source_url": "https://rheumatology.org/annual-meeting",
+     "evidence": "ACR Convergence 2026, the world's premier rheumatology event, will be held November 6–11 in Orlando, Florida",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aap-national-conference",
+   "name": "AAP National Conference & Exhibition",
+   "org": "American Academy of Pediatrics",
+   "org_url": "https://aapexperience.org/",
+   "professions": [
+    "NP",
+    "PA",
+    "MD"
+   ],
+   "specialty": [
+    "pediatrics"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically fall",
+   "np_pa_basis": "2026 accreditation: 'This program is accredited for 97.00 NAPNAP CE contact hours...' and 'PAs may claim a maximum of 97.00 Category 1 credits...' (https://aapexperience.org/accreditation/)",
+   "editions": [
+    {
+     "start": "2026-10-02",
+     "end": "2026-10-06",
+     "location": "San Diego Convention Center, San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://aapexperience.org/faq/",
+     "evidence": "The 2026 National Conference will begin on Friday, October 2 and conclude on Tuesday, October 6.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-15",
+     "end": "2027-10-19",
+     "location": "McCormick Place, Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://aapexperience.org/future-dates/",
+     "evidence": "Chicago McCormick Place October 15-19, 2027",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-11-03",
+     "end": "2028-11-07",
+     "location": "Boston Convention & Exhibition Center, Boston, MA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://aapexperience.org/future-dates/",
+     "evidence": "Boston Boston Convention & Exhibition Center November 3-7, 2028",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-09-28",
+     "end": "2029-10-02",
+     "location": "Walter E. Washington Convention Center, Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://aapexperience.org/future-dates/",
+     "evidence": "Washington, DC Walter E. Washington Convention Center September 28-October 2, 2029",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "svs-vascular-annual-meeting",
+   "name": "Vascular Annual Meeting (VAM)",
+   "org": "Society for Vascular Surgery",
+   "org_url": "https://vam.vascular.org/",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "vascular surgery"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically June",
+   "np_pa_basis": "APP track: schedule lists 'SVN & APP' all-day program and audience 'APPs/PAs, community practice and OBL professionals' (https://vam.vascular.org/schedule-and-tracks/)",
+   "editions": [
+    {
+     "start": "2027-06-02",
+     "end": "2027-06-05",
+     "location": "San Diego Convention Center, San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": null,
+      "closes": "2027-01-13",
+      "text": "Plenary Sessions & Posters: Nov. 18 - Jan. 13, 2027 (no time zone given); Late-Breaking Abstracts: Feb. 10 - Mar. 3, 2027",
+      "url": "https://vam.vascular.org/present-at-vam/"
+     },
+     "source_url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+     "evidence": "VAM27 June 2-5, 2027 San Diego Convention Center, San Diego, Calif.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-05-31",
+     "end": "2028-06-03",
+     "location": "Gaylord National Resort & Convention Center, National Harbor, MD",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+     "evidence": "VAM28 May 31 - June 3, 2028 Gaylord National Resort & Convention Center, National Harbor, Md.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-06-13",
+     "end": "2029-06-16",
+     "location": "Kentucky International Convention Center, Louisville, KY",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+     "evidence": "VAM29 June 13 - 16, 2029 Kentucky International Convention Center, Louisville, Ky.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "asn-kidney-week",
+   "name": "Kidney Week",
+   "org": "American Society of Nephrology",
+   "org_url": "https://www.asn-online.org/education/kidneyweek/",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "nephrology"
+   ],
+   "audience": [
+    "clinician",
+    "academic"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October/November",
+   "np_pa_basis": "2026 CME page: 'This CE activity is approved for 65.0 ANCC contact hours.' and 'Physician Assistants may receive a Certificate of Participation...' (https://www.asn-online.org/education/kidneyweek/2026/cme.aspx)",
+   "editions": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-25",
+     "location": "Denver, CO",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": "Abstract Submission Site Closes (2:00 p.m. EDT) Wednesday, May 13; Late-Breaking Abstract Submission Site Closes (2:00 p.m. EDT) Wednesday, September 2",
+      "url": "https://www.asn-online.org/education/kidneyweek/2026/important-dates.aspx"
+     },
+     "source_url": "https://www.asn-online.org/education/kidneyweek/2026/register-overview.aspx",
+     "evidence": "Seven Early Programs in Denver, CO (October 21) ... Annual Meeting in Denver, CO (October 22-25)",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-27",
+     "end": "2027-10-31",
+     "location": "San Diego Convention Center, San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.asn-online.org/education/kidneyweek/archives/future.aspx",
+     "evidence": "October 27-31, 2027 | San Diego, CA",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aspen-nutrition-science-practice-conference",
+   "name": "ASPEN Nutrition Science & Practice Conference",
+   "org": "American Society for Parenteral and Enteral Nutrition",
+   "org_url": "https://nutritioncare.org/conference/",
+   "professions": [
+    "NP",
+    "PA",
+    "RN",
+    "MD"
+   ],
+   "specialty": [
+    "nutrition",
+    "critical care"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically February/March",
+   "np_pa_basis": "Registration: 'Select Professional If: You are an RD, RN, RPh/PharmD, PhD, NP, PA, or any other type of health professional.'",
+   "editions": [
+    {
+     "start": "2027-02-13",
+     "end": "2027-02-16",
+     "location": "Hyatt Regency Chicago, Chicago, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-08-23",
+      "text": "SUBMISSION ENDS August 23, 2026 (no time zone given)",
+      "url": "https://nutritioncare.org/conference/submit/abstracts/"
+     },
+     "source_url": "https://nutritioncare.org/conference/",
+     "evidence": "February 13–16, 2027, Chicago, Illinois",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "American Heart Association (Scientific Sessions)",
+   "url": "https://professional.heart.org/en/meetings/scientific-sessions/registration",
+   "reason": "Dates found (Nov 6–9, 2026, McCormick Place, Chicago) but no NP/PA-specific registration, CE or APP track found; only 'Nurse/Allied Health/Other' category. Excluded per rule. CE page 404."
+  },
+  {
+   "org": "American Society of Anesthesiologists (ANESTHESIOLOGY)",
+   "url": "https://www.asahq.org/annualmeeting/attend/registration",
+   "reason": "Dates found (2026 Oct 16-20 San Diego; 2027 Oct 15-19 Boston; 2028 Oct 20-24 Chicago; 2029 Oct 19-23 San Diego) but registration categories show no NP/PA/APP. Excluded."
+  },
+  {
+   "org": "American Psychiatric Association (Annual Meeting)",
+   "url": "https://www.psychiatry.org/psychiatrists/meetings/annual-meeting",
+   "reason": "2027 in New York but no dates on page; no NP/PA registration/CE found. Submission site closed Sept 10, 2026 5:00 p.m. ET."
+  },
+  {
+   "org": "American Academy of Family Physicians (FMX)",
+   "url": "https://www.aafp.org/cme-and-events/in-person/fmx/what-is-fmx/faq",
+   "reason": "Dates found (FMX 2026 Oct 20-24 Music City Center Nashville; FMX 2027 Sept. 20-24 San Diego; FMX 2028 Oct. 10-14 Indianapolis) but only generic 'Care team members can self-report sessions'; no NP/PA category. Excluded."
+  },
+  {
+   "org": "American College of Obstetricians and Gynecologists (ACSM)",
+   "url": "https://annualmeeting.acog.org/future-acsms/",
+   "reason": "Dates found (2027 May 21-23 Los Angeles; 2028 May 5-7 Boston; 2029 May 4-6 Toronto) but no NP/CNM/PA mention; only 'Other Health Care Professional' category. Excluded."
+  },
+  {
+   "org": "Eastern Association for the Surgery of Trauma (Scientific Assembly)",
+   "url": "https://www.east.org/education-resources/annual-scientific-assembly",
+   "reason": "Dates found (40th: Jan 12-15, 2027 Sheraton New Orleans; 2028 Jan 11-14 Lake Buena Vista; 2029 Jan 9-12 Phoenix; 2030 Jan 8-11 Lake Buena Vista) but NP/PA evidence only attendee demographics ('advanced practice providers') and one 2026 workshop audience 'NPP'; no registration/CE/APP track. Excluded."
+  },
+  {
+   "org": "American Geriatrics Society",
+   "url": "https://meeting.americangeriatrics.org/about/past-future-meetings",
+   "reason": "Past/future meetings page and submissions page timed out twice; 2027 dates not obtained."
+  },
+  {
+   "org": "American College of Gastroenterology",
+   "url": "https://gi.org/education/future-annual-meeting-dates/",
+   "reason": "Future-dates page lists no dates beyond 2026."
+  },
+  {
+   "org": "American Society of Hematology",
+   "url": "https://www.hematology.org/meetings",
+   "reason": "No Annual Meeting dates beyond 2026 posted."
+  },
+  {
+   "org": "American College of Rheumatology",
+   "url": "https://rheumatology.org/annual-meeting",
+   "reason": "No ACR Convergence dates beyond 2026 posted."
+  },
+  {
+   "org": "IDSA/IDWeek",
+   "url": "https://www.idweek.org/faqs/",
+   "reason": "IDWeek 2027 dates: 'Coming soon.'"
+  },
+  {
+   "org": "AHA/ATS/ASCO/ACP/ADA/AAD past editions",
+   "url": null,
+   "reason": "Most recent past editions not captured with verbatim evidence; omitted."
+  }
+ ]
+}

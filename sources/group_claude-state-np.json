@@ -1,0 +1,759 @@
+{
+ "group": "claude-state-np",
+ "series": [
+  {
+   "id": "dcnp-fall-ce-conference",
+   "name": "DCNP Fall CE Conference",
+   "org": "Delaware Coalition of Nurse Practitioners",
+   "org_url": "https://dcnpweb.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-10",
+     "end": "2026-10-10",
+     "location": "Dover, DE",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://dcnpweb.enpnetwork.com/nurse-practitioner-events",
+     "evidence": "Saturday, October 10, 2026 at 7:00am ET - 5:00pm ET Dover, DE Conference Quick registration 7.0 CE credits available (4.0 pharmacology)",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mcnp-new-england-regional-np-conference",
+   "name": "New England Regional Nurse Practitioner Conference",
+   "org": "Massachusetts Coalition of Nurse Practitioners",
+   "org_url": "https://mcnp.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically May",
+   "editions": [
+    {
+     "start": "2026-05-07",
+     "end": "2026-05-08",
+     "location": "DoubleTree by Hilton Hotel Boston - Westborough, Westborough, MA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2025-09-01",
+      "text": "Submission Deadline: September 1, 2025",
+      "url": "https://mcnp.enpnetwork.com/page/38954-speaker-proposals-for-the-2026-conference"
+     },
+     "source_url": "https://mcnp.enpnetwork.com/nurse-practitioner-events/147820-2026-new-england-regional-nurse-practitioner-conference",
+     "evidence": "Thursday, May 7, 2026 at 8:00am ET - Friday, May 8, 2026 at 3:30pm ET ... DoubleTree by Hilton Hotel Boston - Westborough, 5400 Computer Drive, Westborough, MA 01581",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "npam-fall-conference",
+   "name": "NPAM Fall Conference",
+   "org": "Nurse Practitioner Association of Maryland",
+   "org_url": "https://www.npamonline.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically November",
+   "editions": [
+    {
+     "start": "2025-11-15",
+     "end": "2025-11-15",
+     "location": "Howard Community College, Columbia, MD",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.npamonline.org/events/EventDetails.aspx?id=1969593&group=",
+     "evidence": "11/15/2025 7:00am- 4PM ... Howard Community College RCF 400, 10901 Little Patuxent Parkway, Columbia, Maryland 21044",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mnpa-spring-conference",
+   "name": "MNPA Spring Conference",
+   "org": "Maine Nurse Practitioner Association",
+   "org_url": "https://mnpa.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically April (plus a Fall conference)",
+   "editions": [
+    {
+     "start": "2026-04-15",
+     "end": "2026-04-17",
+     "location": "Samoset Resort, Rockport, ME",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://mnpa.org/event-6521849/Registration",
+     "evidence": "15 Apr 2026 8:00 AM - 17 Apr 2026 4:30 PM ... Samoset Resort",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "vnpa-annual-conference",
+   "name": "VNPA Conference (NPs: From the Green Mountains to the Frontlines of Care)",
+   "org": "Vermont Nurse Practitioners Association",
+   "org_url": "https://vtnpa.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically November",
+   "editions": [
+    {
+     "start": "2026-11-12",
+     "end": "2026-11-13",
+     "location": "Stoweflake Mountain Resort & Spa, Stowe, VT",
+     "format": "in person",
+     "theme": "NPs: From the Green Mountains to the Frontlines of Care",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://vtnpa.enpnetwork.com/",
+     "evidence": "NPs: From the Green Mountains to the Frontlines of Care ... November 12th - 13th, 2026 ... Stoweflake Mountain Resort & Spa in Stowe, VT",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "isapn-aprn-midwest-conference",
+   "name": "ISAPN APRN Midwest Conference",
+   "org": "Illinois Society for Advanced Practice Nursing",
+   "org_url": "https://isapn.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-22",
+     "end": "2026-10-23",
+     "location": "NIU Rockford, Rockford, IL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": null,
+      "text": "Call for Poster Abstracts: 2026 ISAPN APRN Midwest Conference",
+      "url": "https://isapn.enpnetwork.com/nurse-practitioner-events/149858-2026-aprn-midwest-conference"
+     },
+     "source_url": "https://isapn.enpnetwork.com/nurse-practitioner-events/149858-2026-aprn-midwest-conference",
+     "evidence": "Thursday, October 22, 2026 at 8:00am CT - Friday, October 23, 2026 at 6:00pm CT ... NIU Rockford, 8500 East State Street, Rockford, IL 61108",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "vcnp-annual-conference",
+   "name": "VCNP Annual Conference",
+   "org": "Virginia Council of Nurse Practitioners",
+   "org_url": "https://www.vcnp.net/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2027-03-03",
+     "end": "2027-03-06",
+     "location": "Virginia (venue not posted)",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.vcnp.net/events",
+     "evidence": "2027 VCNP Annual Conference ... 3/3/2027 – 3/6/2027",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "capni-annual-conference",
+   "name": "CAPNI Annual Conference",
+   "org": "Coalition of Advanced Practice Nurses of Indiana",
+   "org_url": "https://capni.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically February",
+   "editions": [
+    {
+     "start": "2027-02-24",
+     "end": "2027-02-25",
+     "location": "Embassy Suites by Hilton Noblesville Indianapolis Conference Center, Noblesville, IN",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://capni.enpnetwork.com/nurse-practitioner-events/149380-capni-annual-conference-wed-thurs-feb-24-25-2027",
+     "evidence": "Embassy Suites by Hilton Noblesville Indianapolis Conference Center ... Noblesville, IN 46060 ... Wednesday, February 24, 2027 at 8:00am ET - Thursday, February 25, 2027 at 5:00pm ET",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "npi-annual-conference",
+   "name": "NPI Conference: Advancing Professional Practice for Today's Healthcare Landscape",
+   "org": "Nurse Practitioners of Idaho",
+   "org_url": "https://npidaho.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-25",
+     "end": "2026-09-26",
+     "location": "Boise Centre, Boise, ID",
+     "format": "in person",
+     "theme": "Advancing Professional Practice for Today's Healthcare Landscape",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://npidaho.enpnetwork.com/",
+     "evidence": "September 25th - 26th, 2026 ... Boise Centre, Room 400 Boise, ID ... 2026 NPI Conference: Advancing Professional Practice for Today's Healthcare Landscape",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "kapn-sunflower-conference",
+   "name": "Sunflower Conference",
+   "org": "Kansas Advanced Practice Nurses Association",
+   "org_url": "https://kapn.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically February",
+   "editions": [
+    {
+     "start": "2027-02-19",
+     "end": "2027-02-20",
+     "location": "Wichita, KS",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": null,
+      "text": "SAVE the DATE and Call for Presentations",
+      "url": "https://kapn.enpnetwork.com/"
+     },
+     "source_url": "https://kapn.enpnetwork.com/",
+     "evidence": "SAVE the DATE and Call for Presentations for Kansas Advanced Practice Nurses 6th Annual Sunflower Conference February 19-20, 2027 in Wichita, KS",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "manp-annual-conference",
+   "name": "MANP Annual Conference & Membership Meeting",
+   "org": "Mississippi Association of Nurse Practitioners",
+   "org_url": "https://msanp.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically July",
+   "editions": [
+    {
+     "start": "2024-07-14",
+     "end": "2024-07-14",
+     "location": "Gulf Shores, AL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://msanp.enpnetwork.com/nurse-practitioner-events",
+     "evidence": "MANP 10th Annual Conference & Membership Meeting ... Sunday, July 14, 2024 at 4:00pm CT ... Gulf Shores, AL",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ndnpa-pharmacology-conference",
+   "name": "NDNPA Pharmacology Conference",
+   "org": "North Dakota Nurse Practitioner Association",
+   "org_url": "https://ndnp.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-23",
+     "end": "2026-09-25",
+     "location": "Hilton Garden Inn, Fargo, ND",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": "Poster Presentations",
+      "url": null
+     },
+     "source_url": "https://ndnp.enpnetwork.com/",
+     "evidence": "Eighteenth Annual NDNPA Pharmacology Conference ... September 23–25, 2026 ... Hilton Garden Inn in Fargo, ND",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "npaa-annual-conference",
+   "name": "NPAA Annual Conference",
+   "org": "Nurse Practitioner Alliance of Alabama",
+   "org_url": "https://npaa.wildapricot.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-01",
+     "end": "2026-10-03",
+     "location": "Embassy Suites, Gulf Shores, AL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": null,
+      "text": "NPAA invites submissions for podium and poster presentations",
+      "url": "https://npaa.wildapricot.org/event-6575812"
+     },
+     "source_url": "https://npaa.wildapricot.org/event-6575812",
+     "evidence": "NPAA 20th Annual Conference ... October 1–3, 2026 ... Embassy Suites – Gulf Shores, Alabama",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "wcapn-annual-convention",
+   "name": "WNA/WCAPN Annual Convention (Stronger Together)",
+   "org": "Wyoming Council for Advanced Practice Nursing",
+   "org_url": "https://wcapn.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September (joint with Wyoming Nurses Association)",
+   "editions": [
+    {
+     "start": "2026-09-24",
+     "end": "2026-09-25",
+     "location": "Casper, WY",
+     "format": "in person",
+     "theme": "Stronger Together",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://wcapn.enpnetwork.com/nurse-practitioner-events",
+     "evidence": "2026 WNA/WCAPN Annual Convention ... Stronger Together ... Thursday, September 24, 2026 at 8:00am MT - Friday, September 25, 2026 at 4:00pm MT ... Casper, WY",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mnnp-annual-conference",
+   "name": "MNNP Annual Conference (Precision, Practice and Policy — Advancing Chronic Disease Care)",
+   "org": "Minnesota Nurse Practitioners",
+   "org_url": "https://mnnp.enpnetwork.com/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty",
+    "chronic disease"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-09",
+     "end": "2026-10-09",
+     "location": "Lost Spur Golf and Event Center, Eagan, MN",
+     "format": "in person",
+     "theme": "Precision, Practice and Policy — Advancing Chronic Disease Care",
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://mnnp.enpnetwork.com/",
+     "evidence": "Precision, Practice and Policy — Advancing Chronic Disease Care Lost Spur Golf and Event Center Eagan, MN October 9th, 2026 ... Friday, October 9, 2026 at 7:30am CT",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "Connecticut Advanced Practice Registered Nurse Society (CTAPRNS)",
+   "url": "https://ctaprns.org/page/schedule",
+   "reason": "page unreachable (403 client error on ctaprns.org pages, including /page/schedule, / and /events/EventDetails.aspx?id=1555781)"
+  },
+  {
+   "org": "Nurse Practitioner Association of Maryland (NPAM)",
+   "url": "https://www.npamonline.org/page/96/NPAM-Conferences.htm",
+   "reason": "2026 edition not yet posted; conferences page and root returned 403 or stale cached content on repeated fetch attempts, most recent dated edition (2025-11-15) found via events/EventDetails.aspx?id=1969593"
+  },
+  {
+   "org": "NP Alliance of Rhode Island (NPARI)",
+   "url": "https://npari.enpnetwork.com/nurse-practitioner-events",
+   "reason": "no dates posted for a dedicated statewide conference; only an annual NP Week dinner/meeting (Nov 11 2026, Cranston, RI) and monthly board/member meetings are listed"
+  },
+  {
+   "org": "New Hampshire Nurse Practitioner Association (NHNPA)",
+   "url": "https://nhnpa.memberclicks.net/",
+   "reason": "page unreachable for full details; homepage references \"New England Health Summit 2026\" with a linked Canva microsite (https://nhnpa.my.canva.site/) that returned only template metadata, no dates/venue text extractable"
+  },
+  {
+   "org": "Ohio Association of Advanced Practice Nurses (OAAPN)",
+   "url": "https://oaapn.org/swc/",
+   "reason": "Statewide Conference page confirms a 34th annual conference recently concluded but gives no dates/venue; /events/ path returned 404"
+  },
+  {
+   "org": "North Carolina Nurse Practitioner Association",
+   "url": "https://ncnpa.net/",
+   "reason": "DNS lookup failed for ncnpa.net (Name or service not known); org URL guess may be wrong"
+  },
+  {
+   "org": "California Association for Nurse Practitioners (CANP)",
+   "url": "https://www.canpweb.org/",
+   "reason": "homepage references a 2027 conference with a call for abstracts (proposalspace.com/calls/d/1970) but no dates/venue text found on homepage; /page/Future_Conferences returned 404"
+  },
+  {
+   "org": "Michigan Council of Nurse Practitioners (MICNP)",
+   "url": "https://micnp.enpnetwork.com/",
+   "reason": "homepage says \"The MICNP 2026 Conference is now accepting submissions for presenters\" but no dates/venue posted on homepage or events listing page"
+  },
+  {
+   "org": "United Advanced Practice Registered Nurses of Georgia (UAPRN-GA)",
+   "url": "https://www.uaprn.org/",
+   "reason": "page unreachable: SSL certificate verify failed (self-signed certificate) on homepage, robots.txt fetch failed on /annual-conference"
+  },
+  {
+   "org": "APRNs of Washington State (AUWS)",
+   "url": "https://auws.enpnetwork.com/",
+   "reason": "homepage confirms a 2026 Annual Conference exists (agenda/registration links) but no extractable date/venue text; /page/2026-conference-agenda and /page/2026-conference-attendee-registration both blocked by robots.txt"
+  },
+  {
+   "org": "Tennessee state NP association",
+   "url": null,
+   "reason": "domain guesses (tnpa.org=wrong org, tnpa.enpnetwork.com, nursepractitionerassociatetn.org) all failed; could not identify correct org URL without web search (search budget exhausted)"
+  },
+  {
+   "org": "Colorado state NP association (candidate: Nurse Practitioners of Colorado, NPCO)",
+   "url": null,
+   "reason": "domain guesses (npco.org, coloradonp.org, npco.enpnetwork.com) all failed to resolve; could not identify correct org URL without web search (search budget exhausted)"
+  },
+  {
+   "org": "Colorado Society of Advanced Practice Nurses (CSAPN)",
+   "url": "https://csapn.enpnetwork.com/",
+   "reason": "org confirmed but no annual conference dates/venue found on homepage or events listing page"
+  },
+  {
+   "org": "Tennessee Nurse Practitioner Association (TNNPA)",
+   "url": "https://tnnpa.enpnetwork.com/",
+   "reason": "org confirmed, references a \"10th Annual Conference\" but no dates/venue extractable; events listing page and /page/tnnpa-2026-annual-conference (robots-blocked) did not yield dates"
+  },
+  {
+   "org": "Nurse Practitioner Association of the District of Columbia (NPADC)",
+   "url": "https://npadc.enpnetwork.com/",
+   "reason": "org confirmed (est. 1971) but events page shows only a generic cross-network CE event feed, no NPADC-hosted annual conference with dates found"
+  },
+  {
+   "org": "North Carolina Nurse Practitioner Network (NCNPN)",
+   "url": "https://ncnpn.enpnetwork.com/",
+   "reason": "org confirmed but events page shows only a generic cross-network CE event feed, no NCNPN-hosted annual conference with dates found"
+  },
+  {
+   "org": "United Advanced Practice Registered Nurses of Georgia (UAPRN)",
+   "url": "https://uaprn.enpnetwork.com/",
+   "reason": "org confirmed, a 2026 UAPRN Conference is referenced in news items but no dates/venue extractable from homepage, news, or events listing pages"
+  },
+  {
+   "org": "Louisiana Association of Nurse Practitioners (LANP)",
+   "url": "https://lanp.enpnetwork.com/",
+   "reason": "org confirmed, site has an Annual Conference section (Conference Information, Speaker Abstracts) but dates/venue not extractable; /page/conference-information blocked by robots.txt"
+  },
+  {
+   "org": "Arizona Nurse Practitioner Council (ANPC)",
+   "url": null,
+   "reason": "domain guesses (anpc.org=expired/for-sale, anpc.enpnetwork.com, azanp.enpnetwork.com, azcnp.enpnetwork.com) all failed; could not identify correct org URL without web search"
+  },
+  {
+   "org": "Nurse Practitioner Alliance of Alabama (NPAA) / regional AL NP associations",
+   "url": null,
+   "reason": "domain guesses (npaa.enpnetwork.com, alnpa.enpnetwork.com) failed; Alabama appears to have only regional (Central AL, North AL) NP associations per discovery source, no confirmed single statewide conference org URL found"
+  },
+  {
+   "org": "Arkansas Nurse Practitioner Association (ANPA)",
+   "url": null,
+   "reason": "domain guesses (arnpa.enpnetwork.com, arknp.enpnetwork.com, arnpa.org) all failed to resolve; could not identify correct org URL without web search"
+  },
+  {
+   "org": "Hawaii Association of Professional Nurses (HAPN)",
+   "url": "https://hapnhawaii.enpnetwork.com/",
+   "reason": "org confirmed but page only references the Hawaii State Center for Nursing's 2027 Hawaii Nursing Scientific Symposium (a different organizer), no HAPN-hosted conference with dates found"
+  },
+  {
+   "org": "Association of Missouri Nurse Practitioners (AMNP)",
+   "url": "https://amnp.enpnetwork.com/",
+   "reason": "org confirmed, \"AMNP 2026 Annual Conference\" referenced but no dates/venue extractable; dedicated conference page blocked by robots.txt"
+  },
+  {
+   "org": "Kentucky Association of Nurse Practitioners & Nurse-Midwives (KCNPNM)",
+   "url": "https://kcnpnm.org/",
+   "reason": "page unreachable: 403 client error on kcnpnm.org, robots.txt disallowed on kcnpnm.enpnetwork.com"
+  },
+  {
+   "org": "Iowa Nurse Practitioner Society (INPS)",
+   "url": null,
+   "reason": "domain guesses (inps.org=expired/for-sale, inps.enpnetwork.com, iowanp.enpnetwork.com) all failed; could not identify correct org URL without web search"
+  },
+  {
+   "org": "Nevada Advanced Practice Nurses Association (NAPNA)",
+   "url": "https://napna.enpnetwork.com/",
+   "reason": "org confirmed but no current annual conference dates found; only historical (2015-2019) conference handouts and regional member meetings listed"
+  },
+  {
+   "org": "Association of Oklahoma Nurse Practitioners (AONP)",
+   "url": null,
+   "reason": "domain guesses (aonp.enpnetwork.com robots-blocked, oknp.enpnetwork.com 404) failed to yield an accessible org page"
+  },
+  {
+   "org": "Nurse Practitioners of Oregon (NPO)",
+   "url": null,
+   "reason": "domain guesses (conporegon.org DNS fail, npofor.enpnetwork.com 404, npo.enpnetwork.com wrong org/squatted) failed to identify correct org URL"
+  },
+  {
+   "org": "Utah Nurse Practitioners (UNP)",
+   "url": "https://utahnp.org/",
+   "reason": "utahnp.org resolves to an unrelated blog/content-farm site (\"MENTA\"), not the organization's real page; correct URL not identified without web search"
+  },
+  {
+   "org": "Nurse Practitioner Association of South Dakota (NPASD)",
+   "url": "https://npasd.enpnetwork.com/",
+   "reason": "org confirmed, \"Conference 2026\" referenced in navigation but dates/venue not extractable from homepage or events listing page"
+  },
+  {
+   "org": "South Carolina Nurses Association (SCNA) APRN Chapter",
+   "url": "https://scnurses.org/",
+   "reason": "page unreachable (403 client error)"
+  },
+  {
+   "org": "New Mexico Nurse Practitioner Council (NMNPC)",
+   "url": "https://www.nmnpc.org/page/confmainpage",
+   "reason": "org confirmed, hosts a fall conference (around NP Week) and spring conference, but 2026 dates not yet posted (\"Watch for confirmation of the dates in April for the 2026 conference\")"
+  },
+  {
+   "org": "Wisconsin state NP association (candidate: Wisconsin Association of Nurse Practitioners, WANP)",
+   "url": null,
+   "reason": "domain guesses (wisconsinnp/wisapn/wisconsinnps/wcnp.enpnetwork.com) all 404 or wrong org; could not identify correct org URL without web search"
+  },
+  {
+   "org": "West Virginia Nurses Association (WVNA) / WV NP association",
+   "url": null,
+   "reason": "domain guesses (wvna.org DNS timeout, wvnurses.org connect timeout, wvna.enpnetwork.com 404, wvapn/wvnpc.enpnetwork.com 404) all failed; could not identify correct org URL without web search"
+  },
+  {
+   "org": "Montana Nurses Association (MNA) / MT NP association",
+   "url": null,
+   "reason": "domain guesses (mtnursesassociation.enpnetwork.com, montananp.enpnetwork.com, mtna.enpnetwork.com) all 404; could not identify correct org URL without web search"
+  },
+  {
+   "org": "Alaska Nurse Practitioner Association (ANPA)",
+   "url": null,
+   "reason": "domain guesses (aknpa.enpnetwork.com, alaskanp.enpnetwork.com) both 404; could not identify correct org URL without web search"
+  }
+ ],
+ "_ported": "from Claude v4 build (2026-09-21), merged 2026-09-22"
+}

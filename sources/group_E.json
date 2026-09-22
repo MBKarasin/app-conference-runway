@@ -1,0 +1,350 @@
+{
+ "group": "E",
+ "series": [
+  {
+   "id": "nysana-fall-educational-meeting",
+   "name": "NYSANA Fall Educational Meeting",
+   "org": "New York State Association of Nurse Anesthetists (NYSANA)",
+   "org_url": "https://www.nysana.com/",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia"],
+   "audience": ["clinician"],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically September",
+   "archive_url": "https://www.nysana.com/index.php?option=com_jevents&Itemid=115&task=.",
+   "editions": [
+    {
+     "start": "2026-09-18", "end": "2026-09-20",
+     "location": "The Gideon Putnam, Saratoga Springs, NY",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=82&Itemid=115&year=2026&month=09&day=18&title=fall-educational-meeting-2026-saratoga-springs&uid=d32527b6e593a1815dc0f4a78cfc357a",
+     "evidence": "Fall Educational Meeting 2026, Saratoga Springs ... Friday, September 18, 2026, 8:00 AM to Sunday, September 20, 2026, 12:00 PM EDT ... The Gideon Putnam, 24 Gideon Putnam Rd., Saratoga Springs, NY 12866",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nysana-research-symposium",
+   "name": "NYSANA Research Symposium",
+   "org": "New York State Association of Nurse Anesthetists (NYSANA)",
+   "org_url": "https://www.nysana.com/",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia", "research"],
+   "audience": ["clinician", "academic"],
+   "kind": "symposium",
+   "region": "virtual",
+   "recurrence": "annual, typically May",
+   "editions": [
+    {
+     "start": "2026-05-02", "end": "2026-05-02",
+     "location": "Virtual (Zoom)",
+     "format": "virtual",
+     "theme": null,
+     "call": {"status": "closed", "opens": null, "closes": "2026-03-01", "text": "Please submit your abstract and references using this form no later than March 1, 2026.", "url": "https://www.nysana.com/call-for-abstracts"},
+     "source_url": "https://www.nysana.com/call-for-abstracts",
+     "evidence": "The zoom sessions will be held in the morning on Saturday, May 2, 2026.",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "pana-fall-symposium",
+   "name": "PANA Fall Symposium",
+   "org": "Pennsylvania Association of Nurse Anesthetists (PANA)",
+   "org_url": "https://www.pana.org/page/Events",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia"],
+   "audience": ["clinician"],
+   "kind": "symposium",
+   "region": "near",
+   "recurrence": "annual, typically October-November",
+   "archive_url": "https://www.pana.org/page/FutureSymposia",
+   "editions": [
+    {
+     "start": "2026-11-20", "end": "2026-11-22",
+     "location": "Omni Bedford Springs Resort, Bedford, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.pana.org/page/Events",
+     "evidence": "PANA 2026 Fall Symposium - November 20-November 22, 2026, Omni Bedford Springs Resort",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2024-10-11", "end": "2024-10-13",
+     "location": "Omni Bedford Springs Resort, Bedford, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.pana.org/page/FutureSymposia",
+     "evidence": "Fall Symposium- October 11-13, 2024, Omni Bedford Springs Resort",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "pana-spring-symposium",
+   "name": "PANA Spring Symposium",
+   "org": "Pennsylvania Association of Nurse Anesthetists (PANA)",
+   "org_url": "https://www.pana.org/page/Events",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia"],
+   "audience": ["clinician"],
+   "kind": "symposium",
+   "region": "near",
+   "recurrence": "annual, typically late April-early May",
+   "archive_url": "https://www.pana.org/page/FutureSymposia",
+   "editions": [
+    {
+     "start": "2027-04-29", "end": "2027-05-02",
+     "location": "The Hotel Hershey, Hershey, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "tba", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.pana.org/page/SpringSymposium",
+     "evidence": "2027 PANA Spring Symposium ... April 29 - May 2, 2027 ... The Hotel Hershey",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2026-04-30", "end": "2026-05-03",
+     "location": "The Hotel Hershey, Hershey, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.pana.org/page/Events",
+     "evidence": "PANA 2026 Spring Symposium - April 30-May 3, 2026, The Hotel Hershey",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2025-05-01", "end": "2025-05-04",
+     "location": "Hotel Hershey, Hershey, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.pana.org/page/FutureSymposia",
+     "evidence": "2025 Spring Symposium- May 1-4, 2025, Hotel Hershey",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "dana-annual-fall-meeting",
+   "name": "DANA Annual Fall Meeting",
+   "org": "Delaware Association of Nurse Anesthetists (DANA)",
+   "org_url": "https://www.delawareana.org/Events",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia"],
+   "audience": ["clinician"],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October",
+   "archive_url": "https://www.delawareana.org/Events",
+   "editions": [
+    {
+     "start": "2026-10-10", "end": "2026-10-10",
+     "location": "Chase Center on the Riverfront, Wilmington, DE",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.delawareana.org/event-6571840",
+     "evidence": "2026 Annual Fall Meeting | Saturday, October 10, 2026 | 7:00 AM - 4:30 PM | Chase Center on the Riverfront, 815 Shipyard Drive, Wilmington, Delaware 19801",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2025-10-10", "end": "2025-10-12",
+     "location": "The Atlantic Sands Hotel & Conference Center, Rehoboth Beach, DE",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.delawareana.org/event-5945294",
+     "evidence": "2025 DANA Annual Fall Meeting Start Friday, October 10, 2025 7:00 PM | End Sunday, October 12, 2025 11:30 AM",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2024-10-12", "end": "2024-10-12",
+     "location": "The St. Anne's Golf Links, Middletown, DE",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.delawareana.org/event-5569467",
+     "evidence": "2024 DANA Annual Fall Meeting Saturday, October 12, 2024 7:00 AM - 4:30 PM",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "mana-maryland-fall-meeting",
+   "name": "MANA Fall Meeting",
+   "org": "Maryland Association of Nurse Anesthetists (MANA)",
+   "org_url": "https://www.crnasofmd.org/",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia"],
+   "audience": ["clinician"],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-11", "end": "2026-09-13",
+     "location": "Ashore Resort & Beach Club, Ocean City, MD",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.crnasofmd.org/2026-mana-fall-meeting",
+     "evidence": "2026 MANA Fall Meeting Friday, September 11th – Sunday, September 13th Ashore Resort & Beach Club | 10100 Coastal Highway, Ocean City, MD 21842",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "northeast-nurse-anesthesiology-summit",
+   "name": "Northeast Nurse Anesthesiology Summit",
+   "org": "Massachusetts Association of Nurse Anesthesiology (MANA), with CTANA, NHANA and RIANA",
+   "org_url": "https://www.masscrna.com/events",
+   "professions": ["CRNA"],
+   "specialty": ["anesthesia"],
+   "audience": ["clinician"],
+   "kind": "summit",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2027-03-05", "end": "2027-03-07",
+     "location": "Encore Boston Harbor, Everett, MA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "tba", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.masscrna.com/2027-northeast-nurse-anesthesiology-summit",
+     "evidence": "2027 Northeast Nurse Anesthesiology Summit ... March 5–7, 2027 ... Encore Boston Harbor Everett, Massachusetts",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aha-leadership-summit",
+   "name": "AHA Leadership Summit",
+   "org": "American Hospital Association",
+   "org_url": "https://leadershipsummit.aha.org/",
+   "professions": ["MD", "RN", "NP", "PA"],
+   "specialty": ["health system leadership", "care delivery"],
+   "audience": ["leader"],
+   "kind": "summit",
+   "region": "us",
+   "recurrence": "annual, typically July",
+   "audience_basis": "CEOs, COOs, CFOs, CMOs, CNOs, CIOs and other C-suite leaders, as well as VPs, Physician Leaders, Advanced Practice Professionals, Directors and Managers",
+   "editions": [
+    {
+     "start": "2027-07-18", "end": "2027-07-20",
+     "location": "San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "soon", "opens": "2026-10", "closes": null, "text": "Our Call for Speakers for the 2027 AHA Leadership Summit will open early October 2026.", "url": "https://leadershipsummit.aha.org/program/speaking-opportunities-ls"},
+     "source_url": "https://leadershipsummit.aha.org/",
+     "evidence": "The 2027 AHA Leadership Summit will take place in San Diego - July 18-20.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2026-07-12", "end": "2026-07-14",
+     "location": "Denver, CO",
+     "format": "in person",
+     "theme": "(Re)Designing Care Delivery and Operating Models for the Future",
+     "call": {"status": "closed", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://leadershipsummit.aha.org/",
+     "evidence": "2026 American Hospital Association Leadership Summit | July 12-14, 2026 | Denver, CO",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aacn-eds-for-deans",
+   "name": "Executive Development Series for Deans",
+   "org": "American Association of Colleges of Nursing (AACN)",
+   "org_url": "https://www.aacnnursing.org/deans-meeting",
+   "professions": ["RN"],
+   "specialty": ["academic nursing leadership"],
+   "audience": ["leader", "academic"],
+   "kind": "course",
+   "region": "near",
+   "recurrence": "annual, typically March (pre-conference to AACN Deans Annual Meeting)",
+   "audience_basis": "exclusive to the primary dean/director of AACN member schools of nursing",
+   "editions": [
+    {
+     "start": "2027-03-12", "end": "2027-03-13",
+     "location": "The Fairmont, Washington, DC",
+     "format": "in person",
+     "theme": "Better Conversations Everyday: Fostering Meaningful Partnerships",
+     "call": {"status": "none", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://www.aacnnursing.org/deans-meeting/eds-for-deans",
+     "evidence": "Executive Development Series for Deans ... March 12-13, 2027 ... The Fairmont, Washington, DC",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ponl-annual-nursing-leadership-conference",
+   "name": "PONL Annual Nursing Leadership Conference",
+   "org": "Pennsylvania Organization of Nurse Leaders (PONL)",
+   "org_url": "https://www.ponl.net/Events",
+   "professions": ["RN"],
+   "specialty": ["nursing leadership"],
+   "audience": ["leader"],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-01", "end": "2026-10-02",
+     "location": "Hilton Harrisburg, Harrisburg, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {"status": "closed", "opens": null, "closes": null, "text": null, "url": "https://ponl.net/Poster-Showcase"},
+     "source_url": "https://www.ponl.net/event-6558469",
+     "evidence": "2026 PONL Annual Nursing Leadership Conference ... Thursday, October 01, 2026 ... Friday, October 02, 2026 ... Hilton Harrisburg, Harrisburg, PA",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nyonl-annual-meeting-leadership-conference",
+   "name": "NYONL Annual Meeting and Leadership Conference",
+   "org": "New York Organization for Nursing Leadership (NYONL)",
+   "org_url": "https://nyonl.nursingnetwork.com/",
+   "professions": ["RN"],
+   "specialty": ["nursing leadership"],
+   "audience": ["leader"],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically late September",
+   "editions": [
+    {
+     "start": "2026-09-27", "end": "2026-09-29",
+     "location": "Westchester Marriott, Tarrytown, NY",
+     "format": "in person",
+     "theme": "Resilient Leadership in the Age of Disruption: Navigating Change, Empowering Innovation",
+     "call": {"status": "tba", "opens": null, "closes": null, "text": null, "url": null},
+     "source_url": "https://nyonl.nursingnetwork.com/nursing-events/150498-nyonl-34th-annual-meeting-and-leadership-conference",
+     "evidence": "NYONL 34th Annual Meeting and Leadership Conference Sunday, September 27, 2026 at 7:00am ET - Tuesday, September 29, 2026 at 12:00pm ET Tarrytown, NY",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {"org": "Competency & Credentialing Institute (CCI)", "url": "https://www.cc-institute.org/events/", "reason": "events page lists only sponsorships/exhibits at other orgs' meetings (Periop Leader Week, Periop Connect, ANCC Magnet, SCPN); no CCI-run or CRNFA-specific meeting"},
+  {"org": "AORN RN First Assistant Specialty Assembly", "url": "https://www.aorn.org/get-involved/periop-community/specialty-assemblies/rnfa", "reason": "no RNFA-specific dated meeting; assembly meets via Zoom and at AORN Global Surgical Conference (already listed)"},
+  {"org": "National Institute of First Assisting (SutureStar workshops)", "url": "https://www.rnfa.org/suturestar-workshops/class-locations/", "reason": "commercial RNFA skills workshops; only months/cities shown (e.g., Las Vegas Dec 2026), no exact dates"},
+  {"org": "Association of Surgical Assistants / NSAA Joint Conference", "url": "https://asa-nsaa.org/", "reason": "Apr 16-17, 2027 Tampa, but no wording admitting RNFAs/nurses; excluded per rule"},
+  {"org": "No RNFA association conference or perioperative APRN/RNFA symposium located", "url": null, "reason": "searches returned only RNFA education programs"},
+  {"org": "Connecticut Association of Nurse Anesthesiology (CTANA)", "url": "https://www.ctana.com/events", "reason": "no standalone annual meeting dates; CTANA co-hosts the Northeast Nurse Anesthesiology Summit (listed)"},
+  {"org": "AANA Assembly of School Faculty", "url": "https://www.aana.com/premier-event/edge/", "reason": "not separate: ASF became ADCE and the EDGE page carries the ADCE description; AANA event list shows only EDGE 2027 (skipped)"},
+  {"org": "American Association of Advanced Practice Leaders (AAAPL)", "url": "https://www.aaapl.org/", "reason": "homepage shows no events; /offerings returned HTTP 429"},
+  {"org": "National Nurse Practitioner Residency & Fellowship Training Consortium (NNPRFTC)", "url": "https://www.apppostgradtraining.com/about-us/events/", "reason": "now Consortium for Advanced Practice Providers - already listed"},
+  {"org": "Vizient / Advisory Board", "url": "https://www.vizient.com/events/vizient-connections-summit-2026", "reason": "no public APP-executive-specific summit found; Vizient Connections Summit is general"},
+  {"org": "Maryland Organization of Nurse Leaders (MONL)", "url": "https://mdonl.nursingnetwork.com/nursing-events", "reason": "no annual conference listed (only webinars and a gala)"},
+  {"org": "Stanford APP Leadership Certificate Program", "url": "https://med.stanford.edu/content/sm/cme/featured-programs/APPleadership.html/", "reason": "4-month online certificate, not a meeting"},
+  {"org": "AANA other national meetings", "url": "https://www.aana.com/events/category/aana-event/", "reason": "only EDGE, Mid-Year Assembly, Annual Congress (all skipped) plus a regional workshop"}
+ ]
+}

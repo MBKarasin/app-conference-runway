@@ -1,0 +1,150 @@
+{
+  "group": "G",
+  "series": [
+    {
+      "id": "aaaa-annual-conference",
+      "name": "AAAA Annual Conference",
+      "org": "American Academy of Anesthesiologist Assistants (AAAA)",
+      "org_url": "https://www.anesthetist.org/",
+      "professions": ["CAA"],
+      "specialty": ["anesthesia"],
+      "audience": ["clinician", "leader", "academic"],
+      "kind": "conference",
+      "region": "us",
+      "recurrence": "annual, typically April",
+      "editions": [
+        {
+          "start": "2026-04-09", "end": "2026-04-12",
+          "location": "Denver, CO", "format": "in person", "theme": null,
+          "call": {"status": "none"},
+          "source_url": "https://www.anesthetist.org/industry-calendar",
+          "evidence": "AAAA 2026 Annual Meeting April 9 - 12, 2026 | Denver, CO",
+          "checked": "2026-09-21", "source_reviewed": true
+        },
+        {
+          "start": "2027-04-15", "end": "2027-04-18",
+          "location": "Orlando, FL", "format": "in person", "theme": null,
+          "call": {"status": "tba"},
+          "source_url": "https://www.linkedin.com/posts/american-academy-of-anesthesiologists-assistants_aaaa2027-callforspeakers-anesthesiologistassistant-activity-7481057620322091008-Vu-Z",
+          "evidence": "Join us April 15-18, 2027, in Orlando, Florida",
+          "checked": "2026-09-21", "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "id": "acnp-national-conference",
+      "name": "ACNP National Conference",
+      "org": "Australian College of Nurse Practitioners (ACNP)",
+      "org_url": "https://www.acnp.org.au/",
+      "professions": ["NP", "Nursing"],
+      "specialty": ["multispecialty"],
+      "audience": ["clinician", "leader", "academic"],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual, typically September",
+      "editions": [
+        {
+          "start": "2027-09-09", "end": "2027-09-11",
+          "location": "Brisbane Convention & Exhibition Centre, Brisbane, Australia",
+          "format": "in person", "theme": null,
+          "call": {"status": "tba"},
+          "source_url": "https://www.acnp.org.au/conference-home-page",
+          "evidence": "National Conference 2027 | 9–11 September | Brisbane Convention & Exhibition Centre",
+          "checked": "2026-09-21", "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "id": "rcn-advanced-nurse-practitioner-conference",
+      "name": "RCN Advanced Nurse Practitioner Conference",
+      "org": "Royal College of Nursing (RCN)",
+      "org_url": "https://www.rcn.org.uk/",
+      "professions": ["NP", "Nursing"],
+      "specialty": ["advanced practice"],
+      "audience": ["clinician", "leader", "academic"],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "annual, typically October",
+      "editions": [
+        {
+          "start": "2026-10-02", "end": "2026-10-02",
+          "location": "20 Cavendish Square, London, United Kingdom",
+          "format": "hybrid", "theme": "The power of advanced nursing practice",
+          "call": {"status": "none"},
+          "source_url": "https://www.rcn.org.uk/news-and-events/events/uk-rcn-advanced-nurse-practitioner-conference-02102026",
+          "evidence": "02 Oct 2026, 09:00 - 16:30",
+          "checked": "2026-09-21", "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "id": "icn-npapn-network-conference",
+      "name": "ICN NP/APN Network Conference",
+      "org": "International Council of Nurses (ICN)",
+      "org_url": "https://www.icn.ch/",
+      "professions": ["NP", "Nursing"],
+      "specialty": ["advanced practice"],
+      "audience": ["clinician", "leader", "academic"],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "biennial; next dates await organizer publication",
+      "editions": [
+        {
+          "start": "2026-09-14", "end": "2026-09-17",
+          "location": "Nashville, TN", "format": "in person", "theme": null,
+          "call": {"status": "closed"},
+          "source_url": "https://www.icn.ch/events/icn-npapn-network-conference-2026",
+          "evidence": "14 September - 17 September 2026",
+          "checked": "2026-09-21", "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "id": "brics-nursing-conference",
+      "name": "4th BRICS+ Nursing Conference",
+      "org": "Democratic Nursing Organisation of South Africa (DENOSA)",
+      "org_url": "https://www.denosa.org.za/",
+      "professions": ["NP", "CNM", "Nursing"],
+      "specialty": ["advanced practice", "nursing leadership"],
+      "audience": ["clinician", "leader", "academic"],
+      "kind": "conference",
+      "region": "intl",
+      "recurrence": "next dates await organizer publication",
+      "editions": [
+        {
+          "start": "2026-10-21", "end": "2026-10-22",
+          "location": "Emperor's Palace, Johannesburg, South Africa",
+          "format": "in person", "theme": "Innovation, equity and workforce resilience",
+          "call": {"status": "closed", "closes": "2026-07-15", "text": "Abstract submission deadline extended to 15 July 2026", "url": "https://www.denosa.org.za/projects/brics-nursing-forum/"},
+          "source_url": "https://www.denosa.org.za/calling-for-abstracts-for-the-4th-brics-nursing-conference-to-be-held-on-21-22-october-2026-in-johannesburg-south-africa/",
+          "evidence": "scheduled for 21-22 October 2026 at the Emperor’s Palace in Johannesburg, South Africa",
+          "checked": "2026-09-21", "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "id": "puc-campinas-advanced-practice-nursing-symposium",
+      "name": "II Simpósio Internacional de Enfermagem – Práticas Avançadas",
+      "org": "Pontifícia Universidade Católica de Campinas (PUC-Campinas)",
+      "org_url": "https://www.puc-campinas.edu.br/",
+      "professions": ["NP", "Nursing"],
+      "specialty": ["advanced practice"],
+      "audience": ["clinician", "leader", "academic"],
+      "kind": "symposium",
+      "region": "intl",
+      "recurrence": "next dates await organizer publication",
+      "editions": [
+        {
+          "start": "2026-11-25", "end": "2026-11-27",
+          "location": "Auditório Monsenhor Salim, Campinas, Brazil",
+          "format": "in person", "theme": "Advanced nursing practice",
+          "call": {"status": "tba"},
+          "source_url": "https://www.even3.com.br/simposioenfermagem/",
+          "evidence": "A Faculdade de Enfermagem realizará, nos dias 25 a 27 de novembro",
+          "checked": "2026-09-21", "source_reviewed": true
+        }
+      ]
+    }
+  ],
+  "not_found": []
+}

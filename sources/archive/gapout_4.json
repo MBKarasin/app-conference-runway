@@ -1,0 +1,737 @@
+[
+ {
+  "id": "national-academy-of-medicine__nam-annual-meeting",
+  "found": [
+   {
+    "start": "2023-10-09",
+    "end": "2023-10-09",
+    "location": "National Academy of Sciences Building, Washington, DC",
+    "format": "hybrid",
+    "theme": "Women's Health: From Cells to Society",
+    "source_url": "https://nam.edu/event/womens-health-from-cells-to-society-nam-annual-meeting/",
+    "evidence": "2023-10-09 ... National Academy of Sciences Building in Washington, DC ... held both virtually and in person",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-21",
+    "end": "2024-10-21",
+    "location": "National Academy of Sciences Building, Washington, DC",
+    "format": "hybrid",
+    "theme": "Bridging Science, Practice, and Policy to Advance Mental Health",
+    "source_url": "https://nam.edu/event/bridging-science-practice-and-policy-to-advance-mental-health-nam-annual-meeting/",
+    "evidence": "2024-10-21 ... National Academy of Sciences Building in Washington, DC ... The event was held both virtually and in person",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Both found via links on archive_url past-meetings list."
+ },
+ {
+  "id": "national-association-of-neonatal-nurses__nann-annual-conference",
+  "found": [
+   {
+    "start": "2025-09-09",
+    "end": "2025-09-12",
+    "location": "Palm Springs, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nann.org/publication/conference-central-34/",
+    "evidence": "NANN 41st Annual Conference ... September 9-12, 2025 ... Palm Springs, California",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Past-conferences page skips 2025 (lists 2013-2024 and 2026+); 2025 taken from NANN Conference Central page. Venue not captured."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__napnap-new-jersey-chapter-conference",
+  "found": [
+   {
+    "start": "2025-11-01",
+    "end": "2025-11-01",
+    "location": "Seton Hall University College of Nursing, Nutley, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.napnap.org/event/new-jersey-chapter-fall-conference/",
+    "evidence": "11/1/2025 @ 8:00 am - 3:00 pm ... Seton Hall University College of Nursing, 123 Metro Blvd S-3114, Nutley, NJ",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": "https://community.napnap.org/newjerseychapter/conferences--events/chapter-conferences",
+  "note": "Chapter conferences page mentions a '2024 Spring Conference' (pricing only, no date/location). No 2023 edition found. 2025 entry is the chapter's Fall Conference; confirm it is the same series."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__national-conference-on-pediatric-health-care",
+  "found": [
+   {
+    "start": "2023-03-15",
+    "end": "2023-03-18",
+    "location": "Rosen Shingle Creek, Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.napnap.org/event/44th-national-conference-on-pediatric-health-care/",
+    "evidence": "3/15/2023 - 3/18/2023 ... Rosen Shingle Creek, 9939 Universal Blvd, Orlando, 32819",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-03-13",
+    "end": "2024-03-16",
+    "location": "Colorado Convention Center, Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.napnap.org/event/45th-national-conference-on-pediatric-health-care/",
+    "evidence": "3/13/2024 - 3/16/2024 ... Colorado Convention Center, 700 14th St, Denver, CO 80202",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-03-10",
+    "end": "2025-03-13",
+    "location": "Hyatt Regency Chicago, Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.napnap.org/event/46th-national-conference-on-pediatric-health-care/",
+    "evidence": "3/10/2025 @ 8:00 am - 3/13/2025 @ 2:00 pm ... Hyatt Regency Chicago, Chicago, IL",
+    "detail_url": "https://www.napnap.org/wp-content/uploads/NN-Prog-2025-Agenda-Pages.pdf",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Minor discrepancy 2025: event page says 3/10-3/13/2025; program agenda PDF runs SUNDAY, MARCH 9 through FRIDAY, MARCH 14 (likely pre/post-conference days). Event-page dates used."
+ },
+ {
+  "id": "society-of-critical-care-medicine__national-critical-care-awareness-and-recognition-m",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "Organizer page states 'May Is National Critical Care Awareness and Recognition Month' but gives only 2026 dates (Wear blue May 15, 2026). No year-specific 2023-2025 text found. Wayback Machine (web.archive.org) returned SITE_BLOCKED to WebFetch in this session, so no wayback fallback was possible."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__national-crna-week",
+  "found": [
+   {
+    "start": "2025-01-19",
+    "end": "2025-01-25",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.aana.com/event/national-crna-week-2025/",
+    "evidence": "January 19, 2025 - January 25, 2025",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Observance (no venue/format). aana.com/event/national-crna-week-2023/ and -2024/ return 404; no other dated organizer text found. Wayback Machine (web.archive.org) returned SITE_BLOCKED to WebFetch in this session, so no wayback fallback was possible."
+ },
+ {
+  "id": "society-of-hospital-medicine__national-hospitalist-day",
+  "found": [
+   {
+    "start": "2025-03-06",
+    "end": "2025-03-06",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/downloads/",
+    "evidence": "National Hospitalist Day is Thursday, March 6!",
+    "detail_url": "https://www.the-hospitalist.org/hospitalist/article/38609/leadership/shining-a-spotlight-on-national-hospitalist-day/",
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Rule: 'first Thursday in March annually' (not used to infer dates). 2025 FLAG: evidence lacks the year; year inferred from weekday (Thu Mar 6 = 2025) and SHM's The Hospitalist article dated 2025-03-04 saying 'March 6 as National Hospitalist Day'. Drop if strict year-in-text is required. 2023/2024: no dated organizer text; Wayback Machine (web.archive.org) returned SITE_BLOCKED to WebFetch in this session, so no wayback fallback was possible."
+ },
+ {
+  "id": "florida-association-of-neonatal-nurse-pr__national-neonatal-nurse-practitioner-symposium",
+  "found": [
+   {
+    "start": "2024-10-15",
+    "end": "2024-10-19",
+    "location": "Sheraton Sand Key, Clearwater Beach, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://fannp.org/_downloads/FANNP24Conference.pdf",
+    "evidence": "October 15-19, 2024 ... Sheraton Sand Key, Clearwater Beach, Florida",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023,
+   2025
+  ],
+  "archive_url": null,
+  "note": "FANNP23Conference.pdf and FANNP25Conference.pdf return 404; 2025 On-Demand page names the 36th Symposium 2025 but gives no dates/venue. Wayback Machine (web.archive.org) returned SITE_BLOCKED to WebFetch in this session, so no wayback fallback was possible."
+ },
+ {
+  "id": "academy-of-neonatal-nursing__national-neonatal-nurses-conference-fall",
+  "found": [
+   {
+    "start": "2023-09-06",
+    "end": "2023-09-09",
+    "location": "Horseshoe Hotel, Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.academyonline.org/page/PastConferences",
+    "evidence": "Fall 2023 National Neonatal & Advanced Practice Neonatal Nurses Conference Horseshoe Hotel Las Vegas, NV September 6-9, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "american-association-of-nurse-practition__national-nurse-practitioner-week",
+  "found": [
+   {
+    "start": "2023-11-12",
+    "end": "2023-11-18",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.aanp.org/news-feed/nurse-practitioner-profession-grows-to-385-000-strong",
+    "evidence": "From Nov. 12 to 18, AANP joins with patients, health care providers and local communities in celebrating",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-11-10",
+    "end": "2024-11-16",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.aanp.org/news-feed/governors-join-with-patients-to-honor-nurse-practitioners-during-national-np-week",
+    "evidence": "November 10-16, 2024",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-11-09",
+    "end": "2025-11-15",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.aanp.org/news-feed/nurse-practitioners-recognized-nationwide-during-national-np-week",
+    "evidence": "National Nurse Practitioner Week, Nov. 9–15, 2025",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Observance (no venue/format). 2023 FLAG: evidence sentence lacks year; year from the AANP article dateline (November 13, 2023)."
+ },
+ {
+  "id": "american-nurses-association__national-nurses-week",
+  "found": [
+   {
+    "start": "2024-05-06",
+    "end": "2024-05-12",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/ana-enterprise/nurses-week-2024/",
+    "evidence": "Nurses Week 2024 runs from May 6 - 12",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-05-06",
+    "end": "2025-05-12",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/news/news-releases/2025/american-nurses-enterprise-celebrates-the-power-of-nurses-during-national-nurses-week/",
+    "evidence": "kicks off National Nurses Week (May 6–12) with a powerful message: The Power of Nurses",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "ANA history page: 'begins each year on May 6th and ends on May 12th' (permanent since 1993) but no 2023-specific dated text found (2023 release covers Nurses Month May 1-31, 2023). 2025 FLAG: year from 2025 news-release URL/dateline, not in sentence."
+ },
+ {
+  "id": "aacn-critical-care-nurses__national-teaching-institute-nti",
+  "found": [
+   {
+    "start": "2023-05-22",
+    "end": "2023-05-24",
+    "location": "Pennsylvania Convention Center, Philadelphia, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacn.org/newsroom/nti-2023-begins-in-philadelphia",
+    "evidence": "NTI 2023 Begins in Philadelphia ... in-person May 22-24 (preconferences May 21) ... Pennsylvania Convention Center",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-05-20",
+    "end": "2024-05-22",
+    "location": "Colorado Convention Center, Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacn.org/newsroom/nti-2024-aacns-50th-conference-begins-in-denver",
+    "evidence": "NTI 2024 ... held May 20-22 (preconferences May 19) in downtown Denver at the Colorado Convention Center",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-05-19",
+    "end": "2025-05-21",
+    "location": "Ernest N. Morial Convention Center, New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacn.org/newsroom/nti-2025-begins-in-new-orleans",
+    "evidence": "NTI 2025 Begins in New Orleans ... held May 19-21 in New Orleans at the Ernest N. Morial Convention Center",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Years taken from AACN newsroom headlines; start dates exclude preconference days."
+ },
+ {
+  "id": "neurocritical-care-society__ncs-annual-meeting",
+  "found": [
+   {
+    "start": "2023-08-15",
+    "end": "2023-08-18",
+    "location": "Phoenix Convention Center, Phoenix, AZ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.neurocriticalcare.org/portals/0/docs/events/2023/Final_Prospectus_2023.pdf",
+    "evidence": "August 15-18, 2023 ... Phoenix Convention Center • Phoenix, Arizona",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-14",
+    "end": "2024-10-17",
+    "location": "Manchester Grand Hyatt San Diego, San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.neurocriticalcare.org/Portals/0/Annual%20Meeting/2024%20Annual%20Meeting/NCS%202024%20Digital%20AP_1.pdf?ver=3vfaF_Ra4mf_7Rzo9bLrHw%3D%3D",
+    "evidence": "October 14-17, 2024 ... Manchester Grand Hyatt San Diego",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Past-meetings page lists only city/year; dates from organizer PDFs."
+ },
+ {
+  "id": "new-jersey-emergency-nurses-association__nj-emergency-care-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "NJENA events list shows 46th Annual ECC = March 19-21, 2025 (Hard Rock, Atlantic City), implying 44th/45th in 2023/2024, but guessed event URLs 404, 2023/2024 Resources pages carry no conference dates, and some pages hit 429 rate limits. Wayback Machine (web.archive.org) returned SITE_BLOCKED to WebFetch in this session, so no wayback fallback was possible."
+ },
+ {
+  "id": "new-jersey-association-of-nurse-anesthet__njana-fall-meeting",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": "https://njana.com/meetings-events/",
+  "note": "Edition pages exist (njana.com/2023-fall-conference/: NJ Hospital Association, 760 Alexander Rd, Princeton; njana.com/2024-fall-meeting/: NJ Hospital Association, Princeton, hybrid) but neither states the meeting date, only sponsor deadlines (Oct 6, 2023; Sept 16, 2024). Not recorded."
+ },
+ {
+  "id": "new-jersey-association-of-nurse-anesthet__njana-spring-conference",
+  "found": [
+   {
+    "start": "2023-03-25",
+    "end": "2023-03-25",
+    "location": "Online",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://njana.com/2023-spring-conference/",
+    "evidence": "Spring 2023 Virtual Conference – March 25, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2024
+  ],
+  "archive_url": "https://njana.com/meetings-events/",
+  "note": "2024 page (njana.com/2024-spring-conference/) says 'Spring 2024 Virtual Conference' with no date (only sponsor artwork deadline April 3, 2024)."
+ },
+ {
+  "id": "new-jersey-league-for-nursing__njln-annual-convention",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "njln.org convention pages show only 2026/2027; no past-convention dates. Search budget exhausted before further lookup. Wayback Machine (web.archive.org) returned SITE_BLOCKED to WebFetch in this session, so no wayback fallback was possible."
+ },
+ {
+  "id": "national-league-for-nursing__nln-education-summit",
+  "found": [
+   {
+    "start": "2023-09-28",
+    "end": "2023-09-30",
+    "location": "National Harbor, MD",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nln.org/events/nln-summit/summit-2023-session-slides",
+    "evidence": "Thursday, September 28, 2023 Sessions 1A-2H ... Saturday, September 30, 2023 Sessions 8A-10J",
+    "detail_url": "https://www.nln.org/events/nln-summit/summit-2023-session-slides",
+    "via": "organizer"
+   },
+   {
+    "start": "2025-09-17",
+    "end": "2025-09-19",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nln.org/detail-pages/news/2025/03/26/pioneering-expert-in-artificial-intelligence-to-headline-national-league-for-nursing-2025-education-summit-focused-on-the-challenge-unraveling-the-mysteries-of-ai",
+    "evidence": "Save the Date for September 17-19 in Orlando, Florida",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2024
+  ],
+  "archive_url": null,
+  "note": "2023 location from NLN 2023 news release ('Education Summit at National Harbor just outside Washington, DC'). 2025 year from release title/URL. 2024 CONTRADICTION: NLN release says keynote at '2024 NLN Education Summit on Thursday, September 18' (Marriott Rivercenter, San Antonio) but Sept 18, 2024 was a Wednesday; end date not verbatim — left missing."
+ },
+ {
+  "id": "nebraska-nurses-association__nna-annual-convention",
+  "found": [
+   {
+    "start": "2023-10-06",
+    "end": "2023-10-07",
+    "location": "Lincoln Marriott Cornhusker Hotel, Lincoln, NE",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://members.nebraskanurses.org/calendar/Details/2023-nna-annual-convention-836248?sourceTypeId=Website",
+    "evidence": "Friday, October 6, 2023 7:00 AM - Saturday, October 7, 2023 11:30 AM ... Lincoln Marriott Cornhusker Hotel",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-03",
+    "end": "2024-10-04",
+    "location": "Crowne Plaza Kearney, Kearney, NE",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://members.nebraskanurses.org/calendar/Details/2024-nna-annual-convention-1100319?rendermode=print",
+    "evidence": "10/3/2024 - 10/4/2024 ... Crown Plaza Kearney ... 707 Talmadge St, Kearney, NE 68845",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "national-organization-of-nurse-practitio__nonpf-annual-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "domain blocked: nonpf.org event-detail pages (49th/50th/51st Annual Conference) returned 403; past-conferences page lists titles without dates."
+ },
+ {
+  "id": "national-organization-of-nurse-practitio__nonpf-fall-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "domain blocked: nonpf.org event pages returned 403; past-conferences page lists fall conference titles (e.g., 'AI in NP Education') without dates."
+ },
+ {
+  "id": "massachusetts-association-of-nurse-anest__northeast-nurse-anesthesiology-summit",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "masscrna.com shows only the 2027 Summit (March 5-7, 2027, Encore Boston Harbor); no past-summit info found — may be a new series. Not findable."
+ },
+ {
+  "id": "the-nurse-practitioner-association-new-y__npa-annual-conference-np26",
+  "found": [],
+  "still_missing": [
+   2023,
+   2025
+  ],
+  "archive_url": null,
+  "note": "domain blocked: thenpa.org pages (23AnnualConference, NP25 event_details) returned 403."
+ },
+ {
+  "id": "national-association-of-nurse-practition__npwh-annual-women-s-healthcare-conference",
+  "found": [],
+  "still_missing": [
+   2023
+  ],
+  "archive_url": null,
+  "note": "domain blocked: npwh.org event-details page returned 403 (connect.npwh.org SSL failure). npwh.org/page/2023-Annual-Conference says the 26th conference was held in San Diego, CA but gives no dates."
+ },
+ {
+  "id": "national-student-nurses-association__nsna-annual-convention",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "nsna.org meetings/events/press pages show only 2026-2027 conventions; no dated 2023-2025 organizer text found; search budget exhausted."
+ },
+ {
+  "id": "national-student-nurses-association__nsna-midyear-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "2023: NSNA president blog 'NSNA MidYear Convention 2023 San Diego, California' mentions Thursday November 2nd through November 4th sessions but no verbatim full date range with year — not recorded. 2024/2025 not found."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__nursing-advancement-professionals-conference",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024
+  ],
+  "archive_url": null,
+  "note": "Past-conferences page lists only 2025 (March 20-21, 2025, Coronado) and 2026; no 2023/2024 dates found on aacnnursing.org."
+ },
+ {
+  "id": "new-york-organization-for-nursing-leader__nyonl-annual-meeting-and-leadership-conference",
+  "found": [
+   {
+    "start": "2023-09-10",
+    "end": "2023-09-12",
+    "location": "Westchester Marriott, Tarrytown, NY",
+    "format": "in person",
+    "theme": "Unifying Our Voices: Nurse Leaders Building a Stronger Future",
+    "source_url": "https://nyonl.nursingnetwork.com/nursing-events/139707-nyonl-2023-annual-meeting-and-leadership-conference-unifying-our-voices-nurse-leaders-building-a-stronger-future",
+    "evidence": "Sunday, September 10, 2023 at 12:00pm ET - Tuesday, September 12, 2023 at 12:00pm ET",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-09-15",
+    "end": "2024-09-17",
+    "location": "Westchester Marriott, Tarrytown, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nyonl.nursingnetwork.com/nursing-events/142798-2024-nyonl-annual-meeting-and-leadership-conference",
+    "evidence": "Sunday, September 15, 2024 at 9:00am ET - Tuesday, September 17, 2024 at 12:00pm ET",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-09-07",
+    "end": "2025-09-09",
+    "location": "Westchester Marriott, Tarrytown, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nyonl.nursingnetwork.com/nursing-events/146048-nyonl-annual-meeting-and-leadership-conference",
+    "evidence": "Sunday, September 7, 2025 at 1:00pm ET - Tuesday, September 9, 2025 at 12:00pm ET",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": ""
+ },
+ {
+  "id": "new-york-state-association-of-nurse-anes__nysana-fall-educational-meeting",
+  "found": [
+   {
+    "start": "2023-09-29",
+    "end": "2023-10-01",
+    "location": "Sonesta Hotel White Plains, White Plains, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=37&Itemid=115&year=2023&month=09&day=29&title=nysana-fall-educational-meeting&uid=45ded6f51bce12d5be99f110a044664a",
+    "evidence": "NYSANA Regional Ultrasound & Fall Meeting ... Friday, September 29, 2023, 12:00 PM to Sunday, October 01, 2023",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-10-04",
+    "end": "2024-10-06",
+    "location": "The Gideon Putnam, Saratoga Springs, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=48&Itemid=115&year=2024&month=10&day=05&title=nysana-fall-meeting-2024-&uid=c4491df62dcf9a02e371d0a15d87ec25",
+    "evidence": "NYSANA Fall Meeting 2024 ... Friday, October 04, 2024, 8:00 AM to Sunday, October 06, 2024",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-09-19",
+    "end": "2025-09-21",
+    "location": "Hyatt Place Long Island East End, Riverhead, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.nysana.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=69&Itemid=115&year=2025&month=09&day=19&title=nysana-fall-meeting-2025&uid=8b46927909619babde15299f77571895",
+    "evidence": "NYSANA Fall Meeting and Difficult Airway Workshop ... Friday, September 19, 2025, 10:00 AM to Sunday, September 21, 2025",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Calendar times as quoted by fetch tool; 2023 agenda PDF also at nysana.com/assets/FallMeeting/NYSANA%20Fall%20Educational%20Meeting%20Agenda%202023.pdf (not read)."
+ },
+ {
+  "id": "new-york-state-association-of-nurse-anes__nysana-research-symposium",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "A 2024 'Virtual Research Symposium (week 1 of 2)' calendar entry exists (nysana.com jevents evid=41, dated 2024-05-04 in URL) but fetch was refused by proxy rate limit (429), so no verbatim text. 2023/2025 not found."
+ },
+ {
+  "id": "oncology-nursing-society__ons-congress",
+  "found": [
+   {
+    "start": "2023-04-26",
+    "end": "2023-04-30",
+    "location": "Henry B. Gonzalez Convention Center, San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ons.org/education-hub/events/congress/blog/rejuvenate-refocus-revitalize-heres-what-expect-48th-annual-ons",
+    "evidence": "Join us at the Henry B. Gonzalez Convention Center in downtown San Antonio, TX, for the 48th Annual ONS Congress® from April 26–30, 2023!",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2024-04-24",
+    "end": "2024-04-28",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ons.org/congress/blog/reflecting-ons-congressr-2023",
+    "evidence": "the 49th Annual ONS Congress held April 24–28, 2024, in Washington, DC",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "2024 comes from a forward reference in the 2023 recap blog; venue not stated."
+ },
+ {
+  "id": "american-academy-of-physician-associates__pa-week",
+  "found": [],
+  "still_missing": [
+   2023,
+   2024,
+   2025
+  ],
+  "archive_url": null,
+  "note": "AAPA page: 'PA Week runs every year from October 6-12.' No year-specific text found; not inferred. Search budget exhausted."
+ },
+ {
+  "id": "physician-assistant-education-associatio__paea-education-forum",
+  "found": [
+   {
+    "start": "2023-10-11",
+    "end": "2023-10-14",
+    "location": "Hyatt Regency New Orleans, New Orleans, LA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://e1.nmcdn.io/assets/paea/wp-content/uploads/2024/03/2023-Forum-Event-Summary.pdf",
+    "evidence": "This year's Education Forum took place in New Orleans, Louisiana, from October 11 to 14.",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [
+   2025
+  ],
+  "archive_url": null,
+  "note": "2023 year from the organizer-linked '2023 Forum Event Summary' PDF title. 2025: sessions on-demand site (2025paeaforum.eventscribe.net) shows no dates/location."
+ },
+ {
+  "id": "pennsylvania-association-of-nurse-anesth__pana-fall-symposium",
+  "found": [
+   {
+    "start": "2023-10-13",
+    "end": "2023-10-15",
+    "location": "Omni Bedford Springs Resort, Bedford, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.pana.org/page/FutureSymposia",
+    "evidence": "Fall Symposium - October 13-15, 2023, Omni Bedford Springs Resort",
+    "detail_url": null,
+    "via": "organizer"
+   },
+   {
+    "start": "2025-11-14",
+    "end": "2025-11-16",
+    "location": "Omni Bedford Springs Resort, Bedford, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.pana.org/page/Events",
+    "evidence": "PANA 2025 Fall Symposium - November 14-November 16, 2025, Omni Bedford Springs Resort",
+    "detail_url": null,
+    "via": "organizer"
+   }
+  ],
+  "still_missing": [],
+  "archive_url": null,
+  "note": "Inconsistency: FutureSymposia page omits a Fall 2025 symposium (jumps from Spring 2025 to Fall 2026), while the Events page lists Nov 14-16, 2025. City 'Bedford, PA' added from resort name."
+ }
+]

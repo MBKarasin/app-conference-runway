@@ -1,0 +1,1099 @@
+{
+ "group": "B",
+ "series": [
+  {
+   "id": "napnap-national-conference",
+   "name": "National Conference on Pediatric Health Care",
+   "org": "National Association of Pediatric Nurse Practitioners (NAPNAP)",
+   "org_url": "https://www.napnap.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "pediatrics"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2027-03-21",
+     "end": "2027-03-24",
+     "location": "Sacramento, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": null,
+      "text": "The call for abstracts submissions for concurrent sessions is closed. ... The call for the poster abstracts is open now",
+      "url": "https://www.napnap.org/national-conference/"
+     },
+     "source_url": "https://www.napnap.org/national-conference/",
+     "evidence": "Sunday, March 21 – Wednesday, March 24, 2027, in Sacramento, California",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "apna-annual-conference",
+   "name": "APNA Annual Conference",
+   "org": "American Psychiatric Nurses Association",
+   "org_url": "https://www.apna.org/",
+   "professions": [
+    "RN",
+    "NP"
+   ],
+   "specialty": [
+    "psychiatric-mental health"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-28",
+     "end": "2026-10-31",
+     "location": "Phoenix Convention Center, Phoenix, AZ",
+     "format": "hybrid",
+     "theme": "Building on Strengths: A Resiliency Journey to Improve Wellness & Advance Care",
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": "Abstracts are due Monday, March 2",
+      "url": "https://www.apna.org/apna-annual-conference/"
+     },
+     "source_url": "https://www.apna.org/apna-annual-conference/",
+     "evidence": "October 28-31, 2026 Phoenix, Arizona",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-27",
+     "end": "2027-10-30",
+     "location": "Minneapolis, MN",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.apna.org/apna-annual-conference/",
+     "evidence": "41st Annual Conference, October 27-30 in Minneapolis, Minnesota [listed under 2027]",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-10-11",
+     "end": "2028-10-14",
+     "location": "Disney's Coronado Springs Resort, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.apna.org/apna-annual-conference/",
+     "evidence": "42nd Annual Conference, October 11-14 at Disney's Coronado Springs Resort, Florida [listed under 2028]",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-10-03",
+     "end": "2029-10-06",
+     "location": "New Orleans, LA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.apna.org/apna-annual-conference/",
+     "evidence": "43rd Annual Conference, October 3-6 in New Orleans, Louisiana [listed under 2029]",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "apna-clinical-psychopharmacology-institute",
+   "name": "APNA Clinical Psychopharmacology Institute",
+   "org": "American Psychiatric Nurses Association",
+   "org_url": "https://www.apna.org/",
+   "professions": [
+    "RN",
+    "NP"
+   ],
+   "specialty": [
+    "psychiatric-mental health",
+    "pharmacology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "course",
+   "region": "near",
+   "recurrence": "annual, typically June",
+   "editions": [
+    {
+     "start": "2027-06-10",
+     "end": "2027-06-13",
+     "location": "Reston, VA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.apna.org/apna-annual-conference/",
+     "evidence": "APNA Clinical Psychopharmacology Institute, June 10-13 in Reston, VA [listed under 2027]",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "npwh-annual-conference",
+   "name": "NPWH Annual Women's Healthcare Conference",
+   "org": "National Association of Nurse Practitioners in Women's Health (NPWH)",
+   "org_url": "https://npwh.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "women's health"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-23",
+     "end": "2026-09-25",
+     "location": "Greater Richmond Convention Center, Richmond, VA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-05-03",
+      "text": "Clinical abstracts: April 5; Research or innovative, student research or innovative, and industry abstracts are due May 3",
+      "url": "https://npwh.org/page/Abstracts"
+     },
+     "source_url": "https://npwh.org/m/event_details.asp?id=1984651",
+     "evidence": "September 23 - 25, 2026 8:00 AM ... Greater Richmond Convention Center in Richmond, Virginia",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "gapna-engage",
+   "name": "GAPNA ENGAGE (Annual Conference)",
+   "org": "Gerontological Advanced Practice Nurses Association",
+   "org_url": "https://www.gapna.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "geriatrics"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-24",
+     "end": "2026-09-26",
+     "location": "Hilton Orlando Lake Buena Vista - Disney Springs Area Hotel, Lake Buena Vista, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.gapna.org/engage26",
+     "evidence": "Join us September 24-26, 2026, at the Hilton Orlando Lake Buena Vista - Disney Springs Area Hotel",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-09-24",
+     "end": "2027-09-26",
+     "location": "Town and Country, San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.gapna.org/about/monthlyeventscalendar",
+     "evidence": "ENGAGE27 – Town and Country San Diego, CA ... Friday, September 24, 2027 - Sunday, September 26, 2027",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "gapna-pharmacon",
+   "name": "GAPNA PharmaCon",
+   "org": "Gerontological Advanced Practice Nurses Association",
+   "org_url": "https://www.gapna.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "geriatrics",
+    "pharmacology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March/April",
+   "editions": [
+    {
+     "start": "2026-03-19",
+     "end": "2026-03-21",
+     "location": "Renaissance Austin Hotel, Austin, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.gapna.org/pharmacon26",
+     "evidence": "March 19-21, 2026, in Austin, Texas",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-04-06",
+     "end": "2027-04-10",
+     "location": "Hilton Hawaiian Village – Waikiki Beach, Honolulu, HI",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.gapna.org/about/monthlyeventscalendar",
+     "evidence": "PharmaCon27 – Hilton Hawaiian Village – Waikiki Beach – Honolulu, HI ... Tuesday, April 6, 2027 - Saturday, April 10, 2027",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ons-congress",
+   "name": "ONS Congress",
+   "org": "Oncology Nursing Society",
+   "org_url": "https://www.ons.org/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "oncology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically April/May",
+   "editions": [
+    {
+     "start": "2026-05-13",
+     "end": "2026-05-17",
+     "location": "San Antonio, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://help.ons.org/support/solutions/articles/151000164013-when-and-where-are-the-future-ons-congress-events-taking-place-",
+     "evidence": "51st Annual ONS Congress May 13-17, 2026 San Antonio, TX",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-04-14",
+     "end": "2027-04-18",
+     "location": "Walter E. Washington Convention Center, Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": null,
+      "closes": "2026-09-24",
+      "text": "Submit by September 24, 2026",
+      "url": "https://www.ons.org/education-hub/events/ons-congress"
+     },
+     "source_url": "https://help.ons.org/support/solutions/articles/151000164013-when-and-where-are-the-future-ons-congress-events-taking-place-",
+     "evidence": "52nd Annual ONS Congress April 14-18, 2027 Washington, DC",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-05-17",
+     "end": "2028-05-21",
+     "location": "Denver, CO",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://help.ons.org/support/solutions/articles/151000164013-when-and-where-are-the-future-ons-congress-events-taking-place-",
+     "evidence": "53rd Annual ONS Congress May 17-21, 2028 Denver, CO",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-05-16",
+     "end": "2029-05-20",
+     "location": "San Antonio, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.ons.org/education-hub/events/ons-congress/schedule",
+     "evidence": "54th Annual: May 16–20, 2029 | San Antonio, TX",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-04-10",
+     "end": "2030-04-14",
+     "location": "Washington, DC",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.ons.org/education-hub/events/ons-congress/schedule",
+     "evidence": "55th Annual: April 10–14, 2030 | Washington, DC",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aaacn-annual-conference",
+   "name": "AAACN Annual Conference",
+   "org": "American Academy of Ambulatory Care Nursing",
+   "org_url": "https://www.aaacn.org/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "ambulatory care"
+   ],
+   "audience": [
+    "clinician",
+    "leader"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "editions": [
+    {
+     "start": "2026-04-14",
+     "end": "2026-04-18",
+     "location": "Hilton Orlando Lake Buena Vista, Lake Buena Vista, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aaacn.org/sites/default/files/documents/AAACN_26_call_oral_abstracts-revised.pdf",
+     "evidence": "2026 Annual Conference April 14-18, 2026 Hilton Orlando Lake Buena Vista Lake Buena Vista, FL",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-04-27",
+     "end": "2027-04-30",
+     "location": "New Orleans Marriott, New Orleans, LA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": "2026-08-14",
+      "text": "the deadline for abstract submissions is August 14, 2026 at 11:59 pm ET.",
+      "url": "https://www.aaacn.org/publications-news/2027-call-abstracts"
+     },
+     "source_url": "https://www.aaacn.org/events/annual-conference",
+     "evidence": "April 27-30, 2027 New Orleans Marriott New Orleans, LA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-04-10",
+     "end": "2028-04-14",
+     "location": "Hilton Hawaiian Village - Waikiki Beach Resort, Honolulu, HI",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aaacn.org/events/annual-conference",
+     "evidence": "April 10-14, 2028 Hilton Hawaiian Village - Waikiki Beach Resort Honolulu, HI",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-04-10",
+     "end": "2029-04-13",
+     "location": "Philadelphia Marriott Downtown, Philadelphia, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aaacn.org/events/annual-conference",
+     "evidence": "April 10-13, 2029 Philadelphia Marriott Downtown Philadelphia, PA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-04-03",
+     "end": "2030-04-05",
+     "location": "The Galt House Hotel, Louisville, KY",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.aaacn.org/events/annual-conference",
+     "evidence": "April 3-5, 2030 The Galt House Hotel Louisville, KY",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nacns-annual-conference",
+   "name": "NACNS Annual Conference",
+   "org": "National Association of Clinical Nurse Specialists",
+   "org_url": "https://nacns.org/",
+   "professions": [
+    "CNS"
+   ],
+   "specialty": [
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician",
+    "leader"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2026-03-09",
+     "end": "2026-03-12",
+     "location": "San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://nacns.org/news-events/annual-conference/2026-annual-conference/",
+     "evidence": "From March 9-12, 2026 join your peers in San Diego, CA for four days of advancing our role.",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-03-01",
+     "end": "2027-03-04",
+     "location": "Loews Kansas City Hotel, Kansas City, MO",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": "2026-07-14",
+      "closes": "2026-09-27",
+      "text": "Professional presentations: closes Thursday, August 13, 2026, at 11:59 PM EDT. Student posters: closes Sunday, September 27, 2026, 11:59 PM ET; there will be no deadline extensions",
+      "url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/"
+     },
+     "source_url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/",
+     "evidence": "March 1 – 4, 2027 ... Loews Kansas City Hotel, 1515 Wyandotte Street, Kansas City, Missouri, 64108",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "pcnp-annual-conference",
+   "name": "PCNP Annual Education Conference",
+   "org": "Pennsylvania Coalition of Nurse Practitioners",
+   "org_url": "https://www.pacnp.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October/November",
+   "editions": [
+    {
+     "start": "2025-11-13",
+     "end": "2025-11-15",
+     "location": "Kalahari Resort, Pocono Manor, PA",
+     "format": "in person",
+     "theme": "Bold Minds. Big Outcomes. NP Impact.",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://pacnp.enpnetwork.com/",
+     "evidence": "November 13–15, 2025 | Kalahari Resort, Pocono Manor, PA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2026-10-15",
+     "end": "2026-10-17",
+     "location": "Bayfront Convention Center, Erie, PA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://pacnp.enpnetwork.com/nurse-practitioner-events/149679-2026-pcnp-annual-education-conference",
+     "evidence": "Thursday, October 15, 2026 at 12:00pm ET - Saturday, October 17, 2026 at 9:00pm ET",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "npa-nys-annual-conference",
+   "name": "NPA Annual Conference (NP26)",
+   "org": "The Nurse Practitioner Association New York State",
+   "org_url": "https://www.thenpa.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "primary care",
+    "multispecialty"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "near",
+   "recurrence": "annual, typically October",
+   "editions": [
+    {
+     "start": "2026-10-01",
+     "end": "2026-10-04",
+     "location": "Niagara Falls, NY",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": "2026-03-01",
+      "closes": "2026-08-01",
+      "text": "March 1 - August 1, 2026",
+      "url": "https://www.thenpa.org/page/NP26"
+     },
+     "source_url": "https://www.thenpa.org/page/NP26",
+     "evidence": "NP26 Annual Conference ... October 1- 4 - Niagara Falls, NY",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2024-10-17",
+     "end": "2024-10-20",
+     "location": "Saratoga Springs, NY",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.thenpa.org/page/Conferences",
+     "evidence": "NPA Annual Conference -Saratoga Springs, NY October 17 - October 20, 2024",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aaenp-national-conference",
+   "name": "AAENP National Conference: EmergNP",
+   "org": "American Academy of Emergency Nurse Practitioners",
+   "org_url": "https://aaenp-natl.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "emergency"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-24",
+     "end": "2026-09-26",
+     "location": "Sheraton Grand Downtown, Nashville, TN",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "closed",
+      "opens": null,
+      "closes": null,
+      "text": "Proposals are being accepted until March 1",
+      "url": "https://aaenp-natl.org/event/2026-aaenp-national-conference-emergnp/"
+     },
+     "source_url": "https://aaenp-natl.org/event/2026-aaenp-national-conference-emergnp/",
+     "evidence": "Thursday, September 24 – Saturday, September 26, 2026 at the Sheraton Grand Downtown in Nashville, TN",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "hpna-annual-conference",
+   "name": "HPNA Annual Conference",
+   "org": "Hospice and Palliative Nurses Association (Advancing Expert Care)",
+   "org_url": "https://www.advancingexpertcare.org/",
+   "professions": [
+    "RN",
+    "NP"
+   ],
+   "specialty": [
+    "hospice and palliative care"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual",
+   "editions": [
+    {
+     "start": "2026-05-07",
+     "end": "2026-05-08",
+     "location": "Lake Buena Vista, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.advancingexpertcare.org/2026-hpna-annual-conference/",
+     "evidence": "May 7-8, 2026 | Lake Buena Vista, FL",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-09-22",
+     "end": "2027-09-24",
+     "location": "Renaissance Orlando at SeaWorld, Orlando, FL",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "soon",
+      "opens": null,
+      "closes": null,
+      "text": "Registration will open in September, with the Call for Abstracts opening later in the fall.",
+      "url": "https://www.advancingexpertcare.org/2027-hpna-annual-conference/"
+     },
+     "source_url": "https://www.advancingexpertcare.org/2027-hpna-annual-conference/",
+     "evidence": "September 22-24, 2027 for the 2027 HPNA Annual Conference at a new venue—the Renaissance Orlando at SeaWorld® in Orlando, Florida",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aahpm-hpna-annual-assembly",
+   "name": "Annual Assembly of Hospice and Palliative Care",
+   "org": "American Academy of Hospice and Palliative Medicine (AAHPM) and Hospice and Palliative Nurses Association (HPNA)",
+   "org_url": "https://aahpm.org/",
+   "professions": [
+    "MD",
+    "RN"
+   ],
+   "specialty": [
+    "hospice and palliative care"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2026-03-04",
+     "end": "2026-03-07",
+     "location": "San Diego Convention Center, San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://aahpm.org/education-events/annual-assembly/",
+     "evidence": "March 4-7, 2026 San Diego Convention Center San Diego, CA",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "ena-emergency-nursing",
+   "name": "Emergency Nursing (ENA Annual Conference)",
+   "org": "Emergency Nurses Association",
+   "org_url": "https://www.ena.org/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "emergency"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September",
+   "editions": [
+    {
+     "start": "2026-09-28",
+     "end": "2026-10-01",
+     "location": "Phoenix, AZ",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.ena.org/emergency-nursing-2026",
+     "evidence": "Sep 28, 2026 - Oct 01, 2026",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-09-15",
+     "end": "2027-09-18",
+     "location": "Kansas City Convention Center, Kansas City, MO",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://www.ena.org/events/emergency-nursing-2027",
+     "evidence": "Sep 15, 2027 - Sep 18, 2027 ... Kansas City Convention Center, 301 West 13th Street Kansas City, MO 64105",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "aann-annual-conference",
+   "name": "Neuroscience Nursing Annual Conference",
+   "org": "American Association of Neuroscience Nurses",
+   "org_url": "https://aann.org/",
+   "professions": [
+    "RN",
+    "NP"
+   ],
+   "specialty": [
+    "neurology",
+    "neuroscience"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "editions": [
+    {
+     "start": "2026-03-21",
+     "end": "2026-03-24",
+     "location": "Sheraton Dallas Hotel, Dallas, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://aann.org/meetings/future-meetings",
+     "evidence": "2026 Neuroscience Nursing Annual Conference Saturday, March 21- Tuesday, March 24, 2026 Sheraton Dallas Hotel, Dallas, TX",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-03-13",
+     "end": "2027-03-16",
+     "location": "The Westin Seattle, Seattle, WA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "open",
+      "opens": "2026-08-04",
+      "closes": "2026-10-02",
+      "text": "Opens: Tuesday, August 4, 2026; Closes: Friday, October 2, 2026",
+      "url": "https://app.oxfordabstracts.com/api/auth/aann/start"
+     },
+     "source_url": "https://aann.org/meetings/annual-educational-conference",
+     "evidence": "Saturday, March 13-Tuesday, March 16, 2027  The Westin Seattle, Seattle, WA",
+     "checked": "2026-09-21"
+    }
+   ]
+  },
+  {
+   "id": "nann-annual-conference",
+   "name": "NANN Annual Conference",
+   "org": "National Association of Neonatal Nurses",
+   "org_url": "https://nann.org/",
+   "professions": [
+    "RN"
+   ],
+   "specialty": [
+    "neonatology"
+   ],
+   "audience": [
+    "clinician"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically September/October",
+   "editions": [
+    {
+     "start": "2026-09-15",
+     "end": "2026-09-18",
+     "location": "West Palm Beach, FL",
+     "format": "in person",
+     "theme": "The Art of Neonatal Nursing: Care in Color",
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://nann.org/education/past-conferences/",
+     "evidence": "September 15–18, 2026 ... West Palm Beach, FL",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-10-06",
+     "end": "2027-10-08",
+     "location": "Las Vegas, NV",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://nann.org/education/past-conferences/",
+     "evidence": "October 6–8, 2027 ... Las Vegas, NV",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2028-09-13",
+     "end": "2028-09-15",
+     "location": "Dallas, TX",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://nann.org/education/past-conferences/",
+     "evidence": "September 13-15, 2028 ... Dallas, TX",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2029-08-28",
+     "end": "2029-08-31",
+     "location": "San Diego, CA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://nann.org/education/past-conferences/",
+     "evidence": "August 28-31, 2029 ... San Diego, CA",
+     "checked": "2026-09-21"
+    },
+    {
+     "start": "2030-09-10",
+     "end": "2030-09-13",
+     "location": "New Orleans, LA",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "tba",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://nann.org/education/past-conferences/",
+     "evidence": "September 10-13, 2030 ... New Orleans, LA",
+     "checked": "2026-09-21"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "National Nurse Practitioner Symposium (NNPS, Keystone)",
+   "url": "https://www.npsymposium.com/schedule",
+   "reason": "Organizer site shows 'Tuesday July 14' - 'Saturday July 18' with no year; no 2027 dates. Only year-bearing source (July 14-18, 2026, Keystone Conference Center) is an ENP Network listing, an aggregator - excluded."
+  },
+  {
+   "org": "NAPNAP (past 47th conference / future-dates page)",
+   "url": "https://www.napnap.org/Events/AnnualConference/FutureConf.aspx",
+   "reason": "Future-dates page 403; 47th conference shown as 'March 18-21' Pittsburgh with no year, so past edition omitted. /call-abstracts page is stale (2018 deadlines)."
+  },
+  {
+   "org": "American Association of Heart Failure Nurses (AAHFN)",
+   "url": "https://www.aahfn.org/page/FutureAnnualMeeting",
+   "reason": "aahfn.org returns 403 on every page tried; eventscribe page gave no year. No editions recorded."
+  },
+  {
+   "org": "NPWH 2027 conference",
+   "url": "https://npwh.org/events/eventdetails.aspx?id=1984651",
+   "reason": "No 2027 dates found; desktop event page 403 (mobile page used for 2026)."
+  },
+  {
+   "org": "AAHPM/HPNA Annual Assembly 2027",
+   "url": "https://aahpm.org/education-events/annual-assembly/",
+   "reason": "Organizer page shows only 2026; no 2027 dates published there."
+  },
+  {
+   "org": "ENP Network national events",
+   "url": "https://www.enpnetwork.com/nurse-practitioner-events",
+   "reason": "ENP Network is an event-listing/hosting platform, not a conference organizer; no own national conference found."
+  },
+  {
+   "org": "New Jersey NP associations (APN-NJ)",
+   "url": "https://apnnj.enpnetwork.com/nurse-practitioner-events",
+   "reason": "'No events were found'; apn-nj.org lists no conference. No NJ NP state conference with dates found."
+  },
+  {
+   "org": "AANP regional/specialty events",
+   "url": "https://www.aanp.org/events",
+   "reason": "Not researched in depth (AANP national meetings covered elsewhere)."
+  },
+  {
+   "org": "ENA advanced practice events / Global Emergency Nursing Conference",
+   "url": "https://www.ena.org/events?page=1",
+   "reason": "No APRN-specific ENA conference found; Global conference (Netherlands, Oct 21-23, 2027) not verified on its own page."
+  },
+  {
+   "org": "GAPNA / ENA / NANN / APNA 2027 calls for abstracts",
+   "url": "https://www.gapna.org/engage26",
+   "reason": "No abstract deadlines posted for next editions."
+  },
+  {
+   "org": "The NPA (NY) event detail page",
+   "url": "https://www.thenpa.org/events/EventDetails.aspx?id=2052239",
+   "reason": "403; dates taken from NP26 page and pricing page."
+  },
+  {
+   "org": "PCNP main site",
+   "url": "https://www.pacnp.org/page/2026_Annual_Conference",
+   "reason": "403; dates taken from PCNP's own ENP-hosted chapter site (pacnp.enpnetwork.com)."
+  }
+ ]
+}
