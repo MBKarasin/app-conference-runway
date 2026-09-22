@@ -649,3 +649,18 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 }
 .mast h1 a.home{color:inherit;text-decoration:none}
 .mast h1 a.home:hover .runway-word,.mast h1 a.home:focus-visible .runway-word{text-decoration:underline;text-decoration-color:#CC0033;text-underline-offset:6px}
+/* toolbar: List/Calendar on the left, Location on the right, same row; result count is screen-reader only */
+.bar .row2{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 18px;border-top:1px solid #CAD9DC;padding-top:8px}
+.bar .row2 .geoquick{border-top:0;padding-top:0;margin-left:auto;justify-content:flex-end}
+.summary.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:900px){.bar .row2 .geoquick{margin-left:0;justify-content:flex-start}}
+/* selected state is unmistakable everywhere: tabs, discipline, location (same treatment as List/Calendar) */
+.bar .tabs button[aria-selected="true"]{background:#102F3B!important;color:#FFFFFF!important;box-shadow:inset 0 -3px #CC0033!important;border-radius:3px}
+.bar .chip[aria-pressed="true"]{background:#102F3B!important;color:#FFFFFF!important;border-color:#102F3B!important;box-shadow:inset 0 -3px #CC0033!important;font-weight:800}
+.bar .geoquick #area:has(option:checked:not([value=""])),.bar .geoquick input:not(:placeholder-shown){background:#102F3B!important;color:#FFFFFF!important;border-color:#102F3B!important;box-shadow:inset 0 -3px #CC0033}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .bar .tabs button[aria-selected="true"],
+  :root:not([data-theme="light"]) .bar .chip[aria-pressed="true"],
+  :root:not([data-theme="light"]) .bar .geoquick #area:has(option:checked:not([value=""])),
+  :root:not([data-theme="light"]) .bar .geoquick input:not(:placeholder-shown){background:#E8EFF1!important;color:#0A1418!important;border-color:#E8EFF1!important}
+}
