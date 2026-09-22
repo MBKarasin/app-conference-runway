@@ -53,7 +53,8 @@
   const TABS = [["upcoming", "Upcoming"], ["deadlines", "Abstract deadlines"], ["students", "Students & DNP projects"], ["past", "Past"], ["directory", "Directory"]];
   const VSTATE = {
     verified: ["Start found", "check"], conflict: ["Organizer dates conflict", "warn"], not_found: ["Needs review", "warn"], unreachable: ["Not re-checked", "dash"],
-    unchecked: ["Not re-checked", "dash"], expected: ["Expected", "dash"], rule: ["Set by rule", "dash"]
+    unchecked: ["Not re-checked", "dash"], expected: ["Expected", "dash"], rule: ["Set by rule", "dash"],
+    archived: ["Recorded when published", "check"]
   };
 
   /* ---------- state, mirrored in the URL ---------- */
@@ -177,7 +178,8 @@
   }
   function verMatch(e) {
     if (!st.verifiedOnly) return true;
-    return e.verify.state === "rule" || (e.verify.state === "verified" && e.verify.evidence_match !== false);
+    return e.verify.state === "rule" || e.verify.state === "archived"
+      || (e.verify.state === "verified" && e.verify.evidence_match !== false);
   }
   function edMatch(e) {
     if (!seriesMatch(e.s, st.view === "students") || !placeMatch(e) || !verMatch(e)) return false;
@@ -194,7 +196,7 @@
     const v = e.verify || { state: "unchecked" };
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
     const drift = v.state === "verified" && v.method !== "manual" && v.evidence_match === false;
-    if (exceptionsOnly && ((v.state === "verified" && !drift) || v.state === "rule")) return "";
+    if (exceptionsOnly && ((v.state === "verified" && !drift) || v.state === "rule" || v.state === "archived")) return "";
     const label = v.state === "verified" && v.method === "manual" ? "Source reviewed" : drift ? "Source wording changed" : baseLabel;
     const when = v.state === "verified" && v.last_verified ? " " + md(v.last_verified.slice(0, 10)) : "";
     const tip = v.state === "verified" && v.method === "manual" ? "The organizer's source was manually reviewed for this date range. Review date appears on this label; confirm details before booking." :
@@ -203,6 +205,7 @@
       v.state === "not_found" ? "The nightly check could not find these dates on the organizer page. Confirm before relying on them." :
       v.state === "conflict" ? (v.why || "The organizer publishes conflicting dates; confirm the final date before relying on it.") :
       v.state === "expected" ? "Projected from this meeting's usual month. No date has been published." :
+      v.state === "archived" ? "The meeting has ended. The date is kept as the organizer's page read when it was recorded, and is not re-checked, because organizers replace the page with the next edition." :
       v.state === "rule" ? "Computed from the organizer's published rule for this observance." :
       "The organizer page could not be read automatically" + (v.why ? " (" + v.why + ")" : "") + ". Shown as compiled on " + (e.compiled || "") + ".";
     if (exceptionsOnly) {
@@ -498,7 +501,7 @@
         ${s.recurrence ? `<dt>Recurs</dt><dd>${esc(s.recurrence)}</dd>` : ""}
         <dt>Focus</dt><dd>${(s.focus || []).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curator tags)</span></dd>
         ${s.np_pa_basis ? `<dt>Why it's here</dt><dd>${esc(s.np_pa_basis)}</dd>` : ""}
-        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} · compiled ${esc(e.compiled || "")}${v.last_verified ? " · " + (v.method === "manual" ? "manually reviewed" : "start checked") + " " + esc(longDate(v.last_verified.slice(0, 10))) : ""}${v.why && v.state !== "verified" ? ` · <span class="fine">${esc(v.why)}</span>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
+        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} · compiled ${esc(e.compiled || "")}${v.last_verified ? " · " + (v.method === "manual" ? "manually reviewed" : "start checked") + " " + esc(longDate(v.last_verified.slice(0, 10))) : ""}${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${v.why && v.state !== "verified" ? ` · <span class="fine">${esc(v.why)}</span>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
       </dl>
       ${e.evidence && v.evidence_match ? `<blockquote class="quote" title="Text found on the organizer page at the last check">“${esc(e.evidence)}”</blockquote>` : ""}
       ${e.sessions && e.sessions.length ? `<div><p class="flabel">Sessions & courses</p><ul class="sessions">${e.sessions.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
