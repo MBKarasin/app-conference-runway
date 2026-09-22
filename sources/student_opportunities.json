@@ -1,16 +1,167 @@
 {
-  "reviewed": "2026-09-21",
-  "editions": {
-    "7111b734f1a9": {"category":"project","kind":"Student research / innovation","detail":"Student research and innovative clinical-project posters. The 2026 submission deadline was May 3.","url":"https://npwh.org/page/abstracts","roles":["NP"]},
-    "2d8faec4e7af": {"category":"project","kind":"DNP, EBP and QI projects","detail":"The organizer explicitly welcomes DNP capstones and other student EBP or QI projects as posters. The 2026 abstract call has closed.","url":"https://www.nursingworld.org/globalassets/ancc/research/2026-ane-research-symposium-call-for-abstracts-extended.pdf","roles":["NP","AGACNP","CRNA","CNS","CNM","Nursing"]},
-    "50174aca501e": {"category":"project","kind":"DNP and capstone posters","detail":"APNA's 2026 poster awards recognize student thesis and capstone work, including DNP projects. Poster submission has closed.","url":"https://www.apna.org/apna-annual-conference/poster-presenter-toolkit/poster-presenter-toolkit-awards/","roles":["NP","AGACNP","CNS","Nursing"]},
-    "98da2c267857": {"category":"project","kind":"Student posters","detail":"Dedicated 2027 student-poster call for the CNS conference. Student abstracts are due September 27, 2026, at 11:59 p.m. Eastern.","url":"https://nacns.org/news-events/annual-conference/2027-annual-conference/","deadline":"2026-09-27","roles":["CNS"]},
-    "b9f577965d09": {"category":"project","kind":"CAA student posters","detail":"Students can submit for a live Hopkins Award presentation or a physical poster display. Deadline: February 5, 2027, 11:59 p.m. Eastern.","url":"https://www.anesthetist.org/aaaa-posters-2027","deadline":"2027-02-05","roles":["CAA"]},
-    "47b8521ad757": {"category":"project","kind":"DNP project award","detail":"AACN presents its outstanding DNP final-project award and recipient abstract at the Doctoral Education Conference. The current award cycle has closed.","url":"https://www.aacnnursing.org/membership/volunteer-engage/aacn-awards/phd-dnp-projects","roles":["NP","AGACNP","CRNA","CNS","CNM","Nursing"]},
-    "28634019fea8": {"category":"project","kind":"Student abstracts worldwide","detail":"The International Council of Nurses invites students worldwide to submit congress abstracts. Check the organizer for the current submission window.","url":"https://www.icn.ch/news/icn-monthly-update-april-may-2026","roles":["NP","AGACNP","CRNA","CNS","CNM","Nursing"]},
-    "a9ff725ba15b": {"category":"student","kind":"Student-centered meeting","detail":"Nursing specialty panels, career preparation, networking and student presentations at the NSNA MidYear Conference.","url":"https://www.nsna.org/program/nsnamidyear","roles":["Nursing"]},
-    "0a2ff5b7cee1": {"category":"student","kind":"Student-centered meeting","detail":"Nursing-student convention with specialty workshops, career development and networking.","url":"https://www.nsna.org/program/nsna-convention","roles":["Nursing"]},
-    "c3d8a04559de": {"category":"student","kind":"PA student and Pre-PA program","detail":"The 2027 agenda includes a student networking lounge, student presentations and a Pre-PA workshop.","url":"https://www.aapa.org/wp-content/uploads/2026/05/AC-27.002-AAPA-2027-Conference-Website_Agenda-PDF-8.5x11in-4.23.26.pdf","roles":["PA"]},
-    "4963c59b8b50": {"category":"student","kind":"NP student registration","detail":"The 2027 Health Policy Conference publishes an AANP student-member registration category and rate.","url":"https://www.aanp.org/events/2027-hpc","roles":["NP","AGACNP"]}
+ "reviewed": "2026-09-21",
+ "editions": {
+  "7111b734f1a9": {
+   "category": "project",
+   "kind": "Student research / innovation",
+   "detail": "Student research and innovative clinical-project posters. The 2026 submission deadline was May 3.",
+   "url": "https://npwh.org/page/abstracts",
+   "roles": [
+    "NP"
+   ]
+  },
+  "2d8faec4e7af": {
+   "category": "project",
+   "kind": "DNP, EBP and QI projects",
+   "detail": "The organizer explicitly welcomes DNP capstones and other student EBP or QI projects as posters. The 2026 abstract call has closed.",
+   "url": "https://www.nursingworld.org/globalassets/ancc/research/2026-ane-research-symposium-call-for-abstracts-extended.pdf",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "50174aca501e": {
+   "category": "project",
+   "kind": "DNP and capstone posters",
+   "detail": "APNA's 2026 poster awards recognize student thesis and capstone work, including DNP projects. Poster submission has closed.",
+   "url": "https://www.apna.org/apna-annual-conference/poster-presenter-toolkit/poster-presenter-toolkit-awards/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNS",
+    "Nursing"
+   ]
+  },
+  "98da2c267857": {
+   "category": "project",
+   "kind": "Student posters",
+   "detail": "Dedicated 2027 student-poster call for the CNS conference. Student abstracts are due September 27, 2026, at 11:59 p.m. Eastern.",
+   "url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/",
+   "deadline": "2026-09-27",
+   "roles": [
+    "CNS"
+   ]
+  },
+  "b9f577965d09": {
+   "category": "project",
+   "kind": "CAA student posters",
+   "detail": "Students can submit for a live Hopkins Award presentation or a physical poster display. Deadline: February 5, 2027, 11:59 p.m. Eastern.",
+   "url": "https://www.anesthetist.org/aaaa-posters-2027",
+   "deadline": "2027-02-05",
+   "roles": [
+    "CAA"
+   ]
+  },
+  "47b8521ad757": {
+   "category": "project",
+   "kind": "DNP project award",
+   "detail": "AACN presents its outstanding DNP final-project award and recipient abstract at the Doctoral Education Conference. The current award cycle has closed.",
+   "url": "https://www.aacnnursing.org/membership/volunteer-engage/aacn-awards/phd-dnp-projects",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "28634019fea8": {
+   "category": "project",
+   "kind": "Student abstracts worldwide",
+   "detail": "The International Council of Nurses invites students worldwide to submit congress abstracts. Check the organizer for the current submission window.",
+   "url": "https://www.icn.ch/news/icn-monthly-update-april-may-2026",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "a9ff725ba15b": {
+   "category": "student",
+   "kind": "Student-centered meeting",
+   "detail": "Nursing specialty panels, career preparation, networking and student presentations at the NSNA MidYear Conference.",
+   "url": "https://www.nsna.org/program/nsnamidyear",
+   "roles": [
+    "Nursing"
+   ]
+  },
+  "0a2ff5b7cee1": {
+   "category": "student",
+   "kind": "Student-centered meeting",
+   "detail": "Nursing-student convention with specialty workshops, career development and networking.",
+   "url": "https://www.nsna.org/program/nsna-convention",
+   "roles": [
+    "Nursing"
+   ]
+  },
+  "c3d8a04559de": {
+   "category": "student",
+   "kind": "PA student and Pre-PA program",
+   "detail": "The 2027 agenda includes a student networking lounge, student presentations and a Pre-PA workshop.",
+   "url": "https://www.aapa.org/wp-content/uploads/2026/05/AC-27.002-AAPA-2027-Conference-Website_Agenda-PDF-8.5x11in-4.23.26.pdf",
+   "roles": [
+    "PA"
+   ]
+  },
+  "4963c59b8b50": {
+   "category": "student",
+   "kind": "NP student registration",
+   "detail": "The 2027 Health Policy Conference publishes an AANP student-member registration category and rate.",
+   "url": "https://www.aanp.org/events/2027-hpc",
+   "roles": [
+    "NP",
+    "AGACNP"
+   ]
+  },
+  "d4d9fb2509c4": {
+   "category": "student",
+   "kind": "DNP student events and poster pitch",
+   "detail": "The agenda lists a Student Happy Hour/Dinner (Oct 16) and a Hack-a-thon with a Poster Pitch (Oct 17). A 2026 poster submission call is not posted on the agenda.",
+   "url": "https://conference.dnpsofcolor.org/agenda/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "d39f663d3d60": {
+   "category": "student",
+   "kind": "National DNP Week (online)",
+   "detail": "A week-long online celebration for established and aspiring DNPs, October 19–25, 2026. The listing does not name the 2026 host; DNPs of Color launched the week in 2024.",
+   "url": "https://www.eventbrite.com/e/2026-national-dnp-week-tickets-1867643063679",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "0195f2d705a2": {
+   "category": "project",
+   "kind": "DNP student posters",
+   "detail": "The 2026 summit featured posters from recent DNP students (4.75 CE hours).",
+   "url": "https://www.ncnurses.org/events/calendar-at-a-glance/ce-2026-dnp-summit-a-year-of-renewal-and-innovation/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
   }
+ }
 }

@@ -1,0 +1,94 @@
+{
+ "group": "claude-dnp",
+ "_note": "DNP-focused sweep 2026-09-22",
+ "series": [
+  {
+   "id": "ncna-dnp-summit",
+   "name": "DNP Summit",
+   "org": "North Carolina Nurses Association (NCNA) Doctor of Nursing Practice Council",
+   "org_url": "https://www.ncnurses.org/",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp practice",
+    "leadership"
+   ],
+   "audience": [
+    "clinician",
+    "leader",
+    "academic"
+   ],
+   "kind": "summit",
+   "region": "us",
+   "recurrence": "annual, typically June",
+   "np_pa_basis": "DNP-prepared nurses and DNP students; posters from recent DNP students",
+   "editions": [
+    {
+     "start": "2026-06-04",
+     "end": "2026-06-04",
+     "location": "Atrium Health Cabarrus, Medical Arts Building, 920 Church Street N, Concord, NC 28025",
+     "format": "in person",
+     "theme": "A Year of Renewal and Innovation",
+     "call": {
+      "status": "closed"
+     },
+     "source_url": "https://www.ncnurses.org/events/calendar-at-a-glance/ce-2026-dnp-summit-a-year-of-renewal-and-innovation/",
+     "evidence": "CE | 2026 DNP Summit: A Year of Renewal and Innovation … June 4, 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "id": "nonpf-2028",
+   "name": "NONPF Annual Conference",
+   "org": "National Organization of Nurse Practitioner Faculties",
+   "org_url": "https://www.nonpf.org/",
+   "professions": [
+    "NP"
+   ],
+   "specialty": [
+    "np education"
+   ],
+   "audience": [
+    "academic",
+    "leader"
+   ],
+   "kind": "conference",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "editions": [
+    {
+     "start": "2028-04-19",
+     "end": "2028-04-23",
+     "location": "Phoenix, AZ",
+     "format": "in person",
+     "call": {
+      "status": "tba"
+     },
+     "source_url": "https://www.nonpf.org/page/futureconferences",
+     "evidence": "Dates: April 19-23, 2028 Location: Phoenix, Arizona",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "org": "Doctors of Nursing Practice, Inc. (National DNP Conference)",
+   "url": "https://doctorsofnursingpractice.org/abstract-submission-form/",
+   "reason": "latest confirmed edition is the 16th National DNP Conference, virtual, Aug 10-11, 2023 (doctorsofnursingpractice.vfairs.com); abstract form titled 2025 DNP Conference shows no dates; no 2026/2027 edition found 2026-09-22"
+  },
+  {
+   "org": "Texas DNP Conference (ENP Network)",
+   "url": "https://texasdnp.enpnetwork.com/",
+   "reason": "2024 conference cancelled per organizer; no later edition posted"
+  }
+ ]
+}

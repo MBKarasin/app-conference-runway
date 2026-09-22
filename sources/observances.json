@@ -1,85 +1,249 @@
 [
-  {
-    "name": "National APP Week",
-    "org": "National APP Week",
-    "url": "https://nationalappweek.com/",
-    "professions": ["NP", "PA", "CRNA", "CAA", "CNS", "CNM"],
-    "rule_text": "Annual September observance; future exact dates await organizer publication",
-    "published": [
-      {"start": "2023-09-25", "end": "2023-09-29", "source_url": "https://nationalappweek.com/wp-content/uploads/2024/01/MKTG23-1974-NURSING-National-APP-Week-FLYER-Final.pdf", "evidence": "National APP Week 2023: September 25–29", "checked": "2026-09-21", "source_reviewed": true},
-      {"start": "2025-09-22", "end": "2025-09-26", "source_url": "https://nationalappweek.com/wp-content/uploads/2025/09/Event-Links-Flyer_2025.pdf", "evidence": "National APP Week 2025: September 22–26", "checked": "2026-09-21", "source_reviewed": true},
-      {"start": "2026-09-21", "end": "2026-09-25", "source_url": "https://nationalappweek.com/", "evidence": "September 21–25, 2026", "checked": "2026-09-21", "source_reviewed": true, "theme": "The Pulse of Progress: APPs Powering Tomorrow", "daily": [
-        {"date": "2026-09-21", "title": "Opening Ceremony & Keynote"},
-        {"date": "2026-09-22", "title": "President’s Panel Discussion"},
-        {"date": "2026-09-23", "title": "Midweek Keynote"},
-        {"date": "2026-09-24", "title": "Awards Ceremony"},
-        {"date": "2026-09-25", "title": "Closing Ceremony & Host Handoff"}
-      ]}
+ {
+  "name": "National APP Week",
+  "org": "National APP Week",
+  "url": "https://nationalappweek.com/",
+  "professions": [
+   "NP",
+   "PA",
+   "CRNA",
+   "CAA",
+   "CNS",
+   "CNM"
+  ],
+  "rule_text": "Annual September observance; future exact dates await organizer publication",
+  "published": [
+   {
+    "start": "2023-09-25",
+    "end": "2023-09-29",
+    "source_url": "https://nationalappweek.com/wp-content/uploads/2024/01/MKTG23-1974-NURSING-National-APP-Week-FLYER-Final.pdf",
+    "evidence": "National APP Week 2023: September 25–29",
+    "checked": "2026-09-21",
+    "source_reviewed": true
+   },
+   {
+    "start": "2025-09-22",
+    "end": "2025-09-26",
+    "source_url": "https://nationalappweek.com/wp-content/uploads/2025/09/Event-Links-Flyer_2025.pdf",
+    "evidence": "National APP Week 2025: September 22–26",
+    "checked": "2026-09-21",
+    "source_reviewed": true
+   },
+   {
+    "start": "2026-09-21",
+    "end": "2026-09-25",
+    "source_url": "https://nationalappweek.com/",
+    "evidence": "September 21–25, 2026",
+    "checked": "2026-09-21",
+    "source_reviewed": true,
+    "theme": "The Pulse of Progress: APPs Powering Tomorrow",
+    "daily": [
+     {
+      "date": "2026-09-21",
+      "title": "Opening Ceremony & Keynote"
+     },
+     {
+      "date": "2026-09-22",
+      "title": "President’s Panel Discussion"
+     },
+     {
+      "date": "2026-09-23",
+      "title": "Midweek Keynote"
+     },
+     {
+      "date": "2026-09-24",
+      "title": "Awards Ceremony"
+     },
+     {
+      "date": "2026-09-25",
+      "title": "Closing Ceremony & Host Handoff"
+     }
     ]
+   }
+  ]
+ },
+ {
+  "name": "Clinical Nurse Specialist Recognition Week",
+  "org": "National Association of Clinical Nurse Specialists (NACNS)",
+  "url": "https://nacns.org/event/cns-week-2026/",
+  "professions": [
+   "CNS"
+  ],
+  "rule_text": "September 1–7 every year",
+  "rule": {
+   "type": "fixed",
+   "month": 9,
+   "day": 1,
+   "end_day": 7
   },
-  {
-    "name": "Clinical Nurse Specialist Recognition Week",
-    "org": "National Association of Clinical Nurse Specialists (NACNS)",
-    "url": "https://nacns.org/event/cns-week-2026/",
-    "professions": ["CNS"],
-    "rule_text": "September 1–7 every year",
-    "rule": {"type": "fixed", "month": 9, "day": 1, "end_day": 7},
-    "rule_evidence": "NACNS: Every September 1–7, hospitals, health systems, and communities honor clinical nurse specialists.",
-    "published": [
-      {"start": "2026-09-01", "end": "2026-09-07", "source_url": "https://nacns.org/event/cns-week-2026/", "evidence": "The 17th Annual Clinical Nurse Specialist Recognition Week is September 1–7, 2026.", "checked": "2026-09-21", "source_reviewed": true, "theme": "Amplify"}
-    ]
+  "rule_evidence": "NACNS: Every September 1–7, hospitals, health systems, and communities honor clinical nurse specialists.",
+  "published": [
+   {
+    "start": "2026-09-01",
+    "end": "2026-09-07",
+    "source_url": "https://nacns.org/event/cns-week-2026/",
+    "evidence": "The 17th Annual Clinical Nurse Specialist Recognition Week is September 1–7, 2026.",
+    "checked": "2026-09-21",
+    "source_reviewed": true,
+    "theme": "Amplify"
+   }
+  ]
+ },
+ {
+  "name": "National Midwifery Week",
+  "org": "American College of Nurse-Midwives (ACNM)",
+  "url": "https://midwife.org/national-midwifery-week/",
+  "professions": [
+   "CNM"
+  ],
+  "rule_text": "Sunday through Saturday of the first full week of October",
+  "rule": {
+   "type": "nth_weekday",
+   "month": 10,
+   "weekday": 6,
+   "n": 1,
+   "length": 7
   },
-  {
-    "name": "National Midwifery Week",
-    "org": "American College of Nurse-Midwives (ACNM)",
-    "url": "https://midwife.org/national-midwifery-week/",
-    "professions": ["CNM"],
-    "rule_text": "Sunday through Saturday of the first full week of October",
-    "rule": {"type": "nth_weekday", "month": 10, "weekday": 6, "n": 1, "length": 7},
-    "rule_evidence": "ACNM: National Midwifery Week is held Sunday to Saturday during the first full week of October.",
-    "published": [
-      {"start": "2026-10-04", "end": "2026-10-10", "source_url": "https://midwife.org/national-midwifery-week/", "evidence": "October 4–10, 2026", "checked": "2026-09-21", "source_reviewed": true}
-    ]
-  },
-  {
-    "name": "Emergency Nurses Week",
-    "org": "Emergency Nurses Association (ENA)",
-    "url": "https://www.ena.org/about-us/emergency-nurses-week",
-    "professions": ["Nursing", "NP"],
-    "rule_text": "Annual October observance; exact future dates await organizer publication",
-    "published": [
-      {"start": "2026-10-11", "end": "2026-10-17", "source_url": "https://www.ena.org/about-us/emergency-nurses-week", "evidence": "Emergency Nurses Week 2026: October 11–17", "checked": "2026-09-21", "source_reviewed": true}
-    ]
-  },
-  {
-    "name": "Perioperative Nurses Week",
-    "org": "Association of periOperative Registered Nurses (AORN)",
-    "url": "https://www.aorn.org/events/perioperative-nurses-week",
-    "professions": ["Nursing", "RNFA", "NP"],
-    "rule_text": "Annual November observance; exact future dates await organizer publication",
-    "published": [
-      {"start": "2026-11-08", "end": "2026-11-14", "source_url": "https://www.aorn.org/events/perioperative-nurses-week", "evidence": "Perioperative Nurses Week November 8–14, 2026", "checked": "2026-09-21", "source_reviewed": true, "theme": "Building Together"}
-    ]
-  },
-  {
-    "name": "Ambulatory Care Nurses Week",
-    "org": "American Academy of Ambulatory Care Nursing (AAACN)",
-    "url": "https://www.aaacn.org/events/ambulatory-care-nurses-week",
-    "professions": ["Nursing", "NP"],
-    "rule_text": "Annual February observance; exact future dates await organizer publication",
-    "published": [
-      {"start": "2026-02-09", "end": "2026-02-13", "source_url": "https://www.aaacn.org/events/ambulatory-care-nurses-week", "evidence": "Ambulatory Care Nurses Week 2026: February 9–13", "checked": "2026-09-21", "source_reviewed": true, "theme": "Where Compassion Meets Innovation"}
-    ]
-  },
-  {
-    "name": "Neonatal Nurses Week",
-    "org": "National Association of Neonatal Nurses (NANN)",
-    "url": "https://nann.org/tag/nicu-nurse/",
-    "professions": ["Nursing", "NP"],
-    "rule_text": "Annual September observance; exact future dates await organizer publication",
-    "published": [
-      {"start": "2026-09-12", "end": "2026-09-18", "source_url": "https://nann.org/tag/nicu-nurse/", "evidence": "2026: September 12–18, 2026", "checked": "2026-09-21", "source_reviewed": true},
-      {"start": "2027-09-11", "end": "2027-09-17", "source_url": "https://nann.org/tag/nicu-nurse/", "evidence": "2027: September 11–17, 2027", "checked": "2026-09-21", "source_reviewed": true}
-    ]
-  }
+  "rule_evidence": "ACNM: National Midwifery Week is held Sunday to Saturday during the first full week of October.",
+  "published": [
+   {
+    "start": "2026-10-04",
+    "end": "2026-10-10",
+    "source_url": "https://midwife.org/national-midwifery-week/",
+    "evidence": "October 4–10, 2026",
+    "checked": "2026-09-21",
+    "source_reviewed": true
+   }
+  ]
+ },
+ {
+  "name": "Emergency Nurses Week",
+  "org": "Emergency Nurses Association (ENA)",
+  "url": "https://www.ena.org/about-us/emergency-nurses-week",
+  "professions": [
+   "Nursing",
+   "NP"
+  ],
+  "rule_text": "Annual October observance; exact future dates await organizer publication",
+  "published": [
+   {
+    "start": "2026-10-11",
+    "end": "2026-10-17",
+    "source_url": "https://www.ena.org/about-us/emergency-nurses-week",
+    "evidence": "Emergency Nurses Week 2026: October 11–17",
+    "checked": "2026-09-21",
+    "source_reviewed": true
+   }
+  ]
+ },
+ {
+  "name": "Perioperative Nurses Week",
+  "org": "Association of periOperative Registered Nurses (AORN)",
+  "url": "https://www.aorn.org/events/perioperative-nurses-week",
+  "professions": [
+   "Nursing",
+   "RNFA",
+   "NP"
+  ],
+  "rule_text": "Annual November observance; exact future dates await organizer publication",
+  "published": [
+   {
+    "start": "2026-11-08",
+    "end": "2026-11-14",
+    "source_url": "https://www.aorn.org/events/perioperative-nurses-week",
+    "evidence": "Perioperative Nurses Week November 8–14, 2026",
+    "checked": "2026-09-21",
+    "source_reviewed": true,
+    "theme": "Building Together"
+   }
+  ]
+ },
+ {
+  "name": "Ambulatory Care Nurses Week",
+  "org": "American Academy of Ambulatory Care Nursing (AAACN)",
+  "url": "https://www.aaacn.org/events/ambulatory-care-nurses-week",
+  "professions": [
+   "Nursing",
+   "NP"
+  ],
+  "rule_text": "Annual February observance; exact future dates await organizer publication",
+  "published": [
+   {
+    "start": "2026-02-09",
+    "end": "2026-02-13",
+    "source_url": "https://www.aaacn.org/events/ambulatory-care-nurses-week",
+    "evidence": "Ambulatory Care Nurses Week 2026: February 9–13",
+    "checked": "2026-09-21",
+    "source_reviewed": true,
+    "theme": "Where Compassion Meets Innovation"
+   }
+  ]
+ },
+ {
+  "name": "Neonatal Nurses Week",
+  "org": "National Association of Neonatal Nurses (NANN)",
+  "url": "https://nann.org/tag/nicu-nurse/",
+  "professions": [
+   "Nursing",
+   "NP"
+  ],
+  "rule_text": "Annual September observance; exact future dates await organizer publication",
+  "published": [
+   {
+    "start": "2026-09-12",
+    "end": "2026-09-18",
+    "source_url": "https://nann.org/tag/nicu-nurse/",
+    "evidence": "2026: September 12–18, 2026",
+    "checked": "2026-09-21",
+    "source_reviewed": true
+   },
+   {
+    "start": "2027-09-11",
+    "end": "2027-09-17",
+    "source_url": "https://nann.org/tag/nicu-nurse/",
+    "evidence": "2027: September 11–17, 2027",
+    "checked": "2026-09-21",
+    "source_reviewed": true
+   }
+  ]
+ },
+ {
+  "name": "National DNP Week",
+  "org": "DNPs of Color (launched the week in 2024; 2026 host not named on the listing)",
+  "url": "https://www.dnpsofcolor.org/dnps-of-color-commemorates-founding-with-national-dnps-of-color-day-kicking-off-the-inaugural-national-dnp-week/",
+  "professions": [
+   "NP",
+   "CRNA",
+   "CNS",
+   "CNM",
+   "Nursing"
+  ],
+  "rule_text": "Annual October observance (October 19–25 in 2024–2026); future dates await publication",
+  "published": [
+   {
+    "start": "2024-10-19",
+    "end": "2024-10-25",
+    "source_url": "https://www.dnpsofcolor.org/dnps-of-color-commemorates-founding-with-national-dnps-of-color-day-kicking-off-the-inaugural-national-dnp-week/",
+    "evidence": "National DNPs of Color Day, Kicking Off the Inaugural National DNP Week",
+    "checked": "2026-09-22",
+    "source_reviewed": true
+   },
+   {
+    "start": "2025-10-19",
+    "end": "2025-10-25",
+    "source_url": "https://www.michigan.gov/whitmer/news/proclamations/2025/10/19/october-19-25-2025-doctor-of-nursing-practice-week",
+    "evidence": "proclaim October 19-25, 2025, as Doctor of Nursing Practice Week in Michigan",
+    "checked": "2026-09-22",
+    "source_reviewed": true
+   },
+   {
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "source_url": "https://www.eventbrite.com/e/2026-national-dnp-week-tickets-1867643063679",
+    "evidence": "2026 National DNP Week … Monday, October 19 - Sunday, October 25, 2026 · Online event",
+    "checked": "2026-09-22",
+    "source_reviewed": true
+   }
+  ]
+ }
 ]
