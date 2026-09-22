@@ -122,5 +122,77 @@
   "lon": -74.4325,
   "place": "Monroe Township (ZIP 08831 centroid)",
   "precision": "zip"
+ },
+ "Rotterdam, Netherlands": {
+  "cc": "NL",
+  "country": "Netherlands",
+  "continent": "Europe",
+  "lat": 51.922,
+  "lon": 4.479,
+  "place": "Rotterdam",
+  "precision": "city"
+ },
+ "Utrecht, Netherlands": {
+  "cc": "NL",
+  "country": "Netherlands",
+  "continent": "Europe",
+  "lat": 52.09,
+  "lon": 5.121,
+  "place": "Utrecht",
+  "precision": "city"
+ },
+ "Nieuwegein, Netherlands": {
+  "cc": "NL",
+  "country": "Netherlands",
+  "continent": "Europe",
+  "lat": 52.029,
+  "lon": 5.081,
+  "place": "Nieuwegein",
+  "precision": "city"
+ },
+ "Walters State Community College Founders Room": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "lat": 36.214,
+  "lon": -83.295,
+  "place": "Morristown, TN",
+  "precision": "city"
+ },
+ "Johns Hopkins School of Nursing, 525 North Wolfe Street, Baltimore, MD 21205": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "lat": 39.298,
+  "lon": -76.592,
+  "place": "Baltimore, MD",
+  "precision": "city"
+ },
+ "Atrium Health Cabarrus, Medical Arts Building, 920 Church Street N, Concord, NC 28025": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "lat": 35.409,
+  "lon": -80.58,
+  "place": "Concord, NC",
+  "precision": "city"
+ },
+ "Nashville, TN (venue not yet posted)": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "lat": 36.163,
+  "lon": -86.782,
+  "place": "Nashville, TN",
+  "precision": "city"
+ },
+ "Nationwide": {
+  "cc": "US",
+  "country": "United States",
+  "continent": "North America",
+  "lat": 39.828,
+  "lon": -98.579,
+  "place": "United States",
+  "precision": "country"
  }
 }

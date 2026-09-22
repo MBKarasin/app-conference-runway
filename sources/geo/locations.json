@@ -159,6 +159,15 @@
 "region": "Northeast",
 "state": "NJ"
 },
+"Atrium Health Cabarrus, Medical Arts Building, 920 Church Street N, Concord, NC 28025": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 35.409,
+"lon": -80.58,
+"place": "Concord, NC",
+"precision": "city"
+},
 "Auditório Monsenhor Salim, Campinas, Brazil": {
 "cc": "BR",
 "continent": "South America",
@@ -221,6 +230,36 @@
 "region": "West",
 "state": "AK"
 },
+"Baltimore, MD": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.3,
+"lon": -76.6105,
+"place": "Baltimore",
+"precision": "city",
+"region": "South",
+"state": "MD"
+},
+"Bandung, Indonesia": {
+"cc": "ID",
+"continent": "Asia",
+"country": "Indonesia",
+"lat": -6.9222,
+"lon": 107.6069,
+"place": "Bandung",
+"precision": "city",
+"region": "Asia"
+},
+"Banff, AB, Canada": {
+"cc": "CA",
+"continent": "North America",
+"country": "Canada",
+"lat": 43.706,
+"lon": -79.399,
+"precision": "country",
+"region": "North America"
+},
 "Bayfront Convention Center, Erie, PA": {
 "cc": "US",
 "continent": "North America",
@@ -241,6 +280,50 @@
 "place": "Beijing",
 "precision": "city",
 "region": "Asia"
+},
+"Bethesda, MD (& Virtual)": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 38.9873,
+"lon": -77.1186,
+"place": "Bethesda",
+"precision": "city",
+"region": "South",
+"state": "MD"
+},
+"Betty Irene Moore Hall, Sacramento, CA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 38.5677,
+"lon": -121.4682,
+"place": "Sacramento",
+"precision": "city",
+"region": "West",
+"state": "CA"
+},
+"Bluemont Hotel, Manhattan, KS": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.1883,
+"lon": -96.6059,
+"place": "Manhattan",
+"precision": "city",
+"region": "Midwest",
+"state": "KS"
+},
+"Boca Raton campus, Boca Raton, FL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 26.3727,
+"lon": -80.1037,
+"place": "Boca Raton",
+"precision": "city",
+"region": "South",
+"state": "FL"
 },
 "Boise Centre, Boise, ID": {
 "cc": "US",
@@ -337,6 +420,26 @@
 "precision": "city",
 "region": "South America"
 },
+"Cairns, QLD, Australia": {
+"cc": "AU",
+"continent": "Oceania",
+"country": "Australia",
+"lat": -16.9237,
+"lon": 145.7661,
+"place": "Cairns",
+"precision": "city",
+"region": "Oceania"
+},
+"Canberra, ACT, Australia": {
+"cc": "AU",
+"continent": "Oceania",
+"country": "Australia",
+"lat": -35.2835,
+"lon": 149.1281,
+"place": "Canberra",
+"precision": "city",
+"region": "Oceania"
+},
 "Casper, WY": {
 "cc": "US",
 "continent": "North America",
@@ -357,6 +460,17 @@
 "place": "Lévis",
 "precision": "city",
 "region": "North America"
+},
+"Charleston, SC": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 32.828,
+"lon": -79.9729,
+"place": "Charleston",
+"precision": "city",
+"region": "South",
+"state": "SC"
 },
 "Charlotte Convention Center, NC": {
 "cc": "US",
@@ -402,16 +516,6 @@
 "region": "Midwest",
 "state": "IL"
 },
-"Chihuahua, Mexico": {
-"cc": "MX",
-"continent": "North America",
-"country": "Mexico",
-"lat": 28.6353,
-"lon": -106.0889,
-"place": "Chihuahua",
-"precision": "city",
-"region": "North America"
-},
 "Christchurch, New Zealand": {
 "cc": "NZ",
 "continent": "Oceania",
@@ -432,6 +536,28 @@
 "precision": "city",
 "region": "South",
 "state": "FL"
+},
+"Cleveland, OH": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 41.4785,
+"lon": -81.6794,
+"place": "Cleveland",
+"precision": "city",
+"region": "Midwest",
+"state": "OH"
+},
+"College of Nursing & Public Health Excellence Building, Albuquerque, NM": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 35.1048,
+"lon": -106.6468,
+"place": "Albuquerque",
+"precision": "city",
+"region": "West",
+"state": "NM"
 },
 "Colorado Convention Center, Denver, CO": {
 "cc": "US",
@@ -454,6 +580,16 @@
 "precision": "city",
 "region": "West",
 "state": "CO"
+},
+"Connecticut": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 41.472,
+"lon": -72.946,
+"precision": "state",
+"region": "Northeast",
+"state": "CT"
 },
 "Coralville, IA": {
 "cc": "US",
@@ -693,6 +829,27 @@
 "precision": "city",
 "region": "Europe"
 },
+"East Tennessee State University, Johnson City, TN": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 36.3423,
+"lon": -82.3809,
+"place": "Johnson City",
+"precision": "city",
+"region": "South",
+"state": "TN"
+},
+"Edinburgh, Scotland, UK": {
+"cc": "GB",
+"continent": "Europe",
+"country": "United Kingdom",
+"lat": 55.9521,
+"lon": -3.1965,
+"place": "Edinburgh",
+"precision": "city",
+"region": "Europe"
+},
 "Embassy Suites Downtown OKC, Oklahoma City, OK": {
 "cc": "US",
 "continent": "North America",
@@ -715,6 +872,17 @@
 "region": "South",
 "state": "TX"
 },
+"Embassy Suites by Hilton Kansas City Olathe, Olathe, KS": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.1225,
+"lon": -94.7418,
+"place": "Kansas City",
+"precision": "city",
+"region": "Midwest",
+"state": "KS"
+},
 "Embassy Suites by Hilton Noblesville Indianapolis Conference Center, Noblesville, IN": {
 "cc": "US",
 "continent": "North America",
@@ -725,6 +893,17 @@
 "precision": "city",
 "region": "Midwest",
 "state": "IN"
+},
+"Embassy Suites, 741 North Phillips Avenue, Oklahoma City, OK": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 35.4671,
+"lon": -97.5137,
+"place": "Oklahoma City",
+"precision": "city",
+"region": "South",
+"state": "OK"
 },
 "Embassy Suites, Gulf Shores, AL": {
 "cc": "US",
@@ -789,6 +968,16 @@
 "precision": "city",
 "region": "South",
 "state": "LA"
+},
+"Essex, VT": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 43.906,
+"lon": -72.815,
+"precision": "state",
+"region": "Northeast",
+"state": "VT"
 },
 "Fairmont Georgetown, Washington, DC": {
 "cc": "US",
@@ -954,6 +1143,17 @@
 "region": "South",
 "state": "VA"
 },
+"Groton, CT": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 41.3251,
+"lon": -72.0669,
+"place": "Groton",
+"precision": "city",
+"region": "Northeast",
+"state": "CT"
+},
 "Gulf Shores, AL": {
 "cc": "US",
 "continent": "North America",
@@ -1052,6 +1252,17 @@
 "region": "South",
 "state": "TX"
 },
+"Hilton Bangor Inn, Bangor, ME": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 44.8296,
+"lon": -68.7888,
+"place": "Bangor",
+"precision": "city",
+"region": "Northeast",
+"state": "ME"
+},
 "Hilton Boston Park Plaza, Boston, MA": {
 "cc": "US",
 "continent": "North America",
@@ -1085,6 +1296,17 @@
 "region": "West",
 "state": "CO"
 },
+"Hilton Garden Inn Manhattan, Manhattan, KS": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.1883,
+"lon": -96.6059,
+"place": "Manhattan",
+"precision": "city",
+"region": "Midwest",
+"state": "KS"
+},
 "Hilton Garden Inn, Fargo, ND": {
 "cc": "US",
 "continent": "North America",
@@ -1095,6 +1317,17 @@
 "precision": "city",
 "region": "Midwest",
 "state": "ND"
+},
+"Hilton Garden Inn, Wichita, KS": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 37.6906,
+"lon": -97.3458,
+"place": "Wichita",
+"precision": "city",
+"region": "Midwest",
+"state": "KS"
 },
 "Hilton Harrisburg, Harrisburg, PA": {
 "cc": "US",
@@ -1205,6 +1438,15 @@
 "precision": "city",
 "region": "Asia"
 },
+"Hong Kong, China": {
+"cc": "CN",
+"continent": "Asia",
+"country": "China",
+"lat": 31.222,
+"lon": 121.458,
+"precision": "country",
+"region": "Asia"
+},
 "Honolulu, HI": {
 "cc": "US",
 "continent": "North America",
@@ -1237,6 +1479,17 @@
 "precision": "city",
 "region": "West",
 "state": "NV"
+},
+"Hotel Captain Cook, Anchorage, AK": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 61.1743,
+"lon": -149.2843,
+"place": "Anchorage",
+"precision": "city",
+"region": "West",
+"state": "AK"
 },
 "Hotel Hershey, Hershey, PA": {
 "cc": "US",
@@ -1302,6 +1555,17 @@
 "precision": "city",
 "region": "Midwest",
 "state": "OH"
+},
+"Hyatt Place Kansas City/Lenexa City Center, Lenexa, KS": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.1225,
+"lon": -94.7418,
+"place": "Kansas City",
+"precision": "city",
+"region": "Midwest",
+"state": "KS"
 },
 "Hyatt Place Long Island East End, Riverhead, NY": {
 "cc": "US",
@@ -1456,7 +1720,7 @@
 "region": "Midwest",
 "state": "IN"
 },
-"Inter-island cruise, Hawaii": {
+"Inter-island cruise, Hawaii (host chapter: PNA Hawaii)": {
 "cc": "US",
 "continent": "North America",
 "country": "United States",
@@ -1465,6 +1729,16 @@
 "precision": "state",
 "region": "West",
 "state": "HI"
+},
+"Izumo, Shimane, Japan": {
+"cc": "JP",
+"continent": "Asia",
+"country": "Japan",
+"lat": 35.3667,
+"lon": 132.7667,
+"place": "Izumo",
+"precision": "city",
+"region": "Asia"
 },
 "JW Marriott Camelback Inn, Scottsdale, AZ": {
 "cc": "US",
@@ -1499,6 +1773,15 @@
 "region": "South",
 "state": "DC"
 },
+"Japan (venue not stated on organizer page)": {
+"cc": "JP",
+"continent": "Asia",
+"country": "Japan",
+"lat": 35.69,
+"lon": 139.692,
+"precision": "country",
+"region": "Asia"
+},
 "Jatinangor, Indonesia": {
 "cc": "ID",
 "continent": "Asia",
@@ -1507,6 +1790,26 @@
 "lon": 106.845,
 "precision": "country",
 "region": "Asia"
+},
+"Jefferson School of Nursing - Dixon Campus, Horsham, PA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.8123,
+"lon": -76.843,
+"place": "Jefferson",
+"precision": "city",
+"region": "Northeast",
+"state": "PA"
+},
+"Johns Hopkins School of Nursing, 525 North Wolfe Street, Baltimore, MD 21205": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 39.298,
+"lon": -76.592,
+"place": "Baltimore, MD",
+"precision": "city"
 },
 "Jordan Medical Education Center, Philadelphia, PA": {
 "cc": "US",
@@ -1867,6 +2170,16 @@
 "region": "Northeast",
 "state": "NY"
 },
+"Madrid, Spain": {
+"cc": "ES",
+"continent": "Europe",
+"country": "Spain",
+"lat": 40.4165,
+"lon": -3.7026,
+"place": "Madrid",
+"precision": "city",
+"region": "Europe"
+},
 "Manchester Grand Hyatt San Diego, San Diego, CA": {
 "cc": "US",
 "continent": "North America",
@@ -2018,6 +2331,16 @@
 "precision": "city",
 "region": "Europe"
 },
+"Melbourne, VIC, Australia": {
+"cc": "AU",
+"continent": "Oceania",
+"country": "Australia",
+"lat": -37.814,
+"lon": 144.9633,
+"place": "Melbourne",
+"precision": "city",
+"region": "Oceania"
+},
 "Memorial Hermann Memorial City Medical Center, Houston, TX": {
 "cc": "US",
 "continent": "North America",
@@ -2038,6 +2361,17 @@
 "place": "Toronto",
 "precision": "city",
 "region": "North America"
+},
+"Miami, FL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 25.7752,
+"lon": -80.2086,
+"place": "Miami",
+"precision": "city",
+"region": "South",
+"state": "FL"
 },
 "Milan, Italy": {
 "cc": "IT",
@@ -2101,6 +2435,17 @@
 "precision": "city",
 "region": "South",
 "state": "TX"
+},
+"Moore Room, Yale School of Nursing, Orange, CT": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 41.285,
+"lon": -73.0246,
+"place": "Orange",
+"precision": "city",
+"region": "Northeast",
+"state": "CT"
 },
 "Moscone Center, San Francisco, CA": {
 "cc": "US",
@@ -2188,6 +2533,17 @@
 "precision": "city",
 "region": "Northeast",
 "state": "NJ"
+},
+"Naples, FL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 26.1505,
+"lon": -81.7953,
+"place": "Naples",
+"precision": "city",
+"region": "South",
+"state": "FL"
 },
 "Nashville, TN": {
 "cc": "US",
@@ -2299,6 +2655,25 @@
 "region": "Northeast",
 "state": "NY"
 },
+"Niagara Falls, ON, Canada": {
+"cc": "CA",
+"continent": "North America",
+"country": "Canada",
+"lat": 43.1001,
+"lon": -79.0663,
+"place": "Niagara Falls",
+"precision": "city",
+"region": "North America"
+},
+"Nieuwegein, Netherlands": {
+"cc": "NL",
+"continent": "Europe",
+"country": "Netherlands",
+"lat": 52.029,
+"lon": 5.081,
+"place": "Nieuwegein",
+"precision": "city"
+},
 "Niigata, Japan": {
 "cc": "JP",
 "continent": "Asia",
@@ -2308,6 +2683,17 @@
 "place": "Niigata",
 "precision": "city",
 "region": "Asia"
+},
+"Norfolk, VA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 36.923,
+"lon": -76.2446,
+"place": "Norfolk",
+"precision": "city",
+"region": "South",
+"state": "VA"
 },
 "North Myrtle Beach, SC": {
 "cc": "US",
@@ -2319,6 +2705,17 @@
 "precision": "city",
 "region": "South",
 "state": "SC"
+},
+"Oakland, CA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 37.7698,
+"lon": -122.2257,
+"place": "Oakland",
+"precision": "city",
+"region": "West",
+"state": "CA"
 },
 "Oklahoma City, OK": {
 "cc": "US",
@@ -2406,6 +2803,16 @@
 "place": "Osaka",
 "precision": "city",
 "region": "Asia"
+},
+"Palais des congrès de Montréal, Montréal, QC, Canada": {
+"cc": "CA",
+"continent": "North America",
+"country": "Canada",
+"lat": 45.5088,
+"lon": -73.5878,
+"place": "Montréal",
+"precision": "city",
+"region": "North America"
 },
 "Palm Springs, CA": {
 "cc": "US",
@@ -2526,6 +2933,17 @@
 "region": "West",
 "state": "AZ"
 },
+"Pines Manor, Edison, NJ": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 40.5187,
+"lon": -74.4121,
+"place": "Edison",
+"precision": "city",
+"region": "Northeast",
+"state": "NJ"
+},
 "Piscataway, NJ": {
 "cc": "US",
 "continent": "North America",
@@ -2547,6 +2965,27 @@
 "precision": "city",
 "region": "Northeast",
 "state": "PA"
+},
+"Poliforum Científico y Cultural, Chihuahua, Mexico": {
+"cc": "MX",
+"continent": "North America",
+"country": "Mexico",
+"lat": 28.6353,
+"lon": -106.0889,
+"place": "Chihuahua",
+"precision": "city",
+"region": "North America"
+},
+"Portland, ME": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 43.6332,
+"lon": -70.1853,
+"place": "Portland",
+"precision": "city",
+"region": "Northeast",
+"state": "ME"
 },
 "Portlaoise, Ireland": {
 "cc": "IE",
@@ -2667,6 +3106,17 @@
 "region": "South",
 "state": "VA"
 },
+"River Spirit Casino Resort, 8330 S Riverside Pkwy, Tulsa, OK": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 36.1279,
+"lon": -95.9023,
+"place": "Tulsa",
+"precision": "city",
+"region": "South",
+"state": "OK"
+},
 "Riverhouse on the Deschutes, Bend, OR": {
 "cc": "US",
 "continent": "North America",
@@ -2677,6 +3127,17 @@
 "precision": "city",
 "region": "West",
 "state": "OR"
+},
+"Roanoke, VA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 37.2785,
+"lon": -79.9582,
+"place": "Roanoke",
+"precision": "city",
+"region": "South",
+"state": "VA"
 },
 "Robert Wood Johnson University Hospital, 1 Robert Wood Johnson Place, New Brunswick, NJ": {
 "cc": "US",
@@ -2742,6 +3203,26 @@
 "place": "Rotorua",
 "precision": "city",
 "region": "Oceania"
+},
+"Rotterdam, Netherlands": {
+"cc": "NL",
+"continent": "Europe",
+"country": "Netherlands",
+"lat": 51.922,
+"lon": 4.479,
+"place": "Rotterdam",
+"precision": "city"
+},
+"Round Rock, TX": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 30.5261,
+"lon": -97.6635,
+"place": "Round Rock",
+"precision": "city",
+"region": "South",
+"state": "TX"
 },
 "Royal Sonesta Chase Park Plaza Hotel, St. Louis, MO": {
 "cc": "US",
@@ -3130,6 +3611,27 @@
 "precision": "country",
 "region": "Europe"
 },
+"Spokane, WA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 47.6669,
+"lon": -117.4333,
+"place": "Spokane",
+"precision": "city",
+"region": "West",
+"state": "WA"
+},
+"St. John's, NL, Canada": {
+"cc": "CA",
+"continent": "North America",
+"country": "Canada",
+"lat": 47.5649,
+"lon": -52.7093,
+"place": "St. John's",
+"precision": "city",
+"region": "North America"
+},
 "St. Louis, MO": {
 "cc": "US",
 "continent": "North America",
@@ -3140,6 +3642,17 @@
 "precision": "city",
 "region": "Midwest",
 "state": "MO"
+},
+"Stowe, VT": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 44.4672,
+"lon": -72.6838,
+"place": "Stowe",
+"precision": "city",
+"region": "Northeast",
+"state": "VT"
 },
 "Stoweflake Mountain Resort & Spa, Stowe, VT": {
 "cc": "US",
@@ -3203,6 +3716,16 @@
 "precision": "city",
 "region": "South",
 "state": "FL"
+},
+"Tarragona, Spain": {
+"cc": "ES",
+"continent": "Europe",
+"country": "Spain",
+"lat": 41.1191,
+"lon": 1.2454,
+"place": "Tarragona",
+"precision": "city",
+"region": "Europe"
 },
 "Temuco, Chile": {
 "cc": "CL",
@@ -3367,6 +3890,16 @@
 "precision": "city",
 "region": "Asia"
 },
+"Tokyo, Japan": {
+"cc": "JP",
+"continent": "Asia",
+"country": "Japan",
+"lat": 35.6895,
+"lon": 139.6917,
+"place": "Tokyo",
+"precision": "city",
+"region": "Asia"
+},
 "Toronto, ON, Canada": {
 "cc": "CA",
 "continent": "North America",
@@ -3410,6 +3943,27 @@
 "region": "West",
 "state": "AZ"
 },
+"Tulalip, WA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 47.291,
+"lon": -121.297,
+"precision": "state",
+"region": "West",
+"state": "WA"
+},
+"UCLA School of Nursing, Los Angeles, CA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 34.0194,
+"lon": -118.4108,
+"place": "Los Angeles",
+"precision": "city",
+"region": "West",
+"state": "CA"
+},
 "United States (venue not stated by organizer)": {
 "cc": "US",
 "continent": "North America",
@@ -3418,6 +3972,15 @@
 "lon": -74.006,
 "precision": "country",
 "region": "North America"
+},
+"Utrecht, Netherlands": {
+"cc": "NL",
+"continent": "Europe",
+"country": "Netherlands",
+"lat": 52.09,
+"lon": 5.121,
+"place": "Utrecht",
+"precision": "city"
 },
 "Vancouver Convention Centre, Vancouver, BC, Canada": {
 "cc": "CA",
@@ -3460,6 +4023,27 @@
 "region": "South",
 "state": "VA"
 },
+"Virginia Beach, VA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 36.7795,
+"lon": -76.0291,
+"place": "Virginia Beach",
+"precision": "city",
+"region": "South",
+"state": "VA"
+},
+"Viña del Mar, Chile": {
+"cc": "CL",
+"continent": "South America",
+"country": "Chile",
+"lat": -33.0246,
+"lon": -71.5518,
+"place": "Viña del Mar",
+"precision": "city",
+"region": "South America"
+},
 "Waikiki Beach Marriott Resort & Spa, Honolulu, HI": {
 "cc": "US",
 "continent": "North America",
@@ -3471,6 +4055,17 @@
 "region": "West",
 "state": "HI"
 },
+"Walla Walla, WA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 46.067,
+"lon": -118.337,
+"place": "Walla Walla",
+"precision": "city",
+"region": "West",
+"state": "WA"
+},
 "Walter E. Washington Convention Center, Washington, DC": {
 "cc": "US",
 "continent": "North America",
@@ -3481,6 +4076,15 @@
 "precision": "city",
 "region": "South",
 "state": "DC"
+},
+"Walters State Community College Founders Room": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 36.214,
+"lon": -83.295,
+"place": "Morristown, TN",
+"precision": "city"
 },
 "Washington Convention Center, Washington, DC": {
 "cc": "US",
@@ -3494,6 +4098,17 @@
 "state": "DC"
 },
 "Washington Hilton, Washington, DC": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 38.9042,
+"lon": -77.0165,
+"place": "Washington",
+"precision": "city",
+"region": "South",
+"state": "DC"
+},
+"Washington Marriott Georgetown, Washington, DC": {
 "cc": "US",
 "continent": "North America",
 "country": "United States",
@@ -3591,6 +4206,17 @@
 "region": "Midwest",
 "state": "KS"
 },
+"Williamsburg, VA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 37.2695,
+"lon": -76.7082,
+"place": "Williamsburg",
+"precision": "city",
+"region": "South",
+"state": "VA"
+},
 "Winnipeg, MB, Canada": {
 "cc": "CA",
 "continent": "North America",
@@ -3600,6 +4226,17 @@
 "place": "Winnipeg",
 "precision": "city",
 "region": "North America"
+},
+"Wisconsin Avenue campus (reception in Copley Formal Lounge), Washington, DC": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 38.9042,
+"lon": -77.0165,
+"place": "Washington",
+"precision": "city",
+"region": "South",
+"state": "DC"
 },
 "Younes Conference Center North, Kearney, NE": {
 "cc": "US",
@@ -3619,6 +4256,16 @@
 "lat": 24.5133,
 "lon": 117.6556,
 "place": "Zhangzhou",
+"precision": "city",
+"region": "Asia"
+},
+"Zhuhai, Guangdong Province, China": {
+"cc": "CN",
+"continent": "Asia",
+"country": "China",
+"lat": 22.2769,
+"lon": 113.5678,
+"place": "Zhuhai",
 "precision": "city",
 "region": "Asia"
 }
