@@ -502,7 +502,11 @@ def main():
         s["org_display"] = org_display.get(s["org"], s["org"])
     all_eds = sorted(eds + proj, key=lambda e: (e["start"], e["series"]))
     used = {e["series"] for e in all_eds}
+    # header stamps: when the nightly checker last read organizer pages, and the latest curator source review
+    checked = [v.get("checked") for v in ver.values() if v.get("checked") and v.get("state") != "archived"]
+    reviewed = [e.get("reviewed_on") for e in eds if e.get("source_reviewed") and e.get("reviewed_on")]
     out = {"built": dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"), "horizon": HORIZON,
+           "sources_checked": max(checked) if checked else None, "curator_reviewed": max(reviewed) if reviewed else None,
            "series": sorted([s for s in series.values()], key=lambda s: s["name"].lower()),
            "editions": all_eds}
     (SITE / "data").mkdir(parents=True, exist_ok=True)
