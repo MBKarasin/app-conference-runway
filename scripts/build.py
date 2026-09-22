@@ -454,6 +454,10 @@ def main():
             e["verify"] = {"state": "conflict", "method": "manual", "checked": e["compiled"],
                            "last_verified": e["compiled"], "url": e.get("source_url"),
                            "why": e.get("note") or "The organizer publishes conflicting dates."}
+        elif e.get("save_the_date"):
+            e["verify"] = {"state": "announced", "method": "manual", "checked": e.get("reviewed_on") or e["compiled"],
+                           "last_verified": e.get("reviewed_on") or e["compiled"], "url": e.get("source_url"),
+                           "why": "The organizer has announced this as a save-the-date; the full programme is not posted yet."}
         elif e.get("source_reviewed") and not (v and v.get("state") == "not_found" and (e.get("reviewed_on") or e["compiled"]) < STALE_REVIEW):
             when = e.get("reviewed_on") or e["compiled"]
             e["verify"] = {"state": "verified", "method": "manual", "checked": when,
