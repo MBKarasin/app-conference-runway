@@ -43,7 +43,7 @@ The site is independent. It is not an official publication of, or endorsement by
 | **Student opportunity** | A student session, poster or DNP project venue attached to one edition | `sources/student_opportunities.json`: `category` (student or project), `kind`, `detail`, `roles`, `url`, `deadline` |
 | **Expected edition** | A projection of a meeting's usual month, up to three years ahead | Never given a day, and always labeled "Expected month" |
 
-At this snapshot: 328 series; 1,592 editions (369 dated records confirmed against organizer material, 297 of them still upcoming; 521 past editions frozen as published; 36 set by rule, 1 organizer save-the-date and 665 expected months); organizers in 38 countries; 58 student and DNP opportunities; horizon through 2029.
+At this snapshot: 328 series; 1,593 editions (370 dated records confirmed against organizer material, 298 of them still upcoming; 521 past editions frozen as published; 36 set by rule, 1 organizer save-the-date and 665 expected months); organizers in 38 countries; 58 student and DNP opportunities; horizon through 2029.
 
 ### 3.2 The evidence rule
 
@@ -64,7 +64,7 @@ Aggregator listings are never treated as the source. A social post counts only w
 
 | Stage | Script | What it proves | What it cannot prove |
 |---|---|---|---|
-| Nightly re-read, about 2 a.m. New York time | `scripts/check.py` | That the start date (in English, Portuguese, Spanish, French, German, Dutch, Italian, Japanese or Chinese 月/日 formats; numeric day-first and month-first), its year, and a distinctive name word still appear on the source page | End dates; pages that block automated readers, need JavaScript, or show dates only in images |
+| Nightly re-read, about 2 a.m. New York time | `scripts/check.py` | That the start date (in English, Portuguese, Spanish, French, German, Dutch, Italian, Japanese or Chinese 年/月/日 formats; numeric day-first and month-first; day lists such as "24th, 25th & 26th September" or "19 y 20 de noviembre"; for titles translated into English or pages in CJK script, the date and year decide), its year, and a distinctive name word still appear on the source page | End dates; pages that block automated readers, need JavaScript, or show dates only in images |
 | Frozen past | `check.py` | Nothing: an ended meeting is kept as it was captured | — |
 | Manual walk | done by the AI assistant in a real browser, under the curator's direction; the curator confirms disputed dates himself | Dates on pages the checker cannot read. The walk covers menus, sub-pages, PDFs, images and translation | Anything not walked (recorded in each override's `_why`) |
 | Link check | `scripts/linkcheck.py` | Which source links now return 4xx | A 403 block says nothing about whether the link is live |
