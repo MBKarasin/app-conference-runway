@@ -100,14 +100,28 @@
     if (opens && opens > TODAY) return { k: "soon", label: "Opens " + md(opens), opens };
     if (closes && (c.status === "open" || c.status === "soon" || (opens && opens <= TODAY))) {
       const n = daysBetween(TODAY, closes);
+      // the organizer's cut-off time is usually not published in machine form, so the last day is never called "open now"
+      if (n <= 0) return { k: "urgent", label: "Closes today · check the organizer's cut-off time", closes, n: 0, today: true };
       return { k: n <= 14 ? "urgent" : "open", label: "Closes " + md(closes), closes, n };
     }
-    if (c.status === "open") return { k: "open", label: "Call open", n: null };
+    if (c.status === "open") return { k: "open", label: "Call listed · confirm with the organizer", n: null, undated: true };
     const short = (t, dflt) => t && t.length <= 30 ? t : dflt;
     if (c.status === "soon") return { k: "soon", label: short(c.text && c.text.split("·")[0].trim(), "Opening soon") };
     if (c.status === "closed") return { k: "closed", label: "Call closed" };
     if (c.status === "none") return { k: "none", label: short(c.text && c.text !== "—" ? c.text : "", "No call") };
     return { k: "tba", label: short(c.text, "Call not posted") };
+  }
+  function wireSkip() {
+    const a = document.querySelector("a.skip");
+    if (!a) return;
+    a.addEventListener("click", ev => {
+      ev.preventDefault();                       // a hash jump here would be read as new filter state
+      const m = $("#view");
+      if (!m) return;
+      m.setAttribute("tabindex", "-1");
+      m.focus({ preventScroll: true });
+      m.scrollIntoView({ block: "start" });
+    });
   }
   function prep(d) {
     DATA = d;
@@ -326,10 +340,12 @@
         <div class="body"><div class="title">${esc(e.s.name)}</div><div class="org">${esc(e.s.org_display || e.s.org)} · meeting ${esc(range(e))}</div><div class="meta">${esc((e.call && e.call.text) || "")}</div></div>
         <div class="side">${vBadge(e, true)}</div></div>`;
     let h = `<section class="sec"><h2>Open now · ${open.length}</h2><div class="list">`;
-    h += open.length ? open.map(e => e.c.closes ? row(e, e.c.n, e.c.n === 1 ? "day left" : "days left", e.c.n <= 14) : row(e, "Open", "no date posted")).join("") : `<div class="empty">No open calls match these filters.</div>`;
+    h += open.length ? open.map(e => e.c.today ? row(e, "Today", "organizer's cut-off time applies", true)
+      : e.c.closes ? row(e, e.c.n, e.c.n === 1 ? "day left" : "days left", e.c.n <= 14)
+      : row(e, "Listed", "no closing date posted")).join("") : `<div class="empty">No open calls match these filters.</div>`;
     h += `</div></section><section class="sec"><h2>Opening soon · ${soon.length}</h2><div class="list">`;
     h += soon.length ? soon.map(e => row(e, e.c.opens ? md(e.c.opens) : "Soon", "opens")).join("") : `<div class="empty">Nothing announced as opening soon.</div>`;
-    return h + `</div></section><p class="fine">Deadlines are shown as each organizer publishes them, including time zones. Confirm on the organizer page before you submit.</p>`;
+    return h + `</div></section><p class="fine">Deadlines are shown as each organizer publishes them. A deadline closing today shows the day only: the cut-off hour and time zone are the organizer's, so open their page before you submit. Calls with no closing date are shown as listed, not as open.</p>`;
   }
   function directorySeries() {
     const editionFilters = st.where || st.area || st.near || st.openOnly;
@@ -346,11 +362,12 @@
     let h = `<nav class="alpha" aria-label="Jump to letter">${letters.map(l => `<a href="#" data-letter="${esc(l)}">${esc(l)}</a>`).join("")}</nav><div class="dir">`, cur = "";
     S.forEach(s => {
       const L = (eds.get(s.id) || []).sort((a, b) => a.start.localeCompare(b.start));
-      const next = L.find(e => !e.past && !e.expectedRow);
+      const next = L.find(e => !e.past && !e.expectedRow && verMatch(e));
+      const hidden = !next && L.some(e => !e.past && !e.expectedRow);
       const anchor = s.name[0].toUpperCase() !== cur ? (cur = s.name[0].toUpperCase(), ` id="letter-${esc(cur)}"`) : "";
       h += `<button class="srs"${anchor} data-s="${esc(s.id)}"><span class="title">${esc(s.name)}</span><span class="org">${esc(s.org_display || s.org)}</span>
         <span class="badges">${profTags(s)}${(s.specialty || []).slice(0, 2).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</span>
-        <span class="meta">${next ? "Next: " + esc(range(next)) : esc(s.status_note || "Next date not posted")}${s.archive_url ? " · past-meetings archive" : ""}</span>
+        <span class="meta">${next ? "Next: " + esc(range(next)) : hidden ? "Next date awaiting a source check" : esc(s.status_note || "Next date not posted")}${s.archive_url ? " · past-meetings archive" : ""}</span>
         <span class="hist">${L.filter(e => !e.expectedRow).map(e => `<span class="${e.past ? "" : "fut"}" title="${esc(range(e))}">${e.start.slice(0, 4)}</span>`).join("")}</span></button>`;
     });
     return h + "</div>";
@@ -507,7 +524,8 @@
         ${s.np_pa_basis ? `<dt>Why it's here</dt><dd>${esc(s.np_pa_basis)}</dd>` : ""}
         <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} · ${v.last_verified ? esc((v.method === "manual" ? "reviewed by the curator " : "start checked ") + longDate(v.last_verified.slice(0, 10))) : "recorded " + esc(longDate(e.compiled || ""))}${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${v.why && v.state !== "verified" ? ` · <span class="fine">${esc(v.why)}</span>` : ""}${e.evidence_image ? ` · <a href="${esc(e.evidence_image)}" target="_blank" rel="noopener noreferrer">dates published in this image</a>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
       </dl>
-      ${e.evidence && v.evidence_match ? `<blockquote class="quote" title="Text found on the organizer page at the last check">“${esc(e.evidence)}”</blockquote>` : ""}
+      ${e.evidence && v.evidence_match !== false && ["verified", "archived", "announced", "rule"].includes(v.state)
+        ? `<blockquote class="quote" title="${esc(e.evidence_auto ? "The sentence the date was found in at the last check." : "The wording recorded from the organizer's page.")}">“${esc(e.evidence)}”${e.evidence_auto ? ` <span class="fine">· found on the page at the last check</span>` : ""}</blockquote>` : ""}
       ${e.sessions && e.sessions.length ? `<div><p class="flabel">Sessions & courses</p><ul class="sessions">${e.sessions.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
       ${e.daily && e.daily.length ? `<div><p class="flabel">Daily program · organizer calendar</p><ul class="sessions">${e.daily.map(x => `<li><b>${esc(md(x.date))}</b> · ${esc(x.title)}</li>`).join("")}</ul></div>` : ""}
       <div><p class="flabel">Seven-year view · ${Y0 - 3}–${Y0 + 3}</p><ol class="timeline years">${yearRows(s, L)}</ol>
@@ -638,7 +656,7 @@
     $("#updated").textContent = "Data snapshot " + stampET(d.built);
     $("#updated").setAttribute("datetime", d.built);
     await resolveNear();
-    bind(); render();
+    bind(); wireSkip(); render();
     if (want && byId(want)) openDetail(byId(want));
   }
   boot();
