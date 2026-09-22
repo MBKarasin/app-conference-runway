@@ -1,0 +1,3826 @@
+[
+ {
+  "id": "aacn-colleges-of-nursing__deans-annual-meeting",
+  "archive_url": "https://www.aacnnursing.org/deans-meeting/past-conferences",
+  "archive_evidence": "Past Deans Annual Meetings (page lists 2025 and 2026 editions)",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-25",
+    "end": "2023-03-27",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.gold-foundation.org/events/2023-aacn-deans-annual-meeting-geraldine-polly-bednash-lectureship-award-by-dr-richard-levin/",
+    "evidence": "March 25th - 27th, 2023",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-23",
+    "end": "2024-03-25",
+    "location": "The Fairmont, Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacnnursing.org/portals/0/pdfs/conferences-webinars/deans-meeting-prospectus.pdf",
+    "evidence": "2024 Deans Annual Meeting The Fairmont Washington, DC March 23-25, 2024",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Organizer's own past-conferences page only lists 2025-2026; 2023 date found on Gold Foundation's event page for a lecture at that meeting, 2024 date found in AACN's own deans-meeting-prospectus.pdf."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__doctoral-education-conference",
+  "archive_url": "https://www.aacnnursing.org/doctoral-conference/past-conferences",
+  "archive_evidence": "Past Doctoral Education Conferences (page lists 2025 and 2026 editions)",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-01-18",
+    "end": "2023-01-21",
+    "location": "Coronado, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://winnexus.org/event/visit-our-booth-aacns-doctoral-education-conference-in-coronado-ca/",
+    "evidence": "January 18, 2023 (2023-01-18) through January 21, 2023 (2023-01-21)",
+    "detail_url": null
+   },
+   {
+    "start": "2024-01-18",
+    "end": "2024-01-20",
+    "location": "Naples, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacnnursing.org/portals/0/pdfs/conferences-webinars/Doctoral-prospectus.pdf",
+    "evidence": "2024 Doctoral Education Conference Naples Grande Beach Resort Naples, FL January 18-20, 2024",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Organizer's own past-conferences page only lists 2025-2026; 2023 dates found via exhibitor listing (winnexus.org) for the Hotel Del Coronado event, 2024 dates confirmed in AACN's own Doctoral-prospectus.pdf."
+ },
+ {
+  "id": "aacn-colleges-of-nursing__nursing-advancement-professionals-conference",
+  "archive_url": "https://www.aacnnursing.org/nap-conference/past-conferences",
+  "archive_evidence": "Past NAP Conference Presentations (page lists only 2025 and 2026 editions)",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Organizer's past-conferences page only lists 2025-2026 editions and states historical data would require contacting AACN directly. Web searches for '2023 NAP Conference' and '2024 NAP Conference' (nursing advancement professionals) returned only aggregator/listing pages (10times, eMedEvents) with no verbatim dates accessible (403 errors), and no organizer press release, prospectus PDF, or archive.org snapshot with 2023/2024 dates was found. Could not verify whether the conference existed under this name before 2025."
+ },
+ {
+  "id": "aacn-central-new-jersey-chapter__critical-care-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-09-27",
+    "end": "2023-09-27",
+    "location": "Pines Manor, Edison, NJ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://centralnjaacn.nursingnetwork.com/nursing-events/140915-aacn-central-new-jersey-chapter-s-7th-annual-critical-care-symposium",
+    "evidence": "Wednesday, September 27, 2023 at 7:30am ET - 4:30pm ET; Pines Manor, 2085 Lincoln Highway, Edison, NJ 08817",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024",
+   "2025"
+  ],
+  "note": "Found the '7th Annual' edition (Sept 27, 2023, Pines Manor, Edison, NJ) via the chapter's nursingnetwork.com event page; the known 2026 edition is the '9th Annual', so an '8th' edition should exist in 2024 or 2025 but could not be located: the chapter's current nursing-events listing shows no past events, and web search budget was exhausted before a targeted search for the 8th edition could be completed."
+ },
+ {
+  "id": "aacn-southeastern-pennsylvania-chapter__trends-in-acute-critical-care-nursing",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-03-18",
+    "end": "2025-03-19",
+    "location": "Jefferson School of Nursing - Dixon Campus, Horsham, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://aacnsepa.nursingnetwork.com/nursing-events/144656-save-the-date-for-trends-2025",
+    "evidence": "Tuesday, March 18, 2025 at 7:30am ET - Wednesday, March 19, 2025 at 5:00pm ET; Jefferson School of Nursing - Dixon Campus, 300 Lakeside Drive, Horsham, PA 19044",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Found 2025 edition via chapter's nursingnetwork.com save-the-date page. The chapter's news page currently shows only 2025-2026 TRENDS items (older news appears to have been removed/archived off the visible feed); no 2023 or 2024 save-the-date or recap page could be located before web search budget was exhausted. A 2017 and 2019 edition are known to exist (from search snippets), suggesting the conference is a recurring annual/biennial event, but exact 2023/2024 dates were not verified."
+ },
+ {
+  "id": "aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-22",
+    "end": "2023-03-25",
+    "location": "Palais des congrès de Montréal, Montréal, QC, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.prnewswire.com/news-releases/annual-assembly-of-hospice-and-palliative-care-slated-for-mar-22-25-2023-in-montreal-qc-301731888.html",
+    "evidence": "The event will be held at the Palais des congress de Montréal (Montréal Convention Centre) in Montreal, Canada, from March 22-25, 2023.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "2023 edition confirmed via PR Newswire press release announcing the Annual Assembly's Montreal dates."
+ },
+ {
+  "id": "african-diaspora-nursing-alliance-a-dna__african-diaspora-nursing-alliance-ghana-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Could not confirm this Ghana conference existed in 2023-2025. The organizer (G-DNA / Ghanaian-Diaspora Nursing Alliance) appears to have been formally launched relatively recently (per Ghana Nursing & Midwifery Council coverage and a 2023 PMC article on the alliance's role), and the only dated edition found anywhere is the known 2027-01-07/09 Accra conference. A direct g-dna.org event-details link returned 404, and web search budget was exhausted before further attempts (e.g. checking G-DNA's X/LinkedIn history) could be made."
+ },
+ {
+  "id": "alaska-academy-of-physician-associates__all-alaska-medical-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-07-23",
+    "end": "2025-07-25",
+    "location": "Hotel Captain Cook, Anchorage, AK",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://akapa.org/event-6028895",
+    "evidence": "23 Jul 2025 - 25 Jul 2025; Hotel Captain Cook, Anchorage, AK",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "2025 edition (sponsor registration page) confirms July 23-25, 2025 at Hotel Captain Cook, Anchorage (a companion exhibit-registration page shows slightly different exhibitor setup/teardown times, 22-24 Jul, but the conference itself runs 23-25 Jul per the sponsor page). Akapa.org's current site only shows the 2026 conference; no 2023 or 2024 pages were found before web search budget was exhausted. Note this is a notable location change from the known 2026 edition (BP Energy Center, single-day Oct 14) -- the recurrence pattern/month may have shifted from July to October between 2025 and 2026; flagging as a possible discrepancy for review."
+ },
+ {
+  "id": "obs__ambulatory-care-nurses-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-02-05",
+    "end": "2024-02-09",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.prlog.org/13006018-aaacn-celebrates-ambulatory-care-nurses-week-feb-59-2024.html",
+    "evidence": "celebrating Ambulatory Care Nurses Week Feb. 5-9, 2024",
+    "detail_url": null
+   },
+   {
+    "start": "2025-02-03",
+    "end": "2025-02-07",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.prnewswire.com/news-releases/ambulatory-care-nurses-week-a-nationwide-tribute-to-nursing-excellence-302360853.html",
+    "evidence": "This weeklong observance highlights the critical contributions of ambulatory care nurses and raises awareness about this essential nursing field. February 3-7, 2025.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "AAACN's own history page states the observance was inaugurated in the 2021-2022 period ('Held the inaugural National Ambulatory Care Nursing Week, to be celebrated annually the second week of February'), implying a 2023 edition occurred, but no page giving its exact verbatim dates was found before web search budget was exhausted."
+ },
+ {
+  "id": "american-academy-of-anesthesiologist-ass__aaaa-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-03-27",
+    "end": "2025-03-30",
+    "location": "Charlotte, NC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.anesthetist.org/industry-calendar",
+    "evidence": "AAAA 2025 Annual Meeting * March 27 - 30 | Charlotte, NC",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "2025 edition found on organizer's industry-calendar page. The same page and anesthetist.org/annual-conference show no 2023 or 2024 entries (calendar appears to only retain ~2 years of history); no other organizer page, prospectus, or press release with 2023/2024 dates was found before web search budget was exhausted."
+ },
+ {
+  "id": "american-academy-of-emergency-nurse-prac__aaenp-national-conference-emergnp",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024",
+   "2025"
+  ],
+  "note": "AAENP's own site (aaenp-natl.org) only surfaces the 2023 call-for-content page and the 2026 event page; guessed URL patterns for 2024/2025 event pages (aaenp-natl.org/event/2024-... and 2025-...) both 404'd, and no events archive/past-conferences page was found before web search budget was exhausted."
+ },
+ {
+  "id": "american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-22",
+    "end": "2023-03-25",
+    "location": "Palais des congrès de Montréal, Montréal, QC, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.prnewswire.com/news-releases/annual-assembly-of-hospice-and-palliative-care-slated-for-mar-22-25-2023-in-montreal-qc-301731888.html",
+    "evidence": "The event will be held at the Palais des congress de Montréal (Montréal Convention Centre) in Montreal, Canada, from March 22-25, 2023.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Same series as aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care (id above); 2023 edition confirmed via the same PR Newswire release (Montreal, Mar 22-25, 2023)."
+ },
+ {
+  "id": "american-academy-of-nursing__health-policy-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "academypolicyconference.com and aannet.org/page/EventsOverview both currently show only the 2026-2028 conferences with no past-editions listing. No press release, prospectus, or third-party (e.g. university) recap page for 2023-2025 was found before web search budget was exhausted. Could not determine whether/when this conference began."
+ },
+ {
+  "id": "american-academy-of-pediatrics__aap-national-conference-exhibition",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "archive.aapexperience.org and aapexperience.org/faq only reference the 2025 (already known) and 2026 editions; social posts referencing #AAP2023 and #AAP2024 confirm both editions occurred but the pages fetched gave no verbatim dates/locations for them, and web search budget was exhausted before a targeted archive search could be completed."
+ },
+ {
+  "id": "american-academy-of-physician-associates__pa-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-06",
+    "end": "2023-10-12",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/pas-go-beyond/pa-week/",
+    "evidence": "PA Week runs every year from October 6-12.",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-06",
+    "end": "2024-10-12",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/pas-go-beyond/pa-week/",
+    "evidence": "PA Week runs every year from October 6-12.",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-06",
+    "end": "2025-10-12",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/pas-go-beyond/pa-week/",
+    "evidence": "PA Week runs every year from October 6-12.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "AAPA's own page states a fixed, invariant annual rule ('PA Week runs every year from October 6-12'), matching the pattern already used for the 2026-2029 known editions in this same series; applied identically to 2023-2025."
+ },
+ {
+  "id": "american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024",
+   "2025"
+  ],
+  "note": "AAPA's cme-calendar page for the 2023 summit (already known) was found, but guessed URLs for 2024 and 2025 editions (aapa.org/cme-calendar/2024-aapa-leadership-and-advocacy-summit/ and 2025-...) both 404'd, and the current events/leadership-advocacy-summit/ page only shows 2026. Web search budget was exhausted before further attempts."
+ },
+ {
+  "id": "american-academy-of-physician-associates__hospital-medicine-essentials",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "AAPA's Hospital Medicine Essentials event page gives no indication of past editions (no past dates, no 'X years running' language), consistent with the prior note that this event was not held in 2023-2025 (its only known edition is 2026). Testimonials on the page are generic and undated, so this is not conclusive proof of non-occurrence, but no evidence of an earlier edition was found."
+ },
+ {
+  "id": "american-academy-of-physician-associates__we-are-family-medicine",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-02-03",
+    "end": "2023-02-07",
+    "location": "Hilton San Diego Bayfront, San Diego, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/2023-we-are-family-medicine/",
+    "evidence": "2023 We Are Family (Medicine); February 3, 2023 - February 7, 2023; Hilton San Diego Bayfront",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "CONTRADICTS prior note ('2023: not held'): AAPA's own cme-calendar page confirms a 2023 We Are Family (Medicine) conference did occur, Feb 3-7, 2023, Hilton San Diego Bayfront, San Diego, CA -- see https://www.aapa.org/cme-calendar/2023-we-are-family-medicine/. This should be flagged/reviewed."
+ },
+ {
+  "id": "american-association-for-men-in-nursing__aamn-annual-conference",
+  "archive_url": "https://www.aamn.org/national-events",
+  "archive_evidence": "Explore moments from past AAMN conferences: 2025 Orlando, 2024 St. Louis, 2023 New Orleans, 2022 Orlando, 2021 Atlanta, 2018 Milwaukee, 2015 Minneapolis, 2014 St. Louis",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "AAMN's national-events page confirms a 2025 conference occurred in Orlando, but gives no exact dates (only the city), and the guessed page aamn.org/2025-annual-conference (matching the URL pattern used for 2023/2024/2026 in known_editions) 404'd. No exact ISO date could be verified before web search budget was exhausted."
+ },
+ {
+  "id": "american-association-of-colleges-of-nurs__executive-development-series-for-deans",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "aacnnursing.org/deans-meeting/eds-for-deans and its guessed /past-conferences subpage show only the 2027 edition; only known edition anywhere is 2027-03-12/13. Could not confirm whether this pre-conference series ran in 2023-2025 before web search budget was exhausted."
+ },
+ {
+  "id": "american-association-of-colleges-of-nurs__student-policy-summit",
+  "archive_url": "https://www.aacnnursing.org/sps/past-conferences",
+  "archive_evidence": "Past Student Policy Summit Editions: 2026, 2025, 2024, 2023, 2022, 2019 (highlight videos/agendas for each)",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-26",
+    "end": "2023-03-27",
+    "location": "Washington Marriott Georgetown, Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacnnursing.org/Portals/0/PDFs/Conferences-Webinars/SPS-2023-Agenda.pdf",
+    "evidence": "Sunday, March 26, 2023 ... Monday, March 27, 2023; Washington Marriott Georgetown located in the Metropolitan Ballroom, Second Floor, 1221 22nd Street NW, Washington, DC 20037",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-24",
+    "end": "2024-03-25",
+    "location": "Washington Marriott Georgetown, Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.aacnnursing.org/Portals/0/PDFs/Conferences-Webinars/SPS-2024-Agenda.pdf",
+    "evidence": "All sessions will be held at the Washington Marriott Georgetown located in the Metropolitan Ballroom, Second Floor, 1221 22nd Street NW, Washington, DC 20037, unless otherwise noted. [dates March 24-25, 2024]",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "2023 and 2024 exact dates found in AACN's own agenda PDFs (linked from the sps/past-conferences page). The 2025 agenda is published only as a .docx (SPS-2025-Agenda.docx) which could not be parsed by the fetch tool (returned binary data); the YouTube highlights video could not be fetched (proxy rate-limited). 2025 edition is confirmed to have occurred but exact dates remain unverified."
+ },
+ {
+  "id": "american-association-of-neuroscience-nur__international-neuroscience-nursing-research-sympos",
+  "archive_url": "https://aann.org/meetings/past-meetings",
+  "archive_evidence": "Past-meetings page lists INNRS editions for 2024 Virtual INNRS, 2022 INNRS, 2021 INNRS, 2020 INNRS, and 2019 (Stroke, Austin TX) -- with no 2023 entry between the 2022 and 2024 listings.",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "AANN's own past-meetings archive lists INNRS editions for 2019-2022 and 2024 but has no 2023 entry, indicating the symposium was likely not held (or not held under this name) in 2023. No organizer statement explicitly saying '2023 was skipped' was found, so this is treated as probable non-occurrence based on the gap in the organizer's own listing, not confirmed cancellation."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__aana-annual-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "aana.com/premier-event/annual-congress/, aana.com/event/aana-annual-congress-2027/, and aana.com/professional-development/annual-congress/ all show only 2026-2027 editions with no past-conferences archive found. Guessed exhibitor-prospectus PDF URLs (following the pattern of the 2026 MYA prospectus) 404'd. Web search budget was exhausted before further attempts."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__edge-nurse-anesthesia-educators",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "aana.com/event/edge-2027/ only references the 2027 edition with no mention of 2023-2025 history. No past-conferences archive page was found before web search budget was exhausted."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__mid-year-assembly",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "aana.com/event/mid-year-assembly-2027/ only references the 2027 edition. Guessed exhibitor-prospectus PDF URLs for 2024/2025 (following the pattern of the known 2026 prospectus URL) both 404'd, and aana.com/education-events/ 404'd. No past-conferences archive page was found before web search budget was exhausted."
+ },
+ {
+  "id": "american-association-of-nurse-anesthesio__national-crna-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "aana.com/advocacy/national-crna-week/ and aana.com/event/national-crna-week-2025/ confirm the observance has run 'since the year 2000' but give no 2023/2024 specific dates; unlike PA Week, National CRNA Week's known dates (Jan 19-25 2025, Jan 18-24 2026, Jan 17-23 2027) shift from year to year rather than following a fixed calendar rule, so 2023/2024 dates cannot be safely inferred. Web search budget was exhausted before a targeted search for those specific weeks could be completed."
+ },
+ {
+  "id": "american-association-of-occupational-hea__aaohn-national-conference",
+  "archive_url": "https://www.aaohn.org/Events/Future-and-Past-Conferences",
+  "archive_evidence": "Listed Conferences: 2025 AAOHN Annual National Conference, 2024 AAOHN Virtual National Conference, 2023 AAOHN National Conference, 2022 ... 2015",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "AAOHN's own Future-and-Past-Conferences page confirms conferences occurred in 2023, 2024 (virtual), and 2025, but displays only titles/themes as banner images with no clickable links and no exact dates in the fetched text. No individual conference page with verbatim dates was found before web search budget was exhausted."
+ },
+ {
+  "id": "american-association-of-surgical-physici__aaspa-annual-virtual-surgical-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "Could not verify 2025 dates from a qualifying source. Live aaspa.com homepage and https://www.aaspa.com/2024-annual-cme-meeting show only the 2024 and 2026 (Aug 19-21, 2026, virtual) editions with no 2025 page or past-meetings archive link; https://www.aaspa.com/2025-annual-cme-meeting is blocked by robots.txt on fetch. web.archive.org could not be fetched (tool reports the site blocked, for both direct snapshot URLs and wildcard listings). AASPA's own Facebook/Instagram posts reference a '2025 CME Conference Agenda' but are blocked by robots.txt. Third-party aggregators (eMedEvents, AAPA CME calendar) suggest an Orlando, FL location but could not be fetched/confirmed and do not qualify as evidence per the aggregator exclusion rule."
+ },
+ {
+  "id": "american-college-of-chest-physicians__chest-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-08",
+    "end": "2023-10-11",
+    "location": "Honolulu, HI",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.chestphysician.org/annual-meeting/news/chest-2023-unites-education-and-paradise-in-hawai%ca%bbi/",
+    "evidence": "The program, which takes place October 8 to 11 in Honolulu, will cover the hottest topics in chest medicine with rapid-fire debates, panel discussions, simulations, games, and more.",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-06",
+    "end": "2024-10-09",
+    "location": "Boston, MA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.chestnet.org/learning-and-events/events/archive/chest-annual-meeting-2024/sessions",
+    "evidence": "October 6 to 9 Boston Convention & Exhibition Center Boston, Massachusetts",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Both years found on organizer-controlled domains: chestnet.org's own archived 2024 session page, and CHEST's trade-publication chestphysician.org for 2023."
+ },
+ {
+  "id": "american-college-of-gastroenterology__acg-advanced-practice-provider-leadership-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "The organizer page https://acgmeetings.gi.org/app-leadership-summit/ contains only the 2026 edition and no history/archive of past summits. The 2023 and 2024 ACG Annual Scientific Meeting schedule-at-a-glance / preliminary-program PDFs (23ACG-At-A-Glance-web.pdf and ACG2024_Prelim_Program_web.pdf) list only an 'Advanced Practice Provider Reception' (a networking reception, not a Leadership Summit) in those years, with no Leadership Summit session. An archive.org availability check for the app-leadership-summit page returned only a 2026 snapshot (no earlier captures exist). This suggests the Leadership Summit was introduced in 2025 and did not exist in 2023 or 2024, but I could not find an explicit organizer statement saying so, so both years are left as still_missing rather than asserted 'not held'."
+ },
+ {
+  "id": "american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-20",
+    "end": "2023-03-23",
+    "location": "Hyatt Regency Chicago, Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://achewfc.org/event/ache-2023-congress-on-healthcare-leadership/",
+    "evidence": "March 20, 2023 - March 23, 2023 ... Hyatt Regency Chicago, 151 East Wacker Drive, Chicago, IL, 60601, United States",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-25",
+    "end": "2024-03-28",
+    "location": "Hyatt Regency Chicago, Chicago, IL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://cohealthcareexecutives.starchapter.com/meetinginfo.php?id=145&ts=1706316936",
+    "evidence": "Monday, March 25–Thursday, March 28, 2024 ... Hyatt Regency Chicago, 151 E. Wacker Drive, Chicago, IL 60601",
+    "detail_url": null
+   },
+   {
+    "start": "2025-03-24",
+    "end": "2025-03-27",
+    "location": "George R. Brown Convention Center, Houston, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.tmc.edu/press-releases/houston-will-host-2025-ache-congress-bringing-more-than-5000-healthcare-leaders-to-city/",
+    "evidence": "the 2025 ACHE Congress on Healthcare Leadership will be held March 24 -27, 2025 at the George R. Brown Convention Center in Houston",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "congress.ache.org itself could not be fetched (timeouts / blocked). Used an ACHE local-chapter site (achewfc.org, an ACHE affiliate) for 2023, an ACHE chapter's own event listing (cohealthcareexecutives.starchapter.com) for 2024, and Texas Medical Center's press release (a reputable third party, official congress-city host) for 2025. 2023 date was cross-checked against a second ACHE-chapter page (healtharchitects.org) showing the identical 'March 20, 2023 - March 23, 2023' range."
+ },
+ {
+  "id": "american-college-of-nurse-midwives__acnm-annual-meeting-exhibition",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://annualmeeting.midwife.org/ (only shows the 2026 edition and a 2025 photo-gallery link, no dates/location text, no past-meetings archive) and https://annualmeeting.midwife.org/past-meetings (404). Web search budget for this session was exhausted before this series could be searched, and web.archive.org fetches are blocked by the tool. Left as still_missing for all three years."
+ },
+ {
+  "id": "american-college-of-nurse-midwives__health-policy-summit-hill-day",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://healthpolicysummit.midwife.org/ which covers only the 2026 edition with no past-editions archive or links. Web search budget for this session was exhausted, and web.archive.org fetches are blocked by the tool. Left as still_missing for all three years."
+ },
+ {
+  "id": "american-college-of-physicians__acp-internal-medicine-meeting",
+  "archive_url": "https://www.acponline.org/about-acp/who-we-are-what-we-do/history-of-acp/annual-sessioninternal-medicine-meeting-dates-and-locations",
+  "archive_evidence": "Table columns YEAR | CITY | REGISTRATION: 2023 | San Diego | 9,031; 2024 | Boston | 8,830; 2025 | New Orleans | 8,245",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The organizer's own history/archive page confirms host cities (San Diego 2023, Boston 2024, New Orleans 2025) but its table has only YEAR / CITY / REGISTRATION columns — no exact dates. https://annualmeeting.acponline.org/about/future-meetings only lists meetings from 2027 onward. Could not locate an organizer page giving exact day/month dates for 2023-2025 within the available search budget, so exact ISO dates could not be confirmed and all three years are left still_missing rather than guessed."
+ },
+ {
+  "id": "american-college-of-surgeons__clinical-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "The organizer's Clinical Congress 2026 page has no past-editions history or archive link. Guessed facs.org Bulletin URL patterns (matching the 2024/2025 'get-ready-for-clinical-congress' article naming convention) for a July/August 2023 issue returned 404. Web search budget was exhausted before this series could be searched, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-college-of-surgeons__innovation-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The organizer page https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/ shows only the March 11-12, 2027 edition, with no mention of past editions or when the Innovation Summit began. Could not confirm whether it existed in 2023-2025 within the available search budget (web search exhausted, archive.org blocked)."
+ },
+ {
+  "id": "american-college-of-surgeons__tqip-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "The organizer page lists 2025 (Chicago, Nov 8-10), 2026, and 2027 editions but has no 2023 or 2024 information and no archive link. Web search budget was exhausted before this series could be searched further, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-diabetes-association__ada-scientific-sessions",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "https://professional.diabetes.org/scientific-sessions lists only 2027-2029 future editions and an undated 'on-demand previous sessions' link, no past dates/locations. diabetes.org newsroom search is blocked by robots.txt. Web search budget was exhausted before this series could be searched, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-geriatrics-society__ags-annual-scientific-meeting",
+  "archive_url": "https://meeting.americangeriatrics.org/about/past-future-meetings",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The organizer's own past/future meetings page (given as archive_url) repeatedly timed out on fetch and could not be read. The AGS meeting homepage has no history of past editions. Web search budget was exhausted before this series could be retried, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-hospital-association__aha-leadership-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "https://leadershipsummit.aha.org/ only covers the 2026 and 2027 editions with no history of 2023-2025. Web search budget was exhausted before this series could be searched, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "AMIA's own site confirms an 'AMIA 2024 Informatics Summit' occurred ('Participants at the AMIA 2024 Informatics Summit experienced content dedicated to translational bioinformatics...' at https://amia.org/education-events/amia-2024-informatics-summit) but that page does not state exact dates/location, and I found no equivalent confirmed page for a 2023 edition. Because known_editions shows the 'Amplify' merged-conference branding starting only in 2027 (with 2025 still a standalone 'Informatics Summit'), the 2023/2024 equivalents were most likely standalone Informatics Summit events, but exact dates could not be confirmed within budget."
+ },
+ {
+  "id": "american-medical-informatics-association__amia-annual-symposium",
+  "archive_url": "https://amia.org/education-events/calendar-archive",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "https://amia.org/education-events/calendar-archive lists only 2019 and 2021 entries, not 2023. A guessed page https://amia.org/education-events/amia-2023-annual-symposium exists and confirms the location as New Orleans ('events throughout the week in New Orleans') but does not state exact dates on the fetched content. Exact ISO dates could not be confirmed within budget."
+ },
+ {
+  "id": "american-nephrology-nurses-association-a__anna-national-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "https://www.annanurse.org/event/national-symposium/ covers only the 2026 and 2027 editions with a link to 2026 photos; no dates/locations for 2023-2025 and no archive page found. Web search budget was exhausted before this series could be searched, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-nurses-association__national-nurses-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-05-06",
+    "end": "2023-05-12",
+    "location": null,
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/education-events/national-nurses-week/history/",
+    "evidence": "The ANA Board of Directors designated May 6 - 12 as permanent dates to observe National Nurses Week in 1994 and in all subsequent years.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "National Nurses Week has permanent fixed dates (May 6-12) per ANA's own history page, explicitly stated to apply 'in all subsequent years' since 1994, which covers 2023. No 2023-specific page was found, so the fixed-date organizer statement is used as evidence."
+ },
+ {
+  "id": "american-nurses-credentialing-center__certified-nurses-day",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-19",
+    "end": "2023-03-19",
+    "location": "Nationwide",
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/education-events/certified-nurses-day/",
+    "evidence": "Certified Nurses Day occurs every March 19, the birthday of Dr. Margretta \"Gretta\" Madden Styles, RN, EdD, FAAN",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-19",
+    "end": "2024-03-19",
+    "location": "Nationwide",
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/education-events/certified-nurses-day/",
+    "evidence": "Certified Nurses Day occurs every March 19, the birthday of Dr. Margretta \"Gretta\" Madden Styles, RN, EdD, FAAN",
+    "detail_url": null
+   },
+   {
+    "start": "2025-03-19",
+    "end": "2025-03-19",
+    "location": "Nationwide",
+    "format": null,
+    "theme": null,
+    "source_url": "https://www.nursingworld.org/education-events/certified-nurses-day/",
+    "evidence": "Certified Nurses Day occurs every March 19, the birthday of Dr. Margretta \"Gretta\" Madden Styles, RN, EdD, FAAN",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Certified Nurses Day is a fixed annual observance (March 19 every year, tied to Dr. Styles' birthday) per ANCC's own permanent page, which matches the pattern already on file for 2026-2029. Applied the same fixed date to 2023-2025."
+ },
+ {
+  "id": "american-nurses-credentialing-center__magnet-pathway-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Guessed URL following the 2024 news-release naming pattern (ancc-opens-registration-the-2023-national-magnet-conference...) returned 404. https://magnetpathwaycon.nursingworld.org/ (current site) does not go back to 2023. Web search budget was exhausted before this could be searched further, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-nurses-credentialing-center__professional-development-practice-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The organizer's own page (pdpsummit.nursingworld.org) describes 2026 as a new, merged event: \"The 2026 PDP Summit marked an exciting milestone as the American Nurses Credentialing Center (ANCC) communities of Advanced Practice Provider Fellowship Accreditation (APPFA), Joint Accreditation..., Nursing Continuing Professional Development (NCPD) Accreditation, and Practice Transition Accreditation Program (PTAP) came together for this integrated learning experience,\" and elsewhere calls 2026 'the inaugural Professional Development & Practice Summit.' It links to photos from a 2025 event, but that was a differently named predecessor ('2025 ANCC TTP Symposium', i.e. Transition to Practice Symposium), not this series under its current name. No evidence found of a 'Professional Development & Practice Summit' under that name in 2023, 2024, or 2025."
+ },
+ {
+  "id": "american-nurses-enterprise-ana-ancc__ane-research-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "https://www.nursingworld.org/ancc/nursing-research/researchsymposium/ says \"The 2025 conference was the most successful yet, drawing the highest number of attendees and presenters in our history!\" implying prior editions existed, but gives no 2023/2024 dates or locations and no archive link. Web search budget was exhausted before this could be searched further, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-psychiatric-nurses-association__clinical-psychopharmacology-institute",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "https://www.apna.org/events/clinical-psychopharmacology-institute/ states the institute has run \"for More Than 20 Years\" but gives no specific 2023/2024/2025 dates, locations, or archive link. Web search budget was exhausted before this could be searched, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-society-for-pain-management-nur__aspmn-annual-national-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "aspmn.org homepage only references the 2026 conference. Its 'Past Events and Webinars' page (https://www.aspmn.org/past_events_and_webinars.php) lists individual recorded webinars but no annual-conference dates/locations for 2023-2025. Web search budget was exhausted before this could be searched further, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-society-for-parenteral-and-ente__aspen-nutrition-science-practice-conference",
+  "archive_url": "https://nutritioncare.org/webinar-recordings/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "nutritioncare.org homepage and /conference/ page reference only the 2027 (Feb 13-16, Chicago) and 2026 Malnutrition Awareness Week editions, with no 2023 or 2025 conference dates/locations and no visible past-conference archive link. This conference was historically branded 'Clinical Nutrition Week'; no page for a 2023 or 2025 edition (under either name) could be located within budget. Web search budget was exhausted before this could be searched further, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-society-of-clinical-oncology__asco-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "Tried multiple guessed asco.org/old-prod.asco.org press-release URL patterns (matching the 2023, 2025, and 2026 known-edition URL conventions) for a 2024 Annual Meeting press release; all either 404'd or resolved to an unrelated GI Cancers Symposium page. https://www.asco.org/annual-meeting/dates-know lists only 2027/2028. https://www.asco.org/annual-meeting has no past-meeting archive link. Web search budget was exhausted before this could be searched further, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "american-society-of-extracorporeal-techn__amsect-international-conference",
+  "archive_url": "https://amsect.org/events-education/international-conference-archive",
+  "archive_evidence": "Archive page lists 2024 (\"March 21-24, 2024 | New Orleans, LA\"), 2025 (\"March 19-23, 2025 | San Diego, CA\"), and 2026 (\"March 25-29, 2026 | Austin, TX\") editions, but no 2023 entry.",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "The organizer's own international-conference-archive page lists 2024 onward but has no 2023 entry (2024 is labeled the '62nd AmSECT International', implying a 2023/61st edition should exist but its page/URL could not be located). Web search budget was exhausted before this could be searched further, and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "asian-pacific-association-of-gastroenter__asia-pacific-digestive-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "apdw2026manila.com is a single-edition site for the 2026 Manila meeting only, with no history of past APDW editions or mention of the event's annual/biennial cadence. APDW is hosted by a different national GI society each year (host city/site changes annually), so 2023-2025 would live on different, as-yet-unidentified host-organization domains; these could not be located without a web search (session budget exhausted), and archive.org fetches are blocked by the tool."
+ },
+ {
+  "id": "asociaci-n-de-enfermer-a-comunitaria-aec__aec-community-nursing-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-25",
+    "end": "2023-10-27",
+    "location": "Madrid, Spain",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.enfermeriacomunitaria.org/web/index.php/congreso2023-sede",
+    "evidence": "Madrid. 25, 26 y 27 de octubre de 2023",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-22",
+    "end": "2025-10-24",
+    "location": "Tarragona, Spain",
+    "format": "in person",
+    "theme": "Cuidados Comunitarios: Fórum de la Complejidad",
+    "source_url": "https://www.enfermeriacomunitaria.org/web/index.php/congreso2025-en-portada",
+    "evidence": "22, 23 y 24 de Octubre de 2025 (Tarragona)",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "2023 (VII Congreso Internacional y XIII Nacional, Madrid) and 2025 (VIII Congreso Internacional y XIV Nacional, Tarragona) confirmed from organizer pages. In 2024 the AEC did not hold the International Congress; instead it held 'XII Jornadas AEC' (a distinct, smaller national event), per save-the-date post 'SAVE the DATE! 23, 24 y 25 de octubre - XII Jornadas AEC' (https://www.enfermeriacomunitaria.org/web/index.php/322-jornadas-aec-2024/jornadas-aec-2024-en-portada/3324-save-the-date-23-24-y-25-de-octubre-xii-jornadas-aec). Not recorded as the Congress edition since it is organizationally a different, lower-tier event."
+ },
+ {
+  "id": "association-des-infirmi-res-praticiennes__congr-s-annuel-de-l-aipsq",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's congress page (aipsq.com/formations/congres-annuel-de-laipsq) shows only the 2026 edition; the events listing page (aipsq.com/evenements) shows 'Aucun événement prévu pour le moment' for current listings and does not surface past dated editions. PDFs referencing 2024/2025 congress details (e.g. 'CONGRÈS ANNUEL 2024 DE L'AIPSQ', April 2024 press release) are blocked by the site's robots.txt. Web searches for 16e/17e/18e édition did not surface pages with verbatim dates. web.archive.org fetch of the congress page was blocked. Genuine search performed (organizer site, web search, archive.org attempt) but no verbatim-dated source found for any of the three years."
+ },
+ {
+  "id": "association-for-vascular-access__ava-annual-scientific-meeting",
+  "archive_url": "https://www.avainfo.org/page/PastAVASM",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Consistent with prior gap notes: avainfo.org pages (PastAVASM, FutureEvents, individual EventDetails pages) return 403 Forbidden to automated fetches. Web search located an 'AVA 2023 Annual Scientific Meeting' event page and third-party listing (37th Annual meeting, Portland OR, 2023) but the organizer page itself is blocked and no verbatim dated text could be retrieved from an admissible source (aggregator sites excluded). Tried organizer site, web search, and the archive page link itself; all blocked."
+ },
+ {
+  "id": "association-of-neurosurgical-physician-a__anspa-annual-cme-meeting-at-cns",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Consistent with prior gap notes. anspa.mypanetwork.com's news page and site search only surface the 2026 ANSPA Symposium announcement (Washington, DC); no dated 2023/2024/2025 organizer pages were found. Only third-party pages (CNS/Congress of Neurological Surgeons meeting pages, which are not ANSPA's own page, a press release, or a journal supplement) reference those years, so they were not used as sources. web.archive.org search did not surface a usable snapshot. Tried organizer site, web search, and archive attempt for all three years."
+ },
+ {
+  "id": "association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi",
+  "archive_url": "https://oncologypas.org/past-events/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-08-24",
+    "end": "2023-08-27",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://apao.memberclicks.net/index.php?option=com_jevents&task=icalrepeat.detail&evid=43&Itemid=115&year=2023&month=08&day=24&title=26th-annual-oncology-symposium&uid=047a02be559c24f6800a00446a275efd",
+    "evidence": "August 24-27, 2023 ... Hilton Denver City Center, Denver, Colorado",
+    "detail_url": null
+   },
+   {
+    "start": "2025-09-25",
+    "end": "2025-09-28",
+    "location": "Miami, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.apao.cc/assets/Conference/2025Symposium/APAO25%2028th%20Annual%20Exhibitor%20Prospectus%20Final%205.22.25.pdf",
+    "evidence": "September 25-28, 2025 Marriott Key Biscayne Bay, Miami, FL www.apao.cc",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "2023 (26th Annual Symposium) confirmed via APAO's own event calendar page (apao.memberclicks.net icalrepeat detail). 2025 (28th Annual Symposium) dates/venue taken from the title text of APAO's own exhibitor-prospectus PDF (apao.cc/assets/Conference/2025Symposium/...) as surfaced by web search; direct WebFetch of the PDF returned 404 (binary/PDF not fetchable by the tool), but the quoted text is the document's own heading, not a paraphrase or an aggregator."
+ },
+ {
+  "id": "association-of-pulmonary-advanced-practi__apapp-annual-national-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Confirmed not held in 2023: the 2024 edition's own event page (pulmapp.com/event/1st-annual-apapp-national-conference/) is explicitly titled '1st Annual APAPP National Conference' and states APAPP was 'the first association to focus solely on advanced practice providers (APPs) working in the realm of pulmonary medicine,' i.e. the organization/conference series began in 2024. Matches prior_gap_notes."
+ },
+ {
+  "id": "obs__perioperative-nurses-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "aorn.org/events/perioperative-nurses-week currently shows only the 2026 dates (Nov 8-14, 2026); no past-year dates are listed on the page. web.archive.org's wayback 'available' API returned only a single 2026 snapshot for this URL (no 2023/2024/2025 snapshots exist), and the CDX API was blocked to fetch. WebSearch quota was exhausted before a targeted search could be run for this entry. Tried organizer site and archive.org."
+ },
+ {
+  "id": "associa-o-brasileira-de-enfermagem-aben__congresso-brasileiro-de-enfermagem-cben",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The organizer's event domain eventosaben.org.br (used as the source for the known 2026 edition) was unreachable on every attempt (robots.txt fetch timeouts) when trying edition-numbered guesses (73cben/74cben/75cben) and the 76cben page itself. abennacional.org.br also failed with a robots.txt connect timeout. Portuguese Wikipedia's CBEn article is cache-only and could not be fetched fresh. WebSearch quota was exhausted before a targeted search could be run. Tried organizer site (multiple URLs) and a third-party reference; all blocked/unreachable."
+ },
+ {
+  "id": "australia-and-new-zealand-society-of-pal__anzspm-biennial-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "anzspm.org.au home page only surfaces 2026 conference news; guessed conference-archive URLs (education/conferences, c/anzspm?cid=6) returned 404. The known 2026 edition's source page (racp.edu.au event listing) does not itself list prior editions in a form re-fetchable without a specific event id. WebSearch quota was exhausted before a targeted search could be run. Tried organizer site (several pages) and one archive-style URL guess; no dated source found for 2023, 2024, or 2025 (conference is biennial so not all three years would have an edition regardless)."
+ },
+ {
+  "id": "australian-college-of-nurse-practitioner__acnp-national-conference",
+  "archive_url": "https://www.acnp.org.au/past-acnp-conferences",
+  "archive_evidence": "2025 Conference Program / 2024 Conference Program / 2023 Conference Program (linked entries for each year)",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-12",
+    "end": "2023-10-14",
+    "location": "Melbourne, VIC, Australia",
+    "format": "in person",
+    "theme": "Leading, Shaping, Strengthening Healthcare",
+    "source_url": "https://acnp.eventsair.com/acnpnationalconference2023",
+    "evidence": "Melbourne, VIC | 12th - 14th October 2023",
+    "detail_url": null
+   },
+   {
+    "start": "2024-11-06",
+    "end": "2024-11-08",
+    "location": "Cairns, QLD, Australia",
+    "format": "in person",
+    "theme": "Beyond Today. Sustaining Australian Healthcare",
+    "source_url": "https://acnp.eventsair.com/nationalconference2024",
+    "evidence": "Cairns Convention Centre, Corner Sheridan & Wharf Street, Cairns, QLD, 4870 ... 6-8 November 2024",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-29",
+    "end": "2025-10-31",
+    "location": "Canberra, ACT, Australia",
+    "format": "in person",
+    "theme": "Partners In Health. Leaders in Care.",
+    "source_url": "https://acnp.eventsair.com/2025acnpnationalconference/",
+    "evidence": "From Wednesday 29th to Friday 31st October ... National Convention Centre, Canberra",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions confirmed via ACNP's own eventsair.com conference microsites, linked from the organizer's past-conferences page (acnp.org.au/past-acnp-conferences)."
+ },
+ {
+  "id": "california-academy-of-physician-associat__capacon",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "capanet.org/capacon2026/ and /cme/ show only the 2026 edition and do not link to past editions. Guessed URLs capanet.org/capacon2025/, /capacon2024/, /capacon2023/ all 404. archive.org's wayback 'available' API returned no snapshots for any of those three guessed URLs. WebSearch quota was exhausted before a targeted search could be run. Tried organizer site (several URLs) and archive.org attempts for all three years."
+ },
+ {
+  "id": "canadian-association-of-nurses-in-oncolo__cano-acio-annual-conference",
+  "archive_url": "https://www.cano-acio.ca/page/cano2026",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-20",
+    "end": "2023-10-23",
+    "location": "Niagara Falls, ON, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.cano-acio.ca/page/cano2023",
+    "evidence": "October 20 - 23, 2023 ... Niagara Falls Marriott on the Falls & Niagara Falls Convention Centre",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-24",
+    "end": "2024-10-27",
+    "location": "St. John's, NL, Canada",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.cano-acio.ca/page/cano2024",
+    "evidence": "October 24 - 27, 2024 ... St. John's Convention Centre",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-29",
+    "end": "2025-11-01",
+    "location": "Banff, AB, Canada",
+    "format": "in person",
+    "theme": "Striving for the Summit: Empowering Oncology Nurses Towards Excellence",
+    "source_url": "https://www.cano-acio.ca/page/cano2025",
+    "evidence": "October 29 - November 1, 2025 ... Fairmont Banff Springs",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions confirmed via CANO/ACIO's own per-year conference pages (cano-acio.ca/page/cano2023, cano2024, cano2025), the same URL pattern as the known 2026 edition."
+ },
+ {
+  "id": "canadian-association-of-physician-assist__annual-capa-conference-national-pa-job-fair",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "capa-acam.ca home page confirms a 'CAPA 2025' conference was held in Calgary (recording references) but no specific dates are given in the fetched content. Guessed archive/listing URLs (capa-acam.ca/conference, /annual-conference) 404. WebSearch quota was exhausted before a targeted search could be run. Tried organizer site (home page + guessed URLs); no verbatim dated source found for any of the three years."
+ },
+ {
+  "id": "coalition-of-advanced-practice-nurses-of__capni-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "capni.enpnetwork.com/nurse-practitioner-events only lists the 2027 conference (Feb 24-25, 2027, Noblesville, IN); no past 2023/2024/2025 editions appear on the current events listing (enpnetwork event pages are typically removed once past). WebSearch quota was exhausted before a targeted search could be run. Tried organizer site only (events listing page)."
+ },
+ {
+  "id": "connecticut-academy-of-physician-associa__charter-oak-conference",
+  "archive_url": "https://connapa.org/cocconference/",
+  "archive_evidence": "Charter Oak Conference 2024 Recap / Charter Oak Conference Recap (2025) — organizer news recaps of past editions",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-03-24",
+    "end": "2024-03-27",
+    "location": "Connecticut",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://connapa.org/news/charter-oak-conference-2024-recap/",
+    "evidence": "Our conference took place from March 24th through March 27th of this year. (37th Annual Charter Oak Conference)",
+    "detail_url": null
+   },
+   {
+    "start": "2025-03-23",
+    "end": "2025-03-25",
+    "location": "Groton, CT",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://connapa.org/news/charter-oak-conference-recap/",
+    "evidence": "Our conference took place from March 23rd through March 25th at the Mariott Mystic Hotel and Spa. (38th Annual Charter Oak Conference)",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "2024 (37th Annual) and 2025 (38th Annual) confirmed via ConnAPA's own news recap articles; exact venue for 2024 was not stated in the recap (location recorded at state level only). 2023 edition not found: no recap article or event page for it was located on connapa.org, and WebSearch quota was exhausted before a targeted search could be run for that year specifically."
+ },
+ {
+  "id": "consortium-for-advanced-practice-provide__consortium-for-advanced-practice-providers-annual-",
+  "archive_url": "https://www.apppostgradtraining.com/about-us/events/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "The organizer's events page (apppostgradtraining.com/about-us/events/) lists the 2024 (7th Annual, July 22-23, 2024, San Diego — already a known edition), a 2021 virtual conference, and the 2026 edition, but has no entry for 2023 or 2025. Matches prior_gap_notes ('blocked' for both). WebSearch quota was exhausted before a targeted search could be run."
+ },
+ {
+  "id": "cooper-university-health-care__advanced-practice-provider-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "cooperhealth.org/center/center-advanced-practice/news-and-events-app references the 2024, 2025, and 2026 symposiums but has no mention of a 2023 edition. A guessed CME schedule PDF URL following the same pattern as the known 2024 PDF (CME%202023/APP%20Symposium/...) returned 404. WebSearch quota was exhausted before a targeted search could be run."
+ },
+ {
+  "id": "dnps-of-color__dnps-of-color-annual-conference",
+  "archive_url": "https://www.dnpsofcolor.org/",
+  "archive_evidence": "2023 Conference Archive / 2024 Conference Archive / 2025 Conference Archive (linked from the organizer's home page)",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-19",
+    "end": "2023-10-22",
+    "location": "Washington, DC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.dnpsofcolor.org/2023-conference-archive/",
+    "evidence": "October 19-22nd, in 'The Nation's Capital' at the National Museum of the American Indian",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-17",
+    "end": "2024-10-20",
+    "location": "Philadelphia, PA",
+    "format": "in person",
+    "theme": "The Power Playbook: Leadership, Advocacy, & the Arts",
+    "source_url": "https://www.dnpsofcolor.org/2024-conference-archive/",
+    "evidence": "The 4th Annual Conference & Allen-Mahoney Scholarship and Award Gala, took place from October 17 to 20, 2024 in the historic 'City of Brotherly Love.'",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-16",
+    "end": "2025-10-19",
+    "location": "Oakland, CA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.dnpsofcolor.org/2025-annual-conference/",
+    "evidence": "Thursday, October 16, 2025, 6:30 p.m. ... Sunday, October 19, 2025, 8:00 a.m. ... held at the Oakland Marriott City Center ... Oakland, California",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions confirmed via DNPs of Color's own dated conference-archive pages, linked from dnpsofcolor.org home page."
+ },
+ {
+  "id": "obs__national-dnp-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Confirmed not held in 2023: the already-on-file 2024 source (dnpsofcolor.org press release) itself states the 2024 observance was 'kicking off the inaugural National DNP Week,' i.e. the observance began in 2024 and did not exist in 2023."
+ },
+ {
+  "id": "delaware-coalition-of-nurse-practitioner__dcnp-fall-ce-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "dcnpweb.enpnetwork.com/nurse-practitioner-events currently lists only the 2026 edition; enpnetwork event-listing pages do not retain past-year events once they lapse, and no separate past-events/archive page was found. WebSearch quota was exhausted before a targeted search could be run for this entry."
+ },
+ {
+  "id": "democratic-nursing-organisation-of-south__brics-nursing-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "DENOSA's 4th BRICS+ Nursing Conference call-for-abstracts page and denosa.org.za news page make no reference to 1st/2nd/3rd editions, their dates, or locations. It is unclear from available organizer content whether editions 1-3 were hosted by DENOSA specifically or by other BRICS Nursing Forum member countries in other years. WebSearch quota was exhausted before a targeted search could be run. Tried organizer site (two pages) only."
+ },
+ {
+  "id": "dermatology-nurses-association-dna__dna-annual-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "convention.dnanurse.org (current site) and dnanurse.org home page reference the upcoming 44th Annual Convention (2026, Denver) but neither page's fetched content includes dated information for 2023, 2024, or 2025 editions (43rd/42nd/41st, by inference from the 44th=2026 numbering, but no verbatim organizer text was found to confirm). Guessed direct year subpages (convention.dnanurse.org/2023 etc.) 404. WebSearch quota was exhausted before a targeted search could be run."
+ },
+ {
+  "id": "deutsches-netzwerk-advanced-practice-nur__anp-konferenz",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "dnapn.de (organizer site) was unreachable on repeated attempts (robots.txt fetch timeouts) both at the root and at a guessed 'vergangene-kongresse' (past congresses) path. WebSearch quota was exhausted before a targeted search could be run. Tried organizer site (twice) only; genuinely could not reach the source."
+ },
+ {
+  "id": "deutsches-netzwerk-f-r-anp-apn-g-e-v-dna__internationaler-kongress-advanced-practice-nursing",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "dnapn.de (organizer site) was unreachable on repeated attempts (robots.txt fetch timeouts). Known 2025 edition is labeled the '8th International Congress,' which implies prior editions existed, but no dated organizer page could be reached to confirm 2023 or 2024 dates. WebSearch quota was exhausted before a targeted search could be run."
+ },
+ {
+  "id": "elso-latin-america__elso-latam-congress",
+  "archive_url": "https://www.elso.org/ecmo-education/past-elso-meetings.aspx",
+  "archive_evidence": "the past-meetings listing shows only a '6th LATAM Conference' (Nov 14-16, 2024, Buenos Aires) with no 2023 or 2025 LATAM entry",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "Confirmed not held in 2023 or 2025: ELSO's own past-meetings page (elso.org/ecmo-education/past-elso-meetings.aspx) lists ELSO LATAM Congress editions but has no entry for 2023 or 2025 — the only LATAM entries besides the known 2024 (6th, Buenos Aires) and 2026 (Costa Rica) editions are absent, consistent with the prior_gap_notes marking both as 'not held.'"
+ },
+ {
+  "id": "emergency-nurses-association__emergency-nursing-ena-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "ena.org/emergency-nursing-2026 and the events listing page make no reference to 2023/2024 editions or host cities; guessed URLs ena.org/emergency-nursing-2024 and /emergency-nursing-2023 both 404, and the Wayback Machine's 'available' API returned no snapshots for either guessed URL. Matches prior_gap_notes ('blocked' for both years). WebSearch quota was exhausted before a targeted search could be run."
+ },
+ {
+  "id": "obs__emergency-nurses-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "ena.org/about-us/emergency-nurses-week currently shows only 2026 dates (Oct 11-17, 2026); the Wayback Machine's 'available' API nearest-match for an October 2023 timestamp returned only a February 2026 snapshot, indicating no earlier archived snapshot of this URL exists. WebSearch quota was exhausted before a targeted search could be run for this entry."
+ },
+ {
+  "id": "emergency-nurses-association-ena-and-els__global-emergency-nursing-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own press release for the 2027 Rotterdam edition frames it as ENA/Elsevier's inaugural event of this kind ('first-ever' global education event), so no 2023-2025 editions of this specific series exist. Source: https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event"
+ },
+ {
+  "id": "european-society-of-cardiology-associati__acnap-congress",
+  "archive_url": "https://www.escardio.org/events/congresses/acnap-congress/resources/",
+  "archive_evidence": "Home for all scientific resources from past ACNAP congresses: access abstracts, slides and videos.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-06-23",
+    "end": "2023-06-24",
+    "location": "Edinburgh, Scotland, UK",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.incanursing.ie/acnap-2023-call-for-abstracts/",
+    "evidence": "Get your submissions ready for ACNAP 2023 in Edinburgh 23 -24 June 2023",
+    "detail_url": null
+   },
+   {
+    "start": "2024-06-14",
+    "end": "2024-06-15",
+    "location": null,
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://healthmanagement.org/c/cardio/Event/acnap-2024",
+    "evidence": "Fri, 14 Jun 2024, 09:00 ... Sat, 15 Jun 2024, 06:00 (Wrocław, Poland)",
+    "detail_url": null
+   },
+   {
+    "start": "2025-06-12",
+    "end": "2025-06-14",
+    "location": "Sophia Antipolis, France",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.ena.ae/post/association-of-cardiovascular-nursing-and-allied-professions-acnap-congress-2025",
+    "evidence": "Thursday, 12 June - Saturday, 14 June 2025 ... Sophia Antipolis - France",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "2023 corroborated independently by academic.oup.com/esc/pages/acnap-congress-2023 (sessions 'Friday 23 June') and eicc.co.uk (Edinburgh venue). 2024 dates corroborated by incanursing.ie ('ACNAP 2024 14 -15 June 2024') and Poland location corroborated by incanursing.ie ('Fantastic Irish success at ACNAP 2024 in Poland'); exact city (Wrocław) only found on healthmanagement.org, a secondary event-listing site, flagged for lower confidence. 2025 location corroborated by academic.oup.com/eurheartj advance article ('held at the European Heart House in Sophia Antipolis')."
+ },
+ {
+  "id": "evidence-based-perioperative-medicine-eb__ebpom-ireland",
+  "archive_url": "https://ebpom.org/event-category/ebpom-ireland/",
+  "archive_evidence": "EBPOM Ireland 2026 - 29 September 2026 9:00 am – 1 October 2026 12:20 pm; EBPOM Ireland 2025 - 4 March 2025 – 14 September 2025",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-09-24",
+    "end": "2024-09-26",
+    "location": "Dingle, Ireland",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://ebpom.org/events/ebpom-ireland-2024/",
+    "evidence": "24 September 2024 9:00 am - 26 September 2024 5:00 pm (Conference Room, Skellig Hotel)",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "2024 confirmed via organizer event page (Skellig Hotel, Dingle). 2025: the organizer's own event page (https://ebpom.org/events/ebpom-ireland-2025/) shows only a registration-window timestamp ('4 March 2025 - 14 September 2025 8:32 am') and not clean start/end conference dates, and the agenda PDF could not be located, so it is left missing rather than guessed. 2023: no organizer page found (event-category archive listing starts at 2024); checked ebpom.org directly, no 2023 EBPOM Ireland page exists at guessable URLs. Search budget was exhausted mid-task, limiting further verification for both years."
+ },
+ {
+  "id": "fachhochschule-ober-sterreich-with-forum__anp-kongress",
+  "archive_url": "https://fh-ooe.at/konferenzen/anp-kongress",
+  "archive_evidence": "5. bis 6. November 2024 / Schlossmuseum Linz / Schlossberg 1, 4020 Linz",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-11-05",
+    "end": "2024-11-06",
+    "location": "Schlossmuseum Linz, Linz, Austria",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://fh-ooe.at/konferenzen/anp-kongress",
+    "evidence": "5. bis 6. November 2024 Schlossmuseum Linz Schlossberg 1, 4020 Linz",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "2024 was the 12th ANP-Kongress (Nov 5-6, Linz). The 2026 edition page states 'Beim 13. ANP-Kongress im ausverkauften Linzer Schlossmuseum...' (the 13th), meaning the 2026 edition (Apr 21-22) is the very next one after the 12th in Nov 2024 - so no edition took place in 2025 (recorded as not held rather than a data gap). 2023 could not be located: no page at guessable URLs (anp2023, anp-kongress-2023), and fh-ooe.at has no visible archive/news search for it; search budget was exhausted before this could be resolved via web search."
+ },
+ {
+  "id": "fellows-of-the-aanp__fellows-winter-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://www.aanp.org/membership/fellows-program/faanp-awards: only mentions the 'Winter Meeting of the Fellows' as the keynote venue for the Loretta C. Ford Award, with no dates for any year. No dedicated Fellows Winter Meeting event page or archive found on aanp.org. Web search budget was exhausted before a broader search could be run. Consistent with prior_gap_notes marking all three years blocked."
+ },
+ {
+  "id": "florida-association-of-neonatal-nurse-pr__national-neonatal-nurse-practitioner-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "Checked https://fannp.org/_pages24/conferenceinfo.html: no 2023 mention; for 2025 it only notes 'FANNP's 2025 On Demand Library is available now and until 9/15/26', confirming a 2025 symposium occurred but giving no dates. Tried the same PDF pattern used for the known 2024 edition (FANNP25Conference.pdf, FANNP23Conference.pdf) - both returned 404. No conference-info archive page found. Web search budget was exhausted before further verification; consistent with prior_gap_notes marking both years blocked."
+ },
+ {
+  "id": "florida-nurse-practitioner-network__fnpn-annual-conference",
+  "archive_url": "https://fnpn.enpnetwork.com/page/37414-fnpn-past-conferences",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The known archive_url (FNPN past-conferences page on enpnetwork.com) is blocked by robots.txt and could not be fetched. The organizer's main events page (fnpn.enpnetwork.com/nurse-practitioner-events) links to that same past-conferences page but contains no dates itself. Web search budget was exhausted before an alternate route (e.g. a cache or third-party mirror) could be tried. Consistent with prior_gap_notes marking all three years blocked."
+ },
+ {
+  "id": "forum-of-nurses-in-advanced-practice-nj__fnap-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://fnap.enpnetwork.com/nurse-practitioner-events/150126-fnap-2026-annual-conference: only covers the 2026 conference, no historical references. No past-conferences page found for this enpnetwork site. Web search budget was exhausted before further verification. Consistent with prior_gap_notes marking all three years blocked."
+ },
+ {
+  "id": "georgia-association-for-nursing-educatio__gane-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://gane.nursingnetwork.com/nursing-events/152478-2027-gane-conference: only covers the 2027 conference, no historical references or links to past editions. Web search budget was exhausted before further verification. Consistent with prior_gap_notes marking all three years blocked."
+ },
+ {
+  "id": "georgia-association-of-physician-assista__gapa-summer-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://gapa.net/cme-conference-2/: only covers the upcoming 2027 conference, no historical references. No past-conference archive page found on gapa.net. Web search budget was exhausted before further verification could be attempted."
+ },
+ {
+  "id": "hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Confirmed not held: the organizer's own page (https://www.hmpglobalevents.com/psych-congress-pa-institute) states the December 2026 edition is the 'Second annual event, taking place December 4–6, 2026, in Orlando, Florida' - meaning the December 2025 edition (already on file) was the first, and no 2023 or 2024 edition of this series exists."
+ },
+ {
+  "id": "hamad-medical-corporation__qatar-health-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx, which references a 'Previous Conferences' navigation item but the linked content could not be retrieved (guessed URLs for a previous-conferences subpage 404'd), and the general hamad.qa events listing shows only current/upcoming items. Web search budget was exhausted before this could be resolved via web search."
+ },
+ {
+  "id": "hawaii-academy-of-pas__aloha-medical-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer page (https://hapa.mypanetwork.com/) refers to the 2026 event as the '36th Aloha Medical Conference', implying it is held annually (dating the series to 1991) and that 2023/2024/2025 editions likely occurred, but no page with specific dates/locations for those years could be found; a guessed events-archive URL returned 404. Web search budget was exhausted before this could be resolved via web search."
+ },
+ {
+  "id": "heart-rhythm-society__heart-rhythm",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Checked https://heartrhythm.com/attend, which only covers the 2026 (already held, Chicago) and 2027 (San Francisco) editions with no mention of 2023. Guessed URLs (heartrhythm.com/attend/heart-rhythm-2023, heartrhythm.com/heart-rhythm-2023) both errored (404/403). Web search budget was exhausted before this could be resolved via web search; consistent with prior_gap_notes marking 2023 blocked."
+ },
+ {
+  "id": "hospice-and-palliative-nurses-associatio__hpna-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "No organizer page found stating explicitly that 2023/2024 editions did not occur; checked https://www.advancingexpertcare.org/ and the 2025 conference page, neither of which mentions prior years or a launch/inaugural statement. Left as still_missing (not independently re-confirmed as 'not held' this pass) though this matches prior_gap_notes, which already recorded both years as not held. Web search budget was exhausted before further verification."
+ },
+ {
+  "id": "idsa-shea-hivma-pids-and-sidp-joint-meet__idweek",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Checked https://www.idweek.org/ (only covers 2026, with a passing reference to a 2025 photo gallery) and https://www.idweek.org/about/past-meetings/ (404). No page with 2023 dates found. Web search budget was exhausted before this could be resolved via web search; consistent with prior_gap_notes marking 2023 blocked."
+ },
+ {
+  "id": "illinois-society-for-advanced-practice-n__isapn-aprn-midwest-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://isapn.enpnetwork.com/: only covers the upcoming 2026 conference, no historical references or past-conferences link found. Web search budget was exhausted before further verification."
+ },
+ {
+  "id": "indiana-academy-of-pas__indiana-academy-of-pas-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://www.indianapas.org: only covers the upcoming 2026 Fall Conference, no historical references. Web search budget was exhausted before further verification."
+ },
+ {
+  "id": "institute-for-critical-care-medicine-mou__iccm-summit-for-advanced-practice-providers",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Checked https://critcaresummit.com/: only covers the upcoming 2026 summit, no historical references. Web search budget was exhausted before further verification; consistent with prior_gap_notes marking both years blocked."
+ },
+ {
+  "id": "international-association-for-the-study-__world-congress-on-pain",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://worldcongressonpain.secure-platform.com/a/: only covers the 2026 Bangkok congress, with no statement about frequency or prior editions in the fetched content. Could not independently confirm the prior_gap_notes 'not held' determination this pass; left as still_missing with that note reasserted. Web search budget was exhausted before further verification."
+ },
+ {
+  "id": "international-confederation-of-midwives-__international-day-of-the-midwife",
+  "archive_url": "https://internationalmidwives.org/resources/international-day-of-the-midwife/",
+  "archive_evidence": "This year's theme is 'Midwives: Critical in Every Crisis.'",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-05-05",
+    "end": "2025-05-05",
+    "location": "Nationwide",
+    "format": "hybrid",
+    "theme": "Midwives: Critical in Every Crisis",
+    "source_url": "https://internationalmidwives.org/resources/international-day-of-the-midwife/",
+    "evidence": "ICM is hosting a special IDM event on 5 May 2025",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "2025 confirmed via ICM's own resources page, which both gives the theme and states the date '5 May 2025' explicitly. No equivalent pages found for 2023 or 2024 toolkit launches (guessed URLs following the 2026 pattern, e.g. international-day-of-the-midwife-2024-toolkit-launch, all 404'd). Web search budget was exhausted before further verification."
+ },
+ {
+  "id": "international-council-of-nurses-icn__icn-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://www.icn.ch/events/icn-congress-2027-worlds-largest-international-gathering-nurses, which references 'a hugely successful ICN Congress in Helsinki' (implying a 2025 Helsinki edition, matching the biennial pattern) but gives no explicit dates. Guessed URLs (icn.ch/events/icn-congress-2025, icn.ch/events/icn-congress-2023, icn.ch/news/icn-congress-2025-helsinki) all 404'd, and icn.ch/events and icn.ch/news list only current/upcoming items, not a past-events archive. Web search budget was exhausted before this could be resolved via web search."
+ },
+ {
+  "id": "international-council-of-nurses-icn__icn-np-apn-network-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://www.icn.ch/events/icn-npapn-network-conference-2026, which states Nashville 2026 is 'the 14th NP/APN Network conference' but gives no dates or details for the prior (13th) edition. Guessed URL icn.ch/events/icn-npapn-network-conference-2024 404'd. Web search budget was exhausted before this could be resolved via web search."
+ },
+ {
+  "id": "international-council-of-nurses-icn__international-nurses-day",
+  "archive_url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day",
+  "archive_evidence": "IND is celebrated around the world every May 12, the anniversary of Florence Nightingale's birth.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-05-12",
+    "end": "2023-05-12",
+    "location": "Virtual / nationwide observance",
+    "format": "hybrid",
+    "theme": "Our Nurses. Our Future.",
+    "source_url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day",
+    "evidence": "IND is celebrated around the world every May 12, the anniversary of Florence Nightingale's birth. [2023 theme: 'Our Nurses. Our Future.']",
+    "detail_url": null
+   },
+   {
+    "start": "2024-05-12",
+    "end": "2024-05-12",
+    "location": "Virtual / nationwide observance",
+    "format": "hybrid",
+    "theme": "Our Nurses. Our Future. The economic power of care.",
+    "source_url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day",
+    "evidence": "IND is celebrated around the world every May 12, the anniversary of Florence Nightingale's birth. [2024 theme: 'Our Nurses. Our Future. The economic power of care.']",
+    "detail_url": null
+   },
+   {
+    "start": "2025-05-12",
+    "end": "2025-05-12",
+    "location": "Virtual / nationwide observance",
+    "format": "hybrid",
+    "theme": "Our Nurses. Our Future. Caring for nurses strengthens economies",
+    "source_url": "https://www.icn.ch/how-we-do-it/campaigns/international-nurses-day",
+    "evidence": "IND is celebrated around the world every May 12, the anniversary of Florence Nightingale's birth. [2025 theme: 'Our Nurses. Our Future. Caring for nurses strengthens economies']",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "The fixed annual date (12 May) is stated verbatim by ICN as a general recurring rule on this page ('IND is celebrated around the world every May 12...'), matching the known_editions pattern for 2026-2029. Each year's distinct campaign theme, also verbatim from the same page, confirms an edition was run that year. Note the evidence field combines the general date rule with the year-specific theme, both taken verbatim from the same source page, since no single sentence on the page pairs '12 May' with each specific year."
+ },
+ {
+  "id": "international-transplant-nurses-society-__itns-annual-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://www.itns.org/: only covers the upcoming '34th Annual ITNS Symposium' (2026, Cleveland), implying 2023/2024/2025 would be the 31st-33rd editions, but no page with their dates/locations was found; guessed URL itns.org/page/PastSymposia 404'd. Web search budget was exhausted before further verification."
+ },
+ {
+  "id": "iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Checked https://www.iapasociety.org: only covers the upcoming 2026 Fall CME Conference (Oct 26-27, Coralville) and a past 2026 Spring CME reference; no 2023-2025 conference details found. Web search budget was exhausted before further verification."
+ },
+ {
+  "id": "irish-association-of-advanced-nurse-and-__iaanmp-annual-national-conference",
+  "archive_url": "https://iaanmp.com/category/conferences/",
+  "archive_evidence": "IAANMP National Conference 2025: A Vision on the Advanced Practice Model of Care",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-13",
+    "end": "2025-10-13",
+    "location": "Portlaoise, Ireland",
+    "format": "in person",
+    "theme": "A Vision on the Advanced Practice Model of Care",
+    "source_url": "https://iaanmp.com/category/conferences/",
+    "evidence": "IAANMP National Conference 2025: A Vision on the Advanced Practice Model of Care ... took place on Monday, October 13th at the Midlands Park Hotel in Portlaoise",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "2025 confirmed via organizer's conferences category page (Midlands Park Hotel, Portlaoise). No mention of 2023 or 2024 editions found on the same page or elsewhere on iaanmp.com; web search budget was exhausted before further verification."
+ },
+ {
+  "id": "japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting",
+  "archive_url": "https://www.js-np.jp/scientific-meeting.htm",
+  "archive_evidence": "2023.10.20(金)〜2023.10.22(日) 第9回日本NP学会学術集会",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-20",
+    "end": "2023-10-22",
+    "location": "Japan (venue not stated on organizer page)",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.js-np.jp/scientific-meeting.htm",
+    "evidence": "2023.10.20(金)〜2023.10.22(日) 第9回日本NP学会学術集会",
+    "detail_url": null
+   },
+   {
+    "start": "2024-11-22",
+    "end": "2024-11-24",
+    "location": "Tokyo, Japan",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.js-np.jp/scientific-meeting-single-10.htm",
+    "evidence": "2024.11.22(金)〜24(日) / 国際医療福祉大学 東京赤坂キャンパス",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-25",
+    "end": "2025-10-26",
+    "location": "Izumo, Shimane, Japan",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.js-np.jp/scientific-meeting-single-11.htm",
+    "evidence": "2025.10.25(土)〜26(日) / 島根県立大学出雲キャンパス",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Found via organizer's own scientific-meeting listing page (js-np.jp/scientific-meeting.htm) plus individual edition pages for venue detail. 2023 venue not stated on the single-9 page (under preparation), only date confirmed on listing page."
+ },
+ {
+  "id": "kansas-academy-of-physician-associates__kapa-heart-of-america-cme-and-annual-members-meeti",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-12",
+    "end": "2023-10-14",
+    "location": "Hilton Garden Inn Manhattan, Manhattan, KS",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://kansaspa.mypanetwork.com/physician-assistant-events/978-2023-kapa-heart-of-america-cme-annual-members-meeting",
+    "evidence": "Thursday, October 12, 2023 at 8:00am CT - Saturday, October 14, 2023 at 1:00pm CT / Hilton Garden Inn Manhattan, 410 South 3rd Street, Manhattan, KS 66502",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-10",
+    "end": "2024-10-12",
+    "location": "Hilton Garden Inn, Wichita, KS",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://kansaspa.mypanetwork.com/physician-assistant-events/1215-2024-kapa-heart-of-america-cme-annual-members-meeting",
+    "evidence": "Thursday, October 10, 2024 at 8:00am CT - Saturday, October 12, 2024 at 12:15pm CT",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-16",
+    "end": "2025-10-18",
+    "location": "Bluemont Hotel, Manhattan, KS",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://kansaspa.mypanetwork.com/physician-assistant-events/1476-kapa-heart-of-america-cme-and-annual-members-meeting",
+    "evidence": "Thursday, October 16, 2025 at 8:00am CT - Saturday, October 18, 2025 at 12:00pm CT",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Found individual event pages on organizer's own mypanetwork.com site for all three years, each with explicit date and venue address text."
+ },
+ {
+  "id": "kansas-advanced-practice-nurses-associat__sunflower-conference",
+  "archive_url": "https://kapn.enpnetwork.com/nurse-practitioner-events",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-01-27",
+    "end": "2023-01-28",
+    "location": "Hyatt Place Kansas City/Lenexa City Center, Lenexa, KS",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://kapn.enpnetwork.com/nurse-practitioner-events/138408-2nd-annual-kapn-sunflower-conference",
+    "evidence": "Friday, January 27, 2023 at 7:00am CT - Saturday, January 28, 2023 at 5:00pm CT",
+    "detail_url": null
+   },
+   {
+    "start": "2025-01-31",
+    "end": "2025-02-01",
+    "location": "Embassy Suites by Hilton Kansas City Olathe, Olathe, KS",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://kapn.enpnetwork.com/nurse-practitioner-events/144016-4th-annual-kapn-sunflower-conference",
+    "evidence": "Friday, January 31, 2025 at 7:00am CT - Saturday, February 1, 2025 at 5:00pm CT",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "Organizer's own enpnetwork event pages found for '2nd Annual' (2023) and '4th Annual' (2025) editions, confirming numbering; the '3rd Annual' (2024) edition page/announcement could not be located via organizer site search, sitewide events listing, or news archive before the web search budget for this session was exhausted. Archive.org (web.archive.org) is blocked for this session's WebFetch tool, so could not be checked as a fallback."
+ },
+ {
+  "id": "klinikum-stuttgart__apn-x-change-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own APN Kongress page (klinikum-stuttgart.de) states the 2026 edition is 'unseren zweiten Advanced Practice Nursing Kongress' (our second APN Congress) and mentions high demand 'im vergangenen Jahr' (last year), implying the inaugural congress was in 2025 — so 2023 and 2024 editions did not exist (not held). However the organizer page gives no exact date for the 2025 (1st) edition, so 2025 could not be recorded with verbatim date evidence despite genuine search (organizer site, events archive, and news pages checked); web.archive.org was blocked for this session's WebFetch tool so could not be used as fallback. WebSearch budget was exhausted before this series could be searched externally."
+ },
+ {
+  "id": "maine-association-of-physician-associate__mapa-spring-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own site (mainepa.mypanetwork.com) only shows the upcoming 2027 Spring CME Conference with no past-events archive or news section found. An AAPA CME-calendar result for 'MAPA 2025 Spring CME Conference' turned out to refer to the Massachusetts Academy of Physician Assistants (same acronym, different state/org), not Maine, so it was discarded as unreliable. WebSearch budget was exhausted before further external search could be done; web.archive.org is blocked for this session's WebFetch tool."
+ },
+ {
+  "id": "maine-nurse-practitioner-association__mnpa-spring-conference",
+  "archive_url": "https://mnpa.org/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-04-28",
+    "end": "2023-04-30",
+    "location": "Hilton Bangor Inn, Bangor, ME",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://mnpa.wildapricot.org/event-5154410",
+    "evidence": "28 Apr 2023 ... 30 Apr 2023 ... Hilton Bangor Inn",
+    "detail_url": null
+   },
+   {
+    "start": "2024-05-01",
+    "end": "2024-05-03",
+    "location": "Samoset Resort, Rockport, ME",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://mnpa.wildapricot.org/event-5549194",
+    "evidence": "1 May 2024 ... 3 May 2024 ... Samoset Resort ... all sessions will be presented virtually with the exception of any workshops or roundtables",
+    "detail_url": null
+   },
+   {
+    "start": "2025-04-30",
+    "end": "2025-05-02",
+    "location": "Samoset Resort, Rockport, ME",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://mnpa.org/event-6071096/Registration",
+    "evidence": "30 Apr 2025 10:00 AM - 2 May 2025 3:30 PM ... Samoset Resort ... Virtual",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three years found on organizer's own registration pages (mnpa.wildapricot.org / mnpa.org, the org's event-hosting platform)."
+ },
+ {
+  "id": "malaysian-paediatric-association-mpa-and__mpa-annual-congress-pediatric-nursing-symposium",
+  "archive_url": "https://mpaeds.my/mpa-events/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "IMPORTANT CAVEAT: organizer (mpaeds.my) runs a 'Nursing Symposium' each year, but for 2024 and 2025 these were standalone MPA-only events held mid-year (July 2024, June 2025), separate in date/venue from the MPA Annual Congress, and neither page mentions APPNA. The 2026 edition (in known_editions) is explicitly branded 'Asia Pacific Pediatric Nurses Association (APPNA) Symposium' and is co-located with the 47th MPA Annual Congress (Oct 29-31, 2026) per mpaeds.my/mpa-events/ listing — a different format/co-branding than the 2024/2025 editions recorded here. Treat the 2024/2025 entries as the closest verifiable predecessor event, not confirmed as the same APPNA-branded congress-track series. No 'Nursing Symposium 2023' page or announcement could be found despite checking mpaeds.my events listing and mpa-events calendar; WebSearch budget was exhausted before broader search could be done. | Curator: 2024/2025 MPA-only nursing symposia removed; not confirmed as the same series as the APPNA symposium."
+ },
+ {
+  "id": "manipal-college-of-nursing-manipal-acade__sustainable-health-excellence-nursing-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "No organizer page found describing a 'Sustainable Health Excellence Nursing Conference' (SHELAC) edition before 2026; conference.manipal.edu's general conferences landing page and MCON news page do not mention SHELAC in 2023-2025. A differently-named nursing conference ('National Conference on Nurse-led Developments for Sustainable Healthcare in India') exists on the MCON news site but its date/year could not be confirmed from the page content fetched, and it isn't confirmed to be the same series. WebSearch budget was exhausted before further search could be done."
+ },
+ {
+  "id": "maryland-academy-of-physician-assistants__mdapa-annual-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer site (mdapa.org) home and 2026-Annual-Conference pages show only the upcoming 2026 conference with no past-events archive link found; guessed URLs (/events, /event_list.asp) 404'd. WebSearch budget was exhausted before external search could be attempted; web.archive.org is blocked for this session's WebFetch tool."
+ },
+ {
+  "id": "maryland-association-of-nurse-anesthetis__mana-fall-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Re-checked organizer's own 2026 event page (crnasofmd.org/2026-mana-fall-meeting); it contains no references to prior years' meetings. Consistent with prior_gap_notes ('blocked' for all three years). WebSearch budget was exhausted before external search could be attempted."
+ },
+ {
+  "id": "massachusetts-association-of-nurse-anest__northeast-nurse-anesthesiology-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Re-checked organizer's own 2027 event page (masscrna.com/2027-northeast-nurse-anesthesiology-summit); no references to prior years found. Consistent with prior_gap_notes ('none'). WebSearch budget was exhausted before external search could be attempted."
+ },
+ {
+  "id": "massachusetts-coalition-of-nurse-practit__new-england-regional-nurse-practitioner-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own site (mcnp.enpnetwork.com) events listing and homepage show only the 2026 conference and 2027 speaker-proposal call; no historical 2023-2025 event pages found via site navigation. WebSearch budget was exhausted before external search could be attempted."
+ },
+ {
+  "id": "michigan-academy-of-physician-associates__mapa-fall-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own site (michiganpa.org) events page shows only the 2026 Fall CME Conference and a reference to '2025 MAPA Fall CME On-Demand' (an enduring/recorded activity, without a specific in-person date/location stated in the fetched content). No 2023/2024 references found; guessed /events/past URL 404'd. WebSearch budget was exhausted before external search could be attempted."
+ },
+ {
+  "id": "minnesota-academy-of-physician-associate__mapa-annual-conference",
+  "archive_url": "https://minnesotapa.org/cme-conference-archives/",
+  "archive_evidence": "MAPA hosts two CME conferences each year. Before 2020, MAPA also hosted a Pharmacology Review CME event.",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's CME Conference Archives page lists PDF programs only through Spring 2023 (no Fall 2023, and nothing for 2024 or 2025); no dates/venues are given in the archive page's visible text itself (only PDF filenames), so no edition could be recorded with verbatim on-page date/location text. WebSearch budget was exhausted before external search could be attempted."
+ },
+ {
+  "id": "minnesota-nurse-practitioners__mnnp-annual-conference-precision-practice-and-poli",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own site (mnnp.enpnetwork.com) events listing and homepage show only the 2026 and 2027 events; no historical 2023-2025 event pages found via site navigation. WebSearch budget was exhausted before external search could be attempted."
+ },
+ {
+  "id": "mississippi-association-of-nurse-practit__manp-annual-conference-membership-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "Organizer's own site (msanp.enpnetwork.com) events page shows only the known 2024 '10th Annual Conference & Membership Meeting' (Gulf Shores, AL); no 9th (2023) or 11th (2025) annual conference pages found via events listing, homepage, or news search (news page blocked by robots.txt). WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "nhs-england-centre-for-advancing-practic__advancing-practice-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own page (advanced-practice.hee.nhs.uk) only describes the upcoming 2026 conference (8-14 Nov 2026) and vaguely references recordings from 'previous Centre for Advancing Practice conferences' without dates. WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "obs__national-app-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "Confirmed the 2023 flyer (already in known_editions) states National APP Week 2023 was the '3rd Annual' celebration (Sept 25-29, 2023). Could not find an organizer flyer or page for the 2024 (4th Annual) edition; nationalappweek.com has no history/past-events page, and guessed flyer URL patterns 404'd. WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "national-academy-of-medicine__catalyzing-healthy-longevity-global-innovator-summ",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's own event page (nam.edu) describes the Oct 20, 2026 summit as 'a landmark event' marking 'the culmination of the NAM's Healthy Longevity Global Competition,' with no reference to any 2023-2025 edition of this specific summit, consistent with it being a first-time/one-off event tied to a multi-year competition's conclusion. Consistent with prior_gap_notes ('none')."
+ },
+ {
+  "id": "obs__neonatal-nurses-week",
+  "archive_url": "https://nann.org/tag/nicu-nurse/",
+  "archive_evidence": "September 13-19, 2025",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-13",
+    "end": "2025-09-19",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nann.org/tag/nicu-nurse/",
+    "evidence": "September 13-19, 2025",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Organizer page (nann.org/tag/nicu-nurse/) gave the 2025, 2026, 2027 dates but nothing for 2023 or 2024; the page notes the observance 'was originally a single day, September 15... before expanding to a full week in 2019' without giving specific week dates for 2023/2024. A guessed alternate URL (nann.org/education/neonatal-nurses-week) 404'd. WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "national-association-of-nurse-practition__npwh-annual-women-s-healthcare-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Organizer's own site (npwh.org) news and events pages show no 2023 conference information (news page content only from 2026; events page shows only 2026 items; a direct news article guess returned 403). Consistent with prior_gap_notes ('blocked'). WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "national-association-of-orthopaedic-nurs__naon-annual-congress",
+  "archive_url": "https://www.orthonurse.org/Events/Past-and-Future-Congresses",
+  "archive_evidence": "43rd Annual Congress ... Pittsburgh, PA ... May 6-9, 2023",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-05-06",
+    "end": "2023-05-09",
+    "location": "Pittsburgh, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.orthonurse.org/Events/Past-and-Future-Congresses",
+    "evidence": "43rd Annual Congress ... Pittsburgh, PA ... May 6-9, 2023",
+    "detail_url": null
+   },
+   {
+    "start": "2024-05-18",
+    "end": "2024-05-21",
+    "location": "Louisville, KY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.orthonurse.org/Events/Past-and-Future-Congresses",
+    "evidence": "44th Annual Congress ... Louisville, KY ... May 18 - 21, 2024",
+    "detail_url": null
+   },
+   {
+    "start": "2025-05-17",
+    "end": "2025-05-19",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.orthonurse.org/Events/Past-and-Future-Congresses",
+    "evidence": "45th Annual Congress ... Orlando, Florida ... May 17 - 19, 2025",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three years found on organizer's own 'Past and Future Congresses' page."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__delaware-valley-chapter-fall-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer page (padelvalnapnap.org) is disallowed by robots.txt for automated fetching, so its past-events section could not be checked. Consistent with prior_gap_notes ('blocked' for all three years). WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__napnap-new-jersey-chapter-conference",
+  "archive_url": "https://community.napnap.org/newjerseychapter/conferences--events/chapter-conferences",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Organizer's chapter-conferences archive page mentions a 'Spring Conference (2024)' (with speaker handouts listed) but the page does not state its exact date or venue in fetchable text, so it could not be recorded with verbatim date evidence. No 2023 conference reference found on that page. WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "national-association-of-pediatric-nurse-__pediatric-virtual-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "Organizer's specialty-symposium page (napnap.org) only describes the 2026 edition; the 2023 and 2024 editions (already in known_editions) were confirmed via their own dedicated event pages, but no equivalent 2025 event page or announcement was found (the org may have skipped 2025, consistent with prior_gap_notes 'blocked'). WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "national-commission-on-certification-of-__represent-nccpa-summit",
+  "archive_url": "https://www.nccpa.net/represent-summit/",
+  "archive_evidence": "The inaugural Summit was held in 2022, followed by the 2024 event, and the next Summit will take place September 18-19, 2026, in Atlanta, GA.",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "Organizer's own REPRESENT! Summit page explicitly states the Summit history as 2022 (inaugural), 2024, and 2026 (next), confirming a biennial pattern — i.e., the Summit was NOT held in 2023 or 2025. Consistent with prior_gap_notes ('not held')."
+ },
+ {
+  "id": "national-league-for-nursing__nln-education-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "Organizer's summit.nln.org site and nln.org/events/upcoming page only reference 2025, 2026, and 2027 editions (plus 2023 already known); no 2024 edition page, news item, or recap was found, and the site's only 'recap' link found is for 2025. This is consistent with a possible skip in 2024 (paralleling other health-education summits that moved from biennial to annual), but no explicit statement of non-occurrence was found, so it is recorded as still_missing rather than 'not held.' WebSearch budget was exhausted before further search could be attempted."
+ },
+ {
+  "id": "national-organization-of-nurse-practitio__nonpf-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-04-26",
+    "end": "2023-04-30",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.cvent.com/event/03ddbce9-3d84-48fa-a8e0-86a2e589613c/summary",
+    "evidence": "April 26-30, 2023 ... Orlando, Florida",
+    "detail_url": null
+   },
+   {
+    "start": "2024-04-17",
+    "end": "2024-04-21",
+    "location": "Baltimore, MD",
+    "format": "in person",
+    "theme": "The NP Educators Golden Jubilee",
+    "source_url": "https://web.cvent.com/event/eb84b7ab-826e-41ed-9c9b-cfcb3b9af64c/",
+    "evidence": "April 17-21, 2024 | Baltimore, MD",
+    "detail_url": null
+   },
+   {
+    "start": "2025-04-09",
+    "end": "2025-04-13",
+    "location": "Denver, CO",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.cvent.com/event/d16a7eb2-7282-41f3-8800-776c6cbb2927/websitePage:645d57e4-75eb-4769-b2c0-f201a0bfc6ce",
+    "evidence": "April 9-13, 2025 ... Denver, CO",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "nonpf.org main site (incl. the archive_url pastconferences page and web.archive.org) blocked/403 for direct fetch, so found each year's dates via the organizer's own Cvent registration pages (web.cvent.com/event/...) instead: 49th Annual Conference 2023 (Orlando), 50th 2024 (Baltimore), 51st 2025 (Denver)."
+ },
+ {
+  "id": "national-organization-of-nurse-practitio__nonpf-fall-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-11-02",
+    "end": "2023-11-03",
+    "location": "Not stated on source page (hybrid; in-person sessions in \"Regency Ballroom and Foyer\")",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://cdn.ymaws.com/www.nonpf.org/resource/resmgr/conferences/2023_NONPF_Fall_Program__Red.pdf",
+    "evidence": "November 2-3, 2023 ... In-person events will take place in the Regency Ballroom and Foyer",
+    "detail_url": null
+   },
+   {
+    "start": "2024-11-07",
+    "end": "2024-11-08",
+    "location": "Bethesda, MD (& Virtual)",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://cdn.ymaws.com/www.nonpf.org/resource/resmgr/2024/fc24/2024_NONPF_-_Fall_program_Co.pdf",
+    "evidence": "November 7-8, 2024 I Bethesda, MD & Virtual",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "2023 and 2024 confirmed from NONPF's own conference-program PDFs on cdn.ymaws.com (nonpf.org itself returns 403 to direct fetch). 2025 Fall Conference (event id 1954212, reportedly Nov 6-7 in Savannah GA per aggregator showsbee.com, not used as evidence) could not be confirmed on an organizer or reputable third-party page: nonpf.org pages 403'd, no fall-2025 program PDF found on cdn.ymaws.com, and web.archive.org is unreachable in this environment (SITE_BLOCKED at network level, tried multiple times). Listed as still_missing."
+ },
+ {
+  "id": "national-registry-of-emts-american-ambul__ems-association-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Not held in any of these years. The organizer's own recap page states this was the first-ever edition, held in 2026: \"The first-ever EMS Association Summit (EAS), held February 17–19 at the Margaritaville Hotel\" (Kansas City), with the article referencing planning for \"the 2027 summit\" -- confirming no prior editions existed. Source: https://www.nremt.org/News/Inaugural-EMS-Association-Summit-a-National-Succes"
+ },
+ {
+  "id": "national-student-nurses-association__nsna-annual-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-04-12",
+    "end": "2023-04-16",
+    "location": "Nashville, TN",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://m.facebook.com/NSNAinc/photos/a.75435569162/10158953533709163/",
+    "evidence": "the NSNA 71st Annual Convention, April 12-16, 2023, in Nashville, TN",
+    "detail_url": null
+   },
+   {
+    "start": "2025-04-09",
+    "end": "2025-04-13",
+    "location": "Seattle, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://today.uconn.edu/?p=229930",
+    "evidence": "NSNA's 73rd annual convention hosted in Seattle, Washington on April 9-13, 2025.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "2023 (71st, Nashville) confirmed via NSNA's own Facebook post and corroborated by a state-affiliate newsletter PDF (snap-online.org). 2025 (73rd, Seattle) confirmed via UConn Today university news article. Could not confirm exact dates/city for the 72nd Annual Convention (2024) from any organizer or reputable third-party page reachable in this session -- nsna.org shows only upcoming events (no past-events archive accessible), the Imprint newsletter archive listing gave no dates, and web search budget was exhausted before further sources could be checked. Listed as still_missing."
+ },
+ {
+  "id": "national-student-nurses-association__nsna-midyear-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Could not confirm dates for the 41st (2023), 42nd (2024), or 43rd (2025) MidYear Conferences. nsna.org and nsna.glueup.com only expose upcoming events (44th MidYear, 2026) with no accessible past-events archive; web.archive.org is unreachable in this environment; and the web search budget was exhausted while researching the adjacent NSNA Annual Convention series before this series could be searched further. Genuine attempt made via organizer site (nsna.org, nsna.glueup.com) and one archive.org attempt (blocked). Listed as still_missing for all three years."
+ },
+ {
+  "id": "nebraska-academy-of-pas-napa__napa-spring-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "nebraskapa.org's page content available to this session shows only the future 2027 Spring CME Conference (April 7-9, 2027, Kearney, NE); no past-events/archive page was found on the organizer site, and web.archive.org is unreachable in this environment. Web search budget was exhausted before a broader search for this series could be run. Listed as still_missing for all three years."
+ },
+ {
+  "id": "nebraska-nurse-practitioners__annual-nnp-conference-exhibition",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "nebraskanp.enpnetwork.com's events listing (org_url and archive_url) only surfaced upcoming/most-recent events (33rd conference 2025 already in known_editions, 35th 2027); a scope=past query on the same host returned no accessible historical listing content in this session. Could not confirm the 32nd (2024) or earlier (2023) editions from organizer or reputable third-party pages; web search budget was exhausted. Listed as still_missing."
+ },
+ {
+  "id": "new-hampshire-society-of-physician-assoc__nhspa-nhoa-summer-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "nhspa.mypanetwork.com currently shows only the 2026 Summer CME Symposium; no past-conference archive content was found on that page. Web.archive.org unreachable in this environment; web search budget exhausted before further sources could be checked. Listed as still_missing for all three years."
+ },
+ {
+  "id": "new-jersey-association-of-nurse-anesthet__njana-fall-meeting",
+  "archive_url": "https://njana.com/meetings-events/",
+  "archive_evidence": "Historical Conference Links (2020-2026): \"2023 Fall Meeting\" ... \"2024 Fall Meeting\" ... \"2025 Fall Conference\" ... \"2026 Fall Meeting\"",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Found NJANA's own event pages for both years -- https://njana.com/2023-fall-conference/ (in-person + virtual, \"New Jersey Hospital Association, 760 Alexander Rd, Princeton, NJ, 08540\", agenda 6:45AM-4:30PM, page last modified 2023-10-13) and https://njana.com/2024-fall-meeting/ (\"in person at the New Jersey State Hospital Association in Princeton, N.J.\" plus virtual option, sponsorship artwork due \"September 16, 2024\", page last modified 2024-09-28) -- but neither page states the actual meeting date in its text (no day/month appears outside metadata timestamps and unrelated deadlines), so no ISO date could be recorded with fidelity. Listed as still_missing for both years pending a source that states the date itself."
+ },
+ {
+  "id": "new-jersey-association-of-nurse-anesthet__njana-spring-conference",
+  "archive_url": "https://njana.com/meetings-events/",
+  "archive_evidence": "Historical Conference Links (2020-2026): ... \"2024 Spring Conference\" ...",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "Found NJANA's own 2024 Spring Conference page (https://njana.com/2024-spring-conference/): \"The New Jersey Association of Nurse Anesthetists (NJANA) is proud to present the Spring 2024 Virtual Conference,\" confirming format=virtual, but the page (last modified 2024-04-12, sponsorship artwork deadline \"April 3, 2024\") does not itself state the actual conference date. Listed as still_missing pending a source with the exact date."
+ },
+ {
+  "id": "new-jersey-emergency-nurses-association__nj-emergency-care-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "newjerseyena.org's call-for-speakers page was rate-limited (robots.txt 429) on fetch; guessed masterevents URL slugs for the 44th (2023) and 45th (2024) editions (following the known 46th=2025 pattern) both 404'd. Web search budget was exhausted; web.archive.org unreachable in this session. Listed as still_missing for both years."
+ },
+ {
+  "id": "new-jersey-league-for-nursing__njln-annual-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "njln.org's call_for_abstracts.php page currently shows only the upcoming 2027 convention; no past-editions archive was found. Web search budget exhausted before further sources could be checked; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "new-jersey-state-nurses-association__professional-conference-annual-meeting",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "njsna.org's events-calendar and month/2026-10 pages show only Sept-Oct 2026 and the 2027 annual meeting; no historical listing was reachable in this session. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "new-jersey-state-society-of-physician-as__njsspa-annual-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "njsspa.mypanetwork.com (home page and physician-assistant-events listing) shows only upcoming Oct-Nov 2026 events; the input record's own recurrence note states 'no 2025/2026 edition posted as of check date,' consistent with what this session found. No 2023 edition could be confirmed either. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for both years."
+ },
+ {
+  "id": "new-york-state-association-of-nurse-anes__nysana-research-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "nysana.com home page and call-for-abstracts page reference only the upcoming 2026 symposium (\"Saturday, May 2, 2026\"); no past-editions content found. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "new-zealand-nurses-organisation-nzno__nzno-agm-and-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "nzno.org.nz's Conference and AGM page confirms a 2025 edition occurred (\"2025 NZNO Conference and AGM registrations have closed\") but states no date or venue for it in the fetched content; no page content found for 2023 or 2024 either. Web search budget exhausted before this could be pursued further; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "new-zealand-nurses-organisation-nzno__nzno-primary-health-care-nurses-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "2025 was not held as a standalone edition: the College of Primary Health Care Nurses' own upcoming_events page states \"due to the ongoing demands and challenges nurses continue to face, our 2025 Symposium scheduled for 4 October 2025 has been postponed\" and that it \"will now occur in October 2026\" -- matching the known_editions 2026-10-09/10 Christchurch entry, i.e. that IS the rescheduled 2025 edition, not a separate one. Source: https://www.nzno.org.nz/groups/colleges_sections/colleges/college_of_primary_health_care_nurses/upcoming_events. No information found for 2023 or 2024. Listed as still_missing for all three years (2025 because it was postponed/merged into 2026, not because a distinct 2025 event is undiscovered)."
+ },
+ {
+  "id": "north-carolina-academy-of-physician-asso__ncapa-annual-summer-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "ncapa.org/summer-cme-conference/ currently shows only a 2027 save-the-date; no archive of past conferences found. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "north-carolina-nurses-association-ncna-d__dnp-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "ncnurses.org's 2026 DNP Summit calendar page references only the 2026 edition; no past-editions content found. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "north-dakota-nurse-practitioner-associat__ndnpa-pharmacology-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "ndnp.enpnetwork.com shows only the upcoming \"Eighteenth Annual Pharmacology Conference\" (Sept 23-25, 2026); no past-editions archive found. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "nurse-practitioner-alliance-of-alabama__npaa-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "npaa.wildapricot.org and its /Events page show only the upcoming \"20th NPAA Annual Conference\" (Oct 1-3, 2026, Gulf Shores); no past-editions listing content was reachable in this session. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "nurse-practitioner-association-of-canada__pan-canadian-np-conference-annual-npac-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "npac-aiipc.org/annual-conference/ shows only the 2027 Vancouver conference; no past-editions archive found. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "nurse-practitioner-association-of-manito__npam-annual-conference",
+  "archive_url": "https://nursepractitioner.ca/news-events/past-conferences/",
+  "archive_evidence": "\"October 20, 2023\" and \"NPAM Conference 2023\"",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-20",
+    "end": "2023-10-20",
+    "location": "Not stated on source page",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nursepractitioner.ca/news-events/past-conferences/",
+    "evidence": "October 20, 2023 ... NPAM Conference 2023",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024",
+   "2025"
+  ],
+  "note": "NPAM's own past-conferences archive page lists a 2023 edition (October 20, 2023, location not stated) and a 2022 edition (November 18, 2022), but lists nothing for 2024 or 2025 -- suggestive of no edition in those years, but the page does not say so explicitly, so 2024 and 2025 are left as still_missing rather than asserted as not-held."
+ },
+ {
+  "id": "nurse-practitioner-association-of-maryla__npam-fall-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "npamonline.org's 2025 Fall Conference event page (Nov 15, 2025) does not reference or link to any 2023 or 2024 editions. No past-events archive found. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for both years."
+ },
+ {
+  "id": "nurse-practitioners-of-idaho__npi-conference-advancing-professional-practice-for",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "npidaho.enpnetwork.com shows only the upcoming 2026 conference (Sept 25-26, Boise Centre); no past-editions archive found. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "nurse-practitioners-association-of-ontar__npao-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "npao.org's home page references only the 2026 conference (Sept 23-25, Toronto) via Instagram embeds/sponsorship prospectus; no dedicated past-editions archive page was found (site suggests one may exist behind the member portal thenphub.org, not accessible here). Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "nurses-and-nurse-practitioners-of-britis__nnpbc-np-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "npconference.nnpbc.com shows only the upcoming 2026 conference (May 29-30, Vancouver); no past-editions archive found on the current page content. Web search budget exhausted; web.archive.org unreachable. Listed as still_missing for all three years."
+ },
+ {
+  "id": "ohio-association-of-physician-assistants__oapa-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Organizer's Fall Conference page (ohiopa.com/aws/OAPA/pt/sp/fall-conference) and News listing page only surface the current 2026 edition; no past-editions archive or wrap-up articles for 2023-2025 were found on the org site. WebSearch tool budget was exhausted for this session before this series could be searched, and web.archive.org is blocked by the environment's proxy (SITE_BLOCKED), so no archived snapshot could be checked either."
+ },
+ {
+  "id": "oklahoma-academy-of-physician-associates__oapa-annual-cme-conference",
+  "archive_url": "https://www.okpa.org/events/",
+  "archive_evidence": "Annual OAPA Fall CME Conference – 2025 / Annual OAPA Fall CME Conference – 2023 / Annual OAPA Fall CME Conference – 2024 (per-year event page titles)",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-02",
+    "end": "2023-10-04",
+    "location": "Embassy Suites, 741 North Phillips Avenue, Oklahoma City, OK",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.okpa.org/events/annual-oapa-fall-cme-conference-2023/",
+    "evidence": "the 51st Annual CME Conference for Physician Assistants is scheduled from October 2-4th, 2023.",
+    "detail_url": null
+   },
+   {
+    "start": "2025-09-17",
+    "end": "2025-09-19",
+    "location": "River Spirit Casino Resort, 8330 S Riverside Pkwy, Tulsa, OK",
+    "format": "hybrid",
+    "theme": null,
+    "source_url": "https://www.aapa.org/cme-calendar/52nd-annual-cme-conference/",
+    "evidence": "52nd Annual CME Conference September 17, 2025 - September 19, 2025 River Spirit Casino Resort, 8330 S Riverside Pkwy, Tulsa, OK 74137",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "2023 (51st) and 2024 (52nd-numbered-differently) confirmed via okpa.org's own year-specific event pages; note the 2024 page also carries stale 2023 promotional copy, so the 2024 end date was kept conservative (Oct 3) based only on the explicitly year-tagged exhibit-hall-hours text rather than the recycled 'October 2-4th, 2023' sentence. 2025 (52nd Annual CME Conference) confirmed via AAPA's CME calendar listing, which matches the numbering gap (51st=2023, 52nd=2025, implying no fall conference was held under this numbering in 2024, but the okpa.org 2024 page's dated exhibit-hall text indicates an event did occur Oct 2-3, 2024 — flagging as a possible organizer-side inconsistency). | Curator: 2024 withheld; organizer page mixes 2023 and 2024 text."
+ },
+ {
+  "id": "oncology-nurses-association-of-nigeria-o__onan-oncology-nursing-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "onanigeria.org was unreachable via WebFetch on repeated attempts (robots.txt fetch timeout / failed, both the homepage and /registration path). WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy, so no alternate source could be checked."
+ },
+ {
+  "id": "oncology-nursing-society-ons__oncology-nursing-month",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "ons.org/oncology-nursing-month currently shows only the current/upcoming year's theme, with no list of past years' dates. ons.org/press-room returned a 404. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy, so no year-specific press release or archived snapshot could be checked. (Note: this is a recurring May observance per known_editions 2026-2029, so 2023-2025 almost certainly also ran in May, but that is an inference, not verbatim organizer text for those specific years, so it is not recorded.)"
+ },
+ {
+  "id": "oregon-society-of-physician-associates-o__ospa-fall-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "oregonpa.org/events/ lists only the 2026 Fall Conference and later events; no past-editions archive is exposed. Guessed year-specific URLs (ospa-fall-conference-2024/, ospa-fall-conference-2023/) returned 404. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy, so no alternate source could be checked."
+ },
+ {
+  "id": "organization-of-nurse-leaders-of-new-jer__annual-nurse-leader-and-aspiring-nurse-leader-conf",
+  "archive_url": "https://onlnj.glueup.com/org/onlnj/events/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "Confirmed still blocked: the org's glueup events listing page and the individual 2023/2025 event pages (which were checked for related/past-event links) only surface upcoming events statically; a 2024 edition page could not be located (glueup's past-events tab appears to require JS rendering not available to WebFetch). WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "organization-of-nurse-leaders-of-new-jer__apn-conference",
+  "archive_url": "https://onlnj.glueup.com/org/onlnj/events/",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Confirmed still blocked, same as prior research: the org's glueup organization events page only renders upcoming events statically (2026 APN Conference, 2026 Nurse Leader Conference visible), with no accessible past-events archive for 2023-2025. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "peking-university-school-of-nursing__global-nursing-education-innovation-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Scanned nursing.bjmu.edu.cn's news/announcement listings (zdxw and xwgg/tzgg sections, most-recent items plus one page back). No prior edition of this specifically named conference (全球护理教育创新与高质量发展国际会议 / 'Global Nursing Education Innovation and High-Quality Development International Conference') was found before the known 2026 edition; its 2026 first-round notice does not use '首届' (inaugural) language but no earlier-year announcement could be located either. Pagination beyond the first listing page (index_2.htm, index_3.htm) returned 404, and WebSearch/web.archive.org were unavailable, so earlier editions could not be fully ruled out."
+ },
+ {
+  "id": "peking-university-school-of-nursing__interdisciplinary-nursing-research-forum",
+  "archive_url": "https://nursing.bjmu.edu.cn/zdxw/",
+  "archive_evidence": "2024-11-25 – \"2024北京大学INR跨学科护理研究学术论坛成功举办\"; 2025-11-11 area listing includes the 2025-10-31 forum report",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-11-22",
+    "end": "2024-11-23",
+    "location": "Zhuhai, Guangdong Province, China",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nursing.bjmu.edu.cn/zdxw/d797e9c53d064426ab7fb87841d5c85e.htm",
+    "evidence": "2024年11月22-23日，由北京大学护理学院、Interdisciplinary Nursing Research（《跨学科护理研究》，以下简称INR）杂志主办、珠海市护理学会承办的“2024北京大学INR跨学科护理研究学术论坛”在广东省珠海市举办。",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-21",
+    "end": "2025-10-23",
+    "location": "Hong Kong, China",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nursing.bjmu.edu.cn/zdxw/dbc10e9132324629b06cbc0ce04d6ead.htm",
+    "evidence": "2025年10月21日至23日，由北京大学护理学院、Interdisciplinary Nursing Research（以下简称INR）杂志与香港中文大学那打素护理学院联合主办的“跨学科护理研究国际学术论坛”在中国香港成功召开。",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Found 2024 (Zhuhai) and 2025 (Hong Kong) editions of this INR-co-hosted forum via nursing.bjmu.edu.cn's news archive (note the forum's name/co-host varies by year: 2024 'INR跨学科护理研究学术论坛', 2025/2026 '跨学科护理研究国际学术论坛'). No 2023 edition was found in the scanned listings; older pagination pages 404'd. Location for the known 2026 edition (Zhangzhou) differs from these, consistent with the forum rotating host cities each year."
+ },
+ {
+  "id": "penn-medicine-center-for-resuscitation-s__revive",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Confirms prior finding that REVIVE was not held in 2023-2025. revive-conference.com's current page states \"Last year's REVIVE sold out, and 95% of attendees said it would change how they practice,\" referring back to the March 2026 edition (the earliest edition in known_editions) with no mention of any edition before 2026, consistent with 2026 being the inaugural year."
+ },
+ {
+  "id": "pennsylvania-society-of-physician-associ__annual-pspa-fall-cme-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "Confirmed still blocked: pspa.net's future-conference-locations page only lists 2026-2029; the general annual-conference landing page has no 2023 reference; guessed PDF paths (2023 agenda, Nov-2022 news-brief pattern mirroring the Nov-2024-brief→Nov-2025-conference pattern seen for 2025) both 404'd. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "philippine-nurses-association-of-america__pnaa-national-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Confirmed still blocked: mypnaa.org/events references a '47th' and '46th' convention (46th = 2025, per known_editions) but does not show dates for earlier ones in static content; guessed URLs mypnaa.org/PNAA44 and /PNAA45 both 404'd (44th/45th would correspond to 2023/2024 if numbering is sequential-annual). WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "physician-assistant-education-associatio__paea-education-forum",
+  "archive_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "Still not found. The current PAEA events page states \"2025 Sessions [are] On-Demand\" and \"Available Through March 15, 2026,\" confirming a 2025 Forum did occur, but no dates/location are given on that page. paeaonline.org/events/2025-education-forum-fall-workshops (guessed, mirroring the 2024 URL pattern) 404'd, and paeaonline.org/events/ shows only 2026-onward listings. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "pontif-cia-universidade-cat-lica-de-camp__ii-simp-sio-internacional-de-enfermagem-pr-ticas-a",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The registration site (even3.com.br/simposioenfermagem/) is a JavaScript single-page app that WebFetch returns as unreadable binary data, so it could not be checked for a first ('I') edition. No other source for a prior edition was found. Since the known 2026 edition is labeled 'II' (second), a first edition presumably exists in 2023, 2024, or 2025, but it could not be located or dated. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "preventive-cardiovascular-nurses-associa__cardiovascular-nursing-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "pcna.net/events-news/cardiovascular-nursing-symposium/ and pcna.net/events-news/ only show the current/upcoming (2026/2027) symposium; no past-editions listing was found, and pcna.net/past-events/ 404'd. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "rwjbarnabas-health__acute-and-critical-care-app-symposium",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "Confirmed still blocked: rwjbh.org's dedicated program PDF (rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf) still only returns the 2024 program (already on file), and the 2023 event-detail URL (event=32770) shows only the 2023 event with 'This event is no longer available' and no link to a 2025 edition. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "royal-college-of-nursing-rcn__rcn-advanced-nurse-practitioner-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The 2026 conference page and the general rcn.org.uk events landing page contain no references to 2023-2025 editions or a searchable past-events archive reachable via WebFetch. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs",
+  "archive_url": "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+  "archive_evidence": "Schedule 2025 Dates: January 9 and 10 / March 13 and 14 - SOLD OUT / June 5 and 6 - SOLD OUT / October 9 and 10 - SOLD OUT",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "Confirmed still blocked: the rwjbh.org schedule-and-location page currently shows only 2025 dates (already on file) with no 2024 dates retained; no separate 2024 program PDF (matching the 2023 PDF pattern at rwjbh.org/documents/rwj-new-brunswick/) could be located. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "sigma-theta-tau-international__biennial-convention",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Confirms prior finding: this is a biennial convention (known_editions shows only 2027, Denver) and was not held in 2023, 2024, or 2025 (biennial conventions fall on odd/alternating years around it, e.g. 2025 and 2023 were off-years for this particular series per prior research). Not independently re-verified this run beyond the existing known_editions/prior_gap_notes; no contradicting evidence found."
+ },
+ {
+  "id": "singapore-general-hospital-sgh__sgh-wound-nursing-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The nna.gov.sg 2026 event page (organizer's listing partner) shows no past editions and is explicitly labeled 'Upcoming' with no links to prior years. sgh.com.sg itself was not checked further (too broad to guess a specific URL). WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "singapore-nurses-association-sna__apn-digital-transformation-seminar",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "The nna.gov.sg event page for the known 2026 edition contains no references to a prior-year seminar series. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "sociedad-chilena-de-enfermer-a-oncol-gic__seoc-oncology-nursing-congress",
+  "archive_url": "https://seoc.cl/publicaciones/",
+  "archive_evidence": "[2025Congreso 2025Congreso realizado] link to https://seoc.cl/congreso-2025/ ; \"VIII Congreso SEOC\" link at https://seoc.cl/publicaciones/viii-congreso-seoc/",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-11-20",
+    "end": "2025-11-22",
+    "location": "Viña del Mar, Chile",
+    "format": "in person",
+    "theme": "Cuidar con propósito, innovar con visión",
+    "source_url": "https://seoc.cl/congreso-2025/",
+    "evidence": "20, 21 y 22 de noviembre 2025 — VII Congreso Internacional de la Especialidad de Enfermería Oncológica, Viña del Mar, Chile",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "Found the 2025 edition (VII Congreso, Viña del Mar) via seoc.cl/congreso-2025/, linked from the seoc.cl homepage's 'Congreso realizado' note. The 2026 edition (known_editions) is confirmed as VIII Congreso, consistent with VII=2025 (annual, sequential numbering). Guessed URLs congreso-2024/ and congreso-2023/ 404'd, and seoc.cl/publicaciones/vii-congreso-seoc/ (which might have covered the same 2025 event under a different naming pattern) also 404'd; no VI or V congress page/link was found, so 2023 and 2024 (which would be V and VI if numbering is unbroken) remain unconfirmed."
+ },
+ {
+  "id": "sociedade-brasileira-de-enfermagem-em-fe__sobenfee-wound-care-congress",
+  "archive_url": "https://www.sobenfee.org.br/",
+  "archive_evidence": "SOBENFEE 2024 - SALVADOR (certificate-access link to feridas2024.gupe.com.br/certificados); SOBENFEE 2026 described as the '10th Brazilian Congress on Wound Prevention and Treatment'",
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Confirmed a 2024 congress was held in Salvador (referenced via a certificates link on sobenfee.org.br), but the certificate sub-site feridas2024.gupe.com.br returned a 500 server error, so exact dates could not be obtained; no dates found for 2023 or 2025 either (2026 is confirmed as the 10th edition, implying 2024 would be the 8th, but this is inference, not verbatim-dated). WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "society-for-simulation-in-healthcare__healthcare-simulation-week",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2025"
+  ],
+  "note": "Confirmed still blocked: the guessed URL ssih.org/healthcare-simulation-week-2025 redirected/resolved to the 2026 page content instead of showing 2025-specific dates. No alternate 2025 source found. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "society-of-critical-care-medicine__multiprofessional-critical-care-review-adult-in-pe",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "sccm.org's course page only shows the upcoming 2025 course (already on file) and references a 'Past Congress Resources' nav item with no accessible past-course-dates content in the fetched page. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "society-of-critical-care-medicine__national-critical-care-awareness-and-recognition-m",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Confirmed still blocked: sccm.org/about-sccm/critical-care-awareness-month currently only shows a 2026 save-the-date ('Wear blue on Friday, May 15, 2026'); no 2023-2025 dated text found. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-hosted-courses-at-geisinger",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Confirmed still blocked: sccm.org/education-center/conference-calendar is a dynamic calendar not amenable to static WebFetch extraction of past Geisinger-hosted courses; no known_editions on file for this series at all. WebSearch budget was exhausted for this session and web.archive.org is blocked by the environment's proxy."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-hosted-courses-elsewhere-in-the-us",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "\"Hosted courses elsewhere in the US\" is SCCM's licensed/hosted-training program (courses run by partner sites), not a single dated annual event. Checked sccm.org/education-center/conference-calendar and the Hosted Training Opportunities page (https://www.sccm.org/education-center/hosted-training/hosted-training-opportunities); these list ongoing programs with no single yearly 'edition' date. Web search for site:sccm.org hosted courses 2024 turned up only generic program pages, no dated editions. No web.archive.org snapshot attempted further since there is no single event page to snapshot."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-new-jersey-chapter-meetings",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "SCCM New Jersey Chapter holds recurring local meetings (via SCCM Connect community page), not a single dated annual conference. Checked https://connect.sccm.org/communities/community-home?CommunityKey=98bfacdc-71e0-4dbd-9ea0-0615e048fef0 and web search for 'SCCM New Jersey Chapter meeting 2024'; found only the community landing page and an @SCCM_NewJersey X/Twitter account, no organizer page listing specific dated meetings for 2023-2025."
+ },
+ {
+  "id": "society-of-critical-care-medicine__sccm-virtual-sessions",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "'SCCM virtual sessions' refers to SCCM's Congress Digital / virtual programming track rather than a standalone dated event series. Checked sccm.org/education-center/conference-calendar, sccm.org/annual-congress/congress-digital, and sccm.org/annual-congress/past-congress-resources; these describe the digital access format tied to the main Critical Care Congress rather than list independent yearly 'virtual session' editions with their own dates. No qualifying organizer evidence found."
+ },
+ {
+  "id": "society-of-gastroenterology-nurses-and-a__sgna-annual-course",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-05-07",
+    "end": "2023-05-09",
+    "location": "Phoenix, AZ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://communities.sgna.org/events/event-description?CalendarEventKey=05467eaf-b202-4f35-9de3-32b8964d04bf&Home=eventscalendar",
+    "evidence": "Sun, May 7, 2023 07:00:00 AM (MT) through Tue, May 9, 2023 05:00:00 PM (MT); venue 100 N 3rd St, Phoenix, AZ 85004-2277 (SGNA 50th Annual Course)",
+    "detail_url": null
+   },
+   {
+    "start": "2024-05-09",
+    "end": "2024-05-11",
+    "location": "Louisville, KY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.sgna.org/Events/Calendar-of-Events/Event-Information/sgna-51st-annual-course-2",
+    "evidence": "Join us on May 9-11, 2024 in Louisville KY for SGNA's 51st Annual",
+    "detail_url": null
+   },
+   {
+    "start": "2025-06-01",
+    "end": "2025-06-03",
+    "location": "Pittsburgh, PA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://sgna.ps.membersuite.com/events/ViewEvent.aspx?contextID=8070daaa-0078-c628-7117-0b476a8e50ae",
+    "evidence": "Join your GI/Endoscopy colleagues in Pittsburgh, Pennsylvania for the SGNA 52nd Annual Course June 1-3, 2025",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Found all three missing editions on SGNA's own domain (sgna.org / communities.sgna.org / sgna.ps.membersuite.com event pages), numbered 50th (2023), 51st (2024), 52nd (2025) Annual Course, consistent with the known 53rd (2026, implied) and 54th (2027) editions."
+ },
+ {
+  "id": "society-of-hospital-medicine__multisite-leaders-in-hospital-medicine-summit",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Only the 2026 edition (Sept 17-18, 2026, Philadelphia, PA) is dated on the current organizer page https://www.hospitalmedicine.org/practice-management/multisite-leaders-in-hm-summit/. A 2024 edition and a 2025 edition clearly existed (YouTube video 'Multisite Leaders in Hospital Medicine Summit 2024'; an on-demand catalog listing 'Multisite Leaders in Hospital Medicine Summit 2025' at education.hospitalmedicine.org, expiring Sep 24 2026) but neither page states the live event's start/end dates or city in fetchable text. connect.hospitalmedicine.org (HMX event page) is blocked by robots.txt/site block. web.archive.org has no snapshot of the practice-management page for 2023 or 2024 (wayback 'available' API returned empty archived_snapshots for both). Tried multiple web searches combining the event name with candidate months/cities; none surfaced an organizer or reputable non-aggregator page stating verbatim dates for 2023, 2024, or 2025."
+ },
+ {
+  "id": "society-of-hospital-medicine__national-hospitalist-day",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-02",
+    "end": "2023-03-02",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20230307063824/https://www.hospitalmedicine.org/about/national-hospitalist-day",
+    "evidence": "Save the Date: Thursday, March 2, 2023! This year's fifth annual National Hospitalist Day",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-07",
+    "end": "2024-03-07",
+    "location": "Nationwide",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20240306000315/https://www.hospitalmedicine.org/about/national-hospitalist-day/",
+    "evidence": "Save the Date: Thursday, March 7, 2024! This year's National Hospitalist Day is focused on cele",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Current hospitalmedicine.org page only shows the current/next year; used web.archive.org snapshots of the prior URL path (hospitalmedicine.org/about/national-hospitalist-day/, since redirected to /about-shm/...) captured Mar 7 2023 and Mar 6 2024 to get each year's own 'Save the Date' text, confirming the first-Thursday-in-March pattern also seen in known_editions (2025=Mar 6, 2026=Mar 5, 2027=Mar 4)."
+ },
+ {
+  "id": "society-of-hospital-medicine__shm-converge",
+  "archive_url": "https://shmabstracts.org/meetings-archive/",
+  "archive_evidence": "SHM's meetings archive page offers a dropdown of past SHM/Converge meetings (e.g. 'Hospital Medicine 2019, March 24-27, National Harbor, Md.'), though 2023-2025 Converge entries render via JS without dates in static fetch.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-04-22",
+    "end": "2025-04-25",
+    "location": "Mandalay Bay Resort & Casino, Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=ELZQLUSL",
+    "evidence": "SHM Converge 2025 will be held April 22 - 25, 2025 at the Mandalay Bay Resort & Casino in Las Vegas, Nevada.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "2025 dates/location found on SHM's own Speaker & Topic Proposals submission site (abstractscorecard.com, SHM-branded event portal), consistent with the known 2027 edition also being at Mandalay Bay."
+ },
+ {
+  "id": "society-of-urologic-nurses-and-associate__urologic-suna-annual-advanced-urologic-conference",
+  "archive_url": "https://www.suna.org/events/conference-history",
+  "archive_evidence": "Conference History page lists: 'October 26-29, 2023. uroLogic Conference Arizona Grand Resort & Spa Phoenix, AZ' and 'March 3-5, 2023. Advanced uroLogic Conference' among other years.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-26",
+    "end": "2023-10-29",
+    "location": "Phoenix, AZ",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.suna.org/events/conference-history",
+    "evidence": "October 26-29, 2023. uroLogic Conference Arizona Grand Resort & Spa Phoenix, AZ",
+    "detail_url": null
+   },
+   {
+    "start": "2024-09-26",
+    "end": "2024-09-29",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.suna.org/events/conference-history",
+    "evidence": "uroLogic Conference (Fall): September 26-29, 2024 at Renaissance Orlando at SeaWorld, Orlando, FL",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-10",
+    "end": "2025-10-13",
+    "location": "Louisville, KY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.suna.org/events/2025-urologic",
+    "evidence": "October 10-13, 2025 at the Louisville Marriott Downtown in Louisville, Kentucky (2025 SUNA uroLogic Conference)",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "SUNA also runs a separate spring 'Advanced uroLogic Conference' each year (e.g. March 3-5, 2023 Philadelphia; March 1-3, 2024 Nashville) documented on the same conference-history page; the fall 'uroLogic Conference' was used here as the primary annual edition to match the flagship event referenced by the known 2026 edition."
+ },
+ {
+  "id": "stony-brook-medicine__stony-brook-medicine-advanced-practice-provider-sy",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "The known 2025 edition's own source URL and title identify it as the 'Stony Brook Medicine INAUGURAL Advanced Practice Providers Symposium' (https://cme.stonybrookmedicine.edu/continuing-medical-education/conferences/254/stony-brook-medicine-inaugural-advanced-practice-providers-symposium-building-bridges-and-breaking/9/25/2025), and the 2026 edition is explicitly the '2nd Annual' symposium. This confirms the symposium began in 2025 and did not occur in 2023 or 2024."
+ },
+ {
+  "id": "texas-nurse-practitioners__tnp-annual-conference-and-skills-workshops",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-09-28",
+    "end": "2023-10-01",
+    "location": null,
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20230903234007/https://www.texasnp.org/default.aspx",
+    "evidence": "TNP Annual Conference September 28-October 1, 2023 Where NPs get their Texas CE and more. Register by July 31 for early registration",
+    "detail_url": null
+   },
+   {
+    "start": "2024-09-05",
+    "end": "2024-09-08",
+    "location": "Round Rock, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://texasnp.org/wp-content/uploads/2024/06/C6-TNP-2024-Annual-Conference-Promo-Brochure.pdf",
+    "evidence": "ANNUAL CONFERENCE 2024 Kalahari Resort | Round Rock September 5-8, 2024",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "2023 dates recovered from a web.archive.org snapshot of the old texasnp.org homepage (Sept 3, 2023 capture); that snapshot's nav linked to a dedicated 'Annual Conference' page (page/FC2023) which itself was never crawled by the Wayback Machine, so no specific venue/city is confirmed for 2023 (location left null). 2024 dates/venue confirmed from TNP's own conference brochure PDF."
+ },
+ {
+  "id": "texas-nurse-practitioners__tnp-pharmacology-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-30",
+    "end": "2023-04-01",
+    "location": "San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20230323024958/https://www.texasnp.org/event/spring23",
+    "evidence": "Register now for TNPs 11th Annual Primary Care and Pharmacology Conference - March 30 - April 1, 2023 3/30/2023 to 4/1/2023",
+    "detail_url": null
+   },
+   {
+    "start": "2025-04-10",
+    "end": "2025-04-12",
+    "location": "San Antonio, TX",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://texasnp.org/wp-content/uploads/2025/02/C10-TNP-Pharma-Conf-Brochure-2025.pdf",
+    "evidence": "2025 Nurse Practitioner PHARMACOLOGY CONFERENCE + Opioid Pre-Conference April 10-12, 2025 | San Antonio, Hyatt Regency Hill Country Resort & Spa",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "2023 edition was TNP's '11th Annual Primary Care & Pharmacology Conference + Obesity Pre-Conference', found via a web.archive.org snapshot of the old texasnp.org event page (event/spring23). 2025 edition confirmed via TNP's own conference brochure PDF."
+ },
+ {
+  "id": "texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "Direct fetch of the tna.ce21.com event page was blocked (403). A web search found the event listed on tna.ce21.com only with 2026 dates (Sept 22 and Sept 29, 2026 virtual sessions plus the in-person conference), and no evidence of a 2023, 2024, or 2025 edition of this specific District 9 conference was found via TNA District 9's page or the wider Texas Nurses Association site (texasnurses.org/page/TNADistricts). Likely a newer/first-time offering; could not confirm inaugural status with direct organizer evidence, so left as still_missing rather than asserting non-occurrence."
+ },
+ {
+  "id": "the-hong-kong-academy-of-nursing-and-mid__international-advanced-nursing-practice-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-11-25",
+    "end": "2023-11-25",
+    "location": null,
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.hkcen.org/education/sponsorship-for-the-2nd-ianpc-2023",
+    "evidence": "2nd International Advanced Nursing Practice Conference 2023 (IANPC 2023) that will be held on 25th Nov 2023 organized by the Hong Kong Academy of Nursing (HKAN",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "2023 edition (2nd IANPC) found via a third-party sponsorship page (hkcen.org), which attributes organizing to 'Hong Kong Academy of Nursing (HKAN)' rather than 'HKANM' (Hong Kong Academy of Nursing and Midwifery) named in this series' org field -- likely the same body under a shortened/earlier name, consistent with the biennial 1st(2021)/2nd(2023)/3rd(2025) numbering matching the known 2025 edition. Could not reach hkanm.hk's own 2023 event page (404) or find a web.archive.org snapshot of it. Exact venue not found in the available source (location left null). 2024: this series is explicitly biennial (2021, 2023, 2025 per recurrence note), so no edition was held in 2024; still_missing rather than asserting a 'not held' editions entry since no direct organizer statement of the biennial gap for that specific year was fetched (inferred from the recurrence pattern and the gap between the 2023 and 2025 editions)."
+ },
+ {
+  "id": "the-nurse-practitioner-association-new-y__npa-annual-conference-np26",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-10-16",
+    "end": "2025-10-19",
+    "location": "Saratoga Springs, NY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm",
+    "evidence": "NP25 Annual Conference will be held at the Saratoga Hilton, Saratoga Springs, NY - October 16-19.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023"
+  ],
+  "note": "2025 (NP25) dates found via a web.archive.org snapshot of an NPA news post (current thenpa.org site is behind a Cloudflare interstitial that blocks direct fetch/curl access, though the WebFetch tool could reach some pages). For 2023, no equivalent 'NP23' news post or conference page was found in the Wayback Machine's captures of thenpa.org for 2023 (CDX search for that year returned no conference-related URLs), and web search did not surface an organizer page with 2023 dates; still_missing."
+ },
+ {
+  "id": "the-nurse-practitioners-of-new-york__pharm-day-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-11-15",
+    "end": "2025-11-15",
+    "location": "Virtual (Zoom/webinar)",
+    "format": "virtual",
+    "theme": null,
+    "source_url": "https://npny.enpnetwork.com/nurse-practitioner-news/225911-npny-saturday-november-15th-2025-annual-pharmacology-program-for-nurse-practitioners",
+    "evidence": "NURSE PRACTITIONERS OF NEW YORK Annual Pharmacology Program for Nurse Practitioners November 15, 2025 Virtual Webinar Presentation",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "Found via NPNY's own site (npny.enpnetwork.com) news article, matching the same virtual-webinar format as the known 2023 and 2024 editions."
+ },
+ {
+  "id": "transcultural-nursing-society__transcultural-nursing-society-annual-conference",
+  "archive_url": "https://www.tcns.org/annualconference",
+  "archive_evidence": "Nav menu on tcns.org/annualconference/ lists '50th Conference 2024', among links to Call for Abstracts, Conference Registration, Hotel & Location, Program, Sponsors, Regional Events, Conferences.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-11",
+    "end": "2023-10-14",
+    "location": "Charleston, SC",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.tcns.org/48thannualconference2021",
+    "evidence": "49th Annual Conference of the Transcultural Nursing Society October 11-14, 2023. Charleston, SC.",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-23",
+    "end": "2024-10-26",
+    "location": "Salt Lake City, UT",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20240519212826/https://tcns.org/annualconference/",
+    "evidence": "Salt Lake Marriott City Center 220 South State Street, Salt Lake City, UT October 23-26, 2024",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-29",
+    "end": "2025-11-01",
+    "location": "Portland, ME",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://nursology.net/wp-content/uploads/2025/04/2025ERLTransculturalNrsgReg-compressed.pdf",
+    "evidence": "51st Annual Conference Transcultural Nursing Society Portland, Maine October 29 - November 1, 2025",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions confirmed: 49th (2023, Charleston SC) on TCNS's own domain; 50th (2024, Salt Lake City UT) via a web.archive.org snapshot of tcns.org/annualconference/; 51st (2025, Portland ME) via TCNS's own conference registration brochure PDF (hosted on nursology.net but self-identified as a TCNS document with tcns.org/staff@tcns.org contact info). Numbering is consistent with the known 52nd (2026, San Antonio) edition."
+ },
+ {
+  "id": "universidad-aut-noma-de-chihuahua__national-postgraduate-nursing-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [],
+  "still_missing": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "note": "This 'Congreso Nacional de Posgrado en Enfermeria' is a national congress that ROTATES host institutions each year rather than being hosted annually by UACH itself: UACH is hosting the 14th edition in 2026 (per the known edition), but a UACH news article (https://uach.mx/vida-universitaria/2025/12/11/destacan-estudiantes-de-fen-uach-en-el-13-congreso-nacional-de-posgrados-en-enfermeria) confirms the 13th edition (2025) was 'realizados en la Universidad Veracruzana, Region Orizaba' (held at Universidad Veracruzana, Orizaba Region) -- i.e. NOT a UACH-organized event. No exact 2025 dates were found in the fetched article text. Given the rotating-host structure, no UACH-run edition existed in 2023, 2024, or 2025 (those years' congresses, if held, were run by other host universities), so all three remain still_missing for this specifically-scoped (UACH) series rather than being filled with a different institution's event."
+ },
+ {
+  "id": "universidad-de-la-frontera__international-nursing-specialties-and-research-con",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-11-11",
+    "end": "2024-11-12",
+    "location": "Temuco, Chile",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20241118070950/https://congresoenfermeria.ufro.cl/images/documentos/programa-congreso-2024-4.pdf",
+    "evidence": "PROGRAMA 11 De Noviembre - Aula Magna / PROGRAMA 12 De Noviembre - Aula Magna; event branding: 'I CONGRESO DE ESPECIALIDADES E INVESTIGACION EN ENFERMERIA 11/12 nov 2024'",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "Found the organizer's own two-day program PDF (image-based, read directly) for the 2024 congress, whose logo explicitly labels it 'I CONGRESO' (1st Congress), Nov 11-12, 2024, hosted by Universidad de La Frontera's Facultad de Medicina/Departamento de Enfermeria -- so the series began in 2024 and did not exist in 2023 (pre-inaugural). No 2025 edition was found (web.archive.org has zero snapshots of this domain for all of 2025), so 2025 is left still_missing rather than asserting it wasn't held, since the recurrence pattern after only one prior edition is unclear."
+ },
+ {
+  "id": "universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2024-10-29",
+    "end": "2024-10-30",
+    "location": "Bandung, Indonesia",
+    "format": "in person",
+    "theme": "Reshaping Nursing Education and Practice Towards Global Disaster Nursing and Sustainable Development",
+    "source_url": "https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf",
+    "evidence": "9TH PINC 2024 ABSTRACT BOOK ... Tuesday to Tuesday, 29th - 30th October 2024 Holiday Inn Bandung",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2025"
+  ],
+  "note": "PINC's own published abstract books show it is BIENNIAL, not annual as the recurrence field states: 'THE 8TH PADJADJARAN INTERNATIONAL NURSING CONFERENCE 2022' (Sept 13-16, 2022, hybrid) and '9TH PINC 2024' (Oct 29-30, 2024, Bandung) were found on pinc.fkep.unpad.ac.id, consistent with the known 10th edition in 2026 -- 8th/9th/10th falling on 2022/2024/2026, all even years. This strongly implies no edition was held in 2023 or 2025 (odd years), but no organizer statement explicitly confirming a 'not held' status for those specific years was found, so they are left still_missing rather than asserted as non-occurrences; the evidence for the biennial, even-year pattern is noted here for the record."
+ },
+ {
+  "id": "vermont-nurse-practitioners-association__vnpa-conference-nps-from-the-green-mountains-to-th",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-04-27",
+    "end": "2023-04-28",
+    "location": "Essex, VT",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://vtnpa.enpnetwork.com/nurse-practitioner-news/217825-vnpa-2023-conference-registration-is-open-",
+    "evidence": "Join us for 1 or 2 days of education, networking and delicious food April 27-28, 2023 at the Essex Resort in Essex, VT.",
+    "detail_url": null
+   },
+   {
+    "start": "2024-11-14",
+    "end": "2024-11-15",
+    "location": "Stowe, VT",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://vtnpa.enpnetwork.com/nurse-practitioner-news/222636-vnpa-2024-conference-registration-is-open-",
+    "evidence": "Collaboration and Connections: The VNPA Conference 2024 ... Join us for 1 or 2 days of education, networking and delicious food Nov 14-15, 2024 at the Stoweflake Resort in Stowe, VT.",
+    "detail_url": null
+   },
+   {
+    "start": "2025-11-13",
+    "end": "2025-11-14",
+    "location": "Stowe, VT",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://vtnpa.enpnetwork.com/nurse-practitioner-news/225534-vnpa-2025-conference-agenda-is-posted-",
+    "evidence": "Newly posted agenda for the 2025 VNPA conference Nov 13-14, 2025 at the Stoweflake Resort in Stowe VT.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions found via VNPA's own site (vtnpa.enpnetwork.com) news posts. Conference moved from an April date at the Essex Resort (2023) to a November date at the Stoweflake Resort (2024 onward), consistent with the known 2026 edition (Nov 12-13, 2026, Stoweflake Mountain Resort)."
+ },
+ {
+  "id": "verpleegkundigen-verzorgenden-nederland-__v-vn-vs-annual-congress",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-11-02",
+    "end": "2023-11-03",
+    "location": "Rotterdam, Netherlands",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20230925063614/https://congresscare.com/congress/15e-jaarcongres-vvn-vs/",
+    "evidence": "Het Jaarcongres V&VN VS vindt in 2023 plaats op donderdag 2 & vrijdag 3 november. Wanneer 2 - 3 november 2023 Waar Postillion Hotel & Convention Centre WTC Rotterdam, Meent, Rotterdam, Nederland",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-10",
+    "end": "2024-10-11",
+    "location": "Rotterdam, Netherlands",
+    "format": "in person",
+    "theme": "Perspectief",
+    "source_url": "https://web.archive.org/web/20240620164713/https://www.venvn.nl/agenda/jaarcongres-v-vn-vs/",
+    "evidence": "Het 16e jaarcongres zal plaatsvinden in het Postillion Convention Centre Rotterdam op 10 en 11 oktober 2024.",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-09",
+    "end": "2025-10-10",
+    "location": "Utrecht, Netherlands",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.vsdiabetes.nl/vvn-vs-jaarcongres-2025",
+    "evidence": "Graag informeren wij jullie over het V&VN VS jaarcongres dat op 9 en 10 oktober wordt gehouden in het NBC Congrescentrum te Utrecht.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions found: 2023 (15th jaarcongres) via a web.archive.org snapshot of the event's dedicated organizer page on congresscare.com (the registration/event-management platform used by V&VN VS, found via CDX domain search after the venvn.nl agenda page alone had no earlier/later snapshots); 2024 (16th) via a web.archive.org snapshot of venvn.nl's own persistent congress agenda page; 2025 via a third-party partner/sponsor page (vsdiabetes.nl) quoting the organizer's own announcement text, consistent with the known 2026 edition being the 18th (per congresscare.com/congress/18e-jaarcongres-vvn-vs-2026)."
+ },
+ {
+  "id": "virginia-academy-of-pas-vapa__vapa-summer-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-07-23",
+    "end": "2023-07-28",
+    "location": "Virginia Beach, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20230603203916/https://www.vapa.org/events/2023VAPASummerConference/",
+    "evidence": "Register now for the 41st Annual VAPA Summer CME Conference taking place July 23-28, 2023 at the Marriott Virginia Beach Oceanfront",
+    "detail_url": null
+   },
+   {
+    "start": "2024-07-22",
+    "end": "2024-07-25",
+    "location": "Virginia Beach, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20240601042011/https://www.vapa.org/events/2024VAPASummerConference/",
+    "evidence": "Register now for the 42nd Annual VAPA Summer CME Conference taking place July 22-25, 2024 at the Marriott Virginia Beach Oceanfront",
+    "detail_url": null
+   },
+   {
+    "start": "2025-07-20",
+    "end": "2025-07-24",
+    "location": "Virginia Beach, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/",
+    "evidence": "Register now for the 43rd Annual VAPA Summer Conference July 20-24, 2025 Marriott Virginia Beach Oceanfront",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions found via web.archive.org snapshots of VAPA's own predictably-named event pages (vapa.org/events/{year}VAPASummerConference/), numbered 41st (2023), 42nd (2024), 43rd (2025), consistent with the known 44th (2026) edition at the same venue."
+ },
+ {
+  "id": "virginia-council-of-nurse-practitioners__vcnp-annual-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-03-22",
+    "end": "2023-03-25",
+    "location": "Roanoke, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20221128082232/https://www.vcnp.net/events/2023vcnpannualconference/",
+    "evidence": "The 2023 VCNP Annual Conference will be held March 22-25 in the VCNP Blue Ridge Region at The Hotel Roanoke & Conference Center.",
+    "detail_url": null
+   },
+   {
+    "start": "2024-03-13",
+    "end": "2024-03-16",
+    "location": "Williamsburg, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20240225110440/https://www.vcnp.net/events/2024VCNPAnnualConference/",
+    "evidence": "2024 VCNP Annual Conference March 13-16, 2024 at the Williamsburg Lodge",
+    "detail_url": null
+   },
+   {
+    "start": "2025-03-26",
+    "end": "2025-03-29",
+    "location": "Norfolk, VA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20240913014300/https://www.vcnp.net/events/2025VCNPAnnualConference/",
+    "evidence": "2025 VCNP Annual Conference March 26-29, 2025 at the Norfolk Hilton The Main",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions found via web.archive.org snapshots of VCNP's own predictably-named event pages (vcnp.net/events/{year}VCNPAnnualConference/); the 2023 page's live content wasn't visible in later snapshots (likely JS-rendered by then) but an earlier Nov 2022 snapshot still had the server-rendered event details."
+ },
+ {
+  "id": "washington-academy-of-physician-associat__wapa-fall-conference",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-10-26",
+    "end": "2023-10-28",
+    "location": "Walla Walla, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20230610103346/https://www.wapa.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=82&Itemid=171&year=2023&month=10&day=26&title=fall-2023-cme&uid=a5d24fbc72b6e6eb5251468bec3b385b",
+    "evidence": "Thursday, October 26, 2023 to Saturday, October 28, 2023 Category: Conferences The Fall CME Dates are confirmed.",
+    "detail_url": null
+   },
+   {
+    "start": "2024-10-10",
+    "end": "2024-10-12",
+    "location": "Spokane, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20241003223604/https://wapa.com/events/wapa-conference-oct-10-12-2024/",
+    "evidence": "WAPA Conference October 10th - 12th at The Historic Davenport Hotel Spokane, Washingon",
+    "detail_url": null
+   },
+   {
+    "start": "2025-10-14",
+    "end": "2025-10-17",
+    "location": "Tulalip, WA",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20250917104539/https://wapa.com/events/wapa-fall-conference-2025/",
+    "evidence": "WAPA Fall Conference 2025 Tulalip Resort ... \"startDate\": \"2025-10-14\", \"endDate\": \"2025-10-17\"",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions found via web.archive.org snapshots of wapa.com event pages (each year used a differently-formatted URL slug: Joomla jevents system in 2023, then WordPress event pages in 2024/2025). 2025 dates came from the page's embedded schema.org JSON-LD (startDate/endDate) since the venue name 'Tulalip Resort' appeared in visible text but the explicit date range did not."
+ },
+ {
+  "id": "wound-ostomy-and-continence-nurses-socie__wocnext",
+  "archive_url": "https://www.wocn.org/events/wocnext/",
+  "archive_evidence": "wocn.org/events/wocnext/ lists multiple years' dates and locations together, e.g. 'WOCNext 2025 June 1-3, 2025 - Orlando, FL' and 'WOCNext 2023 June 4-7, 2023 - Las Vegas, NV'.",
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-06-04",
+    "end": "2023-06-07",
+    "location": "Las Vegas, NV",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.wocn.org/events/wocnext/",
+    "evidence": "WOCNext 2023 June 4-7, 2023 - Las Vegas, NV",
+    "detail_url": null
+   },
+   {
+    "start": "2024-06-09",
+    "end": "2024-06-12",
+    "location": "Cleveland, OH",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.wocn.org/events/wocnext/",
+    "evidence": "WOCNext 2024 June 9-12, 2024 - Cleveland, OH",
+    "detail_url": null
+   },
+   {
+    "start": "2025-06-01",
+    "end": "2025-06-03",
+    "location": "Orlando, FL",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://www.wocn.org/events/wocnext/",
+    "evidence": "WOCNext 2025 June 1-3, 2025 - Orlando, FL",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [],
+  "note": "All three editions found on WOCN's own events page (wocn.org/events/wocnext/), which lists each year's dates and city together, consistent with the known 2027 edition (Savannah, GA)."
+ },
+ {
+  "id": "wyoming-association-of-pas-wapa__wapa-annual-conference-joint-with-wms",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2023-01-12",
+    "end": "2023-01-14",
+    "location": "Casper, WY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20230330210048/https://wapa.mypanetwork.com/physician-assistant-events/778-annual-wapa-conference",
+    "evidence": "Annual WAPA Conference Casper College- Wold Physical Science Building 1800 Lisco Drive Casper, WY 82601 Thursday, January 12, 2023 at 7:30am MT - Saturday, January 14, 2023 at 12:00pm MT",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2024"
+  ],
+  "note": "2023 Annual WAPA Conference found via a web.archive.org snapshot of a persistent event page on wapa.mypanetwork.com (Casper College, Jan 12-14, 2023); that page does not mention a joint WMS event that year, unlike the known 2025 edition explicitly described as joint with WMS. A June 2024 re-crawl of the same event-page URL still showed the stale 2023 content, and no other 2024-dated WAPA conference event page was found via web.archive.org CDX search of wapa.mypanetwork.com for late 2023/early 2024; still_missing for 2024."
+ },
+ {
+  "id": "wyoming-council-for-advanced-practice-nu__wna-wcapn-annual-convention-stronger-together",
+  "archive_url": null,
+  "archive_evidence": null,
+  "proceedings_url": null,
+  "past_editions": [
+   {
+    "start": "2025-09-11",
+    "end": "2025-09-12",
+    "location": "Casper, WY",
+    "format": "in person",
+    "theme": null,
+    "source_url": "https://web.archive.org/web/20250913144147/https://wcapn.enpnetwork.com/nurse-practitioner-events/147012-2025-wna-convention",
+    "evidence": "The Wyoming Nurses Association (WNA) is thrilled to announce its much-anticipated 2025 Annual Convention, set to take place in Casper on September 11-12, 2025.",
+    "detail_url": null
+   }
+  ],
+  "still_missing": [
+   "2023",
+   "2024"
+  ],
+  "note": "2025 WNA/WCAPN convention found via a web.archive.org snapshot of wcapn.enpnetwork.com's event page. A full CDX history of the domain shows it was rebuilt on the enpnetwork platform around May 2024 (earliest post-relaunch snapshot is a 'Welcome to our new WCAPN website' news post from 2024-05-28/2025-09-13 crawls); the only earlier crawls are from 2013 on a different site structure. No 2023 or 2024 convention page exists in web.archive.org's index of this domain, consistent with the site not having that content in its current form yet; still_missing for those two years."
+ }
+]
