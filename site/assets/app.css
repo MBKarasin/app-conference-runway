@@ -578,3 +578,72 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   :root:not([data-theme="light"]) .dir .srs{background:var(--surface);color:var(--ink)}
   :root:not([data-theme="light"]) .quote{background:var(--surface-2);color:var(--ink-2)}
 }
+
+/* ---------------------------------------------------------------------------
+   2026-09-22 tune-up: scarlet header rules, brighter title, stronger view
+   switch and result count, stacked review stamps, spanning calendar bars.
+   --------------------------------------------------------------------------- */
+:root{--stu:#6B4FA0;--dnp:#0F7B6C}
+.mast .toprow{border-bottom:1px solid #CC0033!important}
+.mast .strip{height:2px!important;background:#CC0033!important;opacity:1!important}
+.mast .spotlight{display:none!important}
+.mast .toprow .eyebrow{color:#FFFFFF!important;letter-spacing:.14em;font-weight:800}
+.mast h1{color:#FFFFFF!important}
+.mast h1 .app{color:#CC0033!important}
+.mast h1 .runway-word{color:#FFFFFF!important}
+.mast .updated{display:grid;justify-items:end;text-align:right;gap:3px;margin-left:auto;white-space:nowrap}
+.mast .updated::before{display:none!important}
+.mast .updated span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#CC0033;margin-right:7px;vertical-align:1px}
+.mast .updated span{color:#DCE7EA}
+/* List / Calendar switch */
+.viewtools .seg,.seg{border:1px solid #102F3B!important;border-radius:4px!important;padding:3px!important;background:#FFFFFF!important;gap:3px}
+.seg button{font-size:14.5px!important;font-weight:800!important;padding:8px 16px!important;color:#102F3B!important;border-radius:3px!important;box-shadow:none!important}
+.seg button[aria-pressed="true"]{background:#102F3B!important;color:#FFFFFF!important;box-shadow:inset 0 -3px #CC0033!important}
+.seg button:not([aria-pressed="true"]):hover{background:#EEF3F4!important}
+/* result count */
+.summary{font-size:15px!important;color:#102F3B!important;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;justify-content:flex-end}
+.summary b{font-weight:800;font-size:16px;border-bottom:2px solid #CC0033;padding-bottom:1px}
+.summary .applied{font-size:13px;color:#46606A;font-weight:600}
+/* calendar: one bar per consecutive run */
+.cal.calspan{display:block;background:var(--rule);border:1px solid var(--rule)}
+.calspan .dowrow{display:grid;grid-template-columns:repeat(7,minmax(118px,1fr));gap:1px}
+.calspan .wk{display:grid;grid-template-columns:repeat(7,minmax(118px,1fr));grid-auto-rows:auto;column-gap:1px;row-gap:3px;border-top:1px solid var(--rule);min-height:118px;padding-bottom:8px;position:relative}
+.calspan .cell{min-height:0;padding:4px 6px}
+.calspan .ce{position:relative;z-index:1;margin:0 4px;align-self:start}
+.calspan .ce small{font-weight:500;opacity:.8;margin-left:4px}
+.calspan .ce.contl{border-top-left-radius:0;border-bottom-left-radius:0;margin-left:0}
+.calspan .ce.contr{margin-right:0;border-right:3px dotted var(--c)}
+.calspan .ce.extra{display:none}
+.calspan .wk.expanded .ce.extra{display:block}
+.calspan .overflow{position:relative;z-index:1;margin:0 4px}
+.calspan .num{display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;border:1px solid transparent;background:transparent;border-radius:3px;cursor:pointer;font:600 16px/1 var(--display);color:inherit}
+.calspan .num:hover,.calspan .num:focus-visible{border-color:#CC0033;color:#CC0033;background:#FFF2F5}
+.calspan .cell.today .num{background:#CC0033;color:#fff}
+.daylist{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.daylist button{display:grid;gap:2px;width:100%;text-align:left;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--c);padding:9px 12px;cursor:pointer;color:inherit;font:inherit}
+.daylist button:hover{border-color:#CC0033;border-left-color:var(--c)}
+.daylist .dwhat{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:#46606A}
+.daylist .dwhat.dl{color:#CC0033}
+.daylist b{font-size:15px}
+.daylist .dmeta{font-size:12.5px;color:#46606A}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .seg{background:#151C21!important;border-color:#9FB4BB!important}
+  :root:not([data-theme="light"]) .seg button{color:#E8EFF1!important}
+  :root:not([data-theme="light"]) .seg button[aria-pressed="true"]{background:#E8EFF1!important;color:#0A1418!important}
+  :root:not([data-theme="light"]) .seg button:not([aria-pressed="true"]):hover{background:#1A2329!important}
+  :root:not([data-theme="light"]) .summary{color:#E8EFF1!important}
+  :root:not([data-theme="light"]) .summary .applied,:root:not([data-theme="light"]) .daylist .dwhat,:root:not([data-theme="light"]) .daylist .dmeta{color:#9FB4BB}
+  :root:not([data-theme="light"]) .calspan .num:hover{background:#2A1219}
+}
+@media(max-width:640px){.mast .updated{justify-items:start;text-align:left;margin-left:0}.summary{justify-content:flex-start}}
+/* record colours = record type (meeting, abstract call, celebration); disciplines are neutral badges */
+:root{--t-meet:#24557F;--t-call:#1C7A4C;--t-obs:#A8641A}
+.tag.p.neutral{background:#EEF3F4!important;color:#23404B!important;border:1px solid #C9D7DB!important}
+.calspan .ce.call{background:color-mix(in srgb,var(--t-call) 14%,var(--surface));color:var(--ink)}
+.calspan .ce.due{box-shadow:inset -5px 0 #CC0033}
+.legend i.duekey{background:#CC0033!important}
+.legend .fine{margin-left:6px}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--t-meet:#7FB0DD;--t-call:#5CC08A;--t-obs:#E0A45C}
+  :root:not([data-theme="light"]) .tag.p.neutral{background:#1A2329!important;color:#C9D7DB!important;border-color:#33474F!important}
+}
