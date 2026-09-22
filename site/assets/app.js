@@ -58,7 +58,7 @@
   };
 
   /* ---------- state, mirrored in the URL ---------- */
-  const DEF = () => ({ view: "upcoming", display: "list", q: "", prof: "", focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, verifiedOnly: true, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
+  const DEF = () => ({ view: "upcoming", display: "list", q: "", prof: "", focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, verifiedOnly: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
   const st = DEF();
   let filtersOpen = false;
   function readHash() {
@@ -70,7 +70,7 @@
     ["q", "prof", "focus", "kind", "where", "area", "spec"].forEach(k => { if (h.get(k)) st[k] = h.get(k); });
     if (h.get("near")) st.nearQ = h.get("near");
     if (+h.get("r")) st.radius = +h.get("r");
-    st.openOnly = h.get("open") === "1"; st.verifiedOnly = h.get("ver") !== "0"; st.expected = h.get("exp") === "1";
+    st.openOnly = h.get("open") === "1"; st.verifiedOnly = false; st.expected = h.get("exp") === "1";
     if (st.expected) st.verifiedOnly = false;
     st.within = +(h.get("within") || 0);
     if (/^\d{4}-\d{2}$/.test(h.get("cal") || "")) st.cal = h.get("cal");
@@ -83,7 +83,6 @@
     ["q", "prof", "focus", "kind", "where", "area", "spec"].forEach(k => st[k] && h.set(k, st[k]));
     if (st.near) { h.set("near", st.nearQ); h.set("r", st.radius); }
     if (st.openOnly) h.set("open", "1");
-    if (!st.verifiedOnly) h.set("ver", "0");
     if (st.expected) h.set("exp", "1");
     if (st.within) h.set("within", st.within);
     if (st.display === "calendar" && st.cal !== TODAY.slice(0, 7)) h.set("cal", st.cal);
@@ -208,6 +207,10 @@
   const profTags = s => s.professions.map(p => `<span class="tag p" style="--c:var(${PROF_COLOR[p] || "--multi"})">${esc(PLABEL[p] || p)}</span>`).join("") + (s.rnfa_inferred ? `<span class="tag p" style="--c:var(--rnfa)" title="Surgical or perioperative meeting relevant to NP first assistants; curator tag">NP-RNFA</span>` : "");
   function vBadge(e, exceptionsOnly = false) {
     const v = e.verify || { state: "unchecked" };
+    // Records carry no verification label; the page header carries the source-review timestamps.
+    // The one marker kept is for projected months, which are not published dates.
+    if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
+    return "";
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
     const drift = v.state === "verified" && v.method !== "manual" && v.evidence_match === false;
     if (exceptionsOnly && ((v.state === "verified" && !drift) || v.state === "rule" || v.state === "archived")) return "";
@@ -251,7 +254,7 @@
         <div class="badges">${profTags(s)}${kindTag}</div>${studentMode && e.student ? `<p class="student-line"><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)}</p>` : ""}</div>
       <div class="side">${studentMode ? (e.student && e.student.deadline && e.student.deadline >= TODAY ? `<span class="student-due">Submit by ${esc(md(e.student.deadline))}</span>` : "") : callPill(e)}${vBadge(e, true)}</div></article>`;
   }
-  const empty = msg => `<div class="empty">${esc(msg)} <button class="linkbtn" data-act="clear">Clear all filters</button>${st.verifiedOnly ? ` or <button class="linkbtn" data-act="showall">include dates awaiting a source check</button>` : ""}</div>`;
+  const empty = msg => `<div class="empty">${esc(msg)} <button class="linkbtn" data-act="clear">Clear all filters</button></div>`;
 
   /* ---------- views ---------- */
   function vList() {
@@ -391,7 +394,6 @@
     $("#viewtools").innerHTML = `${st.view === "students" ? "" : `<div class="seg" role="group" aria-label="Display">
         <button data-display="list" aria-pressed="${st.display === "list"}">${ICON.list}List</button>
         <button data-display="calendar" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button></div>`}
-      <label class="switch"><input type="checkbox" id="verOnly" ${st.verifiedOnly ? "checked" : ""}><span class="track" aria-hidden="true"></span>Source checked dates</label>
       <button class="linkbtn" data-act="clear">Clear all</button>`;
     $("#geoquick").innerHTML = `<span class="flabel">Location</span>
       <button class="chip all" data-act="where-all" aria-pressed="${!st.where && !st.area && !st.near}">Anywhere</button>
@@ -454,7 +456,7 @@
     if (st.openOnly) applied.push(st.view === "students" ? "Student submissions open" : "Abstract call open");
     const stamp = DATA && DATA.built ? stampET(DATA.built).replace(/^Data snapshot /, "") : "";
     $("#summary").innerHTML = esc(summary + (applied.length ? " · " + applied.join(" · ") : ""))
-      + (st.verifiedOnly && st.view !== "directory" ? ` · <span class="okstamp">source checked ${esc(stamp)}</span>` : "");
+      ;
     $("#fbtn").textContent = "Filters" + (activeCount() ? " (" + activeCount() + ")" : "");
     writeHash();
     if (f && document.getElementById(f)) { const el = document.getElementById(f); el.focus(); if (el.setSelectionRange && el.value) el.setSelectionRange(el.value.length, el.value.length); }
@@ -522,9 +524,9 @@
         ${s.recurrence ? `<dt>Recurs</dt><dd>${esc(s.recurrence)}</dd>` : ""}
         <dt>Focus</dt><dd>${(s.focus || []).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curator tags)</span></dd>
         ${s.np_pa_basis ? `<dt>Why it's here</dt><dd>${esc(s.np_pa_basis)}</dd>` : ""}
-        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} · ${v.last_verified ? esc((v.method === "manual" ? "reviewed by the curator " : "start checked ") + longDate(v.last_verified.slice(0, 10))) : "recorded " + esc(longDate(e.compiled || ""))}${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${v.why && v.state !== "verified" ? ` · <span class="fine">${esc(v.why)}</span>` : ""}${e.evidence_image ? ` · <a href="${esc(e.evidence_image)}" target="_blank" rel="noopener noreferrer">dates published in this image</a>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
+        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} ${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${e.evidence_image ? ` · <a href="${esc(e.evidence_image)}" target="_blank" rel="noopener noreferrer">dates published in this image</a>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
       </dl>
-      ${e.evidence && v.evidence_match !== false && ["verified", "archived", "announced", "rule"].includes(v.state)
+      ${e.evidence
         ? `<blockquote class="quote" title="${esc(e.evidence_auto ? "The sentence the date was found in at the last check." : "The wording recorded from the organizer's page.")}">“${esc(e.evidence)}”${e.evidence_auto ? ` <span class="fine">· found on the page at the last check</span>` : ""}</blockquote>` : ""}
       ${e.sessions && e.sessions.length ? `<div><p class="flabel">Sessions & courses</p><ul class="sessions">${e.sessions.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
       ${e.daily && e.daily.length ? `<div><p class="flabel">Daily program · organizer calendar</p><ul class="sessions">${e.daily.map(x => `<li><b>${esc(md(x.date))}</b> · ${esc(x.title)}</li>`).join("")}</ul></div>` : ""}
@@ -658,8 +660,9 @@
       catch (e) { $("#view").innerHTML = `<div class="empty">The meeting data could not be loaded. Check your connection and refresh.</div>`; return; }
     }
     prep(d);
-    $("#updated").textContent = "Data snapshot " + stampET(d.built);
-    $("#updated").setAttribute("datetime", d.built);
+    const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
+    $("#updated").textContent = "Sources reviewed " + srcStamp + (d.curator_reviewed ? " · Curator reviewed " + longDate(d.curator_reviewed) : "");
+    $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();
     if (want && byId(want)) openDetail(byId(want));
