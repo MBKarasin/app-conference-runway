@@ -1,6 +1,6 @@
 # APP Conference Runway: AI Handoff
 
-**Audience:** AI regulators, AI architects, auditors and adversarial reviewers.
+**Audience:** AI regulators, AI architects, auditors, adversarial reviewers and doctoral-level methodological critics.
 **Purpose:** to show how this site was built, where every claim on it comes from, and how to reproduce or challenge it. Read it before running anything.
 **Governance:** MBK AI Governance v5.0 (2026-09-21) invoked.
 **Live site:** https://mbkarasin.github.io/app-conference-runway/ (kept out of search engines on purpose)
@@ -70,7 +70,7 @@ Aggregator listings are never treated as the source. A social post counts only w
 | Link check | `scripts/linkcheck.py` | Which source links now return 4xx | A 403 block says nothing about whether the link is live |
 | Build gate | `scripts/validate.py` | Rejects bad dates, non-HTTPS sources, private-looking strings, projections past the horizon, days on expected rows, and unsupported absence claims | Semantic truth of a quote |
 
-The page header shows two timestamps: **Sources reviewed** (the last nightly read) and **Curator reviewed** (the last manual review; as of 2026-09-22 these reviews were carried out by the AI assistant under the curator's direction, and the curator personally confirmed two image-only dates, ENRS 2027 and PNAA 2027). Individual records carry no status badge. Each record links its source and quotes its wording.
+The page header shows one timestamp, **Sources reviewed**: the time of the last nightly read. Manual reviews are dated per record (`reviewed_on` in `sources/overrides.json`). As of 2026-09-22 those reviews were carried out by the AI assistant under the curator's direction. The curator personally confirmed two dates that appear only in images: ENRS 2027 and PNAA 2027. Individual records carry no status badge. Each record links its source and quotes its wording.
 
 ### 3.5 Known limits (attack these first)
 
@@ -93,7 +93,7 @@ The page header shows two timestamps: **Sources reviewed** (the last nightly rea
 
 ## 5. Design and navigation
 
-- **Header:** tagline, title (returns to the landing page), Copy link, Share, Make a request, AI Handoff, and the two review timestamps.
+- **Header:** tagline, title (returns to the landing page), Copy link, Share, Make a request, AI Handoff, and the Sources reviewed timestamp.
 - **Tabs:** Upcoming · Abstract deadlines · Students & DNP projects · Past · Directory.
 - **Discipline filter:** All APPs, NP, AGACNP, PA, CRNA, CAA, CNS, CNM, NP-RNFA, Students, DNP Projects. Further filters cover location (online, continent, country, US region, or within a radius of a ZIP code or city), focus, kind and specialty.
 - **List view:** one card per edition, with discipline badges, the abstract-call state and the organizer.
@@ -132,3 +132,27 @@ The page header shows two timestamps: **Sources reviewed** (the last nightly rea
 - Test the known limits in §3.5.
 
 Corrections are welcome. The curator decides what is published.
+
+## 9. For the methodological critic
+
+This is a curated directory, not a study, and it makes no accuracy or completeness claim. If you treat it as a dataset, these are the threats to validity as the builders understand them.
+
+- **Construct.** An "APP opportunity" is operationalized as an organizer-published meeting, abstract call, student or DNP project venue, or observance. For NP and PA relevance, the justification is recorded per series in `np_pa_basis`. Inclusion is a judgment made by one curator, with no formal codebook beyond `sources/SCHEMA.md`.
+- **Sampling frame.** The universe was assembled by AI-assisted web search seeded by the curator's knowledge and by organizer lists (national and state NP and PA associations, specialty societies, schools). Some sweeps, including DNP programs, are not verified as complete at this date. Organizers with little web presence are under-represented, and so is non-English content.
+- **Measurement.** The truth criterion is agreement with the organizer's own published material. It is not attendance, and it is not whether the event actually took place. The automated check matches text and can produce false positives (another event on the same page) and false negatives (dates held in images, scripts or blocked pages). End dates are not re-checked.
+- **Reliability.** There is one curator and one AI builder. No inter-rater agreement has been measured. Review by a second model family is planned and is not documented here as completed. The AI both compiled and verified most records. That is self-verification, reduced but not removed by the verbatim-evidence rule and the curator's spot confirmation.
+- **AI-specific risks.** Fabricated dates or organizers (a hallucination risk) are constrained because nothing is published without a verbatim quote and an exact URL. Automation bias, meaning trust in the checker's status, is reduced by removing per-record status badges from the public view.
+- **Reproducibility.** The build is deterministic from `sources/`. The web is not deterministic: pages change. Nightly snapshots, the permanent ledger and the git history allow any past state to be reconstructed.
+- **Suggested evaluation.**
+  - A stratified random audit of upcoming records by independent human coders, reporting the share of dates supported by the source, with 95% confidence intervals.
+  - A capture–recapture comparison against an independently built list, to estimate coverage.
+  - The staleness rate over time, taken from the nightly check history.
+
+## 10. Use and reuse
+
+- **Permission.** To the extent the curator holds rights in this project's code, data compilation, design and documentation (including this handoff), he dedicates them to the public domain under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). Anyone may copy, modify, redistribute or build on them for any purpose, commercial or not, without asking and without attribution. Attribution is appreciated but not required.
+- **What this dedication does not cover:**
+  - **Organizer material.** Event names, the short verbatim quotes kept as evidence, linked pages and images, and any organizer marks belong to their organizers. They are reproduced only to show where a date came from.
+  - **Third-party components**, which keep their own licenses: Barlow Condensed and Source Sans 3 (SIL Open Font License); GeoNames data (CC BY 4.0, attribution required); U.S. Census Bureau Gazetteer data (public domain).
+  - **Institutional names and marks.** Rutgers University and RWJBarnabas Health names and logos are not licensed. Nothing here implies their endorsement.
+- **No warranty.** The site and its data are provided as is, without warranty of any kind. Dates change. Confirm with the organizer before registering, submitting or traveling.
