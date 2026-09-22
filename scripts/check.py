@@ -14,6 +14,7 @@ import urllib.request, ssl
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 UA = "APPConferenceRunwayChecker/1.0 (+https://github.com/; weekly date check, one request per page)"
+TODAY = dt.date.today().isoformat()
 NOW = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
 STOP = {"annual", "conference", "meeting", "national", "the", "and", "for", "with", "association", "society",
         "american", "international", "congress", "summit", "symposium", "week", "day", "nurses", "nursing"}
@@ -113,13 +114,27 @@ def main():
     data = json.load(open(ROOT / "site" / "data" / "runway.json", encoding="utf-8"))
     series = {s["id"]: s for s in data["series"]}
     eds = [e for e in data["editions"] if e["verify"]["state"] not in ("expected", "rule") and e.get("source_url")]
+    vfile0 = ROOT / "data" / "verification.json"
+    old0 = json.load(open(vfile0, encoding="utf-8")) if vfile0.exists() else {}
+    # A meeting that has already happened is not re-read: organizers move their page on to the next
+    # edition, which would flip a correct historical record to "needs review". The record is frozen
+    # at what the page said when it was captured or last confirmed.
+    ended = lambda e: (e.get("end") or e["start"]) < TODAY
+    frozen = [e for e in eds if ended(e) and (old0.get(e["id"], {}).get("last_verified") or e.get("evidence") or e.get("source_reviewed"))]
+    eds = [e for e in eds if e not in frozen]
     urls = sorted({e["source_url"] for e in eds})
     print(f"checking {len(eds)} editions on {len(urls)} pages", file=sys.stderr)
     with ThreadPoolExecutor(12) as ex:
         pages = dict(zip(urls, ex.map(get_page, urls)))
-    vfile = ROOT / "data" / "verification.json"
-    old = json.load(open(vfile, encoding="utf-8")) if vfile.exists() else {}
+    vfile = vfile0
+    old = old0
     ver, flips = {}, []
+    for e in frozen:
+        prev = old.get(e["id"], {})
+        ver[e["id"]] = {"checked": prev.get("checked") or NOW, "url": e["source_url"], "state": "archived",
+                        "last_verified": prev.get("last_verified"), "evidence_match": prev.get("evidence_match"),
+                        "why": "meeting has ended; the record is kept as the organizer's page read at the time",
+                        "fails": prev.get("fails", 0)}
     for e in eds:
         pg, s = pages[e["source_url"]], series[e["series"]]
         prev = old.get(e["id"], {})
@@ -155,7 +170,8 @@ def main():
     from collections import Counter
     c = Counter(v["state"] for v in ver.values())
     L = [f"# Weekly source check — {NOW[:10]}", "",
-         f"Editions checked: {len(ver)} · verified {c['verified']} · not found {c['not_found']} · unreachable {c['unreachable']}", ""]
+         f"Editions re-checked: {len(eds)} · verified {c['verified']} · not found {c['not_found']} · unreachable {c['unreachable']}",
+         f"Past editions frozen (not re-read): {len(frozen)}", ""]
     if flips:
         L += ["## Newly failing (were verified last run) — review these first", ""]
         L += [f"- [ ] **{series[e['series']]['name']}** ({e['start']}): {r.get('why')} — {e['source_url']}" for e, r in flips] + [""]
@@ -165,7 +181,7 @@ def main():
             L += [f"## {title} ({len(rows)})", ""]
             L += [f"- {series[e['series']]['name']} — {e['start']} — {r.get('why')} — {e['source_url']}" for e, r in rows] + [""]
     (ROOT / "data" / "check_report.md").write_text("\n".join(L), encoding="utf-8")
-    print(f"verified {c['verified']} | not_found {c['not_found']} | unreachable {c['unreachable']} | newly failing {len(flips)}")
+    print(f"archived {c['archived']} | verified {c['verified']} | not_found {c['not_found']} | unreachable {c['unreachable']} | newly failing {len(flips)}")
 
 if __name__ == "__main__":
     main()

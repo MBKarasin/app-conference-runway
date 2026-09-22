@@ -18,6 +18,7 @@ HORIZON = TODAY_.year + 3          # rolling: current year plus three
 LOOKBACK = 3                        # years of history every meeting should show
 RULES = {}
 TODAY = dt.date.today()
+STALE_REVIEW = (TODAY_ - dt.timedelta(days=90)).isoformat()   # a curator review older than this yields to a failing automatic check
 
 MONTHS = {m.lower(): i for i, m in enumerate(calendar.month_name) if m}
 MONTHS.update({m.lower(): i for i, m in enumerate(calendar.month_abbr) if m})
@@ -436,6 +437,11 @@ def main():
         e["geo"] = geo.get((e.get("location") or "").strip()) if e.get("location") else None
         if (e.get("format") == "virtual" or series[e["series"]]["region"] == "virtual") and not e["geo"]:
             e["geo"] = {"online": True}
+    links = json.load(open(ROOT / "data" / "link_status.json", encoding="utf-8")) if (ROOT / "data" / "link_status.json").exists() else {}
+    for e in eds + proj:
+        st = links.get(e.get("source_url") or "")
+        # only a definite 4xx/410 counts as dead; blocks and timeouts say nothing about the link
+        if st and (st.startswith("HTTP 4") and st != "HTTP 403"): e["link_dead"] = st
     ver = json.load(open(ROOT / "data" / "verification.json", encoding="utf-8")) if (ROOT / "data" / "verification.json").exists() else {}
     for e in eds:
         v = ver.get(e["id"])
@@ -448,9 +454,10 @@ def main():
             e["verify"] = {"state": "conflict", "method": "manual", "checked": e["compiled"],
                            "last_verified": e["compiled"], "url": e.get("source_url"),
                            "why": e.get("note") or "The organizer publishes conflicting dates."}
-        elif e.get("source_reviewed") and not (v and v.get("state") == "not_found"):
-            e["verify"] = {"state": "verified", "method": "manual", "checked": e["compiled"],
-                           "last_verified": e["compiled"], "url": e.get("source_url")}
+        elif e.get("source_reviewed") and not (v and v.get("state") == "not_found" and (e.get("reviewed_on") or e["compiled"]) < STALE_REVIEW):
+            when = e.get("reviewed_on") or e["compiled"]
+            e["verify"] = {"state": "verified", "method": "manual", "checked": when,
+                           "last_verified": when, "url": e.get("source_url")}
         elif v:
             e["verify"] = v
         else:
