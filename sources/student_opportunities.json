@@ -542,6 +542,123 @@
     "CNS",
     "Nursing"
    ]
+  },
+  "260f68c5cb83": {
+   "category": "project",
+   "kind": "EBP and QI projects (poster/oral abstracts)",
+   "detail": "AANN's Virtual International Neuroscience Nursing Research Symposium (INNRS) page states the symposium is a place to learn from research, evidence-based practice, and quality improvement projects presented via poster and oral abstracts. The current call for abstracts is open, closing October 2, 2026.",
+   "url": "https://aann.org/meetings/virtual-innrs",
+   "roles": [
+    "Nursing"
+   ],
+   "deadline": "2026-10-02"
+  },
+  "12c14e0b11a5": {
+   "category": "project",
+   "kind": "Student work accepted in poster category",
+   "detail": "ISPN's 2027 Annual Conference call-for-abstracts page states that poster presentations accept student work alongside research, clinical projects, and quality improvement initiatives. The abstract submission window for this cycle closed August 31, 2026, matching the input's call_status of 'closed'.",
+   "url": "https://www.ispn-psych.org/2027-call-for-abstracts",
+   "roles": [
+    "Nursing"
+   ],
+   "deadline": "2026-08-31"
+  },
+  "b165b6f4103b": {
+   "category": "project",
+   "kind": "Evidence Based Practice/Quality Improvement abstract category",
+   "detail": "ONS Congress's abstracts page lists 'Evidence Based Practice/Quality Improvement Abstracts' as one of its formal submission categories (alongside Research and Industry-Supported), with examples like implementing an evidence-based algorithm or a new staffing approach. Regular abstract submissions for this category are open through September 24, 2026 (this category does not accept late-breaking submissions).",
+   "url": "https://www.ons.org/education-hub/events/ons-congress/abstracts",
+   "roles": [
+    "Nursing"
+   ],
+   "deadline": "2026-09-24"
+  },
+  "f728d5279341": {
+   "category": "project",
+   "kind": "Student poster category",
+   "detail": "ENRS accepts a dedicated 'Individual School-Selected Student Posters' category for its Annual Scientific Sessions, with a submission deadline of December 18, 2026.",
+   "url": "https://enrs2027conference.oa-event.com/abstracts",
+   "roles": [
+    "Nursing"
+   ],
+   "deadline": "2026-12-18"
+  },
+  "63ef4e7d0d47": {
+   "category": "project",
+   "kind": "Graduate capstone abstract category",
+   "detail": "PCNA's Cardiovascular Nursing Symposium accepts abstracts in three categories -- Original Research, Innovation Project, and Graduate Capstone -- with capstones related to cardiovascular risk reduction and disease management; abstracts are due December 4, 2026.",
+   "url": "https://pcna.net/events-news/cardiovascular-nursing-symposium/call-for-abstracts/",
+   "roles": [
+    "NP"
+   ],
+   "deadline": "2026-12-04"
+  },
+  "d8811ac8ad01": {
+   "category": "project",
+   "kind": "EBP/QI presentation tracks",
+   "detail": "NAON's Annual Congress call for proposals organizes submissions into nine presentation tracks, including 'Quality Improvement & Patient Safety' and 'Research & Evidence-Based Practice,' though the page does not state a dedicated student-only category.",
+   "url": "https://www.orthonurse.org/Events/Congress/Call-for-Proposals",
+   "roles": [
+    "Nursing"
+   ]
+  },
+  "a00f57dd940f": {
+   "category": "project",
+   "kind": "QI initiative accepted in poster category",
+   "detail": "AWHONN's Convention 'Submit a Proposal' page states its Poster Proposal category explicitly welcomes quality improvement initiatives (alongside research and clinical innovation); proposals are due October 13, 2026. The page does not name a separate student-only category.",
+   "url": "https://awhonnconvention.org/submit-a-proposal/",
+   "roles": [
+    "Nursing"
+   ],
+   "deadline": "2026-10-13"
+  },
+  "3a60c3b22691": {
+   "category": "project",
+   "kind": "EBP and Quality Improvement project submission categories; students explicitly invited",
+   "detail": "ASPMN's call for abstracts lists separate Evidence-Based Practice (EBP) and Quality Improvement submission tracks, and explicitly invites students to submit alongside nurses, physicians and other professionals. The poster-only submission window (part of the same call) closed July 14, 2026, so the window is now closed.",
+   "url": "https://www.aspmn.org/2026_call_for_abstracts.php",
+   "roles": [
+    "Nursing"
+   ],
+   "deadline": "2026-07-14"
+  },
+  "fc952b75dcbc": {
+   "category": "project",
+   "kind": "Evidence-Based Solutions poster category",
+   "detail": "AACN's NTI call for abstracts lists 'Evidence-Based Solutions' as one of its accepted poster categories (alongside Beacon, Chapter Best Practices, CSI, Healthy Work Environment and Research). No student-specific category or deadline is stated on this page.",
+   "url": "https://www.aacn.org/conferences-and-events/nti/nti-call-for-abstracts",
+   "roles": [
+    "Nursing"
+   ]
+  },
+  "f51b0a709cbc": {
+   "category": "project",
+   "kind": "Quality Improvement projects (under Practice Innovation abstract category)",
+   "detail": "WOCNext's abstract submission page states that Quality Improvement projects are presented within its 'Practice Innovation' abstract category. Submissions open September 8, 2026 and the deadline is November 2, 2026. No student-specific category is mentioned.",
+   "url": "https://wocnext.org/abstracts?cpn_id=6aa04cc25b9233b52e87c5e6&e_id=6a0cc42024090bba99463d4b",
+   "roles": [
+    "NP"
+   ],
+   "deadline": "2026-11-02"
+  },
+  "4b6554deed4e": {
+   "category": "project",
+   "kind": "Second Call for Poster Abstracts (trainee/early-career category)",
+   "detail": "NANN runs a dedicated 'Second Call for Poster Abstracts' explicitly for professionals still in a formal education/training program plus early-career practitioners with 5 or fewer years in the field. The submission window is April 15 to May 6, 2027.",
+   "url": "https://nann.org/education/submit-abstract/",
+   "roles": [
+    "Nursing"
+   ],
+   "deadline": "2027-05-06"
+  },
+  "cd48f1f07eaf": {
+   "category": "project",
+   "kind": "Quality improvement poster topic + Student Scholarship award (prior-cycle pattern)",
+   "detail": "APAO's most recent symposium call (for the 2026 event; the 2027 edition's own call is not yet posted, call_status 'tba') accepted poster submissions on topics including quality improvement, and APAO separately offers a 'Student Scholarship' award described as supporting students pursuing careers in oncology care. No abstract deadline for the 2027 edition has been published yet.",
+   "url": "https://oncologypas.org/event/2026-annual-symposium/",
+   "roles": [
+    "PA"
+   ]
   }
  }
 }
