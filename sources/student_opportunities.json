@@ -1,5 +1,5 @@
 {
- "reviewed": "2026-09-21",
+ "reviewed": "2026-09-22",
  "editions": {
   "7111b734f1a9": {
    "category": "project",
@@ -314,6 +314,232 @@
     "CRNA",
     "CNS",
     "CNM",
+    "Nursing"
+   ]
+  },
+  "746d44a68744": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Holy Family University DNP scholarly-project poster event, hosted by the School of Nursing and Health Sciences. Audience per the school: the university community.",
+   "url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-dnp-poster-presentation-event-newtown-campus",
+   "roles": [
+    "NP",
+    "Nursing"
+   ]
+  },
+  "ea3a9029244c": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Holy Family University DNP scholarly-project poster event, hosted by the School of Nursing and Health Sciences. Audience per the school: the university community.",
+   "url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-second-dnp-poster-presentation-event-newtown-campus",
+   "roles": [
+    "NP",
+    "Nursing"
+   ]
+  },
+  "f2aaaf23a000": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Holy Family University DNP scholarly-project poster event, hosted by the School of Nursing and Health Sciences. Audience per the school: the university community.",
+   "url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-spring-2023-dnp-poster-presentation-event",
+   "roles": [
+    "NP",
+    "Nursing"
+   ]
+  },
+  "9d0b609e22ea": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Holy Family University DNP scholarly-project poster event, hosted by the School of Nursing and Health Sciences. Audience per the school: the university community.",
+   "url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-spring-2024-dnp-poster-presentation-event",
+   "roles": [
+    "NP",
+    "Nursing"
+   ]
+  },
+  "a97b07156fdb": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Rosalind Franklin University nurse-anesthesia doctoral project dissemination event: senior DNP students give podium and poster presentations. Audience per the school: CRNA preceptors and invited guests.",
+   "url": "https://www.rosalindfranklin.edu/academics/college-of-nursing/degree-programs/doctor-of-nursing-practice-entry-dnp/program-highlights/events-continuing-education/",
+   "roles": [
+    "CRNA",
+    "Nursing"
+   ]
+  },
+  "d7bbba902c30": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Illinois Chicago DNP Student Poster Session. The college invites students, faculty, preceptors and interested community members.",
+   "url": "https://nursing.uic.edu/events/dnp-student-poster-session-spring-2023",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "f314212cb2a5": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Illinois Chicago DNP Student Poster Session. The college invites students, faculty, preceptors and interested community members.",
+   "url": "https://nursing.uic.edu/events/dnp-student-poster-session-3",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "1f10d5dffce5": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Illinois Chicago DNP Student Poster Session. The college invites students, faculty, preceptors and interested community members.",
+   "url": "https://nursing.uic.edu/events/dnp-student-poster-session-4",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "c49063841384": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Illinois Chicago DNP Student Poster Session. The college invites students, faculty, preceptors and interested community members.",
+   "url": "https://nursing.uic.edu/events/dnp-student-poster-session-fa25/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "e6badffca294": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Kansas School of Nursing Fall Presentation Day, at which DNP students in the project course present. The school does not state whether attendance is open beyond the university.",
+   "url": "https://www.kumc.edu/school-of-nursing/research/school-of-nursing-research/student-research-and-scholarship.html",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNS",
+    "Nursing"
+   ]
+  },
+  "3e7fc599836f": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Tennessee at Chattanooga DNP Intensive: senior final translational-project presentations plus a poster reception open to campus faculty and students.",
+   "url": "https://calendar.utc.edu/event/school_of_nursing_dnp_intensive",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "Nursing"
+   ]
+  },
+  "ba606abcab28": {
+   "category": "project",
+   "kind": "University research symposium with DNP posters",
+   "detail": "Madonna University's university-wide research symposium, which carries the College of Nursing and Health's DNP scholarly-project posters. Expect non-nursing content alongside.",
+   "url": "https://www.madonna.edu/academics/research/symposium/",
+   "roles": [
+    "NP",
+    "Nursing"
+   ]
+  },
+  "601536d5e452": {
+   "category": "project",
+   "kind": "University research symposium with DNP posters",
+   "detail": "Madonna University's university-wide research symposium, which carries the College of Nursing and Health's DNP scholarly-project posters. Expect non-nursing content alongside.",
+   "url": "https://www.madonna.edu/academics/research/symposium/",
+   "roles": [
+    "NP",
+    "Nursing"
+   ]
+  },
+  "48c395337d6a": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Pennsylvania School of Nursing DNP Project Showcase, with a virtual attendance option open beyond the school.",
+   "url": "https://www.nursing.upenn.edu/academics/doctor-of-nursing-practice-dnp/dnp-scholarly-projects/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "1249b2df3f8e": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of Pennsylvania School of Nursing DNP Project Showcase, with a virtual attendance option open beyond the school.",
+   "url": "https://www.nursing.upenn.edu/academics/doctor-of-nursing-practice-dnp/dnp-scholarly-projects/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "d0e4f552c51a": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Southern Illinois University Edwardsville DNP final-project poster presentations across the post-master's, FNP, PMHNP and nurse-anesthesia tracks.",
+   "url": "https://www.siue.edu/nursing/academic-programs/graduate/dnp-poster-2022.shtml",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "Nursing"
+   ]
+  },
+  "156dbe62fd8a": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Southern Illinois University Edwardsville DNP final-project poster presentations across the post-master's, FNP, PMHNP and nurse-anesthesia tracks.",
+   "url": "https://www.siue.edu/nursing/academic-programs/graduate/dnp-poster-2022.shtml",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "Nursing"
+   ]
+  },
+  "8b0b8f2b8247": {
+   "category": "project",
+   "kind": "Nursing research symposium",
+   "detail": "University of Maine System nursing research symposium hosted at Fort Kent, with a Zoom option. The host does not state that it is DNP-project specific.",
+   "url": "https://www.umfk.edu/releases/nursing-research-symposium/",
+   "roles": [
+    "NP",
+    "Nursing"
+   ]
+  },
+  "1cfbed578f84": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Penn State Nese College of Nursing DNP final oral project presentations over three days on Zoom. The college community is invited.",
+   "url": "https://www.nursing.psu.edu/event/dnp-final-oral-presentations-feb-26/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "Nursing"
+   ]
+  },
+  "f96e4b17fad6": {
+   "category": "project",
+   "kind": "Nursing research symposium with a student poster competition",
+   "detail": "Penn State Nese College of Nursing research symposium. It carries a student poster competition but is not a DNP-only venue.",
+   "url": "https://www.psu.edu/news/nese-college-nursing/story/nese-college-nursing-hosts-ninth-annual-research-symposium",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CNS",
     "Nursing"
    ]
   }

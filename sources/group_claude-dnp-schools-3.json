@@ -1,0 +1,390 @@
+{
+  "group": "claude-dnp-schools-3",
+  "_note": "Third and final DNP-school sweep, 2026-09-22. Completes the pass over the 394 CCNE-accredited DNP programs. Only events named for DNP project work, or hosted by a school/college of nursing, are kept; university-wide symposia that merely carried a DNP poster are noted in not_found.",
+  "series": [
+    {
+      "name": "Nurse Anesthesia Doctoral Project Dissemination Event",
+      "org": "Rosalind Franklin University of Medicine and Science — College of Nursing",
+      "org_url": "https://www.rosalindfranklin.edu/academics/college-of-nursing/degree-programs/doctor-of-nursing-practice-entry-dnp/program-highlights/events-continuing-education/",
+      "professions": ["CRNA", "RN"],
+      "specialty": ["nurse anesthesia", "nursing scholarship"],
+      "audience": ["academic", "clinician"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "annual, spring of the senior year",
+      "np_pa_basis": "The college's own page describes senior DNP nurse-anesthesia students presenting podium and poster work; audience per the school: CRNA preceptors and invited guests.",
+      "editions": [
+        {
+          "start": "2023-03-04",
+          "end": "2023-03-04",
+          "location": "Virtual",
+          "format": "virtual",
+          "call": {"status": "none"},
+          "source_url": "https://www.rosalindfranklin.edu/academics/college-of-nursing/degree-programs/doctor-of-nursing-practice-entry-dnp/program-highlights/events-continuing-education/",
+          "evidence": "Date of Event: Saturday, March 4th, 2023",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "DNP Project Poster Presentations",
+      "org": "Southern Illinois University Edwardsville — School of Nursing",
+      "org_url": "https://www.siue.edu/nursing/academic-programs/graduate/dnp-poster-2022.shtml",
+      "professions": ["NP", "AGACNP", "CRNA", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic", "clinician"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "annual, late April or early May",
+      "np_pa_basis": "School of nursing event dedicated to DNP final project posters across the post-master's, FNP, PMHNP and nurse-anesthesia tracks.",
+      "editions": [
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-02",
+          "location": "SIUE Morris University Center, Legacy Room, Edwardsville, IL (day one on Zoom, day two in person)",
+          "format": "hybrid",
+          "call": {"status": "none"},
+          "source_url": "https://www.siue.edu/nursing/academic-programs/graduate/pdf_dnp/Program2025.pdf",
+          "evidence": "Day 1: Virtual Poster Presentations – May 1, 2025 ... Day 2: In-Person Poster Presentations – May 2, 2025 ... Location: SIUE MUC, Legacy Room",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2026-04-30",
+          "end": "2026-05-01",
+          "location": "Southern Illinois University Edwardsville, Edwardsville, IL",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.siue.edu/nursing/academic-programs/graduate/dnp-poster-2022.shtml",
+          "evidence": "Post-Master DNP Posters April 30, 2026 ... Family Nurse and Psychiatric Mental Health DNP Posters May 1, 2026 ... Nurse Anesthesia DNP Posters May 1, 2026",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "DNP Student Poster Session",
+      "org": "University of Illinois Chicago — College of Nursing",
+      "org_url": "https://nursing.uic.edu/events/dnp-student-poster-session-fa25/",
+      "professions": ["NP", "AGACNP", "CNS", "CNM", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic", "clinician", "public"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "twice a year, spring and December",
+      "np_pa_basis": "College of nursing session for DNP project outcomes; the page invites students, faculty, preceptors and interested community members.",
+      "editions": [
+        {
+          "start": "2023-04-24",
+          "end": "2023-04-24",
+          "location": "UIC College of Nursing lobby, 845 S. Damen Ave., Chicago, IL",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://nursing.uic.edu/events/dnp-student-poster-session-spring-2023",
+          "evidence": "April 24, 2023",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2024-12-05",
+          "end": "2024-12-05",
+          "location": "UIC College of Nursing lobby, 845 S. Damen Ave., Chicago, IL",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://nursing.uic.edu/events/dnp-student-poster-session-3",
+          "evidence": "December 5, 2024",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "location": "UIC College of Nursing lobby, 845 S. Damen Ave., Chicago, IL",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://nursing.uic.edu/events/dnp-student-poster-session-4",
+          "evidence": "DNP Student Poster Session May 1, 2025",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2025-12-04",
+          "end": "2025-12-04",
+          "location": "UIC College of Nursing lobby, 845 S. Damen Ave., Chicago, IL",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://nursing.uic.edu/events/dnp-student-poster-session-fa25/",
+          "evidence": "December 4, 2025 ... 9:30 AM - 1:00 PM",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Fall Presentation Day (DNP projects)",
+      "org": "University of Kansas — School of Nursing",
+      "org_url": "https://www.kumc.edu/school-of-nursing/research/school-of-nursing-research/student-research-and-scholarship.html",
+      "professions": ["NP", "AGACNP", "CNS", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "each fall term",
+      "np_pa_basis": "School of nursing day on which DNP students in the project course present; the school does not state whether the room is open beyond the university.",
+      "editions": [
+        {
+          "start": "2023-11-03",
+          "end": "2023-11-03",
+          "location": "University of Kansas Medical Center, Kansas City, KS",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.kumc.edu/school-of-nursing/research/school-of-nursing-research/student-research-and-scholarship.html",
+          "evidence": "On Nov. 3, 2023, Doctor of Nursing Practice (DNP) students in the NRSG 983 course celebrated the culmination of a year of hard work at Fall Presentation Day.",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "UMS Nursing Research Symposium",
+      "org": "University of Maine at Fort Kent — Division of Nursing",
+      "org_url": "https://www.umfk.edu/releases/nursing-research-symposium/",
+      "professions": ["NP", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic", "clinician"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "annual, October",
+      "np_pa_basis": "University of Maine System nursing research symposium hosted by UMFK. It is a nursing scholarship venue, not confirmed by the host to be DNP-project specific.",
+      "editions": [
+        {
+          "start": "2025-10-24",
+          "end": "2025-10-24",
+          "location": "Nadeau Hall conference room, University of Maine at Fort Kent, Fort Kent, ME (Zoom option)",
+          "format": "hybrid",
+          "call": {"status": "none"},
+          "source_url": "https://www.umfk.edu/releases/nursing-research-symposium/",
+          "evidence": "the 4th annual UMS Nursing Research Symposium ... Friday, October 24 ... Nadeau Hall conference room, with virtual participation available via Zoom",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Symposium for Research, Scholarship and Creativity",
+      "org": "Madonna University — College of Nursing and Health",
+      "org_url": "https://www.madonna.edu/academics/research/symposium/",
+      "professions": ["NP", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic", "public"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "annual, April",
+      "np_pa_basis": "University-wide symposium, not a nursing-only event. It is listed because Madonna's DNP scholarly-project posters and awards are presented there; expect non-nursing content alongside.",
+      "editions": [
+        {
+          "start": "2024-04-17",
+          "end": "2024-04-17",
+          "location": "Franciscan Center Gathering Space, Madonna University, Livonia, MI",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.madonna.edu/news/10th-annual-symposium.php",
+          "evidence": "Wednesday, April 17th",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2026-04-22",
+          "end": "2026-04-22",
+          "location": "Franciscan Center Gathering Space, Madonna University, Livonia, MI",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.madonna.edu/academics/research/symposium/",
+          "evidence": "Wednesday • April 22, 2026 • 12 - 5 p.m.",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "DNP Poster Presentation Event",
+      "org": "Holy Family University — School of Nursing and Health Sciences",
+      "org_url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-spring-2024-dnp-poster-presentation-event",
+      "professions": ["NP", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "each May, with a second event in some fall terms",
+      "np_pa_basis": "School of nursing event dedicated to DNP scholarly-project posters; audience per the school: the university community.",
+      "editions": [
+        {
+          "start": "2022-05-19",
+          "end": "2022-05-19",
+          "location": "Holy Family University, Newtown campus, Newtown, PA",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-dnp-poster-presentation-event-newtown-campus",
+          "evidence": "On Thursday, May 19, Holy Family University's School of Nursing & Health Sciences presented the Doctor of Nursing Practice (DNP) Poster Presentation event",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2022-11-07",
+          "end": "2022-11-07",
+          "location": "Holy Family University, Newtown campus, Newtown, PA",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-second-dnp-poster-presentation-event-newtown-campus",
+          "evidence": "On Monday, November 7, Holy Family University's School of Nursing & Health Sciences presented the Doctor of Nursing Practice (DNP) Poster Presentation event",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2023-05-17",
+          "end": "2023-05-17",
+          "location": "Holy Family University, Newtown East campus, Newtown, PA",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-spring-2023-dnp-poster-presentation-event",
+          "evidence": "The most recent Poster Presentation event was held on Wednesday, May 17, 2023",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2024-05-15",
+          "end": "2024-05-15",
+          "location": "Holy Family University, Newtown East campus, Newtown, PA",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.holyfamily.edu/about/news-and-media/news/school-nursing-health-sciences-hosts-spring-2024-dnp-poster-presentation-event",
+          "evidence": "presented the results of their scholarly research projects at the DNP Poster Presentation event at the University's Newtown East campus on May 15, 2024",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "DNP Final Oral Presentations",
+      "org": "Penn State — Ross and Carol Nese College of Nursing",
+      "org_url": "https://www.nursing.psu.edu/event/dnp-final-oral-presentations-feb-26/",
+      "professions": ["NP", "AGACNP", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "annual, late February, over three days",
+      "np_pa_basis": "College of nursing event at which DNP students give their final oral project presentations; the college community is invited.",
+      "editions": [
+        {
+          "start": "2026-02-24",
+          "end": "2026-02-26",
+          "location": "Zoom",
+          "format": "virtual",
+          "call": {"status": "none"},
+          "source_url": "https://www.nursing.psu.edu/event/dnp-final-oral-presentations-feb-26/",
+          "evidence": "DNP Final Oral Presentations — February 24, 2026 10:30 am – 4:30 pm; February 25, 2026 8:30 am – 2:30 pm; February 26, 2026 9:30 am – 4:30 pm. The College of Nursing community is invited to attend.",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Translating Research into Innovations in Practice Symposium",
+      "org": "Penn State — Ross and Carol Nese College of Nursing",
+      "org_url": "https://www.psu.edu/news/nese-college-nursing/story/nese-college-nursing-hosts-ninth-annual-research-symposium",
+      "professions": ["NP", "AGACNP", "CNS", "RN"],
+      "specialty": ["nursing scholarship", "evidence-based practice"],
+      "audience": ["academic", "clinician", "public"],
+      "kind": "conference",
+      "region": "us",
+      "recurrence": "annual, spring",
+      "np_pa_basis": "College of nursing research symposium with a student poster competition. It is a general nursing research meeting, not a DNP-only venue.",
+      "editions": [
+        {
+          "start": "2026-03-04",
+          "end": "2026-03-05",
+          "location": "Hilton Harrisburg, Harrisburg, PA",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://www.psu.edu/news/nese-college-nursing/story/nese-college-nursing-hosts-ninth-annual-research-symposium",
+          "evidence": "ninth annual Translating Research into Innovations in Practice Symposium, held March 4-5 at the Hilton Harrisburg",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Doctor of Nursing Practice Project Showcase",
+      "org": "University of Pennsylvania — School of Nursing",
+      "org_url": "https://www.nursing.upenn.edu/academics/doctor-of-nursing-practice-dnp/dnp-scholarly-projects/",
+      "professions": ["NP", "AGACNP", "CNM", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic", "clinician", "public"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "annual, April",
+      "np_pa_basis": "School of nursing showcase for DNP scholarly projects, with a virtual attendance option open beyond the school.",
+      "editions": [
+        {
+          "start": "2024-04-24",
+          "end": "2024-04-24",
+          "location": "University of Pennsylvania School of Nursing, Philadelphia, PA (virtual option)",
+          "format": "hybrid",
+          "call": {"status": "none"},
+          "source_url": "https://www.nursing.upenn.edu/calendar/event/4739-2024-doctor-of-nursing-practice-dnp-project-showcase",
+          "evidence": "2024 Doctor of Nursing Practice (DNP) Project Showcase, startDate 2024-04-24",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        },
+        {
+          "start": "2026-04-20",
+          "end": "2026-04-20",
+          "location": "University of Pennsylvania School of Nursing, Philadelphia, PA (virtual option)",
+          "format": "hybrid",
+          "call": {"status": "none"},
+          "source_url": "https://www.nursing.upenn.edu/calendar/event/5679-2026-doctor-of-nursing-practice-dnp-project-showcase",
+          "evidence": "2026 Doctor of Nursing Practice (DNP) Project Showcase, startDate 2026-04-20",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "School of Nursing DNP Intensive",
+      "org": "University of Tennessee at Chattanooga — School of Nursing",
+      "org_url": "https://calendar.utc.edu/event/school_of_nursing_dnp_intensive",
+      "professions": ["NP", "AGACNP", "RN"],
+      "specialty": ["nursing scholarship"],
+      "audience": ["academic"],
+      "kind": "symposium",
+      "region": "us",
+      "recurrence": "each fall term",
+      "np_pa_basis": "School of nursing intensive with senior DNP final translational-project presentations and a poster reception open to campus faculty and students.",
+      "editions": [
+        {
+          "start": "2023-11-16",
+          "end": "2023-11-16",
+          "location": "University Center, UC 220 Chattanooga Room A-B, 642 E 5th St, Chattanooga, TN",
+          "format": "in person",
+          "call": {"status": "none"},
+          "source_url": "https://calendar.utc.edu/event/school_of_nursing_dnp_intensive",
+          "evidence": "All campus faculty and students are invited and encouraged to attend the DNP Poster Reception, beginning at 4 pm on Thursday November 16th.",
+          "checked": "2026-09-22",
+          "source_reviewed": true
+        }
+      ]
+    }
+  ],
+  "not_found": {
+    "_note": "Searched in this batch and deliberately not listed.",
+    "temple_university": "A DNP quality-improvement poster appears in the university-wide Temple University Graduate Symposium program (April 17, 2026), but no School of Nursing event of its own was found. A university-wide graduate symposium is not an APP venue, so it is not listed.",
+    "university_of_pennsylvania_2023": "A magazine article refers to the first DNP Project Showcase held 'in May' 2023 with no day given. Not listed, because no organizer page states the date.",
+    "university_of_illinois_chicago": "Two older UIC event slugs now render the December 4, 2025 content. Those two editions were dropped rather than recorded on a reused page.",
+    "university_of_kansas": "A 'Multiple Dimensions of Scholarship and Inquiry Symposium' is named on the KU page with no date; not listed.",
+    "valparaiso_university": "A dedicated DNP Project Presentations page exists but both it and the related post refuse automated reading, so no date could be read.",
+    "university_of_florida": "CLI Day is named as the DNP dissemination venue; the only date found is from 2016, outside the window.",
+    "elmhurst_millikin_loyola_chicago": "Annual dissemination events are described in handbooks with the date given as 'TBA', or the dated event is not DNP-specific."
+  }
+}
