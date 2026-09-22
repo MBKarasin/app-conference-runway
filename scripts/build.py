@@ -352,12 +352,18 @@ def rule_dates(rule, y):
         return d.isoformat(), (d + dt.timedelta(days=rule.get("length", 1) - 1)).isoformat()
     return None, None
 
-def tidy_snippet(text, year):
-    """Keep the part of the captured page text that actually carries the date, not the menu around it."""
+def tidy_snippet(text, start):
+    """Keep the part of the captured page text that carries the start date itself, not the menu around it."""
+    from check import date_regex
+    rx, year = date_regex(start), start[:4]
     parts = [p.strip(" .,;") for p in re.split(r"\s*[|•·›»]\s*|(?<=[a-z])\.\s+", text) if p.strip()]
-    hit = [p for p in parts if year in p] or parts
-    out = max(hit, key=len) if hit else text
-    out = re.sub(r"^[a-z]{1,12}\b\s*", "", out)          # a word cut in half at the start reads as a typo
+    hit = [p for p in parts if rx.search(p) and (year in p or year[2:] in p)]
+    if hit:
+        out = min(hit, key=len)
+    else:
+        m = rx.search(text)
+        out = text[max(0, m.start() - 80): m.end() + 80] if m else text
+    out = re.sub(r"^[a-z]{1,12}\b\s*", "", out.strip())          # a word cut in half at the start reads as a typo
     return out[:200].strip()
 
 CUTOFF_NOTE = " — the organizer's cut-off time applies; confirm on their page before submitting."
@@ -492,7 +498,7 @@ def main():
         elif v:
             e["verify"] = v
             if not e.get("evidence") and v.get("state") == "verified" and v.get("snippet"):
-                e["evidence"], e["evidence_auto"] = tidy_snippet(v["snippet"], e["start"][:4]), True
+                e["evidence"], e["evidence_auto"] = tidy_snippet(v["snippet"], e["start"]), True
         else:
             e["verify"] = {"state": "unchecked", "checked": None}
     for e in proj:
