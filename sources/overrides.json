@@ -364,10 +364,23 @@
     "text": "Peer-reviewed paper and poster, clinical nurse researcher-scholar poster, workshop and symposium applications close Wednesday, October 28, 2026, 11:59 p.m. Eastern; school-selected student posters close December 18, 2026",
     "url": "https://enrs2027conference.oa-event.com/abstracts"
    },
-   "note": "Walked enrs-go.org (home, events, industry events) and the 39th Annual Scientific Sessions site (home, abstracts, hotel and travel) on 2026-09-22: the organizer publishes the city (Philadelphia, Loews Philadelphia) and hotel room-block cut-offs of March 8 and 10, 2027, but no conference dates. The March 31-April 2, 2027 range on file is not confirmed by the organizer and is withheld from the default view."
+   "note": null,
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "evidence": "ENRS 39th Annual Scientific Sessions · LOEWS PHILADELPHIA · 03.31.27 - 04.02.27",
+   "evidence_image": "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png",
+   "_why": "Dates are printed in the conference site's banner image, not in page text: read 2026-09-22 — 'LOEWS PHILADELPHIA 03.31.27 - 04.02.27'."
   },
   "bfb1cef79cb1": {
-   "note": "Walked mypnaa.org on 2026-09-22: events page, the 48th convention save-the-date link (404), the registration page (blocked to automated readers) and the events calendar (an embedded calendar with no readable entries). The organizer confirms the 47th convention (July 15-19, 2026, Colorado Springs) but publishes no dates for the 48th. The July 17-24, 2027 cruise range on file is unconfirmed and is withheld from the default view."
+   "note": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
+   "save_the_date": true,
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "source_url": "https://mypnaa.org/events",
+   "evidence": "48th PNAA Annual National Convention · Save the date · July 17–24, 2027 · Inter-Island Cruise in Hawaii",
+   "evidence_image": "https://mypnaa.org/resources/Events/PNAA48/48th%20PNAA%20National%20Convention%20Flyer%20with%20Theme%20v3.png",
+   "location": "Inter-island cruise, Hawaii (host chapter: PNA Hawaii)",
+   "_why": "Flyer on mypnaa.org/events read 2026-09-22: '48th PNAA Annual National Convention … Save the date July 17–24, 2027 … Inter-Island Cruise in Hawaii'."
   }
  },
  "rules": {
