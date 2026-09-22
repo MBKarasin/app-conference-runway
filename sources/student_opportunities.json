@@ -162,6 +162,160 @@
     "CNM",
     "Nursing"
    ]
+  },
+  "ad0523b079a7": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "San Jose State University DNP project dissemination event. Open to the public per the school.",
+   "url": "https://www.sjsu.edu/nursing/programs/dnp/oral-defenses.php",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "3b7d2e4f46cc": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of California, Davis DNP project dissemination event. Audience not stated by the school.",
+   "url": "https://health.ucdavis.edu/news/headlines/dnp-fnp-academic-symposium-marks-milestone-for-uc-davis-nursing-school/2025/05",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "f9fce92034e4": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of California, Los Angeles DNP project dissemination event. Guests invited per the school.",
+   "url": "https://www.nursing.ucla.edu/news/graduating-doctor-of-nursing-practice-students-present",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "ca8870a7065c": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Yale University DNP project dissemination event. Audience not stated by the school.",
+   "url": "https://nursing.yale.edu/news/scholars-day-2026-making-difference-through-scholarship",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "d6fa183460d1": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Georgetown University DNP project dissemination event. Audience not stated by the school.",
+   "url": "https://nursing.georgetown.edu/news-story/dnp-students-present-doctoral-scholarly-projects",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "e21b3831448b": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Florida Atlantic University DNP project dissemination event. Guests invited per the school.",
+   "url": "https://www.fau.edu/nursing/news/dnp-presentation-2025/index.php",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "6bc9b767e9d1": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "Johns Hopkins University DNP project dissemination event. Guests invited per the school.",
+   "url": "https://nursing.jhu.edu/wp-content/uploads/2025/05/DNP-Symposium-Scholars-Day-Agenda-2025.pdf",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "24198357d28f": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "University of New Mexico DNP project dissemination event. Open to the public per the school.",
+   "url": "https://hsc.unm.edu/nursing/about/news/events/dnp-posters/",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "7ca43ec52267": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "East Tennessee State University DNP project dissemination event. Audience not stated by the school.",
+   "url": "https://www.etsu.edu/nursing/conlife/epsig_research_day.php",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "3a46b946d221": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "East Tennessee State University DNP project dissemination event. Audience not stated by the school.",
+   "url": "https://www.etsu.edu/nursing/conlife/epsig_research_day.php",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
+  },
+  "638967323a28": {
+   "category": "project",
+   "kind": "School-hosted DNP project presentations",
+   "detail": "East Tennessee State University DNP project dissemination event. Audience not stated by the school.",
+   "url": "https://www.etsu.edu/nursing/conlife/epsig_research_day.php",
+   "roles": [
+    "NP",
+    "AGACNP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "Nursing"
+   ]
   }
  }
 }

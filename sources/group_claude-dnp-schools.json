@@ -1,0 +1,375 @@
+{
+ "group": "claude-dnp-schools",
+ "_note": "School-hosted DNP project presentations; CCNE DNP program universe (394) partially swept 2026-09-22",
+ "series": [
+  {
+   "name": "DNP Project Oral Defenses",
+   "org": "San Jose State University — The Valley Foundation School of Nursing",
+   "org_url": "https://www.sjsu.edu/nursing/programs/dnp/oral-defenses.php",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: public",
+   "editions": [
+    {
+     "start": "2026-04-30",
+     "end": "2026-05-01",
+     "location": "Virtual (Zoom)",
+     "format": "virtual",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.sjsu.edu/nursing/programs/dnp/oral-defenses.php",
+     "evidence": "2026 DNP Project Oral Defenses Thursday, April 30th, 2026 and Friday, May 1st, 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "DNP-FNP Academic Symposium",
+   "org": "University of California, Davis — Betty Irene Moore School of Nursing",
+   "org_url": "https://health.ucdavis.edu/nursing/news/",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically May",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: unstated",
+   "editions": [
+    {
+     "start": "2025-05-17",
+     "end": "2025-05-17",
+     "location": "Betty Irene Moore Hall, Sacramento, CA",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://health.ucdavis.edu/news/headlines/dnp-fnp-academic-symposium-marks-milestone-for-uc-davis-nursing-school/2025/05",
+     "evidence": "2025 Academic Symposium ... May 17, 2025 ... Students, faculty, family and friends gathered",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "DNP Scholarly Projects Presentations Day",
+   "org": "University of California, Los Angeles — School of Nursing",
+   "org_url": "https://www.nursing.ucla.edu/news/graduating-doctor-of-nursing-practice-students-present",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically June",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: invited guests",
+   "editions": [
+    {
+     "start": "2024-06-01",
+     "end": "2024-06-01",
+     "location": "UCLA School of Nursing, Los Angeles, CA",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.nursing.ucla.edu/news/graduating-doctor-of-nursing-practice-students-present",
+     "evidence": "The 2nd annual DNP Scholarly Projects Presentations Day took place on Saturday, June 1, 2024 at the UCLA School of Nursing.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Scholars' Day",
+   "org": "Yale University — School of Nursing",
+   "org_url": "https://nursing.yale.edu/news/scholars-day-2026-making-difference-through-scholarship",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: unstated",
+   "editions": [
+    {
+     "start": "2026-04-17",
+     "end": "2026-04-17",
+     "location": "Moore Room, Yale School of Nursing, Orange, CT",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://nursing.yale.edu/news/scholars-day-2026-making-difference-through-scholarship",
+     "evidence": "On April 17, the Yale School of Nursing community gathered in the Moore Room for Scholars' Day, celebrating the impact of doctoral scholarship across PhD and DNP programs.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Doctoral Scholars Showcase",
+   "org": "Georgetown University — Department of Nursing",
+   "org_url": "https://nursing.georgetown.edu/news-story/dnp-students-present-doctoral-scholarly-projects",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically March",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: unstated",
+   "editions": [
+    {
+     "start": "2025-03-21",
+     "end": "2025-03-22",
+     "location": "Wisconsin Avenue campus (reception in Copley Formal Lounge), Washington, DC",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://nursing.georgetown.edu/news-story/dnp-students-present-doctoral-scholarly-projects",
+     "evidence": "Thirty-three students participated in the two-day showcase March 21-22 on Wisconsin Avenue with a reception held in Copley Formal Lounge.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Doctor of Nursing Practice Project Presentations",
+   "org": "Florida Atlantic University — Christine E. Lynn College of Nursing",
+   "org_url": "https://www.fau.edu/nursing/news/dnp-presentation-2025/index.php",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically December",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: invited guests",
+   "editions": [
+    {
+     "start": "2025-12-08",
+     "end": "2025-12-08",
+     "location": "Boca Raton campus, Boca Raton, FL",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.fau.edu/nursing/news/dnp-presentation-2025/index.php",
+     "evidence": "Doctor of Nursing Practice (DNP) students showcased their scholarly projects at the Boca Raton campus on Monday, December 8 for an event featuring lightning round talks for faculty, staff and guests.",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "DNP Symposium - Scholars Day",
+   "org": "Johns Hopkins University — School of Nursing",
+   "org_url": "https://nursing.jhu.edu/wp-content/uploads/2025/05/DNP-Symposium-Scholars-Day-Agenda-2025.pdf",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically May",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: invited guests",
+   "editions": [
+    {
+     "start": "2025-05-19",
+     "end": "2025-05-19",
+     "location": "Johns Hopkins School of Nursing, 525 North Wolfe Street, Baltimore, MD 21205",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://nursing.jhu.edu/wp-content/uploads/2025/05/DNP-Symposium-Scholars-Day-Agenda-2025.pdf",
+     "evidence": "DNP Symposium - Scholars Day Monday, May 19, 2025",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "DNP Scholarly Project Poster Presentations",
+   "org": "University of New Mexico — College of Nursing- Health Sciences Center / Nursing/Pharmacy Building, Room 164, MSC09 5350",
+   "org_url": "https://hsc.unm.edu/nursing/about/news/events/dnp-posters/",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically July",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: public",
+   "editions": [
+    {
+     "start": "2026-07-21",
+     "end": "2026-07-21",
+     "location": "College of Nursing & Public Health Excellence Building, Albuquerque, NM",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://hsc.unm.edu/nursing/about/news/events/dnp-posters/",
+     "evidence": "July 21, 2026",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  },
+  {
+   "name": "Epsilon Sigma at-Large Chapter STTI Annual Research Day",
+   "org": "East Tennessee State University — College of Nursing (Epsilon Sigma at-Large Chapter, Sigma)",
+   "org_url": "https://www.etsu.edu/nursing/conlife/epsig_research_day.php",
+   "professions": [
+    "NP",
+    "CRNA",
+    "CNS",
+    "CNM",
+    "RN"
+   ],
+   "specialty": [
+    "dnp projects"
+   ],
+   "audience": [
+    "academic",
+    "clinician"
+   ],
+   "kind": "symposium",
+   "region": "us",
+   "recurrence": "annual, typically April",
+   "np_pa_basis": "School-hosted DNP project dissemination; audience: unstated",
+   "editions": [
+    {
+     "start": "2023-04-20",
+     "end": "2023-04-20",
+     "location": null,
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.etsu.edu/nursing/conlife/epsig_research_day.php",
+     "evidence": "Epsilon Sigma at large chapter STTI- Annual Research Day: April 20, 2023",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    },
+    {
+     "start": "2024-04-11",
+     "end": "2024-04-11",
+     "location": "East Tennessee State University, Johnson City, TN",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.etsu.edu/nursing/conlife/epsig_research_day.php",
+     "evidence": "Thursday, April 11, 2024, from 9 am to 3 pm at East Tennessee State University",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    },
+    {
+     "start": "2025-04-25",
+     "end": "2025-04-25",
+     "location": "Walters State Community College Founders Room",
+     "format": "in person",
+     "call": {
+      "status": "none"
+     },
+     "source_url": "https://www.etsu.edu/nursing/conlife/epsig_research_day.php",
+     "evidence": "April 25, 2025 • 9 AM- 4 PM • Walter State Community College Founders Room",
+     "checked": "2026-09-22",
+     "source_reviewed": true
+    }
+   ]
+  }
+ ],
+ "not_found": []
+}
