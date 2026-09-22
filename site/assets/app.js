@@ -198,7 +198,7 @@
     const drift = v.state === "verified" && v.method !== "manual" && v.evidence_match === false;
     if (exceptionsOnly && ((v.state === "verified" && !drift) || v.state === "rule" || v.state === "archived")) return "";
     const label = v.state === "verified" && v.method === "manual" ? "Source reviewed" : drift ? "Source wording changed" : baseLabel;
-    const when = v.state === "verified" && v.last_verified ? " " + md(v.last_verified.slice(0, 10)) : "";
+    const when = "";   // the page header carries the check time; repeating it on every record only adds noise
     const tip = v.state === "verified" && v.method === "manual" ? "The organizer's source was manually reviewed for this date range. Review date appears on this label; confirm details before booking." :
       drift ? "The start date and a meeting-name word remain on the organizer page, but the original source excerpt no longer matches. Review the full range before relying on it." :
       v.state === "verified" ? "Start date, year and a distinctive meeting-name word were found on the organizer page. Confirm the end date there before booking." :
@@ -433,7 +433,9 @@
     if (st.spec) applied.push("Specialty: " + st.spec);
     if (st.q) applied.push("Search: " + st.q);
     if (st.openOnly) applied.push(st.view === "students" ? "Student submissions open" : "Abstract call open");
-    $("#summary").textContent = summary + (applied.length ? " · " + applied.join(" · ") : "") + (st.verifiedOnly && st.view !== "directory" ? " · source checked dates" : "");
+    const stamp = DATA && DATA.built ? stampET(DATA.built).replace(/^Data snapshot /, "") : "";
+    $("#summary").innerHTML = esc(summary + (applied.length ? " · " + applied.join(" · ") : ""))
+      + (st.verifiedOnly && st.view !== "directory" ? ` · <span class="okstamp">source checked ${esc(stamp)}</span>` : "");
     $("#fbtn").textContent = "Filters" + (activeCount() ? " (" + activeCount() + ")" : "");
     writeHash();
     if (f && document.getElementById(f)) { const el = document.getElementById(f); el.focus(); if (el.setSelectionRange && el.value) el.setSelectionRange(el.value.length, el.value.length); }
@@ -501,7 +503,7 @@
         ${s.recurrence ? `<dt>Recurs</dt><dd>${esc(s.recurrence)}</dd>` : ""}
         <dt>Focus</dt><dd>${(s.focus || []).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curator tags)</span></dd>
         ${s.np_pa_basis ? `<dt>Why it's here</dt><dd>${esc(s.np_pa_basis)}</dd>` : ""}
-        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} · compiled ${esc(e.compiled || "")}${v.last_verified ? " · " + (v.method === "manual" ? "manually reviewed" : "start checked") + " " + esc(longDate(v.last_verified.slice(0, 10))) : ""}${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${v.why && v.state !== "verified" ? ` · <span class="fine">${esc(v.why)}</span>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
+        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} · ${v.last_verified ? esc((v.method === "manual" ? "reviewed by the curator " : "start checked ") + longDate(v.last_verified.slice(0, 10))) : "recorded " + esc(longDate(e.compiled || ""))}${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${v.why && v.state !== "verified" ? ` · <span class="fine">${esc(v.why)}</span>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
       </dl>
       ${e.evidence && v.evidence_match ? `<blockquote class="quote" title="Text found on the organizer page at the last check">“${esc(e.evidence)}”</blockquote>` : ""}
       ${e.sessions && e.sessions.length ? `<div><p class="flabel">Sessions & courses</p><ul class="sessions">${e.sessions.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}

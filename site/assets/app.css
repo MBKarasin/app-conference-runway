@@ -519,3 +519,5 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   .geoquick{gap:6px}.geoquick .flabel{width:100%}.geoquick .geo-label[for="area"],.geoquick .geo-label[for="nearq"]{width:100%;margin-top:3px}
   .geoquick #area{width:100%;max-width:none}.geoquick #nearq{flex:1 1 155px}.geoquick .geo-divider{display:none}
 }
+
+.okstamp{color:var(--ok);font-weight:700}
