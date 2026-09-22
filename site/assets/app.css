@@ -521,3 +521,60 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 }
 
 .okstamp{color:var(--ok);font-weight:700}
+
+
+/* ---------------------------------------------------------------------------
+   Night reading. The ledger layer above pins light surfaces; these rules give
+   the same page a dark set, for a phone opened at 2 a.m. on a night shift.
+   --------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:#0E1417;--surface:#151C21;--surface-2:#1A2329;--sunk:#101820;
+    --ink:#E8EFF1;--ink-2:#AFC0C6;--ink-3:#84969D;--rule:#2C383E;--rule-soft:#222C31;
+    --runway:#FF7B96;--runway-ink:#FF9AAE;--obs:#FF7B96;--scarlet:#FF6B86;--caa:#E0A45C;
+    --ok:#5FD39B;--ok-bg:#12291F;--warn:#F0B95F;--warn-bg:#2C2312;--muted-bg:#1C262B;--crit:#FF8785;
+  }
+  :root:not([data-theme="light"]) body{background:var(--ground);border-top-color:#FF6B86}
+  :root:not([data-theme="light"]) .mast{background:#0A1418;color:#E8EFF1}
+  :root:not([data-theme="light"]) .toprow{border-color:#2E4149}
+  :root:not([data-theme="light"]) .toprow .eyebrow,
+  :root:not([data-theme="light"]) .ru{color:#9FB4BB}
+  :root:not([data-theme="light"]) .ru-mark{background:#FF6B86}
+  :root:not([data-theme="light"]) .hbtn{border-color:#42565E;color:#E8EFF1}
+  :root:not([data-theme="light"]) .hbtn:hover{border-color:#E8EFF1;background:#18303A;color:#fff}
+  :root:not([data-theme="light"]) .strip{background:#2E4149}
+  :root:not([data-theme="light"]) .lede{color:#C3D3D8}
+  :root:not([data-theme="light"]) .updated{color:#9FB4BB}
+  :root:not([data-theme="light"]) .kpis,
+  :root:not([data-theme="light"]) .kpi,
+  :root:not([data-theme="light"]) .kpi:first-child,
+  :root:not([data-theme="light"]) .kpi:last-child{border-color:#33474F}
+  :root:not([data-theme="light"]) .kpi b,
+  :root:not([data-theme="light"]) .kpi.hot b,
+  :root:not([data-theme="light"]) .kpi.acc b{color:#FF9AAE}
+  :root:not([data-theme="light"]) .kpi span{color:#B7C7CC}
+  :root:not([data-theme="light"]) .spotlight{background:var(--surface);color:var(--ink);border-color:#33474F;border-top-color:#FF6B86}
+  :root:not([data-theme="light"]) .week-head{border-bottom-color:var(--rule)}
+  :root:not([data-theme="light"]) .week-day{background:var(--surface);border-right-color:var(--rule)}
+  :root:not([data-theme="light"]) .week-day.is-weekend{background:var(--surface-2)}
+  :root:not([data-theme="light"]) .week-day.is-today{box-shadow:inset 0 0 0 2px #FF9AAE}
+  :root:not([data-theme="light"]) .ev{background:var(--surface);border-bottom-color:var(--rule)}
+  :root:not([data-theme="light"]) .ev:hover{background:var(--surface-2)}
+  :root:not([data-theme="light"]) .curator{background:var(--surface);border-color:#33474F;border-top-color:#FF6B86}
+  :root:not([data-theme="light"]) .geoquick input,
+  :root:not([data-theme="light"]) input,
+  :root:not([data-theme="light"]) select{background:var(--surface-2);color:var(--ink);border-color:var(--rule)}
+  :root:not([data-theme="light"]) .cal .ce.appweek,
+  :root:not([data-theme="light"]) .cal .ce.appweek.ongoing{background:#B3123B;color:#fff;border-left-color:#FF9AAE}
+  :root:not([data-theme="light"]) .live-source:hover{color:#fff;border-color:#fff}
+  :root:not([data-theme="light"]) dialog{background:var(--surface);color:var(--ink)}
+  :root:not([data-theme="light"]) .bar{background:#121B20;border-color:#2C383E}
+  :root:not([data-theme="light"]) .tabs{border-color:#2C383E}
+  :root:not([data-theme="light"]) .tabs button[aria-selected="true"],
+  :root:not([data-theme="light"]) .seg button[aria-pressed="true"]{box-shadow:inset 0 -2px #FF6B86;color:var(--ink)}
+  :root:not([data-theme="light"]) .chip[aria-pressed="true"]{background:#24333A;border-color:#41555E;color:#fff}
+  :root:not([data-theme="light"]) .switch{color:var(--ink)}
+  :root:not([data-theme="light"]) .sec h2,
+  :root:not([data-theme="light"]) .dir .srs{background:var(--surface);color:var(--ink)}
+  :root:not([data-theme="light"]) .quote{background:var(--surface-2);color:var(--ink-2)}
+}

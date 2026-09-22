@@ -594,6 +594,11 @@
       if (t.dataset.f) { st[t.dataset.f] = st[t.dataset.f] === t.dataset.v && t.dataset.v ? "" : t.dataset.v; st.more = 1; render(); return; }
       const act = t.dataset.act;
       if (act === "clear") { const keep = { view: st.view, display: st.display, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
+      if (act === "share") {
+        const note = `APP Conference Runway — conferences, abstract deadlines and celebration weeks for advanced practice providers worldwide, checked nightly against the organizers' own pages.\n${location.origin + location.pathname}\n(Not listed in search engines; pass it on to colleagues.)`;
+        copy(note, "Note and link copied — paste it into an email or message.");
+        return;
+      }
       if (act === "showall") { st.verifiedOnly = false; render(); return; }
       if (act === "where-all") { st.where = ""; st.area = ""; st.near = null; st.nearQ = ""; render(); return; }
       if (act === "where-online") { st.where = st.where === "online" ? "" : "online"; st.area = ""; st.near = null; st.nearQ = ""; render(); return; }
