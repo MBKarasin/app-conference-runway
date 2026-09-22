@@ -312,7 +312,8 @@
       if ((mode === "upcoming" || mode === "deadlines") && cs) items.push({ e, call: true, from: cs.from, to: cs.to });
     });
     // Meetings view: meetings first, then celebrations, then open abstract calls. Deadlines view: calls first.
-    const rank = x => mode === "deadlines" ? (x.call ? 0 : x.e.s.kind === "observance" ? 2 : 1) : (x.call ? 2 : x.e.s.kind === "observance" ? 1 : 0);
+    // National APP Week always first; then celebrations, meetings, open abstract calls (deadlines view: calls before meetings).
+    const rank = x => !x.call && x.e.s.name === "National APP Week" ? -1 : mode === "deadlines" ? (x.call ? 0 : x.e.s.kind === "observance" ? 1 : 2) : (x.call ? 2 : x.e.s.kind === "observance" ? 0 : 1);
     const expected = st.expected && mode !== "past" ? EDS.filter(e => e.expectedRow && edMatch(e) && e.start.slice(0, 7) === st.cal) : [];
     const SHOW = 6;
     let weeks = "";
@@ -336,7 +337,7 @@
         const contL = x.from < wkS, contR = x.to > wkE, span = c1 - c0;
         const due = call && !contR;
         const label = (contL ? "… " : "") + (call ? (due ? "Abstracts due: " : "Abstracts open: ") : "") + esc(e.s.name) + (call ? (span > 1 || !due ? ` <small>due ${esc(md(x.to))}</small>` : "") : span > 1 ? ` <small>${esc(range(e))}</small>` : "");
-        h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= SHOW ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= SHOW ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
+        h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${!call && e.s.name === "National APP Week" ? " appweek" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= SHOW ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= SHOW ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
       });
       if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${SHOW + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false">+${hidden} more this week</button>`;
       const rc = `26px${Math.min(nL, SHOW) ? ` repeat(${Math.min(nL, SHOW)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = `26px repeat(${nL + 1}, auto)`;
