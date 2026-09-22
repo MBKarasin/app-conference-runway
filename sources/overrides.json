@@ -94,7 +94,9 @@
    "source_url": "https://convention.jtbcom.co.jp/jans46/outline.html",
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "The 46th Annual Conference of Japan Academy of Nursing Science: December 12–13, 2026, Tokyo International Forum."
+   "evidence": "The 46th Annual Conference of Japan Academy of Nursing Science: December 12–13, 2026, Tokyo International Forum.",
+   "reviewed_on": "2026-09-22",
+   "_why": "jans.or.jp schedule read 2026-09-22: \"日時：2026年12月12日（土）・13日（日）／場所：東京国際フォーラム\"."
   },
   "9e0e24120486": {
    "source_url": "https://njsna.org/events/month/2026-10/",
@@ -207,6 +209,131 @@
   "a2b5b8c2e1e7": {
    "removed": true,
    "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+  },
+  "823a00629439": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "NZNO registration page read 2026-09-22: \"Tuesday 22, Wednesday 23, and Thursday 24 September 2026 ... Novotel Rotorua Lakeside\"."
+  },
+  "e48b8600d4b5": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "okpa.org read 2026-09-22: \"53rd Annual OAPA CME Conference ... September 30 - October 2, 2026 ... Embassy Suites Downtown OKC\"."
+  },
+  "460a16759e79": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "iapasociety.org read 2026-09-22: \"Healthcare in the Heartland ... October 26-27, 2026 in Coralville, Iowa\"."
+  },
+  "51ef23154e50": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "wapa.com read 2026-09-22: \"Dates: November 1st-4th Location: Hyatt Regency Lake Washington in Renton, WA\"."
+  },
+  "9fa932165f0a": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "seoc.cl read 2026-09-22: \"VIII Congreso Internacional ... 19, 20 y 21 de noviembre de 2026 ... Hotel Best Western, Las Condes\"."
+  },
+  "df41d3af0294": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "congresoenfermeria.ufro.cl read 2026-09-22: \"II CONGRESO INTERNACIONAL ... 19 y 20 de Noviembre 2026 ... Aula Magna, Universidad de La Frontera\"."
+  },
+  "c6226c5e9add": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "uach.mx read 2026-09-22: \"14º CONGRESO NACIONAL POSGRADO EN ENFERMERÍA ... 26 y 27 de noviembre de 2026\".",
+   "location": "Poliforum Científico y Cultural, Chihuahua, Mexico"
+  },
+  "db6c943ce1b9": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "aana.com read 2026-09-22: \"EDGE 2027 ... February 25, 2027 - February 28, 2027 ... Sheraton Dallas Hotel\"."
+  },
+  "a83ba760ec56": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "academyonline.org read 2026-09-22: \"Join us in Louisville, Kentucky for the Spring 2027 Advanced Practice Neonatal Nurses Conference. April 8-10, 2027\"."
+  },
+  "63b4fd60df55": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "amia.org read 2026-09-22: \"2027 Amplify Informatics Conference ... April 12 - 15 ... Atlanta, GA\"."
+  },
+  "002ad3b7a061": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "aana.com read 2026-09-22: \"Mid-Year Assembly 2027 ... April 16, 2027 - April 21, 2027 ... JW Marriott Washington, DC\"."
+  },
+  "479121152dc2": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "ons.org read 2026-09-22: \"Every May, Oncology Nursing Month celebrates the role oncology nurses play in patient care\"; the month is the organizer's stated rule."
+  },
+  "fc952b75dcbc": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "aacn.org read 2026-09-22: NTI 2027 listed as \"May 2-5\" in Indianapolis."
+  },
+  "2b995c9ce64e": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "asco.org read 2026-09-22: \"June 4 -8, 2027 ... McCormick Place, Chicago, IL\"."
+  },
+  "63030a7dee9b": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "aana.com read 2026-09-22: \"AANA Annual Congress 2027 ... August 8, 2027 - August 12, 2027 ... Ernest N. Morial Convention Center, New Orleans, LA\"."
+  },
+  "919004c82f9a": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "wapa.com read 2026-09-22: \"WAPA Fall Conference 2027 ... Sep 30 2027 - Oct 03 2027 ... Great Wolf Lodge\"; end date corrected from Sep 30 to Oct 3.",
+   "end": "2027-10-03"
+  },
+  "c45dffbcbe96": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "acep.org read 2026-09-22: \"ACEP27 Scientific Assembly: 10/25/2027 - 10/28/2027, Boston, Massachusetts\"."
+  },
+  "2b4240065e0a": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "jans.or.jp read 2026-09-22: \"日時：2027年11月27日・28日／場所：札幌コンベンションセンター\"."
+  },
+  "0062195111b0": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "asco.org read 2026-09-22: \"June 2 - 6, 2028 ... Chicago, IL\"."
+  },
+  "bfff1655d95c": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "acep.org read 2026-09-22: \"ACEP28 Scientific Assembly: 9/17/2028 - 9/20/2028, Las Vegas, Nevada\"."
+  },
+  "27adc53dd3fe": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "acep.org read 2026-09-22: \"ACEP29 Scientific Assembly: 10/1/2029 - 10/4/2029, Philadelphia, Pennsylvania\"."
+  },
+  "e2d3b8e33ed3": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "acep.org read 2026-09-22: \"ACEP30 Scientific Assembly: 10/17/2030 - 10/20/2030, San Francisco, California\"."
+  },
+  "194ce1735b8f": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-22",
+   "_why": "acep.org read 2026-09-22: \"ACEP31 Scientific Assembly: 10/27/2031 - 10/30/2031, Chicago, Illinois\"."
+  },
+  "df0c3e9bbf98": {
+   "removed": true,
+   "_why": "2027 dates could not be confirmed: aannet.org blocks automated reads and academypolicyconference.com shows only the 2026 conference (October 8-10, 2026). Removed 2026-09-22; the expected-month row covers October 2027."
+  },
+  "4169d9ce47cd": {
+   "removed": true,
+   "_why": "AAOHN says the 2027 national conference is all-virtual \"this upcoming June\" but publishes no dates. The single-day June 1 record was a placeholder, not an organizer date. Removed 2026-09-22."
   }
  },
  "rules": {
