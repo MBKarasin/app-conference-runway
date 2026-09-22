@@ -1,2 +1,3 @@
+# The Runway is circulated among advanced practice providers, not indexed.
 User-agent: *
-Allow: /
+Disallow: /
