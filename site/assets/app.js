@@ -57,7 +57,7 @@
   const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"], ["observance", "Celebrations"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
   const CONTINENTS = ["North America", "South America", "Europe", "Asia", "Oceania", "Africa"];
-  const TABS = [["upcoming", "Upcoming"], ["deadlines", "Abstract deadlines"], ["students", "Students & DNP projects"], ["past", "Past"], ["directory", "Directory"]];
+  const TABS = [["upcoming", "Upcoming"], ["deadlines", "Abstract deadlines"], ["students", "Students & DNP projects"], ["directory", "Directory"]];
   const VSTATE = {
     verified: ["Start found", "check"], conflict: ["Organizer dates conflict", "warn"], not_found: ["Needs review", "warn"], unreachable: ["Not re-checked", "dash"],
     unchecked: ["Not re-checked", "dash"], expected: ["Expected", "dash"], rule: ["Set by rule", "dash"],
