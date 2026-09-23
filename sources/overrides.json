@@ -574,6 +574,20 @@
    "source_reviewed": true,
    "reviewed_on": "2026-09-22",
    "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+  },
+  "43862213a496": {
+   "source_url": "https://aann.org/meetings/annual-educational-conference",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-23",
+   "evidence": "Saturday, March 13-Tuesday, March 16, 2027 The Westin Seattle, Seattle, WA",
+   "_why": "Nightly checker got HTTP 307 (redirect loop for automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+  },
+  "260f68c5cb83": {
+   "source_url": "https://aann.org/meetings/virtual-innrs",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-23",
+   "evidence": "The next Virtual INNRS will be held on Friday, January 29, 2027.",
+   "_why": "Nightly checker got HTTP 307 (redirect loop for automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
   }
  },
  "rules": {
