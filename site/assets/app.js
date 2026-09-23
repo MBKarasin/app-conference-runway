@@ -52,6 +52,8 @@
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
   const dnpOK = e => !!(e && e.student && e.student.category === "project");
   const FOCUS_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["executive", "Executive"]];
+  const PROF_TIPS = { NP: "NP-relevant: NP, nursing, CNS, CNM and multidisciplinary meetings (curator judgment)", PA: "PA-relevant: PA and multidisciplinary meetings (curator judgment)",
+    AGACNP: "Curated adult acute care topic relevance; organizer eligibility and intended audience may vary." };
   const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"], ["observance", "Celebrations"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
   const CONTINENTS = ["North America", "South America", "Europe", "Asia", "Oceania", "Africa"];
@@ -63,7 +65,7 @@
   };
 
   /* ---------- state, mirrored in the URL ---------- */
-  const DEF = () => ({ view: "upcoming", display: "list", q: "", prof: "", focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, verifiedOnly: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
+  const DEF = () => ({ view: "upcoming", display: "list", q: "", prof: "", focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
   const st = DEF();
   let filtersOpen = false;
   function readHash() {
@@ -75,8 +77,7 @@
     ["q", "prof", "focus", "kind", "where", "area", "spec"].forEach(k => { if (h.get(k)) st[k] = h.get(k); });
     if (h.get("near")) st.nearQ = h.get("near");
     if (+h.get("r")) st.radius = +h.get("r");
-    st.openOnly = h.get("open") === "1"; st.verifiedOnly = false; st.expected = h.get("exp") === "1";
-    if (st.expected) st.verifiedOnly = false;
+    st.openOnly = h.get("open") === "1"; st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
     st.within = +(h.get("within") || 0);
     if (/^\d{4}-\d{2}$/.test(h.get("cal") || "")) st.cal = h.get("cal");
     return h.get("e");
@@ -89,6 +90,7 @@
     if (st.near) { h.set("near", st.nearQ); h.set("r", st.radius); }
     if (st.openOnly) h.set("open", "1");
     if (st.expected) h.set("exp", "1");
+    if (st.review) h.set("review", "1");
     if (st.within) h.set("within", st.within);
     if (st.display === "calendar" && st.cal !== TODAY.slice(0, 7)) h.set("cal", st.cal);
     if (extra) Object.entries(extra).forEach(([k, v]) => h.set(k, v));
@@ -206,11 +208,15 @@
     }
     return true;
   }
-  function verMatch(e) {
-    if (!st.verifiedOnly) return true;
-    return e.verify.state === "rule" || e.verify.state === "archived" || e.verify.state === "announced"
-      || (e.verify.state === "verified" && e.verify.evidence_match !== false);
+  // An exception is any record whose current source check did not confirm it: not found, conflicting,
+  // unreadable without curator evidence on file, or found with the stored quote no longer matching.
+  function isException(e) {
+    const v = e.verify || { state: "unchecked" };
+    if (["expected", "rule", "archived", "announced"].includes(v.state)) return false;
+    if (v.state === "verified") return v.method !== "manual" && v.evidence_match === false;
+    return true;
   }
+  function verMatch(e) { return !st.review || isException(e); }
   function edMatch(e) {
     if (!seriesMatch(e.s, st.view === "students") || !placeMatch(e) || !verMatch(e)) return false;
     if (st.prof === "STU" && !e.expectedRow && !stuOK(e)) return false;
@@ -229,7 +235,6 @@
     // Records carry no verification label; the page header carries the source-review timestamps.
     // The one marker kept is for projected months, which are not published dates.
     if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
-    return "";
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
     const drift = v.state === "verified" && v.method !== "manual" && v.evidence_match === false;
     if (exceptionsOnly && ((v.state === "verified" && !drift) || v.state === "rule" || v.state === "archived")) return "";
@@ -420,7 +425,7 @@
   }
 
   /* ---------- controls ---------- */
-  const chipRow = (key, list) => list.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-f="${key}" data-v="${esc(v)}" aria-pressed="${st[key] === v}"${key === "prof" && v === "AGACNP" ? ' title="Curated adult acute care topic relevance; organizer eligibility and intended audience may vary."' : ""}>${esc(l)}</button>`).join("");
+  const chipRow = (key, list) => list.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-f="${key}" data-v="${esc(v)}" aria-pressed="${st[key] === v}"${key === "prof" && PROF_TIPS[v] ? ` title="${PROF_TIPS[v]}"` : ""}>${esc(l)}</button>`).join("");
   function controls() {
     $("#tabs").innerHTML = TABS.map(([v, l]) => `<button id="tab-${v}" role="tab" aria-controls="view" aria-selected="${st.view === v}" tabindex="${st.view === v ? 0 : -1}" data-view="${v}">${esc(l)}</button>`).join("");
     $("#view").setAttribute("aria-labelledby", "tab-" + st.view);
@@ -446,13 +451,14 @@
       <div class="fgroup"><span class="flabel">Type</span>${chipRow("kind", KIND_CHIPS)}</div>
       <div class="fgroup"><label class="flabel" for="spec">Specialty</label><select id="spec" class="sel"><option value="">All specialties</option>${SPECS.map(s => `<option ${s === st.spec ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
         <label class="toggle"><input type="checkbox" id="openOnly" ${st.openOnly ? "checked" : ""}> Abstract call open</label>
-        <label class="toggle"><input type="checkbox" id="exp" ${st.expected ? "checked" : ""}> Show expected dates through ${DATA.horizon}</label></div>`;
+        <label class="toggle"><input type="checkbox" id="exp" ${st.expected ? "checked" : ""}> Show expected dates through ${DATA.horizon}</label>
+        <label class="toggle" title="Show only records whose latest automated source check did not confirm them"><input type="checkbox" id="review" ${st.review ? "checked" : ""}> Needs review only</label></div>`;
     $("#filters").classList.toggle("open", filtersOpen);
     $("#geoquick").classList.toggle("open", filtersOpen);
     $("#fbtn").setAttribute("aria-expanded", String(filtersOpen));
     $("#q").value = st.q;
   }
-  const activeCount = () => [st.prof, st.focus, st.kind, st.where, st.area, st.near, st.spec, st.openOnly, st.expected, st.q, st.within].filter(Boolean).length;
+  const activeCount = () => [st.prof, st.focus, st.kind, st.where, st.area, st.near, st.spec, st.openOnly, st.expected, st.review, st.q, st.within].filter(Boolean).length;
 
   /* ---------- render ---------- */
   function render(keepFocus) {
@@ -488,6 +494,7 @@
     if (st.spec) applied.push("Specialty: " + st.spec);
     if (st.q) applied.push("Search: " + st.q);
     if (st.openOnly) applied.push(st.view === "students" ? "Student submissions open" : "Abstract call open");
+    if (st.review) applied.push("Needs review only");
     const stamp = DATA && DATA.built ? stampET(DATA.built).replace(/^Data snapshot /, "") : "";
     $("#summary").innerHTML = `<b>${esc(summary)}</b>` + (applied.length ? `<span class="applied">${esc(applied.join(" · "))}</span>` : "");
     $("#fbtn").textContent = "Filters" + (activeCount() ? " (" + activeCount() + ")" : "");
@@ -560,11 +567,11 @@
     const L = EDS.filter(x => x.series === s.id).sort((a, b) => a.start.localeCompare(b.start));
     const Y0 = +TODAY.slice(0, 4), older = L.filter(x => +x.start.slice(0, 4) < Y0 - 3 && !x.expectedRow).reverse();
     const fix = REPO ? `${REPO}/issues/new?template=fix.yml&title=${encodeURIComponent("Fix: " + s.name + " " + e.start.slice(0, 4))}` : "";
-    const li = x => `<li class="${x.id === e.id ? "cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || (x.expectedRow ? "Expected; not yet announced" : ""))}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">Program & materials</a>` : ""}</span>${vBadge(x)}</li>`;
+    const li = x => `<li class="${x.id === e.id ? "cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || (x.expectedRow ? "Expected; not yet announced" : ""))}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">Program & materials</a>` : ""}</span>${vBadge(x, true)}</li>`;
     $("#dlg").innerHTML = `<div class="dlg"><button class="x" data-act="close" aria-label="Close">×</button>
       <header><p class="eyebrow">${esc(s.org_display || s.org)}</p><h3>${esc(s.name)}</h3><div class="badges">${profTags(s)}${(s.specialty || []).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</div></header>
       <dl class="kv">
-        <dt>When</dt><dd><b>${esc(range(e))}</b> ${vBadge(e)}</dd>
+        <dt>When</dt><dd><b>${esc(range(e))}</b> ${vBadge(e, true)}</dd>
         ${e.location ? `<dt>Where</dt><dd>${esc(e.location)}${e.format && e.format !== "in person" ? " · " + esc(e.format) : ""}</dd>` : ""}
         ${e.theme ? `<dt>Theme</dt><dd><i>${esc(e.theme)}</i></dd>` : ""}
         ${s.kind !== "observance" && !e.expectedRow && !e.past ? `<dt>Call for abstracts</dt><dd>${callPill(e)} ${esc((e.call && e.call.text) || "")}${e.call && e.call.url ? ` · <a href="${esc(e.call.url)}" target="_blank" rel="noopener noreferrer">Submission page</a>` : ""}</dd>` : ""}
@@ -599,8 +606,8 @@
       const inY = L.filter(x => +x.start.slice(0, 4) === y);
       const dated = inY.filter(x => !x.expectedRow), exp = inY.filter(x => x.expectedRow);
       const tag = y < Y0 ? "past" : y === Y0 ? "now" : "next";
-      if (dated.length) dated.forEach(x => rows.push(`<li class="${tag}${x.id === $("#dlg").dataset.cur ? " cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || "")}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">${y} program</a>` : ""}${x.source_url && x.source_url !== s.org_url ? ` · <a href="${esc(x.source_url)}" target="_blank" rel="noopener noreferrer">${y} organizer record</a>` : ""}</span>${vBadge(x)}</li>`));
-      else if (exp.length) rows.push(`<li class="${tag} gap"><span class="y">${esc(range(exp[0]))}</span><span>Expected; not yet announced</span>${vBadge(exp[0])}</li>`);
+      if (dated.length) dated.forEach(x => rows.push(`<li class="${tag}${x.id === $("#dlg").dataset.cur ? " cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || "")}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">${y} program</a>` : ""}${x.source_url && x.source_url !== s.org_url ? ` · <a href="${esc(x.source_url)}" target="_blank" rel="noopener noreferrer">${y} organizer record</a>` : ""}</span>${vBadge(x, true)}</li>`));
+      else if (exp.length) rows.push(`<li class="${tag} gap"><span class="y">${esc(range(exp[0]))}</span><span>Expected; not yet announced</span>${vBadge(exp[0], true)}</li>`);
       else if (y < Y0 || (y === Y0 && !L.some(x => +x.start.slice(0, 4) > y))) rows.push(`<li class="${tag} gap"><span class="y">${y}</span><span class="nodata">No data available; manual review pending</span><span></span></li>`);
       else rows.push(`<li class="${tag} gap"><span class="y">${y}</span><span class="nodata">Not yet announced</span><span></span></li>`);
     }
@@ -646,11 +653,10 @@
       const act = t.dataset.act;
       if (act === "clear") { const keep = { view: st.view, display: st.display, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
       if (act === "share") {
-        const note = `APP Conference Runway — conferences, abstract deadlines and celebration weeks for advanced practice providers worldwide, checked nightly against the organizers' own pages.\n${location.origin + location.pathname}\n(Not listed in search engines; pass it on to colleagues.)`;
+        const note = `APP Conference Runway — conferences, abstract deadlines and celebration weeks for advanced practice providers, checked nightly against the organizers' own pages.\n${location.origin + location.pathname}\n(Not listed in search engines; pass it on to colleagues.)`;
         copy(note, "Note and link copied — paste it into an email or message.");
         return;
       }
-      if (act === "showall") { st.verifiedOnly = false; render(); return; }
       if (act === "where-all") { st.where = ""; st.area = ""; st.near = null; st.nearQ = ""; render(); return; }
       if (act === "where-online") { st.where = st.where === "online" ? "" : "online"; st.area = ""; st.near = null; st.nearQ = ""; render(); return; }
       if (act === "more") { st.more++; render(); return; }
@@ -687,13 +693,13 @@
       const id = ev.target.id;
       if (id === "spec") st.spec = ev.target.value;
       if (id === "openOnly") st.openOnly = ev.target.checked;
-      if (id === "exp") { st.expected = ev.target.checked; if (st.expected) st.verifiedOnly = false; }
-      if (id === "verOnly") { st.verifiedOnly = ev.target.checked; if (st.verifiedOnly) st.expected = false; }
+      if (id === "exp") st.expected = ev.target.checked;
+      if (id === "review") st.review = ev.target.checked;
       if (id === "area") { st.area = ev.target.value; st.where = ""; }
       if (id === "radius") st.radius = +ev.target.value;
       if (id === "calY" || id === "calM") { st.cal = $("#calY").value + "-" + String($("#calM").value).padStart(2, "0"); render(); return; }
       if (id === "nearq") { st.nearQ = ev.target.value.trim(); st.where = ""; await resolveNear(); }
-      if (["spec", "openOnly", "exp", "verOnly", "area", "radius", "nearq"].includes(id)) { st.more = 1; render(); }
+      if (["spec", "openOnly", "exp", "review", "area", "radius", "nearq"].includes(id)) { st.more = 1; render(); }
     });
     document.addEventListener("input", ev => { if (ev.target.id === "nearq") fillCityList(ev.target.value); });
     document.addEventListener("keydown", async ev => { if (ev.target.id === "nearq" && ev.key === "Enter") { ev.preventDefault(); ev.target.blur(); } });
@@ -712,7 +718,7 @@
     }
     prep(d);
     const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
-    $("#updated").innerHTML = `<span>Sources reviewed ${esc(srcStamp)}</span>`;
+    $("#updated").innerHTML = `<span>Organizer pages re-checked automatically ${esc(srcStamp)}</span>`;
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();
