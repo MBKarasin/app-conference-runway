@@ -115,7 +115,7 @@ The page header shows one timestamp, **Organizer pages re-checked automatically*
 | Hosting | GitHub Pages |
 | Data references | U.S. Census Bureau Gazetteer; GeoNames (CC BY 4.0) |
 | Fonts | Barlow Condensed and Source Sans 3 (SIL Open Font License) |
-| Curator hardware | A personal desktop computer running the Claude desktop app. Specifications are not recorded here. |
+| Curator hardware | A personal desktop computer. Specifications are not recorded here. |
 
 ## 7. Reproduce it
 
@@ -141,7 +141,7 @@ This is a curated directory, not a study, and it makes no accuracy or completene
 - **Construct.** An "APP opportunity" is operationalized as an organizer-published meeting, abstract call, student or DNP project venue, or observance. For NP and PA relevance, the justification is recorded per series in `np_pa_basis`. Inclusion is a judgment made by one curator, with no formal codebook beyond `sources/SCHEMA.md`.
 - **Sampling frame.** The universe was assembled by AI-assisted web search seeded by the curator's knowledge and by organizer lists (national and state NP and PA associations, specialty societies, schools). Some sweeps, including DNP programs, are not verified as complete at this date. Organizers with little web presence are under-represented, and so is non-English content.
 - **Measurement.** The truth criterion is agreement with the organizer's own published material. It is not attendance, and it is not whether the event actually took place. The automated check matches text and can produce false positives (another event on the same page) and false negatives (dates held in images, scripts or blocked pages). End dates are not re-checked.
-- **Reliability.** There is one curator and one AI builder. No inter-rater agreement has been measured. Review by a second model family is planned and is not documented here as completed. The AI both compiled and verified most records. That is self-verification, reduced but not removed by the verbatim-evidence rule and the curator's spot confirmation.
+- **Reliability.** There is one curator and one primary AI builder. No inter-rater agreement has been measured. A second model family reviewed the public-facing design and documentation, but it did not independently re-audit the full dataset. The primary AI both compiled and verified most records. That is self-verification, reduced but not removed by the verbatim-evidence rule and the curator's spot confirmation.
 - **AI-specific risks.** Fabricated dates or organizers (a hallucination risk) are constrained because nothing is published without a verbatim quote and an exact URL. Automation bias, meaning trust in the checker's status, is reduced by removing per-record status badges from the public view.
 - **Reproducibility.** The build is deterministic from `sources/`. The web is not deterministic: pages change. Nightly snapshots, the permanent ledger and the git history allow any past state to be reconstructed.
 - **Suggested evaluation.**
