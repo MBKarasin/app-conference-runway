@@ -1,10 +1,10 @@
 # APP Conference Runway: AI Handoff
 
-**Audience:** AI regulators, AI architects, auditors, adversarial reviewers and doctoral-level methodological critics.
+**Audience:** the global APP community.
 **Purpose:** to show how this site was built, where every claim on it comes from, and how to reproduce or challenge it. Read it before running anything.
 **Governance:** MBK AI Governance v5.0 (2026-09-21) invoked.
 **Live site:** https://mbkarasin.github.io/app-conference-runway/ (kept out of search engines on purpose)
-**Repository:** https://github.com/MBKarasin/app-conference-runway (public)
+**Source code:** https://github.com/MBKarasin/app-conference-runway. It is public, so anyone can read every file and its full change history. Only the curator can change the site; others can suggest changes through GitHub issues.
 **Curator and accountable owner:** Dr. Mark Karasin, DNP, APN, AGACNP-BC
 **Document date:** 2026-09-22
 
@@ -133,7 +133,7 @@ The page header shows one timestamp, **Sources reviewed**: the time of the last 
 
 Corrections are welcome. The curator decides what is published.
 
-## 9. For the methodological critic
+## 9. Limits of the data
 
 This is a curated directory, not a study, and it makes no accuracy or completeness claim. If you treat it as a dataset, these are the threats to validity as the builders understand them.
 
