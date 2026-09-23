@@ -701,3 +701,27 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   .mast .brand-heading{max-width:none}
   .mast .ledeRow{padding-left:0}
 }
+
+/* ---------------------------------------------------------------------------
+   2026-09-23 calendar hierarchy: neutral structure, scarlet only for active
+   moments. This removes the competing full-cell outline + saturated event fill.
+   --------------------------------------------------------------------------- */
+.cal.calspan{background:#D5E0E3;border-color:#BFCED2}
+.calspan .wk{border-top-color:#BFCED2;row-gap:4px}
+.cal .cell.today{box-shadow:none!important;background:var(--surface)!important}
+.calspan .cell.today .num{background:#CC0033;color:#fff;border-color:#CC0033;box-shadow:none}
+.cal .ce.appweek,.cal .ce.appweek.ongoing{background:#FCE9EE!important;color:#66162A!important;border-left:3px solid #CC0033!important;box-shadow:none!important}
+.cal .ce.appweek:hover{background:#F8DCE4!important;color:#4F1020!important}
+.cal .ce.appweek small{color:#7E4655!important}
+.cal .cell:has(.ce.appweek){background:var(--surface)!important}
+.calspan .ce.due{background:#FFF7F9;box-shadow:inset -3px 0 #CC0033}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .cal.calspan{background:var(--rule);border-color:var(--rule)}
+  :root:not([data-theme="light"]) .cal .cell.today{background:var(--surface)!important}
+  :root:not([data-theme="light"]) .calspan .cell.today .num{background:#FF6B86;border-color:#FF6B86;color:#10181C}
+  :root:not([data-theme="light"]) .cal .ce.appweek,
+  :root:not([data-theme="light"]) .cal .ce.appweek.ongoing{background:#351923!important;color:#FFE8EE!important;border-left-color:#FF6B86!important}
+  :root:not([data-theme="light"]) .cal .ce.appweek:hover{background:#48202D!important;color:#FFFFFF!important}
+  :root:not([data-theme="light"]) .cal .ce.appweek small{color:#E9A9B8!important}
+  :root:not([data-theme="light"]) .calspan .ce.due{background:#25171C;box-shadow:inset -3px 0 #FF6B86}
+}
