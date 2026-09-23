@@ -58,19 +58,19 @@ Aggregator listings are never treated as the source. A social post counts only w
 
 `sources/runway_2026-09-16.json` (original) → `sources/group_*.json` (research batches) → `sources/archive/*` (past editions and archive links) → `sources/observances.json` → **`sources/overrides.json`** (curator corrections, which win over everything; each entry carries a `_why`). Duplicate series are folded through `aliases`. A wrong or duplicate edition is removed with `"removed": true` and a reason. It is never silently deleted.
 
-`data/ledger.json` is a permanent record of every edition ever published. `data/snapshots/<year>/<date>.json.gz` keeps each night's data.
+`data/ledger.json` is a permanent record of every edition ever published. `data/snapshots/<year>/<date>.json.gz` keeps the full published data file for each New York calendar day (from 2026-09-23; the 2026-09-21 and 2026-09-22 files hold a smaller field set), and `data/snapshots/MANIFEST.csv` records the SHA-256 of each day's uncompressed file.
 
 ### 3.4 Verification pipeline
 
 | Stage | Script | What it proves | What it cannot prove |
 |---|---|---|---|
-| Nightly re-read, about 2 a.m. New York time | `scripts/check.py` | That the start date (in English, Portuguese, Spanish, French, German, Dutch, Italian, Japanese or Chinese 年/月/日 formats; numeric day-first and month-first; day lists such as "24th, 25th & 26th September" or "19 y 20 de noviembre"; for titles translated into English or pages in CJK script, the date and year decide), its year, and a distinctive name word still appear on the source page | End dates; pages that block automated readers, need JavaScript, or show dates only in images |
+| Nightly re-read (scheduled 06:00 UTC; GitHub may start it late) | `scripts/check.py` | That the start date (in English, Portuguese, Spanish, French, German, Dutch, Italian, Japanese or Chinese 年/月/日 formats; numeric day-first and month-first; day lists such as "24th, 25th & 26th September" or "19 y 20 de noviembre"; for titles translated into English or pages in CJK script, the date and year decide), its year, and a distinctive name word still appear on the source page | End dates; pages that block automated readers, need JavaScript, or show dates only in images |
 | Frozen past | `check.py` | Nothing: an ended meeting is kept as it was captured | — |
 | Manual walk | done by the AI assistant in a real browser, under the curator's direction; the curator confirms disputed dates himself | Dates on pages the checker cannot read. The walk covers menus, sub-pages, PDFs, images and translation | Anything not walked (recorded in each override's `_why`) |
 | Link check | `scripts/linkcheck.py` | Which source links now return 4xx | A 403 block says nothing about whether the link is live |
 | Build gate | `scripts/validate.py` | Rejects bad dates, non-HTTPS sources, private-looking strings, projections past the horizon, days on expected rows, and unsupported absence claims | Semantic truth of a quote |
 
-The page header shows one timestamp, **Sources reviewed**: the time of the last nightly read. Manual reviews are dated per record (`reviewed_on` in `sources/overrides.json`). As of 2026-09-22 those reviews were carried out by the AI assistant under the curator's direction. The curator personally confirmed two dates that appear only in images: ENRS 2027 and PNAA 2027. Individual records carry no status badge. Each record links its source and quotes its wording.
+The page header shows one timestamp, **Organizer pages re-checked automatically**: the time of the last nightly read. Manual reviews are dated per record (`reviewed_on` in `sources/overrides.json`). As of 2026-09-22 those reviews were carried out by the AI assistant under the curator's direction. The curator personally confirmed two dates that appear only in images: ENRS 2027 and PNAA 2027. Confirmed records carry no status badge. A record whose latest automated check did not confirm it, and has no curator evidence on file, shows a note ("Date needs review", "Source not re-checked", "Organizer dates conflict" or "Source wording changed"); "Needs review only" in Filters lists just those (deep link `#review=1`). Each record links its source and quotes its wording.
 
 ### 3.5 Known limits (attack these first)
 
@@ -87,13 +87,13 @@ The page header shows one timestamp, **Sources reviewed**: the time of the last 
 - **Search visibility:** `noindex, nofollow, noarchive` and `robots.txt`, by decision. The site spreads hand to hand among APPs.
 - **Hosting:** GitHub Pages, deployed by GitHub Actions (`.github/workflows/runway.yml`).
   - Every push to `main` builds, validates and deploys.
-  - A nightly schedule (06:00 and 07:00 UTC, gated to 2 a.m. New York time) runs build, check, link check, build, validate and snapshot. It commits the stamps, and opens or refreshes a "Runway: dates to review" issue when a date is not found or newly fails.
+  - A nightly schedule (06:00 UTC, which is 2 a.m. EDT or 1 a.m. EST; there is no clock gate, so a late start still runs) runs build, check, link check, build and validate, then archives the day's data even if the check failed. It commits the stamps and rewrites the "Runway: dates to review" issue from `data/check_report.md` on every run (closing it when nothing is open), so the issue and the report cannot disagree.
   - Workflow permissions default to none. Each job requests only what it needs. Third-party actions are pinned to commit SHAs.
 - **Geography:** `scripts/geocode.py` places venues using the U.S. Census Gazetteer and GeoNames (CC BY 4.0), with manual pins in `sources/geo/manual.json`.
 
 ## 5. Design and navigation
 
-- **Header:** tagline, title (returns to the landing page), Copy link, Share, Make a request, AI Handoff, and the Sources reviewed timestamp.
+- **Header:** tagline, title (returns to the landing page), Copy link, Share, Make a request, AI Handoff, and the automated re-check timestamp.
 - **Tabs:** Upcoming · Abstract deadlines · Students & DNP projects · Past · Directory.
 - **Discipline filter:** All APPs, NP, AGACNP, PA, CRNA, CAA, CNS, CNM, NP-RNFA, Students, DNP Projects. Further filters cover location (online, continent, country, US region, or within a radius of a ZIP code or city), focus, kind and specialty.
 - **List view:** one card per edition, with discipline badges, the abstract-call state and the organizer.
