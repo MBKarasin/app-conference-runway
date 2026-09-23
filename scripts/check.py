@@ -8,7 +8,7 @@ For each edition the page is fetched (robots.txt honored, one request at a time 
   unreachable  blocked, timed out, robots-disallowed, or too little text (JavaScript-only page)
 Nothing here edits dates. It only writes data/verification.json and data/check_report.md.
 """
-import json, re, sys, html, time, datetime as dt, pathlib, threading, calendar, urllib.parse, urllib.robotparser
+import os, json, re, sys, html, time, datetime as dt, pathlib, threading, calendar, urllib.parse, urllib.robotparser
 from concurrent.futures import ThreadPoolExecutor
 import urllib.request, ssl
 
@@ -184,17 +184,28 @@ def main():
     # human report
     from collections import Counter
     c = Counter(v["state"] for v in ver.values())
-    L = [f"# Weekly source check — {NOW[:10]}", "",
+    on_file = lambda e: bool(e.get("source_reviewed") and e.get("evidence"))   # curator walked the source and kept a verbatim quote + URL
+    failed = [e for e in eds if ver[e["id"]]["state"] in ("not_found", "unreachable")]
+    open_ = [e for e in failed if not on_file(e)]
+    sha = os.environ.get("GITHUB_SHA", "local")[:7]
+    L = [f"# Nightly source check — {NOW[:10]}", "",
+         f"Generated {NOW} from commit {sha}. This report is the canonical status; the review issue is rewritten from it on every run.", "",
          f"Editions re-checked: {len(eds)} · verified {c['verified']} · not found {c['not_found']} · unreachable {c['unreachable']}",
+         f"Checker could not match: {len(failed)} · of these, curator evidence on file: {len(failed) - len(open_)} · open: {len(open_)}",
          f"Past editions frozen (not re-read): {len(frozen)}", ""]
     if flips:
         L += ["## Newly failing (were verified last run) — review these first", ""]
         L += [f"- [ ] **{series[e['series']]['name']}** ({e['start']}): {r.get('why')} — {e['source_url']}" for e, r in flips] + [""]
     for st, title in (("not_found", "Date not found on the organizer page"), ("unreachable", "Could not read the page")):
-        rows = [(e, ver[e["id"]]) for e in eds if ver[e["id"]]["state"] == st]
+        rows = [(e, ver[e["id"]]) for e in eds if ver[e["id"]]["state"] == st and not on_file(e)]
         if rows:
-            L += [f"## {title} ({len(rows)})", ""]
+            L += [f"## {title} — open ({len(rows)})", ""]
             L += [f"- {series[e['series']]['name']} — {e['start']} — {r.get('why')} — {e['source_url']}" for e, r in rows] + [""]
+    kept = [e for e in failed if on_file(e)]
+    if kept:
+        L += [f"## Checker could not match, curator evidence on file ({len(kept)})", ""]
+        L += [f"- {series[e['series']]['name']} — {e['start']} — reviewed {e.get('reviewed_on') or '?'} — {e['source_url']}" for e in kept] + [""]
+    L += [f"OPEN_ITEMS={len(open_) + len(flips)}"]
     (ROOT / "data" / "check_report.md").write_text("\n".join(L), encoding="utf-8")
     print(f"archived {c['archived']} | verified {c['verified']} | not_found {c['not_found']} | unreachable {c['unreachable']} | newly failing {len(flips)}")
 
