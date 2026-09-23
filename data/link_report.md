@@ -1,13 +1,11 @@
-# Link check — 2026-09-22
+# Link check — 2026-09-23
 
-Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 · TimeoutError 4 · HTTP 401 1
+Links: 1015 · ok 880 · HTTP 403 90 · HTTP 404 29 · robots 10 · URLError 5 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
-- HTTP 403 — https://aahpm.org/
-  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
 - HTTP 403 — https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf
@@ -22,6 +20,8 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2026-03-02 (detail_url)
 - HTTP 403 — https://ache2026.eventscribe.net/agenda.asp?all=1&pfp=FullSchedule
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2026-03-02 (source_url)
+- HTTP 403 — https://achewfc.org/event/ache-2023-congress-on-healthcare-leadership/
+  - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2023-03-20 (source_url)
 - HTTP 403 — https://amia.org/education-events/2027-amplify-informatics-conference
   - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) (org_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2027-04-12 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2028-03-01 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2029-03-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/amia-2024-annual-symposium
@@ -31,7 +31,7 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
 - HTTP 403 — https://amia.org/education-events/amia-2025-informatics-summit
   - american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2025-03-10 (detail_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2025-03-10 (source_url)
 - HTTP 403 — https://amia.org/education-events/amia-2026-annual-symposium
-  - AMIA Annual Symposium (org_url); american-medical-informatics-association__amia-annual-symposium 2026-11-07 (source_url); american-medical-informatics-association__amia-annual-symposium 2027-11-01 (source_url); american-medical-informatics-association__amia-annual-symposium 2028-11-01 (source_url)
+  - AMIA Annual Symposium (org_url); american-medical-informatics-association__amia-annual-symposium 2027-11-01 (source_url); american-medical-informatics-association__amia-annual-symposium 2028-11-01 (source_url); american-medical-informatics-association__amia-annual-symposium 2029-11-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/calendar-archive
   - AMIA Annual Symposium (archive_url)
 - HTTP 403 — https://ashpublications.org/blood/issue/142/Supplement%201
@@ -48,8 +48,6 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - board-of-certification-for-emergency-nur__bcen-learn-live 2023-11-13 (source_url)
 - HTTP 403 — https://cohealthcareexecutives.starchapter.com/meetinginfo.php?id=145&ts=1706316936
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2024-03-25 (source_url)
-- URLError — https://congresoenfermeria.ufro.cl/
-  - universidad-de-la-frontera__international-nursing-specialties-and-research-con 2026-11-19 (source_url)
 - HTTP 403 — https://congress.ache.org/
   - ACHE Congress on Healthcare Leadership (org_url); american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2028-03-01 (source_url); american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2029-03-01 (source_url)
 - HTTP 403 — https://congress2025.eventscribe.net/
@@ -62,14 +60,14 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - florida-association-of-neonatal-nurse-pr__national-neonatal-nurse-practitioner-symposium 2024-10-15 (source_url)
 - HTTP 404 — https://gane.nursingnetwork.com/nursing-news/203680-gane-2026-at-the-ritz-carlton-reynolds-resort-lake-oconee-2-12-26-2-14-26
   - georgia-association-for-nursing-educatio__gane-conference 2026-02-12 (source_url)
+- HTTP 403 — https://heartrhythm.com/
+  - Heart Rhythm (org_url); heart-rhythm-society__heart-rhythm 2027-05-13 (source_url); heart-rhythm-society__heart-rhythm 2028-04-01 (source_url); heart-rhythm-society__heart-rhythm 2029-04-01 (source_url)
 - HTTP 403 — https://heartrhythm.com/attend/heart-rhythm-2024
   - heart-rhythm-society__heart-rhythm 2024-05-17 (source_url)
 - HTTP 403 — https://heartrhythm.com/attend/heart-rhythm-2025
   - heart-rhythm-society__heart-rhythm 2025-04-24 (detail_url); heart-rhythm-society__heart-rhythm 2025-04-24 (source_url)
 - HTTP 403 — https://heartrhythm.com/heart-rhythm-2026
   - heart-rhythm-society__heart-rhythm 2026-04-23 (detail_url); heart-rhythm-society__heart-rhythm 2026-04-23 (source_url)
-- URLError — https://iaanmp.com/
-  - IAANMP Annual National Conference (org_url); irish-association-of-advanced-nurse-and-__iaanmp-annual-national-conference 2027-10-01 (source_url); irish-association-of-advanced-nurse-and-__iaanmp-annual-national-conference 2028-10-01 (source_url); irish-association-of-advanced-nurse-and-__iaanmp-annual-national-conference 2029-10-01 (source_url)
 - HTTP 404 — https://idweek.org/wp-content/uploads/2024/06/1218-IDWeek-Exhibitor-Prospectus-202422.pdf
   - idsa-shea-hivma-pids-and-sidp-joint-meet__idweek 2024-10-16 (source_url)
 - URLError — https://imsh2023.org/about
@@ -98,48 +96,48 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - national-association-of-nurse-practition__npwh-annual-women-s-healthcare-conference 2026-09-23 (student)
 - HTTP 403 — https://nursing.jhu.edu/wp-content/uploads/2025/05/DNP-Symposium-Scholars-Day-Agenda-2025.pdf
   - DNP Symposium - Scholars Day (org_url); johns-hopkins-university-school-of-nursi__dnp-symposium-scholars-day 2025-05-19 (source_url); johns-hopkins-university-school-of-nursi__dnp-symposium-scholars-day 2025-05-19 (student); johns-hopkins-university-school-of-nursi__dnp-symposium-scholars-day 2027-05-01 (source_url)
+- HTTP 404 — https://nursing.uic.edu/events/dnp-student-poster-session-3
+  - university-of-illinois-chicago-college-o__dnp-student-poster-session 2024-12-05 (source_url); university-of-illinois-chicago-college-o__dnp-student-poster-session 2024-12-05 (student)
+- HTTP 404 — https://nursing.uic.edu/events/dnp-student-poster-session-4
+  - university-of-illinois-chicago-college-o__dnp-student-poster-session 2025-05-01 (source_url); university-of-illinois-chicago-college-o__dnp-student-poster-session 2025-05-01 (student)
+- HTTP 404 — https://nursing.uic.edu/events/dnp-student-poster-session-spring-2023
+  - university-of-illinois-chicago-college-o__dnp-student-poster-session 2023-04-24 (source_url); university-of-illinois-chicago-college-o__dnp-student-poster-session 2023-04-24 (student)
+- HTTP 403 — https://nursing.umich.edu/research/research-scholarship-and-innovation-symposium
+  - Research, Scholarship and Innovation Symposium (org_url); university-of-michigan-ann-arbor-school-__research-scholarship-and-innovation-symposium 2025-04-02 (source_url); university-of-michigan-ann-arbor-school-__research-scholarship-and-innovation-symposium 2027-04-01 (source_url); university-of-michigan-ann-arbor-school-__research-scholarship-and-innovation-symposium 2028-04-01 (source_url)
 - URLError — https://old-prod.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-be-presented-during-2023-asco
   - american-society-of-clinical-oncology__asco-annual-meeting 2023-06-02 (source_url)
 - HTTP 403 — https://onlnj.glueup.com/org/onlnj/events/
   - APN Conference (archive_url); Annual Nurse Leader and Aspiring Nurse Leader Conference (archive_url)
 - HTTP 403 — https://pinc.fkep.unpad.ac.id/
   - Padjadjaran International Nursing Conference (org_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2026-11-06 (source_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2027-10-01 (source_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2028-10-01 (source_url)
-- URLError — https://rheumatology.org/annual-meeting
-  - ACR Convergence (org_url); american-college-of-rheumatology__acr-convergence 2026-11-06 (call); american-college-of-rheumatology__acr-convergence 2026-11-06 (source_url); american-college-of-rheumatology__acr-convergence 2027-11-01 (source_url)
 - HTTP 404 — https://shmconverge.hospitalmedicine.org/wp-content/uploads/2023/11/BIZ-23-0029-Converge-2024-Partner-Catalog-FNL.pdf
   - society-of-hospital-medicine__shm-converge 2024-04-12 (source_url)
+- HTTP 404 — https://students.nursing.uw.edu/?p=6814
+  - DNP Final Project Poster Presentations (org_url); university-of-washington-school-of-nursi__dnp-final-project-poster-presentations 2026-03-17 (source_url); university-of-washington-school-of-nursi__dnp-final-project-poster-presentations 2027-03-01 (source_url); university-of-washington-school-of-nursi__dnp-final-project-poster-presentations 2028-03-01 (source_url)
 - HTTP 403 — https://summit.nln.org/
   - NLN Education Summit (org_url); national-league-for-nursing__nln-education-summit 2026-09-23 (source_url); national-league-for-nursing__nln-education-summit 2028-09-01 (source_url); national-league-for-nursing__nln-education-summit 2029-09-01 (source_url)
 - HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
-- URLError — https://web.archive.org/web/20230603203916/https://www.vapa.org/events/2023VAPASummerConference/
-  - virginia-academy-of-pas-vapa__vapa-summer-conference 2023-07-23 (source_url)
-- URLError — https://web.archive.org/web/20240306000315/https://www.hospitalmedicine.org/about/national-hospitalist-day/
-  - society-of-hospital-medicine__national-hospitalist-day 2024-03-07 (source_url)
-- URLError — https://web.archive.org/web/20240519212826/https://tcns.org/annualconference/
-  - transcultural-nursing-society__transcultural-nursing-society-annual-conference 2024-10-23 (source_url)
-- URLError — https://web.archive.org/web/20240620164713/https://www.venvn.nl/agenda/jaarcongres-v-vn-vs/
-  - verpleegkundigen-verzorgenden-nederland-__v-vn-vs-annual-congress 2024-10-10 (source_url)
-- URLError — https://web.archive.org/web/20241003223604/https://wapa.com/events/wapa-conference-oct-10-12-2024/
-  - washington-academy-of-physician-associat__wapa-fall-conference 2024-10-10 (source_url)
-- HTTP 403 — https://www.aacn.org/conferences-and-events/nti
-  - National Teaching Institute (NTI) (org_url); aacn-critical-care-nurses__national-teaching-institute-nti 2027-05-02 (source_url); aacn-critical-care-nurses__national-teaching-institute-nti 2028-05-01 (source_url); aacn-critical-care-nurses__national-teaching-institute-nti 2029-05-01 (source_url)
-- HTTP 403 — https://www.aacn.org/newsroom/nti-2023-begins-in-philadelphia
-  - aacn-critical-care-nurses__national-teaching-institute-nti 2023-05-22 (source_url)
-- HTTP 403 — https://www.aacn.org/newsroom/nti-2024-aacns-50th-conference-begins-in-denver
-  - aacn-critical-care-nurses__national-teaching-institute-nti 2024-05-20 (source_url)
-- HTTP 403 — https://www.aacn.org/newsroom/nti-2025-begins-in-new-orleans
-  - aacn-critical-care-nurses__national-teaching-institute-nti 2025-05-19 (source_url)
-- HTTP 403 — https://www.aacn.org/newsroom/registration-opens-for-aacns-nti-2026
-  - aacn-critical-care-nurses__national-teaching-institute-nti 2026-05-17 (source_url)
+- URLError — https://web.archive.org/web/20250913144147/https://wcapn.enpnetwork.com/nurse-practitioner-events/147012-2025-wna-convention
+  - wyoming-council-for-advanced-practice-nu__wna-wcapn-annual-convention-stronger-together 2025-09-11 (source_url)
+- URLError — https://web.archive.org/web/20250917104539/https://wapa.com/events/wapa-fall-conference-2025/
+  - washington-academy-of-physician-associat__wapa-fall-conference 2025-10-14 (source_url)
+- HTTP 403 — https://winnexus.org/event/visit-our-booth-aacns-doctoral-education-conference-in-coronado-ca/
+  - aacn-colleges-of-nursing__doctoral-education-conference 2023-01-18 (source_url)
+- HTTP 403 — https://worldcongressonpain.secure-platform.com/a/
+  - World Congress on Pain (org_url); international-association-for-the-study-__world-congress-on-pain 2026-10-26 (source_url)
 - HTTP 404 — https://www.aaenp-natl.org/emergnp-2023-call-for-content
   - american-academy-of-emergency-nurse-prac__aaenp-national-conference-emergnp 2023-03-31 (source_url)
 - HTTP 404 — https://www.aamn.org/2023-annual-conference
   - american-association-for-men-in-nursing__aamn-annual-conference 2023-10-19 (source_url)
 - HTTP 404 — https://www.aamn.org/2024-annual-conference
   - american-association-for-men-in-nursing__aamn-annual-conference 2024-10-17 (source_url)
+- HTTP 404 — https://www.aana.com/event/national-crna-week-2025/
+  - american-association-of-nurse-anesthesio__national-crna-week 2025-01-19 (source_url)
+- HTTP 404 — https://www.aanp.org/events/2023-hpc
+  - american-association-of-nurse-practition__health-policy-conference 2023-01-29 (source_url)
 - HTTP 404 — https://www.aapa.org/cme-calendar/pa-institute-2025/
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2025-12-11 (source_url)
 - HTTP 403 — https://www.academyonline.org/page/FallConference
@@ -150,12 +148,6 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - academy-of-neonatal-nursing__advanced-practice-neonatal-nurses-conference 2025-04-09 (detail_url)
 - HTTP 403 — https://www.academyonline.org/page/conferences
   - Advanced Practice Neonatal Nurses Conference (org_url); National Neonatal Nurses Conference (fall) (org_url); academy-of-neonatal-nursing__advanced-practice-neonatal-nurses-conference 2027-04-08 (source_url); academy-of-neonatal-nursing__advanced-practice-neonatal-nurses-conference 2028-04-01 (source_url)
-- HTTP 403 — https://www.acep.org/acep26/
-  - american-college-of-emergency-physicians__acep-scientific-assembly 2026-10-05 (source_url)
-- HTTP 403 — https://www.acep.org/sa
-  - ACEP Scientific Assembly (org_url)
-- HTTP 403 — https://www.acep.org/sa/general-information/future-dates
-  - american-college-of-emergency-physicians__acep-scientific-assembly 2027-10-25 (source_url); american-college-of-emergency-physicians__acep-scientific-assembly 2028-09-17 (source_url); american-college-of-emergency-physicians__acep-scientific-assembly 2029-10-01 (source_url); american-college-of-emergency-physicians__acep-scientific-assembly 2030-10-17 (source_url)
 - HTTP 404 — https://www.aonl.org/education-events/professional-governance-conference/june26-27-2023
   - american-organization-for-nursing-leader__professional-governance-leadership-conference 2023-06-26 (source_url)
 - HTTP 404 — https://www.aonl.org/education-events/professional-governance-overview
@@ -188,22 +180,28 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - canadian-association-of-nurses-in-oncolo__cano-acio-annual-conference 2025-10-29 (source_url)
 - HTTP 403 — https://www.cano-acio.ca/page/cano2026
   - CANO/ACIO Annual Conference (archive_url); canadian-association-of-nurses-in-oncolo__cano-acio-annual-conference 2026-10-22 (source_url)
+- HTTP 404 — https://www.commonwealthnurses.org/WA2026/
+  - national-association-of-nigeria-nurses-a__cnmf-west-africa-region-conference 2026-04-21 (source_url)
 - HTTP 403 — https://www.cooperhealth.org/center/center-advanced-practice/news-and-events-app
   - Advanced Practice Provider Symposium (org_url); cooper-university-health-care__advanced-practice-provider-symposium 2027-09-01 (source_url); cooper-university-health-care__advanced-practice-provider-symposium 2028-09-01 (source_url); cooper-university-health-care__advanced-practice-provider-symposium 2029-09-01 (source_url)
 - HTTP 403 — https://www.cooperhealth.org/sites/default/files/2026-03/Cooper-University-Health-Care-2025-Annual-Report.pdf
   - cooper-university-health-care__advanced-practice-provider-symposium 2025-09-23 (source_url)
 - HTTP 403 — https://www.cooperhealth.org/sites/default/files/CME%202024/APP%20Symposium/2024%20APP%20Symposium-Schedule-final%20vertical.pdf
   - cooper-university-health-care__advanced-practice-provider-symposium 2024-11-01 (source_url)
+- HTTP 403 — https://www.ena.org/
+  - Emergency Nursing (ENA Annual Conference) (org_url); Global Emergency Nursing Conference (org_url); emergency-nurses-association__emergency-nursing-ena-annual-conference 2028-09-01 (source_url); emergency-nurses-association__emergency-nursing-ena-annual-conference 2029-09-01 (source_url)
+- HTTP 403 — https://www.ena.org/about-us/emergency-nurses-week
+  - Emergency Nurses Week (org_url); obs__emergency-nurses-week 2026-10-11 (source_url)
+- HTTP 403 — https://www.ena.org/emergency-nursing-2026
+  - emergency-nurses-association__emergency-nursing-ena-annual-conference 2026-09-28 (source_url)
+- HTTP 403 — https://www.ena.org/events/emergency-nursing-2027
+  - emergency-nurses-association__emergency-nursing-ena-annual-conference 2027-09-15 (source_url)
+- HTTP 403 — https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event
+  - emergency-nurses-association-ena-and-els__global-emergency-nursing-conference 2027-10-21 (source_url)
+- HTTP 403 — https://www.ena.org/news-publications/newsroom/new-orleans-announced-host-city-emergency-nursing-2025
+  - emergency-nurses-association__emergency-nursing-ena-annual-conference 2025-09-17 (source_url)
 - HTTP 404 — https://www.expo.acc.org/ACC25/CUSTOM/PDF25/ACC25ScheduleAtAGlance.pdf
   - american-college-of-cardiology__acc-27-annual-scientific-session 2025-03-29 (source_url)
-- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/julyaugust-2024-volume-109-issue-7/get-ready-for-clinical-congress-2024-in-san-francisco/
-  - american-college-of-surgeons__clinical-congress 2024-10-19 (source_url)
-- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/november-december-2024-volume-109-issue-10/clinical-congress-2024-highlights/
-  - american-college-of-surgeons__clinical-congress 2024-10-19 (detail_url)
-- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2025/julyaugust-2025-volume-110-issue-7/clinical-congress-2025-in-chicago-will-ignite-big-ideas-bold-advances/
-  - american-college-of-surgeons__clinical-congress 2025-10-04 (source_url)
-- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2025/november-december-2025-volume-110-issue-10/clinical-congress-2025-highlights/
-  - american-college-of-surgeons__clinical-congress 2025-10-04 (detail_url)
 - HTTP 401 — https://www.gapna.org/education/past-conferences
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
 - HTTP 404 — https://www.hospitalmedicine.org/news-publications/press-releases/society-of-hospital-medicine-brings-annual-conference-shm-converge-to-austin-tx/
@@ -214,10 +212,10 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - IPAS Fall CME Conference (Healthcare in the Heartland) (org_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2026-10-26 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2027-10-01 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2028-10-01 (source_url)
 - HTTP 403 — https://www.michigan.gov/whitmer/news/proclamations/2025/10/19/october-19-25-2025-doctor-of-nursing-practice-week
   - obs__national-dnp-week 2025-10-19 (source_url)
-- URLError — https://www.mpa2026.org/
-  - MPA Annual Congress Pediatric Nursing Symposium (org_url); malaysian-paediatric-association-mpa-and__mpa-annual-congress-pediatric-nursing-symposium 2026-10-29 (source_url); malaysian-paediatric-association-mpa-and__mpa-annual-congress-pediatric-nursing-symposium 2027-10-01 (source_url); malaysian-paediatric-association-mpa-and__mpa-annual-congress-pediatric-nursing-symposium 2028-10-01 (source_url)
 - HTTP 404 — https://www.newjerseyena.org/ecc2026
   - new-jersey-emergency-nurses-association__nj-emergency-care-conference 2026-03-18 (detail_url)
+- HTTP 404 — https://www.nnak.or.ke/2026-asc-agm/
+  - national-nurses-association-of-kenya-nna__annual-scientific-conference-agm 2026-10-28 (call); national-nurses-association-of-kenya-nna__annual-scientific-conference-agm 2026-10-28 (source_url)
 - HTTP 403 — https://www.nonpf.org/events/EventDetails.aspx?id=1958293
   - national-organization-of-nurse-practitio__nonpf-annual-conference 2026-04-15 (source_url)
 - HTTP 403 — https://www.nonpf.org/page/events
@@ -248,3 +246,9 @@ Links: 947 · ok 814 · HTTP 403 85 · HTTP 404 21 · URLError 12 · robots 10 �
   - the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2024-10-17 (source_url)
 - HTTP 403 — https://www.thenpa.org/page/NP26
   - the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2026-10-01 (call); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2026-10-01 (source_url)
+- HTTP 403 — https://www.tnpa.org.tw/
+  - 2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society) (org_url); taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2027-10-01 (source_url); taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2028-10-01 (source_url); taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2029-10-01 (source_url)
+- HTTP 403 — https://www.tnpa.org.tw/events/
+  - taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2026-10-18 (call)
+- HTTP 403 — https://www.tnpa.org.tw/events/content.php?id=6262
+  - taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2026-10-18 (source_url)

@@ -1,57 +1,45 @@
-# Weekly source check — 2026-09-22
+# Nightly source check — 2026-09-23
 
-Editions re-checked: 299 · verified 252 · not found 11 · unreachable 36
-Past editions frozen (not re-read): 573
+Generated 2026-09-23T16:45:46Z from commit cdfd154. This report is the canonical status; the review issue is rewritten from it on every run.
 
-## Date not found on the organizer page (11)
+Editions re-checked: 298 · verified 268 · not found 3 · unreachable 27
+Checker could not match: 30 · of these, curator evidence on file: 27 · open: 3
+Past editions frozen (not re-read): 594
 
-- NZNO AGM and Conference — 2026-09-22 — not on page: date — https://na.eventscloud.com/ereg/index.php?eventid=877502
-- IAPACON 2026 – 22nd Annual Conference of the Indian Association of Physician Assistants — 2026-09-24 — not on page: date — https://www.iapacon.org/
-- 76º Congresso Brasileiro de Enfermagem (CBEn) — 2026-11-09 — not on page: date — https://eventosaben.org.br/76cben/
-- SEOC Oncology Nursing Congress — 2026-11-19 — not on page: date — https://seoc.cl/congreso-2026
-- International Nursing Specialties and Research Congress — 2026-11-19 — not on page: date, name — https://congresoenfermeria.ufro.cl/
-- National Postgraduate Nursing Congress — 2026-11-26 — not on page: date, name — https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/
-- JANS Annual Conference — 2026-12-12 — not on page: name — https://convention.jtbcom.co.jp/jans46/outline.html
-- ENRS Annual Scientific Sessions — 2027-03-31 — not on page: date, year, name — https://enrs2027conference.oa-event.com/
-- Oncology Nursing Month — 2027-05-01 — not on page: date, year — https://www.ons.org/oncology-nursing-month
-- PNAA National Convention — 2027-07-17 — not on page: date, year — https://mypnaa.org/events
-- JANS Annual Conference — 2027-11-27 — not on page: name — https://www.jans.or.jp/meetings/schedule/
+## Could not read the page — open (3)
 
-## Could not read the page (36)
+- Emergency Nursing (ENA Annual Conference) — 2026-09-28 — HTTP 403 — https://www.ena.org/emergency-nursing-2026
+- World Congress on Pain — 2026-10-26 — HTTP 403 — https://worldcongressonpain.secure-platform.com/a/
+- Emergency Nursing (ENA Annual Conference) — 2027-09-15 — HTTP 403 — https://www.ena.org/events/emergency-nursing-2027
 
-- NPWH Annual Women's Healthcare Conference — 2026-09-23 — HTTP 403 — https://npwh.org/m/event_details.asp?id=1984651
-- NLN Education Summit — 2026-09-23 — HTTP 403 — https://summit.nln.org/
-- District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care — 2026-09-25 — HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
-- AVA Annual Scientific Meeting — 2026-10-01 — HTTP 403 — https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400
-- NNA Annual Convention — 2026-10-01 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nebraskanurses.org/convention/
-- NPA Annual Conference (NP26) — 2026-10-01 — HTTP 403 — https://www.thenpa.org/page/NP26
-- V&VN VS Annual Congress — 2026-10-01 — robots.txt disallows — https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs
-- ACEP Scientific Assembly — 2026-10-05 — HTTP 403 — https://www.acep.org/acep26/
-- ONAN Oncology Nursing Conference — 2026-10-07 — page has almost no readable text (20 chars; likely JavaScript-only) — https://onanigeria.org/registration
-- ICCM Summit for Advanced Practice Providers — 2026-10-13 — page has almost no readable text (1 chars; likely JavaScript-only) — https://critcaresummit.com/
-- 2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society) — 2026-10-18 — HTTP 403 — https://www.tnpa.org.tw/events/
-- CANO/ACIO Annual Conference — 2026-10-22 — HTTP 403 — https://www.cano-acio.ca/page/cano2026
-- IPAS Fall CME Conference (Healthcare in the Heartland) — 2026-10-26 — HTTP 403 — https://www.iapasociety.org
-- WAPA Fall Conference — 2026-11-01 — page has almost no readable text (1 chars; likely JavaScript-only) — https://wapa.com/events/wapa-fall-conference-2026/
-- NONPF Fall Conference — 2026-11-05 — HTTP 403 — https://www.nonpf.org/page/futureconferences
-- Padjadjaran International Nursing Conference — 2026-11-06 — HTTP 403 — https://pinc.fkep.unpad.ac.id/
-- AMIA Annual Symposium — 2026-11-07 — HTTP 403 — https://amia.org/education-events/amia-2026-annual-symposium
-- Qatar Health Congress — 2026-11-11 — page has almost no readable text (220 chars; likely JavaScript-only) — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
-- National CRNA Week — 2027-01-17 — page has almost no readable text (1 chars; likely JavaScript-only) — https://www.aana.com/event/national-crna-week-2027/
-- EDGE (nurse anesthesia educators) — 2027-02-25 — page has almost no readable text (1 chars; likely JavaScript-only) — https://www.aana.com/event/edge-2027/
-- NACNS Annual Conference — 2027-03-01 — page has almost no readable text (1 chars; likely JavaScript-only) — https://nacns.org/news-events/annual-conference/2027-annual-conference/
-- Advanced Practice Neonatal Nurses Conference — 2027-04-08 — HTTP 403 — https://www.academyonline.org/page/conferences
-- AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — HTTP 403 — https://amia.org/education-events/2027-amplify-informatics-conference
-- AAAA Annual Conference — 2027-04-15 — robots.txt disallows — https://www.linkedin.com/posts/american-academy-of-anesthesiologists-assistants_aaaa2027-callforspeakers-anesthesiologistassistant-activity-7481057620322091008-Vu-Z
-- Mid-Year Assembly — 2027-04-16 — page has almost no readable text (1 chars; likely JavaScript-only) — https://www.aana.com/event/mid-year-assembly-2027/
-- National Teaching Institute (NTI) — 2027-05-02 — HTTP 403 — https://www.aacn.org/conferences-and-events/nti
-- ASCO Annual Meeting — 2027-06-04 — HTTP 403 — https://www.asco.org/annual-meeting/dates-know
-- AANA Annual Congress — 2027-08-08 — page has almost no readable text (1 chars; likely JavaScript-only) — https://www.aana.com/event/aana-annual-congress-2027/
-- WAPA Fall Conference — 2027-09-30 — page has almost no readable text (1 chars; likely JavaScript-only) — https://wapa.com/events/wapa-fall-conference-2027/
-- ACEP Scientific Assembly — 2027-10-25 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
-- NONPF Annual Conference — 2028-04-19 — HTTP 403 — https://www.nonpf.org/page/futureconferences
-- ASCO Annual Meeting — 2028-06-02 — HTTP 403 — https://www.asco.org/annual-meeting/dates-know
-- ACEP Scientific Assembly — 2028-09-17 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
-- ACEP Scientific Assembly — 2029-10-01 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
-- ACEP Scientific Assembly — 2030-10-17 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
-- ACEP Scientific Assembly — 2031-10-27 — HTTP 403 — https://www.acep.org/sa/general-information/future-dates
+## Checker could not match, curator evidence on file (27)
+
+- NPWH Annual Women's Healthcare Conference — 2026-09-23 — reviewed 2026-09-22 — https://npwh.org/m/event_details.asp?id=1984651
+- NLN Education Summit — 2026-09-23 — reviewed 2026-09-22 — https://summit.nln.org/
+- District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care — 2026-09-25 — reviewed 2026-09-22 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
+- AVA Annual Scientific Meeting — 2026-10-01 — reviewed 2026-09-22 — https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400
+- NPA Annual Conference (NP26) — 2026-10-01 — reviewed 2026-09-22 — https://www.thenpa.org/page/NP26
+- V&VN VS Annual Congress — 2026-10-01 — reviewed 2026-09-22 — https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs
+- ONAN Oncology Nursing Conference — 2026-10-07 — reviewed 2026-09-22 — https://onanigeria.org/registration
+- Emergency Nurses Week — 2026-10-11 — reviewed ? — https://www.ena.org/about-us/emergency-nurses-week
+- 2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society) — 2026-10-18 — reviewed 2026-09-22 — https://www.tnpa.org.tw/events/content.php?id=6262
+- CANO/ACIO Annual Conference — 2026-10-22 — reviewed 2026-09-22 — https://www.cano-acio.ca/page/cano2026
+- IPAS Fall CME Conference (Healthcare in the Heartland) — 2026-10-26 — reviewed 2026-09-22 — https://www.iapasociety.org
+- 2026 Annual Scientific Conference & AGM — 2026-10-28 — reviewed ? — https://www.nnak.or.ke/2026-asc-agm/
+- NONPF Fall Conference — 2026-11-05 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
+- Padjadjaran International Nursing Conference — 2026-11-06 — reviewed 2026-09-22 — https://pinc.fkep.unpad.ac.id/
+- Qatar Health Congress — 2026-11-11 — reviewed 2026-09-22 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
+- Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
+- ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-22 — https://enrs2027conference.oa-event.com/
+- Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-09-22 — https://www.academyonline.org/page/conferences
+- AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-09-22 — https://amia.org/education-events/2027-amplify-informatics-conference
+- AAAA Annual Conference — 2027-04-15 — reviewed 2026-09-22 — https://www.linkedin.com/posts/american-academy-of-anesthesiologists-assistants_aaaa2027-callforspeakers-anesthesiologistassistant-activity-7481057620322091008-Vu-Z
+- Oncology Nursing Month — 2027-05-01 — reviewed 2026-09-22 — https://www.ons.org/oncology-nursing-month
+- Heart Rhythm — 2027-05-13 — reviewed 2026-09-22 — https://heartrhythm.com/
+- ASCO Annual Meeting — 2027-06-04 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
+- PNAA National Convention — 2027-07-17 — reviewed 2026-09-22 — https://mypnaa.org/events
+- Global Emergency Nursing Conference — 2027-10-21 — reviewed ? — https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event
+- NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
+- ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
+
+OPEN_ITEMS=3
