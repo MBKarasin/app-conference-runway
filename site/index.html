@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="assets/app.css?v=20260923-3">
+<link rel="stylesheet" href="assets/app.css?v=20260923-4">
 </head>
 <body>
 <a class="skip" href="#view">Skip to meetings</a>
@@ -24,15 +24,15 @@
       <button class="hbtn" data-act="share" title="Copy a short note and the link, ready to send to a colleague"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11 5.5a2 2 0 10-1.9-2.6L6 4.6a2 2 0 100 2.8l3.1 1.7a2 2 0 10.5-1L6.5 6.4a2 2 0 000-.8l3.1-1.7c.36.4.87.6 1.4.6z" fill="currentColor"/></svg>Share with a colleague</button>
       <a class="hbtn" data-request href="#"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 4l6 5 6-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Make a request</a>
       <a class="hbtn" href="AI-HANDOFF.md" title="How this site was built, where its data comes from, and how to reproduce or challenge it (Markdown file)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>AI Handoff</a>
-      <p class="eyebrow">Independent · Curated for the global APP community</p>
+      <p class="eyebrow">Independently curated for the global APP community</p>
       <p class="reqcap">Missing a meeting, or need something that would help you be your best? Email <a data-request href="#" data-request-address></a>.</p>
     </div>
   </div>
+  <div class="ledeRow">
+    <p class="lede">An instrument designed to promote the exchange of ideas, improve human health outcomes, and advance APP disciplines.<br class="lede-break">Search or filter global APP conferences, abstract deadlines, and student opportunities; each listing links to its source.</p>
+  </div>
   <time class="updated header-updated" id="updated"></time>
   <div class="strip" aria-hidden="true"></div>
-  <div class="ledeRow">
-    <p class="lede">APP Conference Runway brings global APP conferences, deadlines and opportunities into one source-traced calendar.<br class="lede-break">Search or filter, then open any listing to review its source and confirm details with the organizer.</p>
-  </div>
   <section class="spotlight" id="spotlight" aria-label="Current APP recognition" hidden></section>
 </header>
 
@@ -43,7 +43,6 @@
       <label class="search" for="q"><span class="sr">Search meetings</span><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.8"/></svg><input id="q" type="search" placeholder="Search meeting, organizer, city, specialty" autocomplete="off"></label>
       <button class="btn more-filters" id="fbtn" data-act="filters" aria-expanded="false" aria-controls="filters">Filters</button>
     </div>
-    <p class="trustline">Dates traced to organizer sources. Open any listing for the source link and its wording.</p>
     <div class="quickprof" id="quickprof" aria-label="Filter by discipline"></div>
     <div class="row2"><div class="viewtools" id="viewtools"></div><div class="geoquick" id="geoquick" aria-label="Filter by location"></div></div>
     <div class="filters" id="filters"></div>
@@ -81,6 +80,6 @@
 <dialog id="dlg" aria-label="Meeting details"></dialog>
 <script src="assets/config.js"></script>
 <script src="assets/footer.js"></script>
-<script src="assets/app.js?v=20260923-2"></script>
+<script src="assets/app.js?v=20260923-3"></script>
 </body>
 </html>
