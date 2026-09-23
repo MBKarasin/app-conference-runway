@@ -326,12 +326,16 @@
       const ws = new Date(start); ws.setDate(start.getDate() + w * 7);
       if (w >= 5 && ws.getMonth() !== m - 1) break;
       const wkS = iso(ws), wkE = addDays(wkS, 6);
+      const dueThisWeek = x => x.call && x.to >= wkS && x.to <= wkE;
+      const priority = x => dueThisWeek(x) ? -2 : rank(x);
       const inWk = items.filter(x => x.from <= wkE && x.to >= wkS)
         .map(x => ({ ...x, a: x.from < wkS ? wkS : x.from, b: x.to > wkE ? wkE : x.to }))
-        .sort((p, q) => rank(p) - rank(q) || p.a.localeCompare(q.a) || q.b.localeCompare(p.b) || p.e.s.name.localeCompare(q.e.s.name));
+        .sort((p, q) => priority(p) - priority(q) || p.a.localeCompare(q.a) || q.b.localeCompare(p.b) || p.e.s.name.localeCompare(q.e.s.name));
       const lanes = [];   // last occupied day per lane
       inWk.forEach(x => { let l = lanes.findIndex(end => end < x.a); if (l < 0) { l = lanes.length; lanes.push(x.b); } else lanes[l] = x.b; x.lane = l; });
-      const nL = lanes.length, hidden = inWk.filter(x => x.lane >= SHOW).length;
+      const dueLanes = inWk.filter(dueThisWeek).reduce((n, x) => Math.max(n, x.lane + 1), 0);
+      const visibleLanes = Math.max(SHOW, dueLanes);
+      const nL = lanes.length, hidden = inWk.filter(x => x.lane >= visibleLanes).length;
       let h = "";
       for (let i = 0; i < 7; i++) {
         const d = new Date(ws); d.setDate(ws.getDate() + i); const k = iso(d);
@@ -342,10 +346,10 @@
         const contL = x.from < wkS, contR = x.to > wkE, span = c1 - c0;
         const due = call && !contR;
         const label = (contL ? "… " : "") + (call ? (due ? "Abstracts due: " : "Abstracts open: ") : "") + esc(e.s.name) + (call ? (span > 1 || !due ? ` <small>due ${esc(md(x.to))}</small>` : "") : span > 1 ? ` <small>${esc(range(e))}</small>` : "");
-        h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${!call && e.s.name === "National APP Week" ? " appweek" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= SHOW ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= SHOW ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
+        h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${!call && e.s.name === "National APP Week" ? " appweek" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= visibleLanes ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= visibleLanes ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
       });
-      if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${SHOW + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false">+${hidden} more this week</button>`;
-      const rc = `26px${Math.min(nL, SHOW) ? ` repeat(${Math.min(nL, SHOW)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = `26px repeat(${nL + 1}, auto)`;
+      if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${visibleLanes + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false">+${hidden} more this week</button>`;
+      const rc = `26px${Math.min(nL, visibleLanes) ? ` repeat(${Math.min(nL, visibleLanes)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = `26px repeat(${nL + 1}, auto)`;
       weeks += `<div class="wk" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
     }
     const cells = `<div class="dowrow">${DOW.map(d => `<div class="dow">${d}</div>`).join("")}</div>${weeks}`;
