@@ -588,6 +588,27 @@
    "reviewed_on": "2026-09-23",
    "evidence": "The next Virtual INNRS will be held on Friday, January 29, 2027.",
    "_why": "Nightly checker got HTTP 307 (redirect loop for automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+  },
+  "819fe90fd52b": {
+   "source_url": "https://www.ena.org/emergency-nursing-2026",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-23",
+   "evidence": "Sep 28, 2026 - Oct 01, 2026 Phoenix, Arizona",
+   "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+  },
+  "d4e7559150f1": {
+   "source_url": "https://www.ena.org/events/emergency-nursing-2027",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-23",
+   "evidence": "Sep 15, 2027 - Sep 18, 2027 Kansas City Convention Center, Kansas City",
+   "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+  },
+  "79ff0d69f162": {
+   "source_url": "https://worldcongressonpain.secure-platform.com/a/",
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-23",
+   "evidence": "Join the global pain community at the 2026 World Congress on Pain in Bangkok, Thailand, from 26 – 30 October 2026.",
+   "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
   }
  },
  "rules": {
