@@ -2,7 +2,7 @@ name: Check sources and publish
 
 on:
   schedule:
-    - cron: "0 6,7 * * *"        # GitHub schedules run in UTC; the gate below keeps only the run at 2 a.m. New York time (EDT or EST)
+    - cron: "0 6 * * *"          # 06:00 UTC = 2 a.m. EDT / 1 a.m. EST. GitHub may start scheduled runs hours late; the check runs whenever it starts.
   push:
     branches: [main]
   workflow_dispatch: {}
@@ -24,10 +24,9 @@ jobs:
       contents: write            # commit the verification stamps (also keeps the schedule alive)
       issues: write              # open/refresh the review digest
     steps:
-      - name: Run only at 2 a.m. New York time
+      - name: Run the check (no clock gate; a late scheduled start must still run)
         id: gate
-        run: |
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=America/New_York date +%H)" != "02" ]; then echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+        run: echo "go=true" >> "$GITHUB_OUTPUT"
       - if: steps.gate.outputs.go == 'true'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
         with: { persist-credentials: true }
@@ -37,7 +36,15 @@ jobs:
       - if: steps.gate.outputs.go == 'true'
         run: pip install --no-cache-dir "pypdf==5.*"
       - if: steps.gate.outputs.go == 'true'
-        run: python scripts/build.py && python scripts/check.py && python scripts/linkcheck.py && python scripts/build.py && python scripts/validate.py && python scripts/snapshot.py
+        run: python scripts/build.py
+      - if: steps.gate.outputs.go == 'true'
+        name: Check sources, links and data
+        id: check
+        continue-on-error: true
+        run: python scripts/check.py && python scripts/linkcheck.py && python scripts/build.py && python scripts/validate.py
+      - if: steps.gate.outputs.go == 'true'
+        name: Daily archive (runs even if the check failed)
+        run: python scripts/snapshot.py
       - if: steps.gate.outputs.go == 'true'
         name: Commit verification stamps
         run: |
@@ -50,12 +57,18 @@ jobs:
         name: Review digest
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          if grep -qE "not found [1-9]|Newly failing" data/check_report.md; then
-            n=$(gh issue list --label source-check --state open --json number -q '.[0].number')
-            gh label create source-check --color E0A21A --force >/dev/null
-            if [ -n "$n" ]; then gh issue edit "$n" --body-file data/check_report.md
-            else gh issue create --title "Runway: dates to review" --label source-check --body-file data/check_report.md; fi
+          # The issue is always rewritten from the report committed in this run, so the two can never disagree.
+          open_items=$(grep -oE "^OPEN_ITEMS=[0-9]+" data/check_report.md | cut -d= -f2)
+          gh label create source-check --color E0A21A --force >/dev/null
+          n=$(gh issue list --label source-check --state all --limit 1 --json number -q '.[0].number')
+          if [ -n "$n" ]; then gh issue edit "$n" --body-file data/check_report.md
+          else gh issue create --title "Runway: dates to review" --label source-check --body-file data/check_report.md; n=""; fi
+          if [ -n "$n" ]; then
+            if [ "${open_items:-1}" = "0" ]; then gh issue close "$n" --reason completed || true; else gh issue reopen "$n" || true; fi
           fi
+      - if: steps.check.outcome == 'failure'
+        name: Fail the run if the check or validation failed (after archiving and reporting)
+        run: exit 1
 
   deploy:
     needs: [check]
