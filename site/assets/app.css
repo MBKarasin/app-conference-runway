@@ -725,3 +725,14 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   :root:not([data-theme="light"]) .cal .ce.appweek small{color:#E9A9B8!important}
   :root:not([data-theme="light"]) .calspan .ce.due{background:#25171C;box-shadow:inset -3px 0 #FF6B86}
 }
+
+/* 2026-09-23 masthead refinement */
+.mast{padding-top:18px}
+.titlerow{align-items:flex-end}
+.headactions{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:8px}
+.headactions .eyebrow{flex:0 0 100%;order:10;margin:4px 0 0;text-align:right;color:var(--ink-3);font-family:var(--body);font-size:.72rem;line-height:1.25;letter-spacing:.12em;text-transform:uppercase}
+.headactions .reqcap{order:11}
+.header-updated{display:block;width:100%;margin:6px 0 5px;text-align:right;color:var(--ink-2);font-size:.82rem}
+.ledeRow{display:block!important;margin:0!important;padding:0 0 16px!important}
+.lede{max-width:100%!important;margin:0!important;text-align:left}
+@media(max-width:800px){.headactions{justify-content:flex-start}.headactions .eyebrow,.header-updated{text-align:left}.header-updated{margin-top:10px}}
