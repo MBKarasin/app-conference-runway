@@ -718,7 +718,7 @@
     }
     prep(d);
     const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
-    $("#updated").innerHTML = `<span>Organizer pages re-checked automatically ${esc(srcStamp)}</span>`;
+    $("#updated").innerHTML = `<span>Updated ${esc(srcStamp)}</span>`;
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();
