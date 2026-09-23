@@ -664,3 +664,11 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   :root:not([data-theme="light"]) .bar .geoquick #area:has(option:checked:not([value=""])),
   :root:not([data-theme="light"]) .bar .geoquick input:not(:placeholder-shown){background:#E8EFF1!important;color:#0A1418!important;border-color:#E8EFF1!important}
 }
+
+/* MVP reveal: search is the first action; trust line under it; header buttons recede */
+.search input{font-size:16.5px;padding:12px 14px 12px 38px;border-width:2px}
+.search svg{width:18px;height:18px}
+.trustline{margin:6px 0 0;font-size:12.5px;color:var(--ink-3)}
+.hbtn{font-weight:500;opacity:.82}
+.hbtn:hover,.hbtn:focus-visible{opacity:1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .trustline{color:#A9BCC2}}
