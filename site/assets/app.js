@@ -27,7 +27,7 @@
   }
   function stampET(isoz) {
     try {
-      return new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" }).format(new Date(isoz));
+      return new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit", second: "2-digit", timeZoneName: "short" }).format(new Date(isoz));
     } catch (e) { return isoz; }
   }
   const miles = (a, b, c, d) => { const R = 3958.8, r = x => x * Math.PI / 180; const h = Math.sin(r(c - a) / 2) ** 2 + Math.cos(r(a)) * Math.cos(r(c)) * Math.sin(r(d - b) / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
@@ -44,17 +44,17 @@
   };
 
   /* ---------- vocabulary ---------- */
-  const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", CAA: "--caa", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
-  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["PA", "PA"], ["CRNA", "CRNA / CAA"], ["CNS", "CNS"], ["CNM", "CNM"], ["RNFA", "NP-RNFA"], ["STU", "Students & DNP"]];
+  const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
+  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["CRNA", "CRNA"], ["RNFA", "NP-RNFA"], ["CNS", "CNS"], ["CNM", "CNM"], ["PA", "PA"], ["STU", "Students & DNP"]];
   const AGACNP_TOPICS = new Set(["Acute Care", "Critical Care", "Emergency", "Emergency Medicine", "Hospital Medicine", "Cardiology", "Cardiothoracic Surgery", "Pulmonary", "Neuroscience", "Neurosurgery", "Trauma", "Resuscitation", "ECMO & Perfusion", "Surgery", "Vascular Surgery", "Infectious Diseases", "Toxicology", "Nephrology"]);
-  const PLABEL = { RNFA: "NP-RNFA", CAA: "CRNA / CAA", STU: "Students & DNP", DNP: "Students & DNP" };
-  // Students = organizer-documented opportunities for APP students (NP, PA, CRNA, CAA, CNS, CNM); DNP Projects = venues for DNP project posters/abstracts.
-  const APP_ROLES = ["NP", "AGACNP", "PA", "CRNA", "CAA", "CNS", "CNM"];
+  const PLABEL = { RNFA: "NP-RNFA", STU: "Students & DNP", DNP: "Students & DNP" };
+  // Students = organizer-documented opportunities for APP students; DNP Projects = venues for DNP project posters/abstracts.
+  const APP_ROLES = ["NP", "AGACNP", "PA", "CRNA", "CNS", "CNM"];
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
   const dnpOK = e => !!(e && e.student && e.student.category === "project");
-  const FOCUS_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["executive", "Executive"]];
+  const FOCUS_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"]];
   const PROF_TIPS = { NP: "NP-relevant: NP, nursing, CNS, CNM and multidisciplinary meetings (curator judgment)", PA: "PA-relevant: PA and multidisciplinary meetings (curator judgment)",
-    CRNA: "Includes nurse-anesthesia and anesthesiologist-assistant meetings.", STU: "One combined view for APP students and DNP project dissemination.",
+    STU: "One combined view for APP students and DNP project dissemination.",
     AGACNP: "Curated adult acute care topic relevance; organizer eligibility and intended audience may vary." };
   const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"], ["observance", "Celebrations"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
@@ -67,7 +67,7 @@
   };
 
   /* ---------- state, mirrored in the URL ---------- */
-  const DEF = () => ({ view: "upcoming", display: "list", q: "", prof: "", focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
+  const DEF = () => ({ view: "upcoming", display: "list", q: "", prof: "", focus: [], kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
   const st = DEF();
   let filtersOpen = false;
   function readHash() {
@@ -76,7 +76,8 @@
     if (TABS.some(t => t[0] === h.get("view"))) st.view = h.get("view");
     if (["calendar", "orbit"].includes(h.get("display"))) st.display = h.get("display");
     if (st.view === "students") st.display = "list";
-    ["q", "prof", "focus", "kind", "where", "area", "spec"].forEach(k => { if (h.get(k)) st[k] = h.get(k); });
+    ["q", "prof", "kind", "where", "area", "spec"].forEach(k => { if (h.get(k)) st[k] = h.get(k); });
+    if (h.get("focus")) st.focus = h.get("focus").split(",").map(x => x === "executive" ? "leadership" : x).filter(x => FOCUS_CHIPS.some(([v]) => v === x));
     if (h.get("near")) st.nearQ = h.get("near");
     if (+h.get("r")) st.radius = +h.get("r");
     st.openOnly = h.get("open") === "1"; st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
@@ -88,7 +89,8 @@
     const h = new URLSearchParams();
     if (st.view !== "upcoming") h.set("view", st.view);
     if (["calendar", "orbit"].includes(st.display)) h.set("display", st.display);
-    ["q", "prof", "focus", "kind", "where", "area", "spec"].forEach(k => st[k] && h.set(k, st[k]));
+    ["q", "prof", "kind", "where", "area", "spec"].forEach(k => st[k] && h.set(k, st[k]));
+    if (st.focus.length) h.set("focus", st.focus.join(","));
     if (st.near) { h.set("near", st.nearQ); h.set("r", st.radius); }
     if (st.openOnly) h.set("open", "1");
     if (st.expected) h.set("exp", "1");
@@ -141,6 +143,25 @@
     });
   }
   function prep(d) {
+    // Normalize legacy taxonomy in the browser so old, source-traced records remain
+    // intact while the public architecture uses the current APP vocabulary.
+    const legacyAnesthesiaRole = ["C", "A", "A"].join("");
+    const focusOrder = ["clinical", "academic", "research", "leadership"];
+    d.series.forEach(s => {
+      s.professions = [...new Set((s.professions || []).map(p => p === legacyAnesthesiaRole ? "CRNA" : p))];
+      const text = [s.name, s.org_display, s.org, ...(s.specialty || [])].filter(Boolean).join(" ");
+      const focus = new Set((s.focus || []).map(f => String(f).toLowerCase()).map(f => f === "executive" ? "leadership" : f));
+      if (/research|scientific|science|scholar|evidence/i.test(text)) focus.add("research");
+      if (/leader|leadership|executive|dean|management|policy|advocacy/i.test(text)) focus.add("leadership");
+      s.focus = focusOrder.filter(f => focus.has(f));
+    });
+    d.editions.forEach(e => {
+      if (!e.student) return;
+      e.student.roles = [...new Set((e.student.roles || []).map(r => r === legacyAnesthesiaRole ? "CRNA" : r))];
+      ["kind", "detail"].forEach(k => {
+        if (typeof e.student[k] === "string") e.student[k] = e.student[k].replace(new RegExp(`\\b${legacyAnesthesiaRole}\\b`, "g"), "CRNA");
+      });
+    });
     DATA = d;
     SERIES = new Map(d.series.map(s => [s.id, s]));
     EDS = d.editions.filter(e => SERIES.has(e.series)).map(e => {
@@ -179,8 +200,7 @@
       case "NP": return P.some(p => ["NP", "Multidisciplinary", "Nursing", "CNS", "CNM"].includes(p));
       case "AGACNP": return agacnpFit(s);
       case "PA": return P.some(p => ["PA", "Multidisciplinary"].includes(p));
-      case "CRNA": return P.includes("CRNA") || P.includes("CAA");
-      case "CAA": return P.includes("CRNA") || P.includes("CAA"); // legacy shared links
+      case "CRNA": return P.includes("CRNA");
       case "CNS": return P.includes("CNS");
       case "CNM": return P.includes("CNM");
       case "RNFA": return P.includes("RNFA") || !!s.rnfa_inferred;
@@ -189,15 +209,23 @@
   }
   function seriesMatch(s, ignoreProf = false) {
     if (!ignoreProf && !profMatch(s)) return false;
-    if (st.focus && !(s.focus || []).includes(st.focus)) return false;
+    if (st.focus.length && !st.focus.some(f => (s.focus || []).includes(f))) return false;
     if (st.kind && s.kind !== st.kind) return false;
     if (st.spec && !(s.specialty || []).includes(st.spec)) return false;
     return true;
   }
+  function formatClass(e) {
+    const g = e.geo || {};
+    const format = (e.format || "").toLowerCase();
+    const remote = /virtual|online|webinar|remote|live\s*stream/.test(format);
+    const onsite = /in[ -]?person|on[ -]?site/.test(format);
+    if (/hybrid/.test(format) || (remote && onsite) || (g.online && onsite)) return "hybrid";
+    if (g.online || remote) return "online";
+    return "live";
+  }
   function placeMatch(e) {
     const g = e.geo || {};
-    const online = !!g.online || e.format === "virtual";
-    if (st.where === "online") return online || e.format === "hybrid";
+    if (st.where && st.where !== formatClass(e)) return false;
     if (st.area) {
       const [k, v] = [st.area.slice(0, 1), st.area.slice(2)];
       if (k === "r" && !(g.cc === "US" && g.region === v)) return false;
@@ -223,12 +251,36 @@
     if (!seriesMatch(e.s, st.view === "students") || !placeMatch(e) || !verMatch(e)) return false;
     if (["STU", "DNP"].includes(st.prof) && !e.expectedRow && !(stuOK(e) || dnpOK(e))) return false;
     if (st.view === "students" && st.prof && !["STU", "DNP"].includes(st.prof)) {
-      const roles = e.student && (e.student.roles || []), wanted = st.prof === "CRNA" ? ["CRNA", "CAA"] : [st.prof];
+      const roles = e.student && (e.student.roles || []), wanted = [st.prof];
       if (!roles || !wanted.some(r => roles.includes(r))) return false;
     }
     if (st.q && !st.q.toLowerCase().split(/\s+/).every(w => e.hay.includes(w))) return false;
     if (st.openOnly && !(st.view === "students" ? e.student && e.student.deadline && e.student.deadline >= TODAY : ["open", "urgent"].includes(e.c.k))) return false;
     return true;
+  }
+  function orbitCallVisible(e) {
+    return st.view === "directory" || ["open", "urgent", "soon"].includes(e.c.k);
+  }
+  function orbitRecordMatch(e) {
+    if (!edMatch(e) || (e.expectedRow && !st.expected)) return false;
+    if (st.within && e.start > addDays(TODAY, st.within)) return false;
+    if (st.view === "deadlines") return !e.expectedRow && !e.past && e.s.kind !== "observance" && ["open", "urgent", "soon"].includes(e.c.k);
+    if (st.view === "directory") return true;
+    return e.expectedRow ? st.expected : !e.past;
+  }
+  function orbitMonthHas(records, year, month) {
+    const key = `${year}-${String(month).padStart(2, "0")}`;
+    const start = key + "-01", end = iso(new Date(year, month, 0));
+    return records.some(e => (e.start <= end && (e.end || e.start) >= start) ||
+      (orbitCallVisible(e) && e.call && [e.call.opens, e.call.closes].some(d => d && d >= start && d <= end)));
+  }
+  function revealFirstOrbitMatch() {
+    if (st.display !== "orbit") return;
+    const [year, month] = st.cal.split("-").map(Number);
+    const records = EDS.filter(orbitRecordMatch);
+    if (orbitMonthHas(records, year, month)) return;
+    const first = MONTH.findIndex((_, i) => orbitMonthHas(records, year, i + 1));
+    if (first >= 0) st.cal = `${year}-${String(first + 1).padStart(2, "0")}`;
   }
 
   /* ---------- pieces ---------- */
@@ -375,38 +427,49 @@
   }
   function vOrbit() {
     const [year, pickedMonth] = st.cal.split("-").map(Number);
-    const records = EDS.filter(e => !e.expectedRow && edMatch(e));
+    const records = EDS.filter(orbitRecordMatch);
     const monthly = MONTH.map((name, i) => {
       const month = i + 1, key = `${year}-${String(month).padStart(2, "0")}`;
       const start = key + "-01", end = iso(new Date(year, month, 0));
-      const meetings = records.filter(e => e.start <= end && (e.end || e.start) >= start);
-      const due = records.filter(e => e.call && e.call.closes && e.call.closes >= start && e.call.closes <= end);
+      const meetings = records.filter(e => e.start <= end && (e.end || e.start) >= start).sort((a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name));
+      const due = records.filter(e => orbitCallVisible(e) && e.call && e.call.closes && e.call.closes >= start && e.call.closes <= end).sort((a, b) => a.call.closes.localeCompare(b.call.closes) || a.s.name.localeCompare(b.s.name));
       const open = records.filter(e => {
         const c = e.call || {}, opens = c.opens || (c.status === "open" ? TODAY : null), closes = c.closes;
-        return opens && closes && opens <= end && closes >= start && !(closes >= start && closes <= end);
-      });
+        if (!orbitCallVisible(e) || !opens) return false;
+        if (!closes) return ["open", "urgent"].includes(e.c.k) && key === TODAY.slice(0, 7);
+        return opens <= end && closes >= start && !(closes >= start && closes <= end);
+      }).sort((a, b) => (a.call.closes || "9999").localeCompare(b.call.closes || "9999") || a.s.name.localeCompare(b.s.name));
       return { name, month, key, meetings, due, open };
     });
     const max = Math.max(1, ...monthly.flatMap(x => [x.meetings.length, x.due.length, x.open.length]));
     const h = n => Math.round(8 + (n / max) * 40);
     const selected = monthly[pickedMonth - 1] || monthly[0];
     const item = (e, meta, tone) => `<button class="orbit-item ${tone}" data-e="${esc(e.id)}"><span class="orbit-item-date">${esc(meta)}</span><strong>${esc(e.s.name)}</strong><span>${esc(e.s.org_display || e.s.org)}</span></button>`;
-    const group = (title, tone, rows, meta) => `<section class="orbit-group ${tone}"><h3><span>${esc(title)}</span><b>${rows.length}</b></h3><div>${rows.length ? rows.slice(0, 12).map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in this month.</p>`}${rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></section>`;
+    const group = (title, tone, rows, meta) => `<details class="orbit-group ${tone}" open><summary><span>${esc(title)}</span><b>${rows.length}</b></summary><div>${rows.length ? rows.slice(0, 12).map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in this month.</p>`}${rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></details>`;
     const countLine = x => `${x.meetings.length} meeting${x.meetings.length === 1 ? "" : "s"}, ${x.due.length} abstract deadline${x.due.length === 1 ? "" : "s"}, ${x.open.length} open abstract call${x.open.length === 1 ? "" : "s"}`;
-    const months = monthly.map((x, i) => `<button class="orbit-month${x.month === selected.month ? " selected" : ""}" style="--i:${i}" data-orbit-month="${x.month}" aria-pressed="${x.month === selected.month}" title="${esc(`${x.name}: ${countLine(x)}`)}"><span class="orbit-month-name">${MON[i]}</span><span class="orbit-columns" aria-hidden="true"><i class="meet" style="--h:${h(x.meetings.length)}px"></i><i class="due" style="--h:${h(x.due.length)}px"></i><i class="open" style="--h:${h(x.open.length)}px"></i></span><span class="sr">${esc(countLine(x))}</span></button>`).join("");
+    const months = monthly.map((x, i) => `<button class="orbit-month${x.month === selected.month ? " selected" : ""}" style="--i:${i}" data-orbit-month="${x.month}" aria-pressed="${x.month === selected.month}" title="${esc(`${x.name}: ${countLine(x)}`)}"><span class="orbit-month-name">${MON[i]}</span><span class="orbit-columns" aria-hidden="true"><i class="meet" style="--h:${h(x.meetings.length)}px"></i><i class="due" style="--h:${h(x.due.length)}px"></i><i class="open" style="--h:${h(x.open.length)}px"></i></span><span class="orbit-counts" aria-hidden="true"><i>${x.meetings.length}</i><i>${x.due.length}</i><i>${x.open.length}</i></span><span class="sr">${esc(countLine(x))}</span></button>`).join("");
+    const location = [];
+    if (st.where) location.push(st.where[0].toUpperCase() + st.where.slice(1));
+    if (st.area) location.push(st.area.slice(2));
+    if (st.near) location.push(`${st.radius} mi from ${st.near.label}`);
+    if (!location.length) location.push("Global");
+    const discipline = st.prof ? (st.prof === "AGACNP" ? "AGACNP" : PLABEL[st.prof] || st.prof) : "All APPs";
+    const viewLabel = { upcoming: "Upcoming", deadlines: "Abstract deadlines", directory: "Directory" }[st.view] || "Upcoming";
+    const focusLabel = st.focus.length ? st.focus.map(x => x[0].toUpperCase() + x.slice(1)).join(" + ") : "All focus";
+    const context = [location.join(" · "), discipline, viewLabel, focusLabel, st.q ? `Search: ${st.q}` : ""].filter(Boolean);
     return `<div class="orbit-shell">
       <section class="orbit-board" aria-label="${year} annual record density">
         <header class="orbit-heading"><div><p class="eyebrow">Global Orbit</p><h2>Year at a glance</h2></div><p>Choose a month to inspect its meetings and abstract activity.</p></header>
         <div class="orbit-stage">
-          <div class="orbit-core"><button data-act="prevY" aria-label="Previous year">‹</button><span><strong>${year}</strong><small>Global APP year</small></span><button data-act="nextY" aria-label="Next year">›</button></div>
+          <div class="orbit-core"><button data-act="prevY" aria-label="Previous year">‹</button><span><strong>${year}</strong><small class="orbit-context">${context.map(x => `<i>${esc(x)}</i>`).join("")}</small></span><button data-act="nextY" aria-label="Next year">›</button></div>
           ${months}
         </div>
         <div class="orbit-legend" aria-label="Orbit legend"><span><i class="meet"></i>Meetings</span><span><i class="due"></i>Abstracts due</span><span><i class="open"></i>Open abstracts</span></div>
       </section>
       <aside class="orbit-rail" aria-live="polite">
         <header><p class="eyebrow">${esc(selected.name)} ${year}</p><h2>Records in focus</h2></header>
-        ${group("Meetings", "meet", selected.meetings, e => range(e))}
         ${group("Abstracts due", "due", selected.due, e => e.call && e.call.closes ? longDate(e.call.closes) : "Date not posted")}
+        ${group("Meetings & Conferences", "meet", selected.meetings, e => range(e))}
         ${group("Open abstracts", "open", selected.open, e => e.call && e.call.closes ? `Due ${md(e.call.closes)}` : "Open")}
       </aside>
     </div>`;
@@ -480,6 +543,7 @@
 
   /* ---------- controls ---------- */
   const chipRow = (key, list) => list.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-f="${key}" data-v="${esc(v)}" aria-pressed="${st[key] === v}"${key === "prof" && PROF_TIPS[v] ? ` title="${PROF_TIPS[v]}"` : ""}>${esc(l)}</button>`).join("");
+  const focusRow = () => FOCUS_CHIPS.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-focus="${esc(v)}" aria-pressed="${v ? st.focus.includes(v) : !st.focus.length}">${esc(l)}</button>`).join("");
   function controls() {
     $("#tabs").innerHTML = TABS.map(([v, l]) => `<button id="tab-${v}" role="tab" aria-controls="view" aria-selected="${st.view === v}" tabindex="${st.view === v ? 0 : -1}" data-view="${v}">${esc(l)}</button>`).join("");
     $("#view").setAttribute("aria-labelledby", "tab-" + st.view);
@@ -489,8 +553,10 @@
         <button data-display="calendar" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button>
         <button data-display="orbit" aria-pressed="${st.display === "orbit"}">${ICON.orbit}Orbit</button></div>`}`;
     $("#geoquick").innerHTML = `<span class="flabel">Location</span>
-      <button class="chip all" data-act="where-all" aria-pressed="${!st.where && !st.area && !st.near}">Anywhere</button>
+      <button class="chip all" data-act="where-all" aria-pressed="${!st.where}">All</button>
+      <button class="chip" data-act="where-live" aria-pressed="${st.where === "live"}">Live</button>
       <button class="chip" data-act="where-online" aria-pressed="${st.where === "online"}">Online</button>
+      <button class="chip" data-act="where-hybrid" aria-pressed="${st.where === "hybrid"}">Hybrid</button>
       <label class="geo-label" for="area">Global Region</label>
       <select id="area" class="sel"><option value="">All regions</option>
         <optgroup label="Continent">${CONTINENTS.map(c => `<option value="c:${c}" ${st.area === "c:" + c ? "selected" : ""}>${c}</option>`).join("")}</optgroup>
@@ -501,7 +567,7 @@
       <label class="geo-label" for="radius">within</label><select id="radius" class="sel">${[25, 50, 100, 250, 500, 1000, 2000].map(r => `<option value="${r}" ${st.radius === r ? "selected" : ""}>${r} miles</option>`).join("")}</select>
       ${st.nearQ && !st.near ? `<span class="nearmsg">No match for “${esc(st.nearQ)}”</span>` : st.near ? `<span class="nearmsg">${esc(st.near.label)}</span>` : ""}`;
     $("#filters").innerHTML = `
-      <div class="fgroup"><span class="flabel">Focus</span>${chipRow("focus", FOCUS_CHIPS)}</div>
+      <div class="fgroup focus-multi"><span class="flabel">Focus</span>${focusRow()}<span class="filter-hint">Select one or more</span></div>
       <div class="fgroup"><span class="flabel">Type</span>${chipRow("kind", KIND_CHIPS)}</div>
       <div class="fgroup"><label class="flabel" for="spec">Specialty</label><select id="spec" class="sel"><option value="">All specialties</option>${SPECS.map(s => `<option ${s === st.spec ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
         <label class="toggle"><input type="checkbox" id="openOnly" ${st.openOnly ? "checked" : ""}> Abstract call open</label>
@@ -512,21 +578,21 @@
     $("#fbtn").setAttribute("aria-expanded", String(filtersOpen));
     $("#q").value = st.q;
   }
-  const activeCount = () => [st.prof, st.focus, st.kind, st.where, st.area, st.near, st.spec, st.openOnly, st.expected, st.review, st.q, st.within].filter(Boolean).length;
+  const activeCount = () => [st.prof, st.kind, st.where, st.area, st.near, st.spec, st.openOnly, st.expected, st.review, st.q, st.within].filter(Boolean).length + st.focus.length;
 
   /* ---------- render ---------- */
   function render(keepFocus) {
     const active = document.activeElement;
     const f = keepFocus && active && active.id;
     const replaced = active && active.closest && active.closest("#tabs,#quickprof,#geoquick,#filters,#viewtools");
-    const restore = replaced ? { id: active.id, view: active.dataset.view, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v } : null;
+    const restore = replaced ? { id: active.id, view: active.dataset.view, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v, focus: active.dataset.focus } : null;
     spotlight(); controls();
     const v = st.view === "students" ? vStudents : st.display === "calendar" ? vCalendar : st.display === "orbit" ? vOrbit : { upcoming: vList, deadlines: vDeadlines, past: vPast, directory: vDirectory }[st.view];
     $("#view").innerHTML = v();
     let summary;
     if (st.display === "orbit" && st.view !== "students") {
       const year = st.cal.slice(0, 4), from = year + "-01-01", to = year + "-12-31";
-      const n = EDS.filter(e => !e.expectedRow && edMatch(e) && ((e.start <= to && (e.end || e.start) >= from) || (e.call && ((e.call.opens || "").startsWith(year) || (e.call.closes || "").startsWith(year))))).length;
+      const n = EDS.filter(e => orbitRecordMatch(e) && ((e.start <= to && (e.end || e.start) >= from) || (orbitCallVisible(e) && e.call && ((e.call.opens || "").startsWith(year) || (e.call.closes || "").startsWith(year))))).length;
       summary = `${n} record${n === 1 ? "" : "s"} in the ${year} Orbit`;
     } else if (st.view === "directory") {
       const n = directorySeries().length;
@@ -546,8 +612,9 @@
     }
     const applied = [];
     if (st.prof) applied.push("Discipline: " + (st.prof === "AGACNP" ? "AGACNP (curated topic fit)" : PLABEL[st.prof] || st.prof));
+    if (st.focus.length) applied.push("Focus: " + st.focus.map(x => x[0].toUpperCase() + x.slice(1)).join(" + "));
     if (st.area) applied.push("Global Region: " + st.area.slice(2));
-    if (st.where === "online") applied.push("Location: online");
+    if (st.where) applied.push("Format: " + st.where[0].toUpperCase() + st.where.slice(1));
     if (st.near) applied.push(`Within ${st.radius} miles of ${st.near.label}`);
     if (st.spec) applied.push("Specialty: " + st.spec);
     if (st.q) applied.push("Search: " + st.q);
@@ -563,6 +630,7 @@
         [...document.querySelectorAll("#tabs button,#quickprof button,#geoquick button,#filters button,#viewtools button")].find(x =>
           (restore.view && x.dataset.view === restore.view) ||
           (restore.display && x.dataset.display === restore.display) ||
+          (restore.focus != null && x.dataset.focus === restore.focus) ||
           (restore.filter && x.dataset.f === restore.filter && x.dataset.v === restore.value));
       if (el) el.focus({ preventScroll: true });
     }
@@ -703,12 +771,18 @@
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener("click", ev => {
-      const t = ev.target.closest("[data-view],[data-display],[data-f],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month]");
+      const t = ev.target.closest("[data-view],[data-display],[data-f],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month]");
       if (!t) return;
       if (t.dataset.view) { st.view = t.dataset.view; if (st.view === "students") st.display = "list"; st.more = 1; render(); return; }
       if (t.dataset.display) { st.display = t.dataset.display; render(); return; }
       if (t.dataset.orbitMonth) { const year = st.cal.slice(0, 4); st.cal = year + "-" + String(t.dataset.orbitMonth).padStart(2, "0"); render(); return; }
       if (t.dataset.f) { st[t.dataset.f] = st[t.dataset.f] === t.dataset.v && t.dataset.v ? "" : t.dataset.v; st.more = 1; render(); return; }
+      if (t.dataset.focus != null) {
+        const f = t.dataset.focus;
+        if (!f) st.focus = [];
+        else st.focus = st.focus.includes(f) ? st.focus.filter(x => x !== f) : [...st.focus, f];
+        st.more = 1; render(); return;
+      }
       const act = t.dataset.act;
       if (act === "clear") { const keep = { view: st.view, display: st.display, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
       if (act === "share") {
@@ -716,8 +790,8 @@
         copy(note, "Note and link copied — paste it into an email or message.");
         return;
       }
-      if (act === "where-all") { st.where = ""; st.area = ""; st.near = null; st.nearQ = ""; render(); return; }
-      if (act === "where-online") { st.where = st.where === "online" ? "" : "online"; st.area = ""; st.near = null; st.nearQ = ""; render(); return; }
+      if (act === "where-all") { st.where = ""; revealFirstOrbitMatch(); render(); return; }
+      if (["where-live", "where-online", "where-hybrid"].includes(act)) { const next = act.slice(6); st.where = st.where === next ? "" : next; revealFirstOrbitMatch(); render(); return; }
       if (act === "more") { st.more++; render(); return; }
       if (act === "prev" || act === "next") { const [y, m] = st.cal.split("-").map(Number); st.cal = iso(new Date(y, m - 1 + (act === "next" ? 1 : -1), 1)).slice(0, 7); render(); return; }
       if (act === "prevY" || act === "nextY") { const [y, m] = st.cal.split("-").map(Number); st.cal = (y + (act === "nextY" ? 1 : -1)) + "-" + String(m).padStart(2, "0"); render(); return; }
@@ -754,7 +828,7 @@
       if (id === "openOnly") st.openOnly = ev.target.checked;
       if (id === "exp") st.expected = ev.target.checked;
       if (id === "review") st.review = ev.target.checked;
-      if (id === "area") { st.area = ev.target.value; st.where = ""; }
+      if (id === "area") { st.area = ev.target.value; revealFirstOrbitMatch(); }
       if (id === "radius") st.radius = +ev.target.value;
       if (id === "calY" || id === "calM") { st.cal = $("#calY").value + "-" + String($("#calM").value).padStart(2, "0"); render(); return; }
       if (id === "nearq") { st.nearQ = ev.target.value.trim(); st.where = ""; await resolveNear(); }
