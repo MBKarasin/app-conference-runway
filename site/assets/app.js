@@ -45,7 +45,7 @@
   };
 
   /* ---------- vocabulary ---------- */
-  const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
+  const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Multidisciplinary: "--multi" };
   // 2026-09-24: Students & DNP projects moved from Discipline to Scope — it is a kind of work, not a credential.
   const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["CRNA", "CRNA"], ["RNFA", "NP-RNFA"], ["CNS", "CNS"], ["CNM", "CNM"], ["PA", "PA"]];
   const AGACNP_TOPICS = new Set(["Acute Care", "Critical Care", "Emergency", "Emergency Medicine", "Hospital Medicine", "Cardiology", "Cardiothoracic Surgery", "Pulmonary", "Neuroscience", "Neurosurgery", "Trauma", "Resuscitation", "ECMO & Perfusion", "Surgery", "Vascular Surgery", "Infectious Diseases", "Toxicology", "Nephrology"]);
@@ -219,14 +219,18 @@
     const continents = new Set(mapped.map(e => e.geo.continent));
     const coverage = $("#coverageCount");
     if (coverage) coverage.textContent = `Of ${upcoming.length} upcoming dated entries, ${mapped.length} have mapped locations in ${countries.size} countries across ${continents.size} continents.`;
-    SPECS = [...new Set(d.series.flatMap(s => s.specialty || []))].sort();
+    // 2026-09-24 (curator decision): a catch-all tag is a space-saver on a national meeting that
+    // would otherwise list every subspecialty. It is not something a visitor filters by, so it stays
+    // a badge and is kept out of the Specialty dropdown.
+    const CATCH_ALL_SPEC = new Set(["Multispecialty", "Multidisciplinary", "Multi-specialty"]);
+    SPECS = [...new Set(d.series.flatMap(s => s.specialty || []))].filter(x => !CATCH_ALL_SPEC.has(x)).sort();
   }
 
   /* ---------- matching ---------- */
   function agacnpFit(s) {
     if (s.name === "National APP Week") return true;
     const p = s.professions || [];
-    if (!p.some(x => ["NP", "Nursing", "Multidisciplinary"].includes(x)) || (p.includes("CRNA") && !p.includes("NP") && !p.includes("Multidisciplinary"))) return false;
+    if (!p.some(x => ["NP", "Multidisciplinary"].includes(x)) || (p.includes("CRNA") && !p.includes("NP") && !p.includes("Multidisciplinary"))) return false;
     return (s.specialty || []).some(x => AGACNP_TOPICS.has(x));
   }
   function profOptionMatch(s, prof) {
@@ -234,7 +238,7 @@
     switch (prof) {
       case "STU": return !!s.hasStu || !!s.hasDnp;
       case "DNP": return !!s.hasStu || !!s.hasDnp; // legacy shared links
-      case "NP": return P.some(p => ["NP", "Multidisciplinary", "Nursing", "CNS", "CNM"].includes(p));
+      case "NP": return P.some(p => ["NP", "Multidisciplinary", "CNS", "CNM"].includes(p));
       case "AGACNP": return agacnpFit(s);
       case "PA": return P.some(p => ["PA", "Multidisciplinary"].includes(p));
       case "CRNA": return P.includes("CRNA");
@@ -336,9 +340,60 @@
     return true;
   }
   function verMatch(e) { return !st.review || isException(e); }
+  /* ---------- search synonyms (2026-09-24, curator finding: "cardiac surgery" returned nothing) ----------
+     The corpus says "Cardiothoracic Surgery"; a clinician types "cardiac". Matching was a plain
+     substring test on each word, so a natural phrasing returned an empty page while 13 cardiac
+     meetings sat in the data. Every expansion below points at wording that actually appears in this
+     corpus — the map widens the question, it never invents a record. British and US spellings are
+     paired in both directions. */
+  const SYN = [
+    ["cardiac|cardio|cardiology|cardiovascular|cardiothoracic|heart|ct surgery", ["cardio", "cardiac", "heart", "thoracic", "ecmo", "perfusion", "resuscitation"]],
+    ["psych|psychiatry|psychiatric|mental health|behavioral|behavioural", ["psychiatr", "mental health", "behavioral", "psych"]],
+    ["icu|intensive care|critical|crit care", ["critical care", "resuscitation", "ecmo", "acute care"]],
+    ["er|ed|emergency|trauma", ["emergency", "trauma", "resuscitation"]],
+    ["gi|gastro|gastroenterology|endoscopy|liver|hepatology", ["gastro", "endoscopy", "hepatology"]],
+    ["renal|kidney|nephrology|dialysis", ["nephrology", "renal", "kidney"]],
+    ["neuro|neurology|neuroscience|neurosurgery|stroke", ["neuro"]],
+    ["ortho|orthopedic|orthopedics|orthopaedic|orthopaedics|musculoskeletal|msk", ["orthopaed", "orthoped", "musculoskeletal"]],
+    ["ob|obgyn|ob-gyn|obstetric|obstetrics|gynecology|gynaecology|midwife|midwifery|maternal", ["women's health", "midwif", "obstetric", "neonatal"]],
+    ["peds|pediatric|pediatrics|paediatric|paediatrics|child|neonatal|nicu", ["pediatric", "paediatric", "neonatal"]],
+    ["onc|oncology|cancer|hematology|haematology|hem", ["oncology", "hematology", "haematology"]],
+    ["lung|pulmonary|pulmonology|respiratory|thoracic", ["pulmonary", "thoracic", "respiratory"]],
+    ["anesthesia|anaesthesia|anesthetist|anaesthetist|crna|nurse anesthesia", ["anesthes", "anaesthes", "crna", "perfusion"]],
+    ["derm|dermatology|skin", ["dermatology"]],
+    ["endocrine|endocrinology|diabetes|diabetic", ["endocrin", "diabetes"]],
+    ["id|infectious|infection|antimicrobial", ["infectious", "infection"]],
+    ["palliative|hospice|end of life", ["palliative", "hospice"]],
+    ["wound|ostomy|continence|skin integrity", ["wound", "ostomy", "continence"]],
+    ["geriatric|geriatrics|aging|ageing|older adult|gerontology", ["geriatric", "geronto", "aging"]],
+    ["surgery|surgical|perioperative|periop|or nurse", ["surgery", "surgical", "perioperative", "rnfa"]],
+    ["research|scholarship|evidence|ebp|scholarly", ["research", "scholarship", "evidence", "scholar"]],
+    ["leadership|executive|management|administrator|director", ["leadership", "executive", "administrat"]],
+    ["education|faculty|teaching|academic|curriculum", ["education", "academic", "faculty", "nursing scholarship"]],
+    ["dnp|capstone|doctoral project|scholarly project", ["dnp", "doctoral", "capstone", "project"]],
+    ["toxicology|overdose|poison", ["toxicology", "poison"]],
+    ["transplant|vad|lvad", ["transplant", "ishlt"]],
+    ["sleep", ["sleep"]],
+    ["pain", ["pain"]],
+    ["informatics|digital health|technology|ai", ["informatics", "digital health"]],
+    ["primary care|family|ambulatory|outpatient", ["primary care", "family", "ambulatory"]],
+    ["hospitalist|hospital medicine|inpatient", ["hospital medicine", "hospitalist"]],
+    ["policy|advocacy|legislative|regulation", ["advocacy", "policy", "health policy"]]
+  ].map(([pat, alts]) => [new RegExp("^(" + pat + ")$", "i"), alts]);
+  // A query word matches when the record contains the word itself OR any of its clinical equivalents.
+  // A short token is matched on a word boundary, never as a substring: "er" must not match
+  // "conference" and "ob" must not match "October". Longer words keep plain substring behaviour,
+  // which is what makes partial typing work.
+  const boundary = (hay, w) => new RegExp("(^|[^a-z0-9])" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "([^a-z0-9]|$)", "i").test(hay);
+  function wordHit(hay, w) {
+    if (w.length <= 3 ? boundary(hay, w) : hay.includes(w)) return true;
+    for (const [re, alts] of SYN) if (re.test(w)) { if (alts.some(a => hay.includes(a))) return true; }
+    return false;
+  }
+
   function edMatch(e) {
     if (!seriesMatch(e.s, true, e) || !editionProfMatch(e) || !placeMatch(e) || !verMatch(e)) return false;
-    if (st.q && !st.q.toLowerCase().split(/\s+/).every(w => e.hay.includes(w))) return false;
+    if (st.q && !st.q.toLowerCase().split(/\s+/).filter(Boolean).every(w => wordHit(e.hay, w))) return false;
     return true;
   }
   function orbitCallVisible(e) {
