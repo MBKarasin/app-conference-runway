@@ -144,6 +144,7 @@ def main():
         rec = {"checked": NOW, "url": e["source_url"], "last_verified": prev.get("last_verified")}
         if not pg["ok"]:
             rec.update(state="unreachable", why=pg["why"])
+            if prev.get("snippet"): rec["snippet"] = prev["snippet"]   # keep the last wording captured from the organizer
         else:
             t = pg["text"]
             date_ok = bool(date_regex(e["start"]).search(t))

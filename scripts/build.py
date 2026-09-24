@@ -497,7 +497,7 @@ def main():
                            "last_verified": when, "url": e.get("source_url")}
         elif v:
             e["verify"] = v
-            if not e.get("evidence") and v.get("state") == "verified" and v.get("snippet"):
+            if not e.get("evidence") and v.get("snippet"):   # verified now, or the last wording captured while it was
                 e["evidence"], e["evidence_auto"] = tidy_snippet(v["snippet"], e["start"]), True
         else:
             e["verify"] = {"state": "unchecked", "checked": None}
