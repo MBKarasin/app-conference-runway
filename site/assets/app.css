@@ -923,3 +923,29 @@ details.month{scroll-margin-top:12px}
 .bar #quickfocus .chip[data-focus="open"][aria-pressed="true"]{background:var(--t-call)!important;border-color:var(--t-call)!important;color:#fff!important}
 .bar #quickfocus .chip[data-focus="conferences"][aria-pressed="true"]{background:var(--t-meet)!important;border-color:var(--t-meet)!important;color:#fff!important}
 .bar #quickfocus .chip[data-focus="celebrations"][aria-pressed="true"]{background:var(--t-obs)!important;border-color:var(--t-obs)!important;color:#fff!important}
+
+/* ===== 2026-09-24 (curator review) =====
+   Celebration orange moved off the scarlet: #D64200 read as the same colour as Abstracts due.
+   #C25100 is 40 degrees away in hue, still clears 4.5:1 on white, and reads orange, not brown. */
+:root{--t-obs:#C25100}
+/* One record-type palette everywhere it appears: Focus chips, calendar bars, Orbit columns and legend. */
+.orbit-columns .meet,.orbit-legend .meet{background:var(--t-meet)}
+.orbit-columns .due,.orbit-legend .due{background:var(--t-due)}
+.orbit-columns .open,.orbit-legend .open{background:var(--t-call)}
+.orbit-columns .obs,.orbit-legend .obs{background:var(--t-obs)}
+
+/* Directory cards: one height for every row. The first row grew because its badge line wrapped. */
+.dir{grid-auto-rows:1fr}
+.srs{grid-template-rows:auto auto auto 1fr;align-content:start;row-gap:4px}
+.srs .hist{display:flex;flex-wrap:wrap;gap:3px;max-height:20px;overflow:hidden;align-content:flex-start}
+.srs .title{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.srs .org{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.srs .badges{display:flex;flex-wrap:nowrap;gap:4px;overflow:hidden;min-height:20px;align-items:center}
+.srs .meta,.srs .hist{min-height:18px}
+
+/* "All regions" is a filter state, so it wears the same selected-All styling as the chips beside it. */
+.bar .geoquick #area{background:#102F3B!important;color:#FFFFFF!important;border-color:#102F3B!important;box-shadow:inset 0 -3px #CC0033!important;font-weight:800}
+
+/* The rule under Scope and Location matches the scarlet rule above the search field. */
+.bar{border-bottom:1px solid var(--scarlet)!important}
+.bar .row2{border-top:0}

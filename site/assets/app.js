@@ -415,8 +415,10 @@
       "The organizer page could not be read automatically" + (v.why ? " (" + v.why + ")" : "") + ". Shown as compiled on " + (e.compiled || "") + ".";
     if (exceptionsOnly) {
       const plain = drift ? "Source wording changed" : v.state === "not_found" ? "Date needs review" :
-        v.state === "conflict" ? "Organizer dates conflict" : v.state === "expected" ? "Expected month" : "Source not re-checked";
-      const tone = drift || v.state === "not_found" || v.state === "conflict" ? "warn" : "muted";
+        v.state === "conflict" ? "Source reviewed" : v.state === "expected" ? "Expected month" : "Source not re-checked";
+      // 2026-09-24 (curator decision): an organizer date ambiguity belongs inside the record, where
+      // someone weighing the meeting will read it, not as a warning on every card that passes by.
+      const tone = drift || v.state === "not_found" ? "warn" : "muted";
       return `<span class="source-note ${tone}" title="${esc(tip)}">${esc(plain)}</span>`;
     }
     return `<span class="vf ${drift ? "not_found" : esc(v.state)}" title="${esc(tip)}">${ICON[drift ? "warn" : icon]}${esc(label + when)}</span>`;
