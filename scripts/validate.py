@@ -73,7 +73,9 @@ anchors = {
     "Neonatal Nurses Week": "2026-09-12",
     "Advanced Practice Provider Symposium": "2026-09-23",
     "Stony Brook Medicine Advanced Practice Provider Symposium": "2026-09-24",
-    "AAAA Annual Conference": "2027-04-15",
+    # 2026-09-24: reconciled from 2027-04-15 to 2027-04-14 against AAAA's own official event page
+    # (the one anesthetist.org links as "AAAA 2027"), which states April 14 - 18, 2027.
+    "AAAA Annual Conference": "2027-04-14",
     "ACNP National Conference": "2027-09-09",
     "RCN Advanced Nurse Practitioner Conference": "2026-10-02",
     "ICN NP/APN Network Conference": "2026-09-14",
