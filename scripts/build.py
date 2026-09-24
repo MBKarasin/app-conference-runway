@@ -474,7 +474,10 @@ def main():
     for e in eds + proj:
         st = links.get(e.get("source_url") or "")
         # only a definite 4xx/410 counts as dead; blocks and timeouts say nothing about the link
-        if st and (st.startswith("HTTP 4") and st != "HTTP 403"): e["link_dead"] = st
+        # 2026-09-24: 403/405/406/429 are the server refusing an automated reader, not a missing page.
+        # Only "gone" statuses mark a link dead; anything else was calling live pages broken.
+        REFUSALS = {"HTTP 403", "HTTP 405", "HTTP 406", "HTTP 429"}
+        if st and st.startswith("HTTP 4") and st not in REFUSALS: e["link_dead"] = st
     ver = json.load(open(ROOT / "data" / "verification.json", encoding="utf-8")) if (ROOT / "data" / "verification.json").exists() else {}
     for e in eds:
         v = ver.get(e["id"])
