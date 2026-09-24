@@ -916,3 +916,10 @@ details.month{scroll-margin-top:12px}
 .bar .row2 .geoquick .geo-sel#radius{max-width:90px;min-width:78px}
 .bar .row2 .geoquick .geo-input{width:108px;min-width:88px}
 @media(max-width:1240px){.bar .row2{flex-wrap:wrap!important}.bar .row2 .geoquick{flex:1 1 auto}}
+
+/* Line 570 paints every pressed chip in the bar teal with !important; the Focus chips must keep
+   their own record-type colour when chosen, so these override it in kind. */
+.bar #quickfocus .chip[data-focus="due"][aria-pressed="true"]{background:var(--t-due)!important;border-color:var(--t-due)!important;color:#fff!important}
+.bar #quickfocus .chip[data-focus="open"][aria-pressed="true"]{background:var(--t-call)!important;border-color:var(--t-call)!important;color:#fff!important}
+.bar #quickfocus .chip[data-focus="conferences"][aria-pressed="true"]{background:var(--t-meet)!important;border-color:var(--t-meet)!important;color:#fff!important}
+.bar #quickfocus .chip[data-focus="celebrations"][aria-pressed="true"]{background:var(--t-obs)!important;border-color:var(--t-obs)!important;color:#fff!important}
