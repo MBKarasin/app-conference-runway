@@ -18,6 +18,8 @@
   const daysBetween = (a, b) => Math.round((D(b) - D(a)) / 864e5);
   const longDate = s => { const d = D(s); return MONTH[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear(); };
   const md = s => MON[D(s).getMonth()] + " " + D(s).getDate();
+  // Phones held upright (below 700 px) get the Calendar as a day-by-day agenda; see calAgenda.
+  const PHONE_CAL = window.matchMedia ? window.matchMedia("(max-width: 700px)") : { matches: false };
   function range(e) {
     if (e.month_only) { const d = D(e.start); return "~" + MON[d.getMonth()] + " " + d.getFullYear(); }
     const a = D(e.start), b = D(e.end || e.start), y = b.getFullYear();
@@ -633,6 +635,7 @@
     // National APP Week always first; then celebrations, meetings, open abstract calls (deadlines view: calls before meetings).
     const rank = x => !x.call && x.e.s.name === "National APP Week" ? -1 : mode === "deadlines" ? (x.call ? 0 : x.e.s.kind === "observance" ? 1 : 2) : (x.call ? 2 : x.e.s.kind === "observance" ? 0 : 1);
     const expected = st.expected && mode !== "past" ? EDS.filter(e => e.expectedRow && edMatch(e) && recordFocus(e) && e.start.slice(0, 7) === st.cal) : [];
+    if (PHONE_CAL.matches) return calHead(y, m, expected) + calAgenda(items, y, m, rank);
     const SHOW = 6;
     let weeks = "";
     for (let w = 0; w < 6; w++) {
@@ -668,6 +671,9 @@
       weeks += `<div class="wk${emptyWeek ? " emptyweek" : ""}" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
     }
     const cells = `<div class="dowrow">${DOW.map(d => `<div class="dow">${d}</div>`).join("")}</div>${weeks}`;
+    return calHead(y, m, expected) + `<div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
+  }
+  function calHead(y, m, expected) {
     const Y0 = +TODAY.slice(0, 4), years = []; for (let yy = Y0 - 3; yy <= DATA.horizon; yy++) years.push(yy);
     return `<div class="calhead">
         <div class="calnav">
@@ -681,8 +687,52 @@
           <button class="btn" data-act="today">Today</button>
         </div></div>
       </div>
-      ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}
-      <div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
+      ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}`;
+  }
+  /* ---------- phone Calendar (2026-09-24): a day-by-day agenda of the same records ----------
+     A seven-column month grid does not fit a phone held upright, so below 700 px the Calendar lists
+     the month by day: each record once, under the day it starts; an abstract call under the day it
+     opens and the day it is due; anything already running on the 1st under "Continuing". Desktop and
+     tablets keep the grid; the same items, colours and record dialogs are used. */
+  function calAgenda(items, y, m, rank) {
+    const mS = `${y}-${String(m).padStart(2, "0")}-01`, mE = iso(new Date(y, m, 0));
+    const byDay = new Map(), carried = [];
+    const put = (day, r) => { if (!byDay.has(day)) byDay.set(day, []); byDay.get(day).push(r); };
+    items.forEach(x => {
+      if (x.to < mS || x.from > mE) return;
+      if (x.call) {
+        if (x.to <= mE) put(x.to, { x, due: true });
+        if (x.from < x.to && x.from >= mS) put(x.from, { x, due: false });
+        else if (x.from < mS && x.to > mE) carried.push({ x, due: false });
+      } else if (x.from >= mS) put(x.from, { x });
+      else carried.push({ x });
+    });
+    const order = r => r.due ? -2 : rank(r.x);
+    const sortRows = L => L.sort((p, q) => order(p) - order(q) || p.x.e.s.name.localeCompare(q.x.e.s.name));
+    const item = r => {
+      const { e, call } = r.x;
+      const cls = call ? "call" + (r.due ? " due" : "") : e.s.kind === "observance" ? "obs" : "meet";
+      const title = call ? (r.due ? "Abstracts due: " : "Abstracts open: ") + e.s.name : e.s.name;
+      const sub = call ? (r.due ? `Meeting ${range(e)}` : `Due ${md(r.x.to)} · meeting ${range(e)}`)
+        : [range(e), e.location].filter(Boolean).join(" · ");
+      return `<button class="ag-item ${cls}${!call && e.s.name === "National APP Week" ? " appweek" : ""}" data-e="${e.id}"><span class="ag-t">${esc(title)}</span><span class="ag-s">${esc(sub)}</span></button>`;
+    };
+    const days = [...byDay.keys()].sort();
+    if (!days.length && !carried.length) return `<div class="agenda" aria-label="${MONTH[m - 1]} ${y}"><p class="ag-empty">No matching records in ${MONTH[m - 1]} ${y}.</p></div>`;
+    const dayBlock = k => {
+      const d = D(k);
+      return `<section class="ag-day${k === TODAY ? " today" : ""}"><h3 class="ag-head"><button class="ag-date" data-dayopen="${k}" aria-label="All records for ${esc(longDate(k))}">${esc(DOW[d.getDay()])} ${d.getDate()} ${esc(MON[d.getMonth()])}${k === TODAY ? " · Today" : ""}</button></h3>${sortRows(byDay.get(k)).map(item).join("")}</section>`;
+    };
+    let h = carried.length ? `<section class="ag-day ag-carry"><h3 class="ag-head">Continuing into ${MONTH[m - 1]}</h3>${sortRows(carried).map(item).join("")}</section>` : "";
+    // In the current month the days already past fold away, so the agenda opens at today.
+    const current = mS.slice(0, 7) === TODAY.slice(0, 7);
+    const earlier = current ? days.filter(k => k < TODAY) : [], rest = current ? days.filter(k => k >= TODAY) : days;
+    if (earlier.length) {
+      const n = earlier.reduce((t, k) => t + byDay.get(k).length, 0);
+      h += `<details class="ag-earlier"><summary>Earlier in ${MONTH[m - 1]} · ${n} record${n === 1 ? "" : "s"}</summary>${earlier.map(dayBlock).join("")}</details>`;
+    }
+    h += rest.map(dayBlock).join("");
+    return `<div class="agenda" aria-label="${MONTH[m - 1]} ${y}">${h}</div>`;
   }
   function vOrbit() {
     orbitClamp();
@@ -1296,6 +1346,7 @@
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();
+    if (PHONE_CAL.addEventListener) PHONE_CAL.addEventListener("change", () => { if (st.display === "calendar") render(); });
     if (want && byId(want)) openDetail(byId(want));
   }
   boot();
