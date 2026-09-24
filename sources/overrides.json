@@ -548,13 +548,13 @@
   },
   "b9f577965d09": {
    "source_url": "https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/",
-   "evidence": "AAAA 2027 Annual Conference ... Apr 14 — 18, 2027 ... Orlando World Center Marriott",
+   "evidence": "AAAA 2027 Annual Conference — April 14 – 18, 2027 — Orlando, FL",
    "source_reviewed": true,
    "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: organizer event site and organizer LinkedIn post disagree by one day; recorded as an organizer date conflict with both sources; poster deadline added from the organizer page.",
+   "_why": "Reconciled 2026-09-24 from the organizer's own official event page rather than a social post. The remaining ambiguity is recorded inside the record instead of on the card.",
    "location": "Orlando World Center Marriott, Orlando, FL",
-   "date_conflict": true,
-   "note": "AAAA's official event site (linked \"AAAA 2027\" from anesthetist.org) lists April 14-18, 2027; AAAA's LinkedIn call for speakers said April 15-18, 2027. Kept April 15 as the start pending the published program.",
+   "date_conflict": false,
+   "note": "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session.",
    "call": {
     "status": "open",
     "opens": null,
@@ -562,7 +562,9 @@
     "final": null,
     "text": "Poster Submission Deadline: February 5, 2027, at 11:59 PM (EST)",
     "url": "https://www.anesthetist.org/aaaa-posters-2027"
-   }
+   },
+   "start": "2027-04-14",
+   "end": "2027-04-18"
   },
   "0c7fb520bb72": {
    "source_url": "https://www.nonpf.org/page/futureconferences",
@@ -727,12 +729,16 @@
    "source_reviewed": true
   },
   "4b6554deed4e": {
-   "date_conflict": true,
-   "note": "NANN's abstract page says the 43rd Annual Conference is October 5-8, 2027; its past-conferences page says October 6-8, 2027.",
-   "_why": "Repopulation audit 2026-09-24: NANN's own pages disagree by one day; kept the abstract-page dates and flagged the conflict.",
+   "date_conflict": false,
+   "note": "NANN's conference listing states the meeting date as October 6–8, 2027. Its abstract page describes the same conference as \"taking place October 5-8, 2027\", which most likely counts a pre-conference day. The listing's labelled meeting date is taken as the source of truth; confirm with NANN if you are booking travel for October 5.",
+   "_why": "Reconciled 2026-09-24 from NANN's own conference listing, which states a labelled Meeting Date, over prose on the abstract page. The remaining ambiguity is recorded inside the record instead of on the card.",
    "reviewed_on": "2026-09-24",
    "source_reviewed": true,
-   "evidence": "abstracts to present at the NANN 43rd Annual Conference taking place October 5-8, 2027, in Las Vegas, NV"
+   "evidence": "Meeting Date: October 6–8, 2027 — Las Vegas, NV",
+   "start": "2027-10-06",
+   "end": "2027-10-08",
+   "location": "Las Vegas, NV",
+   "source_url": "https://nann.org/education/past-conferences/"
   },
   "873c689cc3ce": {
    "removed": true,
