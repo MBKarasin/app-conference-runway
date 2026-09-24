@@ -90,10 +90,17 @@ app_week = next((e for e in d["editions"] if S[e["series"]]["name"] == "National
 if app_week:
     if app_week["end"] != "2026-09-25" or {x["date"] for x in (app_week.get("daily") or [])} != {f"2026-09-{n:02d}" for n in range(21, 26)}:
         errs.append("National APP Week must span September 21–25 with all five daily programs")
-    if not {"NP", "PA", "CRNA", "CAA", "CNS", "CNM"}.issubset(S[app_week["series"]]["professions"]):
-        errs.append("National APP Week must include all six APP role categories")
-if not any(s["name"] == "AAAA Annual Conference" and "CAA" in s["professions"] for s in d["series"]):
-    errs.append("CAA conference must retain its profession tag")
+    # 2026-09-24 (curator decision): CAA is not an APP role and is no longer a discipline here.
+    if not {"NP", "PA", "CRNA", "CNS", "CNM"}.issubset(S[app_week["series"]]["professions"]):
+        errs.append("National APP Week must include all five APP role categories")
+# The anaesthetist-assistant meeting stays in scope — the sweep still collects it — but it is filed
+# under CRNA, the APP audience for that content. This gate keeps it from being dropped by mistake.
+if not any(s["name"] == "AAAA Annual Conference" and "CRNA" in s["professions"] for s in d["series"]):
+    errs.append("AAAA Annual Conference must remain listed, filed under CRNA")
+if any("CAA" in (s.get("professions") or []) for s in d["series"]):
+    errs.append("CAA is retired as a discipline; those records belong under CRNA")
+if any("Nursing" in (s.get("professions") or []) for s in d["series"]):
+    errs.append("Nursing is retired as a discipline; those records belong under NP")
 student_eds = [e for e in d["editions"] if e.get("student") and e["end"] >= "2026-09-21"]
 if len(student_eds) < 12 or not any("DNP" in e["student"]["kind"] for e in student_eds):
     errs.append("student and DNP project coverage is missing")

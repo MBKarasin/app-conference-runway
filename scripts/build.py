@@ -108,7 +108,7 @@ def migrate_runway():
         text = r["org"] + " " + r["name"]
         s = series.setdefault(key, {
             "id": key, "name": re.sub(r"\s*\((\d+(st|nd|rd|th)|[IVX]+)\)\s*|\s+20\d\d$", "", r["name"]).strip(),
-            "org": r["org"], "org_url": r["url"], "professions": prof_for(r["org"], r["name"], r["track"]),
+            "org": r["org"], "org_url": r["url"], "professions": normalize_profs(prof_for(r["org"], r["name"], r["track"])),
             "specialty": spec_for(text, r["track"]), "audience": AUD[r["track"]],
             "kind": kind_for(r["name"], r.get("tags")), "region": r["reg"], "recurrence": None,
             "origin": "runway-2026-09-16", "tags_by": "curator"})
@@ -121,12 +121,27 @@ def migrate_runway():
         key = series_key(t["org"], t["name"])
         if key not in series:
             series[key] = {"id": key, "name": re.sub(r"\s+20\d\d$", "", t["name"]), "org": t["org"], "org_url": t["url"],
-                           "professions": prof_for(t["org"], t["name"], t["track"]),
+                           "professions": normalize_profs(prof_for(t["org"], t["name"], t["track"])),
                            "specialty": spec_for(t["org"] + " " + t["name"], t["track"]),
                            "audience": AUD[t["track"]], "kind": kind_for(t["name"], None), "region": t["reg"],
                            "recurrence": None, "origin": "runway-2026-09-16", "tags_by": "curator"}
         series[key]["status_note"] = t["text"]
     return series, eds
+
+# 2026-09-24 (curator decision): this is an APP platform.
+#   CAA is not an APP role. Its meetings stay in scope — the sweep still looks for them — but they
+#   are filed under CRNA, which is the APP audience for anaesthesia content.
+#   "Nursing" is not a discipline a visitor filters by here; nursing-facing meetings file under NP.
+# Applied once, at the point professions are finalised, so every source path gets the same rule.
+PROF_FOLD = {"CAA": "CRNA", "Nursing": "NP"}
+PROF_ORDER = ["NP", "AGACNP", "PA", "CRNA", "RNFA", "CNM", "CNS", "Multidisciplinary"]
+def normalize_profs(profs):
+    out = []
+    for x in (profs or []):
+        x = PROF_FOLD.get(x, x)
+        if x not in out: out.append(x)
+    out.sort(key=lambda x: PROF_ORDER.index(x) if x in PROF_ORDER else len(PROF_ORDER))
+    return out or ["Multidisciplinary"]
 
 def prof_from_agent(p):
     p = set(p or [])
@@ -142,7 +157,7 @@ def load_groups(series, eds):
         for s in g["series"]:
             key = series_key(s["org"], s["name"])
             rec = {"id": key, "name": s["name"], "org": s["org"], "org_url": s.get("org_url"),
-                   "professions": prof_from_agent(s.get("professions")),
+                   "professions": normalize_profs(prof_from_agent(s.get("professions"))),
                    "specialty": [x.lower() for x in (s.get("specialty") or [])][:3] or ["multispecialty"],
                    "audience": s.get("audience") or ["clinician"], "kind": s.get("kind") or "conference",
                    "region": s.get("region") or "us", "recurrence": s.get("recurrence"),
@@ -206,7 +221,7 @@ def present(series):
         s["focus"] = sorted({FOCUS.get(a, a) for a in (s.get("audience") or ["clinician"])})
         # RNFA: explicit tag, or perioperative/surgical meetings open to nurses (curator inference, labeled in the UI)
         if "RNFA" not in s["professions"] and any(RNFA_SPEC.search(x) for x in s["specialty"]) \
-                and any(p in s["professions"] for p in ("Nursing", "Multidisciplinary", "NP")) and "CRNA" not in s["professions"]:
+                and any(p in s["professions"] for p in ("Multidisciplinary", "NP")) and "CRNA" not in s["professions"]:
             s["rnfa_inferred"] = True
 
 def orgroot(o):
@@ -313,7 +328,7 @@ def observances():
     for s in o:
         key = "obs__" + slug(s["name"])
         series[key] = {"id": key, "name": s["name"], "org": s["org"], "org_url": s["url"],
-                       "professions": s["professions"], "specialty": ["celebration"],
+                       "professions": normalize_profs(s["professions"]), "specialty": ["celebration"],
                        "audience": ["clinician", "leader", "academic"], "kind": "observance",
                        "region": s.get("region", "us"), "recurrence": s["rule_text"], "origin": "observances", "tags_by": "curator"}
         published = {p["start"][:4]: p for p in s.get("published", [])}
