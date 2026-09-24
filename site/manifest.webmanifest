@@ -1,15 +1,15 @@
 {
   "name": "APP Conference Runway",
   "short_name": "Runway",
-  "description": "Conferences, abstract deadlines and celebration weeks for NPs and PAs.",
+  "description": "Conferences, abstract deadlines, student opportunities and celebration weeks for the global APP community.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#EDF1F0",
-  "theme_color": "#13201D",
+  "background_color": "#FFFFFF",
+  "theme_color": "#102F3B",
   "icons": [
-    {"src": "icon.svg", "sizes": "any", "type": "image/svg+xml"},
-    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}
+    {"src": "favicon-app-v2.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
+    {"src": "icon-app-v2-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-app-v2-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
   ]
 }
