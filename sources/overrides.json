@@ -95,10 +95,10 @@
   "9c25bb01384b": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "Location: Memorial Hermann Memorial City Medical Center - Tower Conference Center - Houston, Texas Dates Fri, Sep 25, 2026 - 7:45 AM to 3:30 PM CDT",
+   "evidence": "Fri, Sep 25, 2026 - 7:45 AM to 3:30 PM CDT - Memorial Hermann Memorial City Medical Center - Tower Conference Center - Houston, Texas",
    "source_url": "https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site returns 403 to cloud readers); date and venue confirmed."
   },
   "d0b45cb18fd0": {
    "source_url": "https://convention.jtbcom.co.jp/jans46/outline.html",
@@ -119,10 +119,11 @@
   "2baa3d5fee7a": {
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "October 13th, 2026 | New York, NY Registration Institute for Critical Care Medicine (ICCM) 2026 Summit for Advanced Practice Providers",
+   "evidence": "participants can attend in-person at Mount Sinai Hospital, Hess Building, or join Virtually by Zoom",
    "source_url": "https://critcaresummit.com/",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: organizer page offers in-person or Zoom attendance; format was stored as in person.",
+   "format": "hybrid"
   },
   "f21293985b2b": {
    "source_url": "https://www.nonpf.org/page/futureconferences",
@@ -163,9 +164,9 @@
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "note": "Pre-meeting workshops start October 1; the main meeting runs October 2–4.",
-   "evidence": "AVA 2026 ANNUAL SCIENTIFIC MEETING 10/1/2026 to 10/4/2026 When: Thursday October 1st - Sunday October 4th 2026",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "evidence": "AVA 2026 ANNUAL SCIENTIFIC MEETING 10/1/2026 to 10/4/2026 ... Gaylord Texan Resort & Convention Center Grapevine, Texas",
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site returns 403 to cloud readers); dates and venue confirmed."
   },
   "785efb278b8a": {
    "source_url": "https://www.acep.org/sa",
@@ -258,8 +259,11 @@
   },
   "e48b8600d4b5": {
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "okpa.org read 2026-09-22: \"53rd Annual OAPA CME Conference ... September 30 - October 2, 2026 ... Embassy Suites Downtown OKC\"."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: organizer event page describes live, streamed and on-demand participation; format was stored as in person.",
+   "format": "hybrid",
+   "source_url": "https://www.okpa.org/events/annual-oapa-fall-cme-conference-2026/",
+   "evidence": "attendees can participate through live presentations, virtual streaming, or an on-demand library"
   },
   "460a16759e79": {
    "source_reviewed": true,
@@ -277,17 +281,25 @@
   },
   "9fa932165f0a": {
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: program PDF opened in a browser on 2026-09-24; dates, venue and in-person format confirmed.",
    "source_url": "https://seoc.cl/uploads/islands/26/files/6ab2a4b0c317d_programa-8-congreso-seoc-2026_.pdf",
-   "evidence": "19,20 y 21 de noviembre 2026 - Santiago, Best Western Premier Marina Las Condes"
+   "evidence": "19/20/21 NOVIEMBRE EVENTO PRESENCIAL ... HOTEL BEST WESTERN Alonso de Córdova 5727, Las Condes"
   },
   "df41d3af0294": {
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: organizer page states a submission deadline of August 29, 2026, which has passed; call was stored as tba.",
    "source_url": "https://congresoenfermeria.ufro.cl/",
-   "evidence": "FECHA 19 Y 20 DE NOVIEMBRE 2026"
+   "evidence": "FECHA 19 Y 20 DE NOVIEMBRE 2026",
+   "call": {
+    "status": "closed",
+    "opens": null,
+    "closes": "2026-08-29",
+    "final": null,
+    "text": "Submission Deadline: August 29, 2026",
+    "url": "https://congresoenfermeria.ufro.cl/"
+   }
   },
   "c6226c5e9add": {
    "source_reviewed": true,
@@ -443,21 +455,21 @@
    },
    "note": null,
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
+   "reviewed_on": "2026-09-24",
    "evidence": "ENRS 39th Annual Scientific Sessions LOEWS PHILADELPHIA 03 31 27 - 04 02 27",
    "evidence_image": "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "_why": "Repopulation audit 2026-09-24: banner image re-read in a browser on 2026-09-24 (ENRS 39th Annual Scientific Sessions, LOEWS PHILADELPHIA, 03.31.27 - 04.02.27); the site publishes the dates only in that image."
   },
   "bfb1cef79cb1": {
    "note": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
    "save_the_date": true,
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
+   "reviewed_on": "2026-09-24",
    "source_url": "https://mypnaa.org/events",
    "evidence": "July 17-24, 2027 This year, we’re taking you on a spectacular Inter-Island Cruise in Hawaii",
    "evidence_image": "https://mypnaa.org/resources/Events/PNAA48/48th%20PNAA%20National%20Convention%20Flyer%20with%20Theme%20v3.png",
    "location": "Inter-island cruise, Hawaii (host chapter: PNA Hawaii)",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "_why": "Repopulation audit 2026-09-24: organizer flyer image re-read in a browser on 2026-09-24 (Save the date July 17-24, 2027, 48th PNAA Annual National Convention); PNAA publishes the dates only in that flyer."
   },
   "4963c59b8b50": {
    "source_reviewed": true,
@@ -468,24 +480,24 @@
   },
   "64d695b36d4b": {
    "source_url": "https://www.iapacon.org/",
-   "evidence": "22nd Annual Conference of IAPA | 6th International Conference of GACOPA Jointly Hosted by 24th, 25th & 26th September 2026 | Fairfield by Marriott – Ozone Convention Centre, Kolkata",
+   "evidence": "24th, 25th & 26th September 2026 | Fairfield by Marriott – Ozone Convention Centre, Kolkata",
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed."
   },
   "825ae90df474": {
    "source_url": "https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs",
-   "evidence": "Het 18e jaarcongres zal plaatsvinden in het NBC-congrescentrum in Nieuwegein op donderdag 1 en vrijdag 2 oktober 2026.",
+   "evidence": "Het 18e jaarcongres zal plaatsvinden in het NBC-congrescentrum in Nieuwegein op donderdag 1 en vrijdag 2 oktober 2026. ... zowel live als online deelnemen",
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates, venue and hybrid format confirmed."
   },
   "6db24e4a848d": {
    "source_url": "https://onanigeria.org/registration",
    "evidence": "7th - 10th October 2026 Abuja, Nigeria",
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates confirmed."
   },
   "2fedca69186a": {
    "source_url": "https://www.tnpa.org.tw/events/content.php?id=6262",
@@ -503,10 +515,14 @@
   },
   "2891e7185321": {
    "source_url": "https://pinc.fkep.unpad.ac.id/",
-   "evidence": "HYBRID CONFERENCE • NOVEMBER 6th - 7th, 2026 Faculty of Nursing, Universitas Padjadjaran",
+   "evidence": "HYBRID CONFERENCE • NOVEMBER 7th - 8th, 2026, Auditorium Suharyati - Universitas Padjadjaran",
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: organizer site now shows November 7-8, 2026 (previously captured as 6-7) and labels the meeting hybrid.",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "format": "hybrid",
+   "location": "Auditorium Suharyati, Universitas Padjadjaran, Jatinangor, Indonesia"
   },
   "08404cd571fb": {
    "source_url": "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx",
@@ -516,11 +532,22 @@
    "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "b9f577965d09": {
-   "source_url": "https://www.linkedin.com/posts/american-academy-of-anesthesiologists-assistants_aaaa2027-callforspeakers-anesthesiologistassistant-activity-7481057620322091008-Vu-Z",
-   "evidence": "The Call for Speakers for the AAAA 2027 Annual Conference is now open. Join us April 15-18, 2027, in Orlando, Florida",
+   "source_url": "https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/",
+   "evidence": "AAAA 2027 Annual Conference ... Apr 14 — 18, 2027 ... Orlando World Center Marriott",
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: organizer event site and organizer LinkedIn post disagree by one day; recorded as an organizer date conflict with both sources; poster deadline added from the organizer page.",
+   "location": "Orlando World Center Marriott, Orlando, FL",
+   "date_conflict": true,
+   "note": "AAAA's official event site (linked \"AAAA 2027\" from anesthetist.org) lists April 14-18, 2027; AAAA's LinkedIn call for speakers said April 15-18, 2027. Kept April 15 as the start pending the published program.",
+   "call": {
+    "status": "open",
+    "opens": null,
+    "closes": "2027-02-05",
+    "final": null,
+    "text": "Poster Submission Deadline: February 5, 2027, at 11:59 PM (EST)",
+    "url": "https://www.anesthetist.org/aaaa-posters-2027"
+   }
   },
   "0c7fb520bb72": {
    "source_url": "https://www.nonpf.org/page/futureconferences",
@@ -609,6 +636,108 @@
    "reviewed_on": "2026-09-23",
    "evidence": "Join the global pain community at the 2026 World Congress on Pain in Bangkok, Thailand, from 26 – 30 October 2026.",
    "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+  },
+  "16ee2e3c0b61": {
+   "format": "hybrid",
+   "source_url": "https://acgmeetings.gi.org/registration/",
+   "evidence": "ACG is offering flexible registration options for this year's hybrid conference. Registrants can choose to attend in-person in Nashville, participate virtually, or select a combination of both.",
+   "_why": "Repopulation audit 2026-09-24: organizer registration page describes a hybrid meeting; format was stored as in person.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true
+  },
+  "db80e502cbf5": {
+   "format": "hybrid",
+   "source_url": "https://ebpom.org/product/ebpom-ireland-2026/",
+   "evidence": "28 September - 01 October 2026 ... LIVE in Dingle, Ireland ... Virtual attendance options are also available",
+   "_why": "Repopulation audit 2026-09-24: organizer product page offers virtual attendance alongside the live meeting; format was stored as in person.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true
+  },
+  "97a2b66704e8": {
+   "call": {
+    "status": "tba",
+    "opens": null,
+    "closes": null,
+    "final": null,
+    "text": "ELSO's meetings list shows 'Deadline: 05 November 2026' for this congress without saying what the deadline is; the earlier 'Closed Jul 14' had no evidence on file",
+    "url": "https://www.elso.org/ecmo-education/elso-meetings.aspx"
+   },
+   "_why": "Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true,
+   "evidence": "VII Congreso ELSOLATAM 2026 Location: San Jose, Costa Rica November 4, 2026 - November 6, 2026"
+  },
+  "5c74b6afd77c": {
+   "call": {
+    "status": "open",
+    "opens": null,
+    "closes": null,
+    "final": null,
+    "text": "Call for Abstracts shown as open on the organizer page (deadline not stated on that page)",
+    "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/"
+   },
+   "_why": "Repopulation audit 2026-09-24: organizer page shows an open Call for Abstracts; call was stored as closed.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true,
+   "evidence": "ACS Innovation Summit March 11-12, 2027 | Chicago, Illinois"
+  },
+  "b5ed85970d92": {
+   "call": {
+    "status": "open",
+    "opens": null,
+    "closes": "2026-09-30",
+    "final": null,
+    "text": "论文投稿截止日期 2026年9月30日 (paper submission deadline September 30, 2026)",
+    "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm"
+   },
+   "_why": "Repopulation audit 2026-09-24: organizer notice states a paper submission deadline of September 30, 2026; call was stored as tba.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true
+  },
+  "b64d6d0401c3": {
+   "source_url": "https://nnak2026.inburstcorp.com/",
+   "evidence_image": "https://nnak2026.inburstcorp.com/img/background.jpeg",
+   "evidence": "28-30TH OCT 2026 ... 68TH INTERNATIONAL ANNUAL NURSES SCIENTIFIC CONFERENCE & AGM ... VENUE: Sai Rock Hotel, Mombasa County",
+   "location": "Sai Rock Hotel, Mombasa County, Kenya",
+   "call": {
+    "status": "tba",
+    "opens": null,
+    "closes": null,
+    "final": null,
+    "text": "Flyer invites abstracts by email to the NNAK abstracts address; no deadline shown",
+    "url": "https://nnak2026.inburstcorp.com/"
+   },
+   "_why": "Repopulation audit 2026-09-24: original organizer page now returns 404; NNAK home menu links \"2026 ASC & AGM\" to this registration site, whose flyer image carries the dates and venue (read in a browser on 2026-09-24).",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true
+  },
+  "4b6554deed4e": {
+   "date_conflict": true,
+   "note": "NANN's abstract page says the 43rd Annual Conference is October 5-8, 2027; its past-conferences page says October 6-8, 2027.",
+   "_why": "Repopulation audit 2026-09-24: NANN's own pages disagree by one day; kept the abstract-page dates and flagged the conflict.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true,
+   "evidence": "abstracts to present at the NANN 43rd Annual Conference taking place October 5-8, 2027, in Las Vegas, NV"
+  },
+  "873c689cc3ce": {
+   "removed": true,
+   "_why": "Repopulation audit 2026-09-24: duplicate of 4b6554deed4e (same NANN 43rd Annual Conference, captured from a second NANN page with a different start day); the conflict is recorded on the kept record."
+  },
+  "2cb4704b50ae": {
+   "evidence": "When: October 16, 2026 Where: The Drexelbrook Catering & Event Center",
+   "location": "Drexelbrook Catering & Event Center, Drexel Hill, PA",
+   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); date and venue confirmed.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true
+  },
+  "168119a896f1": {
+   "evidence": "acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães",
+   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
+   "reviewed_on": "2026-09-24",
+   "source_reviewed": true
+  },
+  "637a8ed896be": {
+   "_why": "Repopulation audit 2026-09-24: annanurse.org was offline for maintenance on 2026-09-24; stored dates (April 17-21, 2027) left as captured, not re-confirmed."
   }
  },
  "rules": {
