@@ -268,6 +268,20 @@
     if (st.spec && !(s.specialty || []).includes(st.spec)) return false;
     return true;
   }
+  // 2026-09-24 (curator decision): a list card carries the same vocabulary as the filter rows —
+  // its Scope tags and its Focus (record type), the latter in that type's colour.
+  const SCOPE_LABEL = Object.fromEntries(SCOPE_CHIPS.filter(([v]) => v));
+  const scopeBadges = s => scopeTags(s).filter(t => SCOPE_LABEL[t])
+    .map(t => `<span class="tag scope" title="Scope: ${esc(SCOPE_LABEL[t])}">${esc(SCOPE_LABEL[t])}</span>`).join("");
+  function focusBadges(e) {
+    const out = [];
+    out.push(isCelebration(e)
+      ? `<span class="tag focus obs" title="Focus: Celebrations">Celebration</span>`
+      : `<span class="tag focus meet" title="Focus: Conferences">Conference</span>`);
+    if (isOpenNow(e)) out.push(`<span class="tag focus open" title="Focus: Open abstracts">Open abstracts</span>`);
+    else if (hasUpcomingDeadline(e)) out.push(`<span class="tag focus due" title="Focus: Abstracts due">Abstracts due</span>`);
+    return out.join("");
+  }
   const scopeTags = s => [...(s.focus || []), ...(s.studentTag || s.hasStu || s.hasDnp ? ["students"] : [])];
   /* ---------- Focus: one record type at a time ---------- */
   const isCelebration = e => e.s.kind === "observance";
@@ -440,14 +454,15 @@
     const dueOn = dateMode && e.call && e.call.closes ? D(e.call.closes) : null;
     const day = dateMode ? (dueOn ? String(dueOn.getDate()) : "Open") : e.month_only ? MON[d.getMonth()] : e.start === e.end ? String(d.getDate()) : same ? d.getDate() + "–" + b.getDate() : d.getDate() + "→";
     const sub = dateMode ? (dueOn ? "Due " + MON[dueOn.getMonth()] + " " + dueOn.getFullYear() : "No due date posted") : e.month_only ? d.getFullYear() + " · expected" : (same || e.start === e.end ? MON[d.getMonth()] : MON[d.getMonth()] + "–" + MON[b.getMonth()] + " " + b.getDate()) + " " + d.getFullYear();
-    const kindTag = s.kind === "observance" ? '<span class="tag">Celebration</span>' : s.kind !== "conference" ? `<span class="tag">${esc(s.kind[0].toUpperCase() + s.kind.slice(1))}</span>` : "";
+    // the Focus badge already says Celebration / Conference; kindTag now only refines the meeting form
+    const kindTag = s.kind === "observance" || s.kind === "conference" ? "" : `<span class="tag">${esc(s.kind[0].toUpperCase() + s.kind.slice(1))}</span>`;
     const dist = st.near && e.geo && e.geo.lat != null ? `<span>${Math.round(miles(st.near.lat, st.near.lon, e.geo.lat, e.geo.lon))} mi away</span>` : "";
     const appWeekNow = s.name === "National APP Week" && e.start <= TODAY && e.end >= TODAY;
     return `<article class="ev${e.expectedRow ? " expected" : ""}${e.past ? " past" : ""}${appWeekNow ? " app-week-now" : ""}${dateMode ? " by-due" : ""}" data-e="${e.id}" tabindex="0" role="button" aria-label="${esc(s.name + ", " + (dateMode ? (dueOn ? "abstracts due " + longDate(e.call.closes) + ", meeting " : "abstract call open, meeting ") : "") + range(e))}">
       <div class="when" style="--c:${dateMode ? "var(--t-call)" : colorOf(s)}"><span class="d">${esc(day)}</span><span class="m">${esc(sub)}</span></div>
       <div class="body">${appWeekNow ? `<div class="live-label">OUR WEEK · HAPPENING NOW THROUGH ${esc(md(e.end))}</div>` : ""}<div class="title">${esc(s.name)}</div><div class="org">${esc(s.org_display || s.org)}</div>
         <div class="meta">${dateMode ? `<span class="meeting-dates">Meeting ${esc(range(e))}</span>` : ""}${e.location ? `<span class="loc">${esc(e.location)}</span>` : ""}${dist}${e.format && e.format !== "in person" ? `<span>${esc(e.format[0].toUpperCase() + e.format.slice(1))}</span>` : ""}${e.theme ? `<span><i>${esc(e.theme)}</i></span>` : ""}</div>
-        <div class="badges">${profTags(s)}${kindTag}</div>${studentMode && e.student ? `<p class="student-line"><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)}</p>` : ""}</div>
+        <div class="badges">${profTags(s)}${scopeBadges(s)}${focusBadges(e)}${kindTag}</div>${studentMode && e.student ? `<p class="student-line"><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)}</p>` : ""}</div>
       <div class="side">${studentMode && !dateMode ? (e.student && e.student.deadline && e.student.deadline >= TODAY ? `<span class="student-due">Submit by ${esc(md(e.student.deadline))}</span>` : "") : callPill(e)}${vBadge(e)}</div></article>`;
   }
   const empty = msg => `<div class="empty">${esc(msg)} <button class="linkbtn" data-act="clear">Clear all filters</button></div>`;
@@ -721,6 +736,37 @@
     if (!current) { el.hidden = true; return; }
     el.hidden = false;
     el.innerHTML = `<div class="live-ribbon"><span class="live-flag">${current.s.name === "National APP Week" ? `OUR WEEK · DAY ${daysBetween(current.start, TODAY) + 1} OF ${daysBetween(current.start, current.end) + 1}` : "HAPPENING NOW"}</span><strong>${esc(current.s.name)}</strong><span class="live-dates">${esc(range(current))} · through ${esc(MON[D(current.end).getMonth()] + " " + D(current.end).getDate())}</span><button class="live-source" data-e="${esc(current.id)}">View official source and details ↗</button></div>`;
+  }
+
+  /* ---------- fidelity metric (2026-09-24, curator decision) ----------
+     What it counts: of every dated record the site shows, the share that
+       (1) carries the organizer's own wording, or is computed from a published rule,
+       (2) holds a good verification state,
+       (3) has a source link, and, if the meeting has not happened yet,
+       (4) a source link that still resolves, and
+       (5) a confirmation no older than 90 days.
+     What it does NOT claim: that end dates, venues or submission cut-off times were verified.
+     It falls when an organizer removes a page an upcoming record depends on, when a check fails
+     with no organizer wording on file, or when confirmations go stale. */
+  const FID_OK = new Set(["verified", "rule", "announced", "archived"]);
+  function fidelityMetric() {
+    const dated = EDS.filter(e => !e.expectedRow && !e.month_only);
+    if (!dated.length) return null;
+    const ok = dated.filter(e => {
+      const v = e.verify || {};
+      if (!(e.evidence || v.state === "rule")) return false;
+      if (!FID_OK.has(v.state)) return false;
+      if (!e.source_url) return false;
+      if (!e.past) {
+        if (e.link_dead) return false;
+        if (v.state !== "rule") {
+          const seen = v.last_verified || v.checked;
+          if (!seen || daysBetween(seen, TODAY) > 90) return false;
+        }
+      }
+      return true;
+    }).length;
+    return { pct: (100 * ok) / dated.length, ok, total: dated.length };
   }
 
   /* ---------- chip availability: a filter is offered only when it can return a record ---------- */
@@ -1099,7 +1145,24 @@
     }
     prep(d);
     const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
-    $("#updated").innerHTML = `<span>Updated ${esc(srcStamp)}</span>`;
+    const f = fidelityMetric();
+    // The dot reports the run, not the mood: red when the last check did not land, amber when
+    // fidelity has slipped below 95%, green otherwise.
+    const checkedAt = d.sources_checked || null;
+    const staleHours = checkedAt ? (Date.now() - Date.parse(checkedAt)) / 36e5 : Infinity;
+    const failed = !checkedAt || staleHours > 36;
+    const tone = failed ? "bad" : (f && f.pct < 95 ? "warn" : "ok");
+    const dotTip = failed
+      ? "The most recent scheduled source check did not complete. The dates below are as of the time shown."
+      : tone === "warn"
+        ? "The last source check completed, and the fidelity metric is below 95%."
+        : "The last source check completed and every dated record meets the fidelity test.";
+    const fidTip = f
+      ? `${f.ok} of ${f.total} dated records carry the organizer's own wording (or a published rule), hold a good verification state, and — for meetings still ahead — a working source link confirmed within 90 days. It does not claim that end dates, venues or submission cut-off times were verified.`
+      : "";
+    $("#updated").innerHTML =
+      `<span class="stamp-line"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i>Updated ${esc(srcStamp)}</span>` +
+      (f ? `<span class="fidline" title="${esc(fidTip)}">Fidelity Metric: ${f.pct.toFixed(2)}%</span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();

@@ -960,3 +960,29 @@ details.month{scroll-margin-top:12px}
 .cal .ce.appweek:hover{background:color-mix(in srgb,var(--t-obs) 26%,var(--surface))!important;color:#4F2200!important}
 .cal .ce.appweek small{color:#8A4A10!important}
 .cal .cell:has(.ce.appweek){background:var(--surface)!important}
+
+/* ===== 2026-09-24 · header stamp and list-card badges ===== */
+
+/* Status dot: the run's health, not decoration. Green = the last check landed and fidelity holds;
+   amber = fidelity below 95%; red = the last scheduled check did not complete. */
+.mast .updated span::before{display:none!important}
+.mast .updated .stat{display:inline-block!important;width:8px;height:8px;border-radius:50%;
+  margin-right:7px;vertical-align:1px;background:#1C7F48}
+.mast .updated .stat.ok{background:#1C7F48}
+.mast .updated .stat.warn{background:#C25100}
+.mast .updated .stat.bad{background:#CC0033}
+/* The stamp sits level with the first line of the lede, with the metric beneath it. */
+.mast .ledeRow{align-items:start}
+.mast .updated{align-self:start;padding-top:0;row-gap:2px}
+.mast .updated .stamp-line{display:block}
+.mast .updated .fidline{display:block;font-size:11.5px;font-weight:700;letter-spacing:.01em;
+  color:#45606B;font-variant-numeric:tabular-nums}
+
+/* Scope and Focus badges on a list card use the same words as the filter rows above it. */
+.ev .badges .tag.scope{background:#EEF3F4;color:#23404B;border:1px solid #C9D7DB}
+.ev .badges .tag.focus{border:1px solid currentColor;background:transparent;font-weight:800}
+.ev .badges .tag.focus.meet{color:var(--t-meet)}
+.ev .badges .tag.focus.obs{color:var(--t-obs)}
+.ev .badges .tag.focus.due{color:var(--t-due)}
+.ev .badges .tag.focus.open{color:var(--t-call)}
+.ev .badges{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
