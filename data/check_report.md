@@ -1,14 +1,16 @@
 # Nightly source check — 2026-09-24
 
-Generated 2026-09-24T10:38:42Z from commit 26e451f. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-09-24T18:01:02Z from commit 322456a. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 296 · verified 265 · not found 4 · unreachable 27
-Checker could not match: 31 · of these, curator evidence on file: 30 · open: 1
+Editions re-checked: 296 · verified 263 · not found 4 · unreachable 29
+Checker could not match: 33 · of these, curator evidence on file: 30 · open: 3
 Past editions frozen (not re-read): 595
 
-## Could not read the page — open (1)
+## Could not read the page — open (3)
 
-- Annual Assembly of Hospice and Palliative Care — 2027-03-17 — HTTP 403 — https://aahpm.org/education-events/annual-assembly/
+- ATS International Conference — 2027-05-14 — HTTP 403 — https://site.thoracic.org/conference/attendees/future-conferences
+- ATS International Conference — 2028-05-19 — HTTP 403 — https://site.thoracic.org/conference/attendees/future-conferences
+- ATS International Conference — 2029-05-18 — HTTP 403 — https://site.thoracic.org/conference/attendees/future-conferences
 
 ## Checker could not match, curator evidence on file (30)
 
@@ -43,4 +45,4 @@ Past editions frozen (not re-read): 595
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=1
+OPEN_ITEMS=3
