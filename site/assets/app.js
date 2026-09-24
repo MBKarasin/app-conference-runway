@@ -406,22 +406,24 @@
         h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${!call && e.s.name === "National APP Week" ? " appweek" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= visibleLanes ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= visibleLanes ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
       });
       if (emptyWeek) h += `<div class="week-empty" style="grid-column:1 / -1;grid-row:2">No matching events this week.</div>`;
-      if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${visibleLanes + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false">+${hidden} more this week</button>`;
+      if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${visibleLanes + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false"><span class="overflow-main">+${hidden} more this week</span><span class="overflow-cue">Expand <b aria-hidden="true">↑</b></span></button>`;
       const rc = emptyWeek ? "26px auto" : `26px${Math.min(nL, visibleLanes) ? ` repeat(${Math.min(nL, visibleLanes)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = emptyWeek ? rc : `26px repeat(${nL + 1}, auto)`;
       weeks += `<div class="wk${emptyWeek ? " emptyweek" : ""}" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
     }
     const cells = `<div class="dowrow">${DOW.map(d => `<div class="dow">${d}</div>`).join("")}</div>${weeks}`;
     const Y0 = +TODAY.slice(0, 4), years = []; for (let yy = Y0 - 3; yy <= DATA.horizon; yy++) years.push(yy);
-    const title = { upcoming: "Meetings and abstract deadlines", deadlines: "Abstract calls: openings and deadlines", past: "Past meetings", directory: "Every edition on file" }[mode];
     return `<div class="calhead">
-        <button class="btn" data-act="prevY" aria-label="Previous year">«</button><button class="btn" data-act="prev" aria-label="Previous month">‹</button>
-        <h2>${MONTH[m - 1]} ${y}</h2>
-        <button class="btn" data-act="next" aria-label="Next month">›</button><button class="btn" data-act="nextY" aria-label="Next year">»</button>
-        <label class="sr" for="calM">Month</label><select id="calM" class="sel">${MONTH.map((n, i) => `<option value="${i + 1}" ${i + 1 === m ? "selected" : ""}>${n}</option>`).join("")}</select>
-        <label class="sr" for="calY">Year</label><select id="calY" class="sel">${years.map(yy => `<option ${yy === y ? "selected" : ""}>${yy}</option>`).join("")}</select>
-        <button class="btn" data-act="today">Today</button></div>
-      <p class="fine">${esc(title)}</p>
-      <div class="legend"><span><i style="--c:var(--t-meet)"></i>Meeting</span><span><i style="--c:var(--t-call)"></i>Abstract call open, ends on the due date</span><span><i class="duekey"></i>Abstracts due</span><span><i style="--c:var(--t-obs)"></i>Celebration</span><span class="fine">Disciplines appear as badges on each record.</span></div>
+        <div class="calnav">
+          <button class="btn" data-act="prevY" aria-label="Previous year">«</button><button class="btn" data-act="prev" aria-label="Previous month">‹</button>
+          <h2>${MONTH[m - 1]} ${y}</h2>
+          <button class="btn" data-act="next" aria-label="Next month">›</button><button class="btn" data-act="nextY" aria-label="Next year">»</button>
+        </div>
+        <div class="calmeta"><div class="caljump">
+          <label class="sr" for="calM">Month</label><select id="calM" class="sel">${MONTH.map((n, i) => `<option value="${i + 1}" ${i + 1 === m ? "selected" : ""}>${n}</option>`).join("")}</select>
+          <label class="sr" for="calY">Year</label><select id="calY" class="sel">${years.map(yy => `<option ${yy === y ? "selected" : ""}>${yy}</option>`).join("")}</select>
+          <button class="btn" data-act="today">Today</button>
+        </div><div class="legend callegend"><span><i style="--c:var(--t-meet)"></i>Meeting</span><span><i style="--c:var(--t-call)"></i>Abstracts open</span><span><i class="duekey"></i>Abstracts due</span><span><i style="--c:var(--t-obs)"></i>Celebration</span></div></div>
+      </div>
       ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}
       <div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
   }
@@ -548,6 +550,7 @@
     $("#tabs").innerHTML = TABS.map(([v, l]) => `<button id="tab-${v}" role="tab" aria-controls="view" aria-selected="${st.view === v}" tabindex="${st.view === v ? 0 : -1}" data-view="${v}">${esc(l)}</button>`).join("");
     $("#view").setAttribute("aria-labelledby", "tab-" + st.view);
     $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${chipRow("prof", PROF_CHIPS)}`;
+    $("#quickfocus").innerHTML = `<span class="flabel">Focus</span>${focusRow()}`;
     $("#viewtools").innerHTML = `${st.view === "students" ? "" : `<div class="seg" role="group" aria-label="Display">
         <button data-display="list" aria-pressed="${st.display === "list"}">${ICON.list}List</button>
         <button data-display="calendar" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button>
@@ -567,7 +570,6 @@
       <label class="geo-label" for="radius">within</label><select id="radius" class="sel">${[25, 50, 100, 250, 500, 1000, 2000].map(r => `<option value="${r}" ${st.radius === r ? "selected" : ""}>${r} miles</option>`).join("")}</select>
       ${st.nearQ && !st.near ? `<span class="nearmsg">No match for “${esc(st.nearQ)}”</span>` : st.near ? `<span class="nearmsg">${esc(st.near.label)}</span>` : ""}`;
     $("#filters").innerHTML = `
-      <div class="fgroup focus-multi"><span class="flabel">Focus</span>${focusRow()}<span class="filter-hint">Select one or more</span></div>
       <div class="fgroup"><span class="flabel">Type</span>${chipRow("kind", KIND_CHIPS)}</div>
       <div class="fgroup"><label class="flabel" for="spec">Specialty</label><select id="spec" class="sel"><option value="">All specialties</option>${SPECS.map(s => `<option ${s === st.spec ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
         <label class="toggle"><input type="checkbox" id="openOnly" ${st.openOnly ? "checked" : ""}> Abstract call open</label>
@@ -584,7 +586,7 @@
   function render(keepFocus) {
     const active = document.activeElement;
     const f = keepFocus && active && active.id;
-    const replaced = active && active.closest && active.closest("#tabs,#quickprof,#geoquick,#filters,#viewtools");
+    const replaced = active && active.closest && active.closest("#tabs,#quickprof,#quickfocus,#geoquick,#filters,#viewtools");
     const restore = replaced ? { id: active.id, view: active.dataset.view, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v, focus: active.dataset.focus } : null;
     spotlight(); controls();
     const v = st.view === "students" ? vStudents : st.display === "calendar" ? vCalendar : st.display === "orbit" ? vOrbit : { upcoming: vList, deadlines: vDeadlines, past: vPast, directory: vDirectory }[st.view];
@@ -627,7 +629,7 @@
     if (f && document.getElementById(f)) { const el = document.getElementById(f); el.focus(); if (el.setSelectionRange && el.value) el.setSelectionRange(el.value.length, el.value.length); }
     else if (restore) {
       const el = (restore.id && document.getElementById(restore.id)) ||
-        [...document.querySelectorAll("#tabs button,#quickprof button,#geoquick button,#filters button,#viewtools button")].find(x =>
+        [...document.querySelectorAll("#tabs button,#quickprof button,#quickfocus button,#geoquick button,#filters button,#viewtools button")].find(x =>
           (restore.view && x.dataset.view === restore.view) ||
           (restore.display && x.dataset.display === restore.display) ||
           (restore.focus != null && x.dataset.focus === restore.focus) ||
@@ -807,7 +809,9 @@
         const cell = t.closest(".wk") || t.closest(".cell"), expanded = cell.classList.toggle("expanded");
         if (cell.dataset.rx) cell.style.gridTemplateRows = expanded ? cell.dataset.rx : cell.dataset.rc;
         t.setAttribute("aria-expanded", String(expanded));
-        t.textContent = expanded ? "Show fewer" : `+${t.dataset.extra} more`;
+        t.innerHTML = expanded
+          ? `<span class="overflow-main">Show fewer</span><span class="overflow-cue">Collapse <b aria-hidden="true">↓</b></span>`
+          : `<span class="overflow-main">+${t.dataset.extra} more this week</span><span class="overflow-cue">Expand <b aria-hidden="true">↑</b></span>`;
         return;
       }
       if (t.dataset.s) { const L = EDS.filter(e => e.series === t.dataset.s).sort((a, b) => a.start.localeCompare(b.start)); const pick = L.find(e => !e.past && !e.expectedRow) || [...L].reverse().find(e => !e.expectedRow) || L[0]; if (pick) openDetail(pick); return; }

@@ -12,7 +12,12 @@
     if (r.title) {
       var title = r.titleUrl ? document.createElement("a") : document.createElement("span");
       if (r.titleUrl) { title.href = r.titleUrl; title.target = "_blank"; title.rel = "noopener noreferrer"; }
-      title.className = "role-title"; title.textContent = r.title;
+      title.className = "role-title";
+      if (r.titleLines && r.titleLines.length) {
+        r.titleLines.forEach(function (line) {
+          var span = document.createElement("span"); span.className = "role-title-line"; span.textContent = line; title.appendChild(span);
+        });
+      } else title.textContent = r.title;
       li.appendChild(title);
     }
     $("roles").appendChild(li);
