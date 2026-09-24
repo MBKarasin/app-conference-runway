@@ -8,8 +8,8 @@ It is a builder's tool; the GitHub workflow does not run it. Every line printed 
 is non-zero if any assertion failed. It checks what screenshots have missed before: the display-switch
 separators, the year on every Orbit month, the filter rows, the header's Fidelity and Reliability indices
 (labels, and values re-derived from the published data), the landmark celebration weeks in every view, each
-Focus in each view, legacy links, the request address, the footer's link to the index definitions, and
-console errors.
+Focus in each view, legacy links, the request address, the footer's link to the index definitions, phones
+held upright and sideways (touch-emulated), and console errors.
 """
 import argparse, functools, http.server, re, socketserver, sys, threading
 from pathlib import Path
@@ -230,6 +230,48 @@ def main():
                 go(hash_)
                 over = page.evaluate("document.scrollingElement.scrollWidth - window.innerWidth")
                 check(f"no horizontal page scroll at {w} px ({hash_ or 'Orbit'})", over <= 0, f"{over}px")
+        # 9. Phones (2026-09-24): upright and sideways, with touch, as a phone reports itself. The desktop
+        #    layout must not change; that is checked by screenshot diff at release and guarded here.
+        page.set_viewport_size({"width": 1440, "height": 1000})
+        go("display=calendar")
+        check("desktop Calendar keeps the month grid (no phone agenda)", page.locator("#view .calspan").count() == 1 and page.locator("#view .agenda").count() == 0)
+        check("desktop header keeps the full action labels", page.evaluate("[...document.querySelectorAll('.hb-short')].every(x => getComputedStyle(x).display === 'none')"))
+        UA_PHONE = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+        for (pw, ph, orient) in ((390, 664, "upright"), (844, 340, "sideways")):
+            ctx = browser.new_context(viewport={"width": pw, "height": ph}, is_mobile=True, has_touch=True, user_agent=UA_PHONE)
+            ph_page = ctx.new_page()
+            ph_page.on("pageerror", lambda e: errors.append(str(e)))
+            def pgo(hash_=""):
+                ph_page.goto(base + ("#" + hash_ if hash_ else ""), wait_until="networkidle")
+                ph_page.reload(wait_until="networkidle")
+                ph_page.wait_for_selector("#quickfocus .chip", timeout=15000)
+            pgo("display=calendar")
+            tops = ph_page.evaluate("[...document.querySelectorAll('.viewtools .seg button')].map(b => Math.round(b.getBoundingClientRect().top))")
+            check(f"phone {orient}: the four display buttons sit on one row", len(tops) == 4 and max(tops) - min(tops) <= 2, str(tops))
+            over = ph_page.evaluate("document.scrollingElement.scrollWidth - window.innerWidth")
+            check(f"phone {orient}: no sideways page scroll", over <= 0, f"{over}px")
+            if orient == "upright":
+                rows = ph_page.evaluate("""['#quickprof','#quickfocus','#quickscope'].map(s => { const e = document.querySelector(s), cs = getComputedStyle(e);
+                    return {h: Math.round(e.getBoundingClientRect().height), more: e.scrollWidth > e.clientWidth, scrolls: cs.overflowX === 'auto',
+                            fade: (cs.maskImage || cs.webkitMaskImage || 'none') !== 'none'}; })""")
+                check("phone upright: each chip row is one line, and a row with more chips swipes and fades at the edge",
+                      all(r["h"] < 45 and (not r["more"] or (r["scrolls"] and r["fade"])) for r in rows), str(rows))
+                cal = ph_page.evaluate("""() => ({agenda: !!document.querySelector('#view .agenda'), grid: !!document.querySelector('#view .calspan'),
+                    wide: [...document.querySelectorAll('#view .ag-item')].filter(x => x.getBoundingClientRect().right > innerWidth + 1).length,
+                    items: document.querySelectorAll('#view .ag-item').length, viewTop: Math.round(document.querySelector('#view').getBoundingClientRect().top)})""")
+                check("phone upright: Calendar is a day-by-day agenda that fits the screen", cal["agenda"] and not cal["grid"] and cal["items"] > 0 and cal["wide"] == 0, str(cal))
+                check("phone upright: the view starts on the first screen", cal["viewTop"] < ph, f"view top {cal['viewTop']} px, screen {ph} px")
+                series = {s["id"]: s for s in data["series"]}
+                apw = sorted((e for e in data["editions"] if series[e["series"]]["name"] == "National APP Week" and (e.get("verify") or {}).get("state") != "expected" and (e.get("end") or e["start"]) >= today), key=lambda e: e["start"])
+                if apw:
+                    pgo(f"display=calendar&cal={apw[0]['start'][:7]}")
+                    check("phone upright: National APP Week is in the Calendar agenda", "National APP Week" in ph_page.evaluate("document.querySelector('#view').textContent"))
+            else:
+                pos = ph_page.evaluate("getComputedStyle(document.querySelector('.bar')).position")
+                check("phone sideways: the filter bar scrolls away instead of covering the page", pos != "sticky", pos)
+                grid = ph_page.evaluate("(() => { const g = document.querySelector('#view .calspan'); return g ? Math.round(g.getBoundingClientRect().right) : -1; })()")
+                check("phone sideways: the Calendar month grid fits the screen", 0 < grid <= pw, f"grid right edge {grid} px, screen {pw} px")
+            ctx.close()
         check("no console or page errors", not errors, "; ".join(errors[:3]))
         browser.close()
     if httpd:
