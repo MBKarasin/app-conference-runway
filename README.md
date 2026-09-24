@@ -32,6 +32,7 @@ How it was built, what it can and cannot prove, and how to challenge or reproduc
 | `scripts/ui_check.py` | Scripted interface check (Playwright, Chromium): display switch and its separators, the year on every Orbit month, the Discipline/Scope/Focus rows, the landmark celebration weeks in every view, each Focus in each view, old links, the request address, layout at 1440 px and 390 px, console errors. Run it before every interface push and with `--url` against the live site after. |
 | `scripts/snapshot.py` | Archives the generated data candidate for the day under `data/snapshots/<year>/` and lists its SHA-256 in `MANIFEST.csv`. |
 | `scripts/geocode.py` | Places venues (U.S. Census Gazetteer; GeoNames, CC BY 4.0) for the region and distance filters; manual pins live in `sources/geo/manual.json`. |
+| `scripts/preview.py` | Builds a self-contained local HTML preview with no network requests. Developer tool; not run by the workflow. |
 | `site/` | The static website: no framework, no third-party requests at runtime, no cookies or analytics, self-hosted fonts (SIL Open Font License). |
 | `.github/workflows/runway.yml` | Build, validate and deploy on push; nightly check, archive and review digest on schedule. |
 
