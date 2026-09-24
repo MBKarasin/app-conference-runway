@@ -198,6 +198,15 @@
 "precision": "city",
 "region": "Asia"
 },
+"Auditorium Suharyati, Universitas Padjadjaran, Jatinangor, Indonesia": {
+"cc": "ID",
+"continent": "Asia",
+"country": "Indonesia",
+"lat": -6.215,
+"lon": 106.845,
+"precision": "country",
+"region": "Asia"
+},
 "Auditório Monsenhor Salim, Campinas, Brazil": {
 "cc": "BR",
 "continent": "South America",
@@ -421,16 +430,6 @@
 "state": "MA"
 },
 "Brasília, Brazil": {
-"cc": "BR",
-"continent": "South America",
-"country": "Brazil",
-"lat": -15.7797,
-"lon": -47.9297,
-"place": "Brasília",
-"precision": "city",
-"region": "South America"
-},
-"Brasília, Distrito Federal, Brazil": {
 "cc": "BR",
 "continent": "South America",
 "country": "Brazil",
@@ -878,7 +877,7 @@
 "region": "South",
 "state": "DE"
 },
-"Drexelbrook, Drexel Hill, PA": {
+"Drexelbrook Catering & Event Center, Drexel Hill, PA": {
 "cc": "US",
 "continent": "North America",
 "country": "United States",
@@ -1884,15 +1883,6 @@
 "precision": "country",
 "region": "Asia"
 },
-"Jatinangor, Indonesia": {
-"cc": "ID",
-"continent": "Asia",
-"country": "Indonesia",
-"lat": -6.215,
-"lon": 106.845,
-"precision": "country",
-"region": "Asia"
-},
 "Jefferson School of Nursing - Dixon Campus, Horsham, PA": {
 "cc": "US",
 "continent": "North America",
@@ -2528,16 +2518,6 @@
 "region": "Midwest",
 "state": "MN"
 },
-"Mombasa County, Kenya": {
-"cc": "KE",
-"continent": "Africa",
-"country": "Kenya",
-"lat": -4.0547,
-"lon": 39.6636,
-"place": "Mombasa",
-"precision": "city",
-"region": "Africa"
-},
 "Monroe Township, NJ": {
 "cc": "US",
 "continent": "North America",
@@ -2948,6 +2928,17 @@
 "state": "FL"
 },
 "Orange County Convention Center - North Concourse, Orlando, FL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 28.4087,
+"lon": -81.2548,
+"place": "Orlando",
+"precision": "city",
+"region": "South",
+"state": "FL"
+},
+"Orlando World Center Marriott, Orlando, FL": {
 "cc": "US",
 "continent": "North America",
 "country": "United States",
@@ -3432,6 +3423,16 @@
 "region": "West",
 "state": "CA"
 },
+"Sai Rock Hotel, Mombasa County, Kenya": {
+"cc": "KE",
+"continent": "Africa",
+"country": "Kenya",
+"lat": -4.0547,
+"lon": 39.6636,
+"place": "Mombasa",
+"precision": "city",
+"region": "Africa"
+},
 "Salt Lake City, UT": {
 "cc": "US",
 "continent": "North America",
@@ -3766,17 +3767,6 @@
 "region": "South",
 "state": "GA"
 },
-"Signia by Hilton, Atlanta, GA": {
-"cc": "US",
-"continent": "North America",
-"country": "United States",
-"lat": 33.7629,
-"lon": -84.4227,
-"place": "Atlanta",
-"precision": "city",
-"region": "South",
-"state": "GA"
-},
 "Singapore": {
 "cc": "SG",
 "continent": "Asia",
@@ -4018,17 +4008,6 @@
 "precision": "city",
 "region": "Northeast",
 "state": "NY"
-},
-"The Grand Marquis, Old Bridge, NJ": {
-"cc": "US",
-"continent": "North America",
-"country": "United States",
-"lat": 40.3954,
-"lon": -74.3312,
-"place": "Old Bridge",
-"precision": "city",
-"region": "Northeast",
-"state": "NJ"
 },
 "The Hotel Hershey, Hershey, PA": {
 "cc": "US",
