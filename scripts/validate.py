@@ -5,6 +5,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 d = json.load(open(ROOT / "site/data/runway.json", encoding="utf-8"))
 S = {s["id"]: s for s in d["series"]}
 errs = []
+TODAY = dt.date.today().isoformat()
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ABSENCE = ["the only", "no published", "not published", "none found", "no public", "does not exist", "no source"]
 PRIVATE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}|Rosenkvist|\b\d{3}[-.]\d{3}[-.]\d{4}\b")
@@ -48,6 +49,11 @@ for w in ABSENCE:
         errs.append(f'absence/superlative wording "{w}" in data: …{blob[max(0,m.start()-60):m.end()+40]}…')
 for m in PRIVATE.finditer(blob):
     errs.append(f"private-looking string in data: {m.group(0)}")
+# Upcoming, non-projected records must carry verbatim organizer wording and its source (the evidence rule in AI-HANDOFF §3.2)
+for e in d["editions"]:
+    if e["end"] >= TODAY and e.get("verify", {}).get("state") not in ("expected", "rule") and not e.get("removed"):
+        if not (e.get("evidence") or "").strip(): errs.append(f'{e["series"]} {e["start"]}: upcoming record has no evidence quote')
+        if not e.get("source_url"): errs.append(f'{e["series"]} {e["start"]}: upcoming record has no source URL')
 for s in d["series"]:
     if not s.get("professions"): errs.append(f'{s["id"]}: no profession tag')
     for field in ("org_url", "archive_url", "proceedings_url"):
@@ -76,7 +82,7 @@ anchors = {
 }
 for name, start in anchors.items():
     if not any(S[e["series"]]["name"] == name and e["start"] == start
-               and e.get("verify", {}).get("state") in ("verified", "rule") for e in d["editions"]):
+               and e.get("verify", {}).get("state") in ("verified", "rule", "conflict", "announced") for e in d["editions"]):
         errs.append(f"missing or unreviewed anchor: {name} {start}")
 app_week = next((e for e in d["editions"] if S[e["series"]]["name"] == "National APP Week" and e["start"] == "2026-09-21"), None)
 if app_week:

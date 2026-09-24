@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Daily archive: the exact published data file (site/data/runway.json), gzipped, one file per New York calendar day.
+"""Daily archive: the generated data candidate (site/data/runway.json), gzipped, one file per New York calendar day.
 data/snapshots/<YYYY>/<YYYY-MM-DD>.json.gz  (~220 KB a day). A second run on the same day replaces that day's file,
-so the archive keeps the day's last published state. data/snapshots/MANIFEST.csv records the SHA-256 of the
-uncompressed bytes, so any later change to an archived day is detectable."""
+so the archive keeps the day's last generated candidate. data/snapshots/MANIFEST.csv records the SHA-256 of the
+uncompressed bytes, so any later change to a listed archived day is detectable. This is not deployment attestation."""
 import csv, gzip, hashlib, pathlib, datetime as dt
 from zoneinfo import ZoneInfo
 ROOT = pathlib.Path(__file__).resolve().parent.parent
