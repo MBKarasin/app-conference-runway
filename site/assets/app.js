@@ -44,15 +44,16 @@
 
   /* ---------- vocabulary ---------- */
   const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", CAA: "--caa", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
-  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["PA", "PA"], ["CRNA", "CRNA"], ["CAA", "CAA"], ["CNS", "CNS"], ["CNM", "CNM"], ["RNFA", "NP-RNFA"], ["STU", "Students"], ["DNP", "DNP Projects"]];
+  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["PA", "PA"], ["CRNA", "CRNA / CAA"], ["CNS", "CNS"], ["CNM", "CNM"], ["RNFA", "NP-RNFA"], ["STU", "Students & DNP"]];
   const AGACNP_TOPICS = new Set(["Acute Care", "Critical Care", "Emergency", "Emergency Medicine", "Hospital Medicine", "Cardiology", "Cardiothoracic Surgery", "Pulmonary", "Neuroscience", "Neurosurgery", "Trauma", "Resuscitation", "ECMO & Perfusion", "Surgery", "Vascular Surgery", "Infectious Diseases", "Toxicology", "Nephrology"]);
-  const PLABEL = { RNFA: "NP-RNFA", STU: "Students", DNP: "DNP Projects" };
+  const PLABEL = { RNFA: "NP-RNFA", CAA: "CRNA / CAA", STU: "Students & DNP", DNP: "Students & DNP" };
   // Students = organizer-documented opportunities for APP students (NP, PA, CRNA, CAA, CNS, CNM); DNP Projects = venues for DNP project posters/abstracts.
   const APP_ROLES = ["NP", "AGACNP", "PA", "CRNA", "CAA", "CNS", "CNM"];
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
   const dnpOK = e => !!(e && e.student && e.student.category === "project");
   const FOCUS_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["executive", "Executive"]];
   const PROF_TIPS = { NP: "NP-relevant: NP, nursing, CNS, CNM and multidisciplinary meetings (curator judgment)", PA: "PA-relevant: PA and multidisciplinary meetings (curator judgment)",
+    CRNA: "Includes nurse-anesthesia and anesthesiologist-assistant meetings.", STU: "One combined view for APP students and DNP project dissemination.",
     AGACNP: "Curated adult acute care topic relevance; organizer eligibility and intended audience may vary." };
   const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"], ["observance", "Celebrations"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
@@ -172,13 +173,13 @@
     const P = s.professions;
     switch (st.prof) {
       case "": return true;
-      case "STU": return !!s.hasStu;
-      case "DNP": return !!s.hasDnp;
+      case "STU": return !!s.hasStu || !!s.hasDnp;
+      case "DNP": return !!s.hasStu || !!s.hasDnp; // legacy shared links
       case "NP": return P.some(p => ["NP", "Multidisciplinary", "Nursing", "CNS", "CNM"].includes(p));
       case "AGACNP": return agacnpFit(s);
       case "PA": return P.some(p => ["PA", "Multidisciplinary"].includes(p));
-      case "CRNA": return P.includes("CRNA");
-      case "CAA": return P.includes("CAA");
+      case "CRNA": return P.includes("CRNA") || P.includes("CAA");
+      case "CAA": return P.includes("CRNA") || P.includes("CAA"); // legacy shared links
       case "CNS": return P.includes("CNS");
       case "CNM": return P.includes("CNM");
       case "RNFA": return P.includes("RNFA") || !!s.rnfa_inferred;
@@ -219,9 +220,11 @@
   function verMatch(e) { return !st.review || isException(e); }
   function edMatch(e) {
     if (!seriesMatch(e.s, st.view === "students") || !placeMatch(e) || !verMatch(e)) return false;
-    if (st.prof === "STU" && !e.expectedRow && !stuOK(e)) return false;
-    if (st.prof === "DNP" && !e.expectedRow && !dnpOK(e)) return false;
-    if (st.view === "students" && st.prof && st.prof !== "STU" && st.prof !== "DNP" && !(e.student && (e.student.roles || []).includes(st.prof))) return false;
+    if (["STU", "DNP"].includes(st.prof) && !e.expectedRow && !(stuOK(e) || dnpOK(e))) return false;
+    if (st.view === "students" && st.prof && !["STU", "DNP"].includes(st.prof)) {
+      const roles = e.student && (e.student.roles || []), wanted = st.prof === "CRNA" ? ["CRNA", "CAA"] : [st.prof];
+      if (!roles || !wanted.some(r => roles.includes(r))) return false;
+    }
     if (st.q && !st.q.toLowerCase().split(/\s+/).every(w => e.hay.includes(w))) return false;
     if (st.openOnly && !(st.view === "students" ? e.student && e.student.deadline && e.student.deadline >= TODAY : ["open", "urgent"].includes(e.c.k))) return false;
     return true;
@@ -299,7 +302,7 @@
     const projects = L.filter(e => e.student.category === "project");
     const meetings = L.filter(e => e.student.category !== "project");
     const deadlines = projects.filter(e => e.student.deadline && e.student.deadline >= TODAY).sort((a, b) => a.student.deadline.localeCompare(b.student.deadline));
-    let h = `<div class="student-intro"><h2>Student opportunities and DNP project dissemination</h2><p>Organizer-documented student sessions, posters, project venues and registration. A meeting may welcome student work even when this year's submission window has closed. Open a record for its exact source and eligibility details.</p></div>`;
+    let h = `<div class="student-intro"><h2>Students & DNP projects</h2><p>This single discipline brings together organizer-documented APP student sessions, registration pathways, posters, abstracts and DNP project dissemination. A meeting may welcome student work even when this year's submission window has closed; open a record for its exact source and eligibility details.</p></div>`;
     if (deadlines.length) h += `<section class="student-deadlines"><h2>Student submissions ahead</h2><div class="student-deadline-list">${deadlines.map(e => `<button data-e="${esc(e.id)}"><b>${esc(md(e.student.deadline))}</b><span>${esc(e.student.kind)} · ${esc(e.s.name)}</span></button>`).join("")}</div></section>`;
     if (projects.length) h += `<section class="sec"><h2>DNP projects, posters and abstracts <span class="student-count">${projects.length}</span></h2><div class="list">${projects.map(e => evRow(e, true)).join("")}</div></section>`;
     if (meetings.length) h += `<section class="sec"><h2>Student meetings and pathways <span class="student-count">${meetings.length}</span></h2><div class="list">${meetings.map(e => evRow(e, true)).join("")}</div></section>`;
@@ -331,6 +334,7 @@
       const inWk = items.filter(x => x.from <= wkE && x.to >= wkS)
         .map(x => ({ ...x, a: x.from < wkS ? wkS : x.from, b: x.to > wkE ? wkE : x.to }))
         .sort((p, q) => priority(p) - priority(q) || p.a.localeCompare(q.a) || q.b.localeCompare(p.b) || p.e.s.name.localeCompare(q.e.s.name));
+      const emptyWeek = inWk.length === 0;
       const lanes = [];   // last occupied day per lane
       inWk.forEach(x => { let l = lanes.findIndex(end => end < x.a); if (l < 0) { l = lanes.length; lanes.push(x.b); } else lanes[l] = x.b; x.lane = l; });
       const dueLanes = inWk.filter(dueThisWeek).reduce((n, x) => Math.max(n, x.lane + 1), 0);
@@ -348,9 +352,10 @@
         const label = (contL ? "… " : "") + (call ? (due ? "Abstracts due: " : "Abstracts open: ") : "") + esc(e.s.name) + (call ? (span > 1 || !due ? ` <small>due ${esc(md(x.to))}</small>` : "") : span > 1 ? ` <small>${esc(range(e))}</small>` : "");
         h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${!call && e.s.name === "National APP Week" ? " appweek" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= visibleLanes ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= visibleLanes ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
       });
+      if (emptyWeek) h += `<div class="week-empty" style="grid-column:1 / -1;grid-row:2">No matching events this week.</div>`;
       if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${visibleLanes + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false">+${hidden} more this week</button>`;
-      const rc = `26px${Math.min(nL, visibleLanes) ? ` repeat(${Math.min(nL, visibleLanes)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = `26px repeat(${nL + 1}, auto)`;
-      weeks += `<div class="wk" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
+      const rc = emptyWeek ? "26px auto" : `26px${Math.min(nL, visibleLanes) ? ` repeat(${Math.min(nL, visibleLanes)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = emptyWeek ? rc : `26px repeat(${nL + 1}, auto)`;
+      weeks += `<div class="wk${emptyWeek ? " emptyweek" : ""}" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
     }
     const cells = `<div class="dowrow">${DOW.map(d => `<div class="dow">${d}</div>`).join("")}</div>${weeks}`;
     const Y0 = +TODAY.slice(0, 4), years = []; for (let yy = Y0 - 3; yy <= DATA.horizon; yy++) years.push(yy);
@@ -378,19 +383,25 @@
   }
   function vDeadlines() {
     const L = EDS.filter(e => !e.expectedRow && !e.past && e.s.kind !== "observance" && edMatch(e));
-    const open = L.filter(e => ["open", "urgent"].includes(e.c.k)).sort((a, b) => (a.c.closes || "9999").localeCompare(b.c.closes || "9999"));
-    const soon = L.filter(e => e.c.k === "soon").sort((a, b) => (a.c.opens || "9999").localeCompare(b.c.opens || "9999"));
+    const inThirty = addDays(TODAY, 30);
+    const due = L.filter(e => ["open", "urgent", "soon"].includes(e.c.k) && e.c.closes && e.c.closes <= inThirty)
+      .sort((a, b) => a.c.closes.localeCompare(b.c.closes));
+    const opening = L.filter(e => e.c.k === "soon" && e.c.opens && e.c.opens <= inThirty && !(e.c.closes && e.c.closes <= inThirty))
+      .sort((a, b) => a.c.opens.localeCompare(b.c.opens));
+    const open = L.filter(e => ["open", "urgent"].includes(e.c.k) && !(e.c.closes && e.c.closes <= inThirty))
+      .sort((a, b) => (a.c.closes || "9999").localeCompare(b.c.closes || "9999"));
     const row = (e, big, small, u) => `<div class="dlrow" data-e="${e.id}" tabindex="0" role="button">
         <div class="count${u ? " u" : ""}">${esc(big)}<small>${esc(small)}</small></div>
         <div class="body"><div class="title">${esc(e.s.name)}</div><div class="org">${esc(e.s.org_display || e.s.org)} · meeting ${esc(range(e))}</div><div class="meta">${esc((e.call && e.call.text) || "")}</div></div>
         <div class="side">${vBadge(e, true)}</div></div>`;
-    let h = `<section class="sec"><h2>Open now · ${open.length}</h2><div class="list">`;
-    h += open.length ? open.map(e => e.c.today ? row(e, "Today", "organizer's cut-off time applies", true)
-      : e.c.closes ? row(e, e.c.n, e.c.n === 1 ? "day left" : "days left", e.c.n <= 14)
-      : row(e, "Listed", "no closing date posted")).join("") : `<div class="empty">No open calls match these filters.</div>`;
-    h += `</div></section><section class="sec"><h2>Opening soon · ${soon.length}</h2><div class="list">`;
-    h += soon.length ? soon.map(e => row(e, e.c.opens ? md(e.c.opens) : "Soon", "opens")).join("") : `<div class="empty">Nothing announced as opening soon.</div>`;
-    return h + `</div></section><p class="fine">Deadlines are shown as each organizer publishes them. A deadline closing today shows the day only: the cut-off hour and time zone are the organizer's, so open their page before you submit. Calls with no closing date are shown as listed, not as open.</p>`;
+    let h = `<section class="sec deadline-section due-soon"><h2>Due within 30 days · ${due.length}</h2><div class="list">`;
+    h += due.length ? due.map(e => e.c.today ? row(e, "Today", "organizer's cut-off time applies", true)
+      : row(e, daysBetween(TODAY, e.c.closes), daysBetween(TODAY, e.c.closes) === 1 ? "day left" : "days left", true)).join("") : `<div class="empty">No deadlines fall within the next 30 days.</div>`;
+    h += `</div></section><section class="sec deadline-section opening-soon"><h2>Opening within 30 days · ${opening.length}</h2><div class="list">`;
+    h += opening.length ? opening.map(e => row(e, md(e.c.opens), "opens")).join("") : `<div class="empty">No calls are scheduled to open within the next 30 days.</div>`;
+    h += `</div></section><section class="sec deadline-section open-now"><h2>Open now · ${open.length}</h2><div class="list">`;
+    h += open.length ? open.map(e => e.c.closes ? row(e, md(e.c.closes), "due", false) : row(e, "Listed", "no closing date posted")).join("") : `<div class="empty">No additional open calls match these filters.</div>`;
+    return h + `</div></section><p class="fine">Each call appears once: imminent due dates first, then calls opening soon, then other calls already open. A deadline closing today shows the day only; the organizer's cut-off hour and time zone still apply.</p>`;
   }
   function directorySeries() {
     const editionFilters = st.where || st.area || st.near || st.openOnly;
@@ -671,6 +682,13 @@
       if (act === "ics") { icsFor(byId($("#dlg").dataset.e)); return; }
       if (act === "copy") { copy(location.href, "Link copied"); return; }
       if (act === "copyview") { copy(location.href, "Link to this view copied"); return; }
+      if (act === "translate") {
+        const lang = $("#languageSelect") && $("#languageSelect").value;
+        if (!lang) { toast("Choose a language first"); return; }
+        const source = location.origin + location.pathname + location.search + location.hash;
+        location.assign(`https://translate.google.com/translate?sl=en&tl=${encodeURIComponent(lang)}&u=${encodeURIComponent(source)}`);
+        return;
+      }
       if (act === "filters") { filtersOpen = !filtersOpen; $("#filters").classList.toggle("open", filtersOpen); $("#geoquick").classList.toggle("open", filtersOpen); t.setAttribute("aria-expanded", String(filtersOpen)); return; }
       if (t.dataset.letter) { ev.preventDefault(); const el = document.getElementById("letter-" + t.dataset.letter); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 170 }); return; }
       if (t.dataset.dayopen) { openDay(t.dataset.dayopen); return; }

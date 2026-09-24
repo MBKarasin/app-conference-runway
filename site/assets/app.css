@@ -765,3 +765,37 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   .bar .tabs{flex-wrap:nowrap;overflow-x:auto}
   .bar .tabs button{white-space:nowrap;flex:none}
 }
+
+/* 2026-09-23 navigation, deadline grouping, and calendar structure */
+.language-tools{display:inline-flex;align-items:center;gap:6px;margin-right:2px}
+.language-select{min-width:132px;border:1px solid #67818B;background:#fff;color:#102F3B;border-radius:6px;padding:7px 9px;font-size:13px;font-weight:700}
+.language-tools .hbtn{padding:7px 9px;font-size:13px}
+.language-english{white-space:nowrap}
+.headactions .eyebrow{color:#102F3B!important}
+.mast .ledeRow{display:grid!important;grid-template-columns:minmax(0,1fr) max-content;align-items:end;gap:8px 20px;padding:0!important;margin:0!important}
+.mast .header-updated{align-self:end;width:auto!important;margin:0 0 1px!important;text-align:right;white-space:nowrap}
+
+.deadline-section>h2{border-left:4px solid #102F3B;padding-left:10px}
+.deadline-section.due-soon>h2{border-left-color:#CC0033}
+.deadline-section.opening-soon>h2{border-left-color:#A8641A}
+.deadline-section.open-now>h2{border-left-color:#1C7A4C}
+
+.cal.calspan{background:var(--surface)!important;border-color:#102F3B!important}
+.calspan .dowrow{gap:0!important}
+.calspan .dow{border-right:1px solid #102F3B}
+.calspan .dow:last-child{border-right:0}
+.calspan .wk{column-gap:0!important;border-top-color:#102F3B!important}
+.calspan .cell{border-right:1px solid #102F3B}
+.calspan .cell:nth-child(7){border-right:0}
+.calspan .week-empty{position:relative;z-index:1;align-self:center;justify-self:start;margin:12px;color:#526B76;font-size:12px;font-weight:700;letter-spacing:.02em}
+.calspan .wk.emptyweek .cell,.calspan .wk.emptyweek .cell.out{background:#F8FAFA}
+
+@media(max-width:1050px){
+  .language-tools{flex:1 1 100%;justify-content:flex-start;margin-right:0}
+  .mast .ledeRow{grid-template-columns:1fr}
+  .mast .header-updated{text-align:left}
+}
+@media(max-width:560px){
+  .language-tools{display:grid;grid-template-columns:minmax(0,1fr) auto auto;width:100%}
+  .language-select{min-width:0;width:100%}
+}
