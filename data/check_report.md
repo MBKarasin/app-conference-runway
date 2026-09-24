@@ -1,18 +1,14 @@
 # Nightly source check — 2026-09-24
 
-Generated 2026-09-24T07:10:51Z from commit 53e5d4a. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-09-24T10:38:42Z from commit 26e451f. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 296 · verified 261 · not found 4 · unreachable 31
-Checker could not match: 35 · of these, curator evidence on file: 30 · open: 5
+Editions re-checked: 296 · verified 265 · not found 4 · unreachable 27
+Checker could not match: 31 · of these, curator evidence on file: 30 · open: 1
 Past editions frozen (not re-read): 595
 
-## Could not read the page — open (5)
+## Could not read the page — open (1)
 
-- AAP National Conference & Exhibition — 2026-10-02 — HTTP 503 — https://aapexperience.org/faq/
 - Annual Assembly of Hospice and Palliative Care — 2027-03-17 — HTTP 403 — https://aahpm.org/education-events/annual-assembly/
-- AAP National Conference & Exhibition — 2027-10-15 — HTTP 503 — https://aapexperience.org/future-dates/
-- AAP National Conference & Exhibition — 2028-11-03 — HTTP 503 — https://aapexperience.org/future-dates/
-- AAP National Conference & Exhibition — 2029-09-28 — HTTP 503 — https://aapexperience.org/future-dates/
 
 ## Checker could not match, curator evidence on file (30)
 
@@ -47,4 +43,4 @@ Past editions frozen (not re-read): 595
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=5
+OPEN_ITEMS=1

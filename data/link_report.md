@@ -1,11 +1,13 @@
 # Link check — 2026-09-24
 
-Links: 1015 · ok 865 · HTTP 403 91 · HTTP 404 28 · URLError 18 · robots 9 · HTTP 503 3 · HTTP 401 1
+Links: 1015 · ok 873 · HTTP 403 92 · HTTP 404 28 · URLError 12 · robots 9 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
+- HTTP 403 — https://aahpm.org/
+  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
 - HTTP 403 — https://aahpm.org/education-events/annual-assembly/
@@ -14,12 +16,6 @@ Links: 1015 · ok 865 · HTTP 403 91 · HTTP 404 28 · URLError 18 · robots 9 �
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url)
 - HTTP 403 — https://aana2026.eventscribe.net/
   - american-association-of-nurse-anesthesio__aana-annual-congress 2026-08-21 (detail_url)
-- HTTP 503 — https://aapexperience.org/
-  - AAP National Conference & Exhibition (org_url)
-- HTTP 503 — https://aapexperience.org/faq/
-  - american-academy-of-pediatrics__aap-national-conference-exhibition 2026-10-02 (source_url)
-- HTTP 503 — https://aapexperience.org/future-dates/
-  - american-academy-of-pediatrics__aap-national-conference-exhibition 2027-10-15 (source_url); american-academy-of-pediatrics__aap-national-conference-exhibition 2028-11-03 (source_url); american-academy-of-pediatrics__aap-national-conference-exhibition 2029-09-28 (source_url)
 - HTTP 403 — https://academic.oup.com/ofid/supplements
   - IDWeek (proceedings_url)
 - HTTP 403 — https://acg2025.eventscribe.net/
@@ -134,20 +130,8 @@ Links: 1015 · ok 865 · HTTP 403 91 · HTTP 404 28 · URLError 18 · robots 9 �
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
-- URLError — https://web.archive.org/web/20240306000315/https://www.hospitalmedicine.org/about/national-hospitalist-day/
-  - society-of-hospital-medicine__national-hospitalist-day 2024-03-07 (source_url)
-- URLError — https://web.archive.org/web/20240601042011/https://www.vapa.org/events/2024VAPASummerConference/
-  - virginia-academy-of-pas-vapa__vapa-summer-conference 2024-07-22 (source_url)
-- URLError — https://web.archive.org/web/20240620164713/https://www.venvn.nl/agenda/jaarcongres-v-vn-vs/
-  - verpleegkundigen-verzorgenden-nederland-__v-vn-vs-annual-congress 2024-10-10 (source_url)
-- URLError — https://web.archive.org/web/20240913014300/https://www.vcnp.net/events/2025VCNPAnnualConference/
-  - virginia-council-of-nurse-practitioners__vcnp-annual-conference 2025-03-26 (source_url)
-- URLError — https://web.archive.org/web/20241003223604/https://wapa.com/events/wapa-conference-oct-10-12-2024/
-  - washington-academy-of-physician-associat__wapa-fall-conference 2024-10-10 (source_url)
 - URLError — https://web.archive.org/web/20241118070950/https://congresoenfermeria.ufro.cl/images/documentos/programa-congreso-2024-4.pdf
   - universidad-de-la-frontera__international-nursing-specialties-and-research-con 2024-11-11 (source_url)
-- URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
-  - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
 - URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
   - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
 - URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
@@ -188,6 +172,8 @@ Links: 1015 · ok 865 · HTTP 403 91 · HTTP 404 28 · URLError 18 · robots 9 �
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2024-08-29 (source_url)
 - HTTP 404 — https://www.apao.cc/assets/Conference/2025Symposium/APAO25%2028th%20Annual%20Exhibitor%20Prospectus%20Final%205.22.25.pdf
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2025-09-25 (source_url)
+- URLError — https://www.apdw2026manila.com/
+  - Asia Pacific Digestive Week (org_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-2025-asco-annual-meeting
   - american-society-of-clinical-oncology__asco-annual-meeting 2025-05-30 (source_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/new-research-highlights-lifestyle-treatment-strategies-2026-annual-meeting
@@ -270,8 +256,6 @@ Links: 1015 · ok 865 · HTTP 403 91 · HTTP 404 28 · URLError 18 · robots 9 �
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
-- URLError — https://www.texasnurses.org/events/EventDetails.aspx?id=1947762
-  - texas-nurses-association__tna-annual-conference 2025-06-06 (source_url)
 - HTTP 403 — https://www.thenpa.org/
   - NPA Annual Conference (NP26) (org_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2027-10-01 (source_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2028-10-01 (source_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2029-10-01 (source_url)
 - HTTP 403 — https://www.thenpa.org/page/Conferences
