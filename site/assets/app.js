@@ -46,7 +46,8 @@
 
   /* ---------- vocabulary ---------- */
   const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
-  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["CRNA", "CRNA"], ["RNFA", "NP-RNFA"], ["CNS", "CNS"], ["CNM", "CNM"], ["PA", "PA"], ["STU", "Students & DNP projects"]];
+  // 2026-09-24: Students & DNP projects moved from Discipline to Scope — it is a kind of work, not a credential.
+  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["CRNA", "CRNA"], ["RNFA", "NP-RNFA"], ["CNS", "CNS"], ["CNM", "CNM"], ["PA", "PA"]];
   const AGACNP_TOPICS = new Set(["Acute Care", "Critical Care", "Emergency", "Emergency Medicine", "Hospital Medicine", "Cardiology", "Cardiothoracic Surgery", "Pulmonary", "Neuroscience", "Neurosurgery", "Trauma", "Resuscitation", "ECMO & Perfusion", "Surgery", "Vascular Surgery", "Infectious Diseases", "Toxicology", "Nephrology"]);
   const PLABEL = { RNFA: "NP-RNFA", STU: "Students & DNP projects", DNP: "Students & DNP projects" };
   // Students = organizer-documented opportunities for APP students; DNP Projects = venues for DNP project posters/abstracts.
@@ -54,7 +55,7 @@
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
   const dnpOK = e => !!(e && e.student && e.student.category === "project");
   // SCOPE (labeled Focus until 2026-09-24): whom and what a meeting serves. Multi-select; All clears it.
-  const SCOPE_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"], ["students", "Students"]];
+  const SCOPE_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"], ["students", "Students & DNP projects"]];
   const SCOPE_VALUES = SCOPE_CHIPS.map(([v]) => v).filter(Boolean);
   const SCOPE_TIPS = { students: "Organizer-documented opportunities for APP students (sessions, posters, abstracts, DNP projects) and meetings organized for students." };
   // FOCUS (since 2026-09-24): which record type to show. One at a time; All shows every type.
@@ -76,7 +77,7 @@
   };
 
   /* ---------- state, mirrored in the URL ---------- */
-  const DEF = () => ({ display: "orbit", orbitFrom: TODAY.slice(0, 7), orbitScope: "month", q: "", prof: [], scope: [], focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
+  const DEF = () => ({ display: "orbit", orbitFrom: TODAY.slice(0, 7), orbitScope: "month", q: "", prof: [], scope: [], focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 50, spec: "", review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
   const st = DEF();
   let filtersOpen = false;
   const listDisclosure = new Map();
@@ -580,7 +581,7 @@
           <label class="sr" for="calM">Month</label><select id="calM" class="sel">${MONTH.map((n, i) => `<option value="${i + 1}" ${i + 1 === m ? "selected" : ""}>${n}</option>`).join("")}</select>
           <label class="sr" for="calY">Year</label><select id="calY" class="sel">${years.map(yy => `<option ${yy === y ? "selected" : ""}>${yy}</option>`).join("")}</select>
           <button class="btn" data-act="today">Today</button>
-        </div><div class="legend callegend"><span><i style="--c:var(--t-meet)"></i>Meeting</span><span><i style="--c:var(--t-call)"></i>Abstracts open</span><span><i class="duekey"></i>Abstracts due</span><span><i style="--c:var(--t-obs)"></i>Celebration</span></div></div>
+        </div></div>
       </div>
       ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}
       <div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
@@ -631,7 +632,7 @@
     ].filter(([c]) => cats.includes(c)).map(([, render]) => render()).join("\n        ");
     return `<div class="orbit-shell">
       <section class="orbit-board" aria-label="${esc(win[0].name)} to ${esc(win[11].name)} record density">
-        <header class="orbit-heading"><div><p class="eyebrow">Global Orbit</p><h2>Twelve months at a glance</h2></div><p>Choose a month for a focused view, or choose the center label for all twelve months. The arrows move the window by a year.</p></header>
+        <header class="orbit-heading"><div><p class="eyebrow">Global Orbit</p><h2>Twelve months at a glance</h2></div><p>Choose a month, or the centre label for all twelve. The arrows move the window a year.</p></header>
         <div class="orbit-stage">
           <div class="orbit-core"><button data-act="prevY" aria-label="Twelve months earlier">‹</button><button class="orbit-year" data-orbit-year aria-pressed="${annualFocus}" aria-label="Show all records from ${esc(win[0].name)} to ${esc(win[11].name)}"><strong class="${year.length > 4 ? "span" : ""}">${year}</strong><small class="orbit-context">${context.map(x => `<i>${esc(x)}</i>`).join("")}</small></button><button data-act="nextY" aria-label="Twelve months later">›</button></div>
           ${months}
@@ -680,7 +681,9 @@
     const editionFilters = st.where || st.area || st.near || st.review || st.focus || st.scope.includes("students");
     return DATA.series.filter(s => seriesMatch(s) &&
       (!st.q || (s.name + " " + (s.org_display || s.org) + " " + s.org + " " + (s.specialty || []).join(" ")).toLowerCase().includes(st.q.toLowerCase())) &&
-      (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && focusMatch(e) && (st.expected || !e.expectedRow))));
+      (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && focusMatch(e) && (st.expected || !e.expectedRow))))
+      // 2026-09-24: a series with no edition at all has nothing to show; it is not listed.
+      .filter(s => EDS.some(e => e.series === s.id));
   }
   function vDirectory() {
     const S = directorySeries();
@@ -688,7 +691,8 @@
     const eds = new Map();
     EDS.forEach(e => { if (!eds.has(e.series)) eds.set(e.series, []); eds.get(e.series).push(e); });
     const letters = [...new Set(S.map(s => s.name[0].toUpperCase()))];
-    let h = `<nav class="alpha" aria-label="Jump to letter">${letters.map(l => `<a href="#" data-letter="${esc(l)}">${esc(l)}</a>`).join("")}</nav><div class="dir">`, cur = "";
+    // 2026-09-24: Directory had no level-2 heading, so opening a record from here jumped H1 to H3.
+    let h = `<h2 class="sr">Every meeting series, A to Z</h2><nav class="alpha" aria-label="Jump to letter">${letters.map(l => `<a href="#" data-letter="${esc(l)}">${esc(l)}</a>`).join("")}</nav><div class="dir">`, cur = "";
     S.forEach(s => {
       const L = (eds.get(s.id) || []).sort((a, b) => a.start.localeCompare(b.start));
       const next = L.find(e => !e.past && !e.expectedRow && verMatch(e));
@@ -712,16 +716,38 @@
     el.innerHTML = `<div class="live-ribbon"><span class="live-flag">${current.s.name === "National APP Week" ? `OUR WEEK · DAY ${daysBetween(current.start, TODAY) + 1} OF ${daysBetween(current.start, current.end) + 1}` : "HAPPENING NOW"}</span><strong>${esc(current.s.name)}</strong><span class="live-dates">${esc(range(current))} · through ${esc(MON[D(current.end).getMonth()] + " " + D(current.end).getDate())}</span><button class="live-source" data-e="${esc(current.id)}">View official source and details ↗</button></div>`;
   }
 
+  /* ---------- chip availability: a filter is offered only when it can return a record ---------- */
+  // Added 2026-09-24. A chip that matches nothing is hidden rather than offered as a dead end.
+  // "All" is always kept, and a chip the visitor has already selected is kept so a shared link keeps its control.
+  function availableChips() {
+    const series = DATA.series || [];
+    const scope = new Set(), prof = new Set(), focus = new Set();
+    for (const sr of series) {
+      for (const t of scopeTags(sr)) scope.add(t);
+      for (const [v] of PROF_CHIPS) if (v && profOptionMatch(sr, v)) prof.add(v);
+    }
+    for (const e of EDS) {
+      if (e.expectedRow) continue;
+      if (hasUpcomingDeadline(e)) focus.add("due");
+      if (isOpenNow(e)) focus.add("open");
+      if (!e.past) { (isCelebration(e) ? focus.add("celebrations") : focus.add("conferences")); }
+    }
+    return { scope, prof, focus };
+  }
+  let CHIPS_OK = { scope: new Set(), prof: new Set(), focus: new Set() };
+  const chipOffered = (kind, v, selected) => !v || selected || CHIPS_OK[kind].has(v);
+
   /* ---------- controls ---------- */
   const chipRow = (key, list) => list.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-f="${key}" data-v="${esc(v)}" aria-pressed="${st[key] === v}"${key === "prof" && PROF_TIPS[v] ? ` title="${PROF_TIPS[v]}"` : ""}>${esc(l)}</button>`).join("");
-  const profRow = () => PROF_CHIPS.map(([v, l]) => {
+  const profRow = () => PROF_CHIPS.filter(([v]) => chipOffered("prof", v, st.prof.includes(v))).map(([v, l]) => {
     const selected = v ? st.prof.includes(v) : !st.prof.length;
     const dot = v ? `<span class="dot" style="--c:var(${PROF_COLOR[v]})" aria-hidden="true"></span>` : "";
     return `<button class="chip prof-chip${v ? "" : " all"}" data-prof="${esc(v)}" aria-pressed="${selected}"${PROF_TIPS[v] ? ` title="${PROF_TIPS[v]}"` : ""}>${dot}${esc(l)}</button>`;
   }).join("");
-  const scopeRow = () => SCOPE_CHIPS.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-scope="${esc(v)}" aria-pressed="${v ? st.scope.includes(v) : !st.scope.length}"${SCOPE_TIPS[v] ? ` title="${esc(SCOPE_TIPS[v])}"` : ""}>${esc(l)}</button>`).join("");
-  const focusRow = () => FOCUS_CHIPS.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-focus="${esc(v)}" aria-pressed="${st.focus === v}"${FOCUS_TIPS[v] ? ` title="${esc(FOCUS_TIPS[v])}"` : ""}>${esc(l)}</button>`).join("");
+  const scopeRow = () => SCOPE_CHIPS.filter(([v]) => chipOffered("scope", v, st.scope.includes(v))).map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-scope="${esc(v)}" aria-pressed="${v ? st.scope.includes(v) : !st.scope.length}"${SCOPE_TIPS[v] ? ` title="${esc(SCOPE_TIPS[v])}"` : ""}>${esc(l)}</button>`).join("");
+  const focusRow = () => FOCUS_CHIPS.filter(([v]) => chipOffered("focus", v, st.focus === v)).map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-focus="${esc(v)}" aria-pressed="${st.focus === v}"${FOCUS_TIPS[v] ? ` title="${esc(FOCUS_TIPS[v])}"` : ""}>${esc(l)}</button>`).join("");
   function controls() {
+    CHIPS_OK = availableChips();
     $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${profRow()}`;
     const quickScope = $("#quickscope");   // guarded: a cached pre-2026-09-24 page has no Scope row
     if (quickScope) quickScope.innerHTML = `<span class="flabel">Scope</span>${scopeRow()}`;
@@ -737,13 +763,13 @@
       <button class="chip" data-act="where-online" aria-pressed="${st.where === "online"}">Online</button>
       <button class="chip" data-act="where-hybrid" aria-pressed="${st.where === "hybrid"}">Hybrid</button>
       <label class="geo-label" for="area">Global Region</label>
-      <select id="area" class="sel"><option value="">All regions</option>
+      <select id="area" class="sel geo-sel"><option value="">All regions</option>
         <optgroup label="Continent">${CONTINENTS.map(c => `<option value="c:${c}" ${st.area === "c:" + c ? "selected" : ""}>${c}</option>`).join("")}</optgroup>
         <optgroup label="Country">${COUNTRIES.map(c => `<option value="n:${esc(c)}" ${st.area === "n:" + c ? "selected" : ""}>${esc(c)}</option>`).join("")}</optgroup>
         <optgroup label="United States">${US_REGIONS.map(r => `<option value="r:${r}" ${st.area === "r:" + r ? "selected" : ""}>US ${r}</option>`).join("")}</optgroup></select>
       <span class="geo-divider" aria-hidden="true"></span>
-      <label class="geo-label" for="nearq">Near ZIP / city</label><input id="nearq" list="citylist" placeholder="US ZIP or city" value="${esc(st.nearQ)}" autocomplete="off" inputmode="search"><datalist id="citylist"></datalist>
-      <label class="geo-label" for="radius">within</label><select id="radius" class="sel">${[25, 50, 100, 250, 500, 1000, 2000].map(r => `<option value="${r}" ${st.radius === r ? "selected" : ""}>${r} miles</option>`).join("")}</select>
+      <label class="geo-label" for="nearq">Near City</label><input id="nearq" class="geo-input" list="citylist" placeholder="City or ZIP" value="${esc(st.nearQ)}" autocomplete="off" inputmode="search"><datalist id="citylist"></datalist>
+      <label class="geo-label" for="radius">within</label><select id="radius" class="sel geo-sel">${[25, 50, 100, 250, 500, 1000, 2000].map(r => `<option value="${r}" ${st.radius === r ? "selected" : ""}>${r} miles</option>`).join("")}</select>
       ${st.nearQ && !st.near ? `<span class="nearmsg">No match for “${esc(st.nearQ)}”</span>` : st.near ? `<span class="nearmsg">${esc(st.near.label)}</span>` : ""}`;
     $("#filters").innerHTML = `
       <div class="fgroup"><span class="flabel">Type</span>${chipRow("kind", KIND_CHIPS)}</div>

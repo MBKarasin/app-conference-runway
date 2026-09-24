@@ -673,7 +673,9 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .calspan .wk{column-gap:0!important;border-top-color:#102F3B!important}
 .calspan .cell{border-right:1px solid #102F3B}
 .calspan .cell:nth-child(7){border-right:0}
-.calspan .week-empty{position:relative;z-index:1;align-self:center;justify-self:start;margin:12px;color:#526B76;font-size:12px;font-weight:700;letter-spacing:.02em}
+/* 2026-09-24: the empty-week line used to start in the Sunday cell and run across the Sun/Mon divider.
+   It is now centred on the week, on its own surface, so it never straddles a cell border. */
+.calspan .week-empty{position:relative;z-index:1;align-self:center;justify-self:center;margin:12px auto;padding:6px 14px;background:var(--surface);border:1px solid #D8E2E4;border-radius:2px;color:#526B76;font-size:12px;font-weight:700;letter-spacing:.02em;white-space:nowrap;max-width:calc(100% - 24px);overflow:hidden;text-overflow:ellipsis}
 .calspan .wk.emptyweek .cell,.calspan .wk.emptyweek .cell.out{background:#F8FAFA}
 
 @media(max-width:1050px){
@@ -741,9 +743,20 @@ footer{background:#F4F7F7!important;padding-block:16px 22px!important;font-size:
 .quickscopefocus{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;min-width:0}
 .quickscope .chip,.quickfocus .chip{white-space:nowrap}
 
-.bar .row2{display:grid!important;grid-template-columns:max-content minmax(0,1fr);align-items:start;gap:10px 20px!important}
-.bar .row2 .geoquick{margin-left:0!important;justify-content:flex-end;align-self:start;gap:6px!important}
-.bar .row2 .geoquick .flabel{min-width:54px}.bar .row2 .geoquick input{width:116px}
+.bar .row2{display:flex!important;flex-wrap:wrap;align-items:center;gap:10px 14px!important}
+.bar .row2 .geoquick{margin-left:0!important;justify-content:flex-start;align-items:center;flex-wrap:nowrap;align-self:center;gap:6px!important}
+.bar .row2 .geoquick .flabel{min-width:0}
+/* 2026-09-24: Near City and the radius select match the chips and each other — same height, radius, border and type. */
+.bar .row2 .geoquick .geo-input{width:132px}
+.bar .row2 .geoquick .geo-sel{max-width:112px}
+.bar .row2 .geoquick #area{max-width:150px}
+/* 2026-09-24: every control in the Location row — the four chips, Near City and both selects — is one height. */
+.geoquick .chip,.geoquick .geo-input,.geoquick .geo-sel{box-sizing:border-box;height:28px;line-height:26px;padding:0 9px;border-radius:2px;font-size:13px;font-weight:600}
+.geoquick .geo-input,.geoquick .geo-sel{border:1px solid #C8D6D9;background:#fff;font-family:inherit;color:var(--ink-2)}
+.geoquick .geo-sel{padding-right:4px}
+.geoquick .chip{display:inline-flex;align-items:center}
+.geoquick .geo-sel{padding-right:4px}
+@media(max-width:1180px){.bar .row2 .geoquick{flex-wrap:wrap}}
 .viewtools .seg button{padding:8px 12px!important}
 /* 2026-09-24: a scarlet separator between every display button (List | Calendar | Orbit | Directory). */
 .seg button+button{border-left:2px solid #CC0033!important;border-radius:0 3px 3px 0!important;margin-left:4px!important;padding-left:12px!important}
@@ -832,3 +845,74 @@ details.month{scroll-margin-top:12px}
 
 /* 2026-09-24: Focus → Abstracts Due / Open Abstracts lists records by due date; the date block is the due date. */
 .ev.by-due .when .d{color:#CC0033}.ev.by-due .meeting-dates{font-weight:600;color:#173946}
+
+/* 2026-09-24: at 360px the twelfth Orbit tile was clipped 6px by the stage. */
+@media(max-width:400px){.orbit-stage{overflow:visible}.orbit-month{max-width:100%}}
+
+/* ================= 2026-09-24 · record-type palette and filter-bar reflow (curator decision) =================
+   One colour per record type, used by the calendar bars and the Focus chips and nowhere else.
+   Disciplines are badges, never colour. */
+:root{
+  --t-meet:#102F3B;   /* meetings — Rutgers School of Nursing dark teal */
+  --t-due:#CC0033;    /* abstracts due — Rutgers scarlet */
+  --t-call:#1C7F48;   /* abstracts open — unchanged green */
+  --t-obs:#D64200;    /* celebrations — University of Florida orange, deepened so white text clears 4.5:1 */
+}
+/* Focus chips wear their type's colour: coloured text on white, inverting to a filled box when chosen. */
+#quickfocus .chip[data-focus="due"]{color:var(--t-due);border-color:var(--t-due)}
+#quickfocus .chip[data-focus="open"]{color:var(--t-call);border-color:var(--t-call)}
+#quickfocus .chip[data-focus="conferences"]{color:var(--t-meet);border-color:var(--t-meet)}
+#quickfocus .chip[data-focus="celebrations"]{color:var(--t-obs);border-color:var(--t-obs)}
+#quickfocus .chip[data-focus="due"][aria-pressed="true"]{background:var(--t-due);border-color:var(--t-due);color:#fff}
+#quickfocus .chip[data-focus="open"][aria-pressed="true"]{background:var(--t-call);border-color:var(--t-call);color:#fff}
+#quickfocus .chip[data-focus="conferences"][aria-pressed="true"]{background:var(--t-meet);border-color:var(--t-meet);color:#fff}
+#quickfocus .chip[data-focus="celebrations"][aria-pressed="true"]{background:var(--t-obs);border-color:var(--t-obs);color:#fff}
+/* Disciplines carry no colour of their own. */
+.prof-chip .dot{display:none}
+/* The calendar legend is gone: the Focus row now carries the key. */
+.calwrap .legend,.legend.callegend{display:none}
+.cal .ce.dl{border-left-color:var(--t-due);color:var(--t-due)}
+.cal .ce.op{border-left-color:var(--t-call);color:var(--t-call)}
+
+/* ---- filter bar: three rows, each one line ----
+   row1  views · search · filters · clear
+   quickaxes  Discipline ......... Focus
+   row2  Scope ................... Location */
+.bar .row1{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.bar .row1 .viewtools{order:-1;flex:0 0 auto}
+.bar .row1 .search{flex:1 1 320px;min-width:240px;max-width:none}
+.bar .quickaxes{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
+.bar .quickaxes .quickprof{flex:1 1 auto}
+.bar .quickaxes .quickfocus{margin-left:auto}
+.bar .row2{display:flex!important;flex-wrap:wrap;align-items:center;gap:8px 18px!important}
+.bar .row2 .quickscope{flex:1 1 auto}
+.bar .row2 .geoquick{margin-left:auto!important;border-top:0;padding-top:0}
+.bar .row1 .viewtools .seg,.bar .quickaxes,.bar .row2{align-items:center}
+@media(max-width:1180px){.bar .quickaxes .quickfocus,.bar .row2 .geoquick{margin-left:0!important}}
+
+/* Orbit heading: two lines, aligned with the dial. */
+.orbit-heading{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:4px 18px}
+.orbit-heading>p{margin:0;max-width:62ch}
+
+/* Location must sit on one line to the right of Scope. The two select labels go to
+   screen readers only; the controls still announce themselves through their <label for>. */
+.bar .row2 .quickscope{flex:0 1 auto}
+.bar .row2 .geoquick{flex:1 1 auto;flex-wrap:nowrap;justify-content:flex-end;gap:5px!important;min-width:0}
+.bar .row2 .geoquick .geo-label[for="area"],.bar .row2 .geoquick .geo-label[for="radius"]{
+  position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.bar .row2 .geoquick .flabel{min-width:0;white-space:nowrap}
+.bar .row2 .geoquick #area{max-width:128px;min-width:96px}
+.bar .row2 .geoquick .geo-sel#radius{max-width:96px;min-width:82px}
+.bar .row2 .geoquick .geo-input{width:118px;min-width:92px}
+.bar .row2 .geoquick .geo-divider{display:none}
+@media(max-width:1240px){.bar .row2{flex-wrap:wrap}.bar .row2 .geoquick{flex-wrap:wrap;justify-content:flex-start;margin-left:0!important}
+  .bar .row2 .geoquick .geo-label[for="area"],.bar .row2 .geoquick .geo-label[for="radius"]{position:static;width:auto;height:auto;margin:0;clip:auto}}
+
+/* Scope keeps the left of the row and wraps inside itself if it must; Location holds the right on one line. */
+.bar .row2{flex-wrap:nowrap!important}
+.bar .row2 .quickscope{flex:1 1 auto;min-width:0;flex-wrap:wrap}
+.bar .row2 .geoquick{flex:0 0 auto;min-width:0}
+.bar .row2 .geoquick #area{max-width:118px;min-width:88px}
+.bar .row2 .geoquick .geo-sel#radius{max-width:90px;min-width:78px}
+.bar .row2 .geoquick .geo-input{width:108px;min-width:88px}
+@media(max-width:1240px){.bar .row2{flex-wrap:wrap!important}.bar .row2 .geoquick{flex:1 1 auto}}
