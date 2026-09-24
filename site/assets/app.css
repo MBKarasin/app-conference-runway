@@ -949,3 +949,14 @@ details.month{scroll-margin-top:12px}
 /* The rule under Scope and Location matches the scarlet rule above the search field. */
 .bar{border-bottom:1px solid var(--scarlet)!important}
 .bar .row2{border-top:0}
+
+/* 2026-09-24: National APP Week is a celebration, so it wears the celebration colour.
+   It was pinned in scarlet, which now means "abstracts due" — a colour-code collision.
+   It stays the emphasised landmark record; only its hue changes. */
+.cal .ce.appweek,.cal .ce.appweek.ongoing{
+  background:color-mix(in srgb,var(--t-obs) 16%,var(--surface))!important;
+  color:#6B2E00!important;border-left:4px solid var(--t-obs)!important;
+  font-weight:800!important;box-shadow:none!important}
+.cal .ce.appweek:hover{background:color-mix(in srgb,var(--t-obs) 26%,var(--surface))!important;color:#4F2200!important}
+.cal .ce.appweek small{color:#8A4A10!important}
+.cal .cell:has(.ce.appweek){background:var(--surface)!important}

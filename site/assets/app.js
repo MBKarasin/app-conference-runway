@@ -315,7 +315,10 @@
   function isException(e) {
     const v = e.verify || { state: "unchecked" };
     if (["expected", "rule", "archived", "announced"].includes(v.state)) return false;
-    if (v.state === "verified") return v.method !== "manual" && v.evidence_match === false;
+    // 2026-09-24 (curator decision): "Source wording changed" was retired. The site never showed the
+    // original excerpt, so a reader had no reference point and nothing to act on. A verified record is
+    // verified: the nightly check found the start date, its year and a name word on the organizer page.
+    if (v.state === "verified") return false;
     return true;
   }
   function verMatch(e) { return !st.review || isException(e); }
@@ -398,13 +401,15 @@
     // exceptionsOnly = true: only exceptions and projections (record dialog, Directory). Check times stay in the page header.
     if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
-    const drift = v.state === "verified" && v.method !== "manual" && v.evidence_match === false;
-    if (exceptionsOnly && ((v.state === "verified" && !drift) || v.state === "rule" || v.state === "archived")) return "";
+    // 2026-09-24 (curator decision): fidelity is presumed. A record that passed its check carries no
+    // badge at all — "Start found" and "Source reviewed" were retired. A label appears only when the
+    // checks found something to say: a projection, a save-the-date, a rule-computed date, or an exception.
+    if (v.state === "verified") return "";
+    if (exceptionsOnly && (v.state === "rule" || v.state === "archived")) return "";
     if (v.state === "announced" && exceptionsOnly) return `<span class="vf verified" title="The organizer has published a save-the-date for these days; the detailed programme is still to come.">${ICON.check}Save the date</span>`;
-    const label = v.state === "verified" && v.method === "manual" ? "Source reviewed" : drift ? "Source wording changed" : baseLabel;
+    const label = v.state === "verified" && v.method === "manual" ? "Source reviewed" : baseLabel;
     const when = "";   // the page header carries the check time; repeating it on every record only adds noise
     const tip = v.state === "verified" && v.method === "manual" ? "Confirmed by a manual review of the organizer's own source, not by the nightly text match. Open the record for the quoted wording and the source link, and confirm details with the organizer before booking." :
-      drift ? "The start date and a meeting-name word remain on the organizer page, but the original source excerpt no longer matches. Review the full range before relying on it." :
       v.state === "verified" ? "Start date, year and a distinctive meeting-name word were found on the organizer page. Confirm the end date there before booking." :
       v.state === "not_found" ? "The nightly check could not find these dates on the organizer page. Confirm before relying on them." :
       v.state === "conflict" ? (v.why || "The organizer publishes conflicting dates; confirm the final date before relying on it.") :
@@ -414,14 +419,14 @@
       v.state === "rule" ? "Computed from the organizer's published rule for this observance." :
       "The organizer page could not be read automatically" + (v.why ? " (" + v.why + ")" : "") + ". Shown as compiled on " + (e.compiled || "") + ".";
     if (exceptionsOnly) {
-      const plain = drift ? "Source wording changed" : v.state === "not_found" ? "Date needs review" :
+      const plain = v.state === "not_found" ? "Date needs review" :
         v.state === "conflict" ? "Source reviewed" : v.state === "expected" ? "Expected month" : "Source not re-checked";
       // 2026-09-24 (curator decision): an organizer date ambiguity belongs inside the record, where
       // someone weighing the meeting will read it, not as a warning on every card that passes by.
-      const tone = drift || v.state === "not_found" ? "warn" : "muted";
+      const tone = v.state === "not_found" ? "warn" : "muted";
       return `<span class="source-note ${tone}" title="${esc(tip)}">${esc(plain)}</span>`;
     }
-    return `<span class="vf ${drift ? "not_found" : esc(v.state)}" title="${esc(tip)}">${ICON[drift ? "warn" : icon]}${esc(label + when)}</span>`;
+    return `<span class="vf ${esc(v.state)}" title="${esc(tip)}">${ICON[icon]}${esc(label + when)}</span>`;
   }
   function callPill(e) {
     if (e.s.kind === "observance" || e.expectedRow || e.past) return "";
