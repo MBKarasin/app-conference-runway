@@ -221,15 +221,19 @@
    "source_url": "https://npweek.aanp.org/press-releases-and-letters",
    "source_reviewed": true,
    "compiled": "2026-09-21",
-   "evidence": "2026 National Nurse Practitioner Week Is November 8-14"
+   "evidence": "2026 National Nurse Practitioner Week Is November 8-14",
+   "location": "Nationwide",
+   "_why": "National Nurse Practitioner Week is a nationwide observance with no venue; it shipped with an empty location. Set to Nationwide 2026-09-24, matching every other observance.",
+   "reviewed_on": "2026-09-24"
   },
   "a6986e02edc1": {
    "source_url": "https://www.aana.com/event/national-crna-week-2027/",
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "evidence": "National CRNA Week 2027 January 17, 2027 - January 23, 2027",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-24",
+   "_why": "National CRNA Week is a nationwide observance with no venue; it shipped with an empty location. Set to Nationwide 2026-09-24, matching every other observance.",
+   "location": "Nationwide"
   },
   "3d8a3d9936ff": {
    "start": "2026-09-28",
@@ -774,6 +778,83 @@
   "4a5f7e5998f7": {
    "source_url": "https://nursing.uw.edu/academics/dnp/",
    "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+   "reviewed_on": "2026-09-24"
+  },
+  "ac347521ac00": {
+   "location": "Grand Marquis, 1550 U.S. 9, Old Bridge, NJ 08857",
+   "evidence": "AACN Central New Jersey Chapter's 9th Critical Care Symposium — Thursday, September 17, 2026 at 8:00am ET through Friday, September 18, 2026 at 4:00pm ET. Grand Marquis, 1550 U.S. 9, Old Bridge, NJ 08857",
+   "_why": "Recorded with no organizer wording. Re-read the chapter's own event page 2026-09-24 and captured its date and venue verbatim.",
+   "reviewed_on": "2026-09-24"
+  },
+  "c453801a9986": {
+   "location": "Virtual",
+   "evidence": "9th Annual Administrative (Evening/Night) Supervisor Virtual Conference — September 17, 2026, 8:00 AM to 2:00 PM EDT, virtual",
+   "_why": "Recorded with no organizer wording. Re-read the organizer's registration page 2026-09-24 and captured its date and format verbatim.",
+   "reviewed_on": "2026-09-24"
+  },
+  "acf27c4896bf": {
+   "location": "Philadelphia, PA",
+   "evidence": "Multisite Leaders in Hospital Medicine Summit — September 17-18, 2026 | Philadelphia, PA",
+   "_why": "Recorded with no organizer wording. Re-read SHM's own conferences index 2026-09-24 and captured its date and city verbatim.",
+   "reviewed_on": "2026-09-24"
+  },
+  "c62cab081779": {
+   "location": "Atlanta, GA",
+   "evidence": "HRX Live 2026 — September 18-20, 2026, Atlanta, GA",
+   "_why": "Recorded with no organizer wording. Re-read the organizer's own site 2026-09-24 and captured its date and city verbatim.",
+   "reviewed_on": "2026-09-24"
+  },
+  "8dacb8f4aa3f": {
+   "location": "Nationwide",
+   "_why": "National Hospitalist Day is a nationwide observance with no venue; it shipped with an empty location. Set to Nationwide 2026-09-24, matching every other observance.",
+   "reviewed_on": "2026-09-24"
+  },
+  "b57f0a2c43fe": {
+   "location": "Virtual",
+   "format": "virtual",
+   "evidence": "We Are Family (Medicine) | January 16 – 18, 2027, Virtual",
+   "_why": "AAPA's events index states this meeting is virtual; the record shipped with no location. Read 2026-09-24.",
+   "reviewed_on": "2026-09-24"
+  },
+  "19b4ff7f7de5": {
+   "location": "Host city not yet announced",
+   "evidence": "AAPA 2028 | May 19 – 23, 2028 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
+   "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-24"
+  },
+  "2d41c6dd5d42": {
+   "location": "Host city not yet announced",
+   "evidence": "AAPA 2029 | April 27 – May 1, 2029 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
+   "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-24"
+  },
+  "9f0e3dbb33b1": {
+   "location": "Host city not yet announced",
+   "evidence": "AAPA 2030 | May 17 – 21, 2030 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
+   "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-24"
+  },
+  "79d298e81fa1": {
+   "location": "Host city not yet announced",
+   "evidence": "Jun 9 - 13 2027 SDPA Annual Summer Dermatology Conference",
+   "_why": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-24"
+  },
+  "60b19fa7fb93": {
+   "location": "Host city not yet announced",
+   "evidence": "Nov 10 - 14 2027 SDPA 25th Annual Fall Dermatology Conference",
+   "_why": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-24"
+  },
+  "ee76d4c7f3bf": {
+   "location": "Host city not yet announced",
+   "evidence": "Jun 7 - 11 2028 SDPA Annual Summer Dermatology Conference",
+   "_why": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-24"
+  },
+  "7ca43ec52267": {
+   "location": "East Tennessee State University, Johnson City, TN",
+   "_why": "The chapter's page gives the 2023 date (April 20, 2023) but no 2023 venue; the host institution is named on the page. Recorded at institution level only, 2026-09-24, rather than left empty.",
    "reviewed_on": "2026-09-24"
   }
  },
