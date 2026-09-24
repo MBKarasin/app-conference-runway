@@ -2,7 +2,7 @@
 
 **Audience:** the global APP community.
 **Purpose:** to show how this site was built, where every claim on it comes from, and how to reproduce or challenge it. Read it before running anything.
-**Governance:** MBK AI Governance v5.0 (2026-09-21) invoked.
+**Governance:** MBK Governance v5.0 (2026-09-21; trial through the 2026-10-04 review). Invoked for this project and confirmed active at 2026-09-23 21:26:33 -04:00 (EDT).
 **Live site:** https://mbkarasin.github.io/app-conference-runway/ (kept out of search engines on purpose)
 **Source code:** https://github.com/MBKarasin/app-conference-runway. It is public, so anyone can read every file and its full change history. Only the curator can change the site; others can suggest changes through GitHub issues.
 **Curator and accountable owner:** Dr. Mark Karasin, DNP, APN, AGACNP-BC
@@ -12,7 +12,7 @@
 
 ## 1. Why this exists
 
-Advanced practice providers (NPs, PAs, CRNAs, CAAs, CNSs, CNMs) and their students have no single place to see where their colleagues meet, present and publish. Meetings are scattered across hundreds of organizer sites in many languages. Abstract deadlines come and go unseen, and student and DNP project venues are hard to find.
+Advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs) and their students have no single place to see where their colleagues meet, present and publish. Meetings are scattered across hundreds of organizer sites in many languages. Abstract deadlines come and go unseen, and student and DNP project venues are hard to find.
 
 The Runway is a single, open, source-traced calendar of those opportunities. The goal is to help clinicians exchange ideas toward a shared aim: advancing the discipline and improving human health outcomes. Visitors search or filter the calendar, then open an entry to review its source wording and confirm details with the organizer.
 
@@ -20,8 +20,8 @@ The site is independent. It is not an official publication of, or endorsement by
 
 ## 2. How it came together
 
-- **Human role.** The curator set the scope and filters, made every decision on hosting, visibility and design, and reviewed the output. Data corrections that serve the stated objective are executed by the AI and reported. The curator's approval is reserved for new destinations, accounts, cost or scope changes.
-- **AI role.** An AI assistant (Claude, by Anthropic) researched organizer pages, compiled the data, wrote the build and check scripts, walked organizer sites to confirm dates, and made the initial design changes. ChatGPT (OpenAI) then independently red-teamed the public-facing design, generated the selected APP Conference Runway logo under Dr. Mark Karasin's direction, implemented the logo and two-line introduction, and refined the calendar's visual hierarchy.
+- **Human role.** The curator conceived and directed the instrument's purpose, information architecture, visual representation, interface behavior, navigation, filters, taxonomy and hierarchy. He designed the List, Calendar and Orbit graph concepts, determined their ordering and interaction rules, selected the visual and color direction, made every decision on hosting and visibility, and reviewed the output. Data corrections that serve the stated objective are executed by the AI and reported. The curator's approval is reserved for new destinations, accounts, cost or scope changes.
+- **AI role.** An AI assistant (Claude, by Anthropic) researched organizer pages, compiled the data, wrote the build and check scripts, and walked organizer sites to confirm dates. ChatGPT (OpenAI) red-teamed the public-facing design, translated the curator's interface and visualization direction into code, tested and refined the List, Calendar, Orbit and filtering behavior, and generated the selected APP Conference Runway logo under Dr. Mark Karasin's direction. The AI systems served as research, implementation and review tools; public product and design decisions remained with the curator.
 - **Lineage.** The site began as a single-page "Conference Runway" artifact (dataset compiled 2026-09-16, kept verbatim as `sources/runway_2026-09-16.json`). On 2026-09-21 and 2026-09-22 it was rebuilt as this static site with a nightly checker.
 - **Failures found during the build, and the controls added for each.** They are recorded here so reviewers can test whether the controls hold.
   - **Coverage drawn from memory.** Observances were missing (for example, National APP Week). Control: build a source-universe inventory before searching, and report coverage as a table.
@@ -77,7 +77,7 @@ The page header shows one **Updated** timestamp: the time of the last nightly so
 - The checker is a text match. A start date, the year and one name word anywhere on a page will pass, even when the page lists other events.
 - End dates are recorded from the source but are not re-checked automatically.
 - Discipline tags (NP, PA, and the others) are curator judgments backed by `np_pa_basis`. The AGACNP filter is a curated topic view. It does not claim an AGACNP-specific track or credit.
-- "Students & DNP projects" is one public discipline: organizer-documented opportunities for APP students (NP, PA, CRNA, CAA, CNS, CNM) together with venues that accept DNP project posters or abstracts. The underlying records retain their more specific student or project categories.
+- "Students & DNP projects" is one public discipline: organizer-documented opportunities for APP students (NP, PA, CRNA, CNS, CNM) together with venues that accept DNP project posters or abstracts. The underlying records retain their more specific student or project categories.
 - Coverage is concentrated in the United States and is incomplete globally.
 
 ## 4. Website architecture
@@ -93,15 +93,17 @@ The page header shows one **Updated** timestamp: the time of the last nightly so
 
 ## 5. Design and navigation
 
+- **Design authority and implementation:** The curator is the design authority for the site's visual representation, information architecture, user interface, List and Calendar presentations, Orbit graph, record grouping, filter model and public wording. AI assistants implemented and tested those decisions in the static site and documented material revisions here.
 - **Header:** image logo (returns to the landing page), tagline, Copy link, Share, Make a request, AI Handoff, a two-line explanation of what the instrument does and how to use it, and a right-aligned automated re-check timestamp on the same bottom header row.
 - **Logo and Rutgers reference:** The selected logo was generated by ChatGPT under Dr. Mark Karasin's direction. Its runway metaphor, navy field, white lettering and `#CC0033` scarlet accent were selected for this project. Scarlet is used as a restrained color reference to Rutgers; the logo does not reproduce the Rutgers block R, wordmark, seal or another institutional mark, and it does not imply Rutgers endorsement.
 - **Tabs:** Upcoming · Abstract deadlines · Students & DNP projects · Directory.
 - **Abstract deadlines:** mutually exclusive groups appear in this order: Due within 30 days · Opening within 30 days · Open now. A call is shown only once, with imminent closing dates taking priority.
-- **Discipline filter:** All APPs, NP, AGACNP, PA, CRNA / CAA, CNS, CNM, NP-RNFA, Students & DNP. CAA records are folded into the CRNA / CAA discipline; student and DNP records share one discipline. Further filters cover location (online, continent, country, US region, or within a radius of a ZIP code or city), focus, kind and specialty.
+- **Discipline filter:** All APPs, NP, AGACNP, CRNA, NP-RNFA, CNS, CNM, PA, Students & DNP. Student and DNP records share one discipline. Location type (All, Live, Online or Hybrid) can be combined with Global Region; distance and search remain independent filters.
+- **Focus filter:** Clinical, Academic, Research and Leadership can be selected singly or in combination; All clears the focus selection. The interface derives these tags from audience, specialty, organizer and meeting-name metadata, and every display uses the same match.
 - **List view:** one card per edition, with discipline badges, the abstract-call state and the organizer.
 - **Display switch:** List, Calendar and Orbit are alternate presentations of the same filtered records. The location controls sit immediately beside this switch under the label **Global Region**; **Clear all** sits with the search and Filters controls so it cannot displace location.
 - **Calendar view:** each consecutive run of days is one bar per week, not one entry per day. Colors show record type only: meeting, open abstract call (a bar running to the due date, with a scarlet end on the due day), and celebration. Dark navy borders carry the grid; scarlet is reserved for the current date, deadline ends, selected controls and a restrained accent on APP Week. Filtered weeks with no matching records say so explicitly. Clicking a day number opens every record for that day.
-- **Orbit view:** the selected year floats at the center of a circular month arrangement. Three gently rising columns on every month encode filtered meeting, abstracts-due and open-abstract density. Choosing a month refreshes the categorized rail to the right; the records in that rail open the same evidence detail used everywhere else. Navy structure, deep teal meetings, scarlet due dates and green open calls adapt concept panel 3 from `APP_Conference_Runway_Design_Variations.pdf` into a functional yearly view.
+- **Orbit view:** the selected year and active filters float at the center of a circular month arrangement. Three rising columns on every month encode filtered meeting, abstracts-due and open-abstract density, with a plain count below each column. Choosing a month refreshes three initially open, collapsible sections in this order: Abstracts Due, Meetings & Conferences, Open Abstracts. The records open the same evidence detail used everywhere else. Logo navy marks meetings, scarlet marks due dates and a deeper green marks open calls. Location type, Global Region, distance, discipline, Focus, type, specialty, source-review status, abstract-call status, tab and search all use the same shared matcher as List and Calendar. Upcoming excludes past editions, Abstract deadlines admits only current or announced calls, Directory can show the full selected year, and projected records enter Orbit only when **Show expected dates** is enabled. These scopes live in interface logic rather than the current dataset, so subsequent source rebuilds retain them. If a new location filter leaves the selected month empty, Orbit moves within the displayed year to the first month that has a match; for example, Qatar reveals Qatar Health Congress in November 2026.
 - **Record detail:** dates, location, abstract call, student opportunity, a seven-year view (three years back to three ahead), the organizer's archive, the source link, the quoted wording, a calendar file, and "Suggest a fix" (opens a GitHub issue).
 - **Every view is a URL.** Filters and views live in the address hash, so a view can be shared as a link.
 - **Dark mode** follows the device. The layout works at phone width.
@@ -122,11 +124,72 @@ The page header shows one **Updated** timestamp: the time of the last nightly so
 
 ## 7. Reproduce it
 
-1. Read `README.md`, `sources/SCHEMA.md` and the two workflows before running anything.
-2. Fork or clone the repository. No secrets are required.
-3. Run locally: `python scripts/build.py && python scripts/validate.py`, then serve `site/` with any static server (for example, `python -m http.server -d site`).
-4. Optional: `python scripts/check.py` re-reads organizer pages (it honors robots.txt and sends one request at a time per host). `python scripts/geocode.py` places new venues.
-5. To publish your own copy: set Pages to "GitHub Actions", allow workflow write permission, run "Check sources and publish" once, and edit `site/assets/config.js`.
+This section is the replication contract. A future maintainer or AI should be able to recreate the public instrument, its data build and its maintenance workflow from the repository alone. Do not infer behavior from a screenshot when the rule is recorded here or in the source.
+
+### 7.1 Choose the level being reproduced
+
+1. **Visual and interaction replica.** Copy `site/` and serve it as static files. This preserves the published data snapshot, logo, fonts, List, Calendar, Orbit and filters, but it does not refresh records.
+2. **Deterministic data replica.** Copy the whole repository and run the build and validation steps below. This regenerates the public data from the committed source files and verification state.
+3. **Maintained public replica.** Fork the whole repository, configure GitHub Pages and workflow permissions, and retain the scheduled source check, snapshot and issue-reporting jobs. This is the level needed to reproduce the operating project rather than only its appearance.
+
+### 7.2 Required environment and authoritative inputs
+
+- Use Python 3.12. The build, validation, geocoding, link-check and snapshot scripts otherwise use the Python standard library. Install `pypdf==5.*` before the web source check so evidence in PDFs can be read. There is no Node, bundler, package manager, database, server framework or runtime API.
+- Treat `sources/runway_2026-09-16.json`, `sources/group_*.json`, `sources/archive/`, `sources/observances.json` and `sources/student_opportunities.json` as the curated content inputs. Follow `sources/SCHEMA.md` when adding records.
+- `sources/overrides.json` is the final authority for corrections and removals; its entries must retain `_why`. Series aliases are resolved before editions are emitted. `data/verification.json` and `data/link_status.json` are machine-written observations, not replacements for the curated inputs.
+- `sources/geo/manual.json` is the authority for locations that automatic geocoding cannot place. Generated geography is written to `sources/geo/locations.json`, `site/geo/cities.json` and the ZIP shards under `site/geo/zip/`.
+- The public interface is defined by `site/index.html`, `site/assets/app.js`, `site/assets/app.css` and `site/assets/config.js`. The logo and self-hosted fonts in `site/assets/` are part of the visual system. Preserve the independence statement when personalizing affiliations.
+
+### 7.3 Rebuild and preview locally
+
+From the repository root, run:
+
+```text
+python scripts/build.py
+python scripts/validate.py
+python -m http.server 8000 --directory site
+```
+
+Open `http://localhost:8000/`. The build writes `site/data/runway.json` and `site/runway.ics` and updates the permanent `data/ledger.json`. A clean build must be followed by a passing validation before publication.
+
+The following maintenance steps require network access and change their documented output files:
+
+```text
+python -m pip install "pypdf==5.*"
+python scripts/check.py
+python scripts/linkcheck.py
+python scripts/build.py
+python scripts/validate.py
+python scripts/snapshot.py
+```
+
+`check.py` writes `data/verification.json` and `data/check_report.md`; `linkcheck.py` writes `data/link_status.json` and `data/link_report.md`; the second build incorporates those observations; `snapshot.py` archives the exact resulting public data. `geocode.py` is separate because it downloads Census and GeoNames reference files and rewrites the geography outputs; run it when a new or corrected venue needs placement, then rebuild and validate. The web is not deterministic, so record the run date and preserve the resulting git diff rather than expecting a later check to return byte-for-byte identical observations.
+
+### 7.4 Interface invariants and acceptance test
+
+A replica is not complete until these behaviors are checked in a browser at desktop and phone widths:
+
+- List, Calendar and Orbit apply the same search, location type, Global Region, distance, discipline, Focus, type, specialty, abstract-call and source-review filters. Address hashes must restore the same selection after reload and be safe to share.
+- Location type partitions the applicable records into All, Live, Online and Hybrid without losing or duplicating a record. ZIP-radius filtering appears in the Orbit center only when used.
+- Upcoming excludes past editions; Abstract deadlines contains current or announced calls; Directory may show the full selected year. Expected editions remain absent unless **Show expected dates** is enabled.
+- Orbit uses the selected year and active filters at the center. Month columns use logo navy for meetings, scarlet for abstracts due and deep green for open calls, with plain counts below the zero line. The detail rail is initially open, remains collapsible, and is ordered **Abstracts Due → Meetings & Conferences → Open Abstracts**. When a location-only result exists outside the selected month, Orbit advances to the first matching month in that year.
+- Calendar bars retain navy structural borders and type colors. Deadline items precede other expanded records for the day or week instead of falling below "more" content.
+- Opening a record in any view reaches the same evidence detail, organizer source and verbatim date wording. Keyboard navigation, visible focus, device dark mode and narrow-screen layout must remain usable.
+- Public discipline labels use CRNA and do not expose legacy source taxonomy. The public ordering is NP, AGACNP, CRNA, NP-RNFA, CNS, CNM, PA, Students & DNP.
+- With browser developer tools open, the static site should produce no application errors and no third-party runtime requests.
+
+### 7.5 Publish and operate a GitHub replica
+
+1. Fork or clone the complete repository, including the hidden `.github/` directory. No secrets are required.
+2. Edit `site/assets/config.js` for the curator, affiliations, role labels, request address and repository URL. Replace the logo only if intentionally redesigning the identity; keep its accessible text and responsive sizing.
+3. In repository settings, set Pages **Source** to **GitHub Actions**. In Actions → General, give workflows **Read and write permissions** so the scheduled checker can commit verification files and maintain the review issue.
+4. Run **Check sources and publish** manually once. Thereafter, `.github/workflows/runway.yml` rebuilds and validates every push to `main`, deploys `site/`, and performs the scheduled check, link report, snapshot and review-issue update.
+5. `.github/workflows/bootstrap.yml` exists only to unpack the original bundled distribution. A normal clone or fork that already contains the full repository must not run it.
+6. Confirm the deployed URL, the Updated timestamp, a source-detail dialog, the calendar feed and at least one filtered URL in each of List, Calendar and Orbit.
+
+### 7.6 Definition of successful replication
+
+The result is a faithful replica only when (a) the same committed inputs produce a validation-passing public dataset and calendar feed; (b) all three views preserve the filter and evidence rules above; (c) every published factual record remains traceable to its organizer material; (d) the scheduled workflow can update verification, snapshots and the review digest without a private service; and (e) a new maintainer can distinguish curator decisions, AI implementation, machine observations and organizer evidence from the repository history alone.
 
 ## 8. How to challenge it
 
