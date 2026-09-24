@@ -103,7 +103,7 @@ h1 .app{color:var(--runway-ink)}
 .seg button{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;border-radius:6px;padding:6px 11px;font-weight:600;font-size:13.5px;color:var(--ink-2);cursor:pointer}
 .seg button svg{width:14px;height:14px}
 .seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-.seg button[data-display="directory"]{border-left:2px solid #CC0033;border-radius:0 6px 6px 0;margin-left:4px;padding-left:14px}
+.seg button+button{border-left:2px solid #CC0033;border-radius:0 6px 6px 0;margin-left:4px;padding-left:14px}
 .switch{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;color:var(--ink);cursor:pointer;position:relative}
 .switch input{position:absolute;opacity:0;width:36px;height:20px;margin:0;cursor:pointer}
 .switch .track{width:36px;height:20px;border-radius:999px;background:var(--rule);position:relative;transition:background .15s;flex:none;pointer-events:none}
@@ -704,12 +704,12 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .orbit-columns i{display:block;width:13px;height:var(--h);max-height:52px;min-height:8px;border-radius:4px 4px 0 0;opacity:.9}
 .orbit-month:hover .orbit-columns i{opacity:1}
 .orbit-counts{display:flex;justify-content:center;gap:5px;height:13px;line-height:13px}.orbit-counts i{width:13px;font-style:normal;font-size:10px;font-weight:400;text-align:center;color:#526B76;font-variant-numeric:tabular-nums}
-.orbit-columns .meet,.orbit-legend .meet{background:#102F3B}.orbit-columns .due,.orbit-legend .due{background:#CC0033}.orbit-columns .open,.orbit-legend .open{background:#397C64}
+.orbit-columns .meet,.orbit-legend .meet{background:#102F3B}.orbit-columns .due,.orbit-legend .due{background:#CC0033}.orbit-columns .open,.orbit-legend .open{background:#397C64}.orbit-columns .obs,.orbit-legend .obs{background:#A8641A}
 .orbit-legend{display:flex;justify-content:center;gap:10px 24px;flex-wrap:wrap;padding-top:8px;color:#526B76;font-size:12px;font-weight:700}
 .orbit-legend i{display:inline-block;width:11px;height:11px;margin-right:6px;vertical-align:-1px;border-radius:2px}
 .orbit-rail{display:grid;gap:14px;padding:18px;max-height:760px;overflow:auto}
 .orbit-rail>header{border-bottom:3px solid #102F3B;padding-bottom:10px}.orbit-rail .eyebrow{color:#CC0033;margin-bottom:3px}
-.orbit-group{border-left:4px solid var(--tone);padding-left:11px}.orbit-group.meet{--tone:#102F3B}.orbit-group.due{--tone:#CC0033}.orbit-group.open{--tone:#397C64}
+.orbit-group{border-left:4px solid var(--tone);padding-left:11px}.orbit-group.meet{--tone:#102F3B}.orbit-group.due{--tone:#CC0033}.orbit-group.open{--tone:#397C64}.orbit-group.obs{--tone:#A8641A}
 .orbit-group summary{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 7px;font-size:15px;font-weight:700;color:#102F3B;cursor:pointer;list-style:none}.orbit-group summary::-webkit-details-marker{display:none}.orbit-group summary span::before{content:"+";display:inline-block;width:15px;color:var(--tone)}.orbit-group[open] summary span::before{content:"−"}.orbit-group summary b{font-size:12px;background:color-mix(in srgb,var(--tone) 14%,white);color:var(--tone);padding:2px 7px;border-radius:999px}
 .orbit-group>div{display:grid;gap:5px}.orbit-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:1px 9px;text-align:left;background:#F8FAFA;border:1px solid #D7E2E4;border-left:3px solid var(--tone);padding:7px 8px;color:#102F3B;cursor:pointer}.orbit-item:hover{border-color:var(--tone)}
 .orbit-item-date{grid-row:1 / 3;font-size:11px;font-weight:800;color:var(--tone);line-height:1.25}.orbit-item strong{font-size:13px;line-height:1.2}.orbit-item span:last-child{font-size:11px;color:#526B76;line-height:1.25}
@@ -719,11 +719,11 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   .orbit-shell{grid-template-columns:1fr}.orbit-rail{max-height:none;grid-template-columns:repeat(3,minmax(0,1fr))}.orbit-rail>header{grid-column:1 / -1}.orbit-stage{width:min(580px,100%)}
 }
 @media(max-width:700px){
-  .orbit-board{padding:14px 10px}.orbit-heading{align-items:start}.orbit-heading p:last-child{display:none}.orbit-stage{width:430px;max-width:100%;overflow:hidden}.orbit-core{width:172px;height:172px;border-width:6px;grid-template-columns:26px 1fr 26px}.orbit-core strong{font-size:32px}.orbit-core small{font-size:8px}.orbit-month{--radius:126px;width:66px;height:88px;margin:-44px 0 0 -33px;padding:4px}.orbit-columns{height:43px;gap:3px}.orbit-columns i{width:9px;max-height:38px}.orbit-counts{gap:3px}.orbit-counts i{width:9px;font-size:9px}.orbit-month-name{font-size:10px}.orbit-rail{grid-template-columns:1fr}.orbit-rail>header{grid-column:1}.orbit-item{grid-template-columns:66px minmax(0,1fr)}
+  .orbit-board{padding:14px 10px}.orbit-heading{align-items:start}.orbit-heading p:last-child{display:none}.orbit-stage{width:430px;max-width:100%;overflow:hidden}.orbit-core{width:172px;height:172px;border-width:6px;grid-template-columns:26px 1fr 26px}.orbit-core strong{font-size:32px}.orbit-core small{font-size:8px}.orbit-month{--radius:126px;width:66px;height:88px;margin:-44px 0 0 -33px;padding:4px}.orbit-columns{height:43px;gap:3px}.orbit-columns i{width:9px;max-height:38px}.orbit-counts{gap:3px}.orbit-counts i{width:9px;font-size:9px}.orbit-month-name{font-size:10px;line-height:1.05}.orbit-month-year{display:block}.orbit-rail{grid-template-columns:1fr}.orbit-rail>header{grid-column:1}.orbit-item{grid-template-columns:66px minmax(0,1fr)}
 }
 
 /* Separate the Directory from the three record displays. */
-.seg button[data-display="directory"]{border-left:2px solid #CC0033!important;margin-left:5px!important;padding-left:14px!important}
+.seg button+button{border-left:2px solid #CC0033!important;margin-left:5px!important;padding-left:14px!important}
 
 /* Compact, quieter provenance footer. */
 footer{background:#F4F7F7!important;padding-block:16px 22px!important;font-size:12.5px!important}
@@ -735,16 +735,18 @@ footer{background:#F4F7F7!important;padding-block:16px 22px!important;font-size:
 @media(max-width:640px){.curator{grid-template-columns:1fr!important;padding:10px 0 10px 12px!important}.curator>.flabel,.curator .curated-line,.curator .who,.curator .credentials,.roles,.curator .fine{grid-column:1!important;grid-row:auto!important}}
 
 /* 2026-09-23 control alignment, calendar disclosure, and footer hierarchy. */
-.quickaxes{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:8px 24px;align-items:center}
-.quickprof,.quickfocus{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-width:0}
-.quickfocus{justify-self:end}
-.quickfocus .chip{white-space:nowrap}
+.quickaxes{display:grid;grid-template-columns:minmax(0,1fr);gap:8px 24px;align-items:center}
+.quickprof,.quickscope,.quickfocus{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-width:0}
+/* 2026-09-24: Scope (was Focus) on the left, the record-type Focus to its right. */
+.quickscopefocus{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;min-width:0}
+.quickscope .chip,.quickfocus .chip{white-space:nowrap}
 
 .bar .row2{display:grid!important;grid-template-columns:max-content minmax(0,1fr);align-items:start;gap:10px 20px!important}
 .bar .row2 .geoquick{margin-left:0!important;justify-content:flex-end;align-self:start;gap:6px!important}
 .bar .row2 .geoquick .flabel{min-width:54px}.bar .row2 .geoquick input{width:116px}
 .viewtools .seg button{padding:8px 12px!important}
-.seg button[data-display="directory"]{border-left:2px solid #CC0033!important;border-radius:0 3px 3px 0!important;margin-left:4px!important;padding-left:12px!important}
+/* 2026-09-24: a scarlet separator between every display button (List | Calendar | Orbit | Directory). */
+.seg button+button{border-left:2px solid #CC0033!important;border-radius:0 3px 3px 0!important;margin-left:4px!important;padding-left:12px!important}
 
 .calhead{display:grid;grid-template-columns:minmax(430px,.9fr) minmax(500px,1.1fr);align-items:center;gap:12px 24px;margin-bottom:10px}
 .calnav{display:grid;grid-template-columns:38px 38px minmax(220px,1fr) 38px 38px;align-items:center;gap:6px}
@@ -773,7 +775,7 @@ footer{padding-block:10px 18px!important}
 .method-summary{width:100%;max-width:none;margin:0 0 7px!important;text-align:left}.method-summary b{color:#102F3B}
 
 @media(max-width:1150px){
-  .quickaxes{grid-template-columns:1fr}.quickfocus{justify-self:start}
+  .quickscopefocus{justify-content:flex-start}
   .calhead{grid-template-columns:1fr}.calmeta{justify-content:flex-start}.foot{grid-template-columns:1fr!important}.curator{grid-template-columns:145px minmax(0,1fr)!important}
 }
 @media(max-width:760px){
@@ -782,7 +784,7 @@ footer{padding-block:10px 18px!important}
   .calmeta{align-items:flex-start;flex-wrap:wrap}.callegend{grid-template-columns:repeat(2,minmax(0,max-content));border-left:0;border-top:2px solid #CC0033;padding:8px 0 0;width:100%}
 }
 @media(max-width:640px){
-  .quickaxes{gap:7px}.quickprof,.quickfocus{width:100%;max-width:100%;flex-wrap:nowrap;overflow-x:auto;margin-right:0;padding-right:0;scrollbar-width:thin}.quickfocus{justify-self:stretch}.quickprof .chip,.quickfocus .chip,.quickprof .flabel,.quickfocus .flabel{flex:none}
+  .quickaxes{gap:7px}.quickscopefocus{display:grid;gap:7px}.quickprof,.quickscope,.quickfocus{width:100%;max-width:100%;flex-wrap:nowrap;overflow-x:auto;margin-right:0;padding-right:0;scrollbar-width:thin}.quickprof .chip,.quickscope .chip,.quickfocus .chip,.quickprof .flabel,.quickscope .flabel,.quickfocus .flabel{flex:none}
   .calnav{grid-template-columns:32px 32px minmax(120px,1fr) 32px 32px;gap:4px}.calnav .btn{width:32px;height:32px}.calnav h2{font-size:21px!important}
   .caljump{flex-wrap:wrap}.calspan .overflow{margin-inline:5px!important}.overflow-cue{display:none}
   .curator{grid-template-columns:1fr!important;padding:6px 0 6px 12px!important}.curator .curated-line,.curator .who,.curator .credentials,.roles,.curator .fine{grid-column:1!important;grid-row:auto!important}.roles{margin-top:10px!important}.role-title-line{white-space:normal}
@@ -793,9 +795,6 @@ footer{padding-block:10px 18px!important}
 .list-section-tools>span{margin-right:auto;color:var(--ink-2);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .list-section-tools .btn{min-height:31px;padding:5px 10px;font-size:12px}.list-section-tools .btn b{color:#CC0033;font-size:14px;margin-left:3px}
 .viewtools .seg button{min-height:43px}
-.schedule-orbit .display-stack{display:grid;gap:0;line-height:1;text-align:left}
-.schedule-orbit .display-stack span:first-child{font-size:10px;letter-spacing:.055em;text-transform:uppercase}
-.schedule-orbit .display-stack span:last-child{font-size:13px}
 .list-months{display:grid;gap:22px}
 details.month{scroll-margin-top:12px}
 .month>summary{display:grid;grid-template-columns:minmax(0,1fr) max-content max-content;align-items:center;gap:10px;min-height:43px;padding:7px 10px 9px;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-bottom:3px solid #CC0033;cursor:pointer;list-style:none}
@@ -830,3 +829,6 @@ details.month{scroll-margin-top:12px}
 .partner{min-height:24px;padding:2px 0}
 .orbit-core strong.span{font-size:33px;letter-spacing:0;white-space:nowrap}
 @media(max-width:640px){.orbit-core strong.span{font-size:24px}}
+
+/* 2026-09-24: Focus → Abstracts Due / Open Abstracts lists records by due date; the date block is the due date. */
+.ev.by-due .when .d{color:#CC0033}.ev.by-due .meeting-dates{font-weight:600;color:#173946}

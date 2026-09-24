@@ -2,7 +2,7 @@
 window.RUNWAY_CONFIG = {
   /* e.g. "https://github.com/your-handle/app-conference-runway" — turns on the "Suggest a fix" button */
   repo: "https://github.com/MBKarasin/app-conference-runway",
-  requestEmail: "Mark.Karasin@Rutgers.edu",
+  requestEmail: "mark.karasin@protonmail.com",
   curator: "Dr. Mark Karasin",
   credentials: "DNP, APN, RN, AGACNP-BC, CNOR(E)",
   roles: [

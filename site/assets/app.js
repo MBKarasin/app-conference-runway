@@ -53,11 +53,20 @@
   const APP_ROLES = ["NP", "AGACNP", "PA", "CRNA", "CNS", "CNM"];
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
   const dnpOK = e => !!(e && e.student && e.student.category === "project");
-  const FOCUS_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"]];
+  // SCOPE (labeled Focus until 2026-09-24): whom and what a meeting serves. Multi-select; All clears it.
+  const SCOPE_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"], ["students", "Students"]];
+  const SCOPE_VALUES = SCOPE_CHIPS.map(([v]) => v).filter(Boolean);
+  const SCOPE_TIPS = { students: "Organizer-documented opportunities for APP students (sessions, posters, abstracts, DNP projects) and meetings organized for students." };
+  // FOCUS (since 2026-09-24): which record type to show. One at a time; All shows every type.
+  const FOCUS_CHIPS = [["", "All"], ["due", "Abstracts Due"], ["open", "Open Abstracts"], ["conferences", "Conferences"], ["celebrations", "Celebrations"]];
+  const FOCUS_VALUES = FOCUS_CHIPS.map(([v]) => v).filter(Boolean);
+  const FOCUS_LABEL = { due: "Abstracts due", open: "Open abstracts", conferences: "Conferences", celebrations: "Celebrations" };
+  const FOCUS_TIPS = { due: "Records with an upcoming abstract deadline, ordered by due date.", open: "Abstract calls open now, ordered by due date.", conferences: "Conferences, symposiums, summits, congresses and courses; no celebration weeks.", celebrations: "APP celebration weeks and days, such as National APP Week." };
   const PROF_TIPS = { NP: "NP-relevant: NP, nursing, CNS, CNM and multidisciplinary meetings (curator judgment)", PA: "PA-relevant: PA and multidisciplinary meetings (curator judgment)",
     STU: "One combined view for APP students and DNP project dissemination.",
     AGACNP: "Curated adult acute care topic relevance; organizer eligibility and intended audience may vary." };
-  const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"], ["observance", "Celebrations"]];
+  // Meeting type refines Focus → Conferences; celebrations moved to the Focus row on 2026-09-24 (old kind=observance links map there).
+  const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
   const CONTINENTS = ["North America", "South America", "Europe", "Asia", "Oceania", "Africa"];
   const VSTATE = {
@@ -67,7 +76,7 @@
   };
 
   /* ---------- state, mirrored in the URL ---------- */
-  const DEF = () => ({ display: "orbit", orbitFrom: TODAY.slice(0, 7), orbitScope: "month", q: "", prof: [], focus: [], kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
+  const DEF = () => ({ display: "orbit", orbitFrom: TODAY.slice(0, 7), orbitScope: "month", q: "", prof: [], scope: [], focus: "", kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
   const st = DEF();
   let filtersOpen = false;
   const listDisclosure = new Map();
@@ -89,11 +98,18 @@
     st.prof = PROF_CHIPS.map(([v]) => v).filter(v => v && requestedSet.has(v));
     if (legacyView === "students") st.display = "list";
     if (legacyView === "directory") st.display = "directory";
-    if (st.display === "orbit" && h.get("scope") === "year") st.orbitScope = "year";
-    if (h.get("focus")) st.focus = h.get("focus").split(",").map(x => x === "executive" ? "leadership" : x).filter(x => FOCUS_CHIPS.some(([v]) => v === x));
+    // Orbit window scope is span=year (links made before 2026-09-24 used scope=year).
+    if (st.display === "orbit" && (h.get("span") === "year" || h.get("scope") === "year")) st.orbitScope = "year";
+    // Scope reads scope=…; links made before 2026-09-24 carried the same values as focus=….
+    const scopeIn = [...(h.get("scope") || "").split(","), ...(h.get("focus") || "").split(",")].map(x => x === "executive" ? "leadership" : x === "student" ? "students" : x);
+    st.scope = SCOPE_VALUES.filter(v => scopeIn.includes(v));
+    st.focus = (h.get("focus") || "").split(",").find(x => FOCUS_VALUES.includes(x)) || "";
+    if (!st.focus && st.kind === "observance") { st.focus = "celebrations"; st.kind = ""; }   // old Type → Celebrations links
+    if (!st.focus && h.get("open") === "1") st.focus = "open";                              // old "Abstract call open" switch
+    if (!st.focus && legacyView === "deadlines") st.focus = "due";                          // old Abstract deadlines tab
     if (h.get("near")) st.nearQ = h.get("near");
     if (+h.get("r")) st.radius = +h.get("r");
-    st.openOnly = h.get("open") === "1" || legacyView === "deadlines"; st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
+    st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
     st.within = +(h.get("within") || 0);
     if (/^\d{4}-\d{2}$/.test(h.get("cal") || "")) {
       st.cal = h.get("cal");
@@ -108,13 +124,13 @@
     if (st.display === "orbit" && st.orbitFrom !== TODAY.slice(0, 7)) h.set("from", st.orbitFrom);
     ["q", "kind", "where", "area", "spec"].forEach(k => st[k] && h.set(k, st[k]));
     if (st.prof.length) h.set("prof", PROF_CHIPS.map(([v]) => v).filter(v => v && st.prof.includes(v)).join(","));
-    if (st.focus.length) h.set("focus", st.focus.join(","));
+    if (st.scope.length) h.set("scope", SCOPE_VALUES.filter(v => st.scope.includes(v)).join(","));
+    if (st.focus) h.set("focus", st.focus);
     if (st.near) { h.set("near", st.nearQ); h.set("r", st.radius); }
-    if (st.openOnly) h.set("open", "1");
     if (st.expected) h.set("exp", "1");
     if (st.review) h.set("review", "1");
     if (st.within) h.set("within", st.within);
-    if (st.display === "orbit" && st.orbitScope === "year") h.set("scope", "year");
+    if (st.display === "orbit" && st.orbitScope === "year") h.set("span", "year");
     if (st.display === "list" && listContextMonth) h.set("cal", st.cal);
     else if (["calendar", "orbit"].includes(st.display) && st.cal !== TODAY.slice(0, 7)) h.set("cal", st.cal);
     if (extra) Object.entries(extra).forEach(([k, v]) => h.set(k, v));
@@ -173,6 +189,7 @@
       const focus = new Set((s.focus || []).map(f => String(f).toLowerCase()).map(f => f === "executive" ? "leadership" : f));
       if (/research|scientific|science|scholar|evidence/i.test(text)) focus.add("research");
       if (/leader|leadership|executive|dean|management|policy|advocacy/i.test(text)) focus.add("leadership");
+      s.studentTag = focus.has("student");   // a meeting organized for students (curator tag); feeds Scope → Students
       s.focus = focusOrder.filter(f => focus.has(f));
     });
     d.editions.forEach(e => {
@@ -235,11 +252,37 @@
       ? (e.expectedRow ? !!e.s.hasStu || !!e.s.hasDnp : stuOK(e) || dnpOK(e))
       : profOptionMatch(e.s, prof));
   }
-  function seriesMatch(s, ignoreProf = false) {
+  // Scope → Students is edition-level when an edition is given: this year's documented student or DNP
+  // opportunity, or a meeting organized for students. Without an edition (Directory) any edition counts.
+  function scopeOptionMatch(s, v, e) {
+    if (v !== "students") return (s.focus || []).includes(v);
+    if (s.studentTag) return true;
+    if (!e || e.expectedRow) return !!s.hasStu || !!s.hasDnp;
+    return stuOK(e) || dnpOK(e);
+  }
+  function seriesMatch(s, ignoreProf = false, e = null) {
     if (!ignoreProf && !profMatch(s)) return false;
-    if (st.focus.length && !st.focus.some(f => (s.focus || []).includes(f))) return false;
+    if (st.scope.length && !st.scope.some(v => scopeOptionMatch(s, v, e))) return false;
     if (st.kind && s.kind !== st.kind) return false;
     if (st.spec && !(s.specialty || []).includes(st.spec)) return false;
+    return true;
+  }
+  const scopeTags = s => [...(s.focus || []), ...(s.studentTag || s.hasStu || s.hasDnp ? ["students"] : [])];
+  /* ---------- Focus: one record type at a time ---------- */
+  const isCelebration = e => e.s.kind === "observance";
+  // An upcoming abstract deadline: a dated call that is open, closing soon or opening later.
+  const hasUpcomingDeadline = e => !isCelebration(e) && !e.expectedRow && ["open", "urgent", "soon"].includes(e.c.k) && !!(e.call && e.call.closes) && e.call.closes >= TODAY;
+  // An abstract call open today, with or without a published due date.
+  const isOpenNow = e => !isCelebration(e) && !e.expectedRow && ["open", "urgent"].includes(e.c.k);
+  // Whether the current Focus shows a record's own dates (a meeting or celebration), as opposed to only its abstract call.
+  const recordFocus = e => !st.focus || (st.focus === "conferences" && !isCelebration(e)) || (st.focus === "celebrations" && isCelebration(e));
+  function focusMatch(e) {
+    switch (st.focus) {
+      case "conferences": return !isCelebration(e);
+      case "celebrations": return isCelebration(e);
+      case "due": return hasUpcomingDeadline(e);
+      case "open": return isOpenNow(e);
+    }
     return true;
   }
   function formatClass(e) {
@@ -276,9 +319,8 @@
   }
   function verMatch(e) { return !st.review || isException(e); }
   function edMatch(e) {
-    if (!seriesMatch(e.s, true) || !editionProfMatch(e) || !placeMatch(e) || !verMatch(e)) return false;
+    if (!seriesMatch(e.s, true, e) || !editionProfMatch(e) || !placeMatch(e) || !verMatch(e)) return false;
     if (st.q && !st.q.toLowerCase().split(/\s+/).every(w => e.hay.includes(w))) return false;
-    if (st.openOnly && !["open", "urgent"].includes(e.c.k)) return false;
     return true;
   }
   function orbitCallVisible(e) {
@@ -294,18 +336,39 @@
     if (st.within && (e.past || e.start > addDays(TODAY, st.within))) return false;
     return e.expectedRow ? st.expected : true;
   }
-  function orbitMonthHas(records, year, month) {
+  // Orbit categories: meetings (Focus → Conferences), abstracts due, open abstracts, celebrations. Focus shows one.
+  const ORBIT_CAT_ORDER = ["meet", "due", "open", "obs"];
+  const ORBIT_CAT_FOR = { conferences: "meet", due: "due", open: "open", celebrations: "obs" };
+  const orbitCats = () => st.focus ? [ORBIT_CAT_FOR[st.focus]] : ORBIT_CAT_ORDER;
+  const orbitCatRows = (m, c) => c === "meet" ? m.meetings : c === "obs" ? m.celebrations : c === "due" ? m.due : m.open;
+  const byStart = (a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name);
+  const byDue = (a, b) => a.call.closes.localeCompare(b.call.closes) || a.s.name.localeCompare(b.s.name);
+  const byOpenDue = (a, b) => (a.call.closes || "9999").localeCompare(b.call.closes || "9999") || a.s.name.localeCompare(b.s.name);
+  // One month of the ring, by category. Month scope shows upcoming calls only; the annual (center-label) scope shows every call in the window.
+  function orbitMonthData(records, year, month, annual) {
     const key = `${year}-${String(month).padStart(2, "0")}`;
     const start = key + "-01", end = iso(new Date(year, month, 0));
-    return records.some(e => (e.start <= end && (e.end || e.start) >= start) ||
-      (orbitCallVisible(e) && e.call && [e.call.opens, e.call.closes].some(d => d && d >= start && d <= end)));
+    const dated = records.filter(e => e.start <= end && (e.end || e.start) >= start).sort(byStart);
+    const due = records.filter(e => (annual || orbitCallVisible(e)) && e.call && e.call.closes && e.call.closes >= start && e.call.closes <= end).sort(byDue);
+    const open = records.filter(e => {
+      const c = e.call || {}, opens = c.opens || (c.status === "open" ? TODAY : null), closes = c.closes;
+      if ((!annual && !orbitCallVisible(e)) || !opens) return false;
+      if (!closes) return ["open", "urgent"].includes(e.c.k) && key === TODAY.slice(0, 7);
+      return opens <= end && closes >= start && !(closes >= start && closes <= end);
+    }).sort(byOpenDue);
+    return { key, meetings: dated.filter(e => !isCelebration(e)), celebrations: dated.filter(isCelebration), due, open };
+  }
+  function orbitMonthHas(records, year, month) {
+    const m = orbitMonthData(records, year, month, false);
+    return orbitCats().some(c => orbitCatRows(m, c).length > 0);
   }
   // The Orbit ring is a rolling window: twelve consecutive months starting at st.orbitFrom (the current month by default).
+  // Every month carries its year (Sep ’26 … Aug ’27).
   function orbitWindow() {
     const [fy, fm] = st.orbitFrom.split("-").map(Number);
     return Array.from({ length: 12 }, (_, i) => {
       const d = new Date(fy, fm - 1 + i, 1), year = d.getFullYear(), month = d.getMonth() + 1;
-      return { year, month, key: `${year}-${String(month).padStart(2, "0")}`, name: MONTH[month - 1] + (year !== fy ? " " + year : ""), short: MON[month - 1] + (month === 1 && i > 0 ? " ’" + String(year).slice(2) : "") };
+      return { year, month, key: `${year}-${String(month).padStart(2, "0")}`, name: MONTH[month - 1] + " " + year, short: MON[month - 1] + " ’" + String(year).slice(2) };
     });
   }
   function orbitLabel() {
@@ -330,8 +393,8 @@
   const profTags = s => s.professions.map(p => `<span class="tag p neutral">${esc(PLABEL[p] || p)}</span>`).join("") + (s.rnfa_inferred ? `<span class="tag p neutral" title="Surgical or perioperative meeting relevant to NP first assistants; curator tag">NP-RNFA</span>` : "");
   function vBadge(e, exceptionsOnly = false) {
     const v = e.verify || { state: "unchecked" };
-    // Records carry no verification label; the page header carries the source-review timestamps.
-    // The one marker kept is for projected months, which are not published dates.
+    // exceptionsOnly = false: the full verification state, shown on every list card (curator decision, 2026-09-24).
+    // exceptionsOnly = true: only exceptions and projections (record dialog, Directory). Check times stay in the page header.
     if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
     const drift = v.state === "verified" && v.method !== "manual" && v.evidence_match === false;
@@ -339,7 +402,7 @@
     if (v.state === "announced" && exceptionsOnly) return `<span class="vf verified" title="The organizer has published a save-the-date for these days; the detailed programme is still to come.">${ICON.check}Save the date</span>`;
     const label = v.state === "verified" && v.method === "manual" ? "Source reviewed" : drift ? "Source wording changed" : baseLabel;
     const when = "";   // the page header carries the check time; repeating it on every record only adds noise
-    const tip = v.state === "verified" && v.method === "manual" ? "The organizer's source was manually reviewed for this date range. Review date appears on this label; confirm details before booking." :
+    const tip = v.state === "verified" && v.method === "manual" ? "Confirmed by a manual review of the organizer's own source, not by the nightly text match. Open the record for the quoted wording and the source link, and confirm details with the organizer before booking." :
       drift ? "The start date and a meeting-name word remain on the organizer page, but the original source excerpt no longer matches. Review the full range before relying on it." :
       v.state === "verified" ? "Start date, year and a distinctive meeting-name word were found on the organizer page. Confirm the end date there before booking." :
       v.state === "not_found" ? "The nightly check could not find these dates on the organizer page. Confirm before relying on them." :
@@ -361,54 +424,67 @@
     if (e.s.kind === "observance" || e.expectedRow || e.past) return "";
     return `<span class="pill ${e.c.k}" title="${esc((e.call && e.call.text) || e.c.label)}">${esc(e.c.label)}</span>`;
   }
-  function evRow(e, studentMode = false) {
+  // dateMode "due" or "open" (Focus → Abstracts Due / Open Abstracts): the date block shows the abstract due date
+  // and the meeting's own dates move into the meta line.
+  function evRow(e, studentMode = false, dateMode = "") {
     const s = e.s, d = D(e.start), b = D(e.end);
     const same = b.getMonth() === d.getMonth() && b.getFullYear() === d.getFullYear();
-    const day = e.month_only ? MON[d.getMonth()] : e.start === e.end ? String(d.getDate()) : same ? d.getDate() + "–" + b.getDate() : d.getDate() + "→";
-    const sub = e.month_only ? d.getFullYear() + " · expected" : (same || e.start === e.end ? MON[d.getMonth()] : MON[d.getMonth()] + "–" + MON[b.getMonth()] + " " + b.getDate()) + " " + d.getFullYear();
+    const dueOn = dateMode && e.call && e.call.closes ? D(e.call.closes) : null;
+    const day = dateMode ? (dueOn ? String(dueOn.getDate()) : "Open") : e.month_only ? MON[d.getMonth()] : e.start === e.end ? String(d.getDate()) : same ? d.getDate() + "–" + b.getDate() : d.getDate() + "→";
+    const sub = dateMode ? (dueOn ? "Due " + MON[dueOn.getMonth()] + " " + dueOn.getFullYear() : "No due date posted") : e.month_only ? d.getFullYear() + " · expected" : (same || e.start === e.end ? MON[d.getMonth()] : MON[d.getMonth()] + "–" + MON[b.getMonth()] + " " + b.getDate()) + " " + d.getFullYear();
     const kindTag = s.kind === "observance" ? '<span class="tag">Celebration</span>' : s.kind !== "conference" ? `<span class="tag">${esc(s.kind[0].toUpperCase() + s.kind.slice(1))}</span>` : "";
     const dist = st.near && e.geo && e.geo.lat != null ? `<span>${Math.round(miles(st.near.lat, st.near.lon, e.geo.lat, e.geo.lon))} mi away</span>` : "";
     const appWeekNow = s.name === "National APP Week" && e.start <= TODAY && e.end >= TODAY;
-    return `<article class="ev${e.expectedRow ? " expected" : ""}${e.past ? " past" : ""}${appWeekNow ? " app-week-now" : ""}" data-e="${e.id}" tabindex="0" role="button" aria-label="${esc(s.name + ", " + range(e))}">
-      <div class="when" style="--c:${colorOf(s)}"><span class="d">${esc(day)}</span><span class="m">${esc(sub)}</span></div>
+    return `<article class="ev${e.expectedRow ? " expected" : ""}${e.past ? " past" : ""}${appWeekNow ? " app-week-now" : ""}${dateMode ? " by-due" : ""}" data-e="${e.id}" tabindex="0" role="button" aria-label="${esc(s.name + ", " + (dateMode ? (dueOn ? "abstracts due " + longDate(e.call.closes) + ", meeting " : "abstract call open, meeting ") : "") + range(e))}">
+      <div class="when" style="--c:${dateMode ? "var(--t-call)" : colorOf(s)}"><span class="d">${esc(day)}</span><span class="m">${esc(sub)}</span></div>
       <div class="body">${appWeekNow ? `<div class="live-label">OUR WEEK · HAPPENING NOW THROUGH ${esc(md(e.end))}</div>` : ""}<div class="title">${esc(s.name)}</div><div class="org">${esc(s.org_display || s.org)}</div>
-        <div class="meta">${e.location ? `<span class="loc">${esc(e.location)}</span>` : ""}${dist}${e.format && e.format !== "in person" ? `<span>${esc(e.format[0].toUpperCase() + e.format.slice(1))}</span>` : ""}${e.theme ? `<span><i>${esc(e.theme)}</i></span>` : ""}</div>
+        <div class="meta">${dateMode ? `<span class="meeting-dates">Meeting ${esc(range(e))}</span>` : ""}${e.location ? `<span class="loc">${esc(e.location)}</span>` : ""}${dist}${e.format && e.format !== "in person" ? `<span>${esc(e.format[0].toUpperCase() + e.format.slice(1))}</span>` : ""}${e.theme ? `<span><i>${esc(e.theme)}</i></span>` : ""}</div>
         <div class="badges">${profTags(s)}${kindTag}</div>${studentMode && e.student ? `<p class="student-line"><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)}</p>` : ""}</div>
-      <div class="side">${studentMode ? (e.student && e.student.deadline && e.student.deadline >= TODAY ? `<span class="student-due">Submit by ${esc(md(e.student.deadline))}</span>` : "") : callPill(e)}${vBadge(e, true)}</div></article>`;
+      <div class="side">${studentMode && !dateMode ? (e.student && e.student.deadline && e.student.deadline >= TODAY ? `<span class="student-due">Submit by ${esc(md(e.student.deadline))}</span>` : "") : callPill(e)}${vBadge(e)}</div></article>`;
   }
   const empty = msg => `<div class="empty">${esc(msg)} <button class="linkbtn" data-act="clear">Clear all filters</button></div>`;
 
   /* ---------- views ---------- */
   function vList() {
-    let L = EDS.filter(e => !e.past && edMatch(e) && (st.expected || !e.expectedRow));
+    // Focus → Abstracts Due / Open Abstracts lists abstract calls by due month; every other Focus lists records by start month.
+    const dateMode = st.focus === "due" || st.focus === "open" ? st.focus : "";
+    const keyOf = dateMode ? (e => e.call && e.call.closes ? e.call.closes.slice(0, 7) : "undated") : eMonth;
+    let L = dateMode === "due" ? EDS.filter(e => edMatch(e) && hasUpcomingDeadline(e))
+      : dateMode === "open" ? EDS.filter(e => edMatch(e) && isOpenNow(e))
+      : EDS.filter(e => !e.past && edMatch(e) && (st.expected || !e.expectedRow) && focusMatch(e));
     if (st.within) L = L.filter(e => e.start <= addDays(TODAY, st.within));
-    L.sort((a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name));
-    if (!L.length && !listContextMonth) return empty("No upcoming meetings match these filters.");
+    L.sort(dateMode === "due" ? byDue : dateMode === "open" ? byOpenDue : byStart);
+    const none = { due: "No upcoming abstract deadlines match these filters.", open: "No open abstract calls match these filters.", celebrations: "No upcoming celebrations match these filters." }[st.focus] || "No upcoming meetings match these filters.";
+    if (!L.length && !listContextMonth) return empty(none);
 
     // A month carried from Calendar or Orbit must remain reachable even when it
-    // falls beyond the normal 120-row List page, or has no matching start dates.
+    // falls beyond the normal 120-row List page, or has no matching records.
     if (listContextMonth) {
-      let through = L.findIndex(e => e.start.slice(0, 7) >= listContextMonth);
+      let through = L.findIndex(e => keyOf(e) >= listContextMonth);
       if (through < 0) through = L.length;
       else {
-        while (through < L.length && eMonth(L[through]) === listContextMonth) through++;
+        while (through < L.length && keyOf(L[through]) === listContextMonth) through++;
         if (!through) through = 1;
       }
       st.more = Math.max(st.more, Math.ceil(Math.max(through, 1) / 120));
     }
     const cap = 120 * st.more, shown = L.slice(0, cap), groups = new Map();
-    shown.forEach(e => { const k = e.start.slice(0, 7); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); });
+    shown.forEach(e => { const k = keyOf(e); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); });
     if (listContextMonth && !groups.has(listContextMonth)) groups.set(listContextMonth, []);
+    const studentMode = st.prof.includes("STU") || st.scope.includes("students");
+    const emptyMonth = dateMode === "due" ? "No abstract deadlines fall in this month with the current filters."
+      : dateMode === "open" ? "No open abstract call is due in this month with the current filters."
+      : `No upcoming ${st.focus === "celebrations" ? "celebrations" : "meetings"} start in this month with the current filters.`;
 
-    let h = `<div class="list-section-tools" role="group" aria-label="List section controls"><span>Month sections</span><button class="btn" data-act="list-expand-all" aria-controls="list-sections">Expand all <b aria-hidden="true">↓</b></button><button class="btn" data-act="list-collapse-all" aria-controls="list-sections">Collapse all <b aria-hidden="true">↑</b></button></div><div class="list-months" id="list-sections">`;
+    let h = `<div class="list-section-tools" role="group" aria-label="List section controls"><span>${dateMode ? "Due-month sections" : "Month sections"}</span><button class="btn" data-act="list-expand-all" aria-controls="list-sections">Expand all <b aria-hidden="true">↓</b></button><button class="btn" data-act="list-collapse-all" aria-controls="list-sections">Collapse all <b aria-hidden="true">↑</b></button></div><div class="list-months" id="list-sections">`;
     for (const [k, arr] of [...groups].sort(([a], [b]) => a.localeCompare(b))) {
-      const d = D(k + "-01"), name = `${MONTH[d.getMonth()]} ${d.getFullYear()}`;
+      const d = k === "undated" ? null : D(k + "-01"), name = d ? `${MONTH[d.getMonth()]} ${d.getFullYear()}` : "Open, no due date posted";
       if (pendingListMonth === k) listDisclosure.set(k, true);
       const open = listDisclosure.has(k) ? listDisclosure.get(k) : listDefaultOpen;
       const noRows = !arr.length
-        ? `<p class="list-month-empty">No upcoming meetings start in this month with the current filters.${k < TODAY.slice(0, 7) ? " List shows upcoming meetings only." : ""}</p>`
+        ? `<p class="list-month-empty">${emptyMonth}${k < TODAY.slice(0, 7) ? " List shows upcoming records only." : ""}</p>`
         : "";
-      h += `<details class="month${k === listContextMonth ? " context-month" : ""}" id="list-month-${esc(k)}" data-list-month="${esc(k)}"${open ? " open" : ""}><summary><span class="month-title" role="heading" aria-level="2">${esc(name)}</span><span class="month-count">${arr.length} record${arr.length === 1 ? "" : "s"}</span><span class="list-toggle" aria-hidden="true"><span class="list-toggle-open">Collapse <b>↑</b></span><span class="list-toggle-closed">Expand <b>↓</b></span></span></summary>${noRows || `<div class="list">${arr.map(e => evRow(e, st.prof.includes("STU") && !!e.student)).join("")}</div>`}</details>`;
+      h += `<details class="month${k === listContextMonth ? " context-month" : ""}" id="list-month-${esc(k)}" data-list-month="${esc(k)}"${open ? " open" : ""}><summary><span class="month-title" role="heading" aria-level="2">${esc(name)}</span><span class="month-count">${arr.length} record${arr.length === 1 ? "" : "s"}</span><span class="list-toggle" aria-hidden="true"><span class="list-toggle-open">Collapse <b>↑</b></span><span class="list-toggle-closed">Expand <b>↓</b></span></span></summary>${noRows || `<div class="list">${arr.map(e => evRow(e, studentMode && !!e.student, dateMode)).join("")}</div>`}</details>`;
     }
     h += `</div>`;
     if (L.length > cap) h += `<button class="btn more" data-act="more">Show ${Math.min(120, L.length - cap)} more of ${L.length - cap} remaining</button>`;
@@ -446,14 +522,18 @@
     const mode = "upcoming";
     M.forEach(e => {
       const meeting = mode === "upcoming" || mode === "directory" || (mode === "past" && e.past);
-      if (meeting && !(mode === "upcoming" && e.past)) items.push({ e, from: e.start, to: e.end || e.start });
+      if (recordFocus(e) && meeting && !(mode === "upcoming" && e.past)) items.push({ e, from: e.start, to: e.end || e.start });
       const cs = callSpan(e);
-      if ((mode === "upcoming" || mode === "deadlines") && cs) items.push({ e, call: true, from: cs.from, to: cs.to });
+      if (!cs || !(mode === "upcoming" || mode === "deadlines")) return;
+      // Focus → Abstracts Due marks the due day only; Open Abstracts shows calls with a known open window.
+      if (!st.focus) items.push({ e, call: true, from: cs.from, to: cs.to });
+      else if (st.focus === "due") items.push({ e, call: true, from: cs.to, to: cs.to });
+      else if (st.focus === "open" && cs.from < cs.to) items.push({ e, call: true, from: cs.from, to: cs.to });
     });
     // Meetings view: meetings first, then celebrations, then open abstract calls. Deadlines view: calls first.
     // National APP Week always first; then celebrations, meetings, open abstract calls (deadlines view: calls before meetings).
     const rank = x => !x.call && x.e.s.name === "National APP Week" ? -1 : mode === "deadlines" ? (x.call ? 0 : x.e.s.kind === "observance" ? 1 : 2) : (x.call ? 2 : x.e.s.kind === "observance" ? 0 : 1);
-    const expected = st.expected && mode !== "past" ? EDS.filter(e => e.expectedRow && edMatch(e) && e.start.slice(0, 7) === st.cal) : [];
+    const expected = st.expected && mode !== "past" ? EDS.filter(e => e.expectedRow && edMatch(e) && recordFocus(e) && e.start.slice(0, 7) === st.cal) : [];
     const SHOW = 6;
     let weeks = "";
     for (let w = 0; w < 6; w++) {
@@ -510,44 +590,45 @@
     const win = orbitWindow(), year = orbitLabel();
     const annualFocus = st.orbitScope === "year";
     const records = EDS.filter(annualFocus ? orbitAnnualRecordMatch : orbitRecordMatch);
-    const monthly = win.map(({ name, key, year: y, month }, i) => {
-      const start = key + "-01", end = iso(new Date(y, month, 0));
-      const meetings = records.filter(e => e.start <= end && (e.end || e.start) >= start).sort((a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name));
-      const due = records.filter(e => (annualFocus || orbitCallVisible(e)) && e.call && e.call.closes && e.call.closes >= start && e.call.closes <= end).sort((a, b) => a.call.closes.localeCompare(b.call.closes) || a.s.name.localeCompare(b.s.name));
-      const open = records.filter(e => {
-        const c = e.call || {}, opens = c.opens || (c.status === "open" ? TODAY : null), closes = c.closes;
-        if ((!annualFocus && !orbitCallVisible(e)) || !opens) return false;
-        if (!closes) return ["open", "urgent"].includes(e.c.k) && key === TODAY.slice(0, 7);
-        return opens <= end && closes >= start && !(closes >= start && closes <= end);
-      }).sort((a, b) => (a.call.closes || "9999").localeCompare(b.call.closes || "9999") || a.s.name.localeCompare(b.s.name));
-      return { name, month, key, short: win[i].short, meetings, due, open };
-    });
-    const max = Math.max(1, ...monthly.flatMap(x => [x.meetings.length, x.due.length, x.open.length]));
+    const cats = orbitCats();
+    const monthly = win.map(w => ({ ...orbitMonthData(records, w.year, w.month, annualFocus), name: w.name, month: w.month, short: w.short }));
+    const max = Math.max(1, ...monthly.flatMap(x => cats.map(c => orbitCatRows(x, c).length)));
     const h = n => Math.round(8 + (n / max) * 40);
     const unique = rows => [...new Map(rows.map(e => [e.id, e])).values()];
     const annual = {
       name: "All twelve months",
-      meetings: unique(monthly.flatMap(x => x.meetings)).sort((a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name)),
-      due: unique(monthly.flatMap(x => x.due)).sort((a, b) => a.call.closes.localeCompare(b.call.closes) || a.s.name.localeCompare(b.s.name)),
-      open: unique(monthly.flatMap(x => x.open)).sort((a, b) => (a.call.closes || "9999").localeCompare(b.call.closes || "9999") || a.s.name.localeCompare(b.s.name))
+      meetings: unique(monthly.flatMap(x => x.meetings)).sort(byStart),
+      celebrations: unique(monthly.flatMap(x => x.celebrations)).sort(byStart),
+      due: unique(monthly.flatMap(x => x.due)).sort(byDue),
+      open: unique(monthly.flatMap(x => x.open)).sort(byOpenDue)
     };
     const selectedMonth = monthly.find(x => x.key === st.cal) || monthly[0];
     const selected = annualFocus ? annual : selectedMonth;
     const item = (e, meta, tone) => `<button class="orbit-item ${tone}" data-e="${esc(e.id)}"><span class="orbit-item-date">${esc(meta)}</span><strong>${esc(e.s.name)}</strong><span>${esc(e.s.org_display || e.s.org)}</span></button>`;
+    // With a Focus chosen only its group shows, and it opens; with All every group starts collapsed.
     const group = (title, tone, rows, meta) => {
       const shown = annualFocus ? rows : rows.slice(0, 12);
-      return `<details class="orbit-group ${tone}"><summary><span>${esc(title)}</span><b>${rows.length}</b></summary><div>${rows.length ? shown.map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in ${annualFocus ? "these twelve months" : "this month"}.</p>`}${!annualFocus && rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></details>`;
+      return `<details class="orbit-group ${tone}"${st.focus ? " open" : ""}><summary><span>${esc(title)}</span><b>${rows.length}</b></summary><div>${rows.length ? shown.map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in ${annualFocus ? "these twelve months" : "this month"}.</p>`}${!annualFocus && rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></details>`;
     };
-    const countLine = x => `${x.meetings.length} meeting${x.meetings.length === 1 ? "" : "s"}, ${x.due.length} abstract deadline${x.due.length === 1 ? "" : "s"}, ${x.open.length} open abstract call${x.open.length === 1 ? "" : "s"}`;
-    const months = monthly.map((x, i) => `<button class="orbit-month${!annualFocus && x.key === selectedMonth.key ? " selected" : ""}" style="--i:${i}" data-orbit-month="${x.key}" aria-pressed="${!annualFocus && x.key === selectedMonth.key}" title="${esc(`${x.name}: ${countLine(x)}`)}"><span class="orbit-month-name">${esc(x.short)}</span><span class="orbit-columns" aria-hidden="true"><i class="meet" style="--h:${h(x.meetings.length)}px"></i><i class="due" style="--h:${h(x.due.length)}px"></i><i class="open" style="--h:${h(x.open.length)}px"></i></span><span class="orbit-counts" aria-hidden="true"><i>${x.meetings.length}</i><i>${x.due.length}</i><i>${x.open.length}</i></span><span class="sr">${esc(countLine(x))}</span></button>`).join("");
+    const NOUN = { meet: ["meeting", "meetings"], due: ["abstract deadline", "abstract deadlines"], open: ["open abstract call", "open abstract calls"], obs: ["celebration", "celebrations"] };
+    const countLine = x => cats.map(c => { const n = orbitCatRows(x, c).length; return `${n} ${NOUN[c][n === 1 ? 0 : 1]}`; }).join(", ");
+    const months = monthly.map((x, i) => `<button class="orbit-month${!annualFocus && x.key === selectedMonth.key ? " selected" : ""}" style="--i:${i}" data-orbit-month="${x.key}" aria-pressed="${!annualFocus && x.key === selectedMonth.key}" title="${esc(`${x.name}: ${countLine(x)}`)}"><span class="orbit-month-name">${esc(MON[x.month - 1])}<span class="orbit-month-year"> ’${esc(String(x.key.slice(2, 4)))}</span></span><span class="orbit-columns" aria-hidden="true">${cats.map(c => `<i class="${c}" style="--h:${h(orbitCatRows(x, c).length)}px"></i>`).join("")}</span><span class="orbit-counts" aria-hidden="true">${cats.map(c => `<i>${orbitCatRows(x, c).length}</i>`).join("")}</span><span class="sr">${esc(countLine(x))}</span></button>`).join("");
     const location = [];
     if (st.where) location.push(st.where[0].toUpperCase() + st.where.slice(1));
     if (st.area) location.push(st.area.slice(2));
     if (st.near) location.push(`${st.radius} mi from ${st.near.label}`);
     if (!location.length) location.push("Global");
     const discipline = st.prof.length ? st.prof.map(prof => PLABEL[prof] || prof).join(" + ") : "All APPs";
-    const focusLabel = st.focus.length ? st.focus.map(x => x[0].toUpperCase() + x.slice(1)).join(" + ") : "All focus";
-    const context = [location.join(" · "), discipline, focusLabel, st.q ? `Search: ${st.q}` : ""].filter(Boolean);
+    const scopeLabel = st.scope.length ? st.scope.map(x => (SCOPE_CHIPS.find(([v]) => v === x) || [x, x])[1]).join(" + ") : "All scopes";
+    const focusLabel = st.focus ? FOCUS_LABEL[st.focus] : "All focus";
+    const context = [location.join(" · "), discipline, scopeLabel, focusLabel, st.q ? `Search: ${st.q}` : ""].filter(Boolean);
+    const LEGEND = { meet: "Meetings", due: "Abstracts due", open: "Open abstracts", obs: "Celebrations" };
+    const RAIL = [
+      ["due", () => group("Abstracts due", "due", selected.due, e => e.call && e.call.closes ? longDate(e.call.closes) : "Date not posted")],
+      ["meet", () => group("Meetings & Conferences", "meet", selected.meetings, e => range(e))],
+      ["open", () => group("Open abstracts", "open", selected.open, e => e.call && e.call.closes ? `Due ${md(e.call.closes)}` : "Open")],
+      ["obs", () => group("Celebrations", "obs", selected.celebrations, e => range(e))]
+    ].filter(([c]) => cats.includes(c)).map(([, render]) => render()).join("\n        ");
     return `<div class="orbit-shell">
       <section class="orbit-board" aria-label="${esc(win[0].name)} to ${esc(win[11].name)} record density">
         <header class="orbit-heading"><div><p class="eyebrow">Global Orbit</p><h2>Twelve months at a glance</h2></div><p>Choose a month for a focused view, or choose the center label for all twelve months. The arrows move the window by a year.</p></header>
@@ -555,13 +636,11 @@
           <div class="orbit-core"><button data-act="prevY" aria-label="Twelve months earlier">‹</button><button class="orbit-year" data-orbit-year aria-pressed="${annualFocus}" aria-label="Show all records from ${esc(win[0].name)} to ${esc(win[11].name)}"><strong class="${year.length > 4 ? "span" : ""}">${year}</strong><small class="orbit-context">${context.map(x => `<i>${esc(x)}</i>`).join("")}</small></button><button data-act="nextY" aria-label="Twelve months later">›</button></div>
           ${months}
         </div>
-        <div class="orbit-legend" aria-label="Orbit legend"><span><i class="meet"></i>Meetings</span><span><i class="due"></i>Abstracts due</span><span><i class="open"></i>Open abstracts</span></div>
+        <div class="orbit-legend" aria-label="Orbit legend">${cats.map(c => `<span><i class="${c}"></i>${LEGEND[c]}</span>`).join("")}</div>
       </section>
       <aside class="orbit-rail">
-        <header aria-live="polite" aria-atomic="true"><p class="eyebrow">${annualFocus ? esc(MONTH[win[0].month - 1] + " " + win[0].year) + " – " + esc(MONTH[win[11].month - 1] + " " + win[11].year) : esc(selected.name.includes(" ") ? selected.name : selected.name + " " + win[0].year)}</p><h2>Records in focus</h2><span class="sr">${esc(countLine(selected))}</span></header>
-        ${group("Abstracts due", "due", selected.due, e => e.call && e.call.closes ? longDate(e.call.closes) : "Date not posted")}
-        ${group("Meetings & Conferences", "meet", selected.meetings, e => range(e))}
-        ${group("Open abstracts", "open", selected.open, e => e.call && e.call.closes ? `Due ${md(e.call.closes)}` : "Open")}
+        <header aria-live="polite" aria-atomic="true"><p class="eyebrow">${annualFocus ? esc(MONTH[win[0].month - 1] + " " + win[0].year) + " – " + esc(MONTH[win[11].month - 1] + " " + win[11].year) : esc(selected.name)}</p><h2>Records in focus</h2><span class="sr">${esc(countLine(selected))}</span></header>
+        ${RAIL}
       </aside>
     </div>`;
   }
@@ -586,7 +665,7 @@
     const row = (e, big, small, u) => `<div class="dlrow" data-e="${e.id}" tabindex="0" role="button">
         <div class="count${u ? " u" : ""}">${esc(big)}<small>${esc(small)}</small></div>
         <div class="body"><div class="title">${esc(e.s.name)}</div><div class="org">${esc(e.s.org_display || e.s.org)} · meeting ${esc(range(e))}</div><div class="meta">${esc((e.call && e.call.text) || "")}</div></div>
-        <div class="side">${vBadge(e, true)}</div></div>`;
+        <div class="side">${vBadge(e)}</div></div>`;
     let h = `<section class="sec deadline-section due-soon"><h2>Due within 30 days · ${due.length}</h2><div class="list">`;
     h += due.length ? due.map(e => e.c.today ? row(e, "Today", "organizer's cut-off time applies", true)
       : row(e, daysBetween(TODAY, e.c.closes), daysBetween(TODAY, e.c.closes) === 1 ? "day left" : "days left", true)).join("") : `<div class="empty">No deadlines fall within the next 30 days.</div>`;
@@ -597,10 +676,11 @@
     return h + `</div></section><p class="fine">Each call appears once: imminent due dates first, then calls opening soon, then other calls already open. A deadline closing today shows the day only; the organizer's cut-off hour and time zone still apply.</p>`;
   }
   function directorySeries() {
-    const editionFilters = st.where || st.area || st.near || st.openOnly || st.review;
+    // Focus narrows the Directory to series with a matching edition: a meeting or celebration series, an upcoming deadline, or a call open now.
+    const editionFilters = st.where || st.area || st.near || st.review || st.focus || st.scope.includes("students");
     return DATA.series.filter(s => seriesMatch(s) &&
       (!st.q || (s.name + " " + (s.org_display || s.org) + " " + s.org + " " + (s.specialty || []).join(" ")).toLowerCase().includes(st.q.toLowerCase())) &&
-      (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && (st.expected || !e.expectedRow))));
+      (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && focusMatch(e) && (st.expected || !e.expectedRow))));
   }
   function vDirectory() {
     const S = directorySeries();
@@ -639,14 +719,17 @@
     const dot = v ? `<span class="dot" style="--c:var(${PROF_COLOR[v]})" aria-hidden="true"></span>` : "";
     return `<button class="chip prof-chip${v ? "" : " all"}" data-prof="${esc(v)}" aria-pressed="${selected}"${PROF_TIPS[v] ? ` title="${PROF_TIPS[v]}"` : ""}>${dot}${esc(l)}</button>`;
   }).join("");
-  const focusRow = () => FOCUS_CHIPS.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-focus="${esc(v)}" aria-pressed="${v ? st.focus.includes(v) : !st.focus.length}">${esc(l)}</button>`).join("");
+  const scopeRow = () => SCOPE_CHIPS.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-scope="${esc(v)}" aria-pressed="${v ? st.scope.includes(v) : !st.scope.length}"${SCOPE_TIPS[v] ? ` title="${esc(SCOPE_TIPS[v])}"` : ""}>${esc(l)}</button>`).join("");
+  const focusRow = () => FOCUS_CHIPS.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-focus="${esc(v)}" aria-pressed="${st.focus === v}"${FOCUS_TIPS[v] ? ` title="${esc(FOCUS_TIPS[v])}"` : ""}>${esc(l)}</button>`).join("");
   function controls() {
     $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${profRow()}`;
+    const quickScope = $("#quickscope");   // guarded: a cached pre-2026-09-24 page has no Scope row
+    if (quickScope) quickScope.innerHTML = `<span class="flabel">Scope</span>${scopeRow()}`;
     $("#quickfocus").innerHTML = `<span class="flabel">Focus</span>${focusRow()}`;
     $("#viewtools").innerHTML = `<div class="seg" role="group" aria-label="Display">
         <button data-display="list" aria-controls="view" aria-pressed="${st.display === "list"}">${ICON.list}List</button>
         <button data-display="calendar" aria-controls="view" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button>
-        <button class="schedule-orbit" data-display="orbit" aria-label="Schedule Orbit" aria-controls="view" aria-pressed="${st.display === "orbit"}">${ICON.orbit}<span class="display-stack" aria-hidden="true"><span>Schedule</span><span>Orbit</span></span></button>
+        <button data-display="orbit" aria-controls="view" aria-pressed="${st.display === "orbit"}">${ICON.orbit}Orbit</button>
         <button data-display="directory" aria-controls="view" aria-pressed="${st.display === "directory"}">${ICON.directory}Directory</button></div>`;
     $("#geoquick").innerHTML = `<span class="flabel">Location</span>
       <button class="chip all" data-act="where-all" aria-pressed="${!st.where}">All</button>
@@ -665,7 +748,6 @@
     $("#filters").innerHTML = `
       <div class="fgroup"><span class="flabel">Type</span>${chipRow("kind", KIND_CHIPS)}</div>
       <div class="fgroup"><label class="flabel" for="spec">Specialty</label><select id="spec" class="sel"><option value="">All specialties</option>${SPECS.map(s => `<option ${s === st.spec ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
-        <label class="toggle"><input type="checkbox" id="openOnly" ${st.openOnly ? "checked" : ""}> Abstract call open</label>
         <label class="toggle"><input type="checkbox" id="exp" ${st.expected ? "checked" : ""}> Show expected dates through ${DATA.horizon}</label>
         <label class="toggle" title="Show only records whose latest automated source check did not confirm them"><input type="checkbox" id="review" ${st.review ? "checked" : ""}> Needs review only</label></div>`;
     $("#filters").classList.toggle("open", filtersOpen);
@@ -673,39 +755,40 @@
     $("#fbtn").setAttribute("aria-expanded", String(filtersOpen));
     $("#q").value = st.q;
   }
-  const activeCount = () => [st.kind, st.where, st.area, st.near, st.spec, st.openOnly, st.expected, st.review, st.q, st.within].filter(Boolean).length + st.prof.length + st.focus.length;
+  const activeCount = () => [st.kind, st.where, st.area, st.near, st.spec, st.expected, st.review, st.q, st.within, st.focus].filter(Boolean).length + st.prof.length + st.scope.length;
 
   /* ---------- render ---------- */
   function render(keepFocus) {
     const active = document.activeElement;
     const f = keepFocus && active && active.id;
-    const replaced = active && active.closest && active.closest("#quickprof,#quickfocus,#geoquick,#filters,#viewtools");
-    const restore = replaced ? { id: active.id, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v, prof: active.dataset.prof, focus: active.dataset.focus } : null;
+    const replaced = active && active.closest && active.closest("#quickprof,#quickscope,#quickfocus,#geoquick,#filters,#viewtools");
+    const restore = replaced ? { id: active.id, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v, prof: active.dataset.prof, scope: active.dataset.scope, focus: active.dataset.focus } : null;
     spotlight(); controls();
     const v = st.display === "directory" ? vDirectory : st.display === "calendar" ? vCalendar : st.display === "orbit" ? vOrbit : vList;
     $("#view").innerHTML = v();
     let summary;
     if (st.display === "orbit") {
-      const w = orbitWindow(), from = w[0].key + "-01", to = iso(new Date(w[11].year, w[11].month, 0));
-      const annual = st.orbitScope === "year", match = annual ? orbitAnnualRecordMatch : orbitRecordMatch;
-      const n = EDS.filter(e => match(e) && ((e.start <= to && (e.end || e.start) >= from) || ((annual || orbitCallVisible(e)) && e.call && [e.call.opens, e.call.closes].some(d => d && d >= from && d <= to)))).length;
+      const w = orbitWindow(), annual = st.orbitScope === "year";
+      const recs = EDS.filter(annual ? orbitAnnualRecordMatch : orbitRecordMatch), ids = new Set();
+      w.forEach(x => { const m = orbitMonthData(recs, x.year, x.month, annual); orbitCats().forEach(c => orbitCatRows(m, c).forEach(e => ids.add(e.id))); });
+      const n = ids.size;
       summary = `${n} record${n === 1 ? "" : "s"} in the Orbit, ${MONTH[w[0].month - 1]} ${w[0].year} to ${MONTH[w[11].month - 1]} ${w[11].year}`;
     } else if (st.display === "directory") {
       const n = directorySeries().length;
       summary = `${n} of ${DATA.series.length} meeting series`;
     } else {
-      const n = EDS.filter(e => !e.past && !e.expectedRow && edMatch(e) && (!st.within || e.start <= addDays(TODAY, st.within))).length;
-      summary = `${n} upcoming meeting${n === 1 ? "" : "s"}`;
+      const n = EDS.filter(e => !e.expectedRow && edMatch(e) && focusMatch(e) && (st.focus === "due" || st.focus === "open" || !e.past) && (!st.within || e.start <= addDays(TODAY, st.within))).length;
+      summary = st.focus === "due" ? `${n} upcoming abstract deadline${n === 1 ? "" : "s"}` : st.focus === "open" ? `${n} open abstract call${n === 1 ? "" : "s"}` : `${n} upcoming record${n === 1 ? "" : "s"}`;
     }
     const applied = [];
     if (st.prof.length) applied.push("Disciplines: " + st.prof.map(prof => prof === "AGACNP" ? "AGACNP (curated topic fit)" : PLABEL[prof] || prof).join(" + "));
-    if (st.focus.length) applied.push("Focus: " + st.focus.map(x => x[0].toUpperCase() + x.slice(1)).join(" + "));
+    if (st.scope.length) applied.push("Scope: " + st.scope.map(x => (SCOPE_CHIPS.find(([v]) => v === x) || [x, x])[1]).join(" + "));
+    if (st.focus) applied.push("Focus: " + FOCUS_LABEL[st.focus]);
     if (st.area) applied.push("Global Region: " + st.area.slice(2));
     if (st.where) applied.push("Format: " + st.where[0].toUpperCase() + st.where.slice(1));
     if (st.near) applied.push(`Within ${st.radius} miles of ${st.near.label}`);
     if (st.spec) applied.push("Specialty: " + st.spec);
     if (st.q) applied.push("Search: " + st.q);
-    if (st.openOnly) applied.push("Abstract call open");
     if (st.review) applied.push("Needs review only");
     const stamp = DATA && DATA.built ? stampET(DATA.built).replace(/^Data snapshot /, "") : "";
     $("#summary").innerHTML = `<b>${esc(summary)}</b>` + (applied.length ? `<span class="applied">${esc(applied.join(" · "))}</span>` : "");
@@ -714,9 +797,10 @@
     if (f && document.getElementById(f)) { const el = document.getElementById(f); el.focus(); if (el.setSelectionRange && el.value) el.setSelectionRange(el.value.length, el.value.length); }
     else if (restore) {
       const el = (restore.id && document.getElementById(restore.id)) ||
-        [...document.querySelectorAll("#quickprof button,#quickfocus button,#geoquick button,#filters button,#viewtools button")].find(x =>
+        [...document.querySelectorAll("#quickprof button,#quickscope button,#quickfocus button,#geoquick button,#filters button,#viewtools button")].find(x =>
           (restore.display && x.dataset.display === restore.display) ||
           (restore.prof != null && x.dataset.prof === restore.prof) ||
+          (restore.scope != null && x.dataset.scope === restore.scope) ||
           (restore.focus != null && x.dataset.focus === restore.focus) ||
           (restore.filter && x.dataset.f === restore.filter && x.dataset.v === restore.value));
       if (el) el.focus({ preventScroll: true });
@@ -763,9 +847,10 @@
     const mode = "upcoming", rows = [];
     EDS.filter(e => edMatch(e) && !e.expectedRow).forEach(e => {
       const meeting = mode === "upcoming" || mode === "directory" || (mode === "past" && e.past);
-      if (meeting && !(mode === "upcoming" && e.past) && e.start <= k && e.end >= k) rows.push({ e, what: e.start === k ? "Starts" : e.end === k ? "Final day" : "In progress" });
+      if (recordFocus(e) && meeting && !(mode === "upcoming" && e.past) && e.start <= k && e.end >= k) rows.push({ e, what: e.start === k ? "Starts" : e.end === k ? "Final day" : "In progress" });
       const cs = (mode === "upcoming" || mode === "deadlines") ? callSpan(e) : null;
-      if (cs && cs.from <= k && cs.to >= k) rows.push({ e, what: cs.to === k ? "Abstracts due today" : cs.from === k && cs.from < cs.to ? "Abstract call opens · due " + md(cs.to) : "Abstract call open · due " + md(cs.to), dl: cs.to === k, call: true });
+      const callShown = cs && (!st.focus || (st.focus === "due" && cs.to === k) || (st.focus === "open" && cs.from < cs.to));
+      if (callShown && cs.from <= k && cs.to >= k) rows.push({ e, what: cs.to === k ? "Abstracts due today" : cs.from === k && cs.from < cs.to ? "Abstract call opens · due " + md(cs.to) : "Abstract call open · due " + md(cs.to), dl: cs.to === k, call: true });
     });
     rows.sort((a, b) => (b.dl ? 1 : 0) - (a.dl ? 1 : 0) || a.e.s.name.localeCompare(b.e.s.name));
     $("#dlg").dataset.cur = "";
@@ -792,7 +877,7 @@
         ${e.note ? `<dt>Note</dt><dd>${esc(e.note)}</dd>` : ""}
         ${e.student ? `<dt>Student & DNP opportunity</dt><dd><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)} <a href="${esc(e.student.url)}" target="_blank" rel="noopener noreferrer">Organizer's student details</a></dd>` : ""}
         ${s.recurrence ? `<dt>Recurs</dt><dd>${esc(s.recurrence)}</dd>` : ""}
-        <dt>Focus</dt><dd>${(s.focus || []).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curated and derived tags)</span></dd>
+        <dt>Scope</dt><dd>${scopeTags(s).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curated and derived tags)</span></dd>
         ${s.np_pa_basis ? `<dt>Why it's here</dt><dd>${esc(s.np_pa_basis)}</dd>` : ""}
         <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} ${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${e.evidence_image ? ` · <a href="${esc(e.evidence_image)}" target="_blank" rel="noopener noreferrer">dates published in this image</a>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
       </dl>
@@ -859,7 +944,7 @@
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener("click", ev => {
-      const t = ev.target.closest("[data-display],[data-prof],[data-f],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month],[data-orbit-year]");
+      const t = ev.target.closest("[data-display],[data-prof],[data-f],[data-scope],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month],[data-orbit-year]");
       if (!t) return;
       if (t.dataset.display) {
         const from = st.display, next = t.dataset.display;
@@ -882,11 +967,17 @@
         st.more = 1; revealFirstOrbitMatch(); render(); return;
       }
       if (t.dataset.f) { st[t.dataset.f] = st[t.dataset.f] === t.dataset.v && t.dataset.v ? "" : t.dataset.v; st.more = 1; render(); return; }
+      if (t.dataset.scope != null) {
+        const v = t.dataset.scope;
+        if (!v) st.scope = [];
+        else st.scope = st.scope.includes(v) ? st.scope.filter(x => x !== v) : [...st.scope, v];
+        st.more = 1; revealFirstOrbitMatch(); render(); return;
+      }
       if (t.dataset.focus != null) {
-        const f = t.dataset.focus;
-        if (!f) st.focus = [];
-        else st.focus = st.focus.includes(f) ? st.focus.filter(x => x !== f) : [...st.focus, f];
-        st.more = 1; render(); return;
+        // Focus shows one record type at a time; choosing the active type again returns to All.
+        const v = t.dataset.focus;
+        st.focus = v && st.focus !== v ? v : "";
+        st.more = 1; revealFirstOrbitMatch(); render(); return;
       }
       const act = t.dataset.act;
       if (act === "clear") { const keep = { display: st.display, orbitScope: st.orbitScope, orbitFrom: st.orbitFrom, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
@@ -941,14 +1032,13 @@
     document.addEventListener("change", async ev => {
       const id = ev.target.id;
       if (id === "spec") st.spec = ev.target.value;
-      if (id === "openOnly") st.openOnly = ev.target.checked;
       if (id === "exp") st.expected = ev.target.checked;
       if (id === "review") st.review = ev.target.checked;
       if (id === "area") { st.area = ev.target.value; revealFirstOrbitMatch(); }
       if (id === "radius") st.radius = +ev.target.value;
       if (id === "calY" || id === "calM") { st.cal = $("#calY").value + "-" + String($("#calM").value).padStart(2, "0"); render(); return; }
       if (id === "nearq") { st.nearQ = ev.target.value.trim(); st.where = ""; await resolveNear(); }
-      if (["spec", "openOnly", "exp", "review", "area", "radius", "nearq"].includes(id)) { st.more = 1; render(); }
+      if (["spec", "exp", "review", "area", "radius", "nearq"].includes(id)) { st.more = 1; render(); }
     });
     document.addEventListener("input", ev => { if (ev.target.id === "nearq") fillCityList(ev.target.value); });
     document.addEventListener("keydown", async ev => { if (ev.target.id === "nearq" && ev.key === "Enter") { ev.preventDefault(); ev.target.blur(); } });
