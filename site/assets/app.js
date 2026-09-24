@@ -272,14 +272,14 @@
   // its Scope tags and its Focus (record type), the latter in that type's colour.
   const SCOPE_LABEL = Object.fromEntries(SCOPE_CHIPS.filter(([v]) => v));
   const scopeBadges = s => scopeTags(s).filter(t => SCOPE_LABEL[t])
-    .map(t => `<span class="tag scope" title="Scope: ${esc(SCOPE_LABEL[t])}">${esc(SCOPE_LABEL[t])}</span>`).join("");
+    .map(t => badge("scope", t, SCOPE_LABEL[t], `Show every record in the ${SCOPE_LABEL[t]} scope`)).join("");
   function focusBadges(e) {
     const out = [];
     out.push(isCelebration(e)
-      ? `<span class="tag focus obs" title="Focus: Celebrations">Celebration</span>`
-      : `<span class="tag focus meet" title="Focus: Conferences">Conference</span>`);
-    if (isOpenNow(e)) out.push(`<span class="tag focus open" title="Focus: Open abstracts">Open abstracts</span>`);
-    else if (hasUpcomingDeadline(e)) out.push(`<span class="tag focus due" title="Focus: Abstracts due">Abstracts due</span>`);
+      ? badge("focus", "celebrations", "Celebration", "Show celebration weeks and days", "focus obs")
+      : badge("focus", "conferences", "Conference", "Show conferences, symposiums, summits and courses", "focus meet"));
+    if (isOpenNow(e)) out.push(badge("focus", "open", "Open abstracts", "Show every abstract call open now", "focus open"));
+    else if (hasUpcomingDeadline(e)) out.push(badge("focus", "due", "Abstracts due", "Show every upcoming abstract deadline", "focus due"));
     return out.join("");
   }
   const scopeTags = s => [...(s.focus || []), ...(s.studentTag || s.hasStu || s.hasDnp ? ["students"] : [])];
@@ -408,7 +408,26 @@
 
   /* ---------- pieces ---------- */
   const colorOf = s => s.kind === "observance" ? "var(--t-obs)" : "var(--t-meet)";   // colour = record type; disciplines are badges
-  const profTags = s => s.professions.map(p => `<span class="tag p neutral">${esc(PLABEL[p] || p)}</span>`).join("") + (s.rnfa_inferred ? `<span class="tag p neutral" title="Surgical or perioperative meeting relevant to NP first assistants; curator tag">NP-RNFA</span>` : "");
+  /* ---------- badges (2026-09-24, curator decision) ----------
+     Every badge on a record is a filter you can reach. A badge is a button only when the filter row
+     above the list can actually represent it; a value with no control stays a plain tag rather than a
+     click that quietly does nothing. Family → control: disc → Discipline chip, scope → Scope chip,
+     focus → Focus chip, spec → the Specialty dropdown (107 values, 63 of them used once — far too many
+     for a chip row, which is why it is a dropdown and stays one). */
+  const PROF_CHIP_VALUES = new Set(PROF_CHIPS.map(([v]) => v).filter(Boolean));
+  function badge(kind, value, label, title, cls) {
+    const clickable = kind === "spec" ? SPECS.includes(value)
+      : kind === "disc" ? PROF_CHIP_VALUES.has(value)
+      : kind === "scope" ? !!SCOPE_LABEL[value]
+      : kind === "focus";
+    const tip = title || (clickable ? `Show every record tagged ${label}` : label);
+    if (!clickable) return `<span class="tag ${cls || kind}" title="${esc(tip)}">${esc(label)}</span>`;
+    return `<button type="button" class="tag ${cls || kind} tapfilter" data-badge="${esc(kind)}" data-val="${esc(value)}" title="${esc(tip)}">${esc(label)}</button>`;
+  }
+  const profTags = s => s.professions.map(p => badge("disc", p === "DNP" ? "STU" : p, PLABEL[p] || p, null, "p neutral")).join("")
+    + (s.rnfa_inferred ? badge("disc", "RNFA", "NP-RNFA", "Surgical or perioperative meeting relevant to NP first assistants; curator tag", "p neutral") : "");
+  const specTags = (s, limit) => (limit ? (s.specialty || []).slice(0, limit) : (s.specialty || []))
+    .map(x => badge("spec", x, x, null, "spec")).join("");
   function vBadge(e, exceptionsOnly = false) {
     const v = e.verify || { state: "unchecked" };
     // exceptionsOnly = false: the full verification state, shown on every list card (curator decision, 2026-09-24).
@@ -462,7 +481,7 @@
       <div class="when" style="--c:${dateMode ? "var(--t-call)" : colorOf(s)}"><span class="d">${esc(day)}</span><span class="m">${esc(sub)}</span></div>
       <div class="body">${appWeekNow ? `<div class="live-label">OUR WEEK · HAPPENING NOW THROUGH ${esc(md(e.end))}</div>` : ""}<div class="title">${esc(s.name)}</div><div class="org">${esc(s.org_display || s.org)}</div>
         <div class="meta">${dateMode ? `<span class="meeting-dates">Meeting ${esc(range(e))}</span>` : ""}${e.location ? `<span class="loc">${esc(e.location)}</span>` : ""}${dist}${e.format && e.format !== "in person" ? `<span>${esc(e.format[0].toUpperCase() + e.format.slice(1))}</span>` : ""}${e.theme ? `<span><i>${esc(e.theme)}</i></span>` : ""}</div>
-        <div class="badges">${profTags(s)}${scopeBadges(s)}${focusBadges(e)}${kindTag}</div>${studentMode && e.student ? `<p class="student-line"><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)}</p>` : ""}</div>
+        <div class="badges">${profTags(s)}${scopeBadges(s)}${focusBadges(e)}${specTags(s, 2)}${kindTag}</div>${studentMode && e.student ? `<p class="student-line"><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)}</p>` : ""}</div>
       <div class="side">${studentMode && !dateMode ? (e.student && e.student.deadline && e.student.deadline >= TODAY ? `<span class="student-due">Submit by ${esc(md(e.student.deadline))}</span>` : "") : callPill(e)}${vBadge(e)}</div></article>`;
   }
   const empty = msg => `<div class="empty">${esc(msg)} <button class="linkbtn" data-act="clear">Clear all filters</button></div>`;
@@ -721,7 +740,7 @@
       const hidden = !next && L.some(e => !e.past && !e.expectedRow);
       const anchor = s.name[0].toUpperCase() !== cur ? (cur = s.name[0].toUpperCase(), ` id="letter-${esc(cur)}"`) : "";
       h += `<button class="srs"${anchor} data-s="${esc(s.id)}"><span class="title">${esc(s.name)}</span><span class="org">${esc(s.org_display || s.org)}</span>
-        <span class="badges">${profTags(s)}${(s.specialty || []).slice(0, 2).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</span>
+        <span class="badges">${profTags(s)}${scopeBadges(s)}${specTags(s, 2)}</span>
         <span class="meta">${next ? "Next recorded: " + esc(range(next)) : hidden ? "Next date awaiting a source check" : esc(s.status_note || "Next date not posted")}${s.archive_url ? " · past-meetings archive" : ""}${next ? " " + vBadge(next, true) : ""}</span>
         <span class="hist">${L.filter(e => !e.expectedRow).map(e => `<span class="${e.past ? "" : "fut"}" title="${esc(range(e))}">${e.start.slice(0, 4)}</span>`).join("")}</span></button>`;
     });
@@ -947,7 +966,7 @@
     const fix = REPO ? `${REPO}/issues/new?template=fix.yml&title=${encodeURIComponent("Fix: " + s.name + " " + e.start.slice(0, 4))}` : "";
     const li = x => `<li class="${x.id === e.id ? "cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || (x.expectedRow ? ((x.end || x.start) < TODAY ? "No data available" : "Expected; not yet announced") : ""))}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">Program & materials</a>` : ""}</span>${vBadge(x, true)}</li>`;
     $("#dlg").innerHTML = `<div class="dlg"><button class="x" data-act="close" aria-label="Close">×</button>
-      <header><p class="eyebrow">${esc(s.org_display || s.org)}</p><h3>${esc(s.name)}</h3><div class="badges">${profTags(s)}${(s.specialty || []).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</div></header>
+      <header><p class="eyebrow">${esc(s.org_display || s.org)}</p><h3>${esc(s.name)}</h3><div class="badges">${profTags(s)}${scopeBadges(s)}${specTags(s)}</div></header>
       <dl class="kv">
         <dt>When</dt><dd><b>${esc(range(e))}</b> ${vBadge(e, true)}</dd>
         ${e.location ? `<dt>Where</dt><dd>${esc(e.location)}${e.format && e.format !== "in person" ? " · " + esc(e.format) : ""}</dd>` : ""}
@@ -1032,8 +1051,24 @@
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener("click", ev => {
-      const t = ev.target.closest("[data-display],[data-prof],[data-f],[data-scope],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month],[data-orbit-year]");
+      const t = ev.target.closest("[data-badge],[data-display],[data-prof],[data-f],[data-scope],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month],[data-orbit-year]");
       if (!t) return;
+      // 2026-09-24: a badge on a record is a way into the list. Clicking one clears the other
+      // families, applies just that filter, closes the record and shows the result as a list.
+      if (t.dataset.badge) {
+        ev.preventDefault(); ev.stopPropagation();
+        const kind = t.dataset.badge, val = t.dataset.val;
+        st.prof = []; st.scope = []; st.focus = ""; st.spec = ""; st.review = false; st.q = "";
+        if (kind === "disc") st.prof = [val];
+        else if (kind === "scope") st.scope = [val];
+        else if (kind === "focus") st.focus = val;
+        else if (kind === "spec") st.spec = val;
+        st.display = "list"; st.more = 1;
+        const dlg = $("#dlg"); if (dlg && dlg.open) dlg.close();
+        render(); writeHash();
+        const view = $("#view"); if (view) { view.focus(); view.scrollIntoView({ block: "start", behavior: "smooth" }); }
+        return;
+      }
       if (t.dataset.display) {
         const from = st.display, next = t.dataset.display;
         if (next === "list" && (from === "calendar" || (from === "orbit" && st.orbitScope === "month"))) {

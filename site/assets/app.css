@@ -986,3 +986,24 @@ details.month{scroll-margin-top:12px}
 .ev .badges .tag.focus.due{color:var(--t-due)}
 .ev .badges .tag.focus.open{color:var(--t-call)}
 .ev .badges{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+
+/* ===== 2026-09-24 · badges are filters =====
+   One look for every tag that names a filter value: white, outlined, clickable.
+   Focus keeps its record-type colour (that is the calendar key). A value with no
+   control renders as a plain tag and is not a button. */
+.tag.tapfilter{cursor:pointer;font:inherit;font-size:11px;font-weight:700;line-height:1;
+  padding:4px 8px;border-radius:2px;background:#FFFFFF;color:#23404B;border:1px solid #C9D7DB}
+.tag.tapfilter:hover{border-color:#102F3B;background:#F2F7F8}
+.tag.tapfilter:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.ev .badges .tag.tapfilter.p,.srs .badges .tag.tapfilter.p,#dlg .badges .tag.tapfilter.p{background:#FFFFFF;color:#23404B;border-color:#C9D7DB}
+.ev .badges .tag.tapfilter.scope,.srs .badges .tag.tapfilter.scope,#dlg .badges .tag.tapfilter.scope{background:#FFFFFF;color:#23404B;border-color:#C9D7DB}
+.ev .badges .tag.tapfilter.spec,.srs .badges .tag.tapfilter.spec,#dlg .badges .tag.tapfilter.spec{background:#FFFFFF;color:#23404B;border-color:#C9D7DB}
+/* Focus badges keep their colour and stay clickable. */
+.ev .badges .tag.tapfilter.focus{background:transparent;border-color:currentColor;font-weight:800}
+.ev .badges .tag.tapfilter.focus.meet{color:var(--t-meet)}
+.ev .badges .tag.tapfilter.focus.obs{color:var(--t-obs)}
+.ev .badges .tag.tapfilter.focus.due{color:var(--t-due)}
+.ev .badges .tag.tapfilter.focus.open{color:var(--t-call)}
+.ev .badges .tag.tapfilter.focus:hover{background:color-mix(in srgb,currentColor 10%,transparent)}
+#dlg .badges{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.srs .badges{display:flex;flex-wrap:nowrap;gap:4px;overflow:hidden;align-items:center}
