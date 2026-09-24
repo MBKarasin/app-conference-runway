@@ -862,6 +862,33 @@
    "location": "East Tennessee State University, Johnson City, TN",
    "_why": "The chapter's page gives the 2023 date (April 20, 2023) but no 2023 venue; the host institution is named on the page. Recorded at institution level only, 2026-09-24, rather than left empty.",
    "reviewed_on": "2026-09-24"
+  },
+  "a5ace80185dd": {
+   "start": "2027-05-14",
+   "end": "2027-05-19",
+   "location": "New Orleans, LA",
+   "source_reviewed": true,
+   "evidence": "May 14-19, 2027 — New Orleans, LA",
+   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
+   "reviewed_on": "2026-09-24"
+  },
+  "199e0768daa7": {
+   "start": "2028-05-19",
+   "end": "2028-05-24",
+   "location": "San Francisco, CA",
+   "source_reviewed": true,
+   "evidence": "May 19-24, 2028 — San Francisco, CA",
+   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
+   "reviewed_on": "2026-09-24"
+  },
+  "ad00946861ac": {
+   "start": "2029-05-18",
+   "end": "2029-05-23",
+   "location": "Washington, DC",
+   "source_reviewed": true,
+   "evidence": "May 18-23, 2029 — Washington, DC",
+   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
+   "reviewed_on": "2026-09-24"
   }
  },
  "rules": {
