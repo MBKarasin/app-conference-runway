@@ -37,6 +37,7 @@
     dash: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2"/></svg>',
     cal: '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M5 1.5v3M11 1.5v3" stroke="currentColor" stroke-width="1.5"/></svg>',
     list: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.6"/></svg>',
+    orbit: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.2" fill="currentColor"/><circle cx="8" cy="8" r="5.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2.4 1.8"/></svg>',
     ext: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7 9M12 9.5V14H2V4h4.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>',
     link: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.5-1.5a2.8 2.8 0 014 4L11 8.5M9 11.5L7.5 13a2.8 2.8 0 01-4-4L5 7.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>',
     archive: '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.5 5.5v8h11v-8M6 8.5h4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>'
@@ -73,7 +74,7 @@
     const h = new URLSearchParams(location.hash.slice(1));
     Object.assign(st, DEF());
     if (TABS.some(t => t[0] === h.get("view"))) st.view = h.get("view");
-    if (h.get("display") === "calendar") st.display = "calendar";
+    if (["calendar", "orbit"].includes(h.get("display"))) st.display = h.get("display");
     if (st.view === "students") st.display = "list";
     ["q", "prof", "focus", "kind", "where", "area", "spec"].forEach(k => { if (h.get(k)) st[k] = h.get(k); });
     if (h.get("near")) st.nearQ = h.get("near");
@@ -86,14 +87,14 @@
   function writeHash(extra) {
     const h = new URLSearchParams();
     if (st.view !== "upcoming") h.set("view", st.view);
-    if (st.display === "calendar") h.set("display", "calendar");
+    if (["calendar", "orbit"].includes(st.display)) h.set("display", st.display);
     ["q", "prof", "focus", "kind", "where", "area", "spec"].forEach(k => st[k] && h.set(k, st[k]));
     if (st.near) { h.set("near", st.nearQ); h.set("r", st.radius); }
     if (st.openOnly) h.set("open", "1");
     if (st.expected) h.set("exp", "1");
     if (st.review) h.set("review", "1");
     if (st.within) h.set("within", st.within);
-    if (st.display === "calendar" && st.cal !== TODAY.slice(0, 7)) h.set("cal", st.cal);
+    if (["calendar", "orbit"].includes(st.display) && st.cal !== TODAY.slice(0, 7)) h.set("cal", st.cal);
     if (extra) Object.entries(extra).forEach(([k, v]) => h.set(k, v));
     const s = h.toString();
     history.replaceState(null, "", s ? "#" + s : location.pathname + location.search);
@@ -372,6 +373,44 @@
       ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}
       <div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
   }
+  function vOrbit() {
+    const [year, pickedMonth] = st.cal.split("-").map(Number);
+    const records = EDS.filter(e => !e.expectedRow && edMatch(e));
+    const monthly = MONTH.map((name, i) => {
+      const month = i + 1, key = `${year}-${String(month).padStart(2, "0")}`;
+      const start = key + "-01", end = iso(new Date(year, month, 0));
+      const meetings = records.filter(e => e.start <= end && (e.end || e.start) >= start);
+      const due = records.filter(e => e.call && e.call.closes && e.call.closes >= start && e.call.closes <= end);
+      const open = records.filter(e => {
+        const c = e.call || {}, opens = c.opens || (c.status === "open" ? TODAY : null), closes = c.closes;
+        return opens && closes && opens <= end && closes >= start && !(closes >= start && closes <= end);
+      });
+      return { name, month, key, meetings, due, open };
+    });
+    const max = Math.max(1, ...monthly.flatMap(x => [x.meetings.length, x.due.length, x.open.length]));
+    const h = n => Math.round(8 + (n / max) * 40);
+    const selected = monthly[pickedMonth - 1] || monthly[0];
+    const item = (e, meta, tone) => `<button class="orbit-item ${tone}" data-e="${esc(e.id)}"><span class="orbit-item-date">${esc(meta)}</span><strong>${esc(e.s.name)}</strong><span>${esc(e.s.org_display || e.s.org)}</span></button>`;
+    const group = (title, tone, rows, meta) => `<section class="orbit-group ${tone}"><h3><span>${esc(title)}</span><b>${rows.length}</b></h3><div>${rows.length ? rows.slice(0, 12).map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in this month.</p>`}${rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></section>`;
+    const countLine = x => `${x.meetings.length} meeting${x.meetings.length === 1 ? "" : "s"}, ${x.due.length} abstract deadline${x.due.length === 1 ? "" : "s"}, ${x.open.length} open abstract call${x.open.length === 1 ? "" : "s"}`;
+    const months = monthly.map((x, i) => `<button class="orbit-month${x.month === selected.month ? " selected" : ""}" style="--i:${i}" data-orbit-month="${x.month}" aria-pressed="${x.month === selected.month}" title="${esc(`${x.name}: ${countLine(x)}`)}"><span class="orbit-month-name">${MON[i]}</span><span class="orbit-columns" aria-hidden="true"><i class="meet" style="--h:${h(x.meetings.length)}px"></i><i class="due" style="--h:${h(x.due.length)}px"></i><i class="open" style="--h:${h(x.open.length)}px"></i></span><span class="sr">${esc(countLine(x))}</span></button>`).join("");
+    return `<div class="orbit-shell">
+      <section class="orbit-board" aria-label="${year} annual record density">
+        <header class="orbit-heading"><div><p class="eyebrow">Global Orbit</p><h2>Year at a glance</h2></div><p>Choose a month to inspect its meetings and abstract activity.</p></header>
+        <div class="orbit-stage">
+          <div class="orbit-core"><button data-act="prevY" aria-label="Previous year">‹</button><span><strong>${year}</strong><small>Global APP year</small></span><button data-act="nextY" aria-label="Next year">›</button></div>
+          ${months}
+        </div>
+        <div class="orbit-legend" aria-label="Orbit legend"><span><i class="meet"></i>Meetings</span><span><i class="due"></i>Abstracts due</span><span><i class="open"></i>Open abstracts</span></div>
+      </section>
+      <aside class="orbit-rail" aria-live="polite">
+        <header><p class="eyebrow">${esc(selected.name)} ${year}</p><h2>Records in focus</h2></header>
+        ${group("Meetings", "meet", selected.meetings, e => range(e))}
+        ${group("Abstracts due", "due", selected.due, e => e.call && e.call.closes ? longDate(e.call.closes) : "Date not posted")}
+        ${group("Open abstracts", "open", selected.open, e => e.call && e.call.closes ? `Due ${md(e.call.closes)}` : "Open")}
+      </aside>
+    </div>`;
+  }
   function vPast() {
     const L = EDS.filter(e => e.past && !e.expectedRow && edMatch(e)).sort((a, b) => b.start.localeCompare(a.start));
     if (!L.length) return empty("No past meetings match these filters.");
@@ -447,12 +486,12 @@
     $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${chipRow("prof", PROF_CHIPS)}`;
     $("#viewtools").innerHTML = `${st.view === "students" ? "" : `<div class="seg" role="group" aria-label="Display">
         <button data-display="list" aria-pressed="${st.display === "list"}">${ICON.list}List</button>
-        <button data-display="calendar" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button></div>`}
-      <button class="linkbtn" data-act="clear">Clear all</button>`;
+        <button data-display="calendar" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button>
+        <button data-display="orbit" aria-pressed="${st.display === "orbit"}">${ICON.orbit}Orbit</button></div>`}`;
     $("#geoquick").innerHTML = `<span class="flabel">Location</span>
       <button class="chip all" data-act="where-all" aria-pressed="${!st.where && !st.area && !st.near}">Anywhere</button>
       <button class="chip" data-act="where-online" aria-pressed="${st.where === "online"}">Online</button>
-      <label class="geo-label" for="area">Continent / country / US region</label>
+      <label class="geo-label" for="area">Global Region</label>
       <select id="area" class="sel"><option value="">All regions</option>
         <optgroup label="Continent">${CONTINENTS.map(c => `<option value="c:${c}" ${st.area === "c:" + c ? "selected" : ""}>${c}</option>`).join("")}</optgroup>
         <optgroup label="Country">${COUNTRIES.map(c => `<option value="n:${esc(c)}" ${st.area === "n:" + c ? "selected" : ""}>${esc(c)}</option>`).join("")}</optgroup>
@@ -482,10 +521,14 @@
     const replaced = active && active.closest && active.closest("#tabs,#quickprof,#geoquick,#filters,#viewtools");
     const restore = replaced ? { id: active.id, view: active.dataset.view, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v } : null;
     spotlight(); controls();
-    const v = st.view === "students" ? vStudents : st.display === "calendar" ? vCalendar : { upcoming: vList, deadlines: vDeadlines, past: vPast, directory: vDirectory }[st.view];
+    const v = st.view === "students" ? vStudents : st.display === "calendar" ? vCalendar : st.display === "orbit" ? vOrbit : { upcoming: vList, deadlines: vDeadlines, past: vPast, directory: vDirectory }[st.view];
     $("#view").innerHTML = v();
     let summary;
-    if (st.view === "directory") {
+    if (st.display === "orbit" && st.view !== "students") {
+      const year = st.cal.slice(0, 4), from = year + "-01-01", to = year + "-12-31";
+      const n = EDS.filter(e => !e.expectedRow && edMatch(e) && ((e.start <= to && (e.end || e.start) >= from) || (e.call && ((e.call.opens || "").startsWith(year) || (e.call.closes || "").startsWith(year))))).length;
+      summary = `${n} record${n === 1 ? "" : "s"} in the ${year} Orbit`;
+    } else if (st.view === "directory") {
       const n = directorySeries().length;
       summary = `${n} of ${DATA.series.length} meeting series`;
     } else if (st.view === "students") {
@@ -503,7 +546,7 @@
     }
     const applied = [];
     if (st.prof) applied.push("Discipline: " + (st.prof === "AGACNP" ? "AGACNP (curated topic fit)" : PLABEL[st.prof] || st.prof));
-    if (st.area) applied.push((st.area.startsWith("n:") ? "Country: " : st.area.startsWith("c:") ? "Continent: " : "US region: ") + st.area.slice(2));
+    if (st.area) applied.push("Global Region: " + st.area.slice(2));
     if (st.where === "online") applied.push("Location: online");
     if (st.near) applied.push(`Within ${st.radius} miles of ${st.near.label}`);
     if (st.spec) applied.push("Specialty: " + st.spec);
@@ -660,10 +703,11 @@
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener("click", ev => {
-      const t = ev.target.closest("[data-view],[data-display],[data-f],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen]");
+      const t = ev.target.closest("[data-view],[data-display],[data-f],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month]");
       if (!t) return;
       if (t.dataset.view) { st.view = t.dataset.view; if (st.view === "students") st.display = "list"; st.more = 1; render(); return; }
       if (t.dataset.display) { st.display = t.dataset.display; render(); return; }
+      if (t.dataset.orbitMonth) { const year = st.cal.slice(0, 4); st.cal = year + "-" + String(t.dataset.orbitMonth).padStart(2, "0"); render(); return; }
       if (t.dataset.f) { st[t.dataset.f] = st[t.dataset.f] === t.dataset.v && t.dataset.v ? "" : t.dataset.v; st.more = 1; render(); return; }
       const act = t.dataset.act;
       if (act === "clear") { const keep = { view: st.view, display: st.display, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
