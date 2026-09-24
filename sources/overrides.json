@@ -4,7 +4,18 @@
   "american-association-of-neuroscience-nur__neuroscience-nursing-annual-conference": "american-association-of-neuroscience-nur__aann-annual-conference",
   "associa-o-brasileira-de-enfermagem-aben__76-congresso-brasileiro-de-enfermagem-cben": "associa-o-brasileira-de-enfermagem-aben__congresso-brasileiro-de-enfermagem-cben"
  },
- "series": {},
+ "series": {
+  "university-of-washington-school-of-nursi__dnp-final-project-poster-presentations": {
+   "org_url": "https://nursing.uw.edu/academics/dnp/",
+   "_why": "The previous organizer link (students.nursing.uw.edu/?p=6814) now returns HTTP 404. Re-pointed 2026-09-24 to the school's own DNP programme page, which states: 'The program culminates in the presentation and defense of your DNP Project as your final examination.'",
+   "reviewed_on": "2026-09-24"
+  },
+  "american-organization-for-nursing-leader__professional-governance-leadership-conference": {
+   "archive_url": null,
+   "_why": "The archive link (aonl.org/education-events/professional-governance-overview) returns HTTP 404 and AONL's events index no longer lists the page. Removed 2026-09-24 rather than shown as a working archive.",
+   "reviewed_on": "2026-09-24"
+  }
+ },
  "editions": {
   "e8d98a25caca": {
    "removed": true,
@@ -744,6 +755,26 @@
    "source_reviewed": true,
    "reviewed_on": "2026-09-24",
    "_why": "Repopulation audit 2026-09-24: aahpm.org returned HTTP 403 to the checker on 2026-09-24; this is the organizer wording the checker captured on 2026-09-23 (verification.json at commit 53e5d4a), recorded so the record keeps its quote while the page blocks automated readers."
+  },
+  "e01ad708f9e7": {
+   "source_url": "https://nursing.uw.edu/academics/dnp/",
+   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+   "reviewed_on": "2026-09-24"
+  },
+  "df1e5711757f": {
+   "source_url": "https://nursing.uw.edu/academics/dnp/",
+   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+   "reviewed_on": "2026-09-24"
+  },
+  "333710218753": {
+   "source_url": "https://nursing.uw.edu/academics/dnp/",
+   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+   "reviewed_on": "2026-09-24"
+  },
+  "4a5f7e5998f7": {
+   "source_url": "https://nursing.uw.edu/academics/dnp/",
+   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+   "reviewed_on": "2026-09-24"
   }
  },
  "rules": {
