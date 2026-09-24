@@ -1,58 +1,60 @@
 # APP Conference Runway
 
-APP Conference Runway is a source-traced global planning instrument for APP events, deadlines and opportunities. Visitors can search or filter the calendar, then open any entry to review its evidence and confirm details with the organizer. Coverage is still concentrated in the United States and is not yet exhaustive. This is a static site designed for GitHub Pages; a nightly GitHub Action (about 2 a.m. New York time) re-reads organizer pages and stamps each date *start found*, *needs review* or *not re-checked*.
+A source-traced calendar of conferences, abstract deadlines, student and DNP project venues, and observances for advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs) worldwide. Every dated entry links to the organizer's own page and quotes the wording the date came from, so a visitor can confirm it before registering, submitting or traveling. Coverage is still concentrated in the United States and is not exhaustive.
 
-The public interface separates abstract calls into **Due within 30 days**, **Opening within 30 days** and **Open now** so each call appears once. Student opportunities and DNP project dissemination are presented as one discipline. Discipline and Focus form one paired control row; Focus supports any combination of Clinical, Academic, Research and Leadership. Visitors can switch among List, Calendar and **Orbit** through a scarlet-divided display control, with Location on the same row: the annual Orbit places the year and active filters at its center, surrounds them with monthly density columns, and opens collapsible Abstracts Due, Meetings & Conferences, and Open Abstracts sections beside it. Location type (All, Live, Online or Hybrid), Global Region, distance and search work consistently across all three displays. Upcoming, Abstract deadlines and Directory retain their distinct time/status scopes in Orbit; expected records appear there only when enabled. When a newly selected location has no records in the displayed month, Orbit reveals the first matching month in that year. The Calendar centers its visible month between paired navigation arrows, places its two-row key beside Today, and uses a raised disclosure bar for additional records in a week.
+Live site: https://mbkarasin.github.io/app-conference-runway/ (kept out of search engines on purpose; it is meant to travel from APP to APP).
 
-**Design provenance.** Dr. Mark Karasin conceived and directed the instrument's information architecture, visual representation, interface behavior, navigation, filters, category hierarchy, and the List, Calendar and Orbit graph concepts. ChatGPT translated that direction into interface code, tested and refined the implementation, and generated the original masthead logo under his direction. Design and AI provenance are documented in [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md); its §7 is the replication contract for recreating the interface, deterministic data build and maintained GitHub Pages project.
+How it was built, what it can and cannot prove, and how to challenge or reproduce it: [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Terms of reuse: [`LICENSE`](LICENSE) (CC0 for the curator's own work; organizer material and third-party components keep their own rights).
 
-## Set it up (about 15 minutes, all in your browser)
+## What a visitor sees
 
-1. **Create a GitHub account** at github.com/signup with your personal email. Pick a handle with letters, numbers and single hyphens only (the handle becomes the web address: `https://<handle>.github.io/app-conference-runway/`). Use a new password you use nowhere else, and turn on two-factor authentication (Settings → Password and authentication).
-2. **Create a repository** named `app-conference-runway`, set to **Public**, with no template and no README.
-3. **Add the files with GitHub Desktop**: the project contains more than 900 files, while GitHub's browser uploader accepts at most 100 at a time. In GitHub Desktop, clone the empty repository you created, copy *everything inside this folder* into that local clone (including the hidden `.github` folder), review the changes, commit, and choose **Push origin**. Do not upload this ZIP as a single file.
-4. **Turn on Pages**: Settings → Pages → Source: **GitHub Actions**.
-5. **Allow the checker to write its stamps**: Settings → Actions → General → Workflow permissions → **Read and write permissions** → Save.
-6. **Run it once**: Actions tab → "Check sources and publish" → Run workflow. When it finishes, the site is live at the address in step 1.
-7. **Settings file**: edit `site/assets/config.js`. Set `repo: "https://github.com/<handle>/app-conference-runway"` to turn on "Suggest a fix". The curator name, credentials, affiliations, titles and links are also kept in this file. Commit any updates.
-8. **Security basics**: Settings → Code security → turn on Dependabot alerts and secret scanning. Do not add collaborators; with none, nothing reaches the site without your merge.
+- **Orbit** (the landing view): twelve consecutive months starting with the current month, arranged in a ring, with the density of meetings, abstract deadlines and open calls on each month. Choose a month for its records, the center label for all twelve months, or the arrows to move the window a year at a time.
+- **List**: upcoming records grouped by month. **Calendar**: a month grid with multi-day bars. **Directory**: every recurring series with its recorded history.
+- Filters for discipline (NP, AGACNP, CRNA, NP-RNFA, CNS, CNM, PA, Students & DNP projects), focus, location type, global region and distance from a ZIP or city. Every view is a shareable link.
+- A "Needs review only" switch lists the records whose last automated check did not confirm the date, and each record shows its source link, the quoted wording and, where the date was published only in an image, that image.
 
-## Keeping it current
+## How it stays current
 
-- Every night the checker runs at about 2 a.m. New York time, commits `data/verification.json`, and redeploys; the page header shows the time of the last update. GitHub runs schedules in UTC, so the workflow fires at 06:00 and 07:00 UTC and keeps only the one that lands at 2 a.m. Eastern (EDT or EST). GitHub notes scheduled runs can be delayed at peak load. The nightly commits also keep GitHub from pausing the schedule (it disables scheduled workflows in public repos after 60 days without activity).
-- New meeting locations: run `python scripts/geocode.py` after adding meetings so ZIP-radius and region filters can place them; anything it can't place is listed, and you can pin it in `sources/geo/manual.json`.
-- If any date stops matching its organizer page, an issue titled **"Runway: dates to review"** opens (or refreshes). Fix the date in `sources/overrides.json` (or the source file), commit, and the site redeploys.
-- New meetings: add them to a `sources/group_*.json` file following `sources/SCHEMA.md`. Use the organizer's own page, including local-language pages when applicable, and record translated titles in English. Preserve the original source URL.
-- The AGACNP filter is a curator-selected adult acute care topic view. It does not assert that an organizer has a designated AGACNP track or that the event offers AGACNP-specific credit.
-- The **Students & DNP projects** tab includes only organizer-documented opportunities. The meeting date and a student submission deadline are distinct fields; a student opportunity may be listed even after its call has closed.
-- The default **Source checked dates** view includes organizer pages whose start-date evidence still matches, manually reviewed dates, and published-rule observances. It excludes source wording drift, unreachable or missing source evidence, and organizer date conflicts. Visitors can switch the filter off to inspect those exceptions. The checker does not independently prove each end date or registration link; the edition's organizer link remains the final reference.
-- Visitors can subscribe to `runway.ics` in Outlook, Google or Apple Calendar; it refreshes on their calendar's schedule.
+- A GitHub Action scheduled nightly (06:00 UTC, about 2 a.m. Eastern; GitHub may start it late and it runs whenever it starts) re-reads every upcoming edition's organizer page, records what it found in `data/verification.json` and `data/check_report.md`, archives the day's generated data under `data/snapshots/`, and redeploys. The page header shows the time of the last source read.
+- If a date stops matching its organizer page, the issue **"Runway: dates to review"** is refreshed from the report. Corrections go in `sources/overrides.json` with a `_why`, a verbatim quote and the exact URL or image; a push to `main` rebuilds and redeploys.
+- Meetings that have ended are frozen as they were captured and are not re-read.
+- New meetings are added to a `sources/group_*.json` file following `sources/SCHEMA.md`, from the organizer's own pages (including local-language pages, with titles translated into English and the original kept).
 
-## How the pieces fit
+## Repository map
 
 | Path | What it is |
 |---|---|
-| `sources/` | Curated inputs. Never edited by the checker. `overrides.json` holds your corrections and wins over everything. |
-| `scripts/build.py` | Merges sources + verification into `site/data/runway.json` and `site/runway.ics`; projects "expected" months up to three years ahead (a rolling window), and keeps `data/ledger.json`, a permanent record of every dated edition ever published. |
+| `sources/` | Curated inputs. Never edited by the checker. `overrides.json` holds the curator's corrections and wins over everything. |
+| `scripts/build.py` | Merges sources and verification into `site/data/runway.json` and `site/runway.ics`; projects "expected" months up to three years ahead; maintains `data/ledger.json`, the permanent record of every edition ever published. |
 | `scripts/check.py` | Re-reads organizer pages (robots.txt honored, one request per page, one site at a time). Writes `data/verification.json` and `data/check_report.md`. |
-| `scripts/geocode.py` | Places each venue (U.S. Census Gazetteer; GeoNames, CC BY 4.0) and builds the ZIP and world-city lookups for "Near". |
-| `sources/archive/` | Organizer past-meeting archive links and earlier editions. |
-| `scripts/snapshot.py` | Saves each night's data to `data/snapshots/<year>/<date>.json.gz` (about 45 KB a night). |
-| `scripts/validate.py` | Build gate: bad dates, non-https sources, private-looking strings and unsupported absence claims fail the build. |
-| `site/` | The website. No third-party requests, cookies or analytics. Fonts are self-hosted (SIL Open Font License). |
+| `scripts/linkcheck.py` | Reports source links that now fail. |
+| `scripts/validate.py` | Build gate: bad dates, non-HTTPS sources, private-looking strings, projections past the horizon, unsupported absence claims, missing landmark records, and upcoming records without a quote and source fail the build. |
+| `scripts/snapshot.py` | Archives the generated data candidate for the day under `data/snapshots/<year>/` and lists its SHA-256 in `MANIFEST.csv`. |
+| `scripts/geocode.py` | Places venues (U.S. Census Gazetteer; GeoNames, CC BY 4.0) for the region and distance filters; manual pins live in `sources/geo/manual.json`. |
+| `site/` | The static website: no framework, no third-party requests at runtime, no cookies or analytics, self-hosted fonts (SIL Open Font License). |
+| `.github/workflows/runway.yml` | Build, validate and deploy on push; nightly check, archive and review digest on schedule. |
+
+## Run it yourself
+
+Python 3.12, standard library only (plus `pypdf` for the checker). From the repository root:
+
+```text
+python scripts/build.py
+python scripts/validate.py
+python -m http.server 8000 --directory site
+```
+
+To host a copy: fork the repository (including `.github/`), set Pages → Source to **GitHub Actions**, give workflows read and write permission so the checker can commit, edit `site/assets/config.js` for your own name and request address, and run **Check sources and publish** once. The full replication contract is §7 of `site/AI-HANDOFF.md`.
 
 ## Verification states
 
-The meeting list shows plain text source notes only for exceptions. Routine source-check details and review dates remain available inside each meeting.
+- **Start found**: the start date, its year and a distinctive word of the meeting name were found on the organizer page at the last check. End dates are not re-checked automatically.
+- **Source wording changed**, **Needs review**, **Not re-checked**, **Organizer dates conflict**: exceptions, shown with a plain note on the record and listed by "Needs review only".
+- **Recorded when published**: a meeting that has ended, kept as captured.
+- **Expected**: projected from a meeting's usual month; never given a day. **Set by rule**: an observance computed from its organizer's published rule.
 
-- **Start found**: the start date, its year and a distinctive word of the meeting name were found on the organizer page at the last check. The checker does not independently verify the end date; confirm the full range before booking.
-- **Source wording changed**: the start was found, but the saved organizer excerpt no longer matches the page. The entry is hidden from the default source-checked view and visible with a plain-text warning when that filter is off.
-- **Needs review**: the page was read, but one of those was missing. The date stays as compiled until you change it; the default view excludes it.
-- **Not re-checked**: the page blocked automated reading or needs JavaScript. The date is shown as compiled, with its compile date, when the source-checked filter is off.
-- **Organizer dates conflict**: the organizer's own pages or metadata disagree. The default view excludes it until resolved.
-- **Expected**: projected from a meeting's usual month. Never given a day.
-- **Set by rule**: an observance computed from the organizer's published rule (e.g., PA Week, October 6-12).
+## Roadmap
 
-## Private preview
-
-Open the separately delivered `APP-Conference-Runway-v9-preview.html` to browse the site without hosting it. It contains the data, city lookup and fonts and makes no network requests until you follow an external organizer link. The preview file is not part of the website repository.
+- A Leadership discipline (CNML, CENP, NE-BC, NEA-BC, CNL and leadership programs the curator has named for review, such as the AANP leadership academy, the Stanford APP leadership certificate and the Loretta Ford Visionary Leadership Program) is planned as a Focus and a program type; it will be added only with organizer-sourced records.
+- A reviewed dark palette. The site currently renders its light palette regardless of device theme.
+- Coverage outside the United States and non-English sources.
