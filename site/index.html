@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="assets/app.css?v=20260923-4">
+<link rel="stylesheet" href="assets/app.css?v=20260923-5">
 </head>
 <body>
 <a class="skip" href="#view">Skip to meetings</a>
@@ -20,6 +20,17 @@
   <div class="titlerow">
     <h1 class="brand-heading"><a class="home brand-link" href="./" title="Back to the landing page"><img class="brand-logo" src="assets/app-conference-runway-logo.png" width="1870" height="355" alt="APP Conference Runway" decoding="async" fetchpriority="high"></a></h1>
     <div class="headactions">
+      <div class="language-tools" aria-label="Language tools">
+        <label class="sr" for="languageSelect">Translate this page</label>
+        <select id="languageSelect" class="language-select" title="Choose a language, then select Translate. This opens an optional Google Translate view.">
+          <option value="">Language</option><option value="ar">العربية</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option>
+          <option value="nl">Nederlands</option><option value="fil">Filipino</option><option value="fr">Français</option><option value="de">Deutsch</option>
+          <option value="hi">हिन्दी</option><option value="id">Bahasa Indonesia</option><option value="ja">日本語</option><option value="ms">Bahasa Melayu</option>
+          <option value="pt">Português</option><option value="es">Español</option><option value="sw">Kiswahili</option><option value="th">ไทย</option>
+        </select>
+        <button class="hbtn language-go" data-act="translate">Translate</button>
+        <a class="hbtn language-english" href="https://mbkarasin.github.io/app-conference-runway/" rel="noreferrer">English</a>
+      </div>
       <button class="hbtn" data-act="copyview" title="Copy a link to exactly what you're looking at now"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.5-1.5a2.8 2.8 0 014 4L11 8.5M9 11.5L7.5 13a2.8 2.8 0 01-4-4L5 7.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Copy link to this view</button>
       <button class="hbtn" data-act="share" title="Copy a short note and the link, ready to send to a colleague"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11 5.5a2 2 0 10-1.9-2.6L6 4.6a2 2 0 100 2.8l3.1 1.7a2 2 0 10.5-1L6.5 6.4a2 2 0 000-.8l3.1-1.7c.36.4.87.6 1.4.6z" fill="currentColor"/></svg>Share with a colleague</button>
       <a class="hbtn" data-request href="#"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 4l6 5 6-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Make a request</a>
@@ -30,8 +41,8 @@
   </div>
   <div class="ledeRow">
     <p class="lede">An instrument designed to promote the exchange of ideas, improve human health outcomes, and advance APP disciplines.<br class="lede-break">Search or filter global APP conferences, abstract deadlines, and student opportunities; each listing links to its source.</p>
+    <time class="updated header-updated" id="updated"></time>
   </div>
-  <time class="updated header-updated" id="updated"></time>
   <div class="strip" aria-hidden="true"></div>
   <section class="spotlight" id="spotlight" aria-label="Current APP recognition" hidden></section>
 </header>
@@ -72,7 +83,7 @@
       <p>Every dated entry comes from the organizer's own material: its event page, the pages under its menus, a program PDF, or a banner or flyer image. Each entry links that source and quotes its wording. The time at the top of the page shows when organizer pages were last re-read automatically. That check runs nightly; it is scheduled for 2 a.m. Eastern, but GitHub can start it a few hours late. A listing whose latest check did not confirm it carries a note such as "Date needs review"; the Filters panel's "Needs review only" shows just those.</p>
       <p>Entries marked <b>Expected month</b> are projected from a meeting's usual month because the organizer has not published dates; they are never given a day and appear only when "Show expected dates" is on in Filters. Meetings that have ended keep the date their organizer published at the time.</p>
       <p class="fine">This page is not listed in search engines: it travels between advanced practice providers by hand. Send the link to whoever should have it.</p>
-      <p class="fine">Details change. Confirm on the organizer's page before registering, submitting or booking travel. Distance results use ZIP or city centroids and are approximate. Not affiliated with any organizer listed. No cookies, no tracking. City data: U.S. Census Bureau Gazetteer and <a href="https://www.geonames.org/" rel="noopener noreferrer" target="_blank">GeoNames</a> (CC BY 4.0).</p>
+      <p class="fine">Details change. Confirm on the organizer's page before registering, submitting or booking travel. Distance results use ZIP or city centroids and are approximate. Not affiliated with any organizer listed. No cookies, no tracking. Language selection opens an optional Google Translate view; meeting names and organizer wording remain source material. City data: U.S. Census Bureau Gazetteer and <a href="https://www.geonames.org/" rel="noopener noreferrer" target="_blank">GeoNames</a> (CC BY 4.0).</p>
     </section>
   </div>
 </footer>
@@ -80,6 +91,6 @@
 <dialog id="dlg" aria-label="Meeting details"></dialog>
 <script src="assets/config.js"></script>
 <script src="assets/footer.js"></script>
-<script src="assets/app.js?v=20260923-4"></script>
+<script src="assets/app.js?v=20260923-5"></script>
 </body>
 </html>
