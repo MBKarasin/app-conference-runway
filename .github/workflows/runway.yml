@@ -36,6 +36,14 @@ jobs:
       - if: steps.gate.outputs.go == 'true'
         run: pip install --no-cache-dir "pypdf==5.*"
       - if: steps.gate.outputs.go == 'true'
+        name: Second readers (headless Chromium for JavaScript-only pages, OCR for organizer images)
+        # 2026-09-24: optional. If this install fails, check.py keeps its plain reader and the run continues.
+        continue-on-error: true
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr
+          pip install --no-cache-dir "playwright==1.*" "pillow==11.*"
+          python -m playwright install --with-deps chromium
+      - if: steps.gate.outputs.go == 'true'
         run: python scripts/build.py
       - if: steps.gate.outputs.go == 'true'
         name: Check sources, links and data
