@@ -55,7 +55,7 @@
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
   const dnpOK = e => !!(e && e.student && e.student.category === "project");
   // SCOPE (labeled Focus until 2026-09-24): whom and what a meeting serves. Multi-select; All clears it.
-  const SCOPE_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"], ["students", "Students & DNP projects"]];
+  const SCOPE_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"], ["students", "Students"]];
   const SCOPE_VALUES = SCOPE_CHIPS.map(([v]) => v).filter(Boolean);
   const SCOPE_TIPS = { students: "Organizer-documented opportunities for APP students (sessions, posters, abstracts, DNP projects) and meetings organized for students." };
   // FOCUS (since 2026-09-24): which record type to show. One at a time; All shows every type.
