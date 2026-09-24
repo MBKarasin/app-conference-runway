@@ -682,13 +682,6 @@
       if (act === "ics") { icsFor(byId($("#dlg").dataset.e)); return; }
       if (act === "copy") { copy(location.href, "Link copied"); return; }
       if (act === "copyview") { copy(location.href, "Link to this view copied"); return; }
-      if (act === "translate") {
-        const lang = $("#languageSelect") && $("#languageSelect").value;
-        if (!lang) { toast("Choose a language first"); return; }
-        const source = location.origin + location.pathname + location.search + location.hash;
-        location.assign(`https://translate.google.com/translate?sl=en&tl=${encodeURIComponent(lang)}&u=${encodeURIComponent(source)}`);
-        return;
-      }
       if (act === "filters") { filtersOpen = !filtersOpen; $("#filters").classList.toggle("open", filtersOpen); $("#geoquick").classList.toggle("open", filtersOpen); t.setAttribute("aria-expanded", String(filtersOpen)); return; }
       if (t.dataset.letter) { ev.preventDefault(); const el = document.getElementById("letter-" + t.dataset.letter); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 170 }); return; }
       if (t.dataset.dayopen) { openDay(t.dataset.dayopen); return; }

@@ -766,11 +766,8 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   .bar .tabs button{white-space:nowrap;flex:none}
 }
 
-/* 2026-09-23 navigation, deadline grouping, and calendar structure */
-.language-tools{display:inline-flex;align-items:center;gap:6px;margin-right:2px}
-.language-select{min-width:132px;border:1px solid #67818B;background:#fff;color:#102F3B;border-radius:6px;padding:7px 9px;font-size:13px;font-weight:700}
-.language-tools .hbtn{padding:7px 9px;font-size:13px}
-.language-english{white-space:nowrap}
+/* 2026-09-23 header, deadline grouping, and calendar structure */
+.mast .headactions{justify-content:flex-end;align-content:start;gap:8px}
 .headactions .eyebrow{color:#102F3B!important}
 .mast .ledeRow{display:grid!important;grid-template-columns:minmax(0,1fr) max-content;align-items:end;gap:8px 20px;padding:0!important;margin:0!important}
 .mast .header-updated{align-self:end;width:auto!important;margin:0 0 1px!important;text-align:right;white-space:nowrap}
@@ -791,11 +788,6 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .calspan .wk.emptyweek .cell,.calspan .wk.emptyweek .cell.out{background:#F8FAFA}
 
 @media(max-width:1050px){
-  .language-tools{flex:1 1 100%;justify-content:flex-start;margin-right:0}
   .mast .ledeRow{grid-template-columns:1fr}
   .mast .header-updated{text-align:left}
-}
-@media(max-width:560px){
-  .language-tools{display:grid;grid-template-columns:minmax(0,1fr) auto auto;width:100%}
-  .language-select{min-width:0;width:100%}
 }
