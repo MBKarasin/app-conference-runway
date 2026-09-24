@@ -55,6 +55,8 @@ jobs:
           git push
       - if: steps.gate.outputs.go == 'true'
         name: Review digest
+        # 2026-09-24: a GitHub API hiccup here must not fail the job and block a deploy whose data already validated.
+        continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           # The issue is always rewritten from the report committed in this run, so the two can never disagree.
