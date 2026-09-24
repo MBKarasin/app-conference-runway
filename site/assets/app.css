@@ -971,12 +971,14 @@ details.month{scroll-margin-top:12px}
 .mast .updated .stat.ok{background:#1C7F48}
 .mast .updated .stat.warn{background:#C25100}
 .mast .updated .stat.bad{background:#CC0033}
-/* The stamp sits level with the first line of the lede, with the metric beneath it. */
+/* The stamp sits level with the first line of the lede, with the Fidelity and Reliability indices beneath it. */
 .mast .ledeRow{align-items:start}
 .mast .updated{align-self:start;padding-top:0;row-gap:2px}
 .mast .updated .stamp-line{display:block}
 .mast .updated .fidline{display:block;font-size:11.5px;font-weight:700;letter-spacing:.01em;
   color:#45606B;font-variant-numeric:tabular-nums}
+.mast .updated .fidline .idx{white-space:nowrap}
+.mast .updated .fidline .idx-sep{color:#8FA5AD;font-weight:400}
 
 /* Scope and Focus badges on a list card use the same words as the filter rows above it. */
 .ev .badges .tag.scope{background:#EEF3F4;color:#23404B;border:1px solid #C9D7DB}

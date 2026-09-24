@@ -103,6 +103,8 @@
     if (st.display === "orbit" && (h.get("span") === "year" || h.get("scope") === "year")) st.orbitScope = "year";
     // Scope reads scope=…; links made before 2026-09-24 carried the same values as focus=….
     const scopeIn = [...(h.get("scope") || "").split(","), ...(h.get("focus") || "").split(",")].map(x => x === "executive" ? "leadership" : x === "student" ? "students" : x);
+    // Students & DNP projects left Discipline for Scope → Students on 2026-09-24; prof=STU, prof=DNP and view=students links open it there.
+    if (requestedSet.has("STU")) scopeIn.push("students");
     st.scope = SCOPE_VALUES.filter(v => scopeIn.includes(v));
     st.focus = (h.get("focus") || "").split(",").find(x => FOCUS_VALUES.includes(x)) || "";
     if (!st.focus && st.kind === "observance") { st.focus = "celebrations"; st.kind = ""; }   // old Type → Celebrations links
@@ -485,8 +487,8 @@
     .map(x => badge("spec", x, x, null, "spec")).join("");
   function vBadge(e, exceptionsOnly = false) {
     const v = e.verify || { state: "unchecked" };
-    // exceptionsOnly = false: the full verification state, shown on every list card (curator decision, 2026-09-24).
-    // exceptionsOnly = true: only exceptions and projections (record dialog, Directory). Check times stay in the page header.
+    // exceptionsOnly = false: list cards. exceptionsOnly = true: record dialog and Directory (exceptions and projections only).
+    // Check times stay in the page header.
     if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
     // 2026-09-24 (curator decision): fidelity is presumed. A record that passed its check carries no
@@ -812,7 +814,7 @@
     el.innerHTML = `<div class="live-ribbon"><span class="live-flag">${current.s.name === "National APP Week" ? `OUR WEEK · DAY ${daysBetween(current.start, TODAY) + 1} OF ${daysBetween(current.start, current.end) + 1}` : "HAPPENING NOW"}</span><strong>${esc(current.s.name)}</strong><span class="live-dates">${esc(range(current))} · through ${esc(MON[D(current.end).getMonth()] + " " + D(current.end).getDate())}</span><button class="live-source" data-e="${esc(current.id)}">View official source and details ↗</button></div>`;
   }
 
-  /* ---------- fidelity metric (2026-09-24, curator decision) ----------
+  /* ---------- fidelity index (2026-09-24, curator decision; shown as "Fidelity Index" since 2026-09-24 evening) ----------
      What it counts: of every dated record the site shows, the share that
        (1) carries the organizer's own wording, or is computed from a published rule,
        (2) holds a good verification state,
@@ -823,7 +825,7 @@
      It falls when an organizer removes a page an upcoming record depends on, when a check fails
      with no organizer wording on file, or when confirmations go stale. */
   const FID_OK = new Set(["verified", "rule", "announced", "archived"]);
-  function fidelityMetric() {
+  function fidelityIndex() {
     const dated = EDS.filter(e => !e.expectedRow && !e.month_only);
     if (!dated.length) return null;
     const ok = dated.filter(e => {
@@ -841,6 +843,25 @@
       return true;
     }).length;
     return { pct: (100 * ok) / dated.length, ok, total: dated.length };
+  }
+
+  /* ---------- reliability index (2026-09-24, curator decision) ----------
+     What it counts: of every upcoming dated record, the share that the latest automated check
+       re-confirmed from the organizer's own material (start date, its year and a meeting-name word found
+       on the organizer's page, rendered when the page needs JavaScript, or in the organizer's own image
+       the record links; carried per edition by build.py as `machine`), plus dates computed from a published rule.
+     What it leaves out: records resting on a manual review of the organizer's source or on a
+       save-the-date. They count once the automated check can re-read them.
+     It falls when organizer sites block automated readers, when pages move, and to the rule-only
+     share when no check has completed in 36 hours. Fidelity asks "does every record carry the
+     organizer's evidence?"; reliability asks "can the machine reproduce it tonight?" */
+  function reliabilityIndex(checkedAt) {
+    const up = EDS.filter(e => !e.expectedRow && !e.month_only && !e.past);
+    if (!up.length) return null;
+    const fresh = !!checkedAt && (Date.now() - Date.parse(checkedAt)) / 36e5 <= 36;
+    const rule = up.filter(e => (e.verify || {}).state === "rule").length;
+    const machine = fresh ? up.filter(e => e.machine && (e.verify || {}).state !== "rule").length : 0;
+    return { pct: (100 * (machine + rule)) / up.length, machine, rule, ok: machine + rule, total: up.length, fresh };
   }
 
   /* ---------- chip availability: a filter is offered only when it can return a record ---------- */
@@ -1244,7 +1265,7 @@
     }
     prep(d);
     const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
-    const f = fidelityMetric();
+    const f = fidelityIndex();
     // The dot reports the run, not the mood: red when the last check did not land, amber when
     // fidelity has slipped below 95%, green otherwise.
     const checkedAt = d.sources_checked || null;
@@ -1254,14 +1275,24 @@
     const dotTip = failed
       ? "The most recent scheduled source check did not complete. The dates below are as of the time shown."
       : tone === "warn"
-        ? "The last source check completed, and the fidelity metric is below 95%."
-        : "The last source check completed and every dated record meets the fidelity test.";
+        ? "The last source check completed, and the fidelity index is below 95%."
+        : "The last source check completed, and the fidelity index is at or above 95%.";
     const fidTip = f
       ? `${f.ok} of ${f.total} dated records carry the organizer's own wording (or a published rule), hold a good verification state, and — for meetings still ahead — a working source link confirmed within 90 days. It does not claim that end dates, venues or submission cut-off times were verified.`
       : "";
+    const r = reliabilityIndex(checkedAt);
+    const relTip = r
+      ? (r.fresh
+        ? `${r.ok} of ${r.total} upcoming dated records: ${r.machine} re-confirmed from the organizer's own page or image by the latest automated check, and ${r.rule} computed from a published rule. The other ${r.total - r.ok} rest on a manual review of the organizer's source or a save-the-date, and count once the check can re-read them.`
+        : `No automated check has completed in the last 36 hours, so only the ${r.rule} dates computed from a published rule count (${r.ok} of ${r.total}).`)
+      : "";
+    const idx = [
+      f ? `<span class="idx" title="${esc(fidTip)}">Fidelity Index: ${f.pct.toFixed(2)}%</span>` : "",
+      r ? `<span class="idx" title="${esc(relTip)}">Reliability Index: ${r.pct.toFixed(2)}%</span>` : ""
+    ].filter(Boolean);
     $("#updated").innerHTML =
       `<span class="stamp-line"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i>Updated ${esc(srcStamp)}</span>` +
-      (f ? `<span class="fidline" title="${esc(fidTip)}">Fidelity Metric: ${f.pct.toFixed(2)}%</span>` : "");
+      (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     await resolveNear();
     bind(); wireSkip(); render();
