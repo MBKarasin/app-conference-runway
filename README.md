@@ -54,10 +54,10 @@ To host a copy: fork the repository (including `.github/`), set Pages → Source
 
 Every List card shows one of these states beside its discipline badges.
 
-- **Start found**: the start date, its year and a distinctive word of the meeting name were found on the organizer page at the last check. End dates are not re-checked automatically.
-- **Source reviewed**: the dates were confirmed by a manual review of the organizer's own source rather than by the nightly text match; the record quotes the wording and links the source.
 - **Save the date**: the organizer has published only a save-the-date for these days.
-- **Source wording changed**, **Needs review**, **Not re-checked**, **Organizer dates conflict**: exceptions, shown with a plain note on the record and listed by "Needs review only".
+**A record that passed its check carries no label.** Fidelity is presumed: every dated record traces to the organizer, and a label appears only where the checks have something to say. ("Start found" and "Source reviewed" were retired on 2026-09-24 — labelling the normal case told a reader nothing and buried the exceptions.)
+
+- **Needs review**, **Not re-checked**, **Organizer dates conflict**: exceptions, shown with a plain note on the record and listed by "Needs review only".
 - **Recorded when published**: a meeting that has ended, kept as captured.
 - **Expected**: projected from a meeting's usual month; never given a day. **Set by rule**: an observance computed from its organizer's published rule.
 
