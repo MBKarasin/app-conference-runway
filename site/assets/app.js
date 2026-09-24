@@ -945,7 +945,7 @@
     const L = EDS.filter(x => x.series === s.id).sort((a, b) => a.start.localeCompare(b.start));
     const Y0 = +TODAY.slice(0, 4), older = L.filter(x => +x.start.slice(0, 4) < Y0 - 3 && !x.expectedRow).reverse();
     const fix = REPO ? `${REPO}/issues/new?template=fix.yml&title=${encodeURIComponent("Fix: " + s.name + " " + e.start.slice(0, 4))}` : "";
-    const li = x => `<li class="${x.id === e.id ? "cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || (x.expectedRow ? "Expected; not yet announced" : ""))}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">Program & materials</a>` : ""}</span>${vBadge(x, true)}</li>`;
+    const li = x => `<li class="${x.id === e.id ? "cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || (x.expectedRow ? ((x.end || x.start) < TODAY ? "No data available" : "Expected; not yet announced") : ""))}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">Program & materials</a>` : ""}</span>${vBadge(x, true)}</li>`;
     $("#dlg").innerHTML = `<div class="dlg"><button class="x" data-act="close" aria-label="Close">×</button>
       <header><p class="eyebrow">${esc(s.org_display || s.org)}</p><h3>${esc(s.name)}</h3><div class="badges">${profTags(s)}${(s.specialty || []).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</div></header>
       <dl class="kv">
@@ -978,15 +978,24 @@
     if (!$("#dlg").open) $("#dlg").showModal();
     writeHash({ e: e.id });
   }
+  // 2026-09-24 (curator finding): a year row was chosen by comparing YEARS, so a projected month that
+  // had already come and gone still read "Not yet announced". Nothing in the past is "not yet announced";
+  // if the window has closed with no organizer date, the honest line is "No data available".
+  // The old copy also promised a review the page cannot evidence; the line is now just the plain fact.
+  const lastDayOf = (y, mo) => new Date(Date.UTC(y, mo, 0)).toISOString().slice(0, 10);
   function yearRows(s, L) {
     const Y0 = +TODAY.slice(0, 4), rows = [];
+    const datedAll = L.filter(x => !x.expectedRow).slice().sort(byStart);
+    const usualMonth = datedAll.length ? +datedAll[datedAll.length - 1].start.slice(5, 7) : null;
     for (let y = Y0 - 3; y <= Y0 + 3; y++) {
       const inY = L.filter(x => +x.start.slice(0, 4) === y);
       const dated = inY.filter(x => !x.expectedRow), exp = inY.filter(x => x.expectedRow);
       const tag = y < Y0 ? "past" : y === Y0 ? "now" : "next";
-      if (dated.length) dated.forEach(x => rows.push(`<li class="${tag}${x.id === $("#dlg").dataset.cur ? " cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || "")}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">${y} program</a>` : ""}${x.source_url && x.source_url !== s.org_url ? ` · <a href="${esc(x.source_url)}" target="_blank" rel="noopener noreferrer">${y} organizer record</a>` : ""}</span>${vBadge(x, true)}</li>`));
-      else if (exp.length) rows.push(`<li class="${tag} gap"><span class="y">${esc(range(exp[0]))}</span><span>Expected; not yet announced</span>${vBadge(exp[0], true)}</li>`);
-      else if (y < Y0 || (y === Y0 && !L.some(x => +x.start.slice(0, 4) > y))) rows.push(`<li class="${tag} gap"><span class="y">${y}</span><span class="nodata">No data available; manual review pending</span><span></span></li>`);
+      const windowEnd = exp.length ? (exp[0].end || exp[0].start) : usualMonth ? lastDayOf(y, usualMonth) : y + "-12-31";
+      const gone = windowEnd < TODAY;
+      if (dated.length) dated.forEach(x => rows.push(`<li class="${tag}${x.id === $("#dlg").dataset.cur ? " cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || "")}${x.detail_url ? ` \u00b7 <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">${y} program</a>` : ""}${x.source_url && x.source_url !== s.org_url ? ` \u00b7 <a href="${esc(x.source_url)}" target="_blank" rel="noopener noreferrer">${y} organizer record</a>` : ""}</span>${vBadge(x, true)}</li>`));
+      else if (exp.length && !gone) rows.push(`<li class="${tag} gap"><span class="y">${esc(range(exp[0]))}</span><span>Expected; not yet announced</span>${vBadge(exp[0], true)}</li>`);
+      else if (gone) rows.push(`<li class="${tag} gap"><span class="y">${y}</span><span class="nodata">No data available</span><span></span></li>`);
       else rows.push(`<li class="${tag} gap"><span class="y">${y}</span><span class="nodata">Not yet announced</span><span></span></li>`);
     }
     return rows.join("");
