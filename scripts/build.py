@@ -519,6 +519,17 @@ def main():
                 e["evidence"], e["evidence_auto"] = tidy_snippet(v["snippet"], e["start"]), True
         else:
             e["verify"] = {"state": "unchecked", "checked": None}
+    # 2026-09-24 (curator decision): the header's Reliability Index counts the records that the latest
+    # automated check re-confirmed from the organizer's own material: the start date, its year and a name word
+    # found on the organizer's page (rendered in a browser when the page needs JavaScript) or, for a date the
+    # organizer publishes only in a banner or flyer the record links, read from that image.
+    # A manual "source reviewed" record above replaces the checker's verdict in `verify`, so the
+    # machine's own verdict for the latest run is carried separately as `machine`.
+    latest_run = max((v.get("checked") for v in ver.values() if v.get("checked") and v.get("state") != "archived"), default=None)
+    for e in eds:
+        v = ver.get(e["id"])
+        if latest_run and v and v.get("url") == e.get("source_url") and v.get("state") == "verified" and v.get("checked") == latest_run:
+            e["machine"] = True
     for e in proj:
         e["verify"] = {"state": "rule" if e.get("status") == "rule" else "expected", "checked": e["compiled"] if e.get("status") == "rule" else None}
     org_display = json.load(open(SRC / "org_display.json", encoding="utf-8"))

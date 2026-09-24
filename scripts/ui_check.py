@@ -6,8 +6,10 @@
 Needs Playwright for Python with a Chromium browser (`pip install playwright && playwright install chromium`).
 It is a builder's tool; the GitHub workflow does not run it. Every line printed is one assertion; the exit code
 is non-zero if any assertion failed. It checks what screenshots have missed before: the display-switch
-separators, the year on every Orbit month, the Scope and Focus rows, the landmark celebration weeks in every
-view, each Focus in each view, legacy links, the request address, and console errors.
+separators, the year on every Orbit month, the filter rows, the header's Fidelity and Reliability indices
+(labels, and values re-derived from the published data), the landmark celebration weeks in every view, each
+Focus in each view, legacy links, the request address, the footer's link to the index definitions, and
+console errors.
 """
 import argparse, functools, http.server, re, socketserver, sys, threading
 from pathlib import Path
@@ -89,10 +91,51 @@ def main():
         # 3. Filter rows: Discipline; Scope with Focus to its right.
         check("Scope row label and chips", texts("#quickscope .flabel") == ["Scope"] and texts("#quickscope .chip") == SCOPE, ", ".join(texts("#quickscope .chip")))
         check("Focus row label and chips", texts("#quickfocus .flabel") == ["Focus"] and texts("#quickfocus .chip") == FOCUS, ", ".join(texts("#quickfocus .chip")))
-        sb = page.locator("#quickscope").bounding_box() if page.locator("#quickscope").count() else None
-        fb = page.locator("#quickfocus").bounding_box()
-        check("Focus sits to the right of Scope at 1440 px", bool(sb and fb) and fb["x"] >= sb["x"] + sb["width"] and abs(fb["y"] - sb["y"]) < 8, f"scope {sb}, focus {fb}")
-        check("Discipline row sits above Scope", bool(sb) and page.locator("#quickprof").bounding_box()["y"] < sb["y"])
+        # Filter bar since the 2026-09-24 reflow: views beside search; Discipline with Focus to its right;
+        # Scope with Location to its right. Each pair shares a row at 1440 px, rows in that order.
+        box = lambda sel: page.locator(sel).bounding_box() if page.locator(sel).count() else None
+        pairs = [("#viewtools", ".search"), ("#quickprof", "#quickfocus"), ("#quickscope", "#geoquick")]
+        rows = []
+        for a_sel, b_sel in pairs:
+            a, b = box(a_sel), box(b_sel)
+            ok = bool(a and b) and b["x"] >= a["x"] + a["width"] - 1 and abs(b["y"] - a["y"]) < 12
+            rows.append(a["y"] if a else -1)
+            check(f"{b_sel} sits to the right of {a_sel} at 1440 px", ok, f"{a} | {b}")
+        check("filter rows run views/search, Discipline/Focus, Scope/Location", rows == sorted(rows) and len(set(rows)) == 3, str(rows))
+
+        # Header indices (2026-09-24): labels, no "metric", and both values re-derived from the page's own data.
+        head = page.inner_text("#updated")
+        check("header shows Fidelity Index and Reliability Index", "Fidelity Index:" in head and "Reliability Index:" in head, head.replace("\n", " | "))
+        check("header does not say 'metric'", "metric" not in head.lower())
+        now_ms = page.evaluate("Date.now()")
+        eds = [e for e in data["editions"] if e["series"] in {s["id"] for s in data["series"]}]
+        state = lambda e: (e.get("verify") or {}).get("state")
+        dated = [e for e in eds if state(e) != "expected" and not e.get("month_only")]
+        past = lambda e: (e.get("end") or e["start"]) < today
+        def days_since(d):
+            y, m, dd = map(int, d[:10].split("-")); import datetime as _dt
+            return (_dt.date(*map(int, today.split("-"))) - _dt.date(y, m, dd)).days
+        def fid_ok(e):
+            v = e.get("verify") or {}
+            if not (e.get("evidence") or v.get("state") == "rule"): return False
+            if v.get("state") not in ("verified", "rule", "announced", "archived"): return False
+            if not e.get("source_url"): return False
+            if not past(e):
+                if e.get("link_dead"): return False
+                if v.get("state") != "rule":
+                    seen = v.get("last_verified") or v.get("checked")
+                    if not seen or days_since(seen) > 90: return False
+            return True
+        fid = 100 * sum(map(fid_ok, dated)) / len(dated)
+        import datetime as _dt
+        chk = data.get("sources_checked")
+        fresh = bool(chk) and (now_ms / 1000 - _dt.datetime.fromisoformat(chk.replace("Z", "+00:00")).timestamp()) / 3600 <= 36
+        up = [e for e in dated if not past(e)]
+        rule_n = sum(1 for e in up if state(e) == "rule")
+        mach_n = sum(1 for e in up if e.get("machine") and state(e) != "rule") if fresh else 0
+        rel = 100 * (rule_n + mach_n) / len(up)
+        check("Fidelity Index matches its definition re-derived from the data", f"Fidelity Index: {fid:.2f}%" in head, f"derived {fid:.2f}%")
+        check("Reliability Index matches its definition re-derived from the data", f"Reliability Index: {rel:.2f}%" in head, f"derived {rel:.2f}% = ({mach_n} machine + {rule_n} rule) / {len(up)}, fresh={fresh}")
 
         # 4. Landmark celebration weeks in every view (next dated edition of each).
         series = {s["id"]: s for s in data["series"]}
@@ -151,6 +194,9 @@ def main():
         check("old open=1 link opens Focus → Open Abstracts", page.locator("#quickfocus [data-focus='open']").get_attribute("aria-pressed") == "true")
         go("kind=observance")
         check("old kind=observance link opens Focus → Celebrations", page.locator("#quickfocus [data-focus='celebrations']").get_attribute("aria-pressed") == "true")
+        for old in ("prof=STU", "prof=DNP", "view=students"):
+            go(old)
+            check(f"old {old} link opens Scope → Students", page.locator("#quickscope [data-scope='students']").get_attribute("aria-pressed") == "true")
         go("")
         page.click("#quickscope [data-scope='students']")
         page.click("#quickfocus [data-focus='due']")
@@ -161,14 +207,21 @@ def main():
 
         # 7. Records, contact and handoff.
         go("display=list")
-        sides = page.evaluate("[...document.querySelectorAll('#view .ev .side')].map(s => !!s.querySelector('.vf, .source-note'))")
-        check("every List card shows its verification state", len(sides) > 0 and all(sides), f"{sum(sides)}/{len(sides)}")
+        # Since the 2026-09-24 afternoon decision ("fidelity is presumed"), a record that passed its check
+        # carries no verification badge; a note appears only for an exception, projection, rule or save-the-date.
+        cards = page.evaluate("[...document.querySelectorAll('#view .ev')].map(c => [c.dataset.e, !!c.querySelector('.side .vf, .side .source-note')])")
+        by_id = {e["id"]: e for e in data["editions"]}
+        wrong = [i for i, has in cards if has and (by_id.get(i, {}).get("verify") or {}).get("state") == "verified"]
+        check("verified records carry no verification badge on List cards", len(cards) > 0 and not wrong, f"{len(cards)} cards, {sum(h for _, h in cards)} with a note, {len(wrong)} verified with a note")
         mail = page.locator("[data-request]").first.get_attribute("href") or ""
         check("request address is mark.karasin@protonmail.com", mail.startswith("mailto:mark.karasin@protonmail.com"), mail[:60])
         html = page.content().lower()
         check("no Rutgers email address on the page", "@rutgers.edu" not in html and "rutgers.edu\"" not in html.replace("nursing.rutgers.edu", ""))
         handoff = page.locator("a.hbtn", has_text="AI Handoff").get_attribute("href")
         check("AI Handoff opens the rendered document on GitHub", handoff == "https://github.com/MBKarasin/app-conference-runway/blob/main/site/AI-HANDOFF.md", handoff)
+        # A public index ships with its definition: the footer points to it (hover notes do not reach phones).
+        defs = page.evaluate("[...document.querySelectorAll('footer a, .method-summary a')].map(a => a.href)")
+        check("footer links the index definitions (AI Handoff §3.4)", any(u.endswith("/site/AI-HANDOFF.md#34-verification-pipeline") for u in defs))
 
         # 8. Layout at desktop and phone widths.
         for w in (1440, 390):
