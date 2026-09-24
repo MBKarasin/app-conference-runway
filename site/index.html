@@ -16,7 +16,7 @@
 <link rel="icon" href="favicon-app-v2-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon-app-v2.png" sizes="180x180">
 <link rel="mask-icon" href="safari-pinned-tab-app-v2.svg" color="#CC0033">
-<link rel="stylesheet" href="assets/app.css?v=20260924-3">
+<link rel="stylesheet" href="assets/app.css?v=20260924-5">
 </head>
 <body>
 <a class="skip" href="#view">Skip to meetings</a>
@@ -42,19 +42,21 @@
 
 <div class="bar">
   <div class="wrap">
+    <!-- 2026-09-24 reflow: views sit beside the search box; Focus aligns with Discipline; Location aligns with Scope. -->
     <div class="row1">
+      <div class="viewtools" id="viewtools"></div>
       <label class="search" for="q"><span class="sr">Search meetings</span><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.8"/></svg><input id="q" type="search" placeholder="Search meeting, organizer, city, specialty" autocomplete="off"></label>
       <button class="btn more-filters" id="fbtn" data-act="filters" aria-expanded="false" aria-controls="filters">Filters</button>
       <button class="linkbtn row-clear" data-act="clear">Clear all</button>
     </div>
     <div class="quickaxes">
       <div class="quickprof" id="quickprof" role="group" aria-label="Filter by discipline; multiple selections allowed"></div>
-      <div class="quickscopefocus">
-        <div class="quickscope" id="quickscope" role="group" aria-label="Filter by scope; multiple selections allowed"></div>
-        <div class="quickfocus" id="quickfocus" role="group" aria-label="Focus on one record type"></div>
-      </div>
+      <div class="quickfocus" id="quickfocus" role="group" aria-label="Focus on one record type"></div>
     </div>
-    <div class="row2"><div class="viewtools" id="viewtools"></div><div class="geoquick" id="geoquick" aria-label="Filter by location"></div></div>
+    <div class="row2">
+      <div class="quickscope" id="quickscope" role="group" aria-label="Filter by scope; multiple selections allowed"></div>
+      <div class="geoquick" id="geoquick" aria-label="Filter by location"></div>
+    </div>
     <div class="filters" id="filters"></div>
     <p class="summary sr" id="summary" aria-live="polite"></p>
   </div>
@@ -75,15 +77,17 @@
       <p class="fine">Website is an independent resource. It is not an official publication of, or endorsement by, either Rutgers University or RWJBarnabas Health.</p>
     </section>
     <section class="method" aria-label="How dates are checked">
-      <p class="method-summary"><b>How dates are checked.</b> Every dated entry comes from the organizer's own material and links the exact page, PDF, banner or flyer where its date was published. Organizer pages are re-read nightly; the timestamp above records the latest automated check, and exceptions are identified in each record and through “Needs review only.” <b>Coverage.</b> <span id="coverageCount">International coverage is being expanded.</span> This remains an incomplete global calendar; <a data-request href="#">suggest a missing meeting or organizer</a>. <b>Expected months</b> are projections, never assigned a day, and appear only when enabled.</p>
+      <p class="method-summary"><b>How dates are checked.</b> Every dated entry comes from the organizer's own material and links the exact page, PDF, banner or flyer where its date was published. Organizer pages are re-read nightly; the timestamp above records the latest automated check, and exceptions are identified in each record and through “Needs review only.”</p>
+      <p class="method-summary"><b>Coverage.</b> <span id="coverageCount">International coverage is being expanded.</span> This remains an incomplete global calendar; <a data-request href="#">suggest a missing meeting or organizer</a>.</p>
+      <p class="method-summary"><b>Expected months</b> are projections, never assigned a day, and appear only when enabled.</p>
       <p class="fine">Confirm details with the organizer before registering, submitting or booking travel. Distance results use ZIP or city centroids and are approximate. Independent of the organizers listed; the site code sets no cookies or analytics, while its host may retain standard access logs. City data: U.S. Census Bureau Gazetteer and <a href="https://www.geonames.org/" rel="noopener noreferrer" target="_blank">GeoNames</a> (CC BY 4.0). This page asks search engines not to index it and is shared directly among APPs.</p>
     </section>
   </div>
 </footer>
 
 <dialog id="dlg" aria-label="Meeting details"></dialog>
-<script src="assets/config.js?v=20260924-3"></script>
-<script src="assets/footer.js?v=20260924-3"></script>
-<script src="assets/app.js?v=20260924-3"></script>
+<script src="assets/config.js?v=20260924-5"></script>
+<script src="assets/footer.js?v=20260924-5"></script>
+<script src="assets/app.js?v=20260924-5"></script>
 </body>
 </html>

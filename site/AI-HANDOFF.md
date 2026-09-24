@@ -46,7 +46,7 @@ For this project, **fidelity** means remaining faithful to organizer material an
 | **Student opportunity** | A student session, poster or DNP project venue attached to one edition | `sources/student_opportunities.json`: `category` (student or project), `kind`, `detail`, `roles`, `url`, `deadline` |
 | **Expected edition** | A projection of a meeting's usual month, up to three years ahead | Never given a day, and always labeled "Expected month" |
 
-At the `site/data/runway.json` build of 2026-09-24: 328 series; 1,592 editions (367 dated records confirmed against organizer material, 2 carrying an organizer date conflict, 1 organizer save-the-date; 521 past editions frozen as published; 36 set by rule; 665 expected months); 324 upcoming non-projected records; organizers placed in 37 countries; 26 upcoming student and DNP opportunities; horizon through 2029. The counts change nightly.
+At the `site/data/runway.json` build of 2026-09-24: 328 series; 1,592 editions (367 dated records confirmed against organizer material, 2 carrying an organizer date conflict, 1 organizer save-the-date; 521 past editions frozen as published; 36 set by rule; 665 expected months); 318 upcoming non-projected records (a count that moves with the calendar date); organizers placed in 37 countries; 25 upcoming student and DNP opportunities; horizon through 2029. The counts change nightly.
 
 ### 3.2 The evidence rule
 
@@ -61,7 +61,7 @@ Aggregator listings are never treated as the source. A social post counts only w
 
 `sources/runway_2026-09-16.json` (original) → `sources/group_*.json` (research batches) → `sources/archive/*` (past editions and archive links) → `sources/observances.json` → **`sources/overrides.json`** (curator corrections, which win over everything). The authoring policy requires each correction to carry a `_why`, although the current validation gap and legacy exceptions are disclosed in §3.5. Duplicate series are folded through `aliases`. A wrong or duplicate edition is removed with `"removed": true` and a reason. It is never silently deleted.
 
-`data/ledger.json` is intended as a permanent record of every edition emitted by the build. `data/snapshots/<year>/<date>.json.gz` stores the generated data candidate for a New York calendar day; a second run that day replaces it. The 2026-09-21 and 2026-09-22 files hold a smaller field set, and the current `data/snapshots/MANIFEST.csv` lists only 2026-09-23 even though all three files exist. A snapshot hash proves the bytes of that candidate when it is listed; the present workflow does not bind a snapshot to a successful Pages deployment.
+`data/ledger.json` is intended as a permanent record of every edition emitted by the build. `data/snapshots/<year>/<date>.json.gz` stores the generated data candidate for a New York calendar day; a second run that day replaces it. The 2026-09-21 and 2026-09-22 files hold a smaller field set, and the current `data/snapshots/MANIFEST.csv` lists 2026-09-23 and 2026-09-24 while four daily files exist (2026-09-21 through 2026-09-24), so the manifest still trails the directory. A snapshot hash proves the bytes of that candidate when it is listed; the present workflow does not bind a snapshot to a successful Pages deployment.
 
 ### 3.4 Verification pipeline
 
