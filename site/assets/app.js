@@ -38,6 +38,7 @@
     cal: '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 6.5h12M5 1.5v3M11 1.5v3" stroke="currentColor" stroke-width="1.5"/></svg>',
     list: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.6"/></svg>',
     orbit: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.2" fill="currentColor"/><circle cx="8" cy="8" r="5.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2.4 1.8"/></svg>',
+    directory: '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="2" width="11" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.5 4.5h3M1.5 8h3M1.5 11.5h3M7 5h4M7 8h4M7 11h3" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>',
     ext: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2L7 9M12 9.5V14H2V4h4.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>',
     link: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.5-1.5a2.8 2.8 0 014 4L11 8.5M9 11.5L7.5 13a2.8 2.8 0 01-4-4L5 7.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>',
     archive: '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.5 5.5v8h11v-8M6 8.5h4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>'
@@ -45,9 +46,9 @@
 
   /* ---------- vocabulary ---------- */
   const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Nursing: "--nursing", Multidisciplinary: "--multi" };
-  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["CRNA", "CRNA"], ["RNFA", "NP-RNFA"], ["CNS", "CNS"], ["CNM", "CNM"], ["PA", "PA"], ["STU", "Students & DNP"]];
+  const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["CRNA", "CRNA"], ["RNFA", "NP-RNFA"], ["CNS", "CNS"], ["CNM", "CNM"], ["PA", "PA"], ["STU", "Students & DNP projects"]];
   const AGACNP_TOPICS = new Set(["Acute Care", "Critical Care", "Emergency", "Emergency Medicine", "Hospital Medicine", "Cardiology", "Cardiothoracic Surgery", "Pulmonary", "Neuroscience", "Neurosurgery", "Trauma", "Resuscitation", "ECMO & Perfusion", "Surgery", "Vascular Surgery", "Infectious Diseases", "Toxicology", "Nephrology"]);
-  const PLABEL = { RNFA: "NP-RNFA", STU: "Students & DNP", DNP: "Students & DNP" };
+  const PLABEL = { RNFA: "NP-RNFA", STU: "Students & DNP projects", DNP: "Students & DNP projects" };
   // Students = organizer-documented opportunities for APP students; DNP Projects = venues for DNP project posters/abstracts.
   const APP_ROLES = ["NP", "AGACNP", "PA", "CRNA", "CNS", "CNM"];
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
@@ -59,7 +60,6 @@
   const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"], ["observance", "Celebrations"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
   const CONTINENTS = ["North America", "South America", "Europe", "Asia", "Oceania", "Africa"];
-  const TABS = [["upcoming", "Upcoming"], ["deadlines", "Abstract deadlines"], ["students", "Students & DNP projects"], ["directory", "Directory"]];
   const VSTATE = {
     verified: ["Start found", "check"], conflict: ["Organizer dates conflict", "warn"], not_found: ["Needs review", "warn"], unreachable: ["Not re-checked", "dash"],
     unchecked: ["Not re-checked", "dash"], expected: ["Expected", "dash"], rule: ["Set by rule", "dash"],
@@ -67,36 +67,56 @@
   };
 
   /* ---------- state, mirrored in the URL ---------- */
-  const DEF = () => ({ view: "upcoming", display: "list", q: "", prof: "", focus: [], kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
+  const DEF = () => ({ display: "orbit", orbitFrom: TODAY.slice(0, 7), orbitScope: "month", q: "", prof: [], focus: [], kind: "", where: "", area: "", nearQ: "", near: null, radius: 100, spec: "", openOnly: false, review: false, expected: false, within: 0, cal: TODAY.slice(0, 7), more: 1 });
   const st = DEF();
   let filtersOpen = false;
+  const listDisclosure = new Map();
+  let listDefaultOpen = true;
+  let listContextMonth = "";
+  let pendingListMonth = "";
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
     Object.assign(st, DEF());
-    if (TABS.some(t => t[0] === h.get("view"))) st.view = h.get("view");
-    if (["calendar", "orbit"].includes(h.get("display"))) st.display = h.get("display");
-    if (st.view === "students") st.display = "list";
-    ["q", "prof", "kind", "where", "area", "spec"].forEach(k => { if (h.get(k)) st[k] = h.get(k); });
+    listContextMonth = "";
+    pendingListMonth = "";
+    const legacyView = h.get("view");
+    if (["list", "calendar", "orbit", "directory"].includes(h.get("display"))) st.display = h.get("display");
+    if (/^\d{4}-\d{2}$/.test(h.get("from") || "")) st.orbitFrom = h.get("from");
+    ["q", "kind", "where", "area", "spec"].forEach(k => { if (h.get(k)) st[k] = h.get(k); });
+    const requestedProf = (h.get("prof") || "").split(",").map(x => x === "DNP" ? "STU" : x);
+    if (legacyView === "students") requestedProf.push("STU");
+    const requestedSet = new Set(requestedProf);
+    st.prof = PROF_CHIPS.map(([v]) => v).filter(v => v && requestedSet.has(v));
+    if (legacyView === "students") st.display = "list";
+    if (legacyView === "directory") st.display = "directory";
+    if (st.display === "orbit" && h.get("scope") === "year") st.orbitScope = "year";
     if (h.get("focus")) st.focus = h.get("focus").split(",").map(x => x === "executive" ? "leadership" : x).filter(x => FOCUS_CHIPS.some(([v]) => v === x));
     if (h.get("near")) st.nearQ = h.get("near");
     if (+h.get("r")) st.radius = +h.get("r");
-    st.openOnly = h.get("open") === "1"; st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
+    st.openOnly = h.get("open") === "1" || legacyView === "deadlines"; st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
     st.within = +(h.get("within") || 0);
-    if (/^\d{4}-\d{2}$/.test(h.get("cal") || "")) st.cal = h.get("cal");
+    if (/^\d{4}-\d{2}$/.test(h.get("cal") || "")) {
+      st.cal = h.get("cal");
+      if (st.display === "list") listContextMonth = pendingListMonth = st.cal;
+    }
+    if (st.display === "orbit") orbitClamp();
     return h.get("e");
   }
   function writeHash(extra) {
     const h = new URLSearchParams();
-    if (st.view !== "upcoming") h.set("view", st.view);
-    if (["calendar", "orbit"].includes(st.display)) h.set("display", st.display);
-    ["q", "prof", "kind", "where", "area", "spec"].forEach(k => st[k] && h.set(k, st[k]));
+    if (st.display !== "orbit") h.set("display", st.display);
+    if (st.display === "orbit" && st.orbitFrom !== TODAY.slice(0, 7)) h.set("from", st.orbitFrom);
+    ["q", "kind", "where", "area", "spec"].forEach(k => st[k] && h.set(k, st[k]));
+    if (st.prof.length) h.set("prof", PROF_CHIPS.map(([v]) => v).filter(v => v && st.prof.includes(v)).join(","));
     if (st.focus.length) h.set("focus", st.focus.join(","));
     if (st.near) { h.set("near", st.nearQ); h.set("r", st.radius); }
     if (st.openOnly) h.set("open", "1");
     if (st.expected) h.set("exp", "1");
     if (st.review) h.set("review", "1");
     if (st.within) h.set("within", st.within);
-    if (["calendar", "orbit"].includes(st.display) && st.cal !== TODAY.slice(0, 7)) h.set("cal", st.cal);
+    if (st.display === "orbit" && st.orbitScope === "year") h.set("scope", "year");
+    if (st.display === "list" && listContextMonth) h.set("cal", st.cal);
+    else if (["calendar", "orbit"].includes(st.display) && st.cal !== TODAY.slice(0, 7)) h.set("cal", st.cal);
     if (extra) Object.entries(extra).forEach(([k, v]) => h.set(k, v));
     const s = h.toString();
     history.replaceState(null, "", s ? "#" + s : location.pathname + location.search);
@@ -191,10 +211,9 @@
     if (!p.some(x => ["NP", "Nursing", "Multidisciplinary"].includes(x)) || (p.includes("CRNA") && !p.includes("NP") && !p.includes("Multidisciplinary"))) return false;
     return (s.specialty || []).some(x => AGACNP_TOPICS.has(x));
   }
-  function profMatch(s) {
+  function profOptionMatch(s, prof) {
     const P = s.professions;
-    switch (st.prof) {
-      case "": return true;
+    switch (prof) {
       case "STU": return !!s.hasStu || !!s.hasDnp;
       case "DNP": return !!s.hasStu || !!s.hasDnp; // legacy shared links
       case "NP": return P.some(p => ["NP", "Multidisciplinary", "Nursing", "CNS", "CNM"].includes(p));
@@ -206,6 +225,15 @@
       case "RNFA": return P.includes("RNFA") || !!s.rnfa_inferred;
     }
     return true;
+  }
+  function profMatch(s) {
+    return !st.prof.length || st.prof.some(prof => profOptionMatch(s, prof));
+  }
+  function editionProfMatch(e) {
+    if (!st.prof.length) return true;
+    return st.prof.some(prof => prof === "STU"
+      ? (e.expectedRow ? !!e.s.hasStu || !!e.s.hasDnp : stuOK(e) || dnpOK(e))
+      : profOptionMatch(e.s, prof));
   }
   function seriesMatch(s, ignoreProf = false) {
     if (!ignoreProf && !profMatch(s)) return false;
@@ -248,25 +276,23 @@
   }
   function verMatch(e) { return !st.review || isException(e); }
   function edMatch(e) {
-    if (!seriesMatch(e.s, st.view === "students") || !placeMatch(e) || !verMatch(e)) return false;
-    if (["STU", "DNP"].includes(st.prof) && !e.expectedRow && !(stuOK(e) || dnpOK(e))) return false;
-    if (st.view === "students" && st.prof && !["STU", "DNP"].includes(st.prof)) {
-      const roles = e.student && (e.student.roles || []), wanted = [st.prof];
-      if (!roles || !wanted.some(r => roles.includes(r))) return false;
-    }
+    if (!seriesMatch(e.s, true) || !editionProfMatch(e) || !placeMatch(e) || !verMatch(e)) return false;
     if (st.q && !st.q.toLowerCase().split(/\s+/).every(w => e.hay.includes(w))) return false;
-    if (st.openOnly && !(st.view === "students" ? e.student && e.student.deadline && e.student.deadline >= TODAY : ["open", "urgent"].includes(e.c.k))) return false;
+    if (st.openOnly && !["open", "urgent"].includes(e.c.k)) return false;
     return true;
   }
   function orbitCallVisible(e) {
-    return st.view === "directory" || ["open", "urgent", "soon"].includes(e.c.k);
+    return ["open", "urgent", "soon"].includes(e.c.k);
   }
   function orbitRecordMatch(e) {
     if (!edMatch(e) || (e.expectedRow && !st.expected)) return false;
     if (st.within && e.start > addDays(TODAY, st.within)) return false;
-    if (st.view === "deadlines") return !e.expectedRow && !e.past && e.s.kind !== "observance" && ["open", "urgent", "soon"].includes(e.c.k);
-    if (st.view === "directory") return true;
     return e.expectedRow ? st.expected : !e.past;
+  }
+  function orbitAnnualRecordMatch(e) {
+    if (!edMatch(e) || (e.expectedRow && !st.expected)) return false;
+    if (st.within && (e.past || e.start > addDays(TODAY, st.within))) return false;
+    return e.expectedRow ? st.expected : true;
   }
   function orbitMonthHas(records, year, month) {
     const key = `${year}-${String(month).padStart(2, "0")}`;
@@ -274,13 +300,29 @@
     return records.some(e => (e.start <= end && (e.end || e.start) >= start) ||
       (orbitCallVisible(e) && e.call && [e.call.opens, e.call.closes].some(d => d && d >= start && d <= end)));
   }
+  // The Orbit ring is a rolling window: twelve consecutive months starting at st.orbitFrom (the current month by default).
+  function orbitWindow() {
+    const [fy, fm] = st.orbitFrom.split("-").map(Number);
+    return Array.from({ length: 12 }, (_, i) => {
+      const d = new Date(fy, fm - 1 + i, 1), year = d.getFullYear(), month = d.getMonth() + 1;
+      return { year, month, key: `${year}-${String(month).padStart(2, "0")}`, name: MONTH[month - 1] + (year !== fy ? " " + year : ""), short: MON[month - 1] + (month === 1 && i > 0 ? " ’" + String(year).slice(2) : "") };
+    });
+  }
+  function orbitLabel() {
+    const w = orbitWindow(), a = w[0], b = w[11];
+    return a.year === b.year ? String(a.year) : `${a.year}–${String(b.year).slice(2)}`;
+  }
+  function orbitClamp() {
+    const w = orbitWindow();
+    if (!w.some(x => x.key === st.cal)) st.cal = w.some(x => x.key === TODAY.slice(0, 7)) ? TODAY.slice(0, 7) : w[0].key;
+  }
   function revealFirstOrbitMatch() {
-    if (st.display !== "orbit") return;
-    const [year, month] = st.cal.split("-").map(Number);
+    if (st.display !== "orbit" || st.orbitScope === "year") return;
+    const w = orbitWindow(), cur = w.find(x => x.key === st.cal) || w[0];
     const records = EDS.filter(orbitRecordMatch);
-    if (orbitMonthHas(records, year, month)) return;
-    const first = MONTH.findIndex((_, i) => orbitMonthHas(records, year, i + 1));
-    if (first >= 0) st.cal = `${year}-${String(first + 1).padStart(2, "0")}`;
+    if (orbitMonthHas(records, cur.year, cur.month)) return;
+    const first = w.find(x => orbitMonthHas(records, x.year, x.month));
+    if (first) st.cal = first.key;
   }
 
   /* ---------- pieces ---------- */
@@ -340,14 +382,50 @@
   function vList() {
     let L = EDS.filter(e => !e.past && edMatch(e) && (st.expected || !e.expectedRow));
     if (st.within) L = L.filter(e => e.start <= addDays(TODAY, st.within));
-    if (st.near) L.sort((a, b) => a.start.localeCompare(b.start));
-    if (!L.length) return empty("No upcoming meetings match these filters.");
+    L.sort((a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name));
+    if (!L.length && !listContextMonth) return empty("No upcoming meetings match these filters.");
+
+    // A month carried from Calendar or Orbit must remain reachable even when it
+    // falls beyond the normal 120-row List page, or has no matching start dates.
+    if (listContextMonth) {
+      let through = L.findIndex(e => e.start.slice(0, 7) >= listContextMonth);
+      if (through < 0) through = L.length;
+      else {
+        while (through < L.length && eMonth(L[through]) === listContextMonth) through++;
+        if (!through) through = 1;
+      }
+      st.more = Math.max(st.more, Math.ceil(Math.max(through, 1) / 120));
+    }
     const cap = 120 * st.more, shown = L.slice(0, cap), groups = new Map();
     shown.forEach(e => { const k = e.start.slice(0, 7); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); });
-    let h = "";
-    for (const [k, arr] of groups) { const d = D(k + "-01"); h += `<section class="month"><h2>${MONTH[d.getMonth()]} ${d.getFullYear()} <span>${arr.length}</span></h2><div class="list">${arr.map(e => evRow(e)).join("")}</div></section>`; }
+    if (listContextMonth && !groups.has(listContextMonth)) groups.set(listContextMonth, []);
+
+    let h = `<div class="list-section-tools" role="group" aria-label="List section controls"><span>Month sections</span><button class="btn" data-act="list-expand-all" aria-controls="list-sections">Expand all <b aria-hidden="true">↓</b></button><button class="btn" data-act="list-collapse-all" aria-controls="list-sections">Collapse all <b aria-hidden="true">↑</b></button></div><div class="list-months" id="list-sections">`;
+    for (const [k, arr] of [...groups].sort(([a], [b]) => a.localeCompare(b))) {
+      const d = D(k + "-01"), name = `${MONTH[d.getMonth()]} ${d.getFullYear()}`;
+      if (pendingListMonth === k) listDisclosure.set(k, true);
+      const open = listDisclosure.has(k) ? listDisclosure.get(k) : listDefaultOpen;
+      const noRows = !arr.length
+        ? `<p class="list-month-empty">No upcoming meetings start in this month with the current filters.${k < TODAY.slice(0, 7) ? " List shows upcoming meetings only." : ""}</p>`
+        : "";
+      h += `<details class="month${k === listContextMonth ? " context-month" : ""}" id="list-month-${esc(k)}" data-list-month="${esc(k)}"${open ? " open" : ""}><summary><span class="month-title" role="heading" aria-level="2">${esc(name)}</span><span class="month-count">${arr.length} record${arr.length === 1 ? "" : "s"}</span><span class="list-toggle" aria-hidden="true"><span class="list-toggle-open">Collapse <b>↑</b></span><span class="list-toggle-closed">Expand <b>↓</b></span></span></summary>${noRows || `<div class="list">${arr.map(e => evRow(e, st.prof.includes("STU") && !!e.student)).join("")}</div>`}</details>`;
+    }
+    h += `</div>`;
     if (L.length > cap) h += `<button class="btn more" data-act="more">Show ${Math.min(120, L.length - cap)} more of ${L.length - cap} remaining</button>`;
     return h;
+  }
+  const eMonth = e => e.start.slice(0, 7);
+  function positionPendingListMonth() {
+    const month = pendingListMonth;
+    pendingListMonth = "";
+    if (!month || st.display !== "list") return;
+    const target = document.getElementById("list-month-" + month);
+    if (!target) return;
+    listDisclosure.set(month, true);
+    target.open = true;
+    const bar = $(".bar"), sticky = bar && getComputedStyle(bar).position === "sticky";
+    target.style.scrollMarginTop = `${sticky ? Math.ceil(bar.getBoundingClientRect().height) + 12 : 12}px`;
+    target.scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
   }
   function vStudents() {
     const L = EDS.filter(e => e.student && !e.past && !e.expectedRow && edMatch(e));
@@ -365,7 +443,7 @@
     const [y, m] = st.cal.split("-").map(Number);
     const first = new Date(y, m - 1, 1), start = new Date(first); start.setDate(1 - first.getDay());
     const M = EDS.filter(e => edMatch(e) && !e.expectedRow), items = [];
-    const mode = st.view;
+    const mode = "upcoming";
     M.forEach(e => {
       const meeting = mode === "upcoming" || mode === "directory" || (mode === "past" && e.past);
       if (meeting && !(mode === "upcoming" && e.past)) items.push({ e, from: e.start, to: e.end || e.start });
@@ -406,7 +484,7 @@
         h += `<button class="ce${call ? " call" : e.s.kind === "observance" ? " obs" : " meet"}${due ? " due" : ""}${!call && e.s.name === "National APP Week" ? " appweek" : ""}${contL ? " contl" : ""}${contR ? " contr" : ""}${e.past && !call ? " was" : ""}${x.lane >= visibleLanes ? " extra" : ""}" style="--c:${call ? "var(--t-call)" : colorOf(e.s)};grid-column:${c0} / ${c1};grid-row:${x.lane + (x.lane >= visibleLanes ? 3 : 2)}" data-e="${e.id}" title="${esc((call ? "Abstract call" + (x.from < x.to ? " open " + md(x.from) + " –" : "") + " due " + md(x.to) + ": " : "") + e.s.name + " — " + range(e))}">${label}</button>`;
       });
       if (emptyWeek) h += `<div class="week-empty" style="grid-column:1 / -1;grid-row:2">No matching events this week.</div>`;
-      if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${visibleLanes + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false"><span class="overflow-main">+${hidden} more this week</span><span class="overflow-cue">Expand <b aria-hidden="true">↑</b></span></button>`;
+      if (hidden) h += `<button class="overflow" style="grid-column:1 / -1;grid-row:${visibleLanes + 2}" data-day="${wkS}" data-extra="${hidden}" aria-expanded="false"><span class="overflow-main">+${hidden} more this week</span><span class="overflow-cue">Expand <b aria-hidden="true">↓</b></span></button>`;
       const rc = emptyWeek ? "26px auto" : `26px${Math.min(nL, visibleLanes) ? ` repeat(${Math.min(nL, visibleLanes)}, auto)` : ""}${hidden ? " auto" : ""}`, rx = emptyWeek ? rc : `26px repeat(${nL + 1}, auto)`;
       weeks += `<div class="wk${emptyWeek ? " emptyweek" : ""}" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
     }
@@ -428,48 +506,59 @@
       <div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
   }
   function vOrbit() {
-    const [year, pickedMonth] = st.cal.split("-").map(Number);
-    const records = EDS.filter(orbitRecordMatch);
-    const monthly = MONTH.map((name, i) => {
-      const month = i + 1, key = `${year}-${String(month).padStart(2, "0")}`;
-      const start = key + "-01", end = iso(new Date(year, month, 0));
+    orbitClamp();
+    const win = orbitWindow(), year = orbitLabel();
+    const annualFocus = st.orbitScope === "year";
+    const records = EDS.filter(annualFocus ? orbitAnnualRecordMatch : orbitRecordMatch);
+    const monthly = win.map(({ name, key, year: y, month }, i) => {
+      const start = key + "-01", end = iso(new Date(y, month, 0));
       const meetings = records.filter(e => e.start <= end && (e.end || e.start) >= start).sort((a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name));
-      const due = records.filter(e => orbitCallVisible(e) && e.call && e.call.closes && e.call.closes >= start && e.call.closes <= end).sort((a, b) => a.call.closes.localeCompare(b.call.closes) || a.s.name.localeCompare(b.s.name));
+      const due = records.filter(e => (annualFocus || orbitCallVisible(e)) && e.call && e.call.closes && e.call.closes >= start && e.call.closes <= end).sort((a, b) => a.call.closes.localeCompare(b.call.closes) || a.s.name.localeCompare(b.s.name));
       const open = records.filter(e => {
         const c = e.call || {}, opens = c.opens || (c.status === "open" ? TODAY : null), closes = c.closes;
-        if (!orbitCallVisible(e) || !opens) return false;
+        if ((!annualFocus && !orbitCallVisible(e)) || !opens) return false;
         if (!closes) return ["open", "urgent"].includes(e.c.k) && key === TODAY.slice(0, 7);
         return opens <= end && closes >= start && !(closes >= start && closes <= end);
       }).sort((a, b) => (a.call.closes || "9999").localeCompare(b.call.closes || "9999") || a.s.name.localeCompare(b.s.name));
-      return { name, month, key, meetings, due, open };
+      return { name, month, key, short: win[i].short, meetings, due, open };
     });
     const max = Math.max(1, ...monthly.flatMap(x => [x.meetings.length, x.due.length, x.open.length]));
     const h = n => Math.round(8 + (n / max) * 40);
-    const selected = monthly[pickedMonth - 1] || monthly[0];
+    const unique = rows => [...new Map(rows.map(e => [e.id, e])).values()];
+    const annual = {
+      name: "All twelve months",
+      meetings: unique(monthly.flatMap(x => x.meetings)).sort((a, b) => a.start.localeCompare(b.start) || a.s.name.localeCompare(b.s.name)),
+      due: unique(monthly.flatMap(x => x.due)).sort((a, b) => a.call.closes.localeCompare(b.call.closes) || a.s.name.localeCompare(b.s.name)),
+      open: unique(monthly.flatMap(x => x.open)).sort((a, b) => (a.call.closes || "9999").localeCompare(b.call.closes || "9999") || a.s.name.localeCompare(b.s.name))
+    };
+    const selectedMonth = monthly.find(x => x.key === st.cal) || monthly[0];
+    const selected = annualFocus ? annual : selectedMonth;
     const item = (e, meta, tone) => `<button class="orbit-item ${tone}" data-e="${esc(e.id)}"><span class="orbit-item-date">${esc(meta)}</span><strong>${esc(e.s.name)}</strong><span>${esc(e.s.org_display || e.s.org)}</span></button>`;
-    const group = (title, tone, rows, meta) => `<details class="orbit-group ${tone}" open><summary><span>${esc(title)}</span><b>${rows.length}</b></summary><div>${rows.length ? rows.slice(0, 12).map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in this month.</p>`}${rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></details>`;
+    const group = (title, tone, rows, meta) => {
+      const shown = annualFocus ? rows : rows.slice(0, 12);
+      return `<details class="orbit-group ${tone}"><summary><span>${esc(title)}</span><b>${rows.length}</b></summary><div>${rows.length ? shown.map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in ${annualFocus ? "these twelve months" : "this month"}.</p>`}${!annualFocus && rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></details>`;
+    };
     const countLine = x => `${x.meetings.length} meeting${x.meetings.length === 1 ? "" : "s"}, ${x.due.length} abstract deadline${x.due.length === 1 ? "" : "s"}, ${x.open.length} open abstract call${x.open.length === 1 ? "" : "s"}`;
-    const months = monthly.map((x, i) => `<button class="orbit-month${x.month === selected.month ? " selected" : ""}" style="--i:${i}" data-orbit-month="${x.month}" aria-pressed="${x.month === selected.month}" title="${esc(`${x.name}: ${countLine(x)}`)}"><span class="orbit-month-name">${MON[i]}</span><span class="orbit-columns" aria-hidden="true"><i class="meet" style="--h:${h(x.meetings.length)}px"></i><i class="due" style="--h:${h(x.due.length)}px"></i><i class="open" style="--h:${h(x.open.length)}px"></i></span><span class="orbit-counts" aria-hidden="true"><i>${x.meetings.length}</i><i>${x.due.length}</i><i>${x.open.length}</i></span><span class="sr">${esc(countLine(x))}</span></button>`).join("");
+    const months = monthly.map((x, i) => `<button class="orbit-month${!annualFocus && x.key === selectedMonth.key ? " selected" : ""}" style="--i:${i}" data-orbit-month="${x.key}" aria-pressed="${!annualFocus && x.key === selectedMonth.key}" title="${esc(`${x.name}: ${countLine(x)}`)}"><span class="orbit-month-name">${esc(x.short)}</span><span class="orbit-columns" aria-hidden="true"><i class="meet" style="--h:${h(x.meetings.length)}px"></i><i class="due" style="--h:${h(x.due.length)}px"></i><i class="open" style="--h:${h(x.open.length)}px"></i></span><span class="orbit-counts" aria-hidden="true"><i>${x.meetings.length}</i><i>${x.due.length}</i><i>${x.open.length}</i></span><span class="sr">${esc(countLine(x))}</span></button>`).join("");
     const location = [];
     if (st.where) location.push(st.where[0].toUpperCase() + st.where.slice(1));
     if (st.area) location.push(st.area.slice(2));
     if (st.near) location.push(`${st.radius} mi from ${st.near.label}`);
     if (!location.length) location.push("Global");
-    const discipline = st.prof ? (st.prof === "AGACNP" ? "AGACNP" : PLABEL[st.prof] || st.prof) : "All APPs";
-    const viewLabel = { upcoming: "Upcoming", deadlines: "Abstract deadlines", directory: "Directory" }[st.view] || "Upcoming";
+    const discipline = st.prof.length ? st.prof.map(prof => PLABEL[prof] || prof).join(" + ") : "All APPs";
     const focusLabel = st.focus.length ? st.focus.map(x => x[0].toUpperCase() + x.slice(1)).join(" + ") : "All focus";
-    const context = [location.join(" · "), discipline, viewLabel, focusLabel, st.q ? `Search: ${st.q}` : ""].filter(Boolean);
+    const context = [location.join(" · "), discipline, focusLabel, st.q ? `Search: ${st.q}` : ""].filter(Boolean);
     return `<div class="orbit-shell">
-      <section class="orbit-board" aria-label="${year} annual record density">
-        <header class="orbit-heading"><div><p class="eyebrow">Global Orbit</p><h2>Year at a glance</h2></div><p>Choose a month to inspect its meetings and abstract activity.</p></header>
+      <section class="orbit-board" aria-label="${esc(win[0].name)} to ${esc(win[11].name)} record density">
+        <header class="orbit-heading"><div><p class="eyebrow">Global Orbit</p><h2>Twelve months at a glance</h2></div><p>Choose a month for a focused view, or choose the center label for all twelve months. The arrows move the window by a year.</p></header>
         <div class="orbit-stage">
-          <div class="orbit-core"><button data-act="prevY" aria-label="Previous year">‹</button><span><strong>${year}</strong><small class="orbit-context">${context.map(x => `<i>${esc(x)}</i>`).join("")}</small></span><button data-act="nextY" aria-label="Next year">›</button></div>
+          <div class="orbit-core"><button data-act="prevY" aria-label="Twelve months earlier">‹</button><button class="orbit-year" data-orbit-year aria-pressed="${annualFocus}" aria-label="Show all records from ${esc(win[0].name)} to ${esc(win[11].name)}"><strong class="${year.length > 4 ? "span" : ""}">${year}</strong><small class="orbit-context">${context.map(x => `<i>${esc(x)}</i>`).join("")}</small></button><button data-act="nextY" aria-label="Twelve months later">›</button></div>
           ${months}
         </div>
         <div class="orbit-legend" aria-label="Orbit legend"><span><i class="meet"></i>Meetings</span><span><i class="due"></i>Abstracts due</span><span><i class="open"></i>Open abstracts</span></div>
       </section>
-      <aside class="orbit-rail" aria-live="polite">
-        <header><p class="eyebrow">${esc(selected.name)} ${year}</p><h2>Records in focus</h2></header>
+      <aside class="orbit-rail">
+        <header aria-live="polite" aria-atomic="true"><p class="eyebrow">${annualFocus ? esc(MONTH[win[0].month - 1] + " " + win[0].year) + " – " + esc(MONTH[win[11].month - 1] + " " + win[11].year) : esc(selected.name.includes(" ") ? selected.name : selected.name + " " + win[0].year)}</p><h2>Records in focus</h2><span class="sr">${esc(countLine(selected))}</span></header>
         ${group("Abstracts due", "due", selected.due, e => e.call && e.call.closes ? longDate(e.call.closes) : "Date not posted")}
         ${group("Meetings & Conferences", "meet", selected.meetings, e => range(e))}
         ${group("Open abstracts", "open", selected.open, e => e.call && e.call.closes ? `Due ${md(e.call.closes)}` : "Open")}
@@ -508,7 +597,7 @@
     return h + `</div></section><p class="fine">Each call appears once: imminent due dates first, then calls opening soon, then other calls already open. A deadline closing today shows the day only; the organizer's cut-off hour and time zone still apply.</p>`;
   }
   function directorySeries() {
-    const editionFilters = st.where || st.area || st.near || st.openOnly;
+    const editionFilters = st.where || st.area || st.near || st.openOnly || st.review;
     return DATA.series.filter(s => seriesMatch(s) &&
       (!st.q || (s.name + " " + (s.org_display || s.org) + " " + s.org + " " + (s.specialty || []).join(" ")).toLowerCase().includes(st.q.toLowerCase())) &&
       (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && (st.expected || !e.expectedRow))));
@@ -527,7 +616,7 @@
       const anchor = s.name[0].toUpperCase() !== cur ? (cur = s.name[0].toUpperCase(), ` id="letter-${esc(cur)}"`) : "";
       h += `<button class="srs"${anchor} data-s="${esc(s.id)}"><span class="title">${esc(s.name)}</span><span class="org">${esc(s.org_display || s.org)}</span>
         <span class="badges">${profTags(s)}${(s.specialty || []).slice(0, 2).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</span>
-        <span class="meta">${next ? "Next: " + esc(range(next)) : hidden ? "Next date awaiting a source check" : esc(s.status_note || "Next date not posted")}${s.archive_url ? " · past-meetings archive" : ""}</span>
+        <span class="meta">${next ? "Next recorded: " + esc(range(next)) : hidden ? "Next date awaiting a source check" : esc(s.status_note || "Next date not posted")}${s.archive_url ? " · past-meetings archive" : ""}${next ? " " + vBadge(next, true) : ""}</span>
         <span class="hist">${L.filter(e => !e.expectedRow).map(e => `<span class="${e.past ? "" : "fut"}" title="${esc(range(e))}">${e.start.slice(0, 4)}</span>`).join("")}</span></button>`;
     });
     return h + "</div>";
@@ -545,16 +634,20 @@
 
   /* ---------- controls ---------- */
   const chipRow = (key, list) => list.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-f="${key}" data-v="${esc(v)}" aria-pressed="${st[key] === v}"${key === "prof" && PROF_TIPS[v] ? ` title="${PROF_TIPS[v]}"` : ""}>${esc(l)}</button>`).join("");
+  const profRow = () => PROF_CHIPS.map(([v, l]) => {
+    const selected = v ? st.prof.includes(v) : !st.prof.length;
+    const dot = v ? `<span class="dot" style="--c:var(${PROF_COLOR[v]})" aria-hidden="true"></span>` : "";
+    return `<button class="chip prof-chip${v ? "" : " all"}" data-prof="${esc(v)}" aria-pressed="${selected}"${PROF_TIPS[v] ? ` title="${PROF_TIPS[v]}"` : ""}>${dot}${esc(l)}</button>`;
+  }).join("");
   const focusRow = () => FOCUS_CHIPS.map(([v, l]) => `<button class="chip${v ? "" : " all"}" data-focus="${esc(v)}" aria-pressed="${v ? st.focus.includes(v) : !st.focus.length}">${esc(l)}</button>`).join("");
   function controls() {
-    $("#tabs").innerHTML = TABS.map(([v, l]) => `<button id="tab-${v}" role="tab" aria-controls="view" aria-selected="${st.view === v}" tabindex="${st.view === v ? 0 : -1}" data-view="${v}">${esc(l)}</button>`).join("");
-    $("#view").setAttribute("aria-labelledby", "tab-" + st.view);
-    $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${chipRow("prof", PROF_CHIPS)}`;
+    $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${profRow()}`;
     $("#quickfocus").innerHTML = `<span class="flabel">Focus</span>${focusRow()}`;
-    $("#viewtools").innerHTML = `${st.view === "students" ? "" : `<div class="seg" role="group" aria-label="Display">
-        <button data-display="list" aria-pressed="${st.display === "list"}">${ICON.list}List</button>
-        <button data-display="calendar" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button>
-        <button data-display="orbit" aria-pressed="${st.display === "orbit"}">${ICON.orbit}Orbit</button></div>`}`;
+    $("#viewtools").innerHTML = `<div class="seg" role="group" aria-label="Display">
+        <button data-display="list" aria-controls="view" aria-pressed="${st.display === "list"}">${ICON.list}List</button>
+        <button data-display="calendar" aria-controls="view" aria-pressed="${st.display === "calendar"}">${ICON.cal}Calendar</button>
+        <button class="schedule-orbit" data-display="orbit" aria-label="Schedule Orbit" aria-controls="view" aria-pressed="${st.display === "orbit"}">${ICON.orbit}<span class="display-stack" aria-hidden="true"><span>Schedule</span><span>Orbit</span></span></button>
+        <button data-display="directory" aria-controls="view" aria-pressed="${st.display === "directory"}">${ICON.directory}Directory</button></div>`;
     $("#geoquick").innerHTML = `<span class="flabel">Location</span>
       <button class="chip all" data-act="where-all" aria-pressed="${!st.where}">All</button>
       <button class="chip" data-act="where-live" aria-pressed="${st.where === "live"}">Live</button>
@@ -580,47 +673,39 @@
     $("#fbtn").setAttribute("aria-expanded", String(filtersOpen));
     $("#q").value = st.q;
   }
-  const activeCount = () => [st.prof, st.kind, st.where, st.area, st.near, st.spec, st.openOnly, st.expected, st.review, st.q, st.within].filter(Boolean).length + st.focus.length;
+  const activeCount = () => [st.kind, st.where, st.area, st.near, st.spec, st.openOnly, st.expected, st.review, st.q, st.within].filter(Boolean).length + st.prof.length + st.focus.length;
 
   /* ---------- render ---------- */
   function render(keepFocus) {
     const active = document.activeElement;
     const f = keepFocus && active && active.id;
-    const replaced = active && active.closest && active.closest("#tabs,#quickprof,#quickfocus,#geoquick,#filters,#viewtools");
-    const restore = replaced ? { id: active.id, view: active.dataset.view, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v, focus: active.dataset.focus } : null;
+    const replaced = active && active.closest && active.closest("#quickprof,#quickfocus,#geoquick,#filters,#viewtools");
+    const restore = replaced ? { id: active.id, display: active.dataset.display, filter: active.dataset.f, value: active.dataset.v, prof: active.dataset.prof, focus: active.dataset.focus } : null;
     spotlight(); controls();
-    const v = st.view === "students" ? vStudents : st.display === "calendar" ? vCalendar : st.display === "orbit" ? vOrbit : { upcoming: vList, deadlines: vDeadlines, past: vPast, directory: vDirectory }[st.view];
+    const v = st.display === "directory" ? vDirectory : st.display === "calendar" ? vCalendar : st.display === "orbit" ? vOrbit : vList;
     $("#view").innerHTML = v();
     let summary;
-    if (st.display === "orbit" && st.view !== "students") {
-      const year = st.cal.slice(0, 4), from = year + "-01-01", to = year + "-12-31";
-      const n = EDS.filter(e => orbitRecordMatch(e) && ((e.start <= to && (e.end || e.start) >= from) || (orbitCallVisible(e) && e.call && ((e.call.opens || "").startsWith(year) || (e.call.closes || "").startsWith(year))))).length;
-      summary = `${n} record${n === 1 ? "" : "s"} in the ${year} Orbit`;
-    } else if (st.view === "directory") {
+    if (st.display === "orbit") {
+      const w = orbitWindow(), from = w[0].key + "-01", to = iso(new Date(w[11].year, w[11].month, 0));
+      const annual = st.orbitScope === "year", match = annual ? orbitAnnualRecordMatch : orbitRecordMatch;
+      const n = EDS.filter(e => match(e) && ((e.start <= to && (e.end || e.start) >= from) || ((annual || orbitCallVisible(e)) && e.call && [e.call.opens, e.call.closes].some(d => d && d >= from && d <= to)))).length;
+      summary = `${n} record${n === 1 ? "" : "s"} in the Orbit, ${MONTH[w[0].month - 1]} ${w[0].year} to ${MONTH[w[11].month - 1]} ${w[11].year}`;
+    } else if (st.display === "directory") {
       const n = directorySeries().length;
       summary = `${n} of ${DATA.series.length} meeting series`;
-    } else if (st.view === "students") {
-      const n = EDS.filter(e => e.student && !e.past && !e.expectedRow && edMatch(e)).length;
-      summary = `${n} student and DNP project opportunit${n === 1 ? "y" : "ies"}`;
-    } else if (st.view === "past") {
-      const n = EDS.filter(e => e.past && !e.expectedRow && edMatch(e)).length;
-      summary = `${n} past edition${n === 1 ? "" : "s"}`;
-    } else if (st.view === "deadlines") {
-      const n = EDS.filter(e => !e.expectedRow && !e.past && e.s.kind !== "observance" && edMatch(e) && ["open", "urgent", "soon"].includes(e.c.k)).length;
-      summary = `${n} open or upcoming abstract call${n === 1 ? "" : "s"}`;
     } else {
       const n = EDS.filter(e => !e.past && !e.expectedRow && edMatch(e) && (!st.within || e.start <= addDays(TODAY, st.within))).length;
       summary = `${n} upcoming meeting${n === 1 ? "" : "s"}`;
     }
     const applied = [];
-    if (st.prof) applied.push("Discipline: " + (st.prof === "AGACNP" ? "AGACNP (curated topic fit)" : PLABEL[st.prof] || st.prof));
+    if (st.prof.length) applied.push("Disciplines: " + st.prof.map(prof => prof === "AGACNP" ? "AGACNP (curated topic fit)" : PLABEL[prof] || prof).join(" + "));
     if (st.focus.length) applied.push("Focus: " + st.focus.map(x => x[0].toUpperCase() + x.slice(1)).join(" + "));
     if (st.area) applied.push("Global Region: " + st.area.slice(2));
     if (st.where) applied.push("Format: " + st.where[0].toUpperCase() + st.where.slice(1));
     if (st.near) applied.push(`Within ${st.radius} miles of ${st.near.label}`);
     if (st.spec) applied.push("Specialty: " + st.spec);
     if (st.q) applied.push("Search: " + st.q);
-    if (st.openOnly) applied.push(st.view === "students" ? "Student submissions open" : "Abstract call open");
+    if (st.openOnly) applied.push("Abstract call open");
     if (st.review) applied.push("Needs review only");
     const stamp = DATA && DATA.built ? stampET(DATA.built).replace(/^Data snapshot /, "") : "";
     $("#summary").innerHTML = `<b>${esc(summary)}</b>` + (applied.length ? `<span class="applied">${esc(applied.join(" · "))}</span>` : "");
@@ -629,13 +714,14 @@
     if (f && document.getElementById(f)) { const el = document.getElementById(f); el.focus(); if (el.setSelectionRange && el.value) el.setSelectionRange(el.value.length, el.value.length); }
     else if (restore) {
       const el = (restore.id && document.getElementById(restore.id)) ||
-        [...document.querySelectorAll("#tabs button,#quickprof button,#quickfocus button,#geoquick button,#filters button,#viewtools button")].find(x =>
-          (restore.view && x.dataset.view === restore.view) ||
+        [...document.querySelectorAll("#quickprof button,#quickfocus button,#geoquick button,#filters button,#viewtools button")].find(x =>
           (restore.display && x.dataset.display === restore.display) ||
+          (restore.prof != null && x.dataset.prof === restore.prof) ||
           (restore.focus != null && x.dataset.focus === restore.focus) ||
           (restore.filter && x.dataset.f === restore.filter && x.dataset.v === restore.value));
       if (el) el.focus({ preventScroll: true });
     }
+    if (st.display === "list" && pendingListMonth) requestAnimationFrame(positionPendingListMonth);
   }
 
   /* ---------- near: ZIP or city ---------- */
@@ -674,7 +760,7 @@
   const byId = id => EDS.find(e => e.id === id);
   const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; } };
   function openDay(k) {
-    const mode = st.view, rows = [];
+    const mode = "upcoming", rows = [];
     EDS.filter(e => edMatch(e) && !e.expectedRow).forEach(e => {
       const meeting = mode === "upcoming" || mode === "directory" || (mode === "past" && e.past);
       if (meeting && !(mode === "upcoming" && e.past) && e.start <= k && e.end >= k) rows.push({ e, what: e.start === k ? "Starts" : e.end === k ? "Final day" : "In progress" });
@@ -706,7 +792,7 @@
         ${e.note ? `<dt>Note</dt><dd>${esc(e.note)}</dd>` : ""}
         ${e.student ? `<dt>Student & DNP opportunity</dt><dd><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)} <a href="${esc(e.student.url)}" target="_blank" rel="noopener noreferrer">Organizer's student details</a></dd>` : ""}
         ${s.recurrence ? `<dt>Recurs</dt><dd>${esc(s.recurrence)}</dd>` : ""}
-        <dt>Focus</dt><dd>${(s.focus || []).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curator tags)</span></dd>
+        <dt>Focus</dt><dd>${(s.focus || []).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curated and derived tags)</span></dd>
         ${s.np_pa_basis ? `<dt>Why it's here</dt><dd>${esc(s.np_pa_basis)}</dd>` : ""}
         <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} ${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${e.evidence_image ? ` · <a href="${esc(e.evidence_image)}" target="_blank" rel="noopener noreferrer">dates published in this image</a>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
       </dl>
@@ -773,11 +859,28 @@
   /* ---------- events ---------- */
   function bind() {
     document.addEventListener("click", ev => {
-      const t = ev.target.closest("[data-view],[data-display],[data-f],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month]");
+      const t = ev.target.closest("[data-display],[data-prof],[data-f],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month],[data-orbit-year]");
       if (!t) return;
-      if (t.dataset.view) { st.view = t.dataset.view; if (st.view === "students") st.display = "list"; st.more = 1; render(); return; }
-      if (t.dataset.display) { st.display = t.dataset.display; render(); return; }
-      if (t.dataset.orbitMonth) { const year = st.cal.slice(0, 4); st.cal = year + "-" + String(t.dataset.orbitMonth).padStart(2, "0"); render(); return; }
+      if (t.dataset.display) {
+        const from = st.display, next = t.dataset.display;
+        if (next === "list" && (from === "calendar" || (from === "orbit" && st.orbitScope === "month"))) {
+          listContextMonth = pendingListMonth = st.cal;
+          listDisclosure.set(st.cal, true);
+        } else if (next === "list" && from === "orbit" && st.orbitScope === "year") {
+          listContextMonth = pendingListMonth = "";
+        }
+        st.display = next;
+        render();
+        return;
+      }
+      if (t.dataset.orbitYear != null) { st.orbitScope = "year"; render(); const yearButton = $("[data-orbit-year]"); if (yearButton) yearButton.focus({ preventScroll: true }); return; }
+      if (t.dataset.orbitMonth) { const key = String(t.dataset.orbitMonth); st.orbitScope = "month"; st.cal = key; render(); const monthButton = $(`[data-orbit-month="${key}"]`); if (monthButton) monthButton.focus({ preventScroll: true }); return; }
+      if (t.dataset.prof != null) {
+        const prof = t.dataset.prof;
+        if (!prof) st.prof = [];
+        else st.prof = st.prof.includes(prof) ? st.prof.filter(x => x !== prof) : [...st.prof, prof];
+        st.more = 1; revealFirstOrbitMatch(); render(); return;
+      }
       if (t.dataset.f) { st[t.dataset.f] = st[t.dataset.f] === t.dataset.v && t.dataset.v ? "" : t.dataset.v; st.more = 1; render(); return; }
       if (t.dataset.focus != null) {
         const f = t.dataset.focus;
@@ -786,17 +889,29 @@
         st.more = 1; render(); return;
       }
       const act = t.dataset.act;
-      if (act === "clear") { const keep = { view: st.view, display: st.display, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
+      if (act === "clear") { const keep = { display: st.display, orbitScope: st.orbitScope, orbitFrom: st.orbitFrom, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
       if (act === "share") {
-        const note = `APP Conference Runway — conferences, abstract deadlines and celebration weeks for advanced practice providers, checked nightly against the organizers' own pages.\n${location.origin + location.pathname}\n(Not listed in search engines; pass it on to colleagues.)`;
+        const note = `APP Conference Runway: conferences, abstract deadlines, student and DNP project opportunities, and celebration weeks for advanced practice providers, checked nightly against the organizers' own pages.\n${location.origin + location.pathname}\n(Search indexing is discouraged; pass it directly to colleagues.)`;
         copy(note, "Note and link copied — paste it into an email or message.");
         return;
       }
       if (act === "where-all") { st.where = ""; revealFirstOrbitMatch(); render(); return; }
       if (["where-live", "where-online", "where-hybrid"].includes(act)) { const next = act.slice(6); st.where = st.where === next ? "" : next; revealFirstOrbitMatch(); render(); return; }
+      if (act === "list-expand-all") {
+        listDefaultOpen = true;
+        listDisclosure.clear();
+        document.querySelectorAll("#view details.month[data-list-month]").forEach(el => { el.open = true; });
+        return;
+      }
+      if (act === "list-collapse-all") {
+        listDefaultOpen = false;
+        listDisclosure.clear();
+        document.querySelectorAll("#view details.month[data-list-month]").forEach(el => { el.open = false; });
+        return;
+      }
       if (act === "more") { st.more++; render(); return; }
       if (act === "prev" || act === "next") { const [y, m] = st.cal.split("-").map(Number); st.cal = iso(new Date(y, m - 1 + (act === "next" ? 1 : -1), 1)).slice(0, 7); render(); return; }
-      if (act === "prevY" || act === "nextY") { const [y, m] = st.cal.split("-").map(Number); st.cal = (y + (act === "nextY" ? 1 : -1)) + "-" + String(m).padStart(2, "0"); render(); return; }
+      if (act === "prevY" || act === "nextY") { const [y, m] = st.cal.split("-").map(Number); st.cal = (y + (act === "nextY" ? 1 : -1)) + "-" + String(m).padStart(2, "0"); if (st.display === "orbit") { const [fy, fm] = st.orbitFrom.split("-").map(Number); st.orbitFrom = (fy + (act === "nextY" ? 1 : -1)) + "-" + String(fm).padStart(2, "0"); } render(); return; }
       if (act === "today") { st.cal = TODAY.slice(0, 7); render(); return; }
       if (act === "close") { $("#dlg").close(); return; }
       if (act === "ics") { icsFor(byId($("#dlg").dataset.e)); return; }
@@ -810,22 +925,19 @@
         if (cell.dataset.rx) cell.style.gridTemplateRows = expanded ? cell.dataset.rx : cell.dataset.rc;
         t.setAttribute("aria-expanded", String(expanded));
         t.innerHTML = expanded
-          ? `<span class="overflow-main">Show fewer</span><span class="overflow-cue">Collapse <b aria-hidden="true">↓</b></span>`
-          : `<span class="overflow-main">+${t.dataset.extra} more this week</span><span class="overflow-cue">Expand <b aria-hidden="true">↑</b></span>`;
+          ? `<span class="overflow-main">Show fewer</span><span class="overflow-cue">Collapse <b aria-hidden="true">↑</b></span>`
+          : `<span class="overflow-main">+${t.dataset.extra} more this week</span><span class="overflow-cue">Expand <b aria-hidden="true">↓</b></span>`;
         return;
       }
       if (t.dataset.s) { const L = EDS.filter(e => e.series === t.dataset.s).sort((a, b) => a.start.localeCompare(b.start)); const pick = L.find(e => !e.past && !e.expectedRow) || [...L].reverse().find(e => !e.expectedRow) || L[0]; if (pick) openDetail(pick); return; }
       if (t.dataset.e) { const e = byId(t.dataset.e); if (e) openDetail(e); }
     });
+    document.addEventListener("toggle", ev => {
+      const el = ev.target;
+      if (!el.matches || !el.matches("#view details.month[data-list-month]")) return;
+      listDisclosure.set(el.dataset.listMonth, el.open);
+    }, true);
     document.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches("[role=button][data-e]")) { ev.preventDefault(); ev.target.click(); } });
-    $("#tabs").addEventListener("keydown", ev => {
-      if (!ev.target.matches('[role="tab"]')) return;
-      const i = TABS.findIndex(([v]) => v === ev.target.dataset.view);
-      const next = ev.key === "ArrowRight" ? (i + 1) % TABS.length : ev.key === "ArrowLeft" ? (i + TABS.length - 1) % TABS.length : ev.key === "Home" ? 0 : ev.key === "End" ? TABS.length - 1 : -1;
-      if (next < 0) return;
-      ev.preventDefault(); st.view = TABS[next][0]; if (st.view === "students") st.display = "list"; st.more = 1; render();
-      $("#tab-" + st.view).focus();
-    });
     document.addEventListener("change", async ev => {
       const id = ev.target.id;
       if (id === "spec") st.spec = ev.target.value;
@@ -842,6 +954,15 @@
     document.addEventListener("keydown", async ev => { if (ev.target.id === "nearq" && ev.key === "Enter") { ev.preventDefault(); ev.target.blur(); } });
     let tmr; $("#q").addEventListener("input", ev => { clearTimeout(tmr); tmr = setTimeout(() => { st.q = ev.target.value.trim(); st.more = 1; render(true); }, 180); });
     $("#dlg").addEventListener("close", () => writeHash());
+    // Keep keyboard focus inside the open record dialog (Tab wraps between its first and last controls).
+    $("#dlg").addEventListener("keydown", ev => {
+      if (ev.key !== "Tab") return;
+      const f = [...$("#dlg").querySelectorAll('a[href],button,input,select,textarea,[tabindex]:not([tabindex="-1"])')].filter(el => el.offsetParent !== null);
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (ev.shiftKey && (document.activeElement === first || document.activeElement === $("#dlg"))) { ev.preventDefault(); last.focus(); }
+      else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
+    });
     window.addEventListener("hashchange", async () => { const e = readHash(); await resolveNear(); render(); if (e && byId(e)) openDetail(byId(e)); });
   }
 
