@@ -353,11 +353,13 @@
    "evidence": "Mid-Year Assembly 2027 April 16, 2027 - April 21, 2027"
   },
   "479121152dc2": {
-   "source_reviewed": true,
+   "source_reviewed": false,
    "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "_why": "2026-09-24 (evening): ONS publishes Oncology Nursing Month only as a rule (\"Every May\"), not as dated 2027 days, so this edition is labelled Set by rule like 2028 and 2029 rather than as a reviewed date. The 2026-09-22 walk confirmed the rule wording at source_url; the verbatim wording and the page are kept.",
    "source_url": "https://www.ons.org/oncology-nursing-month",
-   "evidence": "Every May, we honor oncology nurses for the hope they nurture and the strength they inspire."
+   "evidence": "Every May, we honor oncology nurses for the hope they nurture and the strength they inspire.",
+   "status": "rule",
+   "note": "Computed from the organizer's published rule"
   },
   "fc952b75dcbc": {
    "source_reviewed": true,
