@@ -336,8 +336,22 @@ def main():
         check("AAAA keeps the organizer's wording: CAA student posters", "CAA student posters" in view and "CRNA student posters" not in view)
         fgo("display=list&focus=open")
         check("VAM is not listed as open before its November 18 opening", "Vascular Annual Meeting" not in vtext())
-        fgo("focus=open&cal=2026-09")
-        check("Orbit Open Abstracts keeps NACNS in September, the month it closes", "NACNS Annual Conference" in fpg.evaluate("[...document.querySelectorAll('.orbit-group.open .orbit-item')].map(x => x.textContent).join(' | ')"))
+        # Red team F03: NACNS's professional call closed Aug 13; only its student-poster call runs to Sep 27.
+        check("NACNS is not listed as an open call after its professional deadline (Aug 13)", "NACNS Annual Conference" not in vtext())
+        fgo("display=list&scope=students&q=NACNS")
+        due = fpg.evaluate("[...document.querySelectorAll('#view article')].filter(a => a.textContent.includes('NACNS Annual Conference')).map(a => (a.querySelector('.student-due') || {}).textContent || '')")
+        check("NACNS student posters stay listed under Students with their Sep 27 deadline", "Submit by Sep 27" in due, " | ".join(due))
+        # Red team F04: every call open on the fixed day that closes in its month shows in Orbit's Open Abstracts for that month.
+        day = FIXED_NOW[:10]
+        def open_on(e):
+            c = e.get("call") or {}; cl, op = c.get("closes"), c.get("opens")
+            return bool(cl) and cl >= day and not (op and op > day) and (c.get("status") == "open" or bool(op and op <= day))
+        names = {s["id"]: s["name"] for s in data["series"]}
+        closing = sorted({names[e["series"]] for e in data["editions"] if e["series"] in names and open_on(e) and e["call"]["closes"][:7] == day[:7]})
+        fgo("focus=open&cal=" + day[:7])
+        orbit_open = fpg.evaluate("[...document.querySelectorAll('.orbit-group.open .orbit-item')].map(x => x.textContent).join(' | ')")
+        gone = [n for n in closing if n not in orbit_open]
+        check("Orbit Open Abstracts keeps every call in the month it closes", bool(closing) and not gone, f"{len(closing)} due this month; missing: {gone}")
         fgo("focus=conferences&cal=2026-10")
         n_all = int(fpg.evaluate("(document.querySelector('.orbit-group.meet summary b') || {}).textContent || '0'"))
         n_before = fpg.locator(".orbit-group.meet .orbit-item").count()
