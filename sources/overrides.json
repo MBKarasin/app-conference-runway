@@ -26,6 +26,7 @@
    "_why": "This displayed four separate Geisinger-hosted SCCM courses as one continuous month-long event."
   },
   "43335d5f76c7": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://npwh.org/news/674033/",
    "source_reviewed": true,
    "compiled": "2026-09-21",
@@ -40,31 +41,37 @@
    "_why": "js-np.jp/scientific-meeting-single-12.htm read 2026-09-22: 会期 2026.11.21(土)〜23(月・祝), 会場 森ノ宮医療大学; jsnp2026.jp/outline.html gives the same range."
   },
   "85a947e04684": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "evidence": "28th Annual NPWH Women's Healthcare Conference, October 1–3, 2025, Caesars Palace in Las Vegas."
   },
   "7c83d68f1860": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://www.ons.org/education-hub/events/congress/blog/ignite-extraordinary-possibilities-impacting-cancer-care-ons",
    "source_reviewed": true,
    "evidence": "The 2024 ONS Congress takes place April 24–28 in Washington, DC."
   },
   "f5590a05975e": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://amia.org/education-events/amia-2025-informatics-summit",
    "source_reviewed": true,
    "evidence": "AMIA 2025 Informatics Summit, March 10–13, Pittsburgh, PA."
   },
   "371badb11823": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://texasnp.org/wp-content/uploads/2025/07/C6-TNP-Pulse-Magazine-Summer-2025-Singles.pdf",
    "source_reviewed": true,
    "evidence": "TNP 2025 Annual Conference, September 25–28, Hilton Anatole, Dallas, TX."
   },
   "51e706b5534b": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://ache2026.eventscribe.net/agenda.asp?all=1&pfp=FullSchedule",
    "source_reviewed": true,
    "evidence": "ACHE 2026 Congress on Healthcare Leadership program, March 2–4, 2026, Houston, TX."
   },
   "d6cf72ac03b2": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://login.texasnp.org/events/EventDetails.aspx?id=1986716",
    "source_reviewed": true,
    "evidence": "2026 Pharmacology & Primary Care Conference, April 23–25, 2026, San Antonio, Texas."
@@ -78,23 +85,27 @@
    "_why": "oncologypas.org/event/2027-annual-symposium/ and the events index both read \"September 23 - September 26, 2027\" on 2026-09-22; the earlier 23-27 value came from a structured metadata field that no longer appears."
   },
   "e1d965344e5e": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "evidence": "NYONL 34th Annual Meeting and Leadership Conference: September 27–29, 2026, Tarrytown, New York."
   },
   "75c789c89d9d": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://delawareana.org/event-6571840",
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "evidence": "Delaware Association of Nurse Anesthetists 2026 Annual Fall Meeting: October 10, Wilmington, Delaware."
   },
   "a8f8d986acc5": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda",
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "evidence": "Psych Congress PA Institute: December 4–6, 2026, Orlando, Florida."
   },
   "7fca18685d3c": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_reviewed": true,
    "compiled": "2026-09-21",
    "evidence": "68th ASH Annual Meeting and Exposition: December 12–15, 2026, New Orleans, Louisiana."
@@ -120,6 +131,7 @@
    "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "9e0e24120486": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://njsna.org/events/month/2026-10/",
    "source_reviewed": true,
    "compiled": "2026-09-21",
@@ -220,6 +232,7 @@
    "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
   },
   "09391e1f6db0": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "source_url": "https://texasnp.org/calendar/",
    "source_reviewed": true,
    "compiled": "2026-09-21",
@@ -244,11 +257,13 @@
    "location": "Nationwide"
   },
   "3d8a3d9936ff": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "start": "2026-09-28",
    "source_url": "https://www.elso.org/ecmo-education/elso-meetings.aspx",
    "note": "The organizer's meetings page lists September 28 to October 1; an earlier registration source listed September 29."
   },
   "95a63454c08f": {
+   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
    "end": "2026-04-17",
    "source_url": "https://www.aaacn.org/sites/default/files/images/conference/AAACN%202026%20prospectus_FINAL.pdf",
    "note": "The organizer's conference prospectus and poster call list April 14 to 17; an oral abstracts notice lists April 18."
@@ -378,10 +393,14 @@
   },
   "2b995c9ce64e": {
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+   "reviewed_on": "2026-09-25",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 PM ET', recorded as 23:59 America/New_York so the site closes the call at that time.",
    "source_url": "https://www.asco.org/annual-meeting/dates-know",
-   "evidence": "June 4 - 8, 2027 location_on McCormick Place, Chicago, IL #ASCO27"
+   "evidence": "June 4 - 8, 2027 location_on McCormick Place, Chicago, IL #ASCO27",
+   "call_patch": {
+    "due_time": "23:59",
+    "tz": "America/New_York"
+   }
   },
   "63030a7dee9b": {
    "source_reviewed": true,
@@ -480,10 +499,14 @@
    },
    "note": null,
    "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
+   "reviewed_on": "2026-09-25",
    "evidence": "ENRS 39th Annual Scientific Sessions LOEWS PHILADELPHIA 03 31 27 - 04 02 27",
    "evidence_image": "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png",
-   "_why": "Repopulation audit 2026-09-24: banner image re-read in a browser on 2026-09-24 (ENRS 39th Annual Scientific Sessions, LOEWS PHILADELPHIA, 03.31.27 - 04.02.27); the site publishes the dates only in that image."
+   "_why": "Repopulation audit 2026-09-24: banner image re-read in a browser on 2026-09-24 (ENRS 39th Annual Scientific Sessions, LOEWS PHILADELPHIA, 03.31.27 - 04.02.27); the site publishes the dates only in that image. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. Eastern', recorded as 23:59 America/New_York so the site closes the call at that time.",
+   "call_patch": {
+    "due_time": "23:59",
+    "tz": "America/New_York"
+   }
   },
   "bfb1cef79cb1": {
    "note": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
@@ -560,8 +583,8 @@
    "source_url": "https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/",
    "evidence": "AAAA 2027 Annual Conference — April 14 – 18, 2027 — Orlando, FL",
    "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Reconciled 2026-09-24 from the organizer's own official event page rather than a social post. The remaining ambiguity is recorded inside the record instead of on the card.",
+   "reviewed_on": "2026-09-25",
+   "_why": "Reconciled 2026-09-24 from the organizer's own official event page rather than a social post. The remaining ambiguity is recorded inside the record instead of on the card. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 PM (EST)', recorded as 23:59 America/New_York so the site closes the call at that time.",
    "location": "Orlando World Center Marriott, Orlando, FL",
    "date_conflict": false,
    "note": "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session.",
@@ -574,7 +597,11 @@
     "url": "https://www.anesthetist.org/aaaa-posters-2027"
    },
    "start": "2027-04-14",
-   "end": "2027-04-18"
+   "end": "2027-04-18",
+   "call_patch": {
+    "due_time": "23:59",
+    "tz": "America/New_York"
+   }
   },
   "0c7fb520bb72": {
    "source_url": "https://www.nonpf.org/page/futureconferences",
@@ -704,15 +731,15 @@
   },
   "5c74b6afd77c": {
    "call": {
-    "status": "open",
+    "status": "closed",
     "opens": null,
-    "closes": null,
+    "closes": "2026-08-10",
     "final": null,
-    "text": "Call for Abstracts shown as open on the organizer page (deadline not stated on that page)",
-    "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/"
+    "text": "'The deadline has been extended to August 10, 2026.' 'The deadline for abstract submissions has closed.'",
+    "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/call-for-abstracts/"
    },
-   "_why": "Repopulation audit 2026-09-24: organizer page shows an open Call for Abstracts; call was stored as closed.",
-   "reviewed_on": "2026-09-24",
+   "_why": "Repopulation audit 2026-09-24: organizer page shows an open Call for Abstracts; call was stored as closed. 2026-09-25: the call was shown as open with no due date. The organizer's call page reads 'The deadline has been extended to August 10, 2026' and 'The deadline for abstract submissions has closed.'",
+   "reviewed_on": "2026-09-25",
    "source_reviewed": true,
    "evidence": "ACS Innovation Summit March 11-12, 2027 | Chicago, Illinois"
   },
@@ -887,8 +914,12 @@
    "location": "New Orleans, LA",
    "source_reviewed": true,
    "evidence": "May 14-19, 2027 — New Orleans, LA",
-   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
-   "reviewed_on": "2026-09-24"
+   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '5 p.m. ET', recorded as 17:00 America/New_York so the site closes the call at that time.",
+   "reviewed_on": "2026-09-25",
+   "call_patch": {
+    "due_time": "17:00",
+    "tz": "America/New_York"
+   }
   },
   "199e0768daa7": {
    "start": "2028-05-19",
@@ -919,6 +950,89 @@
     "text": "Plenary Sessions & Posters: Nov. 18 - Jan. 13, 2027 (no time zone given); Late-Breaking Abstracts: Feb. 10 - Mar. 3, 2027",
     "url": "https://vam.vascular.org/present-at-vam/"
    }
+  },
+  "3b0963321583": {
+   "_why": "2026-09-25: the call was shown as open with no due date. The organizer's call page gives 'Materials must be received by NPAA by February 27, 2026', so it is closed.",
+   "reviewed_on": "2026-09-25",
+   "call": {
+    "status": "closed",
+    "opens": null,
+    "closes": "2026-02-27",
+    "final": null,
+    "text": "Podium and poster abstracts: 'Materials must be received by NPAA by February 27, 2026'",
+    "url": "https://npaa.wildapricot.org/event-6524437"
+   }
+  },
+  "fce4c70fffdc": {
+   "_why": "2026-09-25: the call was shown as open with no due date; the organizer's event page read that day shows no call for poster abstracts, so the call is shown as not posted.",
+   "reviewed_on": "2026-09-25",
+   "call": {
+    "status": "tba",
+    "opens": null,
+    "closes": null,
+    "final": null,
+    "text": "Call for poster abstracts not shown on the organizer's event page as of September 25, 2026",
+    "url": "https://isapn.enpnetwork.com/nurse-practitioner-events/149858-2026-aprn-midwest-conference"
+   }
+  },
+  "f51b0a709cbc": {
+   "_why": "2026-09-25: the call had no due date. The organizer's abstracts page reads 'Abstract Submission Opens: Tuesday, September 8, 2026' and 'Abstract Submission Deadline: Monday, November 2, 2026, 11:00 AM EST / 8:00 AM PST'.",
+   "reviewed_on": "2026-09-25",
+   "call": {
+    "status": "open",
+    "opens": "2026-09-08",
+    "closes": "2026-11-02",
+    "final": null,
+    "due_time": "11:00",
+    "tz": "America/New_York",
+    "text": "Abstract submission opens Tuesday, September 8, 2026; deadline Monday, November 2, 2026, 11:00 AM EST / 8:00 AM PST",
+    "url": "https://wocnext.org/abstracts?cpn_id=6aa04cc25b9233b52e87c5e6&e_id=6a0cc42024090bba99463d4b"
+   }
+  },
+  "fff7c127c15a": {
+   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '1 p.m. ET', recorded as 13:00 America/New_York so the site closes the call at that time.",
+   "reviewed_on": "2026-09-25",
+   "call_patch": {
+    "due_time": "13:00",
+    "tz": "America/New_York"
+   }
+  },
+  "63ef4e7d0d47": {
+   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 PM CT', recorded as 23:59 America/Chicago so the site closes the call at that time.",
+   "reviewed_on": "2026-09-25",
+   "call_patch": {
+    "due_time": "23:59",
+    "tz": "America/Chicago"
+   }
+  },
+  "e7405aabe655": {
+   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. PST (read as Pacific time)', recorded as 23:59 America/Vancouver so the site closes the call at that time.",
+   "reviewed_on": "2026-09-25",
+   "call_patch": {
+    "due_time": "23:59",
+    "tz": "America/Vancouver"
+   }
+  },
+  "71c8c7f9ec54": {
+   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. CT', recorded as 23:59 America/Chicago so the site closes the call at that time.",
+   "reviewed_on": "2026-09-25",
+   "call_patch": {
+    "due_time": "23:59",
+    "tz": "America/Chicago"
+   }
+  },
+  "53bd4ec0ecfe": {
+   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as 'noon ET', recorded as 12:00 America/New_York so the site closes the call at that time.",
+   "reviewed_on": "2026-09-25",
+   "call_patch": {
+    "due_time": "12:00",
+    "tz": "America/New_York"
+   }
+  },
+  "d127e081c886": {
+   "_why": "Red team F28 (2026-09-25): the stored quote ran to 212 characters; it is trimmed to its dated opening, still verbatim.",
+   "reviewed_on": "2026-09-25",
+   "evidence": "54th Annual Course ... May 22-24, 2027 ... New Orleans, Louisiana"
   }
  },
  "rules": {
