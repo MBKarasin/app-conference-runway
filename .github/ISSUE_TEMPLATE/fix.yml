@@ -1,0 +1,35 @@
+name: Suggest a fix
+description: Report a date, place, abstract call or link on the Runway that differs from the organizer's own material.
+title: "Fix: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Please link the organizer's own page, PDF, banner or post that shows the correct detail. Aggregators and third-party listings are not used as sources.
+  - type: input
+    id: record
+    attributes:
+      label: Record
+      description: The meeting and year, or the link from the record's "Copy link" button.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What differs
+      description: The field (dates, place, format, abstract call or deadline, eligibility, link), what the Runway shows, and what the organizer says.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Organizer source
+      description: The exact organizer page, PDF, banner or post.
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: wording
+    attributes:
+      label: Organizer wording
+      description: The organizer's own words that show the correct detail, copied from the source.
