@@ -7,7 +7,7 @@ X-PUBLISHED-TTL:PT12H
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:ac347521ac00@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:9th Critical Care Symposium (AACN Central New Jersey Chapter)
@@ -21,7 +21,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:b32ffbb674ac@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260926
 SUMMARY:NLN Education Summit (National League for Nursing)
@@ -33,7 +33,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:3d8a3d9936ff@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261002
 SUMMARY:ELSO Annual Conference (Extracorporeal Life Support Organization)
@@ -45,7 +45,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2baa3d5fee7a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:ICCM Summit for Advanced Practice Providers (Institute for Critical
@@ -58,7 +58,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:8ac026140ba2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261028
 SUMMARY:Academic Nursing Leadership Conference (AACN (Colleges of Nursing))
@@ -70,7 +70,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:97a2b66704e8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261107
 SUMMARY:ELSO LATAM Congress (ELSO Latin America)
@@ -82,7 +82,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f21293985b2b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261107
 SUMMARY:NONPF Fall Conference (National Organization of Nurse Practitioner 
@@ -95,7 +95,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:70ef5db04d3c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:FNAP Annual Conference (Forum of Nurses in Advanced Practice (NJ))
@@ -109,7 +109,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:06fa9fc2c96e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:APN Conference (Organization of Nurse Leaders of New Jersey)
@@ -121,7 +121,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:365588c0f079@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261206
 SUMMARY:Transform (AACN (Colleges of Nursing))
@@ -133,7 +133,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:47b8521ad757@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270115
 SUMMARY:Doctoral Education Conference (AACN (Colleges of Nursing))
@@ -145,7 +145,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f138e831ff89@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270128
 SUMMARY:IMSH (Society for Simulation in Healthcare)
@@ -157,7 +157,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:250b367d592e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270128
 DTEND;VALUE=DATE:20270201
 SUMMARY:STS Annual Meeting (Society of Thoracic Surgeons)
@@ -169,7 +169,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4963c59b8b50@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270210
 SUMMARY:Health Policy Conference (American Association of Nurse Practitione
@@ -182,7 +182,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:1856cb701061@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270317
 SUMMARY:Deans Annual Meeting (AACN (Colleges of Nursing))
@@ -194,7 +194,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:7b6f95d9ef1c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270320
 SUMMARY:NJ Emergency Care Conference (New Jersey Emergency Nurses Associati
@@ -207,7 +207,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a4c64b558932@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270322
 SUMMARY:AmSECT International Conference (American Society of ExtraCorporeal
@@ -220,7 +220,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a4c64b558932-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Abstract deadline: AmSECT International Conference
@@ -230,7 +230,7 @@ URL:https://amsect.org/events-education/international-conference
 END:VEVENT
 BEGIN:VEVENT
 UID:67a017b14a9f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270331
 DTEND;VALUE=DATE:20270402
 SUMMARY:NJLN Annual Convention (New Jersey League for Nursing)
@@ -242,7 +242,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:67a017b14a9f-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
 SUMMARY:Abstract deadline: NJLN Annual Convention
@@ -252,7 +252,7 @@ URL:https://www.njln.org/call_for_abstracts.php
 END:VEVENT
 BEGIN:VEVENT
 UID:f728d5279341@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270331
 DTEND;VALUE=DATE:20270403
 SUMMARY:ENRS Annual Scientific Sessions (Eastern Nursing Research Society)
@@ -264,7 +264,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f728d5279341-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Abstract deadline: ENRS Annual Scientific Sessions
@@ -277,7 +277,7 @@ URL:https://enrs2027conference.oa-event.com/abstracts
 END:VEVENT
 BEGIN:VEVENT
 UID:068ad5e18e97@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:REVIVE (Penn Medicine Center for Resuscitation Science)
@@ -289,7 +289,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:61060a9b90f8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270414
 SUMMARY:Global Surgical Conference & Expo (AORN)
@@ -301,7 +301,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:8f38e757e5c7@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270414
 DTEND;VALUE=DATE:20270418
 SUMMARY:ISHLT Annual Meeting (International Society for Heart and Lung Tran
@@ -314,7 +314,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:8f38e757e5c7-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:Abstract deadline: ISHLT Annual Meeting
@@ -324,7 +324,7 @@ URL:https://www.ishlt.org/annual-meeting
 END:VEVENT
 BEGIN:VEVENT
 UID:087bcd57f48e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270414
 DTEND;VALUE=DATE:20270419
 SUMMARY:NONPF Annual Conference (National Organization of Nurse Practitione
@@ -338,7 +338,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:87651078a9c4@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270428
 DTEND;VALUE=DATE:20270502
 SUMMARY:EuroELSO Congress (ELSO European chapter)
@@ -350,7 +350,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:5010c607ecdc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270505
 SUMMARY:AATS Annual Meeting (American Association for Thoracic Surgery)
@@ -362,7 +362,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:5010c607ecdc-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Abstract deadline: AATS Annual Meeting
@@ -372,7 +372,7 @@ URL:https://events.aats.org/am27
 END:VEVENT
 BEGIN:VEVENT
 UID:fc952b75dcbc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270506
 SUMMARY:National Teaching Institute (NTI) (AACN (Critical-Care Nurses))
@@ -384,7 +384,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:244711dc3e57@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270609
 DTEND;VALUE=DATE:20270613
 SUMMARY:INACSL27 (Int'l Nursing Association for Clinical Simulation & Learn
@@ -397,7 +397,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:244711dc3e57-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Abstract deadline: INACSL27
@@ -407,7 +407,7 @@ URL:https://www.inacsl.org/inacsl27
 END:VEVENT
 BEGIN:VEVENT
 UID:6df13a544c57@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270615
 DTEND;VALUE=DATE:20270620
 SUMMARY:AANP National Conference (American Association of Nurse Practitione
@@ -420,7 +420,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e68c8f327393@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270617
 DTEND;VALUE=DATE:20270620
 SUMMARY:APAPP Annual National Conference (Association of Pulmonary Advanced
@@ -433,7 +433,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:91ae0e5fac82@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270716
 DTEND;VALUE=DATE:20270719
 SUMMARY:International Nursing Research Congress (Sigma Theta Tau Internatio
@@ -448,7 +448,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:193b9f56396b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270916
 DTEND;VALUE=DATE:20270919
 SUMMARY:NLN Education Summit (National League for Nursing)
@@ -460,7 +460,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:0b79c69409b5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271029
 DTEND;VALUE=DATE:20271102
 SUMMARY:Biennial Convention (Sigma Theta Tau International)
@@ -472,7 +472,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e00fdc9661cd@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270317
 SUMMARY:Critical Care Congress (Society of Critical Care Medicine)
@@ -484,7 +484,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ba1fd203973c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261021
 SUMMARY:Fundamental Critical Care Support (FCCS) (SCCM course hosted by Rob
@@ -497,7 +497,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ceca55093877@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261011
 SUMMARY:Health Policy Conference (American Academy of Nursing)
@@ -509,7 +509,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:12b654aab1f6@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261013
 SUMMARY:ACNM Annual Meeting & Exhibition (American College of Nurse-Midwive
@@ -522,7 +522,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:db6c943ce1b9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270225
 DTEND;VALUE=DATE:20270301
 SUMMARY:EDGE (nurse anesthesia educators) (American Association of Nurse An
@@ -535,7 +535,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:002ad3b7a061@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270416
 DTEND;VALUE=DATE:20270422
 SUMMARY:Mid-Year Assembly (American Association of Nurse Anesthesiology)
@@ -547,7 +547,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:63030a7dee9b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270808
 DTEND;VALUE=DATE:20270813
 SUMMARY:AANA Annual Congress (American Association of Nurse Anesthesiology)
@@ -559,7 +559,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:63030a7dee9b-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:Abstract deadline: AANA Annual Congress
@@ -569,7 +569,7 @@ URL:https://www.aana.com/event/aana-annual-congress-2027/
 END:VEVENT
 BEGIN:VEVENT
 UID:a00f57dd940f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270619
 DTEND;VALUE=DATE:20270624
 SUMMARY:AWHONN Convention (Association of Women's Health\, Obstetric and Ne
@@ -582,7 +582,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a00f57dd940f-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Abstract deadline: AWHONN Convention
@@ -592,7 +592,7 @@ URL:https://awhonnconvention.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:b3e96aab3259@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261101
 SUMMARY:Magnet & Pathway Conference (American Nurses Credentialing Center)
@@ -604,7 +604,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2d8faec4e7af@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261029
 SUMMARY:ANE Research Symposium (American Nurses Enterprise (ANA/ANCC))
@@ -616,7 +616,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:47d2e79140e6@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270421
 SUMMARY:Professional Development & Practice Summit (American Nurses Credent
@@ -629,7 +629,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:53bd4ec0ecfe@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271007
 DTEND;VALUE=DATE:20271010
 SUMMARY:Magnet & Pathway Conference (American Nurses Credentialing Center)
@@ -641,7 +641,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:53bd4ec0ecfe-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:Abstract deadline: Magnet & Pathway Conference
@@ -651,7 +651,7 @@ URL:https://magnetpathwaycon.nursingworld.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:bfb1cef79cb1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270717
 DTEND;VALUE=DATE:20270725
 SUMMARY:PNAA National Convention (Philippine Nurses Association of America)
@@ -663,7 +663,7 @@ DESCRIPTION:Organizer save-the-date\; programme still to come (2026-09-24).
 END:VEVENT
 BEGIN:VEVENT
 UID:d0b45cb18fd0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261214
 SUMMARY:JANS Annual Conference (Japan Academy of Nursing Science)
@@ -675,7 +675,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2b4240065e0a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271127
 DTEND;VALUE=DATE:20271129
 SUMMARY:JANS Annual Conference (Japan Academy of Nursing Science)
@@ -687,7 +687,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:7439fe42fefc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261005
 SUMMARY:AVA Annual Scientific Meeting (Association for Vascular Access)
@@ -700,7 +700,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:346e4bdd9109@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270720
 DTEND;VALUE=DATE:20270723
 SUMMARY:BCEN Learn Live (Board of Certification for Emergency Nursing)
@@ -712,7 +712,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:9e0e24120486@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:Professional Conference & Annual Meeting (New Jersey State Nurses A
@@ -725,7 +725,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f206e07262c2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pharm Day Conference (The Nurse Practitioners of New York)
@@ -737,7 +737,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:341d49a57d61@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261026
 SUMMARY:North American Congress of Clinical Toxicology (NACCT) (America's P
@@ -750,7 +750,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:184a1eb2a20c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270915
 DTEND;VALUE=DATE:20270920
 SUMMARY:North American Congress of Clinical Toxicology (NACCT) (America's P
@@ -763,7 +763,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:fff7c127c15a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270413
 SUMMARY:ACC.27 Annual Scientific Session (American College of Cardiology)
@@ -775,7 +775,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:fff7c127c15a-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Abstract deadline: ACC.27 Annual Scientific Session
@@ -785,7 +785,7 @@ URL:https://accscientificsession.acc.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:d32cd8f73f22@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260930
 SUMMARY:Clinical Congress (American College of Surgeons)
@@ -799,7 +799,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4dd5c1ce3f89@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271016
 DTEND;VALUE=DATE:20271020
 SUMMARY:Clinical Congress (American College of Surgeons)
@@ -813,7 +813,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a53f68556e14@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261116
 SUMMARY:TQIP Annual Conference (American College of Surgeons)
@@ -827,7 +827,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:0e593bbb8b12@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271115
 DTEND;VALUE=DATE:20271118
 SUMMARY:TQIP Annual Conference (American College of Surgeons)
@@ -841,7 +841,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:5c74b6afd77c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270311
 DTEND;VALUE=DATE:20270313
 SUMMARY:Innovation Summit (American College of Surgeons)
@@ -855,7 +855,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ee1eb9c0e631@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270513
 DTEND;VALUE=DATE:20270517
 SUMMARY:Heart Rhythm (Heart Rhythm Society)
@@ -867,7 +867,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ee1eb9c0e631-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Abstract deadline: Heart Rhythm
@@ -878,7 +878,7 @@ URL:https://heartrhythm.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:c62cab081779@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260921
 SUMMARY:HRX Live (Heart Rhythm Society)
@@ -890,7 +890,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:48ef8653cead@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261024
 SUMMARY:NCS Annual Meeting (Neurocritical Care Society)
@@ -902,7 +902,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:20467b982cf4@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270927
 DTEND;VALUE=DATE:20271001
 SUMMARY:NCS Annual Meeting (Neurocritical Care Society)
@@ -916,7 +916,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:31f21fec28cb@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270330
 DTEND;VALUE=DATE:20270403
 SUMMARY:SHM Converge (Society of Hospital Medicine)
@@ -928,7 +928,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:31f21fec28cb-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Abstract deadline: SHM Converge
@@ -940,7 +940,7 @@ URL:https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=EQLVXWN
 END:VEVENT
 BEGIN:VEVENT
 UID:acf27c4896bf@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260919
 SUMMARY:Multisite Leaders in Hospital Medicine Summit (Society of Hospital 
@@ -953,7 +953,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:273ab4936c7d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261023
 SUMMARY:Leadership Academy (Society of Hospital Medicine)
@@ -965,7 +965,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:27b71d387fea@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270602
 DTEND;VALUE=DATE:20270604
 SUMMARY:SVN Annual Conference (Society for Vascular Nursing)
@@ -977,7 +977,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:43862213a496@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270317
 SUMMARY:AANN Annual Conference (American Association of Neuroscience Nurses
@@ -990,7 +990,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-23). C
 END:VEVENT
 BEGIN:VEVENT
 UID:43862213a496-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Abstract deadline: AANN Annual Conference
@@ -1001,7 +1001,7 @@ URL:https://app.oxfordabstracts.com/api/auth/aann/start
 END:VEVENT
 BEGIN:VEVENT
 UID:260f68c5cb83@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:International Neuroscience Nursing Research Symposium (American Ass
@@ -1014,7 +1014,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-23). C
 END:VEVENT
 BEGIN:VEVENT
 UID:260f68c5cb83-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Abstract deadline: International Neuroscience Nursing Research Symp
@@ -1025,7 +1025,7 @@ URL:https://aann.org/meetings/virtual-innrs
 END:VEVENT
 BEGIN:VEVENT
 UID:79ff0d69f162@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261031
 SUMMARY:World Congress on Pain (International Association for the Study of 
@@ -1038,7 +1038,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-23). C
 END:VEVENT
 BEGIN:VEVENT
 UID:dbfaf50988f0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261020
 SUMMARY:NAM Annual Meeting (National Academy of Medicine)
@@ -1050,7 +1050,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a82459f399b8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Catalyzing Healthy Longevity: Global Innovator Summit (National Aca
@@ -1063,7 +1063,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6e8d92987926@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261112
 SUMMARY:AMIA Annual Symposium (American Medical Informatics Association)
@@ -1077,7 +1077,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:63b4fd60df55@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270412
 DTEND;VALUE=DATE:20270416
 SUMMARY:AMIA Amplify (Informatics Summit + Clinical Informatics Conference)
@@ -1090,7 +1090,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:64715754b2b0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270412
 DTEND;VALUE=DATE:20270416
 SUMMARY:AONL Annual Conference (American Organization for Nursing Leadershi
@@ -1103,7 +1103,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:3d05eaea0c63@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270606
 DTEND;VALUE=DATE:20270609
 SUMMARY:Professional Governance Leadership Conference (American Organizatio
@@ -1116,7 +1116,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d99c10e3c6f2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261007
 SUMMARY:AAP National Conference & Exhibition (American Academy of Pediatric
@@ -1129,7 +1129,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:9dc31c4e839e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271015
 DTEND;VALUE=DATE:20271020
 SUMMARY:AAP National Conference & Exhibition (American Academy of Pediatric
@@ -1142,7 +1142,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:565a5301b57e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270325
 SUMMARY:National Conference on Pediatric Health Care (National Association 
@@ -1155,7 +1155,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:8a0d140dd475@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Pediatric Virtual Symposium (National Association of Pediatric Nurs
@@ -1168,7 +1168,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2cb4704b50ae@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Delaware Valley Chapter Fall Conference (National Association of Pe
@@ -1181,7 +1181,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4b6554deed4e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271006
 DTEND;VALUE=DATE:20271009
 SUMMARY:NANN Annual Conference (National Association of Neonatal Nurses)
@@ -1193,7 +1193,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4b6554deed4e-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270105
 DTEND;VALUE=DATE:20270106
 SUMMARY:Abstract deadline: NANN Annual Conference
@@ -1203,7 +1203,7 @@ URL:https://nann.org/education/past-conferences/
 END:VEVENT
 BEGIN:VEVENT
 UID:a83ba760ec56@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270411
 SUMMARY:Advanced Practice Neonatal Nurses Conference (Academy of Neonatal N
@@ -1216,7 +1216,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:751c879e18d6@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261018
 SUMMARY:National Neonatal Nurse Practitioner Symposium (Florida Association
@@ -1229,7 +1229,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:14b645351008@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271026
 DTEND;VALUE=DATE:20271031
 SUMMARY:National Neonatal Nurse Practitioner Symposium (Florida Association
@@ -1242,7 +1242,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:50174aca501e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261101
 SUMMARY:APNA Annual Conference (American Psychiatric Nurses Association)
@@ -1254,7 +1254,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:14f25ec744d0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270610
 DTEND;VALUE=DATE:20270614
 SUMMARY:Clinical Psychopharmacology Institute (American Psychiatric Nurses 
@@ -1267,7 +1267,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:45ba4529f6fb@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271027
 DTEND;VALUE=DATE:20271031
 SUMMARY:APNA Annual Conference (American Psychiatric Nurses Association)
@@ -1279,7 +1279,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:12c14e0b11a5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270321
 SUMMARY:ISPN Annual Conference (International Society of Psychiatric-Mental
@@ -1292,7 +1292,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:510e499763c0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261018
 SUMMARY:Transcultural Nursing Society Annual Conference (Transcultural Nurs
@@ -1305,7 +1305,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:10976499e525@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270321
 SUMMARY:Annual Assembly of Hospice and Palliative Care (AAHPM & Hospice and
@@ -1318,7 +1318,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:10976499e525-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:Abstract deadline: Annual Assembly of Hospice and Palliative Care
@@ -1329,7 +1329,7 @@ URL:https://aahpm.org/education-events/annual-assembly/
 END:VEVENT
 BEGIN:VEVENT
 UID:725ce7abaff0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270922
 DTEND;VALUE=DATE:20270925
 SUMMARY:HPNA Annual Conference (Hospice and Palliative Nurses Association)
@@ -1341,7 +1341,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:247d1b565c86@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:NJANA Fall Meeting (New Jersey Association of Nurse Anesthetists)
@@ -1353,7 +1353,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c453801a9986@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:9th Annual Administrative (Evening/Night) Supervisor Virtual Confer
@@ -1368,7 +1368,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:e59429cb7eaf@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Annual Nurse Leader and Aspiring Nurse Leader Conference (Organizat
@@ -1383,7 +1383,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d256b6d3541c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270220
 SUMMARY:Annual NNP Conference & Exhibition (Nebraska Nurse Practitioners)
@@ -1397,7 +1397,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:7656f2da8579@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261003
 SUMMARY:NNA Annual Convention (Nebraska Nurses Association)
@@ -1409,7 +1409,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:09391e1f6db0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260928
 SUMMARY:TNP Annual Conference and Skills Workshops (Texas Nurse Practitione
@@ -1422,7 +1422,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a14bab2016f2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270425
 SUMMARY:TNP Pharmacology Conference (Texas Nurse Practitioners)
@@ -1434,7 +1434,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:19f78ae304ab@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270908
 DTEND;VALUE=DATE:20270913
 SUMMARY:TNP Annual Conference and Skills Workshops (Texas Nurse Practitione
@@ -1447,7 +1447,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:19f78ae304ab-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:Abstract deadline: TNP Annual Conference and Skills Workshops
@@ -1457,7 +1457,7 @@ URL:https://texasnp.org/calendar/
 END:VEVENT
 BEGIN:VEVENT
 UID:42a5794291d5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270609
 DTEND;VALUE=DATE:20270612
 SUMMARY:TNA Annual Conference (Texas Nurses Association)
@@ -1469,7 +1469,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:42a5794291d5-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Abstract deadline: TNA Annual Conference
@@ -1479,7 +1479,7 @@ URL:https://www.texasnurses.org/page/newhorizons
 END:VEVENT
 BEGIN:VEVENT
 UID:9c25bb01384b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:District 9 Conference: Jurisprudence\, Geriatrics and Inclusive Car
@@ -1494,7 +1494,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b44b4324cc8c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270225
 DTEND;VALUE=DATE:20270228
 SUMMARY:GANE Conference (Georgia Association for Nursing Education)
@@ -1508,7 +1508,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b44b4324cc8c-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Abstract deadline: GANE Conference
@@ -1519,7 +1519,7 @@ URL:https://gane.nursingnetwork.com/nursing-events/152478-2027-gane-confere
 END:VEVENT
 BEGIN:VEVENT
 UID:a70f1737c4a9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270331
 DTEND;VALUE=DATE:20270404
 SUMMARY:MNRS Annual Research Conference (Midwest Nursing Research Society)
@@ -1531,7 +1531,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a70f1737c4a9-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Abstract deadline: MNRS Annual Research Conference
@@ -1541,7 +1541,7 @@ URL:https://mnrs.org/51st-annual-research-conference/
 END:VEVENT
 BEGIN:VEVENT
 UID:a9ff725ba15b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261101
 SUMMARY:NSNA MidYear Conference (National Student Nurses' Association)
@@ -1553,7 +1553,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:0a2ff5b7cee1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270331
 DTEND;VALUE=DATE:20270404
 SUMMARY:NSNA Annual Convention (National Student Nurses' Association)
@@ -1565,7 +1565,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:563fdff9f17b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261018
 SUMMARY:AAMN Annual Conference (American Association for Men in Nursing)
@@ -1577,7 +1577,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b119c7e72d86@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270420
 DTEND;VALUE=DATE:20270423
 SUMMARY:Nursing Advancement Professionals Conference (AACN (Colleges of Nur
@@ -1590,7 +1590,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:cfbd12c5d3d8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260920
 SUMMARY:REPRESENT! NCCPA Summit (National Commission on Certification of Ph
@@ -1603,7 +1603,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:3aced7452ef5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270209
 DTEND;VALUE=DATE:20270212
 SUMMARY:EMS Association Summit (National Registry of EMTs\, American Ambula
@@ -1618,7 +1618,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c3d8a04559de@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270521
 DTEND;VALUE=DATE:20270526
 SUMMARY:AAPA Conference (American Academy of Physician Associates (AAPA))
@@ -1632,7 +1632,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:19b4ff7f7de5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280519
 DTEND;VALUE=DATE:20280524
 SUMMARY:AAPA Conference (American Academy of Physician Associates (AAPA))
@@ -1644,7 +1644,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2d41c6dd5d42@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290427
 DTEND;VALUE=DATE:20290502
 SUMMARY:AAPA Conference (American Academy of Physician Associates (AAPA))
@@ -1656,7 +1656,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:9f0e3dbb33b1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20300517
 DTEND;VALUE=DATE:20300522
 SUMMARY:AAPA Conference (American Academy of Physician Associates (AAPA))
@@ -1668,7 +1668,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ad0c3446aed7@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260927
 SUMMARY:AAPA Leadership and Advocacy Summit (American Academy of Physician 
@@ -1681,7 +1681,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:622efae52eb8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270304
 SUMMARY:AAPA Executive Leadership Conference (American Academy of Physician
@@ -1694,7 +1694,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b57f0a2c43fe@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270119
 SUMMARY:We Are Family (Medicine) (American Academy of Physician Associates 
@@ -1707,7 +1707,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:71827b86e1b8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260830
 DTEND;VALUE=DATE:20260903
 SUMMARY:Hospital Medicine Essentials (American Academy of Physician Associa
@@ -1720,7 +1720,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:a8f8d986acc5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:Psych Congress PA Institute (HMP Global in partnership with the Ame
@@ -1733,7 +1733,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d3cca844a839@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261011
 SUMMARY:PAEA Education Forum (Physician Assistant Education Association (PA
@@ -1748,7 +1748,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:3120ce066484@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271011
 DTEND;VALUE=DATE:20271017
 SUMMARY:PAEA Education Forum (Physician Assistant Education Association (PA
@@ -1763,7 +1763,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:89122ea45979@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20281016
 DTEND;VALUE=DATE:20281022
 SUMMARY:PAEA Education Forum (Physician Assistant Education Association (PA
@@ -1778,7 +1778,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:890190479333@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20291029
 DTEND;VALUE=DATE:20291104
 SUMMARY:PAEA Education Forum (Physician Assistant Education Association (PA
@@ -1793,7 +1793,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c1ce0f518355@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20301013
 DTEND;VALUE=DATE:20301018
 SUMMARY:PAEA Education Forum (Physician Assistant Education Association (PA
@@ -1808,7 +1808,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:7dad54030a4a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260819
 DTEND;VALUE=DATE:20260822
 SUMMARY:AASPA Annual Virtual Surgical CME Conference (American Association 
@@ -1821,7 +1821,7 @@ DESCRIPTION:Recorded from the organizer's page when published. Confirm deta
 END:VEVENT
 BEGIN:VEVENT
 UID:79d298e81fa1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270609
 DTEND;VALUE=DATE:20270614
 SUMMARY:SDPA Annual Summer Dermatology Conference (Society of Dermatology P
@@ -1834,7 +1834,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ee76d4c7f3bf@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280607
 DTEND;VALUE=DATE:20280612
 SUMMARY:SDPA Annual Summer Dermatology Conference (Society of Dermatology P
@@ -1847,7 +1847,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:da0acddd86ed@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261116
 SUMMARY:SDPA Annual Fall Dermatology Conference (Society of Dermatology Phy
@@ -1860,7 +1860,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:60b19fa7fb93@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271110
 DTEND;VALUE=DATE:20271115
 SUMMARY:SDPA Annual Fall Dermatology Conference (Society of Dermatology Phy
@@ -1873,7 +1873,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:76cdebf2693e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260813
 DTEND;VALUE=DATE:20260817
 SUMMARY:Annual Oncology Symposium for the Healthcare Provider presented by 
@@ -1886,7 +1886,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:cd48f1f07eaf@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270923
 DTEND;VALUE=DATE:20270927
 SUMMARY:Annual Oncology Symposium for the Healthcare Provider presented by 
@@ -1899,7 +1899,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:5b58086a5261@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:ANSPA Annual CME Meeting at CNS (Association of Neurosurgical Physi
@@ -1912,7 +1912,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4b3ff35a6342@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261206
 SUMMARY:Annual PSPA Fall CME Conference (Pennsylvania Society of Physician 
@@ -1927,7 +1927,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ca7bc3b7fac0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271020
 DTEND;VALUE=DATE:20271024
 SUMMARY:Annual PSPA Fall CME Conference (Pennsylvania Society of Physician 
@@ -1942,7 +1942,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ca7bc3b7fac0-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Abstract deadline: Annual PSPA Fall CME Conference
@@ -1954,7 +1954,7 @@ URL:https://www.pspa.net/events-and-cme/annual-conference/speaker-applicati
 END:VEVENT
 BEGIN:VEVENT
 UID:7fc9bef22a02@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20281129
 DTEND;VALUE=DATE:20281202
 SUMMARY:Annual PSPA Fall CME Conference (Pennsylvania Society of Physician 
@@ -1969,7 +1969,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6045a7eb99a7@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20291031
 DTEND;VALUE=DATE:20291104
 SUMMARY:Annual PSPA Fall CME Conference (Pennsylvania Society of Physician 
@@ -1984,7 +1984,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:1fe000589136@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20281011
 DTEND;VALUE=DATE:20281015
 SUMMARY:APNA Annual Conference (American Psychiatric Nurses Association)
@@ -1996,7 +1996,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:09a16f7b1253@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20291003
 DTEND;VALUE=DATE:20291007
 SUMMARY:APNA Annual Conference (American Psychiatric Nurses Association)
@@ -2008,7 +2008,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:7111b734f1a9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260926
 SUMMARY:NPWH Annual Women's Healthcare Conference (National Association of 
@@ -2021,7 +2021,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:55ce2f4bea7b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260927
 SUMMARY:GAPNA ENGAGE (Annual Conference) (Gerontological Advanced Practice 
@@ -2035,7 +2035,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e2105c63aef2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270924
 DTEND;VALUE=DATE:20270927
 SUMMARY:GAPNA ENGAGE (Annual Conference) (Gerontological Advanced Practice 
@@ -2048,7 +2048,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c3f5ebbd1056@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270406
 DTEND;VALUE=DATE:20270411
 SUMMARY:GAPNA PharmaCon (Gerontological Advanced Practice Nurses Associatio
@@ -2061,7 +2061,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b165b6f4103b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270414
 DTEND;VALUE=DATE:20270419
 SUMMARY:ONS Congress (Oncology Nursing Society)
@@ -2075,7 +2075,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b165b6f4103b-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:Abstract deadline: ONS Congress
@@ -2085,7 +2085,7 @@ URL:https://www.ons.org/education-hub/events/ons-congress
 END:VEVENT
 BEGIN:VEVENT
 UID:a473427621a3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280517
 DTEND;VALUE=DATE:20280522
 SUMMARY:ONS Congress (Oncology Nursing Society)
@@ -2099,7 +2099,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d682332fa521@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290516
 DTEND;VALUE=DATE:20290521
 SUMMARY:ONS Congress (Oncology Nursing Society)
@@ -2111,7 +2111,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:5060d2186498@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20300410
 DTEND;VALUE=DATE:20300415
 SUMMARY:ONS Congress (Oncology Nursing Society)
@@ -2123,7 +2123,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:1b19eb013850@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270427
 DTEND;VALUE=DATE:20270501
 SUMMARY:AAACN Annual Conference (American Academy of Ambulatory Care Nursin
@@ -2136,7 +2136,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:700a0cdf7cfc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280410
 DTEND;VALUE=DATE:20280415
 SUMMARY:AAACN Annual Conference (American Academy of Ambulatory Care Nursin
@@ -2149,7 +2149,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:0527bd5e3fed@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290410
 DTEND;VALUE=DATE:20290414
 SUMMARY:AAACN Annual Conference (American Academy of Ambulatory Care Nursin
@@ -2162,7 +2162,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:071abb00898f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20300403
 DTEND;VALUE=DATE:20300406
 SUMMARY:AAACN Annual Conference (American Academy of Ambulatory Care Nursin
@@ -2175,7 +2175,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:98da2c267857@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270305
 SUMMARY:NACNS Annual Conference (National Association of Clinical Nurse Spe
@@ -2188,7 +2188,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:98da2c267857-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
 SUMMARY:Abstract deadline: NACNS Annual Conference
@@ -2200,7 +2200,7 @@ URL:https://nacns.org/news-events/annual-conference/2027-annual-conference/
 END:VEVENT
 BEGIN:VEVENT
 UID:b9f5f06e5958@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261018
 SUMMARY:PCNP Annual Education Conference (Pennsylvania Coalition of Nurse P
@@ -2215,7 +2215,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:89de4656498c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261005
 SUMMARY:NPA Annual Conference (NP26) (The Nurse Practitioner Association Ne
@@ -2228,7 +2228,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:141a39026003@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260927
 SUMMARY:AAENP National Conference: EmergNP (American Academy of Emergency N
@@ -2241,7 +2241,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:819fe90fd52b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261002
 SUMMARY:Emergency Nursing (ENA Annual Conference) (Emergency Nurses Associa
@@ -2254,7 +2254,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-23). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d4e7559150f1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270915
 DTEND;VALUE=DATE:20270919
 SUMMARY:Emergency Nursing (ENA Annual Conference) (Emergency Nurses Associa
@@ -2267,7 +2267,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-23). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f4eb59010957@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260919
 SUMMARY:NANN Annual Conference (National Association of Neonatal Nurses)
@@ -2279,7 +2279,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:75ba2fa2fbf6@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280913
 DTEND;VALUE=DATE:20280916
 SUMMARY:NANN Annual Conference (National Association of Neonatal Nurses)
@@ -2291,7 +2291,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:00fc146c3886@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290828
 DTEND;VALUE=DATE:20290901
 SUMMARY:NANN Annual Conference (National Association of Neonatal Nurses)
@@ -2303,7 +2303,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:43b69fed6ccf@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20300910
 DTEND;VALUE=DATE:20300914
 SUMMARY:NANN Annual Conference (National Association of Neonatal Nurses)
@@ -2315,7 +2315,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:785efb278b8a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261009
 SUMMARY:ACEP Scientific Assembly (American College of Emergency Physicians)
@@ -2327,7 +2327,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c45dffbcbe96@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271025
 DTEND;VALUE=DATE:20271029
 SUMMARY:ACEP Scientific Assembly (American College of Emergency Physicians)
@@ -2339,7 +2339,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:bfff1655d95c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280917
 DTEND;VALUE=DATE:20280921
 SUMMARY:ACEP Scientific Assembly (American College of Emergency Physicians)
@@ -2351,7 +2351,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:27adc53dd3fe@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20291001
 DTEND;VALUE=DATE:20291005
 SUMMARY:ACEP Scientific Assembly (American College of Emergency Physicians)
@@ -2363,7 +2363,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e2d3b8e33ed3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20301017
 DTEND;VALUE=DATE:20301021
 SUMMARY:ACEP Scientific Assembly (American College of Emergency Physicians)
@@ -2375,7 +2375,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:194ce1735b8f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20311027
 DTEND;VALUE=DATE:20311031
 SUMMARY:ACEP Scientific Assembly (American College of Emergency Physicians)
@@ -2387,7 +2387,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2b21ba57d72d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261022
 SUMMARY:CHEST Annual Meeting (American College of Chest Physicians)
@@ -2401,7 +2401,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ab75fe7ba3a1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271024
 DTEND;VALUE=DATE:20271028
 SUMMARY:CHEST Annual Meeting (American College of Chest Physicians)
@@ -2414,7 +2414,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:35115e0458b7@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20281008
 DTEND;VALUE=DATE:20281012
 SUMMARY:CHEST Annual Meeting (American College of Chest Physicians)
@@ -2427,7 +2427,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:61fbf984d79d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20291007
 DTEND;VALUE=DATE:20291011
 SUMMARY:CHEST Annual Meeting (American College of Chest Physicians)
@@ -2440,7 +2440,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:87b64f3fc247@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20301020
 DTEND;VALUE=DATE:20301024
 SUMMARY:CHEST Annual Meeting (American College of Chest Physicians)
@@ -2453,7 +2453,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4631534802b4@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20311026
 DTEND;VALUE=DATE:20311030
 SUMMARY:CHEST Annual Meeting (American College of Chest Physicians)
@@ -2466,7 +2466,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a5ace80185dd@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270514
 DTEND;VALUE=DATE:20270520
 SUMMARY:ATS International Conference (American Thoracic Society)
@@ -2478,7 +2478,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a5ace80185dd-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Abstract deadline: ATS International Conference
@@ -2488,7 +2488,7 @@ URL:https://site.thoracic.org/conference
 END:VEVENT
 BEGIN:VEVENT
 UID:199e0768daa7@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280519
 DTEND;VALUE=DATE:20280525
 SUMMARY:ATS International Conference (American Thoracic Society)
@@ -2500,7 +2500,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ad00946861ac@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290518
 DTEND;VALUE=DATE:20290524
 SUMMARY:ATS International Conference (American Thoracic Society)
@@ -2512,7 +2512,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2b995c9ce64e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270609
 SUMMARY:ASCO Annual Meeting (American Society of Clinical Oncology)
@@ -2524,7 +2524,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2b995c9ce64e-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:Abstract deadline: ASCO Annual Meeting
@@ -2535,7 +2535,7 @@ URL:https://www.asco.org/annual-meeting/dates-know
 END:VEVENT
 BEGIN:VEVENT
 UID:0062195111b0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280602
 DTEND;VALUE=DATE:20280607
 SUMMARY:ASCO Annual Meeting (American Society of Clinical Oncology)
@@ -2547,7 +2547,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:71c8c7f9ec54@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270506
 SUMMARY:AAN Annual Meeting (American Academy of Neurology)
@@ -2559,7 +2559,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:71c8c7f9ec54-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Abstract deadline: AAN Annual Meeting
@@ -2570,7 +2570,7 @@ URL:https://www.aan.com/events/annual-meeting/abstracts
 END:VEVENT
 BEGIN:VEVENT
 UID:c9ffa7bfb548@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280422
 DTEND;VALUE=DATE:20280427
 SUMMARY:AAN Annual Meeting (American Academy of Neurology)
@@ -2582,7 +2582,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:74ad3e8baa9a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290414
 DTEND;VALUE=DATE:20290419
 SUMMARY:AAN Annual Meeting (American Academy of Neurology)
@@ -2594,7 +2594,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4649639a37af@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270324
 SUMMARY:AAD Annual Meeting (American Academy of Dermatology)
@@ -2606,7 +2606,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:1ff6a27ed013@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280317
 DTEND;VALUE=DATE:20280322
 SUMMARY:AAD Annual Meeting (American Academy of Dermatology)
@@ -2618,7 +2618,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:86ed4355e3e5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270415
 DTEND;VALUE=DATE:20270418
 SUMMARY:ACP Internal Medicine Meeting (American College of Physicians)
@@ -2630,7 +2630,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4ad3c79ee3d5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280406
 DTEND;VALUE=DATE:20280409
 SUMMARY:ACP Internal Medicine Meeting (American College of Physicians)
@@ -2642,7 +2642,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:455bd4326a37@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290426
 DTEND;VALUE=DATE:20290429
 SUMMARY:ACP Internal Medicine Meeting (American College of Physicians)
@@ -2654,7 +2654,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4af5be3e26fb@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20300411
 DTEND;VALUE=DATE:20300414
 SUMMARY:ACP Internal Medicine Meeting (American College of Physicians)
@@ -2666,7 +2666,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:8a9b1211a4c8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261025
 SUMMARY:IDWeek (IDSA\, SHEA\, HIVMA\, PIDS and SIDP (joint meeting))
@@ -2678,7 +2678,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e470552624fc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270307
 SUMMARY:AAOS Annual Meeting (American Academy of Orthopaedic Surgeons)
@@ -2690,7 +2690,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:cd91c80f50c3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280315
 DTEND;VALUE=DATE:20280319
 SUMMARY:AAOS Annual Meeting (American Academy of Orthopaedic Surgeons)
@@ -2702,7 +2702,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a435e79a8991@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270618
 DTEND;VALUE=DATE:20270622
 SUMMARY:ADA Scientific Sessions (American Diabetes Association)
@@ -2714,7 +2714,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:64773926d7e3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280609
 DTEND;VALUE=DATE:20280613
 SUMMARY:ADA Scientific Sessions (American Diabetes Association)
@@ -2726,7 +2726,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:06c759e4d87a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290608
 DTEND;VALUE=DATE:20290612
 SUMMARY:ADA Scientific Sessions (American Diabetes Association)
@@ -2738,7 +2738,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:16ee2e3c0b61@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261015
 SUMMARY:ACG Annual Scientific Meeting & Postgraduate Course (American Colle
@@ -2751,7 +2751,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:7fca18685d3c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261216
 SUMMARY:ASH Annual Meeting and Exposition (American Society of Hematology)
@@ -2763,7 +2763,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c00b1f3b1de9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261112
 SUMMARY:ACR Convergence (American College of Rheumatology)
@@ -2775,7 +2775,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a835d76694c5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20281103
 DTEND;VALUE=DATE:20281108
 SUMMARY:AAP National Conference & Exhibition (American Academy of Pediatric
@@ -2788,7 +2788,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:cd63abe4b71c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290928
 DTEND;VALUE=DATE:20291003
 SUMMARY:AAP National Conference & Exhibition (American Academy of Pediatric
@@ -2801,7 +2801,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e22d93b3c36f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270602
 DTEND;VALUE=DATE:20270606
 SUMMARY:Vascular Annual Meeting (VAM) (Society for Vascular Surgery)
@@ -2815,7 +2815,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e22d93b3c36f-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
 SUMMARY:Abstract deadline: Vascular Annual Meeting (VAM)
@@ -2826,7 +2826,7 @@ URL:https://vam.vascular.org/present-at-vam/
 END:VEVENT
 BEGIN:VEVENT
 UID:190736c24248@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280531
 DTEND;VALUE=DATE:20280604
 SUMMARY:Vascular Annual Meeting (VAM) (Society for Vascular Surgery)
@@ -2840,7 +2840,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:34fcc9acbeb5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290613
 DTEND;VALUE=DATE:20290617
 SUMMARY:Vascular Annual Meeting (VAM) (Society for Vascular Surgery)
@@ -2854,7 +2854,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:10eb020fa9c4@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261026
 SUMMARY:Kidney Week (American Society of Nephrology)
@@ -2868,7 +2868,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c89930e5abb8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271027
 DTEND;VALUE=DATE:20271101
 SUMMARY:Kidney Week (American Society of Nephrology)
@@ -2880,7 +2880,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:8471e103e884@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270217
 SUMMARY:ASPEN Nutrition Science & Practice Conference (American Society for
@@ -2893,7 +2893,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6dae12cd91ee@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270325
 SUMMARY:ACHE Congress on Healthcare Leadership (American College of Healthc
@@ -2906,7 +2906,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4397bf8ed392@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260920
 SUMMARY:Advanced Practice Provider (APRN & PA) Leadership Summit (Advanced 
@@ -2919,7 +2919,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:79603cac8cbb@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:ACG Advanced Practice Provider Leadership Summit (American College 
@@ -2932,7 +2932,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f306cd0b410d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261115
 SUMMARY:National Nurse Practitioner Week (American Association of Nurse Pra
@@ -2945,7 +2945,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a6986e02edc1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270124
 SUMMARY:National CRNA Week (American Association of Nurse Anesthesiology)
@@ -2957,7 +2957,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:5dad5a31ae68@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260919
 SUMMARY:Healthcare Simulation Week (Society for Simulation in Healthcare)
@@ -2969,7 +2969,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:8dacb8f4aa3f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270304
 DTEND;VALUE=DATE:20270305
 SUMMARY:National Hospitalist Day (Society of Hospital Medicine)
@@ -2981,7 +2981,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4b4058fa13a3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260921
 SUMMARY:NYSANA Fall Educational Meeting (New York State Association of Nurs
@@ -2998,7 +2998,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:99dcf10cd70f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:PANA Fall Symposium (Pennsylvania Association of Nurse Anesthetists
@@ -3011,7 +3011,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a0ab65d57b0f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270429
 DTEND;VALUE=DATE:20270503
 SUMMARY:PANA Spring Symposium (Pennsylvania Association of Nurse Anesthetis
@@ -3024,7 +3024,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:75c789c89d9d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:DANA Annual Fall Meeting (Delaware Association of Nurse Anesthetist
@@ -3037,7 +3037,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b6e4326839f9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260914
 SUMMARY:MANA Fall Meeting (Maryland Association of Nurse Anesthetists (MANA
@@ -3050,7 +3050,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:40fa6b472356@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270308
 SUMMARY:Northeast Nurse Anesthesiology Summit (Massachusetts Association of
@@ -3063,7 +3063,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:3d801e3f374f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270718
 DTEND;VALUE=DATE:20270721
 SUMMARY:AHA Leadership Summit (American Hospital Association)
@@ -3075,7 +3075,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:10c063f66214@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270314
 SUMMARY:Executive Development Series for Deans (American Association of Col
@@ -3088,7 +3088,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:94bc3d269ab8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261003
 SUMMARY:PONL Annual Nursing Leadership Conference (Pennsylvania Organizatio
@@ -3101,7 +3101,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e1d965344e5e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260930
 SUMMARY:NYONL Annual Meeting and Leadership Conference (New York Organizati
@@ -3116,7 +3116,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d8a045cb8cc3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 SUMMARY:Advanced Practice Provider Symposium (Cooper University Health Care
@@ -3131,7 +3131,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d0d6ef51892a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:Stony Brook Medicine Advanced Practice Provider Symposium (Stony Br
@@ -3148,7 +3148,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b9f577965d09@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270414
 DTEND;VALUE=DATE:20270419
 SUMMARY:AAAA Annual Conference (American Academy of Anesthesiologist Assist
@@ -3161,7 +3161,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b9f577965d09-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:Abstract deadline: AAAA Annual Conference
@@ -3172,7 +3172,7 @@ URL:https://www.anesthetist.org/aaaa-posters-2027
 END:VEVENT
 BEGIN:VEVENT
 UID:214266eb4860@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270909
 DTEND;VALUE=DATE:20270912
 SUMMARY:ACNP National Conference (Australian College of Nurse Practitioners
@@ -3185,7 +3185,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2fbe67b81d88@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:RCN Advanced Nurse Practitioner Conference (Royal College of Nursin
@@ -3200,7 +3200,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:46f7551fa32d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260918
 SUMMARY:ICN NP/APN Network Conference (International Council of Nurses (ICN
@@ -3213,7 +3213,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a8f08aeacf49@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261023
 SUMMARY:4th BRICS+ Nursing Conference (Democratic Nursing Organisation of S
@@ -3229,7 +3229,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:adffdd99fe90@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261128
 SUMMARY:II Simpósio Internacional de Enfermagem – Práticas Avançadas (
@@ -3242,7 +3242,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:abe7e6ee3752@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:Implementation Science Symposium (OKWU Nursing Symposium) (Oklahoma
@@ -3256,7 +3256,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:0c7fb520bb72@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280419
 DTEND;VALUE=DATE:20280424
 SUMMARY:NONPF Annual Conference (National Organization of Nurse Practitione
@@ -3269,7 +3269,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c4b918cf665a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260926
 SUMMARY:NPAO Annual Conference (Nurse Practitioners' Association of Ontario
@@ -3283,7 +3283,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f8b3b1c7431e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260917
 SUMMARY:ACNP National Conference (Australian College of Nurse Practitioners
@@ -3298,7 +3298,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2fedca69186a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:2026台灣胸腔及心臟血管外科學會暨台灣專科護理師
@@ -3314,7 +3314,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b64d6d0401c3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261031
 SUMMARY:2026 Annual Scientific Conference & AGM (National Nurses Associatio
@@ -3327,7 +3327,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:64d695b36d4b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260927
 SUMMARY:IAPACON 2026 – 22nd Annual Conference of the Indian Association o
@@ -3341,7 +3341,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:da908a040f80@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:V Encuentro de Enfermeras de Práctica Avanzada (Fundación para el
@@ -3356,7 +3356,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e7405aabe655@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270429
 DTEND;VALUE=DATE:20270502
 SUMMARY:Pan-Canadian NP Conference (Annual NPAC Conference) (Nurse Practiti
@@ -3370,7 +3370,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e7405aabe655-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Abstract deadline: Pan-Canadian NP Conference (Annual NPAC Conferen
@@ -3382,7 +3382,7 @@ URL:https://npac-aiipc.org/annual-conference/
 END:VEVENT
 BEGIN:VEVENT
 UID:46351b414865@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261025
 SUMMARY:Annual CAPA Conference & National PA Job Fair (Canadian Association
@@ -3394,22 +3394,8 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
   https://capa-acam.ca/
 END:VEVENT
 BEGIN:VEVENT
-UID:8522bb29810a@app-conference-runway
-DTSTAMP:20260925T030832Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261115
-SUMMARY:Advancing Practice Week (NHS England Centre for Advancing Practice)
-LOCATION:Online (Microsoft Teams)
-URL:https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice
- -conference/
-DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
- onfirm details on the organizer page before registering or booking travel.
-  https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-c
- onference/
-END:VEVENT
-BEGIN:VEVENT
 UID:479121152dc2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270601
 SUMMARY:Oncology Nursing Month (Oncology Nursing Society (ONS))
@@ -3421,7 +3407,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:f6bf71a4acf2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270512
 DTEND;VALUE=DATE:20270513
 SUMMARY:International Nurses Day (International Council of Nurses (ICN))
@@ -3433,7 +3419,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:63ef4e7d0d47@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270415
 DTEND;VALUE=DATE:20270418
 SUMMARY:Cardiovascular Nursing Symposium (Preventive Cardiovascular Nurses 
@@ -3446,7 +3432,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:63ef4e7d0d47-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Abstract deadline: Cardiovascular Nursing Symposium
@@ -3458,7 +3444,7 @@ URL:https://pcna.net/events-news/cardiovascular-nursing-symposium/call-for-
 END:VEVENT
 BEGIN:VEVENT
 UID:d8811ac8ad01@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270504
 SUMMARY:NAON Annual Congress (National Association of Orthopaedic Nurses (N
@@ -3471,7 +3457,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f51b0a709cbc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270617
 SUMMARY:WOCNext (Wound\, Ostomy and Continence Nurses Society (WOCN Society
@@ -3484,7 +3470,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:637a8ed896be@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270422
 SUMMARY:ANNA National Symposium (American Nephrology Nurses Association (AN
@@ -3497,7 +3483,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d127e081c886@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270522
 DTEND;VALUE=DATE:20270525
 SUMMARY:SGNA Annual Course (Society of Gastroenterology Nurses and Associat
@@ -3510,7 +3496,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:e9ba48026efc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260928
 SUMMARY:ITNS Annual Symposium (International Transplant Nurses Society (ITN
@@ -3523,7 +3509,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:3a60c3b22691@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261025
 SUMMARY:ASPMN Annual/National Conference (American Society for Pain Managem
@@ -3536,7 +3522,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d4d9fb2509c4@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261019
 SUMMARY:DNPs of Color Annual Conference (DNPs of Color)
@@ -3548,7 +3534,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2854d25554ae@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:DCNP Fall CE Conference (Delaware Coalition of Nurse Practitioners)
@@ -3560,7 +3546,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:0ada99b1e1c5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261114
 SUMMARY:VNPA Conference (NPs: From the Green Mountains to the Frontlines of
@@ -3573,7 +3559,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:fce4c70fffdc@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261024
 SUMMARY:ISAPN APRN Midwest Conference (Illinois Society for Advanced Practi
@@ -3588,7 +3574,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:3eecefb90b41@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270307
 SUMMARY:VCNP Annual Conference (Virginia Council of Nurse Practitioners)
@@ -3600,7 +3586,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:f6211d39cc95@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270224
 DTEND;VALUE=DATE:20270226
 SUMMARY:CAPNI Annual Conference (Coalition of Advanced Practice Nurses of I
@@ -3616,7 +3602,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:259331c36504@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260927
 SUMMARY:NPI Conference: Advancing Professional Practice for Today's Healthc
@@ -3629,7 +3615,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a3400aa377d9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270219
 DTEND;VALUE=DATE:20270221
 SUMMARY:Sunflower Conference (Kansas Advanced Practice Nurses Association)
@@ -3645,7 +3631,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a3400aa377d9-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:Abstract deadline: Sunflower Conference
@@ -3656,7 +3642,7 @@ URL:https://forms.gle/Mun8EChacCsdaTT47
 END:VEVENT
 BEGIN:VEVENT
 UID:1a6415d7840a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260926
 SUMMARY:NDNPA Pharmacology Conference (North Dakota Nurse Practitioner Asso
@@ -3669,7 +3655,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:3b0963321583@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261004
 SUMMARY:NPAA Annual Conference (Nurse Practitioner Alliance of Alabama)
@@ -3681,7 +3667,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:bb92281904a8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260926
 SUMMARY:WNA/WCAPN Annual Convention (Stronger Together) (Wyoming Council fo
@@ -3694,7 +3680,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:5c7ccd77a47e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:MNNP Annual Conference (Precision\, Practice and Policy — Advanci
@@ -3707,7 +3693,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2eb9e5be6405@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260819
 DTEND;VALUE=DATE:20260823
 SUMMARY:MdAPA Annual CME Conference (Maryland Academy of Physician Assistan
@@ -3720,7 +3706,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:bfb74bf6a1f6@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260928
 SUMMARY:CAPACon (California Academy of Physician Associates (CAPA))
@@ -3732,7 +3718,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:fdc9f3233f10@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260827
 DTEND;VALUE=DATE:20260830
 SUMMARY:OAPA Annual Conference (Ohio Association of Physician Assistants (O
@@ -3745,7 +3731,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:841fda73b38b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270704
 SUMMARY:GAPA Summer CME Conference (Georgia Association of Physician Assist
@@ -3758,7 +3744,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:20c096854bba@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260816
 DTEND;VALUE=DATE:20260822
 SUMMARY:NCAPA Annual Summer Conference (North Carolina Academy of Physician
@@ -3771,7 +3757,7 @@ DESCRIPTION:Recorded from the organizer's page when published. Confirm deta
 END:VEVENT
 BEGIN:VEVENT
 UID:bddf4c6417c1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261018
 SUMMARY:MAPA Fall CME Conference (Michigan Academy of Physician Associates 
@@ -3784,7 +3770,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:51ef23154e50@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261105
 SUMMARY:WAPA Fall Conference (Washington Academy of Physician Associates (W
@@ -3797,7 +3783,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:919004c82f9a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270930
 DTEND;VALUE=DATE:20271004
 SUMMARY:WAPA Fall Conference (Washington Academy of Physician Associates (W
@@ -3810,7 +3796,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:66c22879fe97@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:All-Alaska Medical Conference (Alaska Academy of Physician Associat
@@ -3823,7 +3809,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:11bec56c89c2@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261024
 SUMMARY:Aloha Medical Conference (Hawaii Academy of PAs)
@@ -3835,7 +3821,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:4a3ec51c8f18@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261031
 SUMMARY:Indiana Academy of PAs Annual Conference (Indiana Academy of PAs)
@@ -3847,7 +3833,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:460a16759e79@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261028
 SUMMARY:IPAS Fall CME Conference (Healthcare in the Heartland) (Iowa Physic
@@ -3860,7 +3846,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ff96990874e9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261018
 SUMMARY:KAPA Heart of America CME and Annual Members Meeting (Kansas Academ
@@ -3873,7 +3859,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2c19ddbecbae@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260926
 SUMMARY:MAPA Annual Conference (Minnesota Academy of Physician Associates (
@@ -3886,7 +3872,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b3acb5880da6@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270404
 SUMMARY:MAPA Spring CME Conference (Maine Association of Physician Associat
@@ -3899,7 +3885,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:177a0057cbf9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270407
 DTEND;VALUE=DATE:20270410
 SUMMARY:NAPA Spring CME Conference (Nebraska Academy of PAs (NAPA))
@@ -3911,7 +3897,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-25). C
 END:VEVENT
 BEGIN:VEVENT
 UID:49f13f3b7d42@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260801
 SUMMARY:NHSPA & NHOA Summer CME Conference (New Hampshire Society of Physic
@@ -3924,7 +3910,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:e48b8600d4b5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261003
 SUMMARY:OAPA Annual CME Conference (Oklahoma Academy of Physician Associate
@@ -3937,7 +3923,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:34cc11b1b8d3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260921
 SUMMARY:OSPA Fall Conference (Oregon Society of Physician Associates (OSPA)
@@ -3950,7 +3936,7 @@ DESCRIPTION:Recorded from the organizer's page when published (2026-09-22).
 END:VEVENT
 BEGIN:VEVENT
 UID:7f016cb3e84c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:IAANMP Annual National Conference (Irish Association of Advanced Nu
@@ -3963,7 +3949,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:41d98840563a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:ANP-Konferenz (Deutsches Netzwerk Advanced Practice Nursing & Advan
@@ -3978,7 +3964,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c36a4f7d3dff@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:APN X Change Congress (Klinikum Stuttgart)
@@ -3992,7 +3978,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:825ae90df474@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261003
 SUMMARY:V&VN VS Annual Congress (Verpleegkundigen & Verzorgenden Nederland 
@@ -4007,7 +3993,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:45504b46ea75@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271021
 DTEND;VALUE=DATE:20271024
 SUMMARY:Global Emergency Nursing Conference (Emergency Nurses Association (
@@ -4022,7 +4008,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:db80e502cbf5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261002
 SUMMARY:EBPOM Ireland (Evidence Based Perioperative Medicine (EBPOM))
@@ -4034,7 +4020,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2c334a927b68@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:NPAM Annual Conference (Nurse Practitioner Association of Manitoba 
@@ -4047,7 +4033,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2bedae9df083@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261026
 SUMMARY:CANO/ACIO Annual Conference (Canadian Association of Nurses in Onco
@@ -4060,7 +4046,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:a4aa36e9f2f4@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261011
 SUMMARY:NZNO Primary Health Care Nurses Symposium (New Zealand Nurses Organ
@@ -4075,7 +4061,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:823a00629439@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260925
 SUMMARY:NZNO AGM and Conference (New Zealand Nurses Organisation (NZNO))
@@ -4089,7 +4075,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:1b9bb4a85ace@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260927
 SUMMARY:ANZSPM Biennial Conference (Australia and New Zealand Society of Pa
@@ -4104,7 +4090,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:28634019fea8@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270708
 DTEND;VALUE=DATE:20270712
 SUMMARY:ICN Congress (International Council of Nurses (ICN))
@@ -4118,7 +4104,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:56608469cc1e@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270613
 SUMMARY:ACNAP Congress (European Society of Cardiology\, Association of Car
@@ -4131,7 +4117,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:168119a896f1@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261113
 SUMMARY:Congresso Brasileiro de Enfermagem (CBEn) (Associação Brasileira 
@@ -4144,7 +4130,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6b3653108bcd@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261128
 SUMMARY:SOBENFEE Wound Care Congress (Sociedade Brasileira de Enfermagem em
@@ -4157,7 +4143,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:08404cd571fb@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261115
 SUMMARY:Qatar Health Congress (Hamad Medical Corporation)
@@ -4171,7 +4157,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2891e7185321@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261109
 SUMMARY:Padjadjaran International Nursing Conference (Universitas Padjadjar
@@ -4185,7 +4171,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:aa86467715d0@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270107
 DTEND;VALUE=DATE:20270110
 SUMMARY:African-Diaspora Nursing Alliance Ghana Conference (African-Diaspor
@@ -4198,7 +4184,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:426f2f34845c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261124
 SUMMARY:Japan Society of Nurse Practitioner Annual Meeting (Japan Society o
@@ -4211,7 +4197,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:2ec2c80a85dd@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261012
 SUMMARY:Global Nursing Education Innovation Conference (Peking University S
@@ -4226,7 +4212,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b5ed85970d92@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261019
 SUMMARY:Interdisciplinary Nursing Research Forum (Peking University School 
@@ -4241,7 +4227,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b5ed85970d92-call@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:Abstract deadline: Interdisciplinary Nursing Research Forum
@@ -4253,7 +4239,7 @@ URL:https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.
 END:VEVENT
 BEGIN:VEVENT
 UID:df41d3af0294@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261121
 SUMMARY:International Nursing Specialties and Research Congress (Universida
@@ -4266,7 +4252,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:9fa932165f0a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261122
 SUMMARY:SEOC Oncology Nursing Congress (Sociedad Chilena de Enfermería Onc
@@ -4281,7 +4267,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6db24e4a848d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261011
 SUMMARY:ONAN Oncology Nursing Conference (Oncology Nurses Association of Ni
@@ -4294,7 +4280,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-24). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c6226c5e9add@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261128
 SUMMARY:National Postgraduate Nursing Congress (Universidad Autónoma de Ch
@@ -4309,7 +4295,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c7cda51eaed5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261128
 SUMMARY:AEC Community Nursing Congress (Asociación de Enfermería Comunita
@@ -4322,7 +4308,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d78ac8440fe5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 SUMMARY:APN Digital Transformation Seminar (Singapore Nurses Association (S
@@ -4337,7 +4323,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6cfadbc4e525@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261003
 SUMMARY:SGH Wound Nursing Conference (Singapore General Hospital (SGH))
@@ -4349,7 +4335,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:269fb342e367@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261101
 SUMMARY:MPA Annual Congress Pediatric Nursing Symposium (Malaysian Paediatr
@@ -4363,7 +4349,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:41c6ce3f8c5a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261129
 SUMMARY:Asia Pacific Digestive Week (Asian Pacific Association of Gastroent
@@ -4376,7 +4362,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:b4e1a4663559@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261101
 SUMMARY:Sustainable Health Excellence Nursing Conference (Manipal College o
@@ -4389,7 +4375,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6c648ae7c103@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270315
 DTEND;VALUE=DATE:20270317
 SUMMARY:Student Policy Summit (American Association of Colleges of Nursing 
@@ -4402,7 +4388,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:c53a3637f986@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260826
 SUMMARY:AANA Annual Congress (American Association of Nurse Anesthesiology)
@@ -4414,7 +4400,7 @@ DESCRIPTION:Recorded from the organizer's page when published. Confirm deta
 END:VEVENT
 BEGIN:VEVENT
 UID:f21839125747@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260908
 DTEND;VALUE=DATE:20260912
 SUMMARY:National Neonatal Nurses Conference (fall) (Academy of Neonatal Nur
@@ -4427,7 +4413,7 @@ DESCRIPTION:Recorded from the organizer's page when published. Confirm deta
 END:VEVENT
 BEGIN:VEVENT
 UID:24752e2396f9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260926
 SUMMARY:National APP Week (National APP Week)
@@ -4439,7 +4425,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:8b0b0c91a66d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260908
 SUMMARY:Clinical Nurse Specialist Recognition Week (National Association of
@@ -4452,7 +4438,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6d61aa5d1077@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270901
 DTEND;VALUE=DATE:20270908
 SUMMARY:Clinical Nurse Specialist Recognition Week (National Association of
@@ -4465,7 +4451,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:2e125bbc7d77@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280901
 DTEND;VALUE=DATE:20280908
 SUMMARY:Clinical Nurse Specialist Recognition Week (National Association of
@@ -4478,7 +4464,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:a44bccebe596@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290901
 DTEND;VALUE=DATE:20290908
 SUMMARY:Clinical Nurse Specialist Recognition Week (National Association of
@@ -4491,7 +4477,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:95ca82e4ab56@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261011
 SUMMARY:National Midwifery Week (American College of Nurse-Midwives (ACNM))
@@ -4503,7 +4489,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:818ea4493635@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271003
 DTEND;VALUE=DATE:20271010
 SUMMARY:National Midwifery Week (American College of Nurse-Midwives (ACNM))
@@ -4515,7 +4501,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:5d42ef9c2628@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20281001
 DTEND;VALUE=DATE:20281008
 SUMMARY:National Midwifery Week (American College of Nurse-Midwives (ACNM))
@@ -4527,7 +4513,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:1ec9200c2d5f@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20291007
 DTEND;VALUE=DATE:20291014
 SUMMARY:National Midwifery Week (American College of Nurse-Midwives (ACNM))
@@ -4539,7 +4525,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:215614b3e122@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261018
 SUMMARY:Emergency Nurses Week (Emergency Nurses Association (ENA))
@@ -4551,7 +4537,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:52d255cae650@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261115
 SUMMARY:Perioperative Nurses Week (Association of periOperative Registered 
@@ -4564,7 +4550,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:ba22d422575b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260919
 SUMMARY:Neonatal Nurses Week (National Association of Neonatal Nurses (NANN
@@ -4577,7 +4563,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:6e0a36f943a5@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270911
 DTEND;VALUE=DATE:20270918
 SUMMARY:Neonatal Nurses Week (National Association of Neonatal Nurses (NANN
@@ -4590,7 +4576,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-21). C
 END:VEVENT
 BEGIN:VEVENT
 UID:d39f663d3d60@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261026
 SUMMARY:National DNP Week (DNPs of Color (launched the week in 2024\; 2026 
@@ -4604,7 +4590,7 @@ DESCRIPTION:Start date checked against the organizer's page (2026-09-22). C
 END:VEVENT
 BEGIN:VEVENT
 UID:bc1ed82321a6@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261013
 SUMMARY:PA Week (American Academy of Physician Associates)
@@ -4616,7 +4602,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:a2b5b8c2e1e7@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20271006
 DTEND;VALUE=DATE:20271013
 SUMMARY:PA Week (American Academy of Physician Associates)
@@ -4628,7 +4614,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:800b1cb487b4@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20281006
 DTEND;VALUE=DATE:20281013
 SUMMARY:PA Week (American Academy of Physician Associates)
@@ -4640,7 +4626,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:648e8656af70@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20291006
 DTEND;VALUE=DATE:20291013
 SUMMARY:PA Week (American Academy of Physician Associates)
@@ -4652,7 +4638,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:96e3fec22ac3@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270506
 DTEND;VALUE=DATE:20270513
 SUMMARY:National Nurses Week (American Nurses Association)
@@ -4665,7 +4651,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:6d6fa6706822@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280506
 DTEND;VALUE=DATE:20280513
 SUMMARY:National Nurses Week (American Nurses Association)
@@ -4678,7 +4664,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:2b42b6d9698c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290506
 DTEND;VALUE=DATE:20290513
 SUMMARY:National Nurses Week (American Nurses Association)
@@ -4691,7 +4677,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:85dd540efc18@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:Certified Nurses Day (American Nurses Credentialing Center)
@@ -4703,7 +4689,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:b85a61d3a103@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280319
 DTEND;VALUE=DATE:20280320
 SUMMARY:Certified Nurses Day (American Nurses Credentialing Center)
@@ -4715,7 +4701,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:8f16d7beea19@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290319
 DTEND;VALUE=DATE:20290320
 SUMMARY:Certified Nurses Day (American Nurses Credentialing Center)
@@ -4727,7 +4713,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:28fc51707b5d@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270913
 DTEND;VALUE=DATE:20270918
 SUMMARY:Healthcare Simulation Week (Society for Simulation in Healthcare)
@@ -4739,7 +4725,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:0688d9bba35a@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280918
 DTEND;VALUE=DATE:20280923
 SUMMARY:Healthcare Simulation Week (Society for Simulation in Healthcare)
@@ -4751,7 +4737,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:71e541f1a55c@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290917
 DTEND;VALUE=DATE:20290922
 SUMMARY:Healthcare Simulation Week (Society for Simulation in Healthcare)
@@ -4763,7 +4749,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:513ac69cfc17@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280302
 DTEND;VALUE=DATE:20280303
 SUMMARY:National Hospitalist Day (Society of Hospital Medicine)
@@ -4775,7 +4761,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:4020ac53a16b@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290301
 DTEND;VALUE=DATE:20290302
 SUMMARY:National Hospitalist Day (Society of Hospital Medicine)
@@ -4787,7 +4773,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:b71214347edf@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280501
 DTEND;VALUE=DATE:20280601
 SUMMARY:Oncology Nursing Month (Oncology Nursing Society (ONS))
@@ -4799,7 +4785,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:19da068e90bd@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290501
 DTEND;VALUE=DATE:20290601
 SUMMARY:Oncology Nursing Month (Oncology Nursing Society (ONS))
@@ -4811,7 +4797,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:3ac3ec1c7537@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:International Day of the Midwife (International Confederation of Mi
@@ -4824,7 +4810,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:8665d82cae70@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280505
 DTEND;VALUE=DATE:20280506
 SUMMARY:International Day of the Midwife (International Confederation of Mi
@@ -4837,7 +4823,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:56c0fa17eec9@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290505
 DTEND;VALUE=DATE:20290506
 SUMMARY:International Day of the Midwife (International Confederation of Mi
@@ -4850,7 +4836,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:5587cde89282@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20280512
 DTEND;VALUE=DATE:20280513
 SUMMARY:International Nurses Day (International Council of Nurses (ICN))
@@ -4862,7 +4848,7 @@ DESCRIPTION:Computed from the organizer's published rule. Confirm details o
 END:VEVENT
 BEGIN:VEVENT
 UID:e4f8515d8066@app-conference-runway
-DTSTAMP:20260925T030832Z
+DTSTAMP:20260925T031512Z
 DTSTART;VALUE=DATE:20290512
 DTEND;VALUE=DATE:20290513
 SUMMARY:International Nurses Day (International Council of Nurses (ICN))

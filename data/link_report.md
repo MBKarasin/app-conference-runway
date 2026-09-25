@@ -1,13 +1,17 @@
 # Link check — 2026-09-25
 
-Links: 1014 · ok 873 · HTTP 403 90 · HTTP 404 26 · URLError 11 · robots 9 · TimeoutError 2 · HTTP 406 2 · HTTP 401 1
+Links: 1014 · ok 874 · HTTP 403 92 · HTTP 404 26 · robots 9 · URLError 8 · TimeoutError 2 · HTTP 406 2 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
+- HTTP 403 — https://aahpm.org/
+  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
+- HTTP 403 — https://aahpm.org/education-events/annual-assembly/
+  - Annual Assembly of Hospice and Palliative Care (org_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2027-03-17 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url)
 - HTTP 403 — https://aana2026.eventscribe.net/
@@ -22,6 +26,8 @@ Links: 1014 · ok 873 · HTTP 403 90 · HTTP 404 26 · URLError 11 · robots 9 �
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2026-03-02 (source_url)
 - HTTP 403 — https://achewfc.org/event/ache-2023-congress-on-healthcare-leadership/
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2023-03-20 (source_url)
+- TimeoutError — https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-conference/
+  - Advancing Practice Week (org_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2026-11-08 (source_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2027-11-01 (source_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2028-11-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/2027-amplify-informatics-conference
   - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) (org_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2027-04-12 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2028-03-01 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2029-03-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/amia-2024-annual-symposium
@@ -124,12 +130,6 @@ Links: 1014 · ok 873 · HTTP 403 90 · HTTP 404 26 · URLError 11 · robots 9 �
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
-- URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
-  - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
-- URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
-  - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
-- URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
-  - the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2025-10-16 (source_url)
 - URLError — https://web.archive.org/web/20250913144147/https://wcapn.enpnetwork.com/nurse-practitioner-events/147012-2025-wna-convention
   - wyoming-council-for-advanced-practice-nu__wna-wcapn-annual-convention-stronger-together 2025-09-11 (source_url)
 - URLError — https://web.archive.org/web/20250917104539/https://wapa.com/events/wapa-fall-conference-2025/
@@ -164,8 +164,6 @@ Links: 1014 · ok 873 · HTTP 403 90 · HTTP 404 26 · URLError 11 · robots 9 �
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2024-08-29 (source_url)
 - HTTP 404 — https://www.apao.cc/assets/Conference/2025Symposium/APAO25%2028th%20Annual%20Exhibitor%20Prospectus%20Final%205.22.25.pdf
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2025-09-25 (source_url)
-- TimeoutError — https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/
-  - Advanced Practice Provider (APRN & PA) Leadership Summit (archive_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2023-09-13 (source_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2024-09-18 (source_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2025-09-10 (source_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-2025-asco-annual-meeting
   - american-society-of-clinical-oncology__asco-annual-meeting 2025-05-30 (source_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/new-research-highlights-lifestyle-treatment-strategies-2026-annual-meeting
@@ -250,8 +248,8 @@ Links: 1014 · ok 873 · HTTP 403 90 · HTTP 404 26 · URLError 11 · robots 9 �
   - rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (source_url)
 - HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
-- TimeoutError — https://www.svnnet.org/page/PastConferences
-  - SVN Annual Conference (archive_url); society-for-vascular-nursing__svn-annual-conference 2023-06-14 (source_url); society-for-vascular-nursing__svn-annual-conference 2024-06-19 (source_url); society-for-vascular-nursing__svn-annual-conference 2025-06-10 (source_url)
+- TimeoutError — https://www.svnnet.org/page/annualconference
+  - SVN Annual Conference (org_url); society-for-vascular-nursing__svn-annual-conference 2027-06-02 (source_url); society-for-vascular-nursing__svn-annual-conference 2028-06-01 (source_url); society-for-vascular-nursing__svn-annual-conference 2029-06-01 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
 - HTTP 403 — https://www.thenpa.org/
