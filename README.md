@@ -11,13 +11,13 @@ How it works, its limits, and how to reproduce or challenge it: [`site/AI-HANDOF
 ## What a visitor sees
 
 - Four views of the same filtered records: **List** (upcoming records by month), **Calendar** (a month grid), **Orbit** (the landing view: twelve months with the count of each record type) and **Directory** (every recurring series with its history).
-- Filters: **Discipline**, **Focus** (one record type at a time), **Scope**, **Location** and search. Every view is a shareable link.
+- Filters: **Discipline**, **Focus** (one record type at a time), **Scope**, **Location** and search. Every view is a shareable link. **Near City** takes a ZIP code or a place such as "Springfield, IL", "Portland ME" or "London, ON", and says so when it does not know a place.
 - Each record shows its source link and the organizer's quoted wording. Phones get a mobile layout, with a link to the desktop layout.
 
 ## How it stays current
 
 - Every night a GitHub Action re-reads the organizer pages of records that have not ended, writes `data/verification.json` and `data/check_report.md`, archives the day's generated data under `data/snapshots/`, and redeploys if the check and validation pass.
-- Dates that no longer match are listed in the issue **"Runway: dates to review"**. Corrections go in `sources/overrides.json` with a `_why`, the organizer's verbatim wording and the exact URL or image.
+- Dates that no longer match are listed in the issue **"Runway: dates to review"**. Corrections go in `sources/overrides.json` with a `_why`, a `reviewed_on` date, the organizer's verbatim wording and the exact URL or image; the build gate rejects a correction without them.
 - Meetings that have ended are kept as captured and are not re-read.
 - New meetings go in a `sources/group_*.json` file, following `sources/SCHEMA.md`.
 
