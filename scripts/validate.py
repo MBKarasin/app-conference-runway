@@ -55,6 +55,29 @@ for e in d["editions"]:
     if e["end"] >= TODAY and e.get("verify", {}).get("state") not in ("expected", "rule") and not e.get("removed"):
         if not (e.get("evidence") or "").strip(): errs.append(f'{e["series"]} {e["start"]}: upcoming record has no evidence quote')
         if not e.get("source_url"): errs.append(f'{e["series"]} {e["start"]}: upcoming record has no source URL')
+# Red team F28: the provenance conventions are enforced, not only described.
+#  - An upcoming record's quote is 200 characters or fewer (AI Handoff §3.2).
+#  - Every curator correction states why it was made (_why) and, from 2026-09-25, when it was reviewed. The corrections
+#    listed in NO_REVIEW_DATE were made before review dates were kept; no date is invented for them.
+for e in d["editions"]:
+    if e["end"] >= TODAY and len(e.get("evidence") or "") > 200:
+        errs.append(f'{e["series"]} {e["start"]}: upcoming quote is {len(e["evidence"])} characters (200 at most)')
+OV = json.load(open(ROOT / "sources/overrides.json", encoding="utf-8"))
+NO_REVIEW_DATE = {"09391e1f6db0", "371badb11823", "3d8a3d9936ff", "43335d5f76c7", "51e706b5534b", "637a8ed896be", "75c789c89d9d", "7c83d68f1860",
+                  "7fca18685d3c", "85a947e04684", "95a63454c08f", "9e0e24120486", "a8f8d986acc5", "d6cf72ac03b2", "e1d965344e5e", "f5590a05975e"}
+for kind in ("series", "editions"):
+    for k, v in OV.get(kind, {}).items():
+        if not str(v.get("_why") or "").strip(): errs.append(f"override {kind} {k}: states no reason (_why)")
+        if v.get("reviewed_on") and not ISO.match(str(v["reviewed_on"])): errs.append(f"override {kind} {k}: reviewed_on is not a date")
+for k, v in OV.get("editions", {}).items():
+    if not v.get("removed") and not v.get("reviewed_on") and k not in NO_REVIEW_DATE:
+        errs.append(f"override editions {k}: no reviewed_on date")
+    cp = v.get("call_patch") or {}
+    if cp.get("due_time") and not re.match(r"^([01]\d|2[0-3]):[0-5]\d$", cp["due_time"]): errs.append(f"override editions {k}: due_time is not HH:MM")
+for e in d["editions"]:
+    c = e.get("call") or {}
+    if c.get("due_time") and not (re.match(r"^([01]\d|2[0-3]):[0-5]\d$", c["due_time"]) and c.get("tz") and c.get("closes")):
+        errs.append(f'{e["series"]} {e["start"]}: a cut-off time needs HH:MM, a time zone and a closing date')
 for s in d["series"]:
     if not s.get("professions"): errs.append(f'{s["id"]}: no profession tag')
     for field in ("org_url", "archive_url", "proceedings_url"):

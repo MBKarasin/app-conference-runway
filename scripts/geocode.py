@@ -7,7 +7,7 @@ Inputs (downloaded to .geocache/ on first run; public data):
 Outputs:
   sources/geo/locations.json   location string -> {lat, lon, cc, country, continent, state, region, precision}
   site/geo/zip/<zip3>.json     ZCTA centroids, sharded by first three digits (loaded only when someone types a ZIP)
-  site/geo/cities.json         world cities of 100,000+ people, for "near a city"
+  site/geo/cities.json         world cities of 100,000+ people and US cities of 15,000+, with state or province, for "near a city"
 Unresolved locations are listed on stdout; add them by hand to sources/geo/manual.json.
 """
 import csv, io, json, re, sys, zipfile, pathlib, urllib.request, unicodedata
@@ -18,6 +18,7 @@ URLS = {
     "zcta": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_zcta_national.zip",
     "cities": "https://download.geonames.org/export/dump/cities15000.zip",
     "countries": "https://download.geonames.org/export/dump/countryInfo.txt",
+    "admin1": "https://download.geonames.org/export/dump/admin1CodesASCII.txt",
 }
 def get(name):
     f = CACHE / URLS[name].rsplit("/", 1)[1]
@@ -113,8 +114,14 @@ def main():
         z = row["GEOID"]; shards.setdefault(z[:3], {})[z] = [round(float(row["INTPTLAT"]), 3), round(float(row["INTPTLONG"]), 3)]
     for k, v in shards.items():
         json.dump(v, open(zdir / f"{k}.json", "w", encoding="utf-8"), separators=(",", ":"))
-    big = sorted((c for c in cities if c["pop"] >= 100000), key=lambda c: -c["pop"])
-    json.dump([[c["name"], countries[c["cc"]]["name"], round(c["lat"], 3), round(c["lon"], 3)] for c in big],
+    # Each city carries its state or province (GeoNames admin1 name) so "Springfield, IL" and "Portland, ME"
+    # resolve to the right place (red team F05). US cities go down to 15,000 people; elsewhere 100,000.
+    admin1 = {}
+    for line in get("admin1").splitlines():
+        a = line.split("\t")
+        if len(a) > 1: admin1[a[0]] = a[1]
+    big = sorted((c for c in cities if c["pop"] >= 100000 or (c["cc"] == "US" and c["pop"] >= 15000)), key=lambda c: -c["pop"])
+    json.dump([[c["name"], countries[c["cc"]]["name"], round(c["lat"], 3), round(c["lon"], 3), admin1.get(c["cc"] + "." + c["admin1"], "")] for c in big],
               open(ROOT / "site/geo/cities.json", "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     prec = {}
     for g in out.values(): prec[g["precision"]] = prec.get(g["precision"], 0) + 1

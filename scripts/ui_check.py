@@ -420,6 +420,107 @@ def main():
             tctx.close()
         check("desktop: no layout switch", not page.locator(".layout-toggle").is_visible())
 
+        # 12b. Red-team fixes of 2026-09-25 (F05, F10, F11, F13, F16, F17, F20, F23), at the fixed clock.
+        from urllib.parse import quote
+        rctx = browser.new_context(viewport={"width": 1440, "height": 1000}, timezone_id="America/New_York")
+        rpg = rctx.new_page(); rpg.clock.set_fixed_time(FIXED_NOW)
+        rpg.on("pageerror", lambda e: errors.append(str(e)))
+        def rgo(hash_=""):
+            rpg.goto(base + ("#" + hash_ if hash_ else ""), wait_until="networkidle")
+            rpg.reload(wait_until="networkidle")
+            rpg.wait_for_selector("#quickfocus .chip", timeout=15000)
+        day = FIXED_NOW[:10]
+        # F16: each index opens its definition on click (tap) and closes with Escape.
+        rgo("")
+        n_idx = rpg.locator("#updated button.idx").count()
+        shown = closed = False
+        if n_idx:   # an older page has no index buttons: the check fails instead of stopping the run
+            rpg.locator("#updated button.idx").first.click()
+            shown = rpg.locator("#idx-note").is_visible() and "dated records" in rpg.inner_text("#idx-note")
+            rpg.keyboard.press("Escape")
+            closed = not rpg.locator("#idx-note").is_visible()
+        check("F16: each index opens its definition on click or tap; Escape closes it", n_idx == 2 and shown and closed, f"{n_idx} index buttons, shown={shown}, closed={closed}")
+        # F17: no control inside a control; a list card opens from its title button; the month grid claims no grid role.
+        rgo("display=list")
+        sem = rpg.evaluate("""({nested: document.querySelectorAll('#view button button, #view [role=button] button').length,
+            cards: document.querySelectorAll('#view article.ev').length, open: document.querySelectorAll('#view article.ev .ev-open').length,
+            rolebtn: document.querySelectorAll('#view article[role=button]').length})""")
+        opened = False
+        if sem["open"]:
+            rpg.locator("#view article.ev .ev-open").first.click()
+            opened = rpg.evaluate("document.querySelector('#dlg').open")
+            rpg.keyboard.press("Escape")
+        rgo("display=calendar")
+        grid = rpg.locator("#view [role=grid]").count()
+        check("F17: list cards hold no nested controls and open from their title button; the month grid claims no grid role",
+              sem["cards"] > 0 and sem["open"] == sem["cards"] and sem["nested"] == 0 and sem["rolebtn"] == 0 and opened and grid == 0, f"{sem} dialog={opened} grid={grid}")
+        # F11: every call open on the fixed day with no due date is listed above that month's grid.
+        names = {s["id"]: s["name"] for s in data["series"]}
+        want_undated = sorted({names[e["series"]] for e in data["editions"] if e["series"] in names and (e.get("end") or e["start"]) >= day
+                               and (e.get("verify") or {}).get("state") != "expected" and (e.get("call") or {}).get("status") == "open" and not (e.get("call") or {}).get("closes")})
+        undated = rpg.inner_text(".undatedrow") if rpg.locator(".undatedrow").count() else ""
+        check("F11: calls open with no due date are listed above this month's grid", all(n in undated for n in want_undated), f"{len(want_undated)} expected: {undated[:160]}")
+        rgo("display=list&focus=open")
+        v = rpg.evaluate("document.querySelector('#view').textContent")
+        check("calls the organizer has closed are not listed as open (NPAA, Feb 27; ACS Innovation Summit, Aug 10)", "NPAA Annual Conference" not in v and "Innovation Summit" not in v)
+        # F13: a place filter judges the edition a Directory card offers (ISHLT: Prague in 2024, Sydney next).
+        rgo("display=directory&area=c:Europe")
+        eu = rpg.evaluate("[...document.querySelectorAll('#view .srs .title')].map(x => x.textContent)")
+        rgo("display=directory&area=c:Oceania")
+        oc = rpg.evaluate("[...document.querySelectorAll('#view .srs .title')].map(x => x.textContent)")
+        check("F13: Directory place filters use the edition the card offers (ISHLT under Oceania, not Europe)", "ISHLT Annual Meeting" not in eu and "ISHLT Annual Meeting" in oc, f"{len(eu)} in Europe, {len(oc)} in Oceania")
+        # F05: qualified place names resolve to that state or province; an unknown place is reported.
+        def near_label(q):
+            rgo("display=list&near=" + quote(q) + "&r=50")
+            return rpg.inner_text("#geoquick .nearmsg") if rpg.locator("#geoquick .nearmsg").count() else ""
+        probes = {"Springfield, IL": "Illinois", "Springfield IL": "Illinois", "Portland, ME": "Maine", "Columbus, GA": "Georgia", "Kansas City, KS": "Kansas", "London, ON": "Ontario"}
+        got = {q: near_label(q) for q in probes}
+        check("F05: 'City, ST' and 'City ST' resolve to that state or province", all(w in got[q] for q, w in probes.items()), "; ".join(f"{q} → {got[q]}" for q in probes))
+        rgo("display=list&near=" + quote("Qwertyville, ZZ") + "&r=50")
+        check("F05: an unknown place is reported above the results, not silently dropped", rpg.locator("#view .nearmiss").is_visible())
+        # F20: a record whose organizer page was removed says so and offers the Internet Archive.
+        dead = next((e["id"] for e in data["editions"] if e.get("link_dead") and e.get("source_url")), None)
+        if dead:
+            rgo("e=" + dead)
+            dtext = rpg.inner_text("#dlg")
+            rpg.keyboard.press("Escape")
+        check("F20: a record whose organizer page was removed says so and links an archived copy", not dead or ("removed this page" in dtext and "archived copy" in dtext), dead or "no removed pages")
+        rctx.close()
+        # F10: a published cut-off time closes the call at that instant, wherever the visitor is. The served data is given
+        # one call closing Oct 6 at 1 p.m. New York time; a visitor in Los Angeles loads the page 30 minutes before and after.
+        def with_cutoff(route):
+            resp = route.fetch(); d2 = resp.json()
+            for e in d2["editions"]:
+                if e.get("id") == "fff7c127c15a":
+                    e["call"] = {"status": "open", "opens": None, "closes": "2026-10-06", "due_time": "13:00", "tz": "America/New_York", "text": "test", "url": None}
+            route.fulfill(response=resp, body=_json.dumps(d2))
+        seen = []
+        for t in ("2026-10-06T09:30:00-07:00", "2026-10-06T10:30:00-07:00"):
+            cctx = browser.new_context(viewport={"width": 1440, "height": 1000}, timezone_id="America/Los_Angeles")
+            cpg = cctx.new_page(); cpg.clock.set_fixed_time(t); cpg.route("**/data/runway.json*", with_cutoff)
+            cpg.goto(base + "#display=list&focus=open&q=ACC.27", wait_until="networkidle"); cpg.wait_for_selector("#quickfocus .chip")
+            seen.append(cpg.evaluate("document.querySelector('#view').textContent"))
+            cctx.close()
+        check("F10: a call with a published cut-off closes at that time, wherever the visitor is",
+              "Closes today, 1:00 PM EDT" in seen[0] and "ACC.27" not in seen[1], f"before: {'Closes today, 1:00 PM EDT' in seen[0]}; still listed after: {'ACC.27' in seen[1]}")
+        # F23: when the calendar day has changed, a tab that is shown again reloads so statuses are recomputed.
+        dctx = browser.new_context(viewport={"width": 1440, "height": 1000}, timezone_id="America/New_York")
+        dpg = dctx.new_page(); dpg.clock.set_fixed_time(FIXED_NOW)
+        dpg.goto(base + "#display=list", wait_until="networkidle"); dpg.wait_for_selector("#quickfocus .chip")
+        dpg.evaluate("window.__sameDoc = 1")
+        dpg.clock.set_fixed_time(day + "T23:59:59-04:00")
+        dpg.evaluate("document.dispatchEvent(new Event('visibilitychange'))"); dpg.wait_for_timeout(400)
+        same_day_kept = dpg.evaluate("window.__sameDoc === 1")
+        dpg.clock.set_fixed_time("2026-09-25T09:00:00-04:00")
+        try:
+            with dpg.expect_navigation(timeout=8000):
+                dpg.evaluate("document.dispatchEvent(new Event('visibilitychange'))")
+            reloaded = dpg.evaluate("window.__sameDoc === undefined")
+        except Exception:
+            reloaded = False
+        dctx.close()
+        check("F23: a tab reloads when it is shown on a new calendar day, and not before", same_day_kept and reloaded, f"kept same day: {same_day_kept}; reloaded next day: {reloaded}")
+
         # 13. The calendar feed (runway.ics).
         ics = page.request.get(urljoin(base, "runway.ics")).text().replace("\r\n ", "")
         uids = set(re.findall(r"UID:([0-9a-f]{12})@", ics))

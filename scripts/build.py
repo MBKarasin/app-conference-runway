@@ -417,7 +417,10 @@ def ics(eds, series):
                 "announced": "Organizer save-the-date; programme still to come"}.get(v.get("state"), "")
         when = (v.get("last_verified") or "")[:10]
         end = (dt.date.fromisoformat(e["end"]) + dt.timedelta(days=1)).strftime("%Y%m%d")
-        L += ["BEGIN:VEVENT", f"UID:{e['id']}@app-conference-runway", f"DTSTAMP:{stamp}",
+        # UID: an edition keeps the calendar identity it was first published under when a curator sets "uid"
+        # (red team F22), so a corrected date updates the event a subscriber already has instead of adding one.
+        uid = e.get("uid") or e["id"]
+        L += ["BEGIN:VEVENT", f"UID:{uid}@app-conference-runway", f"DTSTAMP:{stamp}",
               f"DTSTART;VALUE=DATE:{e['start'].replace('-', '')}", f"DTEND;VALUE=DATE:{end}",
               f"SUMMARY:{esc(s['name'])} ({esc(s['org'])})", f"LOCATION:{esc(e.get('location'))}",
               f"URL:{e.get('source_url') or ''}",
@@ -427,7 +430,7 @@ def ics(eds, series):
         if c.get("closes") and c["closes"] >= TODAY.isoformat():
             d = c["closes"].replace("-", "")
             nd = (dt.date.fromisoformat(c["closes"]) + dt.timedelta(days=1)).strftime("%Y%m%d")
-            L += ["BEGIN:VEVENT", f"UID:{e['id']}-call@app-conference-runway", f"DTSTAMP:{stamp}",
+            L += ["BEGIN:VEVENT", f"UID:{uid}-call@app-conference-runway", f"DTSTAMP:{stamp}",
                   f"DTSTART;VALUE=DATE:{d}", f"DTEND;VALUE=DATE:{nd}",
                   f"SUMMARY:Abstract deadline: {esc(s['name'])}",
                   f"DESCRIPTION:{esc((c.get('text') or '') + CUTOFF_NOTE)}",
@@ -455,7 +458,11 @@ def main():
         if k in series: series[k].update(v)
     for k, v in ov.get("editions", {}).items():
         for e in eds:
-            if e["id"] == k: e.update(v)
+            if e["id"] == k:
+                # "call_patch" adds or corrects single call fields (for example the organizer's cut-off time)
+                # without restating the whole call; every other key replaces the field it names.
+                e.update({x: y for x, y in v.items() if x != "call_patch"})
+                if v.get("call_patch"): e["call"] = {**(e.get("call") or {}), **v["call_patch"]}
     eds = [e for e in eds if not e.get("removed")]
     student_file = SRC / "student_opportunities.json"
     if student_file.exists():
