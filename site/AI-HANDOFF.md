@@ -208,7 +208,7 @@ python scripts/validate.py
 python -m http.server 8000 --directory site
 ```
 
-Open `http://localhost:8000/`. The build writes `site/data/runway.json` and `site/runway.ics` and updates the permanent `data/ledger.json`. The feed carries every dated record the site shows as settled (confirmed, set by rule, recorded when published, or a save-the-date), including rule-dated observances such as PA Week; until the red team's F21 (2026-09-24) it left out 62 of them. The build's calendar day is New York's, like the daily archive, so a call due "today" does not close at 8 p.m. Eastern. A clean build must be followed by a passing validation before publication.
+Open `http://localhost:8000/`. The build writes `site/data/runway.json` and `site/runway.ics` and updates the permanent `data/ledger.json`. The feed carries every dated record the site shows as settled (confirmed, set by rule, recorded when published, or a save-the-date), including rule-dated observances such as PA Week; until the red team's F21 (2026-09-24) it left out 62 of them. The build and the checker use New York's calendar day, like the daily archive, so a call due "today" does not close at 8 p.m. Eastern and a meeting ending today is not frozen as past before it ends. A clean build must be followed by a passing validation before publication.
 
 The following maintenance steps require network access and change their documented output files:
 

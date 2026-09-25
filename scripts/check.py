@@ -20,7 +20,10 @@ import urllib.request, ssl
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 UA = "APPConferenceRunwayChecker/1.0 (+https://github.com/; weekly date check, one request per page)"
-TODAY = dt.date.today().isoformat()
+# 2026-09-24: the same calendar day as build.py and snapshot.py (New York). On the UTC clock a manual run
+# after 8 p.m. Eastern froze meetings ending that day as past before they had ended in the US.
+from zoneinfo import ZoneInfo
+TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
 NOW = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
 STOP = {"annual", "conference", "meeting", "national", "the", "and", "for", "with", "association", "society",
         "american", "international", "congress", "summit", "symposium", "week", "day", "nurses", "nursing"}
