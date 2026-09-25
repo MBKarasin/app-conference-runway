@@ -891,6 +891,18 @@
    "evidence": "May 18-23, 2029 — Washington, DC",
    "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
    "reviewed_on": "2026-09-24"
+  },
+  "e22d93b3c36f": {
+   "_why": "Red team F02 (2026-09-24): the call was stored as 'soon' with no opening date, and the site showed it as open. VAM's own call page gives the plenary and poster submission window as Nov. 18 - Jan. 13, 2027, read 2026-09-24.",
+   "reviewed_on": "2026-09-24",
+   "call": {
+    "status": "soon",
+    "opens": "2026-11-18",
+    "closes": "2027-01-13",
+    "final": null,
+    "text": "Plenary Sessions & Posters: Nov. 18 - Jan. 13, 2027 (no time zone given); Late-Breaking Abstracts: Feb. 10 - Mar. 3, 2027",
+    "url": "https://vam.vascular.org/present-at-vam/"
+   }
   }
  },
  "rules": {

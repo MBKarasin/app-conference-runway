@@ -202,9 +202,10 @@
 "cc": "ID",
 "continent": "Asia",
 "country": "Indonesia",
-"lat": -6.215,
-"lon": 106.845,
-"precision": "country",
+"lat": -6.9314,
+"lon": 107.7775,
+"place": "Jatinangor",
+"precision": "city",
 "region": "Asia"
 },
 "Auditório Monsenhor Salim, Campinas, Brazil": {
@@ -774,9 +775,10 @@
 "cc": "IE",
 "continent": "Europe",
 "country": "Ireland",
-"lat": 53.333,
-"lon": -6.249,
-"precision": "country",
+"lat": 52.1408,
+"lon": -10.2689,
+"place": "Dingle",
+"precision": "city",
 "region": "Europe"
 },
 "Disney's Coronado Springs Resort (Lake Buena Vista, FL)": {
@@ -1194,9 +1196,10 @@
 "cc": "US",
 "continent": "North America",
 "country": "United States",
-"lat": 42.628,
-"lon": -84.156,
-"precision": "state",
+"lat": 44.7736,
+"lon": -85.404,
+"place": "Williamsburg",
+"precision": "city",
 "region": "Midwest",
 "state": "MI"
 },
@@ -3792,9 +3795,10 @@
 "cc": "FR",
 "continent": "Europe",
 "country": "France",
-"lat": 48.853,
-"lon": 2.349,
-"precision": "country",
+"lat": 43.6223,
+"lon": 7.0472,
+"place": "Sophia Antipolis",
+"precision": "city",
 "region": "Europe"
 },
 "Southern Illinois University Edwardsville, Edwardsville, IL": {

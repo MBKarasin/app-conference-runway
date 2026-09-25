@@ -194,5 +194,46 @@
   "lon": -98.579,
   "place": "United States",
   "precision": "country"
+ },
+ "Dingle, Ireland": {
+  "cc": "IE",
+  "continent": "Europe",
+  "country": "Ireland",
+  "lat": 52.1408,
+  "lon": -10.2689,
+  "place": "Dingle",
+  "precision": "city",
+  "region": "Europe"
+ },
+ "Grand Traverse Resort and Spa, Williamsburg, MI": {
+  "cc": "US",
+  "continent": "North America",
+  "country": "United States",
+  "lat": 44.7736,
+  "lon": -85.404,
+  "place": "Williamsburg",
+  "precision": "city",
+  "region": "Midwest",
+  "state": "MI"
+ },
+ "Auditorium Suharyati, Universitas Padjadjaran, Jatinangor, Indonesia": {
+  "cc": "ID",
+  "continent": "Asia",
+  "country": "Indonesia",
+  "lat": -6.9314,
+  "lon": 107.7775,
+  "place": "Jatinangor",
+  "precision": "city",
+  "region": "Asia"
+ },
+ "Sophia Antipolis, France": {
+  "cc": "FR",
+  "continent": "Europe",
+  "country": "France",
+  "lat": 43.6223,
+  "lon": 7.0472,
+  "place": "Sophia Antipolis",
+  "precision": "city",
+  "region": "Europe"
  }
 }

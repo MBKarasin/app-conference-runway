@@ -149,7 +149,9 @@
     const c = e.call || {}, closes = c.closes, opens = c.opens;
     if (closes && closes < TODAY) return { k: "closed", label: "Closed " + md(closes) };
     if (opens && opens > TODAY) return { k: "soon", label: "Opens " + md(opens), opens };
-    if (closes && (c.status === "open" || c.status === "soon" || (opens && opens <= TODAY))) {
+    // 2026-09-24 (red team F02): "soon" means not yet open. Without a published opening date a "soon" call
+    // stays upcoming; it never turns open just because its due date lies ahead.
+    if (closes && (c.status === "open" || (opens && opens <= TODAY))) {
       const n = daysBetween(TODAY, closes);
       // the organizer's cut-off time is usually not published in machine form, so the last day is never called "open now"
       if (n <= 0) return { k: "urgent", label: "Closes today · check the organizer's cut-off time", closes, n: 0, today: true };
@@ -184,25 +186,19 @@
     });
   }
   function prep(d) {
-    // Normalize legacy taxonomy in the browser so old, source-traced records remain
-    // intact while the public architecture uses the current APP vocabulary.
-    const legacyAnesthesiaRole = ["C", "A", "A"].join("");
+    // Series-level filing only: CAA meetings are filed under CRNA for the Discipline filter (curator decision,
+    // 2026-09-24; build.py applies the same fold). This is a relevance mapping for filtering.
+    // 2026-09-24 (red team F01): organizer wording is never rewritten. A student opportunity keeps the
+    // organizer's own roles and words, so AAAA's "CAA student posters" reads as the organizer published it.
     const focusOrder = ["clinical", "academic", "research", "leadership"];
     d.series.forEach(s => {
-      s.professions = [...new Set((s.professions || []).map(p => p === legacyAnesthesiaRole ? "CRNA" : p))];
+      s.professions = [...new Set((s.professions || []).map(p => p === "CAA" ? "CRNA" : p))];
       const text = [s.name, s.org_display, s.org, ...(s.specialty || [])].filter(Boolean).join(" ");
       const focus = new Set((s.focus || []).map(f => String(f).toLowerCase()).map(f => f === "executive" ? "leadership" : f));
       if (/research|scientific|science|scholar|evidence/i.test(text)) focus.add("research");
       if (/leader|leadership|executive|dean|management|policy|advocacy/i.test(text)) focus.add("leadership");
       s.studentTag = focus.has("student");   // a meeting organized for students (curator tag); feeds Scope → Students
       s.focus = focusOrder.filter(f => focus.has(f));
-    });
-    d.editions.forEach(e => {
-      if (!e.student) return;
-      e.student.roles = [...new Set((e.student.roles || []).map(r => r === legacyAnesthesiaRole ? "CRNA" : r))];
-      ["kind", "detail"].forEach(k => {
-        if (typeof e.student[k] === "string") e.student[k] = e.student[k].replace(new RegExp(`\\b${legacyAnesthesiaRole}\\b`, "g"), "CRNA");
-      });
     });
     DATA = d;
     SERIES = new Map(d.series.map(s => [s.id, s]));
@@ -327,7 +323,9 @@
       if (k === "n" && g.country !== v) return false;
     }
     if (st.near) {
-      if (g.lat == null) return false;
+      // 2026-09-24 (red team F06): a pin placed only at a state's or country's center is not a venue.
+      // It is left out of distance results rather than given a mile count it cannot support.
+      if (g.lat == null || g.precision === "state" || g.precision === "country") return false;
       if (miles(st.near.lat, st.near.lon, g.lat, g.lon) > st.radius) return false;
     }
     return true;
@@ -431,7 +429,9 @@
       const c = e.call || {}, opens = c.opens || (c.status === "open" ? TODAY : null), closes = c.closes;
       if ((!annual && !orbitCallVisible(e)) || !opens) return false;
       if (!closes) return ["open", "urgent"].includes(e.c.k) && key === TODAY.slice(0, 7);
-      return opens <= end && closes >= start && !(closes >= start && closes <= end);
+      // Under Focus All a call closing this month is listed once, under Abstracts Due. 2026-09-24 (red team F04):
+      // with Focus Open Abstracts that column is the only one shown, so the call stays in it through its closing month.
+      return opens <= end && closes >= start && (st.focus === "open" || !(closes >= start && closes <= end));
     }).sort(byOpenDue);
     return { key, meetings: dated.filter(e => !isCelebration(e)), celebrations: dated.filter(isCelebration), due, open };
   }
@@ -696,7 +696,8 @@
      tablets keep the grid; the same items, colours and record dialogs are used. */
   function calAgenda(items, y, m, rank) {
     const mS = `${y}-${String(m).padStart(2, "0")}-01`, mE = iso(new Date(y, m, 0));
-    const byDay = new Map(), carried = [];
+    const current = mS.slice(0, 7) === TODAY.slice(0, 7);
+    const byDay = new Map(), carried = [], ongoing = [];
     const put = (day, r) => { if (!byDay.has(day)) byDay.set(day, []); byDay.get(day).push(r); };
     items.forEach(x => {
       if (x.to < mS || x.from > mE) return;
@@ -704,7 +705,12 @@
         if (x.to <= mE) put(x.to, { x, due: true });
         if (x.from < x.to && x.from >= mS) put(x.from, { x, due: false });
         else if (x.from < mS && x.to > mE) carried.push({ x, due: false });
-      } else if (x.from >= mS) put(x.from, { x });
+      } else if (x.from >= mS) {
+        // 2026-09-24 (red team F14): a record that started earlier this month and is still running stays in
+        // view. Filing it under its start day folded National APP Week away during APP Week.
+        if (current && x.from < TODAY && x.to >= TODAY) ongoing.push({ x });
+        else put(x.from, { x });
+      }
       else carried.push({ x });
     });
     const order = r => r.due ? -2 : rank(r.x);
@@ -718,22 +724,24 @@
       return `<button class="ag-item ${cls}${!call && e.s.name === "National APP Week" ? " appweek" : ""}" data-e="${e.id}"><span class="ag-t">${esc(title)}</span><span class="ag-s">${esc(sub)}</span></button>`;
     };
     const days = [...byDay.keys()].sort();
-    if (!days.length && !carried.length) return `<div class="agenda" aria-label="${MONTH[m - 1]} ${y}"><p class="ag-empty">No matching records in ${MONTH[m - 1]} ${y}.</p></div>`;
+    if (!days.length && !carried.length && !ongoing.length) return `<div class="agenda" aria-label="${MONTH[m - 1]} ${y}"><p class="ag-empty">No matching records in ${MONTH[m - 1]} ${y}.</p></div>`;
     const dayBlock = k => {
       const d = D(k);
       return `<section class="ag-day${k === TODAY ? " today" : ""}"><h3 class="ag-head"><button class="ag-date" data-dayopen="${k}" aria-label="All records for ${esc(longDate(k))}">${esc(DOW[d.getDay()])} ${d.getDate()} ${esc(MON[d.getMonth()])}${k === TODAY ? " · Today" : ""}</button></h3>${sortRows(byDay.get(k)).map(item).join("")}</section>`;
     };
     let h = carried.length ? `<section class="ag-day ag-carry"><h3 class="ag-head">Continuing into ${MONTH[m - 1]}</h3>${sortRows(carried).map(item).join("")}</section>` : "";
-    // In the current month the days already past fold away, so the agenda opens at today.
-    const current = mS.slice(0, 7) === TODAY.slice(0, 7);
+    // In the current month the days already past fold away, so the agenda opens at today;
+    // records still under way are listed first, above today.
     const earlier = current ? days.filter(k => k < TODAY) : [], rest = current ? days.filter(k => k >= TODAY) : days;
     if (earlier.length) {
       const n = earlier.reduce((t, k) => t + byDay.get(k).length, 0);
       h += `<details class="ag-earlier"><summary>Earlier in ${MONTH[m - 1]} · ${n} record${n === 1 ? "" : "s"}</summary>${earlier.map(dayBlock).join("")}</details>`;
     }
+    if (ongoing.length) h += `<section class="ag-day ag-now"><h3 class="ag-head">Under way today</h3>${sortRows(ongoing).map(item).join("")}</section>`;
     h += rest.map(dayBlock).join("");
     return `<div class="agenda" aria-label="${MONTH[m - 1]} ${y}">${h}</div>`;
   }
+  const orbitShowAll = new Set();   // "YYYY-MM|group" keys the visitor expanded with "Show all"
   function vOrbit() {
     orbitClamp();
     const win = orbitWindow(), year = orbitLabel();
@@ -755,9 +763,12 @@
     const selected = annualFocus ? annual : selectedMonth;
     const item = (e, meta, tone) => `<button class="orbit-item ${tone}" data-e="${esc(e.id)}"><span class="orbit-item-date">${esc(meta)}</span><strong>${esc(e.s.name)}</strong><span>${esc(e.s.org_display || e.s.org)}</span></button>`;
     // With a Focus chosen only its group shows, and it opens; with All every group starts collapsed.
+    // 2026-09-24 (red team F18): a month shows its first 12 records per group, and a "Show all" button reveals
+    // the rest in place. Orbit is the landing view, and October 2026 alone holds 69 meetings.
     const group = (title, tone, rows, meta) => {
-      const shown = annualFocus ? rows : rows.slice(0, 12);
-      return `<details class="orbit-group ${tone}"${st.focus ? " open" : ""}><summary><span>${esc(title)}</span><b>${rows.length}</b></summary><div>${rows.length ? shown.map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in ${annualFocus ? "these twelve months" : "this month"}.</p>`}${!annualFocus && rows.length > 12 ? `<p class="orbit-more">${rows.length - 12} more records - narrow the filters to refine this month.</p>` : ""}</div></details>`;
+      const allKey = `${selectedMonth.key}|${tone}`, expanded = !annualFocus && orbitShowAll.has(allKey);
+      const shown = annualFocus || expanded ? rows : rows.slice(0, 12);
+      return `<details class="orbit-group ${tone}"${st.focus || expanded ? " open" : ""}><summary><span>${esc(title)}</span><b>${rows.length}</b></summary><div>${rows.length ? shown.map(e => item(e, meta(e), tone)).join("") : `<p class="orbit-empty">No ${esc(title.toLowerCase())} in ${annualFocus ? "these twelve months" : "this month"}.</p>`}${!annualFocus && !expanded && rows.length > 12 ? `<button type="button" class="orbit-more" data-act="orbit-all" data-key="${esc(allKey)}">Show all ${rows.length} (${rows.length - 12} more)</button>` : ""}</div></details>`;
     };
     const NOUN = { meet: ["meeting", "meetings"], due: ["abstract deadline", "abstract deadlines"], open: ["open abstract call", "open abstract calls"], obs: ["celebration", "celebrations"] };
     const countLine = x => cats.map(c => { const n = orbitCatRows(x, c).length; return `${n} ${NOUN[c][n === 1 ? 0 : 1]}`; }).join(", ");
@@ -827,8 +838,13 @@
   function directorySeries() {
     // Focus narrows the Directory to series with a matching edition: a meeting or celebration series, an upcoming deadline, or a call open now.
     const editionFilters = st.where || st.area || st.near || st.review || st.focus || st.scope.includes("students");
+    // 2026-09-24 (red team F12): the same word-by-word matching and clinical synonyms as List, applied to the
+    // series' own fields. "cardiac surgery" found 5 series in List and none here, because this matched the
+    // whole phrase as one string. List also searches edition fields (city, theme, sessions); Directory does not.
+    const words = (st.q || "").toLowerCase().split(/\s+/).filter(Boolean);
+    const seriesHay = s => [s.name, s.org_display || s.org, s.org, (s.specialty || []).join(" "), (s.professions || []).join(" ")].join(" ").toLowerCase();
     return DATA.series.filter(s => seriesMatch(s) &&
-      (!st.q || (s.name + " " + (s.org_display || s.org) + " " + s.org + " " + (s.specialty || []).join(" ")).toLowerCase().includes(st.q.toLowerCase())) &&
+      (!words.length || words.every(w => wordHit(seriesHay(s), w))) &&
       (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && focusMatch(e) && (st.expected || !e.expectedRow))))
       // 2026-09-24: a series with no edition at all has nothing to show; it is not listed.
       .filter(s => EDS.some(e => e.series === s.id));
@@ -846,10 +862,14 @@
       const next = L.find(e => !e.past && !e.expectedRow && verMatch(e));
       const hidden = !next && L.some(e => !e.past && !e.expectedRow);
       const anchor = s.name[0].toUpperCase() !== cur ? (cur = s.name[0].toUpperCase(), ` id="letter-${esc(cur)}"`) : "";
-      h += `<button class="srs"${anchor} data-s="${esc(s.id)}"><span class="title">${esc(s.name)}</span><span class="org">${esc(s.org_display || s.org)}</span>
+      // 2026-09-24 (red team F17): the card is an <article>, not a <button>. Its badges are buttons of their
+      // own, and a button inside a button is invalid HTML: the parser closed each card early and spilled
+      // 2,085 badges, dates and year strips into the grid as separate tiles. The series opens from the
+      // title button (keyboard) or a click anywhere on the card (data-s on the article).
+      h += `<article class="srs"${anchor} data-s="${esc(s.id)}"><button type="button" class="srs-open" data-s="${esc(s.id)}"><span class="title">${esc(s.name)}</span><span class="org">${esc(s.org_display || s.org)}</span></button>
         <span class="badges">${profTags(s)}${scopeBadges(s)}${specTags(s, 2)}</span>
         <span class="meta">${next ? "Next recorded: " + esc(range(next)) : hidden ? "Next date awaiting a source check" : esc(s.status_note || "Next date not posted")}${s.archive_url ? " · past-meetings archive" : ""}${next ? " " + vBadge(next, true) : ""}</span>
-        <span class="hist">${L.filter(e => !e.expectedRow).map(e => `<span class="${e.past ? "" : "fut"}" title="${esc(range(e))}">${e.start.slice(0, 4)}</span>`).join("")}</span></button>`;
+        <span class="hist">${L.filter(e => !e.expectedRow).map(e => `<span class="${e.past ? "" : "fut"}" title="${esc(range(e))}">${e.start.slice(0, 4)}</span>`).join("")}</span></article>`;
     });
     return h + "</div>";
   }
@@ -886,8 +906,12 @@
       if (!e.past) {
         if (e.link_dead) return false;
         if (v.state !== "rule") {
-          const seen = v.last_verified || v.checked;
-          if (!seen || daysBetween(seen, TODAY) > 90) return false;
+          // 2026-09-24 (red team F07): stamps come as dates ("2026-09-24") or instants ("2026-09-24T21:51:06Z").
+          // D() takes a date only, so an instant made the age NaN and "NaN > 90" never failed. The age is taken
+          // from the calendar date, and an unreadable stamp fails.
+          const seen = String(v.last_verified || v.checked || "").slice(0, 10);
+          const age = /^\d{4}-\d{2}-\d{2}$/.test(seen) ? daysBetween(seen, TODAY) : NaN;
+          if (!Number.isFinite(age) || age > 90) return false;
         }
       }
       return true;
@@ -1250,6 +1274,13 @@
         return;
       }
       if (act === "more") { st.more++; render(); return; }
+      if (act === "orbit-all") {
+        const key = t.dataset.key || "", tone = key.split("|")[1];
+        orbitShowAll.add(key); render();
+        const next = tone && document.querySelectorAll(`.orbit-group.${tone} .orbit-item`)[12];
+        if (next) next.focus({ preventScroll: true });   // keyboard users land on the first record just revealed
+        return;
+      }
       if (act === "prev" || act === "next") { const [y, m] = st.cal.split("-").map(Number); st.cal = iso(new Date(y, m - 1 + (act === "next" ? 1 : -1), 1)).slice(0, 7); render(); return; }
       if (act === "prevY" || act === "nextY") { const [y, m] = st.cal.split("-").map(Number); st.cal = (y + (act === "nextY" ? 1 : -1)) + "-" + String(m).padStart(2, "0"); if (st.display === "orbit") { const [fy, fm] = st.orbitFrom.split("-").map(Number); st.orbitFrom = (fy + (act === "nextY" ? 1 : -1)) + "-" + String(fm).padStart(2, "0"); } render(); return; }
       if (act === "today") { st.cal = TODAY.slice(0, 7); render(); return; }

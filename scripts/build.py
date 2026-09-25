@@ -10,14 +10,17 @@ Verification (written by scripts/check.py):
   data/verification.json
 """
 import json, re, glob, hashlib, datetime as dt, pathlib, calendar
+from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, SITE = ROOT / "sources", ROOT / "site"
-TODAY_ = dt.date.today()
+# 2026-09-24: the build's calendar day is New York's, like the daily archive (snapshot.py). On the UTC
+# clock a call due "today" closed at 8 p.m. Eastern, hours before a US organizer's deadline.
+TODAY_ = dt.datetime.now(ZoneInfo("America/New_York")).date()
 HORIZON = TODAY_.year + 3          # rolling: current year plus three
 LOOKBACK = 3                        # years of history every meeting should show
 RULES = {}
-TODAY = dt.date.today()
+TODAY = TODAY_
 STALE_REVIEW = (TODAY_ - dt.timedelta(days=90)).isoformat()   # a curator review older than this yields to a failing automatic check
 
 MONTHS = {m.lower(): i for i, m in enumerate(calendar.month_name) if m}
@@ -401,10 +404,14 @@ def ics(eds, series):
     stamp = dt.datetime.now(dt.UTC).strftime("%Y%m%dT%H%M%SZ")
     for e in eds:
         if e.get("month_only") or e["end"] < (TODAY - dt.timedelta(days=60)).isoformat(): continue
-        # the feed carries only what the website shows by default: a subscriber should never receive
-        # a date the site itself asks a reader to review
+        # the feed carries what the website shows by default: a subscriber should never receive a date the
+        # site itself asks a reader to review, and should receive every date the site shows as settled.
+        # 2026-09-24 (red team F21): a drifted quote (evidence_match false) no longer drops a record. Since the
+        # afternoon's decision "a verified record is verified" the site shows those as settled, so the feed
+        # left out 40 records the site showed. Rule-dated records (PA Week, National Nurses Week) now come in
+        # through main() as well; 22 were missing.
         v = e.get("verify") or {}
-        if v.get("state") not in ("verified", "rule", "archived", "announced") or v.get("evidence_match") is False: continue
+        if v.get("state") not in ("verified", "rule", "archived", "announced"): continue
         s = series[e["series"]]
         note = {"verified": "Start date checked against the organizer's page",
                 "rule": "Computed from the organizer's published rule",
@@ -546,7 +553,7 @@ def main():
            "editions": all_eds}
     (SITE / "data").mkdir(parents=True, exist_ok=True)
     json.dump(out, open(SITE / "data" / "runway.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    open(SITE / "runway.ics", "w", encoding="utf-8", newline="").write(ics(eds, series))
+    open(SITE / "runway.ics", "w", encoding="utf-8", newline="").write(ics(eds + [p for p in proj if p["verify"]["state"] == "rule"], series))
     n = lambda st: sum(1 for e in eds if e["verify"]["state"] == st)
     print(f"merged twins {len(merged)}: " + ", ".join(merged))
     print(f"series {len(series)} | dated editions {len(eds)} | expected {len(proj)} | "

@@ -624,7 +624,7 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .mast{padding-top:18px}
 .titlerow{align-items:flex-end}
 .headactions{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:8px}
-.headactions .eyebrow{flex:0 0 100%;order:10;margin:4px 0 0;text-align:right;color:var(--ink-3);font-family:var(--body);font-size:.72rem;line-height:1.25;letter-spacing:.12em;text-transform:uppercase}
+.headactions .eyebrow{flex:0 0 100%;order:10;margin:4px 0 0;text-align:right;color:var(--ink-3);font-family:var(--body);font-size:.72rem;line-height:1.25;letter-spacing:.12em;text-transform:uppercase;text-wrap:balance}
 .headactions .reqcap{order:11}
 .header-updated{display:block;width:100%;margin:6px 0 5px;text-align:right;color:var(--ink-2);font-size:.82rem}
 .ledeRow{display:block!important;margin:0!important;padding:0 0 16px!important}
@@ -716,6 +716,8 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .orbit-group>div{display:grid;gap:5px}.orbit-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:1px 9px;text-align:left;background:#F8FAFA;border:1px solid #D7E2E4;border-left:3px solid var(--tone);padding:7px 8px;color:#102F3B;cursor:pointer}.orbit-item:hover{border-color:var(--tone)}
 .orbit-item-date{grid-row:1 / 3;font-size:11px;font-weight:800;color:var(--tone);line-height:1.25}.orbit-item strong{font-size:13px;line-height:1.2}.orbit-item span:last-child{font-size:11px;color:#526B76;line-height:1.25}
 .orbit-empty,.orbit-more{margin:0;padding:8px 9px;background:#F8FAFA;color:#607780;font-size:12px}.orbit-more{font-weight:700}
+button.orbit-more{display:block;width:100%;border:0;text-align:left;font-family:inherit;color:#102F3B;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+button.orbit-more:hover{background:#EEF3F4}
 
 @media(max-width:1050px){
   .orbit-shell{grid-template-columns:1fr}.orbit-rail{max-height:none;grid-template-columns:repeat(3,minmax(0,1fr))}.orbit-rail>header{grid-column:1 / -1}.orbit-stage{width:min(580px,100%)}
@@ -936,7 +938,11 @@ details.month{scroll-margin-top:12px}
 
 /* Directory cards: one height for every row. The first row grew because its badge line wrapped. */
 .dir{grid-auto-rows:1fr}
-.srs{grid-template-rows:auto auto auto 1fr;align-content:start;row-gap:4px}
+.srs{grid-template-rows:auto auto 1fr auto;align-content:start;row-gap:4px}
+/* 2026-09-24 (red team F17): the card is an article; its title and organizer sit in the one button that opens the series. */
+.srs-open{display:grid;row-gap:4px;min-width:0;margin:0;padding:0;border:0;background:none;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.srs-open:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:4px}
+.srs .badges .tag{flex:0 0 auto;white-space:nowrap}   /* a badge button keeps one line, as the span badges did */
 .srs .hist{display:flex;flex-wrap:wrap;gap:3px;max-height:20px;overflow:hidden;align-content:flex-start}
 .srs .title{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 .srs .org{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
@@ -1050,7 +1056,7 @@ details.month{scroll-margin-top:12px}
   .ag-day{border-top:1px solid #102F3B;padding-top:6px}
   .ag-head{margin:0 0 6px;font:800 12px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:#526B76}
   .ag-head .ag-date{background:none;border:0;padding:4px 0;font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;cursor:pointer}
-  .ag-day.today .ag-head{color:#CC0033}
+  .ag-day.today .ag-head,.ag-day.ag-now .ag-head{color:#CC0033}
   .ag-item{display:grid;gap:2px;width:100%;text-align:left;border:0;border-left:4px solid var(--c);background:color-mix(in srgb,var(--c) 9%,#fff);padding:8px 10px;margin:0 0 6px;border-radius:0;font:inherit;color:#102F3B;cursor:pointer}
   .ag-item.meet{--c:var(--t-meet)}.ag-item.obs{--c:var(--t-obs)}.ag-item.call{--c:var(--t-call)}.ag-item.call.due{--c:var(--t-due)}
   .ag-item .ag-t{font-weight:700;font-size:14.5px;line-height:1.3;overflow-wrap:anywhere}
