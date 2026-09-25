@@ -1,13 +1,11 @@
 # Link check — 2026-09-25
 
-Links: 1017 · ok 872 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 · TimeoutError 2 · HTTP 406 2 · HTTP 401 1
+Links: 1017 · ok 866 · HTTP 403 92 · HTTP 404 26 · URLError 21 · robots 9 · HTTP 406 2 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
-- HTTP 403 — https://aahpm.org/
-  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
 - HTTP 403 — https://aahpm.org/education-events/annual-assembly/
@@ -80,6 +78,8 @@ Links: 1017 · ok 872 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - society-for-simulation-in-healthcare__imsh 2023-01-21 (source_url)
 - URLError — https://imsh2024.org/about
   - society-for-simulation-in-healthcare__imsh 2024-01-20 (source_url)
+- URLError — https://js-np.jp/
+  - Japan Society of Nurse Practitioner Annual Meeting (org_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2027-10-01 (source_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2028-10-01 (source_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2029-10-01 (source_url)
 - HTTP 403 — https://login.texasnp.org/events/EventDetails.aspx?id=1986716
   - texas-nurse-practitioners__tnp-pharmacology-conference 2026-04-23 (source_url)
 - HTTP 404 — https://magnetpathwaycon.nursingworld.org/ana-enterprise-research-symposium-1
@@ -130,8 +130,8 @@ Links: 1017 · ok 872 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
-- URLError — https://web.archive.org/web/20241003223604/https://wapa.com/events/wapa-conference-oct-10-12-2024/
-  - washington-academy-of-physician-associat__wapa-fall-conference 2024-10-10 (source_url)
+- URLError — https://web.archive.org/web/20241118070950/https://congresoenfermeria.ufro.cl/images/documentos/programa-congreso-2024-4.pdf
+  - universidad-de-la-frontera__international-nursing-specialties-and-research-con 2024-11-11 (source_url)
 - URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
   - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
 - URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
@@ -218,10 +218,6 @@ Links: 1017 · ok 872 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - emergency-nurses-association__emergency-nursing-ena-annual-conference 2025-09-17 (source_url)
 - HTTP 404 — https://www.expo.acc.org/ACC25/CUSTOM/PDF25/ACC25ScheduleAtAGlance.pdf
   - american-college-of-cardiology__acc-27-annual-scientific-session 2025-03-29 (source_url)
-- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/julyaugust-2024-volume-109-issue-7/get-ready-for-clinical-congress-2024-in-san-francisco/
-  - american-college-of-surgeons__clinical-congress 2024-10-19 (source_url)
-- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/november-december-2024-volume-109-issue-10/clinical-congress-2024-highlights/
-  - american-college-of-surgeons__clinical-congress 2024-10-19 (detail_url)
 - HTTP 401 — https://www.gapna.org/education/past-conferences
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
@@ -234,6 +230,22 @@ Links: 1017 · ok 872 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - heart-rhythm-society__hrx-live 2024-09-05 (source_url)
 - HTTP 403 — https://www.iapasociety.org
   - IPAS Fall CME Conference (Healthcare in the Heartland) (org_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2026-10-26 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2027-10-01 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2028-10-01 (source_url)
+- URLError — https://www.jans.or.jp/english/meetings/past/
+  - JANS Annual Conference (archive_url); japan-academy-of-nursing-science__jans-annual-conference 2023-12-09 (source_url); japan-academy-of-nursing-science__jans-annual-conference 2024-12-07 (source_url); japan-academy-of-nursing-science__jans-annual-conference 2025-12-06 (source_url)
+- URLError — https://www.jans.or.jp/english/slides/academic-conference43/
+  - japan-academy-of-nursing-science__jans-annual-conference 2023-12-09 (detail_url)
+- URLError — https://www.jans.or.jp/english/slides/academic-conference44/
+  - japan-academy-of-nursing-science__jans-annual-conference 2024-12-07 (detail_url)
+- URLError — https://www.jans.or.jp/english/slides/academic-conference45/
+  - japan-academy-of-nursing-science__jans-annual-conference 2025-12-06 (detail_url)
+- URLError — https://www.jans.or.jp/meetings/schedule/
+  - japan-academy-of-nursing-science__jans-annual-conference 2027-11-27 (source_url)
+- URLError — https://www.js-np.jp/scientific-meeting-single-10.htm
+  - japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2024-11-22 (source_url)
+- URLError — https://www.js-np.jp/scientific-meeting-single-11.htm
+  - japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2025-10-25 (source_url)
+- URLError — https://www.js-np.jp/scientific-meeting.htm
+  - Japan Society of Nurse Practitioner Annual Meeting (archive_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2023-10-20 (source_url)
 - HTTP 403 — https://www.michigan.gov/whitmer/news/proclamations/2025/10/19/october-19-25-2025-doctor-of-nursing-practice-week
   - obs__national-dnp-week 2025-10-19 (source_url)
 - HTTP 404 — https://www.newjerseyena.org/ecc2026
