@@ -48,7 +48,7 @@
 
   /* ---------- vocabulary ---------- */
   const PROF_COLOR = { STU: "--stu", DNP: "--dnp", NP: "--np", AGACNP: "--np", PA: "--pa", CRNA: "--crna", RNFA: "--rnfa", CNM: "--cnm", CNS: "--cns", Multidisciplinary: "--multi" };
-  // 2026-09-24: Students & DNP projects moved from Discipline to Scope — it is a kind of work, not a credential.
+  // Students & DNP projects is a Scope, not a Discipline: it is a kind of work, not a credential.
   const PROF_CHIPS = [["", "All APPs"], ["NP", "NP"], ["AGACNP", "AGACNP"], ["CRNA", "CRNA"], ["RNFA", "NP-RNFA"], ["CNS", "CNS"], ["CNM", "CNM"], ["PA", "PA"]];
   const AGACNP_TOPICS = new Set(["Acute Care", "Critical Care", "Emergency", "Emergency Medicine", "Hospital Medicine", "Cardiology", "Cardiothoracic Surgery", "Pulmonary", "Neuroscience", "Neurosurgery", "Trauma", "Resuscitation", "ECMO & Perfusion", "Surgery", "Vascular Surgery", "Infectious Diseases", "Toxicology", "Nephrology"]);
   const PLABEL = { RNFA: "NP-RNFA", STU: "Students & DNP projects", DNP: "Students & DNP projects" };
@@ -56,11 +56,11 @@
   const APP_ROLES = ["NP", "AGACNP", "PA", "CRNA", "CNS", "CNM"];
   const stuOK = e => !!(e && e.student && (e.student.roles || []).some(r => APP_ROLES.includes(r)));
   const dnpOK = e => !!(e && e.student && e.student.category === "project");
-  // SCOPE (labeled Focus until 2026-09-24): whom and what a meeting serves. Multi-select; All clears it.
+  // SCOPE: whom and what a meeting serves. Multi-select; All clears it.
   const SCOPE_CHIPS = [["", "All"], ["clinical", "Clinical"], ["academic", "Academic"], ["research", "Research"], ["leadership", "Leadership"], ["students", "Students"]];
   const SCOPE_VALUES = SCOPE_CHIPS.map(([v]) => v).filter(Boolean);
   const SCOPE_TIPS = { students: "Organizer-documented opportunities for APP students (sessions, posters, abstracts, DNP projects) and meetings organized for students." };
-  // FOCUS (since 2026-09-24): which record type to show. One at a time; All shows every type.
+  // FOCUS: which record type to show. One at a time; All shows every type.
   const FOCUS_CHIPS = [["", "All"], ["due", "Abstracts Due"], ["open", "Open Abstracts"], ["conferences", "Conferences"], ["celebrations", "Celebrations"]];
   const FOCUS_VALUES = FOCUS_CHIPS.map(([v]) => v).filter(Boolean);
   const FOCUS_LABEL = { due: "Abstracts due", open: "Open abstracts", conferences: "Conferences", celebrations: "Celebrations" };
@@ -68,7 +68,7 @@
   const PROF_TIPS = { NP: "NP-relevant: NP, nursing, CNS, CNM and multidisciplinary meetings (curator judgment)", PA: "PA-relevant: PA and multidisciplinary meetings (curator judgment)",
     STU: "One combined view for APP students and DNP project dissemination.",
     AGACNP: "Curated adult acute care topic relevance; organizer eligibility and intended audience may vary." };
-  // Meeting type refines Focus → Conferences; celebrations moved to the Focus row on 2026-09-24 (old kind=observance links map there).
+  // Meeting type refines Focus → Conferences; celebrations are a Focus value (older kind=observance links map there).
   const KIND_CHIPS = [["", "All"], ["conference", "Conferences"], ["symposium", "Symposiums"], ["summit", "Summits"], ["course", "Courses"]];
   const US_REGIONS = ["Northeast", "Midwest", "South", "West"];
   const CONTINENTS = ["North America", "South America", "Europe", "Asia", "Oceania", "Africa"];
@@ -101,17 +101,17 @@
     st.prof = PROF_CHIPS.map(([v]) => v).filter(v => v && requestedSet.has(v));
     if (legacyView === "students") st.display = "list";
     if (legacyView === "directory") st.display = "directory";
-    // Orbit window scope is span=year (links made before 2026-09-24 used scope=year).
+    // Orbit window scope is span=year. Older links used scope=year for the twelve-month Orbit.
     if (st.display === "orbit" && (h.get("span") === "year" || h.get("scope") === "year")) st.orbitScope = "year";
-    // Scope reads scope=…; links made before 2026-09-24 carried the same values as focus=….
+    // Scope reads scope=…; older links carried the same values as focus=….
     const scopeIn = [...(h.get("scope") || "").split(","), ...(h.get("focus") || "").split(",")].map(x => x === "executive" ? "leadership" : x === "student" ? "students" : x);
-    // Students & DNP projects left Discipline for Scope → Students on 2026-09-24; prof=STU, prof=DNP and view=students links open it there.
+    // Students & DNP projects is Scope → Students; older prof=STU, prof=DNP and view=students links open it there.
     if (requestedSet.has("STU")) scopeIn.push("students");
     st.scope = SCOPE_VALUES.filter(v => scopeIn.includes(v));
     st.focus = (h.get("focus") || "").split(",").find(x => FOCUS_VALUES.includes(x)) || "";
-    if (!st.focus && st.kind === "observance") { st.focus = "celebrations"; st.kind = ""; }   // old Type → Celebrations links
-    if (!st.focus && h.get("open") === "1") st.focus = "open";                              // old "Abstract call open" switch
-    if (!st.focus && legacyView === "deadlines") st.focus = "due";                          // old Abstract deadlines tab
+    if (!st.focus && st.kind === "observance") { st.focus = "celebrations"; st.kind = ""; }   // older kind=observance links
+    if (!st.focus && h.get("open") === "1") st.focus = "open";                              // older open=1 links
+    if (!st.focus && legacyView === "deadlines") st.focus = "due";                          // older view=deadlines links
     if (h.get("near")) st.nearQ = h.get("near");
     if (+h.get("r")) st.radius = +h.get("r");
     st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
@@ -149,8 +149,8 @@
     const c = e.call || {}, closes = c.closes, opens = c.opens;
     if (closes && closes < TODAY) return { k: "closed", label: "Closed " + md(closes) };
     if (opens && opens > TODAY) return { k: "soon", label: "Opens " + md(opens), opens };
-    // 2026-09-24 (red team F02): "soon" means not yet open. Without a published opening date a "soon" call
-    // stays upcoming; it never turns open just because its due date lies ahead.
+    // "soon" means not yet open. Without a published opening date a "soon" call stays upcoming; it never
+    // turns open just because its due date lies ahead.
     if (closes && (c.status === "open" || (opens && opens <= TODAY))) {
       const n = daysBetween(TODAY, closes);
       // the organizer's cut-off time is usually not published in machine form, so the last day is never called "open now"
@@ -186,10 +186,10 @@
     });
   }
   function prep(d) {
-    // Series-level filing only: CAA meetings are filed under CRNA for the Discipline filter (curator decision,
-    // 2026-09-24; build.py applies the same fold). This is a relevance mapping for filtering.
-    // 2026-09-24 (red team F01): organizer wording is never rewritten. A student opportunity keeps the
-    // organizer's own roles and words, so AAAA's "CAA student posters" reads as the organizer published it.
+    // Series-level filing only: CAA meetings are filed under CRNA for the Discipline filter (build.py applies
+    // the same fold). This is a relevance mapping for filtering.
+    // Organizer wording is never rewritten. A student opportunity keeps the organizer's own roles and words,
+    // so AAAA's "CAA student posters" reads as the organizer published it.
     const focusOrder = ["clinical", "academic", "research", "leadership"];
     d.series.forEach(s => {
       s.professions = [...new Set((s.professions || []).map(p => p === "CAA" ? "CRNA" : p))];
@@ -219,7 +219,7 @@
     const continents = new Set(mapped.map(e => e.geo.continent));
     const coverage = $("#coverageCount");
     if (coverage) coverage.textContent = `Of ${upcoming.length} upcoming dated entries, ${mapped.length} have mapped locations in ${countries.size} countries across ${continents.size} continents.`;
-    // 2026-09-24 (curator decision): a catch-all tag is a space-saver on a national meeting that
+    // A catch-all tag is a space-saver on a national meeting that
     // would otherwise list every subspecialty. It is not something a visitor filters by, so it stays
     // a badge and is kept out of the Specialty dropdown.
     const CATCH_ALL_SPEC = new Set(["Multispecialty", "Multidisciplinary", "Multi-specialty"]);
@@ -272,8 +272,8 @@
     if (st.spec && !(s.specialty || []).includes(st.spec)) return false;
     return true;
   }
-  // 2026-09-24 (curator decision): a list card carries the same vocabulary as the filter rows —
-  // its Scope tags and its Focus (record type), the latter in that type's colour.
+  // A list card carries the same vocabulary as the filter rows — its Scope tags and its Focus
+  // (record type), the latter in that type's colour.
   const SCOPE_LABEL = Object.fromEntries(SCOPE_CHIPS.filter(([v]) => v));
   const scopeBadges = s => scopeTags(s).filter(t => SCOPE_LABEL[t])
     .map(t => badge("scope", t, SCOPE_LABEL[t], `Show every record in the ${SCOPE_LABEL[t]} scope`)).join("");
@@ -323,7 +323,7 @@
       if (k === "n" && g.country !== v) return false;
     }
     if (st.near) {
-      // 2026-09-24 (red team F06): a pin placed only at a state's or country's center is not a venue.
+      // A pin placed only at a state's or country's center is not a venue.
       // It is left out of distance results rather than given a mile count it cannot support.
       if (g.lat == null || g.precision === "state" || g.precision === "country") return false;
       if (miles(st.near.lat, st.near.lon, g.lat, g.lon) > st.radius) return false;
@@ -331,21 +331,20 @@
     return true;
   }
   // An exception is any record whose current source check did not confirm it: not found, conflicting,
-  // unreadable without curator evidence on file, or found with the stored quote no longer matching.
+  // or unreadable without curator evidence on file.
   function isException(e) {
     const v = e.verify || { state: "unchecked" };
     if (["expected", "rule", "archived", "announced"].includes(v.state)) return false;
-    // 2026-09-24 (curator decision): "Source wording changed" was retired. The site never showed the
-    // original excerpt, so a reader had no reference point and nothing to act on. A verified record is
-    // verified: the nightly check found the start date, its year and a name word on the organizer page.
+    // A verified record is verified: the nightly check found the start date, its year and a name word on
+    // the organizer page. A stored quote that no longer matches the page is not flagged on its own: a reader
+    // would have no reference point and nothing to act on.
     if (v.state === "verified") return false;
     return true;
   }
   function verMatch(e) { return !st.review || isException(e); }
-  /* ---------- search synonyms (2026-09-24, curator finding: "cardiac surgery" returned nothing) ----------
-     The corpus says "Cardiothoracic Surgery"; a clinician types "cardiac". Matching was a plain
-     substring test on each word, so a natural phrasing returned an empty page while 13 cardiac
-     meetings sat in the data. Every expansion below points at wording that actually appears in this
+  /* ---------- search synonyms ----------
+     The corpus says "Cardiothoracic Surgery"; a clinician types "cardiac". Each query word also matches
+     its clinical equivalents. Every expansion below points at wording that actually appears in this
      corpus — the map widens the question, it never invents a record. British and US spellings are
      paired in both directions. */
   const SYN = [
@@ -429,8 +428,8 @@
       const c = e.call || {}, opens = c.opens || (c.status === "open" ? TODAY : null), closes = c.closes;
       if ((!annual && !orbitCallVisible(e)) || !opens) return false;
       if (!closes) return ["open", "urgent"].includes(e.c.k) && key === TODAY.slice(0, 7);
-      // Under Focus All a call closing this month is listed once, under Abstracts Due. 2026-09-24 (red team F04):
-      // with Focus Open Abstracts that column is the only one shown, so the call stays in it through its closing month.
+      // Under Focus All a call closing this month is listed once, under Abstracts Due. With Focus Open Abstracts
+      // that column is the only one shown, so the call stays in it through its closing month.
       return opens <= end && closes >= start && (st.focus === "open" || !(closes >= start && closes <= end));
     }).sort(byOpenDue);
     return { key, meetings: dated.filter(e => !isCelebration(e)), celebrations: dated.filter(isCelebration), due, open };
@@ -467,7 +466,7 @@
 
   /* ---------- pieces ---------- */
   const colorOf = s => s.kind === "observance" ? "var(--t-obs)" : "var(--t-meet)";   // colour = record type; disciplines are badges
-  /* ---------- badges (2026-09-24, curator decision) ----------
+  /* ---------- badges ----------
      Every badge on a record is a filter you can reach. A badge is a button only when the filter row
      above the list can actually represent it; a value with no control stays a plain tag rather than a
      click that quietly does nothing. Family → control: disc → Discipline chip, scope → Scope chip,
@@ -493,9 +492,8 @@
     // Check times stay in the page header.
     if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
-    // 2026-09-24 (curator decision): fidelity is presumed. A record that passed its check carries no
-    // badge at all — "Start found" and "Source reviewed" were retired. A label appears only when the
-    // checks found something to say: a projection, a save-the-date, a rule-computed date, or an exception.
+    // Fidelity is presumed: a record that passed its check carries no badge at all. A label appears only
+    // when the checks found something to say: a projection, a save-the-date, a rule-computed date, or an exception.
     if (v.state === "verified") return "";
     if (exceptionsOnly && (v.state === "rule" || v.state === "archived")) return "";
     if (v.state === "announced" && exceptionsOnly) return `<span class="vf verified" title="The organizer has published a save-the-date for these days; the detailed programme is still to come.">${ICON.check}Save the date</span>`;
@@ -513,8 +511,8 @@
     if (exceptionsOnly) {
       const plain = v.state === "not_found" ? "Date needs review" :
         v.state === "conflict" ? "Source reviewed" : v.state === "expected" ? "Expected month" : "Source not re-checked";
-      // 2026-09-24 (curator decision): an organizer date ambiguity belongs inside the record, where
-      // someone weighing the meeting will read it, not as a warning on every card that passes by.
+      // An organizer date ambiguity belongs inside the record, where someone weighing the meeting
+      // will read it, not as a warning on every card that passes by.
       const tone = v.state === "not_found" ? "warn" : "muted";
       return `<span class="source-note ${tone}" title="${esc(tip)}">${esc(plain)}</span>`;
     }
@@ -532,7 +530,7 @@
     const dueOn = dateMode && e.call && e.call.closes ? D(e.call.closes) : null;
     const day = dateMode ? (dueOn ? String(dueOn.getDate()) : "Open") : e.month_only ? MON[d.getMonth()] : e.start === e.end ? String(d.getDate()) : same ? d.getDate() + "–" + b.getDate() : d.getDate() + "→";
     const sub = dateMode ? (dueOn ? "Due " + MON[dueOn.getMonth()] + " " + dueOn.getFullYear() : "No due date posted") : e.month_only ? d.getFullYear() + " · expected" : (same || e.start === e.end ? MON[d.getMonth()] : MON[d.getMonth()] + "–" + MON[b.getMonth()] + " " + b.getDate()) + " " + d.getFullYear();
-    // the Focus badge already says Celebration / Conference; kindTag now only refines the meeting form
+    // the Focus badge already says Celebration / Conference; kindTag only refines the meeting form
     const kindTag = s.kind === "observance" || s.kind === "conference" ? "" : `<span class="tag">${esc(s.kind[0].toUpperCase() + s.kind.slice(1))}</span>`;
     const dist = st.near && e.geo && e.geo.lat != null ? `<span>${Math.round(miles(st.near.lat, st.near.lon, e.geo.lat, e.geo.lon))} mi away</span>` : "";
     const appWeekNow = s.name === "National APP Week" && e.start <= TODAY && e.end >= TODAY;
@@ -689,7 +687,7 @@
       </div>
       ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}`;
   }
-  /* ---------- phone Calendar (2026-09-24): a day-by-day agenda of the same records ----------
+  /* ---------- phone Calendar: a day-by-day agenda of the same records ----------
      A seven-column month grid does not fit a phone held upright, so below 700 px the Calendar lists
      the month by day: each record once, under the day it starts; an abstract call under the day it
      opens and the day it is due; anything already running on the 1st under "Continuing". Desktop and
@@ -706,8 +704,8 @@
         if (x.from < x.to && x.from >= mS) put(x.from, { x, due: false });
         else if (x.from < mS && x.to > mE) carried.push({ x, due: false });
       } else if (x.from >= mS) {
-        // 2026-09-24 (red team F14): a record that started earlier this month and is still running stays in
-        // view. Filing it under its start day folded National APP Week away during APP Week.
+        // A record that started earlier this month and is still running stays in view under "Under way
+        // today"; filed under its start day, it would fold away with the earlier days.
         if (current && x.from < TODAY && x.to >= TODAY) ongoing.push({ x });
         else put(x.from, { x });
       }
@@ -763,8 +761,8 @@
     const selected = annualFocus ? annual : selectedMonth;
     const item = (e, meta, tone) => `<button class="orbit-item ${tone}" data-e="${esc(e.id)}"><span class="orbit-item-date">${esc(meta)}</span><strong>${esc(e.s.name)}</strong><span>${esc(e.s.org_display || e.s.org)}</span></button>`;
     // With a Focus chosen only its group shows, and it opens; with All every group starts collapsed.
-    // 2026-09-24 (red team F18): a month shows its first 12 records per group, and a "Show all" button reveals
-    // the rest in place. Orbit is the landing view, and October 2026 alone holds 69 meetings.
+    // A month shows its first 12 records per group, and a "Show all" button reveals the rest in place:
+    // Orbit is the landing view, and a busy month holds dozens of meetings.
     const group = (title, tone, rows, meta) => {
       const allKey = `${selectedMonth.key}|${tone}`, expanded = !annualFocus && orbitShowAll.has(allKey);
       const shown = annualFocus || expanded ? rows : rows.slice(0, 12);
@@ -838,15 +836,14 @@
   function directorySeries() {
     // Focus narrows the Directory to series with a matching edition: a meeting or celebration series, an upcoming deadline, or a call open now.
     const editionFilters = st.where || st.area || st.near || st.review || st.focus || st.scope.includes("students");
-    // 2026-09-24 (red team F12): the same word-by-word matching and clinical synonyms as List, applied to the
-    // series' own fields. "cardiac surgery" found 5 series in List and none here, because this matched the
-    // whole phrase as one string. List also searches edition fields (city, theme, sessions); Directory does not.
+    // The same word-by-word matching and clinical synonyms as List, applied to the series' own fields.
+    // List also searches edition fields (city, theme, sessions); Directory does not.
     const words = (st.q || "").toLowerCase().split(/\s+/).filter(Boolean);
     const seriesHay = s => [s.name, s.org_display || s.org, s.org, (s.specialty || []).join(" "), (s.professions || []).join(" ")].join(" ").toLowerCase();
     return DATA.series.filter(s => seriesMatch(s) &&
       (!words.length || words.every(w => wordHit(seriesHay(s), w))) &&
       (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && focusMatch(e) && (st.expected || !e.expectedRow))))
-      // 2026-09-24: a series with no edition at all has nothing to show; it is not listed.
+      // A series with no edition at all has nothing to show; it is not listed.
       .filter(s => EDS.some(e => e.series === s.id));
   }
   function vDirectory() {
@@ -855,17 +852,16 @@
     const eds = new Map();
     EDS.forEach(e => { if (!eds.has(e.series)) eds.set(e.series, []); eds.get(e.series).push(e); });
     const letters = [...new Set(S.map(s => s.name[0].toUpperCase()))];
-    // 2026-09-24: Directory had no level-2 heading, so opening a record from here jumped H1 to H3.
+    // A level-2 heading (screen readers only) keeps the outline H1 → H2 → H3 when a record opens from here.
     let h = `<h2 class="sr">Every meeting series, A to Z</h2><nav class="alpha" aria-label="Jump to letter">${letters.map(l => `<a href="#" data-letter="${esc(l)}">${esc(l)}</a>`).join("")}</nav><div class="dir">`, cur = "";
     S.forEach(s => {
       const L = (eds.get(s.id) || []).sort((a, b) => a.start.localeCompare(b.start));
       const next = L.find(e => !e.past && !e.expectedRow && verMatch(e));
       const hidden = !next && L.some(e => !e.past && !e.expectedRow);
       const anchor = s.name[0].toUpperCase() !== cur ? (cur = s.name[0].toUpperCase(), ` id="letter-${esc(cur)}"`) : "";
-      // 2026-09-24 (red team F17): the card is an <article>, not a <button>. Its badges are buttons of their
-      // own, and a button inside a button is invalid HTML: the parser closed each card early and spilled
-      // 2,085 badges, dates and year strips into the grid as separate tiles. The series opens from the
-      // title button (keyboard) or a click anywhere on the card (data-s on the article).
+      // The card is an <article>, not a <button>: its badges are buttons of their own, and a button inside
+      // a button is invalid HTML. The series opens from the title button (keyboard) or a click anywhere on
+      // the card (data-s on the article).
       h += `<article class="srs"${anchor} data-s="${esc(s.id)}"><button type="button" class="srs-open" data-s="${esc(s.id)}"><span class="title">${esc(s.name)}</span><span class="org">${esc(s.org_display || s.org)}</span></button>
         <span class="badges">${profTags(s)}${scopeBadges(s)}${specTags(s, 2)}</span>
         <span class="meta">${next ? "Next recorded: " + esc(range(next)) : hidden ? "Next date awaiting a source check" : esc(s.status_note || "Next date not posted")}${s.archive_url ? " · past-meetings archive" : ""}${next ? " " + vBadge(next, true) : ""}</span>
@@ -876,7 +872,7 @@
 
   function spotlight() {
     const el = $("#spotlight");
-    el.hidden = true; return;   // by decision (2026-09-22): no observance banner in the header
+    el.hidden = true; return;   // no observance banner in the header
     const current = EDS.filter(e => e.s.kind === "observance" && !e.expectedRow && e.start <= TODAY && e.end >= TODAY && ["verified", "rule"].includes(e.verify.state))
       .sort((a, b) => (a.s.name === "National APP Week" ? -1 : 0) - (b.s.name === "National APP Week" ? -1 : 0))[0];
     if (!current) { el.hidden = true; return; }
@@ -884,16 +880,17 @@
     el.innerHTML = `<div class="live-ribbon"><span class="live-flag">${current.s.name === "National APP Week" ? `OUR WEEK · DAY ${daysBetween(current.start, TODAY) + 1} OF ${daysBetween(current.start, current.end) + 1}` : "HAPPENING NOW"}</span><strong>${esc(current.s.name)}</strong><span class="live-dates">${esc(range(current))} · through ${esc(MON[D(current.end).getMonth()] + " " + D(current.end).getDate())}</span><button class="live-source" data-e="${esc(current.id)}">View official source and details ↗</button></div>`;
   }
 
-  /* ---------- fidelity index (2026-09-24, curator decision; shown as "Fidelity Index" since 2026-09-24 evening) ----------
+  /* ---------- fidelity index ----------
      What it counts: of every dated record the site shows, the share that
        (1) carries the organizer's own wording, or is computed from a published rule,
        (2) holds a good verification state,
        (3) has a source link, and, if the meeting has not happened yet,
        (4) a source link that still resolves, and
        (5) a confirmation no older than 90 days.
-     What it does NOT claim: that end dates, venues or submission cut-off times were verified.
+     That share is multiplied by the share projected correct from the independent audits' pooled
+     error rate (below), so the index reflects the errors audits keep finding.
      It falls when an organizer removes a page an upcoming record depends on, when a check fails
-     with no organizer wording on file, or when confirmations go stale. */
+     with no organizer wording on file, when confirmations go stale, or when an audit finds errors. */
   const FID_OK = new Set(["verified", "rule", "announced", "archived"]);
   function fidelityIndex() {
     const dated = EDS.filter(e => !e.expectedRow && !e.month_only);
@@ -906,9 +903,8 @@
       if (!e.past) {
         if (e.link_dead) return false;
         if (v.state !== "rule") {
-          // 2026-09-24 (red team F07): stamps come as dates ("2026-09-24") or instants ("2026-09-24T21:51:06Z").
-          // D() takes a date only, so an instant made the age NaN and "NaN > 90" never failed. The age is taken
-          // from the calendar date, and an unreadable stamp fails.
+          // Stamps come as dates ("YYYY-MM-DD") or instants ("YYYY-MM-DDThh:mm:ssZ"). D() takes a date only,
+          // so the age is taken from the calendar date. An unreadable stamp fails explicitly: NaN > 90 is false.
           const seen = String(v.last_verified || v.checked || "").slice(0, 10);
           const age = /^\d{4}-\d{2}-\d{2}$/.test(seen) ? daysBetween(seen, TODAY) : NaN;
           if (!Number.isFinite(age) || age > 90) return false;
@@ -916,10 +912,29 @@
       }
       return true;
     }).length;
-    return { pct: (100 * ok) / dated.length, ok, total: dated.length };
+    // Independent audits of the upcoming records (sources/audits.json, carried as DATA.audits) count the records
+    // wrong in an action-critical field even though they carried organizer evidence. Their pooled rate projects how
+    // often a record with evidence is still wrong, including errors no audit has found yet. The index is the share
+    // with evidence times the share projected correct; the range uses the 95% Wilson interval of the audit rate.
+    // `wrong` is a count; a stale cached file may still carry a list of records, counted by its length.
+    const A = (DATA && DATA.audits) || [];
+    const audited = A.reduce((t, a) => t + (+a.audited || 0), 0);
+    const wrong = A.reduce((t, a) => t + (Array.isArray(a.wrong) ? a.wrong.length : (Number(a.wrong) || 0)), 0);
+    const rate = audited ? wrong / audited : 0;
+    const [rlo, rhi] = wilsonInterval(wrong, audited);
+    const coverage = ok / dated.length;
+    return { pct: 100 * coverage * (1 - rate), ok, total: dated.length, coverage: 100 * coverage,
+             wrong, audited, audits: A.length, correct: 100 * (1 - rate),
+             low: 100 * coverage * (1 - rhi), high: 100 * coverage * (1 - rlo) };
+  }
+  // 95% Wilson score interval for a proportion x/n, as [low, high]; [0, 0] when nothing was audited.
+  function wilsonInterval(x, n, z = 1.959964) {
+    if (!n) return [0, 0];
+    const p = x / n, d = 1 + z * z / n, c = p + z * z / (2 * n), r = z * Math.sqrt(p * (1 - p) / n + z * z / (4 * n * n));
+    return [Math.max(0, (c - r) / d), Math.min(1, (c + r) / d)];
   }
 
-  /* ---------- reliability index (2026-09-24, curator decision) ----------
+  /* ---------- reliability index ----------
      What it counts: of every upcoming dated record, the share that the latest automated check
        re-confirmed from the organizer's own material (start date, its year and a meeting-name word found
        on the organizer's page, rendered when the page needs JavaScript, or in the organizer's own image
@@ -939,7 +954,7 @@
   }
 
   /* ---------- chip availability: a filter is offered only when it can return a record ---------- */
-  // Added 2026-09-24. A chip that matches nothing is hidden rather than offered as a dead end.
+  // A chip that matches nothing is hidden rather than offered as a dead end.
   // "All" is always kept, and a chip the visitor has already selected is kept so a shared link keeps its control.
   function availableChips() {
     const series = DATA.series || [];
@@ -971,7 +986,7 @@
   function controls() {
     CHIPS_OK = availableChips();
     $("#quickprof").innerHTML = `<span class="flabel">Discipline</span>${profRow()}`;
-    const quickScope = $("#quickscope");   // guarded: a cached pre-2026-09-24 page has no Scope row
+    const quickScope = $("#quickscope");   // guarded: a cached older page may lack the Scope row
     if (quickScope) quickScope.innerHTML = `<span class="flabel">Scope</span>${scopeRow()}`;
     $("#quickfocus").innerHTML = `<span class="flabel">Focus</span>${focusRow()}`;
     $("#viewtools").innerHTML = `<div class="seg" role="group" aria-label="Display">
@@ -1147,10 +1162,8 @@
     if (!$("#dlg").open) $("#dlg").showModal();
     writeHash({ e: e.id });
   }
-  // 2026-09-24 (curator finding): a year row was chosen by comparing YEARS, so a projected month that
-  // had already come and gone still read "Not yet announced". Nothing in the past is "not yet announced";
-  // if the window has closed with no organizer date, the honest line is "No data available".
-  // The old copy also promised a review the page cannot evidence; the line is now just the plain fact.
+  // A year row is judged by the last day of its expected window, not by its year: nothing in the past is
+  // "not yet announced"; if the window has closed with no organizer date, the line is "No data available".
   const lastDayOf = (y, mo) => new Date(Date.UTC(y, mo, 0)).toISOString().slice(0, 10);
   function yearRows(s, L) {
     const Y0 = +TODAY.slice(0, 4), rows = [];
@@ -1203,7 +1216,7 @@
     document.addEventListener("click", ev => {
       const t = ev.target.closest("[data-badge],[data-display],[data-prof],[data-f],[data-scope],[data-focus],[data-act],[data-e],[data-s],[data-letter],[data-day],[data-dayopen],[data-orbit-month],[data-orbit-year]");
       if (!t) return;
-      // 2026-09-24: a badge on a record is a way into the list. Clicking one clears the other
+      // A badge on a record is a way into the list. Clicking one clears the other
       // families, applies just that filter, closes the record and shows the result as a list.
       if (t.dataset.badge) {
         ev.preventDefault(); ev.stopPropagation();
@@ -1288,6 +1301,19 @@
       if (act === "ics") { icsFor(byId($("#dlg").dataset.e)); return; }
       if (act === "copy") { copy(location.href, "Link copied"); return; }
       if (act === "copyview") { copy(location.href, "Link to this view copied"); return; }
+      if (act === "layout") {   // phones only: switch between the mobile and desktop layouts (assets/layout.js)
+        // Applied in place, not by reloading: a reload keeps the old zoom, so the desktop layout would open
+        // magnified. The choice is remembered in this browser when storage is available.
+        const root = document.documentElement, toDesktop = !root.classList.contains("force-desktop");
+        const vp = document.querySelector('meta[name="viewport"]');
+        const fit = Math.min(1, Math.round((window.innerWidth / 1280) * 1000) / 1000);
+        if (vp) vp.setAttribute("content", toDesktop ? `width=1280, initial-scale=${fit}, minimum-scale=${fit}` : "width=device-width,initial-scale=1,viewport-fit=cover");
+        root.classList.toggle("force-desktop", toDesktop);
+        try { if (toDesktop) localStorage.setItem("runway-layout", "desktop"); else localStorage.removeItem("runway-layout"); } catch (e) { /* this visit only */ }
+        t.textContent = toDesktop ? "Switch to the mobile layout" : "Desktop layout";
+        render(); window.scrollTo(0, 0);
+        return;
+      }
       if (act === "filters") { filtersOpen = !filtersOpen; $("#filters").classList.toggle("open", filtersOpen); $("#geoquick").classList.toggle("open", filtersOpen); t.setAttribute("aria-expanded", String(filtersOpen)); return; }
       if (t.dataset.letter) { ev.preventDefault(); const el = document.getElementById("letter-" + t.dataset.letter); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 170 }); return; }
       if (t.dataset.dayopen) { openDay(t.dataset.dayopen); return; }
@@ -1358,8 +1384,10 @@
       : tone === "warn"
         ? "The last source check completed, and the fidelity index is below 95%."
         : "The last source check completed, and the fidelity index is at or above 95%.";
+    const pc = x => x.toFixed(2) + "%";
     const fidTip = f
-      ? `${f.ok} of ${f.total} dated records carry the organizer's own wording (or a published rule), hold a good verification state, and — for meetings still ahead — a working source link confirmed within 90 days. It does not claim that end dates, venues or submission cut-off times were verified.`
+      ? `${f.ok} of ${f.total} dated records carry the organizer's own wording (or a published rule), hold a good verification state, and — for meetings still ahead — a working source link confirmed within 90 days (${pc(f.coverage)}).` +
+        (f.audited ? ` Independent audits found ${f.wrong} of ${f.audited} audited upcoming records wrong in a date, format, place, abstract call or eligibility, so a record is projected correct ${pc(f.correct)} of the time, errors not yet found included. Fidelity = ${pc(f.coverage)} × ${pc(f.correct)}; 95% range ${f.low.toFixed(1)}–${f.high.toFixed(1)}%.` : "")
       : "";
     const r = reliabilityIndex(checkedAt);
     const relTip = r
@@ -1375,6 +1403,8 @@
       `<span class="stamp-line"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i>Updated ${esc(srcStamp)}</span>` +
       (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
+    const lt = $(".layout-toggle");
+    if (lt) lt.textContent = document.documentElement.classList.contains("force-desktop") ? "Switch to the mobile layout" : "Desktop layout";
     await resolveNear();
     bind(); wireSkip(); render();
     if (PHONE_CAL.addEventListener) PHONE_CAL.addEventListener("change", () => { if (st.display === "calendar") render(); });

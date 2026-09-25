@@ -1,34 +1,28 @@
-"""Scripted interface check for the Runway (run before every UI push, and against the live site after deploy).
+"""Scripted interface check for the Runway.
 
-    python scripts/ui_check.py                      # serves ./site locally
-    python scripts/ui_check.py --url https://mbkarasin.github.io/app-conference-runway/
+    python scripts/ui_check.py                  # serves ./site locally
+    python scripts/ui_check.py --url <site>     # checks a deployed site
 
 Needs Playwright for Python with a Chromium browser (`pip install playwright && playwright install chromium`).
-It is a builder's tool; the GitHub workflow does not run it. Every line printed is one assertion; the exit code
-is non-zero if any assertion failed. It checks what screenshots have missed before: the display-switch
-separators, the year on every Orbit month, the filter rows, the header's Fidelity and Reliability indices
-(labels, and values re-derived from the published data), the landmark celebration weeks in every view, each
-Focus in each view, legacy links, the request address, the footer's link to the index definitions, phones
-held upright and sideways (touch-emulated), and console errors.
-
-Since 2026-09-24 it also checks the header tagline, that every browser-tab and installed-app icon URL carries
-its content version (and the tab icon draws no letters), and it replays the red team's P1 cases with the clock
-frozen at the audit's moment (F01, F02, F04, F06, F07, F12, F14, F17, F18, F21). Each of those failed on
-e4bbe92. "Visible" means rendered with a real box and not inside a closed <details>: text in the DOM is not
-enough, which is how the phone agenda check once passed with National APP Week folded away.
+Every line printed is one assertion; the exit code is non-zero if any assertion failed. It checks the display
+switch, the Orbit ring, the filter rows, the header's Fidelity and Reliability indices (values re-derived from
+the published data), the landmark celebration weeks in every view, each Focus in each view, older links, the
+request address and footer links, the header tagline and icon URLs, phone, tablet and desktop layouts, the
+calendar feed, and console errors. Date-dependent cases run at a fixed clock (FIXED_NOW) so they reproduce.
+"Visible" means rendered with a real box and not inside a closed <details>; text in the DOM is not enough.
 """
 import argparse, functools, http.server, re, socketserver, sys, threading
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 LANDMARKS = ["National APP Week", "PA Week", "National Nurse Practitioner Week", "National CRNA Week"]
-TAGLINE = "Independently curated for advanced practice providers worldwide"   # curator's wording, 2026-09-24
+TAGLINE = "Independently curated for advanced practice providers worldwide"   # the header tagline, verbatim
 # An item counts as visible only if it is rendered with a real box and is not inside a closed <details>.
 VISIBLE_JS = """name => [...document.querySelectorAll('#view button, #view a, #view article')].some(x => {
   if (!x.textContent.includes(name)) return false;
   const d = x.closest('details'); if (d && !d.open) return false;
   const r = x.getBoundingClientRect(); return r.width > 0 && r.height > 0; })"""
-FIXED_NOW = "2026-09-24T12:00:00-04:00"   # the red team's audit date, New York; the regressions below replay its cases
+FIXED_NOW = "2026-09-24T12:00:00-04:00"   # a fixed clock (New York) so the date-dependent cases below are reproducible
 SCOPE = ["All", "Clinical", "Academic", "Research", "Leadership", "Students"]
 FOCUS = ["All", "Abstracts Due", "Open Abstracts", "Conferences", "Celebrations"]
 SCARLET = "rgb(204, 0, 51)"
@@ -107,8 +101,8 @@ def main():
         # 3. Filter rows: Discipline; Scope with Focus to its right.
         check("Scope row label and chips", texts("#quickscope .flabel") == ["Scope"] and texts("#quickscope .chip") == SCOPE, ", ".join(texts("#quickscope .chip")))
         check("Focus row label and chips", texts("#quickfocus .flabel") == ["Focus"] and texts("#quickfocus .chip") == FOCUS, ", ".join(texts("#quickfocus .chip")))
-        # Filter bar since the 2026-09-24 reflow: views beside search; Discipline with Focus to its right;
-        # Scope with Location to its right. Each pair shares a row at 1440 px, rows in that order.
+        # Filter bar: views beside search; Discipline with Focus to its right; Scope with Location to its
+        # right. Each pair shares a row at 1440 px, rows in that order.
         box = lambda sel: page.locator(sel).bounding_box() if page.locator(sel).count() else None
         pairs = [("#viewtools", ".search"), ("#quickprof", "#quickfocus"), ("#quickscope", "#geoquick")]
         rows = []
@@ -119,7 +113,7 @@ def main():
             check(f"{b_sel} sits to the right of {a_sel} at 1440 px", ok, f"{a} | {b}")
         check("filter rows run views/search, Discipline/Focus, Scope/Location", rows == sorted(rows) and len(set(rows)) == 3, str(rows))
 
-        # Header indices (2026-09-24): labels, no "metric", and both values re-derived from the page's own data.
+        # Header indices: labels, no "metric", and both values re-derived from the page's own data.
         head = page.inner_text("#updated")
         check("header shows Fidelity Index and Reliability Index", "Fidelity Index:" in head and "Reliability Index:" in head, head.replace("\n", " | "))
         check("header does not say 'metric'", "metric" not in head.lower())
@@ -142,7 +136,13 @@ def main():
                     seen = v.get("last_verified") or v.get("checked")
                     if not seen or days_since(seen) > 90: return False
             return True
-        fid = 100 * sum(map(fid_ok, dated)) / len(dated)
+        coverage = sum(map(fid_ok, dated)) / len(dated)
+        # Times the share projected correct from the pooled independent audits (§3.4). `wrong` is a count;
+        # a list (one entry per record) is counted by its length, as app.js does for a stale cached file.
+        aud = data.get("audits") or []
+        audited = sum(a["audited"] for a in aud)
+        wrong = sum(len(a["wrong"]) if isinstance(a.get("wrong"), list) else int(a.get("wrong") or 0) for a in aud)
+        fid = 100 * coverage * (1 - (wrong / audited if audited else 0))
         import datetime as _dt
         chk = data.get("sources_checked")
         fresh = bool(chk) and (now_ms / 1000 - _dt.datetime.fromisoformat(chk.replace("Z", "+00:00")).timestamp()) / 3600 <= 36
@@ -150,7 +150,9 @@ def main():
         rule_n = sum(1 for e in up if state(e) == "rule")
         mach_n = sum(1 for e in up if e.get("machine") and state(e) != "rule") if fresh else 0
         rel = 100 * (rule_n + mach_n) / len(up)
-        check("Fidelity Index matches its definition re-derived from the data", f"Fidelity Index: {fid:.2f}%" in head, f"derived {fid:.2f}%")
+        check("Fidelity Index matches its definition re-derived from the data", f"Fidelity Index: {fid:.2f}%" in head, f"derived {fid:.2f}% = {100*coverage:.2f}% evidence x {100*(1-wrong/audited):.2f}% projected correct ({wrong}/{audited} wrong in {len(aud)} audits)")
+        fid_note = page.evaluate("[...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.includes('dated records carry')) || ''")
+        check("Fidelity note states the audit basis", audited > 0 and f"found {wrong} of {audited} audited" in fid_note, fid_note[:120])
         check("Reliability Index matches its definition re-derived from the data", f"Reliability Index: {rel:.2f}%" in head, f"derived {rel:.2f}% = ({mach_n} machine + {rule_n} rule) / {len(up)}, fresh={fresh}")
 
         # 4. Landmark celebration weeks in every view (next dated edition of each).
@@ -223,8 +225,8 @@ def main():
 
         # 7. Records, contact and handoff.
         go("display=list")
-        # Since the 2026-09-24 afternoon decision ("fidelity is presumed"), a record that passed its check
-        # carries no verification badge; a note appears only for an exception, projection, rule or save-the-date.
+        # Fidelity is presumed: a record that passed its check carries no verification badge; a note appears
+        # only for an exception, projection, rule or save-the-date.
         cards = page.evaluate("[...document.querySelectorAll('#view .ev')].map(c => [c.dataset.e, !!c.querySelector('.side .vf, .side .source-note')])")
         by_id = {e["id"]: e for e in data["editions"]}
         wrong = [i for i, has in cards if has and (by_id.get(i, {}).get("verify") or {}).get("state") == "verified"]
@@ -246,7 +248,7 @@ def main():
                 go(hash_)
                 over = page.evaluate("document.scrollingElement.scrollWidth - window.innerWidth")
                 check(f"no horizontal page scroll at {w} px ({hash_ or 'Orbit'})", over <= 0, f"{over}px")
-        # 9. Phones (2026-09-24): upright and sideways, with touch, as a phone reports itself. The desktop
+        # 9. Phones: upright and sideways, with touch, as a phone reports itself. The desktop
         #    layout must not change; that is checked by screenshot diff at release and guarded here.
         page.set_viewport_size({"width": 1440, "height": 1000})
         go("display=calendar")
@@ -281,8 +283,7 @@ def main():
                 apw = sorted((e for e in data["editions"] if series[e["series"]]["name"] == "National APP Week" and (e.get("verify") or {}).get("state") != "expected" and (e.get("end") or e["start"]) >= today), key=lambda e: e["start"])
                 if apw:
                     pgo(f"display=calendar&cal={apw[0]['start'][:7]}")
-                    # 2026-09-24: visible, not merely present. textContent also reads a collapsed <details>, which
-                    # is how this check passed while APP Week sat folded inside "Earlier in September" (red team F14).
+                    # Visible, not merely present: textContent also reads a collapsed <details>.
                     check("phone upright: National APP Week is visible in the Calendar agenda", ph_page.evaluate(VISIBLE_JS, "National APP Week"))
             else:
                 pos = ph_page.evaluate("getComputedStyle(document.querySelector('.bar')).position")
@@ -290,13 +291,13 @@ def main():
                 grid = ph_page.evaluate("(() => { const g = document.querySelector('#view .calspan'); return g ? Math.round(g.getBoundingClientRect().right) : -1; })()")
                 check("phone sideways: the Calendar month grid fits the screen", 0 < grid <= pw, f"grid right edge {grid} px, screen {pw} px")
             ctx.close()
-        # 10. Header wording and the browser-tab icons (2026-09-24).
+        # 10. Header wording and the browser-tab icons.
         page.set_viewport_size({"width": 1440, "height": 1000})
         go("")
         eyebrow = page.evaluate("(document.querySelector('.headactions .eyebrow') || {}).textContent || ''").strip()
         check("header tagline is the curator's wording", eyebrow == TAGLINE, eyebrow)
-        # Every icon URL carries ?v=<first 8 hex of its SHA-256>, so a changed icon is a new URL. The lettered
-        # icons stayed in browsers for hours because their bytes changed under the same URL.
+        # Every icon URL carries ?v=<first 8 hex of its SHA-256>, so a changed icon is a new URL (browsers
+        # keep an icon whose bytes change under the same URL).
         import hashlib, json as _json, xml.etree.ElementTree as ET
         from urllib.parse import urljoin, urlsplit, parse_qs
         links = page.evaluate("[...document.querySelectorAll('link[rel~=icon],link[rel=apple-touch-icon],link[rel=mask-icon],link[rel=manifest]')].map(l => [l.rel, l.getAttribute('href'), l.type || ''])")
@@ -316,11 +317,10 @@ def main():
                 root = ET.fromstring(body)
                 paths = [el for el in root.iter() if el.tag.endswith("path")]
                 texts = [el for el in root.iter() if el.tag.endswith("text")]
-                # curator decision 2026-09-24: the tab icon is the scarlet horizon and the three navy lanes, no letters
+                # the tab icon is the scarlet horizon and the three navy lanes, no letters
                 check("tab icon draws only the horizon and three lanes (no letters)", len(paths) == 4 and not texts, f"{len(paths)} paths, {len(texts)} text")
 
-        # 11. Red-team regressions (ChatGPT, 2026-09-24), replayed at the audit's moment with the clock frozen.
-        #     Each failed on e4bbe92 and must pass after the fix.
+        # 11. Date-dependent cases, run at a fixed clock (FIXED_NOW, New York).
         fctx = browser.new_context(viewport={"width": 1440, "height": 1000}, timezone_id="America/New_York")
         fpg = fctx.new_page()
         fpg.clock.set_fixed_time(FIXED_NOW)
@@ -331,31 +331,31 @@ def main():
             fpg.wait_for_selector("#quickfocus .chip", timeout=15000)
         # Filter-logic checks read textContent: a collapsed month section must not hide a record from the test.
         vtext = lambda: fpg.evaluate("document.querySelector('#view').textContent")
-        fgo("display=list&q=AAAA&prof=CRNA&scope=students")   # the view in the red team's screenshot
+        fgo("display=list&q=AAAA&prof=CRNA&scope=students")   # AAAA, filed under CRNA, with its student opportunity
         view = vtext()
-        check("F01 AAAA keeps the organizer's wording: CAA student posters", "CAA student posters" in view and "CRNA student posters" not in view)
+        check("AAAA keeps the organizer's wording: CAA student posters", "CAA student posters" in view and "CRNA student posters" not in view)
         fgo("display=list&focus=open")
-        check("F02 VAM is not listed as open before its November 18 opening", "Vascular Annual Meeting" not in vtext())
+        check("VAM is not listed as open before its November 18 opening", "Vascular Annual Meeting" not in vtext())
         fgo("focus=open&cal=2026-09")
-        check("F04 Orbit Open Abstracts keeps NACNS in September, the month it closes", "NACNS Annual Conference" in fpg.evaluate("[...document.querySelectorAll('.orbit-group.open .orbit-item')].map(x => x.textContent).join(' | ')"))
+        check("Orbit Open Abstracts keeps NACNS in September, the month it closes", "NACNS Annual Conference" in fpg.evaluate("[...document.querySelectorAll('.orbit-group.open .orbit-item')].map(x => x.textContent).join(' | ')"))
         fgo("focus=conferences&cal=2026-10")
         n_all = int(fpg.evaluate("(document.querySelector('.orbit-group.meet summary b') || {}).textContent || '0'"))
         n_before = fpg.locator(".orbit-group.meet .orbit-item").count()
         if fpg.locator(".orbit-group.meet button.orbit-more").count():
             fpg.click(".orbit-group.meet button.orbit-more")
         n_after = fpg.locator(".orbit-group.meet .orbit-item").count()
-        check("F18 Orbit month shows every meeting after Show all", n_all > 12 and n_before == 12 and n_after == n_all, f"{n_before} → {n_after} of {n_all}")
+        check("Orbit month shows every meeting after Show all", n_all > 12 and n_before == 12 and n_after == n_all, f"{n_before} → {n_after} of {n_all}")
         fgo("display=directory&q=cardiac%20surgery")
-        check("F12 Directory finds series for 'cardiac surgery', as List does", fpg.locator("#view .srs").count() > 0, f"{fpg.locator('#view .srs').count()} series")
+        check("Directory finds series for 'cardiac surgery', as List does", fpg.locator("#view .srs").count() > 0, f"{fpg.locator('#view .srs').count()} series")
         fgo("display=directory")
         dom = fpg.evaluate("""({stray: document.querySelectorAll('#view .dir > :not(.srs)').length, nested: document.querySelectorAll('#view button button').length,
             cards: document.querySelectorAll('#view .srs').length, whole: [...document.querySelectorAll('#view .srs')].every(c => c.querySelector('.badges') && c.querySelector('.meta') && c.querySelector('.srs-open'))})""")
-        check("F17 Directory cards hold their badges, dates and years (no nested buttons)", dom["cards"] > 0 and dom["stray"] == 0 and dom["nested"] == 0 and dom["whole"], str(dom))
+        check("Directory cards hold their badges, dates and years (no nested buttons)", dom["cards"] > 0 and dom["stray"] == 0 and dom["nested"] == 0 and dom["whole"], str(dom))
         fgo("display=list&near=49690&r=50")
-        check("F06 a venue pinned to its town is found near it (MAPA, Williamsburg MI)", "MAPA Fall CME Conference" in vtext())
+        check("a venue pinned to its town is found near it (MAPA, Williamsburg MI)", "MAPA Fall CME Conference" in vtext())
         fgo("display=list&near=23219&r=100")
-        check("F06 a record pinned only to a state is left out of distance results (VCNP)", "VCNP Annual Conference" not in vtext())
-        # F07: an ISO instant older than 90 days must fail the freshness test. The same data is served twice,
+        check("a record pinned only to a state is left out of distance results (VCNP)", "VCNP Annual Conference" not in vtext())
+        # An ISO instant older than 90 days must fail the freshness test. The same data is served twice,
         # the second time with one upcoming record's stamp set to 2026-01-01T00:00:00Z.
         fid_count = lambda: fpg.evaluate("(() => { const t = [...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.includes('dated records carry')) || ''; const m = t.match(/(\\d+) of (\\d+)/); return m ? [+m[1], +m[2]] : null; })()")
         fgo("")
@@ -370,22 +370,51 @@ def main():
         fgo("")
         after = fid_count()
         fpg.unroute("**/data/runway.json*")
-        check("F07 an ISO stamp older than 90 days fails the Fidelity freshness test", bool(before and after) and after[0] == before[0] - 1 and after[1] == before[1], f"{before} → {after}")
+        check("an ISO stamp older than 90 days fails the Fidelity freshness test", bool(before and after) and after[0] == before[0] - 1 and after[1] == before[1], f"{before} → {after}")
         fctx.close()
-        # F14 on a phone at the audit's moment: a record that started earlier this month and is still running stays in view.
+        # A phone at the fixed clock: a record that started earlier this month and is still running stays in view.
         pctx = browser.new_context(viewport={"width": 390, "height": 664}, is_mobile=True, has_touch=True, timezone_id="America/New_York",
                                    user_agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1")
         ppg = pctx.new_page(); ppg.clock.set_fixed_time(FIXED_NOW)
         ppg.goto(base + "#display=calendar", wait_until="networkidle"); ppg.reload(wait_until="networkidle")
         ppg.wait_for_selector("#view .agenda", timeout=15000)
-        check("F14 phone agenda shows National APP Week while it is under way", ppg.evaluate(VISIBLE_JS, "National APP Week"))
+        check("phone agenda shows National APP Week while it is under way", ppg.evaluate(VISIBLE_JS, "National APP Week"))
         pctx.close()
-        # F21: the calendar feed carries every dated record the site shows as upcoming.
+        # 12. Phones and tablets: Orbit months never overlap on a phone; a phone offers the desktop
+        #     layout and back; tablets held upright see the whole month grid; desktops show no switch.
+        mctx = browser.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True, user_agent=UA_PHONE, timezone_id="America/New_York")
+        mpg = mctx.new_page()
+        mpg.goto(base, wait_until="networkidle"); mpg.wait_for_selector(".orbit-month")
+        ov = mpg.evaluate("""(() => { const r=[...document.querySelectorAll('.orbit-month, .orbit-core')].map(m => m.getBoundingClientRect()); let n=0;
+            for (let i=0;i<r.length;i++) for (let j=i+1;j<r.length;j++) { const a=r[i], b=r[j]; if (Math.min(a.right,b.right)-Math.max(a.left,b.left) > 1 && Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top) > 1) n++; } return n; })()""")
+        check("phone: no Orbit month card overlaps another or the year control", ov == 0, f"{ov} overlapping pairs")
+        label = mpg.inner_text(".layout-toggle") if mpg.locator(".layout-toggle").is_visible() else ""
+        check("phone: a Desktop layout switch is offered", label == "Desktop layout", label)
+        mpg.goto(base + "#display=calendar", wait_until="networkidle"); mpg.wait_for_selector("#view .agenda")
+        mpg.click(".layout-toggle"); mpg.wait_for_timeout(600)
+        st_d = mpg.evaluate("({w: innerWidth, scale: visualViewport.scale, grid: !!document.querySelector('#view .calspan'), label: document.querySelector('.layout-toggle').textContent})")
+        check("phone: the switch shows the desktop layout, fitted to the screen", st_d["w"] >= 1270 and st_d["scale"] < 0.5 and st_d["grid"] and st_d["label"] == "Switch to the mobile layout", str(st_d))
+        mpg.locator(".layout-toggle").dispatch_event("click"); mpg.wait_for_timeout(600)
+        st_m = mpg.evaluate("({w: innerWidth, agenda: !!document.querySelector('#view .agenda'), label: document.querySelector('.layout-toggle').textContent})")
+        check("phone: the switch returns to the mobile layout", st_m["w"] == 390 and st_m["agenda"] and st_m["label"] == "Desktop layout", str(st_m))
+        mctx.close()
+        for tw, th in ((768, 1024), (820, 1180)):
+            tctx = browser.new_context(viewport={"width": tw, "height": th}, is_mobile=True, has_touch=True, timezone_id="America/New_York")
+            tpg = tctx.new_page(); tpg.goto(base + "#display=calendar", wait_until="networkidle"); tpg.wait_for_selector("#view .cal")
+            fit = tpg.evaluate("(() => { const w=document.querySelector('#view .calwrap'); return {inner: w ? w.scrollWidth - w.clientWidth : 0, sw: getComputedStyle(document.querySelector('.layout-strip')).display}; })()")
+            check(f"tablet {tw} px upright: the month grid fits the screen, no layout switch", fit["inner"] <= 1 and fit["sw"] == "none", str(fit))
+            tctx.close()
+        check("desktop: no layout switch", not page.locator(".layout-toggle").is_visible())
+
+        # 13. The calendar feed (runway.ics).
         ics = page.request.get(urljoin(base, "runway.ics")).text().replace("\r\n ", "")
         uids = set(re.findall(r"UID:([0-9a-f]{12})@", ics))
-        shown = [e for e in data["editions"] if (e.get("verify") or {}).get("state") != "expected" and not e.get("month_only") and (e.get("end") or e["start"]) >= today]
+        # The feed's contract: every upcoming dated record the site shows as settled. A record in an exception
+        # state (for example a page that timed out tonight) is one the site asks a reader to review, so it is left out.
+        settled = {"verified", "rule", "archived", "announced"}
+        shown = [e for e in data["editions"] if (e.get("verify") or {}).get("state") in settled and not e.get("month_only") and (e.get("end") or e["start"]) >= today]
         missing = [e["id"] for e in shown if e["id"] not in uids]
-        check("F21 calendar feed carries every upcoming dated record", not missing, f"{len(shown)} shown, {len(missing)} missing")
+        check("calendar feed carries every upcoming record the site shows as settled", not missing, f"{len(shown)} shown, {len(missing)} missing")
 
         check("no console or page errors", not errors, "; ".join(errors[:3]))
         browser.close()

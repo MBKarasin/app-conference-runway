@@ -6,7 +6,7 @@ For each edition the page is fetched (robots.txt honored, one request at a time 
                all appear on the organizer page
   not_found    page read fine, but the date/year/name is no longer there  -> needs human review
   unreachable  blocked, timed out, robots-disallowed, or too little text (JavaScript-only page)
-Second readers (2026-09-24): when the organizer's server delivered the page but the plain reader found too
+Second readers: when the organizer's server delivered the page but the plain reader found too
 little text or no match, the page is rendered in headless Chromium (Playwright), and a record that links the
 organizer's own image (evidence_image) has that image read by OCR (tesseract). Both identify themselves with
 the same user agent and obey the same robots.txt. A page that refused the reader (HTTP 403 and the like) is
@@ -20,8 +20,8 @@ import urllib.request, ssl
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 UA = "APPConferenceRunwayChecker/1.0 (+https://github.com/; weekly date check, one request per page)"
-# 2026-09-24: the same calendar day as build.py and snapshot.py (New York). On the UTC clock a manual run
-# after 8 p.m. Eastern froze meetings ending that day as past before they had ended in the US.
+# The same calendar day as build.py and snapshot.py (New York). On the UTC clock a run after 8 p.m.
+# Eastern would freeze meetings ending that day as past before they had ended in the US.
 from zoneinfo import ZoneInfo
 TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
 NOW = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"

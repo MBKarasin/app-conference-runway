@@ -375,7 +375,7 @@ h1 .runway-word{font-style:italic;font-weight:400}
   .kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0;padding:0;overflow:visible}.kpi{min-height:82px;padding:9px 10px!important;flex:auto}.kpi:nth-child(3){border-right:1px solid var(--rule)}.kpi:nth-child(even){border-right:0}.kpi:nth-child(n+3){border-top:1px solid var(--rule)}
   .kpi small{font-size:9px}.kpi b{font-size:27px}.kpi span{font-size:11px}
 }
-/* A compact briefing replaces the former five numeric tiles. */
+/* KPIs as one compact briefing line. */
 .kpis{display:flex;flex-wrap:wrap;align-items:center;gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .kpi,.kpi:first-child,.kpi:last-child{min-height:0;width:auto;display:inline-flex;align-items:baseline;gap:5px;padding:10px 13px;background:transparent;border:0;border-right:1px solid var(--rule);border-radius:0;box-shadow:none;flex:none}
 .kpi:first-child{padding-left:0}.kpi:last-child{border-right:0}
@@ -455,7 +455,7 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   .curator{grid-template-columns:1fr;padding:16px;gap:2px}.curator>.flabel,.curator .curated-line,.curator .who,.curator .credentials,.roles,.curator .fine{grid-column:1;grid-row:auto}.roles{grid-template-columns:1fr;gap:12px;margin-top:12px}.method .states{grid-template-columns:1fr}
 }
 
-/* Global directory pass: location controls and observances stay visible. */
+/* Masthead accent colour. */
 .mast .toprow{border-bottom:1px solid #EF335D}
 .mast .strip{height:2px;background:#EF335D}
 .mast h1 .app{color:#EF335D}
@@ -497,13 +497,8 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .okstamp{color:var(--ok);font-weight:700}
 
 /* ---------------------------------------------------------------------------
-   Night reading. The ledger layer above pins light surfaces; these rules give
-   the same page a dark set, for a phone opened at 2 a.m. on a night shift.
-   --------------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------------------
-   2026-09-22 tune-up: scarlet header rules, brighter title, stronger view
-   switch and result count, stacked review stamps, spanning calendar bars.
+   Scarlet header rules, brighter title, stronger view switch and result
+   count, stacked review stamps, spanning calendar bars.
    --------------------------------------------------------------------------- */
 :root{--stu:#6B4FA0;--dnp:#0F7B6C}
 .mast .toprow{border-bottom:1px solid #CC0033!important}
@@ -570,7 +565,7 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .bar .chip[aria-pressed="true"]{background:#102F3B!important;color:#FFFFFF!important;border-color:#102F3B!important;box-shadow:inset 0 -3px #CC0033!important;font-weight:800}
 .bar .geoquick #area:has(option:checked:not([value=""])),.bar .geoquick input:not(:placeholder-shown){background:#102F3B!important;color:#FFFFFF!important;border-color:#102F3B!important;box-shadow:inset 0 -3px #CC0033}
 
-/* MVP reveal: search is the first action; trust line under it; header buttons recede */
+/* Search is the first action; trust line under it; header buttons recede */
 .search input{font-size:16.5px;padding:12px 14px 12px 38px;border-width:2px}
 .search svg{width:18px;height:18px}
 .trustline{margin:6px 0 0;font-size:12.5px;color:var(--ink-3)}
@@ -578,8 +573,8 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .hbtn:hover,.hbtn:focus-visible{opacity:1}
 
 /* ---------------------------------------------------------------------------
-   2026-09-23 brand integration: image lockup, accessible contrast, and a
-   deliberate two-line introduction at desktop widths.
+   Brand: image lockup, accessible contrast, and a deliberate two-line
+   introduction at desktop widths.
    --------------------------------------------------------------------------- */
 .mast{background:#F3F6F6!important;color:#102F3B!important}
 .mast .toprow .eyebrow{color:#294653!important}
@@ -607,8 +602,8 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 }
 
 /* ---------------------------------------------------------------------------
-   2026-09-23 calendar hierarchy: neutral structure, scarlet only for active
-   moments. This removes the competing full-cell outline + saturated event fill.
+   Calendar hierarchy: neutral structure, scarlet only for active moments;
+   no full-cell outline or saturated event fill competes with it.
    --------------------------------------------------------------------------- */
 .cal.calspan{background:#D5E0E3;border-color:#BFCED2}
 .calspan .wk{border-top-color:#BFCED2;row-gap:4px}
@@ -620,7 +615,7 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .cal .cell:has(.ce.appweek){background:var(--surface)!important}
 .calspan .ce.due{background:#FFF7F9;box-shadow:inset -3px 0 #CC0033}
 
-/* 2026-09-23 masthead refinement */
+/* Masthead layout */
 .mast{padding-top:18px}
 .titlerow{align-items:flex-end}
 .headactions{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:8px}
@@ -631,7 +626,7 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .lede{max-width:100%!important;margin:0!important;text-align:left}
 @media(max-width:800px){.headactions{justify-content:flex-start}.headactions .eyebrow,.header-updated{text-align:left}.header-updated{margin-top:10px}}
 
-/* 2026-09-23 compact masthead, clearer contrast, and unified navigation */
+/* Compact masthead, clearer contrast, and unified navigation */
 :root{--ink-3:#535E62}
 
 .mast{padding-bottom:10px;gap:8px}
@@ -655,7 +650,7 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
   .bar .tabs button{white-space:nowrap;flex:none}
 }
 
-/* 2026-09-23 header, deadline grouping, and calendar structure */
+/* Header, deadline grouping, and calendar structure */
 .mast .headactions{justify-content:flex-end;align-content:start;gap:8px}
 .headactions .eyebrow{color:#102F3B!important}
 .mast .ledeRow{display:grid!important;grid-template-columns:minmax(0,1fr) max-content;align-items:end;gap:8px 20px;padding:0!important;margin:0!important}
@@ -673,8 +668,7 @@ footer{background:#E9F0F1;border-color:#B9CACF;padding-top:27px}.foot{display:gr
 .calspan .wk{column-gap:0!important;border-top-color:#102F3B!important}
 .calspan .cell{border-right:1px solid #102F3B}
 .calspan .cell:nth-child(7){border-right:0}
-/* 2026-09-24: the empty-week line used to start in the Sunday cell and run across the Sun/Mon divider.
-   It is now centred on the week, on its own surface, so it never straddles a cell border. */
+/* The empty-week line is centred on the week, on its own surface, so it never straddles a cell border. */
 .calspan .week-empty{position:relative;z-index:1;align-self:center;justify-self:center;margin:12px auto;padding:6px 14px;background:var(--surface);border:1px solid #D8E2E4;border-radius:2px;color:#526B76;font-size:12px;font-weight:700;letter-spacing:.02em;white-space:nowrap;max-width:calc(100% - 24px);overflow:hidden;text-overflow:ellipsis}
 .calspan .wk.emptyweek .cell,.calspan .wk.emptyweek .cell.out{background:#F8FAFA}
 
@@ -738,21 +732,21 @@ footer{background:#F4F7F7!important;padding-block:16px 22px!important;font-size:
 @media(max-width:900px){.foot{grid-template-columns:1fr!important}.curator{grid-template-columns:145px minmax(0,1fr)!important}}
 @media(max-width:640px){.curator{grid-template-columns:1fr!important;padding:10px 0 10px 12px!important}.curator>.flabel,.curator .curated-line,.curator .who,.curator .credentials,.roles,.curator .fine{grid-column:1!important;grid-row:auto!important}}
 
-/* 2026-09-23 control alignment, calendar disclosure, and footer hierarchy. */
+/* Control alignment, calendar disclosure, and footer hierarchy. */
 .quickaxes{display:grid;grid-template-columns:minmax(0,1fr);gap:8px 24px;align-items:center}
 .quickprof,.quickscope,.quickfocus{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-width:0}
-/* 2026-09-24: Scope (was Focus) on the left, the record-type Focus to its right. */
+/* Scope on the left, the record-type Focus to its right. */
 .quickscopefocus{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;min-width:0}
 .quickscope .chip,.quickfocus .chip{white-space:nowrap}
 
 .bar .row2{display:flex!important;flex-wrap:wrap;align-items:center;gap:10px 14px!important}
 .bar .row2 .geoquick{margin-left:0!important;justify-content:flex-start;align-items:center;flex-wrap:nowrap;align-self:center;gap:6px!important}
 .bar .row2 .geoquick .flabel{min-width:0}
-/* 2026-09-24: Near City and the radius select match the chips and each other — same height, radius, border and type. */
+/* Near City and the radius select match the chips and each other — same height, radius, border and type. */
 .bar .row2 .geoquick .geo-input{width:132px}
 .bar .row2 .geoquick .geo-sel{max-width:112px}
 .bar .row2 .geoquick #area{max-width:150px}
-/* 2026-09-24: every control in the Location row — the four chips, Near City and both selects — is one height. */
+/* Every control in the Location row — the four chips, Near City and both selects — is one height. */
 .geoquick .chip,.geoquick .geo-input,.geoquick .geo-sel{box-sizing:border-box;height:28px;line-height:26px;padding:0 9px;border-radius:2px;font-size:13px;font-weight:600}
 .geoquick .geo-input,.geoquick .geo-sel{border:1px solid #C8D6D9;background:#fff;font-family:inherit;color:var(--ink-2)}
 .geoquick .geo-sel{padding-right:4px}
@@ -760,7 +754,7 @@ footer{background:#F4F7F7!important;padding-block:16px 22px!important;font-size:
 .geoquick .geo-sel{padding-right:4px}
 @media(max-width:1180px){.bar .row2 .geoquick{flex-wrap:wrap}}
 .viewtools .seg button{padding:8px 12px!important}
-/* 2026-09-24: a scarlet separator between every display button (List | Calendar | Orbit | Directory). */
+/* A scarlet separator between every display button (List | Calendar | Orbit | Directory). */
 .seg button+button{border-left:2px solid #CC0033!important;border-radius:0 3px 3px 0!important;margin-left:4px!important;padding-left:12px!important}
 
 .calhead{display:grid;grid-template-columns:minmax(430px,.9fr) minmax(500px,1.1fr);align-items:center;gap:12px 24px;margin-bottom:10px}
@@ -838,26 +832,26 @@ details.month{scroll-margin-top:12px}
   .viewtools .seg button{flex:1 1 auto}
 }
 
-/* 2026-09-24: the site renders its light "clinical ledger" palette regardless of device theme; a reviewed dark palette is a roadmap item */
+/* The site renders its light "clinical ledger" palette regardless of device theme; a reviewed dark palette is a roadmap item */
 :root{color-scheme:light}
-.calnav h2{order:initial;width:auto} /* cancel the legacy flex-era rule inside the grid nav (mobile overlap fix) */
+.calnav h2{order:initial;width:auto} /* inside the grid nav, cancel the narrow-screen .calhead h2 rule (order:-1; width:100%) */
 .partner{min-height:24px;padding:2px 0}
 .orbit-core strong.span{font-size:33px;letter-spacing:0;white-space:nowrap}
 @media(max-width:640px){.orbit-core strong.span{font-size:24px}}
 
-/* 2026-09-24: Focus → Abstracts Due / Open Abstracts lists records by due date; the date block is the due date. */
+/* Focus → Abstracts Due / Open Abstracts lists records by due date; the date block is the due date. */
 .ev.by-due .when .d{color:#CC0033}.ev.by-due .meeting-dates{font-weight:600;color:#173946}
 
-/* 2026-09-24: at 360px the twelfth Orbit tile was clipped 6px by the stage. */
+/* Narrow phones: the stage does not clip the outer Orbit tiles. */
 @media(max-width:400px){.orbit-stage{overflow:visible}.orbit-month{max-width:100%}}
 
-/* ================= 2026-09-24 · record-type palette and filter-bar reflow (curator decision) =================
+/* ================= record-type palette and filter-bar layout =================
    One colour per record type, used by the calendar bars and the Focus chips and nowhere else.
    Disciplines are badges, never colour. */
 :root{
   --t-meet:#102F3B;   /* meetings — Rutgers School of Nursing dark teal */
   --t-due:#CC0033;    /* abstracts due — Rutgers scarlet */
-  --t-call:#1C7F48;   /* abstracts open — unchanged green */
+  --t-call:#1C7F48;   /* abstracts open — green */
   --t-obs:#D64200;    /* celebrations — University of Florida orange, deepened so white text clears 4.5:1 */
 }
 /* Focus chips wear their type's colour: coloured text on white, inverting to a filled box when chosen. */
@@ -871,7 +865,7 @@ details.month{scroll-margin-top:12px}
 #quickfocus .chip[data-focus="celebrations"][aria-pressed="true"]{background:var(--t-obs);border-color:var(--t-obs);color:#fff}
 /* Disciplines carry no colour of their own. */
 .prof-chip .dot{display:none}
-/* The calendar legend is gone: the Focus row now carries the key. */
+/* No calendar legend: the Focus row carries the key. */
 .calwrap .legend,.legend.callegend{display:none}
 .cal .ce.dl{border-left-color:var(--t-due);color:var(--t-due)}
 .cal .ce.op{border-left-color:var(--t-call);color:var(--t-call)}
@@ -919,16 +913,15 @@ details.month{scroll-margin-top:12px}
 .bar .row2 .geoquick .geo-input{width:108px;min-width:88px}
 @media(max-width:1240px){.bar .row2{flex-wrap:wrap!important}.bar .row2 .geoquick{flex:1 1 auto}}
 
-/* Line 570 paints every pressed chip in the bar teal with !important; the Focus chips must keep
-   their own record-type colour when chosen, so these override it in kind. */
+/* The pressed-chip rule above (.bar .chip[aria-pressed="true"]) paints every pressed chip in the bar teal
+   with !important; the Focus chips must keep their own record-type colour when chosen, so these override it in kind. */
 .bar #quickfocus .chip[data-focus="due"][aria-pressed="true"]{background:var(--t-due)!important;border-color:var(--t-due)!important;color:#fff!important}
 .bar #quickfocus .chip[data-focus="open"][aria-pressed="true"]{background:var(--t-call)!important;border-color:var(--t-call)!important;color:#fff!important}
 .bar #quickfocus .chip[data-focus="conferences"][aria-pressed="true"]{background:var(--t-meet)!important;border-color:var(--t-meet)!important;color:#fff!important}
 .bar #quickfocus .chip[data-focus="celebrations"][aria-pressed="true"]{background:var(--t-obs)!important;border-color:var(--t-obs)!important;color:#fff!important}
 
-/* ===== 2026-09-24 (curator review) =====
-   Celebration orange moved off the scarlet: #D64200 read as the same colour as Abstracts due.
-   #C25100 is 40 degrees away in hue, still clears 4.5:1 on white, and reads orange, not brown. */
+/* Celebration orange: #C25100 sits 40 degrees in hue from the Abstracts-due scarlet, clears 4.5:1 on
+   white, and reads orange, not brown. It overrides the --t-obs value above. */
 :root{--t-obs:#C25100}
 /* One record-type palette everywhere it appears: Focus chips, calendar bars, Orbit columns and legend. */
 .orbit-columns .meet,.orbit-legend .meet{background:var(--t-meet)}
@@ -936,13 +929,13 @@ details.month{scroll-margin-top:12px}
 .orbit-columns .open,.orbit-legend .open{background:var(--t-call)}
 .orbit-columns .obs,.orbit-legend .obs{background:var(--t-obs)}
 
-/* Directory cards: one height for every row. The first row grew because its badge line wrapped. */
+/* Directory cards: one height for every row. */
 .dir{grid-auto-rows:1fr}
 .srs{grid-template-rows:auto auto 1fr auto;align-content:start;row-gap:4px}
-/* 2026-09-24 (red team F17): the card is an article; its title and organizer sit in the one button that opens the series. */
+/* The card is an article; its title and organizer sit in the one button that opens the series. */
 .srs-open{display:grid;row-gap:4px;min-width:0;margin:0;padding:0;border:0;background:none;font:inherit;color:inherit;text-align:left;cursor:pointer}
 .srs-open:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:4px}
-.srs .badges .tag{flex:0 0 auto;white-space:nowrap}   /* a badge button keeps one line, as the span badges did */
+.srs .badges .tag{flex:0 0 auto;white-space:nowrap}   /* a badge button keeps one line, like a span badge */
 .srs .hist{display:flex;flex-wrap:wrap;gap:3px;max-height:20px;overflow:hidden;align-content:flex-start}
 .srs .title{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 .srs .org{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
@@ -956,9 +949,8 @@ details.month{scroll-margin-top:12px}
 .bar{border-bottom:1px solid var(--scarlet)!important}
 .bar .row2{border-top:0}
 
-/* 2026-09-24: National APP Week is a celebration, so it wears the celebration colour.
-   It was pinned in scarlet, which now means "abstracts due" — a colour-code collision.
-   It stays the emphasised landmark record; only its hue changes. */
+/* National APP Week is a celebration, so it wears the celebration colour (scarlet means
+   "abstracts due"). It stays the emphasised landmark record. */
 .cal .ce.appweek,.cal .ce.appweek.ongoing{
   background:color-mix(in srgb,var(--t-obs) 16%,var(--surface))!important;
   color:#6B2E00!important;border-left:4px solid var(--t-obs)!important;
@@ -967,7 +959,7 @@ details.month{scroll-margin-top:12px}
 .cal .ce.appweek small{color:#8A4A10!important}
 .cal .cell:has(.ce.appweek){background:var(--surface)!important}
 
-/* ===== 2026-09-24 · header stamp and list-card badges ===== */
+/* ===== header stamp and list-card badges ===== */
 
 /* Status dot: the run's health, not decoration. Green = the last check landed and fidelity holds;
    amber = fidelity below 95%; red = the last scheduled check did not complete. */
@@ -995,7 +987,7 @@ details.month{scroll-margin-top:12px}
 .ev .badges .tag.focus.open{color:var(--t-call)}
 .ev .badges{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 
-/* ===== 2026-09-24 · badges are filters =====
+/* ===== badges are filters =====
    One look for every tag that names a filter value: white, outlined, clickable.
    Focus keeps its record-type colour (that is the calendar key). A value with no
    control renders as a plain tag and is not a button. */
@@ -1016,7 +1008,7 @@ details.month{scroll-margin-top:12px}
 #dlg .badges{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
 .srs .badges{display:flex;flex-wrap:nowrap;gap:4px;overflow:hidden;align-items:center}
 
-/* ===== Phones only (2026-09-24, curator request: the desktop site must not change) =====
+/* ===== Phones only: the desktop site must not change =====
    Every rule below sits inside one of two queries that no desktop layout matches:
    (max-width:700px) for a phone held upright, and (pointer:coarse) and (max-height:500px)
    for a phone turned sideways. The short header labels are hidden everywhere else. */
@@ -1083,4 +1075,25 @@ details.month{scroll-margin-top:12px}
   /* the seven-day grid narrows to the screen instead of hiding Saturday behind a sideways scroll */
   .cal,.calspan{min-width:0!important}
   .calspan .dowrow,.calspan .wk{grid-template-columns:repeat(7,minmax(0,1fr))!important}
+}
+
+/* Phone layout switch (assets/layout.js): shown only on phones. */
+.layout-strip{display:none}
+.is-phone .layout-strip{display:flex;justify-content:flex-end;padding:6px 16px 0}
+.layout-toggle{border:0;background:none;padding:6px 2px;font:600 12.5px/1.2 var(--body);color:var(--ink-2);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.force-desktop .layout-strip{justify-content:center;padding:18px;background:#102F3B}
+.force-desktop .layout-toggle{font-size:40px;color:#fff;padding:18px 28px;border:3px solid #fff;border-radius:14px;text-decoration:none}
+
+/* Phones: Orbit's twelve months as a 4 × 3 grid under the year control, so no card overlaps another. */
+@media(max-width:700px){
+  .orbit-stage{aspect-ratio:auto;width:100%;max-width:100%;overflow:visible;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:8px 0 4px}
+  .orbit-core{position:static;transform:none;grid-column:1/-1;width:auto;height:auto;border-radius:12px;border-width:4px;padding:4px 2px;grid-template-columns:44px 1fr 44px}
+  .orbit-core .orbit-year{border-radius:10px;padding:6px 4px}
+  .orbit-month{position:static;transform:none;margin:0;width:auto;height:auto;min-height:88px}
+}
+
+/* Tablets held upright (701–900 px): the month grid fits the screen instead of scrolling sideways. */
+@media(min-width:701px) and (max-width:900px){
+  .cal{min-width:0;grid-template-columns:repeat(7,minmax(0,1fr))}
+  .calspan .dowrow,.calspan .wk{grid-template-columns:repeat(7,minmax(0,1fr))}
 }

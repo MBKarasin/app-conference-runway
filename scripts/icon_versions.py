@@ -3,11 +3,9 @@
     python scripts/icon_versions.py          # rewrite site/index.html and site/manifest.webmanifest
     python scripts/icon_versions.py --check  # exit 1 if any icon URL is missing or out of date
 
-Why (2026-09-24): the lettered "APP" icons were published at 00:36 ET as favicon-app-v2.* and replaced at
-13:43 ET under the same names. Browsers keep a favicon for as long as its URL is unchanged, so visitors who
-had seen the lettered icon kept seeing it. The fix is structural: an icon's URL carries ?v=<first 8 hex
-digits of its SHA-256>, so a changed icon is a new URL. The manifest lists icons too, so it is stamped the
-same way, after its icon entries. scripts/ui_check.py asserts the stamps against the served bytes.
+Browsers keep a favicon for as long as its URL is unchanged, so an icon's URL carries ?v=<first 8 hex digits
+of its SHA-256>: a changed icon is a new URL. The manifest lists icons too, so it is stamped the same way,
+after its icon entries. scripts/ui_check.py asserts the stamps against the served bytes.
 """
 import hashlib, re, sys
 from pathlib import Path

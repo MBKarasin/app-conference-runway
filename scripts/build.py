@@ -14,8 +14,8 @@ from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, SITE = ROOT / "sources", ROOT / "site"
-# 2026-09-24: the build's calendar day is New York's, like the daily archive (snapshot.py). On the UTC
-# clock a call due "today" closed at 8 p.m. Eastern, hours before a US organizer's deadline.
+# The build's calendar day is New York's, like the daily archive (snapshot.py). On the UTC clock a call
+# due "today" would close at 8 p.m. Eastern, hours before a US organizer's deadline.
 TODAY_ = dt.datetime.now(ZoneInfo("America/New_York")).date()
 HORIZON = TODAY_.year + 3          # rolling: current year plus three
 LOOKBACK = 3                        # years of history every meeting should show
@@ -131,7 +131,7 @@ def migrate_runway():
         series[key]["status_note"] = t["text"]
     return series, eds
 
-# 2026-09-24 (curator decision): this is an APP platform.
+# This is an APP platform.
 #   CAA is not an APP role. Its meetings stay in scope — the sweep still looks for them — but they
 #   are filed under CRNA, which is the APP audience for anaesthesia content.
 #   "Nursing" is not a discipline a visitor filters by here; nursing-facing meetings file under NP.
@@ -406,10 +406,8 @@ def ics(eds, series):
         if e.get("month_only") or e["end"] < (TODAY - dt.timedelta(days=60)).isoformat(): continue
         # the feed carries what the website shows by default: a subscriber should never receive a date the
         # site itself asks a reader to review, and should receive every date the site shows as settled.
-        # 2026-09-24 (red team F21): a drifted quote (evidence_match false) no longer drops a record. Since the
-        # afternoon's decision "a verified record is verified" the site shows those as settled, so the feed
-        # left out 40 records the site showed. Rule-dated records (PA Week, National Nurses Week) now come in
-        # through main() as well; 22 were missing.
+        # A drifted quote (evidence_match false) does not drop a verified record: the site shows it as settled.
+        # Rule-dated records (PA Week, National Nurses Week) come in through main() as well.
         v = e.get("verify") or {}
         if v.get("state") not in ("verified", "rule", "archived", "announced"): continue
         s = series[e["series"]]
@@ -495,9 +493,9 @@ def main():
     links = json.load(open(ROOT / "data" / "link_status.json", encoding="utf-8")) if (ROOT / "data" / "link_status.json").exists() else {}
     for e in eds + proj:
         st = links.get(e.get("source_url") or "")
-        # only a definite 4xx/410 counts as dead; blocks and timeouts say nothing about the link
-        # 2026-09-24: 403/405/406/429 are the server refusing an automated reader, not a missing page.
-        # Only "gone" statuses mark a link dead; anything else was calling live pages broken.
+        # only a definite 4xx/410 counts as dead; blocks and timeouts say nothing about the link.
+        # 403/405/406/429 are the server refusing an automated reader, not a missing page, so a live
+        # page is never marked dead for them.
         REFUSALS = {"HTTP 403", "HTTP 405", "HTTP 406", "HTTP 429"}
         if st and st.startswith("HTTP 4") and st not in REFUSALS: e["link_dead"] = st
     ver = json.load(open(ROOT / "data" / "verification.json", encoding="utf-8")) if (ROOT / "data" / "verification.json").exists() else {}
@@ -526,7 +524,7 @@ def main():
                 e["evidence"], e["evidence_auto"] = tidy_snippet(v["snippet"], e["start"]), True
         else:
             e["verify"] = {"state": "unchecked", "checked": None}
-    # 2026-09-24 (curator decision): the header's Reliability Index counts the records that the latest
+    # The header's Reliability Index counts the records that the latest
     # automated check re-confirmed from the organizer's own material: the start date, its year and a name word
     # found on the organizer's page (rendered in a browser when the page needs JavaScript) or, for a date the
     # organizer publishes only in a banner or flyer the record links, read from that image.
@@ -547,7 +545,11 @@ def main():
     # header stamps: when the nightly checker last read organizer pages, and the latest curator source review
     checked = [v.get("checked") for v in ver.values() if v.get("checked") and v.get("state") != "archived"]
     reviewed = [e.get("reviewed_on") for e in eds if e.get("source_reviewed") and e.get("reviewed_on")]
+    # The Fidelity Index pools the independent audits in sources/audits.json (§3.4): each audit gives its
+    # date, method, the records audited and the count found wrong.
+    audits = json.load(open(SRC / "audits.json", encoding="utf-8")).get("audits", []) if (SRC / "audits.json").exists() else []
     out = {"built": dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"), "horizon": HORIZON,
+           "audits": [{k: a[k] for k in ("id", "date", "method", "audited", "wrong") if k in a} for a in audits],
            "sources_checked": max(checked) if checked else None, "curator_reviewed": max(reviewed) if reviewed else None,
            "series": sorted([s for s in series.values()], key=lambda s: s["name"].lower()),
            "editions": all_eds}

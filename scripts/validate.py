@@ -5,7 +5,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 d = json.load(open(ROOT / "site/data/runway.json", encoding="utf-8"))
 S = {s["id"]: s for s in d["series"]}
 errs = []
-TODAY = dt.date.today().isoformat()
+from zoneinfo import ZoneInfo
+TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()   # same calendar day as build.py and check.py
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ABSENCE = ["the only", "no published", "not published", "none found", "no public", "does not exist", "no source"]
 PRIVATE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}|Rosenkvist|\b\d{3}[-.]\d{3}[-.]\d{4}\b")
@@ -73,8 +74,7 @@ anchors = {
     "Neonatal Nurses Week": "2026-09-12",
     "Advanced Practice Provider Symposium": "2026-09-23",
     "Stony Brook Medicine Advanced Practice Provider Symposium": "2026-09-24",
-    # 2026-09-24: reconciled from 2027-04-15 to 2027-04-14 against AAAA's own official event page
-    # (the one anesthetist.org links as "AAAA 2027"), which states April 14 - 18, 2027.
+    # AAAA's own official event page (the one anesthetist.org links as "AAAA 2027") states April 14 - 18, 2027.
     "AAAA Annual Conference": "2027-04-14",
     "ACNP National Conference": "2027-09-09",
     "RCN Advanced Nurse Practitioner Conference": "2026-10-02",
@@ -90,7 +90,7 @@ app_week = next((e for e in d["editions"] if S[e["series"]]["name"] == "National
 if app_week:
     if app_week["end"] != "2026-09-25" or {x["date"] for x in (app_week.get("daily") or [])} != {f"2026-09-{n:02d}" for n in range(21, 26)}:
         errs.append("National APP Week must span September 21–25 with all five daily programs")
-    # 2026-09-24 (curator decision): CAA is not an APP role and is no longer a discipline here.
+    # CAA is not an APP role and is not a discipline here.
     if not {"NP", "PA", "CRNA", "CNS", "CNM"}.issubset(S[app_week["series"]]["professions"]):
         errs.append("National APP Week must include all five APP role categories")
 # The anaesthetist-assistant meeting stays in scope — the sweep still collects it — but it is filed
@@ -109,6 +109,17 @@ if not any(e["start"] == "2026-09-23" and e["end"] == "2026-09-25" and "id=19846
     errs.append("NPWH 2026 must link to its own 2026 organizer event")
 if any(e["start"] == "2024-09-25" and "2023-Annual-Conference" in (e.get("source_url") or "") for e in npwh):
     errs.append("NPWH 2024 must not link to the misleading 2023 slug")
+# The audit ledger behind the Fidelity Index (sources/audits.json, carried as "audits"): each audit has an
+# ISO date, a positive whole number audited and a whole number wrong from 0 to the number audited.
+audits = d.get("audits")
+if not isinstance(audits, list) or not audits:
+    errs.append("the audit ledger behind the Fidelity Index is missing from runway.json")
+whole = lambda x: isinstance(x, int) and not isinstance(x, bool)
+for a in audits if isinstance(audits, list) else []:
+    n, w = a.get("audited"), a.get("wrong")
+    if not ISO.match(str(a.get("date") or "")): errs.append(f"audit {a.get('id')}: bad date")
+    if not whole(n) or n <= 0: errs.append(f"audit {a.get('id')}: audited must be a positive whole number")
+    if not whole(w) or w < 0 or (whole(n) and w > n): errs.append(f"audit {a.get('id')}: wrong must be a whole number from 0 to the records audited")
 if errs:
     print("\n".join(errs[:200])); print(f"\nFAILED: {len(errs)} problem(s)"); sys.exit(1)
 print(f"validate ok: {len(d['series'])} series, {len(d['editions'])} editions")
