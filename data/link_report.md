@@ -1,6 +1,6 @@
-# Link check — 2026-09-24
+# Link check — 2026-09-25
 
-Links: 1014 · ok 874 · HTTP 403 90 · HTTP 404 26 · URLError 12 · robots 9 · HTTP 401 1 · HTTP 406 1 · TimeoutError 1
+Links: 1014 · ok 873 · HTTP 403 90 · HTTP 404 26 · URLError 11 · robots 9 · TimeoutError 2 · HTTP 406 2 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -124,6 +124,8 @@ Links: 1014 · ok 874 · HTTP 403 90 · HTTP 404 26 · URLError 12 · robots 9 �
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
+- URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
+  - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
 - URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
   - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
 - URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
@@ -162,6 +164,8 @@ Links: 1014 · ok 874 · HTTP 403 90 · HTTP 404 26 · URLError 12 · robots 9 �
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2024-08-29 (source_url)
 - HTTP 404 — https://www.apao.cc/assets/Conference/2025Symposium/APAO25%2028th%20Annual%20Exhibitor%20Prospectus%20Final%205.22.25.pdf
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2025-09-25 (source_url)
+- TimeoutError — https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/
+  - Advanced Practice Provider (APRN & PA) Leadership Summit (archive_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2023-09-13 (source_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2024-09-18 (source_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2025-09-10 (source_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-2025-asco-annual-meeting
   - american-society-of-clinical-oncology__asco-annual-meeting 2025-05-30 (source_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/new-research-highlights-lifestyle-treatment-strategies-2026-annual-meeting
@@ -210,6 +214,8 @@ Links: 1014 · ok 874 · HTTP 403 90 · HTTP 404 26 · URLError 12 · robots 9 �
   - american-college-of-cardiology__acc-27-annual-scientific-session 2025-03-29 (source_url)
 - HTTP 401 — https://www.gapna.org/education/past-conferences
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
+- HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
+  - Psych Congress PA Institute (org_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (call); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2027-12-01 (source_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2028-12-01 (source_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (source_url)
 - HTTP 404 — https://www.hospitalmedicine.org/news-publications/press-releases/society-of-hospital-medicine-brings-annual-conference-shm-converge-to-austin-tx/
@@ -244,10 +250,8 @@ Links: 1014 · ok 874 · HTTP 403 90 · HTTP 404 26 · URLError 12 · robots 9 �
   - rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (source_url)
 - HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
-- URLError — https://www.svnnet.org/page/PastConferences
+- TimeoutError — https://www.svnnet.org/page/PastConferences
   - SVN Annual Conference (archive_url); society-for-vascular-nursing__svn-annual-conference 2023-06-14 (source_url); society-for-vascular-nursing__svn-annual-conference 2024-06-19 (source_url); society-for-vascular-nursing__svn-annual-conference 2025-06-10 (source_url)
-- TimeoutError — https://www.svnnet.org/page/annualconference
-  - SVN Annual Conference (org_url); society-for-vascular-nursing__svn-annual-conference 2027-06-02 (source_url); society-for-vascular-nursing__svn-annual-conference 2028-06-01 (source_url); society-for-vascular-nursing__svn-annual-conference 2029-06-01 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
 - HTTP 403 — https://www.thenpa.org/
@@ -262,5 +266,3 @@ Links: 1014 · ok 874 · HTTP 403 90 · HTTP 404 26 · URLError 12 · robots 9 �
   - taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2026-10-18 (call)
 - HTTP 403 — https://www.tnpa.org.tw/events/content.php?id=6262
   - taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2026-10-18 (source_url)
-- URLError — https://www.ufro.cl/
-  - International Nursing Specialties and Research Congress (org_url); universidad-de-la-frontera__international-nursing-specialties-and-research-con 2027-11-01 (source_url); universidad-de-la-frontera__international-nursing-specialties-and-research-con 2028-11-01 (source_url); universidad-de-la-frontera__international-nursing-specialties-and-research-con 2029-11-01 (source_url)

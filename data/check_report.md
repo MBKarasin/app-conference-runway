@@ -1,13 +1,13 @@
-# Nightly source check — 2026-09-24
+# Nightly source check — 2026-09-25
 
-Generated 2026-09-24T21:51:06Z from commit bbec678. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-09-25T03:04:51Z from commit f9cdc47. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 295 · verified 269 · not found 1 · unreachable 25
-Checker could not match: 26 · of these, curator evidence on file: 26 · open: 0
+Editions re-checked: 293 · verified 268 · not found 1 · unreachable 24
+Checker could not match: 25 · of these, curator evidence on file: 25 · open: 0
 Confirmed by the second readers: rendered after JavaScript 2 · read from the organizer's image 2
-Past editions frozen (not re-read): 595
+Past editions frozen (not re-read): 597
 
-## Checker could not match, curator evidence on file (26)
+## Checker could not match, curator evidence on file (25)
 
 - NPWH Annual Women's Healthcare Conference — 2026-09-23 — reviewed 2026-09-22 — https://npwh.org/m/event_details.asp?id=1984651
 - NLN Education Summit — 2026-09-23 — reviewed 2026-09-22 — https://summit.nln.org/
@@ -25,7 +25,6 @@ Past editions frozen (not re-read): 595
 - Padjadjaran International Nursing Conference — 2026-11-07 — reviewed 2026-09-24 — https://pinc.fkep.unpad.ac.id/
 - Qatar Health Congress — 2026-11-11 — reviewed 2026-09-22 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
-- Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-09-24 — https://aahpm.org/education-events/annual-assembly/
 - ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-24 — https://enrs2027conference.oa-event.com/
 - Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-09-22 — https://www.academyonline.org/page/conferences
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-09-22 — https://amia.org/education-events/2027-amplify-informatics-conference
