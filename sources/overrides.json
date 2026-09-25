@@ -200,8 +200,16 @@
    "compiled": "2026-09-21",
    "evidence": "2027 Annual Conference will take place at the Loews Kansas City, in Kansas City Missouri, March 1 – 4, 2027.",
    "source_url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+   "reviewed_on": "2026-09-25",
+   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url. Red team F03 (2026-09-24): the call's closing date was the student-poster deadline (Sep 27), so the site showed every visitor an open call that had closed for professionals on Aug 13. Organizer page re-read 2026-09-25: 'Final Deadline for Abstract Submission: Thursday, August 13, 2026, at 11:59 PM ET'; 'Final Deadline for Student Poster Submission: Sunday, September 27, 2026, 11:59 PM ET'. The call now carries the professional call; the student-poster call stays in the student record.",
+   "call": {
+    "status": "closed",
+    "opens": "2026-06-10",
+    "closes": "2026-08-13",
+    "final": null,
+    "text": "Professional abstracts: opened Wednesday, June 10, 2026; final deadline Thursday, August 13, 2026, at 11:59 PM ET. Student posters: opened Tuesday, July 14, 2026; final deadline Sunday, September 27, 2026, 11:59 PM ET (there will be no deadline extensions)",
+    "url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/"
+   }
   },
   "b32ffbb674ac": {
    "source_reviewed": true,
@@ -618,8 +626,16 @@
    "source_url": "https://heartrhythm.com/",
    "evidence": "Heart Rhythm 2027 | May 13–16, 2027 | San Francisco, CA",
    "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+   "reviewed_on": "2026-09-25",
+   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded. Red team F03 (2026-09-24): the call showed Nov 1 as the abstract deadline and an unsourced 'abstracts Oct 1–Dec 16' window. Read 2026-09-25: the organizer's session-ideas page gives a second-wave deadline of November 1, 2026; its home, Present and HRS event pages give no scientific-abstract dates, and its abstract portal disallows robots. The unsourced window was removed and Nov 1 labeled as the session-ideas deadline.",
+   "call": {
+    "status": "open",
+    "opens": null,
+    "closes": "2026-11-01",
+    "final": null,
+    "text": "Session ideas, second wave: close November 1, 2026 (no time zone given). Scientific abstract dates: not yet given on the organizer's event pages",
+    "url": "https://heartrhythm.com/call-hrs2027-session-ideas"
+   }
   },
   "43862213a496": {
    "source_url": "https://aann.org/meetings/annual-educational-conference",
