@@ -1,6 +1,6 @@
 # Link check — 2026-09-25
 
-Links: 1014 · ok 874 · HTTP 403 92 · HTTP 404 26 · robots 9 · URLError 8 · TimeoutError 2 · HTTP 406 2 · HTTP 401 1
+Links: 1017 · ok 872 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 · TimeoutError 2 · HTTP 406 2 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -26,8 +26,6 @@ Links: 1014 · ok 874 · HTTP 403 92 · HTTP 404 26 · robots 9 · URLError 8 ·
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2026-03-02 (source_url)
 - HTTP 403 — https://achewfc.org/event/ache-2023-congress-on-healthcare-leadership/
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2023-03-20 (source_url)
-- TimeoutError — https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-conference/
-  - Advancing Practice Week (org_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2026-11-08 (source_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2027-11-01 (source_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2028-11-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/2027-amplify-informatics-conference
   - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) (org_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2027-04-12 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2028-03-01 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2029-03-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/amia-2024-annual-symposium
@@ -72,6 +70,8 @@ Links: 1014 · ok 874 · HTTP 403 92 · HTTP 404 26 · robots 9 · URLError 8 ·
   - heart-rhythm-society__heart-rhythm 2024-05-17 (source_url)
 - HTTP 403 — https://heartrhythm.com/attend/heart-rhythm-2025
   - heart-rhythm-society__heart-rhythm 2025-04-24 (detail_url); heart-rhythm-society__heart-rhythm 2025-04-24 (source_url)
+- HTTP 403 — https://heartrhythm.com/call-hrs2027-session-ideas
+  - heart-rhythm-society__heart-rhythm 2027-05-13 (call)
 - HTTP 403 — https://heartrhythm.com/heart-rhythm-2026
   - heart-rhythm-society__heart-rhythm 2026-04-23 (detail_url); heart-rhythm-society__heart-rhythm 2026-04-23 (source_url)
 - HTTP 404 — https://idweek.org/wp-content/uploads/2024/06/1218-IDWeek-Exhibitor-Prospectus-202422.pdf
@@ -130,6 +130,14 @@ Links: 1014 · ok 874 · HTTP 403 92 · HTTP 404 26 · robots 9 · URLError 8 ·
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
+- URLError — https://web.archive.org/web/20241003223604/https://wapa.com/events/wapa-conference-oct-10-12-2024/
+  - washington-academy-of-physician-associat__wapa-fall-conference 2024-10-10 (source_url)
+- URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
+  - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
+- URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
+  - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
+- URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
+  - the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2025-10-16 (source_url)
 - URLError — https://web.archive.org/web/20250913144147/https://wcapn.enpnetwork.com/nurse-practitioner-events/147012-2025-wna-convention
   - wyoming-council-for-advanced-practice-nu__wna-wcapn-annual-convention-stronger-together 2025-09-11 (source_url)
 - URLError — https://web.archive.org/web/20250917104539/https://wapa.com/events/wapa-fall-conference-2025/
@@ -210,6 +218,10 @@ Links: 1014 · ok 874 · HTTP 403 92 · HTTP 404 26 · robots 9 · URLError 8 ·
   - emergency-nurses-association__emergency-nursing-ena-annual-conference 2025-09-17 (source_url)
 - HTTP 404 — https://www.expo.acc.org/ACC25/CUSTOM/PDF25/ACC25ScheduleAtAGlance.pdf
   - american-college-of-cardiology__acc-27-annual-scientific-session 2025-03-29 (source_url)
+- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/julyaugust-2024-volume-109-issue-7/get-ready-for-clinical-congress-2024-in-san-francisco/
+  - american-college-of-surgeons__clinical-congress 2024-10-19 (source_url)
+- TimeoutError — https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/bulletin/2024/november-december-2024-volume-109-issue-10/clinical-congress-2024-highlights/
+  - american-college-of-surgeons__clinical-congress 2024-10-19 (detail_url)
 - HTTP 401 — https://www.gapna.org/education/past-conferences
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
@@ -248,8 +260,6 @@ Links: 1014 · ok 874 · HTTP 403 92 · HTTP 404 26 · robots 9 · URLError 8 ·
   - rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (source_url)
 - HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
-- TimeoutError — https://www.svnnet.org/page/annualconference
-  - SVN Annual Conference (org_url); society-for-vascular-nursing__svn-annual-conference 2027-06-02 (source_url); society-for-vascular-nursing__svn-annual-conference 2028-06-01 (source_url); society-for-vascular-nursing__svn-annual-conference 2029-06-01 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
 - HTTP 403 — https://www.thenpa.org/

@@ -1,17 +1,13 @@
 # Nightly source check — 2026-09-25
 
-Generated 2026-09-25T03:11:31Z from commit 40e2cd9. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-09-25T10:20:11Z from commit a8a3d50. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 295 · verified 268 · not found 1 · unreachable 26
-Checker could not match: 27 · of these, curator evidence on file: 26 · open: 1
-Confirmed by the second readers: rendered after JavaScript 2 · read from the organizer's image 2
-Past editions frozen (not re-read): 595
+Editions re-checked: 293 · verified 266 · not found 1 · unreachable 26
+Checker could not match: 27 · of these, curator evidence on file: 27 · open: 0
+Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 2
+Past editions frozen (not re-read): 597
 
-## Could not read the page — open (1)
-
-- Advancing Practice Week — 2026-11-08 — TimeoutError: The read operation timed out — https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-conference/
-
-## Checker could not match, curator evidence on file (26)
+## Checker could not match, curator evidence on file (27)
 
 - NPWH Annual Women's Healthcare Conference — 2026-09-23 — reviewed 2026-09-22 — https://npwh.org/m/event_details.asp?id=1984651
 - NLN Education Summit — 2026-09-23 — reviewed 2026-09-22 — https://summit.nln.org/
@@ -30,14 +26,15 @@ Past editions frozen (not re-read): 595
 - Qatar Health Congress — 2026-11-11 — reviewed 2026-09-22 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
 - Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-09-24 — https://aahpm.org/education-events/annual-assembly/
-- ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-24 — https://enrs2027conference.oa-event.com/
+- ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-25 — https://enrs2027conference.oa-event.com/
 - Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-09-22 — https://www.academyonline.org/page/conferences
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-09-22 — https://amia.org/education-events/2027-amplify-informatics-conference
-- Heart Rhythm — 2027-05-13 — reviewed 2026-09-22 — https://heartrhythm.com/
-- ASCO Annual Meeting — 2027-06-04 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
+- AAAA Annual Conference — 2027-04-14 — reviewed 2026-09-25 — https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/
+- Heart Rhythm — 2027-05-13 — reviewed 2026-09-25 — https://heartrhythm.com/
+- ASCO Annual Meeting — 2027-06-04 — reviewed 2026-09-25 — https://www.asco.org/annual-meeting/dates-know
 - Emergency Nursing (ENA Annual Conference) — 2027-09-15 — reviewed 2026-09-23 — https://www.ena.org/events/emergency-nursing-2027
 - Global Emergency Nursing Conference — 2027-10-21 — reviewed ? — https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=1
+OPEN_ITEMS=0
