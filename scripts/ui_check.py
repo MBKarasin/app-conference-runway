@@ -10,12 +10,25 @@ separators, the year on every Orbit month, the filter rows, the header's Fidelit
 (labels, and values re-derived from the published data), the landmark celebration weeks in every view, each
 Focus in each view, legacy links, the request address, the footer's link to the index definitions, phones
 held upright and sideways (touch-emulated), and console errors.
+
+Since 2026-09-24 it also checks the header tagline, that every browser-tab and installed-app icon URL carries
+its content version (and the tab icon draws no letters), and it replays the red team's P1 cases with the clock
+frozen at the audit's moment (F01, F02, F04, F06, F07, F12, F14, F17, F18, F21). Each of those failed on
+e4bbe92. "Visible" means rendered with a real box and not inside a closed <details>: text in the DOM is not
+enough, which is how the phone agenda check once passed with National APP Week folded away.
 """
 import argparse, functools, http.server, re, socketserver, sys, threading
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 LANDMARKS = ["National APP Week", "PA Week", "National Nurse Practitioner Week", "National CRNA Week"]
+TAGLINE = "Independently curated for advanced practice providers worldwide"   # curator's wording, 2026-09-24
+# An item counts as visible only if it is rendered with a real box and is not inside a closed <details>.
+VISIBLE_JS = """name => [...document.querySelectorAll('#view button, #view a, #view article')].some(x => {
+  if (!x.textContent.includes(name)) return false;
+  const d = x.closest('details'); if (d && !d.open) return false;
+  const r = x.getBoundingClientRect(); return r.width > 0 && r.height > 0; })"""
+FIXED_NOW = "2026-09-24T12:00:00-04:00"   # the red team's audit date, New York; the regressions below replay its cases
 SCOPE = ["All", "Clinical", "Academic", "Research", "Leadership", "Students"]
 FOCUS = ["All", "Abstracts Due", "Open Abstracts", "Conferences", "Celebrations"]
 SCARLET = "rgb(204, 0, 51)"
@@ -34,7 +47,10 @@ class QuietHandler(http.server.SimpleHTTPRequestHandler):
 
 def serve(root):
     handler = functools.partial(QuietHandler, directory=str(root))
-    httpd = socketserver.TCPServer(("127.0.0.1", 0), handler)
+    class QuietServer(socketserver.TCPServer):
+        def handle_error(self, request, client_address):
+            pass   # a reload cancels the previous page's data request mid-transfer; that broken pipe is not a finding
+    httpd = QuietServer(("127.0.0.1", 0), handler)
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     return httpd, f"http://127.0.0.1:{httpd.server_address[1]}/"
 
@@ -265,13 +281,112 @@ def main():
                 apw = sorted((e for e in data["editions"] if series[e["series"]]["name"] == "National APP Week" and (e.get("verify") or {}).get("state") != "expected" and (e.get("end") or e["start"]) >= today), key=lambda e: e["start"])
                 if apw:
                     pgo(f"display=calendar&cal={apw[0]['start'][:7]}")
-                    check("phone upright: National APP Week is in the Calendar agenda", "National APP Week" in ph_page.evaluate("document.querySelector('#view').textContent"))
+                    # 2026-09-24: visible, not merely present. textContent also reads a collapsed <details>, which
+                    # is how this check passed while APP Week sat folded inside "Earlier in September" (red team F14).
+                    check("phone upright: National APP Week is visible in the Calendar agenda", ph_page.evaluate(VISIBLE_JS, "National APP Week"))
             else:
                 pos = ph_page.evaluate("getComputedStyle(document.querySelector('.bar')).position")
                 check("phone sideways: the filter bar scrolls away instead of covering the page", pos != "sticky", pos)
                 grid = ph_page.evaluate("(() => { const g = document.querySelector('#view .calspan'); return g ? Math.round(g.getBoundingClientRect().right) : -1; })()")
                 check("phone sideways: the Calendar month grid fits the screen", 0 < grid <= pw, f"grid right edge {grid} px, screen {pw} px")
             ctx.close()
+        # 10. Header wording and the browser-tab icons (2026-09-24).
+        page.set_viewport_size({"width": 1440, "height": 1000})
+        go("")
+        eyebrow = page.evaluate("(document.querySelector('.headactions .eyebrow') || {}).textContent || ''").strip()
+        check("header tagline is the curator's wording", eyebrow == TAGLINE, eyebrow)
+        # Every icon URL carries ?v=<first 8 hex of its SHA-256>, so a changed icon is a new URL. The lettered
+        # icons stayed in browsers for hours because their bytes changed under the same URL.
+        import hashlib, json as _json, xml.etree.ElementTree as ET
+        from urllib.parse import urljoin, urlsplit, parse_qs
+        links = page.evaluate("[...document.querySelectorAll('link[rel~=icon],link[rel=apple-touch-icon],link[rel=mask-icon],link[rel=manifest]')].map(l => [l.rel, l.getAttribute('href'), l.type || ''])")
+        def stamp_ok(href, rel_to):
+            url = urljoin(rel_to, href)
+            body = page.request.get(url).body()
+            v = (parse_qs(urlsplit(href).query).get("v") or [""])[0]
+            return v == hashlib.sha256(body).hexdigest()[:8], body
+        for rel, href, typ in links:
+            ok, body = stamp_ok(href, base)
+            check(f"{rel} {href.split('?')[0]} carries its content version", ok, href)
+            if rel == "manifest":
+                for ic in _json.loads(body)["icons"]:
+                    ok2, _ = stamp_ok(ic["src"], urljoin(base, href))
+                    check(f"manifest icon {ic['src'].split('?')[0]} carries its content version", ok2, ic["src"])
+            if typ == "image/svg+xml":
+                root = ET.fromstring(body)
+                paths = [el for el in root.iter() if el.tag.endswith("path")]
+                texts = [el for el in root.iter() if el.tag.endswith("text")]
+                # curator decision 2026-09-24: the tab icon is the scarlet horizon and the three navy lanes, no letters
+                check("tab icon draws only the horizon and three lanes (no letters)", len(paths) == 4 and not texts, f"{len(paths)} paths, {len(texts)} text")
+
+        # 11. Red-team regressions (ChatGPT, 2026-09-24), replayed at the audit's moment with the clock frozen.
+        #     Each failed on e4bbe92 and must pass after the fix.
+        fctx = browser.new_context(viewport={"width": 1440, "height": 1000}, timezone_id="America/New_York")
+        fpg = fctx.new_page()
+        fpg.clock.set_fixed_time(FIXED_NOW)
+        fpg.on("pageerror", lambda e: errors.append(str(e)))
+        def fgo(hash_=""):
+            fpg.goto(base + ("#" + hash_ if hash_ else ""), wait_until="networkidle")
+            fpg.reload(wait_until="networkidle")
+            fpg.wait_for_selector("#quickfocus .chip", timeout=15000)
+        # Filter-logic checks read textContent: a collapsed month section must not hide a record from the test.
+        vtext = lambda: fpg.evaluate("document.querySelector('#view').textContent")
+        fgo("display=list&q=AAAA&prof=CRNA&scope=students")   # the view in the red team's screenshot
+        view = vtext()
+        check("F01 AAAA keeps the organizer's wording: CAA student posters", "CAA student posters" in view and "CRNA student posters" not in view)
+        fgo("display=list&focus=open")
+        check("F02 VAM is not listed as open before its November 18 opening", "Vascular Annual Meeting" not in vtext())
+        fgo("focus=open&cal=2026-09")
+        check("F04 Orbit Open Abstracts keeps NACNS in September, the month it closes", "NACNS Annual Conference" in fpg.evaluate("[...document.querySelectorAll('.orbit-group.open .orbit-item')].map(x => x.textContent).join(' | ')"))
+        fgo("focus=conferences&cal=2026-10")
+        n_all = int(fpg.evaluate("(document.querySelector('.orbit-group.meet summary b') || {}).textContent || '0'"))
+        n_before = fpg.locator(".orbit-group.meet .orbit-item").count()
+        if fpg.locator(".orbit-group.meet button.orbit-more").count():
+            fpg.click(".orbit-group.meet button.orbit-more")
+        n_after = fpg.locator(".orbit-group.meet .orbit-item").count()
+        check("F18 Orbit month shows every meeting after Show all", n_all > 12 and n_before == 12 and n_after == n_all, f"{n_before} → {n_after} of {n_all}")
+        fgo("display=directory&q=cardiac%20surgery")
+        check("F12 Directory finds series for 'cardiac surgery', as List does", fpg.locator("#view .srs").count() > 0, f"{fpg.locator('#view .srs').count()} series")
+        fgo("display=directory")
+        dom = fpg.evaluate("""({stray: document.querySelectorAll('#view .dir > :not(.srs)').length, nested: document.querySelectorAll('#view button button').length,
+            cards: document.querySelectorAll('#view .srs').length, whole: [...document.querySelectorAll('#view .srs')].every(c => c.querySelector('.badges') && c.querySelector('.meta') && c.querySelector('.srs-open'))})""")
+        check("F17 Directory cards hold their badges, dates and years (no nested buttons)", dom["cards"] > 0 and dom["stray"] == 0 and dom["nested"] == 0 and dom["whole"], str(dom))
+        fgo("display=list&near=49690&r=50")
+        check("F06 a venue pinned to its town is found near it (MAPA, Williamsburg MI)", "MAPA Fall CME Conference" in vtext())
+        fgo("display=list&near=23219&r=100")
+        check("F06 a record pinned only to a state is left out of distance results (VCNP)", "VCNP Annual Conference" not in vtext())
+        # F07: an ISO instant older than 90 days must fail the freshness test. The same data is served twice,
+        # the second time with one upcoming record's stamp set to 2026-01-01T00:00:00Z.
+        fid_count = lambda: fpg.evaluate("(() => { const t = [...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.includes('dated records carry')) || ''; const m = t.match(/(\\d+) of (\\d+)/); return m ? [+m[1], +m[2]] : null; })()")
+        fgo("")
+        before = fid_count()
+        def stale(route):
+            resp = route.fetch(); d = resp.json()
+            for e in d["editions"]:
+                if e.get("id") == "b9f577965d09":
+                    e["verify"] = {**(e.get("verify") or {}), "last_verified": "2026-01-01T00:00:00Z", "checked": "2026-01-01T00:00:00Z"}
+            route.fulfill(response=resp, body=_json.dumps(d))
+        fpg.route("**/data/runway.json*", stale)
+        fgo("")
+        after = fid_count()
+        fpg.unroute("**/data/runway.json*")
+        check("F07 an ISO stamp older than 90 days fails the Fidelity freshness test", bool(before and after) and after[0] == before[0] - 1 and after[1] == before[1], f"{before} → {after}")
+        fctx.close()
+        # F14 on a phone at the audit's moment: a record that started earlier this month and is still running stays in view.
+        pctx = browser.new_context(viewport={"width": 390, "height": 664}, is_mobile=True, has_touch=True, timezone_id="America/New_York",
+                                   user_agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1")
+        ppg = pctx.new_page(); ppg.clock.set_fixed_time(FIXED_NOW)
+        ppg.goto(base + "#display=calendar", wait_until="networkidle"); ppg.reload(wait_until="networkidle")
+        ppg.wait_for_selector("#view .agenda", timeout=15000)
+        check("F14 phone agenda shows National APP Week while it is under way", ppg.evaluate(VISIBLE_JS, "National APP Week"))
+        pctx.close()
+        # F21: the calendar feed carries every dated record the site shows as upcoming.
+        ics = page.request.get(urljoin(base, "runway.ics")).text().replace("\r\n ", "")
+        uids = set(re.findall(r"UID:([0-9a-f]{12})@", ics))
+        shown = [e for e in data["editions"] if (e.get("verify") or {}).get("state") != "expected" and not e.get("month_only") and (e.get("end") or e["start"]) >= today]
+        missing = [e["id"] for e in shown if e["id"] not in uids]
+        check("F21 calendar feed carries every upcoming dated record", not missing, f"{len(shown)} shown, {len(missing)} missing")
+
         check("no console or page errors", not errors, "; ".join(errors[:3]))
         browser.close()
     if httpd:
