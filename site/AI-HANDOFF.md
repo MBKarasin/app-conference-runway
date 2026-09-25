@@ -3,7 +3,7 @@
 **Live site:** https://mbkarasin.github.io/app-conference-runway/
 **Source code:** https://github.com/MBKarasin/app-conference-runway
 **Contact:** mark.karasin@protonmail.com
-**Document date:** 2026-09-24
+**Document date:** 2026-09-25
 
 ## 1. Why this exists
 
@@ -29,23 +29,23 @@ The curator, Dr. Mark Karasin, DNP, APN, AGACNP-BC, directs the project and deci
 
 ### 3.2 Evidence rule
 
-An upcoming dated record, unless computed from a published rule, carries the organizer's own material as its source (an event page or sub-page, a program PDF, or a banner or flyer), **verbatim** wording from it that contains the dates (`evidence`, normally 200 characters or fewer) and the exact location of that wording (`source_url`, plus `evidence_image` for an image). Aggregators never count; a social post counts only from the organizer's own account. The build gate (`scripts/validate.py`) rejects one without a quote and source link.
+An upcoming dated record, unless computed from a published rule, carries the organizer's own material as its source (an event page or sub-page, a program PDF, or a banner or flyer), **verbatim** wording from it that contains the dates (`evidence`, normally 200 characters or fewer) and the exact location of that wording (`source_url`, plus `evidence_image` for an image). Aggregators never count; a social post counts only from the organizer's own account. The build gate (`scripts/validate.py`) rejects one without a quote and source link, or with a quote over 200 characters.
 
 ### 3.3 Precedence
 
-`sources/runway_2026-09-16.json` → `sources/group_*.json` → `sources/archive/` → `sources/observances.json` → `sources/overrides.json` (curator corrections, which win). A correction carries a `_why`, the verbatim wording and the exact URL or image; a wrong edition is marked `"removed": true`, never silently deleted. `data/ledger.json` keeps every edition ever emitted; `data/snapshots/` archives each day's generated data.
+`sources/runway_2026-09-16.json` → `sources/group_*.json` → `sources/archive/` → `sources/observances.json` → `sources/overrides.json` (curator corrections, which win). A correction carries a `_why`, a `reviewed_on` date, the verbatim wording and the exact URL or image; the build gate rejects one without a `_why`, and without a `reviewed_on` unless it predates review dates (16 listed in `validate.py`). A wrong edition is marked `"removed": true`, never silently deleted. `call_patch` sets single call fields, such as a published cut-off time (`due_time`, `tz`); `uid` keeps a corrected edition's calendar-feed identity (`sources/SCHEMA.md`). `data/ledger.json` keeps every edition ever emitted; `data/snapshots/` archives each day's generated data.
 
 ### 3.4 Verification pipeline
 
 - **Nightly re-read** (`scripts/check.py`): the start date, its year and a name word must appear on the organizer's page. A page the plain reader cannot match is rendered in headless Chromium; a linked organizer image is read by OCR. It obeys robots.txt and reports a page that refuses automated readers, never retrying it with a browser. Ended meetings are kept as captured.
 - **Manual review** (`sources/overrides.json`) covers pages the checker cannot read; the **link check** (`scripts/linkcheck.py`) marks a source link gone on a 4xx other than a refusal.
 
-The header's **Updated** stamp gives the time of the last automated check, with a status dot: red when no check has completed in 36 hours, amber when the Fidelity Index is below 95%, green otherwise. Both indices beneath it are recomputed in the browser from `site/data/runway.json`; the footer links here.
+The header's **Updated** stamp gives the time of the last automated check, with a status dot: red when no check has completed in 36 hours, amber when the Fidelity Index is below 95%, green otherwise. Both indices beneath it are recomputed in the browser from `site/data/runway.json`; each opens its definition when clicked or tapped, and the footer links here.
 
 **Fidelity Index = evidence coverage × projected correctness.**
 
 - *Evidence coverage:* of every dated record (past and upcoming; projections excluded), the share that carries the organizer's own wording or a published rule, holds a good verification state (confirmed, set by rule, save the date, or recorded when published), has a source link and, for a meeting not yet ended, a link not found gone and a confirmation no older than 90 days (rule dates excepted; an unreadable stamp fails).
-- *Projected correctness:* 1 − (records found wrong ÷ records audited), pooled over every independent audit in `sources/audits.json`. An audit counts a record wrong once if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagrees with the organizer. Pooling past audits projects the errors not yet found. The hover note gives the counts and a 95% Wilson interval.
+- *Projected correctness:* 1 − (records found wrong ÷ records audited), pooled over every independent audit in `sources/audits.json`. An audit counts a record wrong once if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagrees with the organizer. Pooling past audits projects the errors not yet found. Its note (hover, click or tap) gives the counts and a 95% Wilson interval.
 
 **Reliability Index:** of every dated record not yet ended (projections excluded), the share the latest automated check re-confirmed from the organizer's own page or linked image (start date, its year and a name word), plus dates computed from a published rule. Manual reviews never count. When no check has completed in 36 hours, it drops to the rule-computed share.
 
@@ -58,7 +58,8 @@ The organizer's page is the source of truth. Reliability asks whether a machine 
 - The check is a text match anywhere on the page, so another event on the same page can pass it.
 - End dates, venues and cut-off times are not re-checked automatically.
 - Some organizer servers refuse cloud-hosted readers, varying by run; Reliability shows what the runner could read.
-- The build gate does not check quote length, `_why` or `reviewed_on`.
+- A call's cut-off time is known only where the organizer publishes one (`due_time`); otherwise its last day reads "Closes today · check the organizer's cut-off time".
+- 16 corrections made before review dates were kept carry no `reviewed_on`; none is invented for them.
 
 ## 4. Website architecture
 
@@ -66,19 +67,23 @@ The organizer's page is the source of truth. Reliability asks whether a machine 
 - **Search engines:** a `noindex` tag and `robots.txt` request exclusion by design; they cannot guarantee it.
 - **Hosting:** GitHub Pages via `.github/workflows/runway.yml`. Each push to `main` builds, validates and deploys; the nightly run (06:00 UTC, may start late) also checks sources and links, archives the data and updates the review issue, deploying only if the check and validation pass.
 - **Icons:** browser-tab and installed-app icons are the logo's mark without letters (scarlet horizon over three navy lanes). Every icon URL carries `?v=` + the first 8 hex digits of its SHA-256, written by `python scripts/icon_versions.py`; `--check` exits 1 on a stale stamp.
-- **Feed and clock:** `site/runway.ics` carries every dated record the site shows as settled (confirmed, set by rule, recorded when published, save the date) from 60 days before the build onward, plus each abstract deadline still ahead. The build and the checker use New York's calendar day.
+- **Feed and clock:** `site/runway.ics` carries every dated record the site shows as settled (confirmed, set by rule, recorded when published, save the date) from 60 days before the build onward, plus each abstract deadline still ahead. An event's UID is the edition id, or its `uid` when a corrected edition keeps the identity it was published under. The build and the checker use New York's calendar day; an open page reloads itself when the visitor's calendar day changes.
+- **Performance** (measured 2026-09-25): the data file is 1.5 MB, 240 KB as served (gzip); the city list (170 KB served) loads only when Near City is used. If the data cannot load, the page says so.
 
 ## 5. Interface
 
 - **Views:** **List** (upcoming records by month), **Calendar** (month grid), **Orbit** (landing view: twelve months with each record type's density) and **Directory** (every series with its history), all filtered alike by Discipline, Focus, Scope, Location and search. A record opens the same detail everywhere: source link, quoted wording, calendar file, **Suggest a fix**.
 - **Links:** each view is a URL whose hash carries its filters; older links still open the view they described.
+- **Near City** takes a ZIP code or a place with its state, province or country ("Springfield, IL", "Portland ME", "London, ON"; the city list carries each city's state or province). An unknown place is reported above the results; distance is then not applied.
+- **Calendar** lists abstract calls open now with no published due date above the current month's grid. A call with a published cut-off time closes at that instant, wherever the visitor is.
+- **Accessibility:** a list card opens from its title button (no control sits inside another), and a record whose organizer page was removed says so and links the Internet Archive's copies.
 - **Phones:** a phone (screen's shorter side ≤ 700 px) gets the mobile layout with a **Desktop layout** link at the top; choosing it fits the desktop layout to the screen, and **Switch to the mobile layout** returns. The choice is kept only in that browser (localStorage, no cookie). Tablets and desktops get the desktop layout; upright tablets (701–900 px) fit the month grid to the screen. On a phone held upright, the Calendar is a day-by-day agenda that opens at today, with records under way today listed above today, and Orbit's twelve months show as a grid.
 
 ## 6. Reproduce
 
 ### 6.1 Environment
 
-Python 3.12 and its standard library; the source check also needs `pypdf==5.*`, and its optional second readers Playwright with Chromium, Pillow and tesseract. Add records to `sources/` per `sources/SCHEMA.md`.
+Python 3.12 and its standard library; the source check also needs `pypdf==5.*`, and its optional second readers Playwright with Chromium, Pillow and tesseract. `scripts/geocode.py` (network) rebuilds the venue pins, ZIP centroids and the city list (world cities of 100,000+ and US cities of 15,000+, with state or province). Add records to `sources/` per `sources/SCHEMA.md`.
 
 ### 6.2 Build, validate and serve
 
