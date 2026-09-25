@@ -1097,3 +1097,25 @@ details.month{scroll-margin-top:12px}
   .cal{min-width:0;grid-template-columns:repeat(7,minmax(0,1fr))}
   .calspan .dowrow,.calspan .wk{grid-template-columns:repeat(7,minmax(0,1fr))}
 }
+
+/* ===== Red team fixes, 2026-09-25 ===== */
+/* F16: each index is a button that looks like the text it replaced; its definition opens beneath the header. */
+.mast .updated{position:relative}
+.mast .updated .fidline button.idx{all:unset;cursor:help;white-space:nowrap}
+.mast .updated .fidline button.idx:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:2px}
+.mast .updated .fidline button.idx[aria-expanded="true"]{text-decoration:underline;text-underline-offset:3px}
+.mast .updated .idx-note{display:block;position:absolute;top:100%;right:0;z-index:40;margin-top:6px;width:min(360px,calc(100vw - 32px));
+  padding:10px 12px;background:#FFFFFF;border:1px solid #C9D7DB;border-radius:4px;box-shadow:0 6px 18px rgba(16,47,59,.16);
+  font-size:12.5px;font-weight:400;line-height:1.45;letter-spacing:0;text-align:left;white-space:normal}
+.mast .updated .idx-note[hidden]{display:none}
+.mast .updated .idx-note a{color:#0B5F7A;text-decoration:underline}
+@media(max-width:800px){.mast .updated .idx-note{left:0;right:auto}}
+/* F17: a list card's title is the button that opens the record; it keeps the look of the title and organizer lines. */
+.ev .ev-open{all:unset;display:grid;gap:1px;min-width:0;cursor:pointer}
+.ev .ev-open .title,.ev .ev-open .org{display:block}
+.ev .ev-open:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px}
+/* F05: a place the city list does not know says so where the results are. */
+.nearmiss{margin:0 0 12px;padding:9px 12px;border:1px solid #E7B98F;border-left:4px solid #C25100;background:#FFF7F0;color:#5C3310;font-size:13.5px}
+.geoquick .nearmsg.warn{color:#9A4200;font-weight:700}
+/* F11: open calls with no published due date, listed above the Calendar's month grid. */
+.undatedrow{margin-top:6px}

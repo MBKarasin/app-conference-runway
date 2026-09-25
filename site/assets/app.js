@@ -145,16 +145,35 @@
 
   /* ---------- data ---------- */
   let DATA, SERIES, EDS, SPECS, COUNTRIES = [], CITIES = null;
+  // Red team F10: when the organizer publishes a cut-off time (call.due_time "HH:MM" in call.tz, an IANA zone), the
+  // call closes at that instant, wherever the visitor is. cutoffAt turns the organizer's wall-clock time into an instant.
+  function cutoffAt(date, time, tz) {
+    try {
+      const [Y, M, Dd] = date.split("-").map(Number), [h, mi] = time.split(":").map(Number), want = Date.UTC(Y, M - 1, Dd, h, mi);
+      const fmt = new Intl.DateTimeFormat("en-US", { timeZone: tz, hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
+      let t = want;
+      for (let i = 0; i < 3; i++) {
+        const p = Object.fromEntries(fmt.formatToParts(new Date(t)).map(x => [x.type, x.value]));
+        t += want - Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour % 24, +p.minute);
+      }
+      return Number.isFinite(t) ? t : null;
+    } catch (err) { return null; }
+  }
+  const cutoffLabel = (t, tz) => { try { return new Intl.DateTimeFormat("en-US", { timeZone: tz, hour: "numeric", minute: "2-digit", timeZoneName: "short" }).format(new Date(t)); } catch (err) { return ""; } };
   function callOf(e) {
     const c = e.call || {}, closes = c.closes, opens = c.opens;
+    const cut = closes && c.due_time && c.tz ? cutoffAt(closes, c.due_time, c.tz) : null;
     if (closes && closes < TODAY) return { k: "closed", label: "Closed " + md(closes) };
     if (opens && opens > TODAY) return { k: "soon", label: "Opens " + md(opens), opens };
     // "soon" means not yet open. Without a published opening date a "soon" call stays upcoming; it never
     // turns open just because its due date lies ahead.
     if (closes && (c.status === "open" || (opens && opens <= TODAY))) {
+      if (cut && Date.now() > cut) return { k: "closed", label: "Closed " + md(closes) + ", " + cutoffLabel(cut, c.tz) };
       const n = daysBetween(TODAY, closes);
-      // the organizer's cut-off time is usually not published in machine form, so the last day is never called "open now"
-      if (n <= 0) return { k: "urgent", label: "Closes today · check the organizer's cut-off time", closes, n: 0, today: true };
+      // Without a published cut-off time the last day is never called "open now".
+      if (n <= 0) return cut
+        ? { k: "urgent", label: "Closes today, " + cutoffLabel(cut, c.tz), closes, n: 0, today: true }
+        : { k: "urgent", label: "Closes today · check the organizer's cut-off time", closes, n: 0, today: true };
       return { k: n <= 14 ? "urgent" : "open", label: "Closes " + md(closes), closes, n };
     }
     if (c.status === "open") return { k: "open", label: "Call listed · confirm with the organizer", n: null, undated: true };
@@ -534,9 +553,13 @@
     const kindTag = s.kind === "observance" || s.kind === "conference" ? "" : `<span class="tag">${esc(s.kind[0].toUpperCase() + s.kind.slice(1))}</span>`;
     const dist = st.near && e.geo && e.geo.lat != null ? `<span>${Math.round(miles(st.near.lat, st.near.lon, e.geo.lat, e.geo.lon))} mi away</span>` : "";
     const appWeekNow = s.name === "National APP Week" && e.start <= TODAY && e.end >= TODAY;
-    return `<article class="ev${e.expectedRow ? " expected" : ""}${e.past ? " past" : ""}${appWeekNow ? " app-week-now" : ""}${dateMode ? " by-due" : ""}" data-e="${e.id}" tabindex="0" role="button" aria-label="${esc(s.name + ", " + (dateMode ? (dueOn ? "abstracts due " + longDate(e.call.closes) + ", meeting " : "abstract call open, meeting ") : "") + range(e))}">
+    // Red team F17: the card is an <article>; its title is the button that opens the record. A card that was itself
+    // a button held the badge buttons inside it, which is invalid and confuses screen readers. A click anywhere on
+    // the card still opens the record (data-e on the article).
+    const label = s.name + ", " + (dateMode ? (dueOn ? "abstracts due " + longDate(e.call.closes) + ", meeting " : "abstract call open, meeting ") : "") + range(e);
+    return `<article class="ev${e.expectedRow ? " expected" : ""}${e.past ? " past" : ""}${appWeekNow ? " app-week-now" : ""}${dateMode ? " by-due" : ""}" data-e="${e.id}">
       <div class="when" style="--c:${dateMode ? "var(--t-call)" : colorOf(s)}"><span class="d">${esc(day)}</span><span class="m">${esc(sub)}</span></div>
-      <div class="body">${appWeekNow ? `<div class="live-label">OUR WEEK · HAPPENING NOW THROUGH ${esc(md(e.end))}</div>` : ""}<div class="title">${esc(s.name)}</div><div class="org">${esc(s.org_display || s.org)}</div>
+      <div class="body">${appWeekNow ? `<div class="live-label">OUR WEEK · HAPPENING NOW THROUGH ${esc(md(e.end))}</div>` : ""}<button type="button" class="ev-open" data-e="${e.id}" aria-label="${esc(label)}"><span class="title">${esc(s.name)}</span><span class="org">${esc(s.org_display || s.org)}</span></button>
         <div class="meta">${dateMode ? `<span class="meeting-dates">Meeting ${esc(range(e))}</span>` : ""}${e.location ? `<span class="loc">${esc(e.location)}</span>` : ""}${dist}${e.format && e.format !== "in person" ? `<span>${esc(e.format[0].toUpperCase() + e.format.slice(1))}</span>` : ""}${e.theme ? `<span><i>${esc(e.theme)}</i></span>` : ""}</div>
         <div class="badges">${profTags(s)}${scopeBadges(s)}${focusBadges(e)}${specTags(s, 2)}${kindTag}</div>${studentMode && e.student ? `<p class="student-line"><b>${esc(e.student.kind)}</b> · ${esc(e.student.detail)}</p>` : ""}</div>
       <div class="side">${studentMode && !dateMode ? (e.student && e.student.deadline && e.student.deadline >= TODAY ? `<span class="student-due">Submit by ${esc(md(e.student.deadline))}</span>` : "") : callPill(e)}${vBadge(e)}</div></article>`;
@@ -602,18 +625,6 @@
     target.style.scrollMarginTop = `${sticky ? Math.ceil(bar.getBoundingClientRect().height) + 12 : 12}px`;
     target.scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
   }
-  function vStudents() {
-    const L = EDS.filter(e => e.student && !e.past && !e.expectedRow && edMatch(e));
-    if (!L.length) return empty("No student or DNP project opportunities match these filters.");
-    const projects = L.filter(e => e.student.category === "project");
-    const meetings = L.filter(e => e.student.category !== "project");
-    const deadlines = projects.filter(e => e.student.deadline && e.student.deadline >= TODAY).sort((a, b) => a.student.deadline.localeCompare(b.student.deadline));
-    let h = `<div class="student-intro"><h2>Students & DNP projects</h2><p>This single discipline brings together organizer-documented APP student sessions, registration pathways, posters, abstracts and DNP project dissemination. A meeting may welcome student work even when this year's submission window has closed; open a record for its exact source and eligibility details.</p></div>`;
-    if (deadlines.length) h += `<section class="student-deadlines"><h2>Student submissions ahead</h2><div class="student-deadline-list">${deadlines.map(e => `<button data-e="${esc(e.id)}"><b>${esc(md(e.student.deadline))}</b><span>${esc(e.student.kind)} · ${esc(e.s.name)}</span></button>`).join("")}</div></section>`;
-    if (projects.length) h += `<section class="sec"><h2>DNP projects, posters and abstracts <span class="student-count">${projects.length}</span></h2><div class="list">${projects.map(e => evRow(e, true)).join("")}</div></section>`;
-    if (meetings.length) h += `<section class="sec"><h2>Student meetings and pathways <span class="student-count">${meetings.length}</span></h2><div class="list">${meetings.map(e => evRow(e, true)).join("")}</div></section>`;
-    return h;
-  }
   function vCalendar() {
     const [y, m] = st.cal.split("-").map(Number);
     const first = new Date(y, m - 1, 1), start = new Date(first); start.setDate(1 - first.getDay());
@@ -633,7 +644,11 @@
     // National APP Week always first; then celebrations, meetings, open abstract calls (deadlines view: calls before meetings).
     const rank = x => !x.call && x.e.s.name === "National APP Week" ? -1 : mode === "deadlines" ? (x.call ? 0 : x.e.s.kind === "observance" ? 1 : 2) : (x.call ? 2 : x.e.s.kind === "observance" ? 0 : 1);
     const expected = st.expected && mode !== "past" ? EDS.filter(e => e.expectedRow && edMatch(e) && recordFocus(e) && e.start.slice(0, 7) === st.cal) : [];
-    if (PHONE_CAL.matches) return calHead(y, m, expected) + calAgenda(items, y, m, rank);
+    // Red team F11: a call listed as open with no published due date has no day to sit on in the grid, so in the
+    // current month it is listed above the grid instead of being left out.
+    const undated = st.cal === TODAY.slice(0, 7) && (!st.focus || st.focus === "open")
+      ? M.filter(e => !e.past && e.c.k === "open" && e.c.undated).sort((a, b) => a.s.name.localeCompare(b.s.name)) : [];
+    if (PHONE_CAL.matches) return calHead(y, m, expected, undated) + calAgenda(items, y, m, rank);
     const SHOW = 6;
     let weeks = "";
     for (let w = 0; w < 6; w++) {
@@ -669,9 +684,10 @@
       weeks += `<div class="wk${emptyWeek ? " emptyweek" : ""}" style="grid-template-rows:${rc}" data-rc="${rc}" data-rx="${rx}">${h}</div>`;
     }
     const cells = `<div class="dowrow">${DOW.map(d => `<div class="dow">${d}</div>`).join("")}</div>${weeks}`;
-    return calHead(y, m, expected) + `<div class="calwrap"><div class="cal calspan" role="grid" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
+    // Red team F17: the month grid is a labelled group of buttons, not an ARIA grid (it has no grid rows or cells).
+    return calHead(y, m, expected, undated) + `<div class="calwrap"><div class="cal calspan" role="group" aria-label="${MONTH[m - 1]} ${y}">${cells}</div></div>`;
   }
-  function calHead(y, m, expected) {
+  function calHead(y, m, expected, undated = []) {
     const Y0 = +TODAY.slice(0, 4), years = []; for (let yy = Y0 - 3; yy <= DATA.horizon; yy++) years.push(yy);
     return `<div class="calhead">
         <div class="calnav">
@@ -685,7 +701,8 @@
           <button class="btn" data-act="today">Today</button>
         </div></div>
       </div>
-      ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}`;
+      ${expected.length ? `<div class="expectedrow"><b>Expected this month, no date posted yet:</b> ${expected.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}
+      ${undated.length ? `<div class="expectedrow undatedrow"><b>Abstract calls open now, no due date posted:</b> ${undated.map(e => `<button class="chip" data-e="${e.id}">${esc(e.s.name)}</button>`).join("")}</div>` : ""}`;
   }
   /* ---------- phone Calendar: a day-by-day agenda of the same records ----------
      A seven-column month grid does not fit a phone held upright, so below 700 px the Calendar lists
@@ -833,6 +850,11 @@
     h += open.length ? open.map(e => e.c.closes ? row(e, md(e.c.closes), "due", false) : row(e, "Listed", "no closing date posted")).join("") : `<div class="empty">No additional open calls match these filters.</div>`;
     return h + `</div></section><p class="fine">Each call appears once: imminent due dates first, then calls opening soon, then other calls already open. A deadline closing today shows the day only; the organizer's cut-off hour and time zone still apply.</p>`;
   }
+  // The edition a Directory card offers: the next dated one, or the latest when none is ahead.
+  function offeredEdition(sid) {
+    const L = EDS.filter(e => e.series === sid && !e.expectedRow).sort((a, b) => a.start.localeCompare(b.start));
+    return L.find(e => !e.past && verMatch(e)) || L.filter(e => e.past).pop() || null;
+  }
   function directorySeries() {
     // Focus narrows the Directory to series with a matching edition: a meeting or celebration series, an upcoming deadline, or a call open now.
     const editionFilters = st.where || st.area || st.near || st.review || st.focus || st.scope.includes("students");
@@ -840,9 +862,13 @@
     // List also searches edition fields (city, theme, sessions); Directory does not.
     const words = (st.q || "").toLowerCase().split(/\s+/).filter(Boolean);
     const seriesHay = s => [s.name, s.org_display || s.org, s.org, (s.specialty || []).join(" "), (s.professions || []).join(" ")].join(" ").toLowerCase();
+    // Red team F13: a place filter (format, region, distance) is judged on the edition the card offers, the next
+    // dated one or, when none is ahead, the latest. An old edition in Prague must not list a series now bound for Sydney.
+    const placeFilters = st.where || st.area || st.near;
     return DATA.series.filter(s => seriesMatch(s) &&
       (!words.length || words.every(w => wordHit(seriesHay(s), w))) &&
-      (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && focusMatch(e) && (st.expected || !e.expectedRow))))
+      (!editionFilters || EDS.some(e => e.series === s.id && edMatch(e) && focusMatch(e) && (st.expected || !e.expectedRow))) &&
+      (!placeFilters || (o => !!o && placeMatch(o))(offeredEdition(s.id))))
       // A series with no edition at all has nothing to show; it is not listed.
       .filter(s => EDS.some(e => e.series === s.id));
   }
@@ -1007,7 +1033,7 @@
       <span class="geo-divider" aria-hidden="true"></span>
       <label class="geo-label" for="nearq">Near City</label><input id="nearq" class="geo-input" list="citylist" placeholder="City or ZIP" value="${esc(st.nearQ)}" autocomplete="off" inputmode="search"><datalist id="citylist"></datalist>
       <label class="geo-label" for="radius">within</label><select id="radius" class="sel geo-sel">${[25, 50, 100, 250, 500, 1000, 2000].map(r => `<option value="${r}" ${st.radius === r ? "selected" : ""}>${r} miles</option>`).join("")}</select>
-      ${st.nearQ && !st.near ? `<span class="nearmsg">No match for “${esc(st.nearQ)}”</span>` : st.near ? `<span class="nearmsg">${esc(st.near.label)}</span>` : ""}`;
+      ${st.nearQ && !st.near ? `<span class="nearmsg warn">No place found for “${esc(st.nearQ)}”. Try a ZIP code or “City, ST”.</span>` : st.near ? `<span class="nearmsg">${esc(st.near.label)}${st.near.others ? ` · ${st.near.others} other place${st.near.others === 1 ? "" : "s"} share this name; add the state or country to choose` : ""}</span>` : ""}`;
     $("#filters").innerHTML = `
       <div class="fgroup"><span class="flabel">Type</span>${chipRow("kind", KIND_CHIPS)}</div>
       <div class="fgroup"><label class="flabel" for="spec">Specialty</label><select id="spec" class="sel"><option value="">All specialties</option>${SPECS.map(s => `<option ${s === st.spec ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
@@ -1029,6 +1055,8 @@
     spotlight(); controls();
     const v = st.display === "directory" ? vDirectory : st.display === "calendar" ? vCalendar : st.display === "orbit" ? vOrbit : vList;
     $("#view").innerHTML = v();
+    // Red team F05: a place the list does not know must not silently drop the distance filter.
+    if (st.nearQ && !st.near) $("#view").insertAdjacentHTML("afterbegin", `<p class="nearmiss" role="status">No place found for “${esc(st.nearQ)}”, so these results are not limited by distance. Try a ZIP code or “City, ST”.</p>`);
     let summary;
     if (st.display === "orbit") {
       const w = orbitWindow(), annual = st.orbitScope === "year";
@@ -1050,6 +1078,7 @@
     if (st.area) applied.push("Global Region: " + st.area.slice(2));
     if (st.where) applied.push("Format: " + st.where[0].toUpperCase() + st.where.slice(1));
     if (st.near) applied.push(`Within ${st.radius} miles of ${st.near.label}`);
+    else if (st.nearQ) applied.push(`Near: no place found for ${st.nearQ}; distance not applied`);
     if (st.spec) applied.push("Specialty: " + st.spec);
     if (st.q) applied.push("Search: " + st.q);
     if (st.review) applied.push("Needs review only");
@@ -1077,30 +1106,78 @@
     if (window.RUNWAY_ZIP) return window.RUNWAY_ZIP[z] || null;
     try { const r = await fetch("geo/zip/" + k + ".json"); if (!r.ok) return null; const j = await r.json(); return j[z] || null; } catch (e) { return null; }
   }
+  // Cities carry their state or province (red team F05), so "Springfield, IL", "Springfield Illinois" and
+  // "Portland, ME" resolve to the right place. Two-letter US state, Canadian province and Australian state codes are
+  // understood, as are common country short forms. Without a qualifier the most populous city of that name is used,
+  // and the label says which one it was.
+  const US_ST = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado", CT: "Connecticut", DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming", PR: "Puerto Rico" };
+  const CA_PR = { AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick", NL: "Newfoundland and Labrador", NS: "Nova Scotia", NT: "Northwest Territories", NU: "Nunavut", ON: "Ontario", PE: "Prince Edward Island", QC: "Quebec", SK: "Saskatchewan", YT: "Yukon" };
+  const AU_ST = { ACT: "Australian Capital Territory", NSW: "New South Wales", NT: "Northern Territory", QLD: "Queensland", SA: "South Australia", TAS: "Tasmania", VIC: "Victoria", WA: "Western Australia" };
+  const COUNTRY_ALIAS = { us: "United States", usa: "United States", "u.s.": "United States", "u.s.a.": "United States", america: "United States", "united states of america": "United States",
+    uk: "United Kingdom", "u.k.": "United Kingdom", britain: "United Kingdom", "great britain": "United Kingdom", england: "United Kingdom", scotland: "United Kingdom", wales: "United Kingdom",
+    uae: "United Arab Emirates", korea: "South Korea", "republic of korea": "South Korea", holland: "Netherlands", "the netherlands": "Netherlands" };
+  const fold = x => String(x || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+  const cityLabel = c => [c[0], c[4], c[1]].filter(Boolean).join(", ");
   async function cities() {
     if (CITIES) return CITIES;
     let base = window.RUNWAY_CITIES;
     if (!base) { try { const r = await fetch("geo/cities.json"); base = await r.json(); } catch (e) { base = []; } }
-    const seen = new Set(base.map(c => (c[0] + "|" + c[1]).toLowerCase()));
-    const venueCities = EDS.filter(e => e.geo && e.geo.place && e.geo.country && e.geo.lat != null)
-      .map(e => [e.geo.place, e.geo.country, e.geo.lat, e.geo.lon]);
-    for (const c of venueCities) { const key = (c[0] + "|" + c[1]).toLowerCase(); if (!seen.has(key)) { base.push(c); seen.add(key); } }
+    const seen = new Set(base.map(c => fold(c[0] + "|" + (c[4] || "") + "|" + c[1])));
+    const seenNC = new Set(base.map(c => fold(c[0] + "|" + c[1])));
+    // Venue towns are added so a visitor can search near a meeting's own town. A US venue carries its state code.
+    const venueCities = EDS.filter(e => e.geo && e.geo.place && e.geo.country && e.geo.lat != null && e.geo.precision !== "state" && e.geo.precision !== "country")
+      .map(e => [e.geo.place, e.geo.country, e.geo.lat, e.geo.lon, e.geo.cc === "US" ? US_ST[e.geo.state] || "" : ""]);
+    for (const c of venueCities) {
+      const key = fold(c[0] + "|" + c[4] + "|" + c[1]);
+      if (seen.has(key) || (!c[4] && seenNC.has(fold(c[0] + "|" + c[1])))) continue;
+      base.push(c); seen.add(key); seenNC.add(fold(c[0] + "|" + c[1]));
+    }
     CITIES = base;
     return CITIES;
+  }
+  // Does one qualifier (a state, province, country or their short form) describe city c?
+  function qualifies(q, c) {
+    const f = fold(q), up = String(q).trim().toUpperCase().replace(/\./g, "");
+    const region = fold(c[4]), country = fold(c[1]);
+    if (f === region || f === country) return true;
+    if (COUNTRY_ALIAS[f] && fold(COUNTRY_ALIAS[f]) === country) return true;
+    if (c[1] === "United States" && US_ST[up] && fold(US_ST[up]) === region) return true;
+    if (c[1] === "Canada" && CA_PR[up] && fold(CA_PR[up]) === region) return true;
+    if (c[1] === "Australia" && AU_ST[up] && fold(AU_ST[up]) === region) return true;
+    return false;
+  }
+  // Split "Springfield, IL", "Springfield IL" or "Paris, France" into a city name and its qualifiers.
+  function parsePlace(q) {
+    const parts = q.split(",").map(x => x.trim()).filter(Boolean);
+    if (parts.length > 1) return { name: parts[0], quals: parts.slice(1) };
+    const words = q.trim().split(/\s+/);
+    for (let k = Math.min(3, words.length - 1); k >= 1; k--) {
+      const tail = words.slice(-k).join(" "), up = tail.toUpperCase().replace(/\./g, "");
+      if (US_ST[up] || CA_PR[up] || AU_ST[up] || COUNTRY_ALIAS[fold(tail)] || Object.values(US_ST).some(v => fold(v) === fold(tail))
+          || Object.values(CA_PR).some(v => fold(v) === fold(tail)) || Object.values(AU_ST).some(v => fold(v) === fold(tail)))
+        return { name: words.slice(0, -k).join(" "), quals: [tail] };
+    }
+    return { name: q.trim(), quals: [] };
   }
   async function resolveNear() {
     const q = st.nearQ.trim();
     st.near = null;
     if (!q) return;
     if (/^\d{5}$/.test(q)) { const ll = await zipLookup(q); if (ll) st.near = { lat: ll[0], lon: ll[1], label: "ZIP " + q }; return; }
-    const C = await cities(), ql = q.toLowerCase().replace(/\s*,\s*/g, ", ");
-    const hit = C.find(c => (c[0] + ", " + c[1]).toLowerCase() === ql) || C.find(c => c[0].toLowerCase() === ql.split(",")[0].trim()) || C.find(c => c[0].toLowerCase().startsWith(ql));
-    if (hit) st.near = { lat: hit[2], lon: hit[3], label: hit[0] + ", " + hit[1] };
+    const C = await cities(), { name, quals } = parsePlace(q), fn = fold(name);
+    const fits = c => quals.every(x => qualifies(x, c));
+    let hits = C.filter(c => fold(c[0]) === fn && fits(c));
+    if (!hits.length && !quals.length) hits = C.filter(c => fold(c[0]).startsWith(fn));
+    if (!hits.length) return;
+    const hit = hits[0];   // the list runs from the most populous city down
+    const others = quals.length ? 0 : C.filter(c => fold(c[0]) === fold(hit[0]) && c !== hit).length;
+    st.near = { lat: hit[2], lon: hit[3], label: cityLabel(hit), others };
   }
   async function fillCityList(q) {
     if (!q || /^\d/.test(q)) { $("#citylist").innerHTML = ""; return; }
-    const C = await cities(), ql = q.toLowerCase();
-    $("#citylist").innerHTML = C.filter(c => c[0].toLowerCase().startsWith(ql)).slice(0, 12).map(c => `<option value="${esc(c[0] + ", " + c[1])}">`).join("");
+    const C = await cities(), { name, quals } = parsePlace(q), fn = fold(name);
+    $("#citylist").innerHTML = C.filter(c => fold(c[0]).startsWith(fn) && quals.every(x => qualifies(x, c) || fold(c[4]).startsWith(fold(x)) || fold(c[1]).startsWith(fold(x))))
+      .slice(0, 12).map(c => `<option value="${esc(cityLabel(c))}">`).join("");
   }
 
   /* ---------- detail dialog ---------- */
@@ -1142,7 +1219,7 @@
         ${s.recurrence ? `<dt>Recurs</dt><dd>${esc(s.recurrence)}</dd>` : ""}
         <dt>Scope</dt><dd>${scopeTags(s).map(a => esc(a[0].toUpperCase() + a.slice(1))).join(", ")} <span class="fine">(curated and derived tags)</span></dd>
         ${s.np_pa_basis ? `<dt>Why it's here</dt><dd>${esc(s.np_pa_basis)}</dd>` : ""}
-        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} ${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span>` : ""}${e.evidence_image ? ` · <a href="${esc(e.evidence_image)}" target="_blank" rel="noopener noreferrer">dates published in this image</a>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
+        <dt>${esc(e.start.slice(0, 4))} source</dt><dd>${e.source_url ? `<a href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.source_url))} · ${esc(e.start.slice(0, 4))} organizer record</a>` : "—"} ${e.link_dead ? ` · <span class="fine">the organizer has since removed this page (${esc(e.link_dead)}); the date above is what it said when recorded</span> · <a href="${esc("https://web.archive.org/web/*/" + e.source_url)}" target="_blank" rel="noopener noreferrer">look for an archived copy</a>` : ""}${e.evidence_image ? ` · <a href="${esc(e.evidence_image)}" target="_blank" rel="noopener noreferrer">dates published in this image</a>` : ""}${e.source_language ? ` · <span class="fine">Original organizer source in ${esc(e.source_language)}; English navigation labels are curator translations where used.</span>` : ""}</dd>
       </dl>
       ${e.evidence
         ? `<blockquote class="quote" title="${esc(e.evidence_auto ? "The sentence the date was found in at the last check." : "The wording recorded from the organizer's page.")}">“${esc(e.evidence)}”${e.evidence_auto ? ` <span class="fine">· found on the page at the last check</span>` : ""}</blockquote>` : ""}
@@ -1175,7 +1252,7 @@
       const tag = y < Y0 ? "past" : y === Y0 ? "now" : "next";
       const windowEnd = exp.length ? (exp[0].end || exp[0].start) : usualMonth ? lastDayOf(y, usualMonth) : y + "-12-31";
       const gone = windowEnd < TODAY;
-      if (dated.length) dated.forEach(x => rows.push(`<li class="${tag}${x.id === $("#dlg").dataset.cur ? " cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || "")}${x.detail_url ? ` \u00b7 <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">${y} program</a>` : ""}${x.source_url && x.source_url !== s.org_url ? ` \u00b7 <a href="${esc(x.source_url)}" target="_blank" rel="noopener noreferrer">${y} organizer record</a>` : ""}</span>${vBadge(x, true)}</li>`));
+      if (dated.length) dated.forEach(x => rows.push(`<li class="${tag}${x.id === $("#dlg").dataset.cur ? " cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || "")}${x.detail_url ? ` \u00b7 <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">${y} program</a>` : ""}${x.source_url && x.source_url !== s.org_url ? ` \u00b7 <a href="${esc(x.source_url)}" target="_blank" rel="noopener noreferrer">${y} organizer record</a>${x.link_dead ? ` <span class="fine">(page since removed)</span>` : ""}` : ""}</span>${vBadge(x, true)}</li>`));
       else if (exp.length && !gone) rows.push(`<li class="${tag} gap"><span class="y">${esc(range(exp[0]))}</span><span>Expected; not yet announced</span>${vBadge(exp[0], true)}</li>`);
       else if (gone) rows.push(`<li class="${tag} gap"><span class="y">${y}</span><span class="nodata">No data available</span><span></span></li>`);
       else rows.push(`<li class="${tag} gap"><span class="y">${y}</span><span class="nodata">Not yet announced</span><span></span></li>`);
@@ -1185,10 +1262,10 @@
   function icsFor(e) {
     const s = e.s, stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
     const x = t => String(t || "").replace(/\\/g, "\\\\").replace(/[;,]/g, m => "\\" + m).replace(/\n/g, "\\n");
-    const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//APP Conference Runway//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT", `UID:${e.id}@app-conference-runway`, `DTSTAMP:${stamp}`,
+    const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//APP Conference Runway//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT", `UID:${e.uid || e.id}@app-conference-runway`, `DTSTAMP:${stamp}`,
       `DTSTART;VALUE=DATE:${e.start.replace(/-/g, "")}`, `DTEND;VALUE=DATE:${addDays(e.end, 1).replace(/-/g, "")}`, `SUMMARY:${x(s.name)} (${x(s.org)})`, `LOCATION:${x(e.location)}`,
       `URL:${e.source_url || ""}`, `DESCRIPTION:${x("Confirm details on the organizer page. Listed on APP Conference Runway.")}`, "END:VEVENT"];
-    if (e.c.closes && e.c.closes >= TODAY) L.push("BEGIN:VEVENT", `UID:${e.id}-call@app-conference-runway`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${e.c.closes.replace(/-/g, "")}`,
+    if (e.c.closes && e.c.closes >= TODAY) L.push("BEGIN:VEVENT", `UID:${e.uid || e.id}-call@app-conference-runway`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${e.c.closes.replace(/-/g, "")}`,
       `DTEND;VALUE=DATE:${addDays(e.c.closes, 1).replace(/-/g, "")}`, `SUMMARY:Abstract deadline: ${x(s.name)}`, "END:VEVENT");
     L.push("END:VCALENDAR");
     const encoder = new TextEncoder();
@@ -1395,20 +1472,54 @@
         ? `${r.ok} of ${r.total} upcoming dated records: ${r.machine} re-confirmed from the organizer's own page or image by the latest automated check, and ${r.rule} computed from a published rule. The other ${r.total - r.ok} rest on a manual review of the organizer's source or a save-the-date, and count once the check can re-read them.`
         : `No automated check has completed in the last 36 hours, so only the ${r.rule} dates computed from a published rule count (${r.ok} of ${r.total}).`)
       : "";
+    // Red team F16: a definition held only in a hover title cannot be reached by touch or keyboard. Each index is a
+    // button (styled as the text it replaces) that opens its definition beneath the header; hover still shows it.
     const idx = [
-      f ? `<span class="idx" title="${esc(fidTip)}">Fidelity Index: ${f.pct.toFixed(2)}%</span>` : "",
-      r ? `<span class="idx" title="${esc(relTip)}">Reliability Index: ${r.pct.toFixed(2)}%</span>` : ""
+      f ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(fidTip)}" data-note="${esc(fidTip)}">Fidelity Index: ${f.pct.toFixed(2)}%</button>` : "",
+      r ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(relTip)}" data-note="${esc(relTip)}">Reliability Index: ${r.pct.toFixed(2)}%</button>` : ""
     ].filter(Boolean);
     $("#updated").innerHTML =
       `<span class="stamp-line"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i>Updated ${esc(srcStamp)}</span>` +
-      (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span>` : "");
+      (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span><span class="idx-note" id="idx-note" role="note" hidden></span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     const lt = $(".layout-toggle");
     if (lt) lt.textContent = document.documentElement.classList.contains("force-desktop") ? "Switch to the mobile layout" : "Desktop layout";
     await resolveNear();
-    bind(); wireSkip(); render();
+    bind(); wireSkip(); render(); wireIndexNotes(); watchDay();
     if (PHONE_CAL.addEventListener) PHONE_CAL.addEventListener("change", () => { if (st.display === "calendar") render(); });
     if (want && byId(want)) openDetail(byId(want));
+  }
+  // The index definitions open on click, tap or Enter; a second press, a click elsewhere or Escape closes them.
+  function wireIndexNotes() {
+    const note = $("#idx-note"), btns = [...document.querySelectorAll("#updated button.idx")];
+    if (!note || !btns.length) return;
+    const close = () => { note.hidden = true; btns.forEach(b => b.setAttribute("aria-expanded", "false")); };
+    btns.forEach(b => b.addEventListener("click", ev => {
+      ev.stopPropagation();
+      const wasOpen = b.getAttribute("aria-expanded") === "true";
+      close();
+      if (wasOpen) return;
+      const how = REPO ? ` <a href="${esc(REPO)}/blob/main/site/AI-HANDOFF.md#34-verification-pipeline" target="_blank" rel="noopener noreferrer">How both indices are defined</a>` : "";
+      note.innerHTML = esc(b.dataset.note) + how;
+      note.hidden = false;
+      b.setAttribute("aria-expanded", "true");
+    }));
+    document.addEventListener("click", ev => { if (!note.hidden && !ev.target.closest("#idx-note")) close(); });
+    document.addEventListener("keydown", ev => {
+      if (ev.key !== "Escape" || note.hidden) return;
+      const open = btns.find(b => b.getAttribute("aria-expanded") === "true");
+      close(); if (open) open.focus();
+    });
+  }
+  // Red team F23: "open", "closes today" and "past" are worked out for the day the page loaded. A tab left open
+  // past midnight would keep yesterday's statuses, so when the calendar day changes the page reloads itself,
+  // with the view (kept in the address) unchanged: at once if it is on screen, or when the visitor returns to it.
+  function watchDay() {
+    const check = () => { if (iso(new Date()) !== TODAY && document.visibilityState === "visible") location.reload(); };
+    document.addEventListener("visibilitychange", check);
+    window.addEventListener("pageshow", check);
+    const now = new Date(), next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 30);
+    setTimeout(function tick() { check(); setTimeout(tick, 36e5); }, Math.max(1000, next - now));
   }
   boot();
 })();
