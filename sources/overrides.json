@@ -717,15 +717,15 @@
   },
   "97a2b66704e8": {
    "call": {
-    "status": "tba",
+    "status": "closed",
     "opens": null,
-    "closes": null,
+    "closes": "2026-07-14",
     "final": null,
-    "text": "ELSO's meetings list shows 'Deadline: 05 November 2026' for this congress without saying what the deadline is; the earlier 'Closed Jul 14' had no evidence on file",
-    "url": "https://www.elso.org/ecmo-education/elso-meetings.aspx"
+    "text": "Fecha límite para envío 14 de julio de 2026",
+    "url": "https://congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/"
    },
-   "_why": "Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
-   "reviewed_on": "2026-09-24",
+   "_why": "Blind audit 2026-09-26: the congress's own abstract instructions (congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/, the congress site ELSO's meetings page links) read 'Apertura del envío Enero 2026 Fecha límite para envío 14 de julio de 2026' and 'Fechas del Congreso ELSO LATAM 2026 4–6 de noviembre de 2026'. That is the evidence the earlier 'Closed Jul 14' lacked. Re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
+   "reviewed_on": "2026-09-26",
    "source_reviewed": true,
    "evidence": "VII Congreso ELSOLATAM 2026 Location: San Jose, Costa Rica November 4, 2026 - November 6, 2026"
   },
@@ -798,9 +798,17 @@
   },
   "168119a896f1": {
    "evidence": "acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães",
-   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
-   "reviewed_on": "2026-09-24",
-   "source_reviewed": true
+   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (eventosaben.org.br/76cben/trabalhos/) read 'O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.' (day/month/year: 9 May to 30 September 2026) and show '30/09 Limite de envio'. The event page still reads 'acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães'. Both re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
+   "reviewed_on": "2026-09-26",
+   "source_reviewed": true,
+   "call": {
+    "status": "open",
+    "opens": "2026-05-09",
+    "closes": "2026-09-30",
+    "final": null,
+    "text": "O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.",
+    "url": "https://eventosaben.org.br/76cben/trabalhos/"
+   }
   },
   "637a8ed896be": {
    "_why": "Repopulation audit 2026-09-24: annanurse.org was offline for maintenance on 2026-09-24; stored dates (April 17-21, 2027) left as captured, not re-confirmed."
@@ -886,22 +894,22 @@
    "reviewed_on": "2026-09-24"
   },
   "79d298e81fa1": {
-   "location": "Host city not yet announced",
+   "location": "Sheraton Grand Chicago Riverwalk, Chicago, IL",
    "evidence": "Jun 9 - 13 2027 SDPA Annual Summer Dermatology Conference",
-   "_why": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-24"
+   "_why": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference) reads 'Save the date! When: June 9-13, 2027 Where: Sheraton Grand Chicago Riverwalk Chicago, Illinois', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-26"
   },
   "60b19fa7fb93": {
-   "location": "Host city not yet announced",
+   "location": "Scottsdale Westin Kierland, Scottsdale, AZ",
    "evidence": "Nov 10 - 14 2027 SDPA 25th Annual Fall Dermatology Conference",
-   "_why": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-24"
+   "_why": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-25th-annual-fall-dermatology-conference) reads 'Save the date! When: November 10-14, 2027 Where: Scottsdale Westin Kierland Scottsdale, Arizona', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-26"
   },
   "ee76d4c7f3bf": {
-   "location": "Host city not yet announced",
+   "location": "Omni Boston Seaport, Boston, MA",
    "evidence": "Jun 7 - 11 2028 SDPA Annual Summer Dermatology Conference",
-   "_why": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-24"
+   "_why": "Blind audit 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference-0) reads 'Save the date! When: June 7-11, 2028 Where: Omni Boston Seaport Boston, Massachusetts', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+   "reviewed_on": "2026-09-26"
   },
   "7ca43ec52267": {
    "location": "East Tennessee State University, Johnson City, TN",
@@ -1041,6 +1049,86 @@
    "source_reviewed": true,
    "_why": "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by two independent readers, which agree on this passage.",
    "reviewed_on": "2026-09-26"
+  },
+  "6b3653108bcd": {
+   "call": {
+    "status": "closed",
+    "opens": null,
+    "closes": "2026-09-25",
+    "final": null,
+    "text": "SUBMISSÕES PRORROGADAS ATÉ 25/09/2026",
+    "url": "https://www.sobenfee.org.br/regulamento-2026"
+   },
+   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (sobenfee.org.br/regulamento-2026) read 'SUBMISSÕES PRORROGADAS ATÉ 25/09/2026' and '2.1. O prazo limite para envio dos resumos via sistema será até 25/09/2026'; the extended deadline has passed. Re-read on 2026-09-26.",
+   "reviewed_on": "2026-09-26"
+  },
+  "269fb342e367": {
+   "call": {
+    "status": "closed",
+    "opens": null,
+    "closes": "2026-08-31",
+    "final": null,
+    "text": "Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)",
+    "url": "https://www.mpa2026.org/abstract-submission-guideline.php",
+    "due_time": "23:59",
+    "tz": "Asia/Kuala_Lumpur"
+   },
+   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The congress's abstract guideline (mpa2026.org/abstract-submission-guideline.php) reads 'Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)'; the call covers the whole 47th MPA Annual Congress. Re-read on 2026-09-26.",
+   "reviewed_on": "2026-09-26"
+  },
+  "6cfadbc4e525": {
+   "call": {
+    "status": "closed",
+    "opens": null,
+    "closes": null,
+    "final": null,
+    "text": "The call for abstracts is now closed.",
+    "url": "https://www.sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026"
+   },
+   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's event page (sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026) reads 'Abstract The call for abstracts is now closed. Type of presentation : Oral Presentation/ E poster'; no closing date is published. Re-read on 2026-09-26.",
+   "reviewed_on": "2026-09-26"
+  },
+  "45504b46ea75": {
+   "call": {
+    "status": "open",
+    "opens": null,
+    "closes": "2027-05-07",
+    "final": null,
+    "text": "Abstract deadline: 7 May 2027",
+    "url": "https://www.elsevier.com/events/conferences/all/global-emergency-nursing-conference/participate"
+   },
+   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The conference page of the co-organizer ('Presented by Elsevier and Emergency Nurses Association') reads 'Abstract submission deadline: 7 May 2027', and its Participate page reads 'Abstract deadline: 7 May 2027 Submit oral abstract here ... Submit poster abstract here', so submission is open. Re-read on 2026-09-26.",
+   "reviewed_on": "2026-09-26"
+  },
+  "c3d8a04559de": {
+   "call": {
+    "status": "soon",
+    "opens": "2026-12-01",
+    "closes": null,
+    "final": null,
+    "text": "The call for research submission for AAPA 2027 will open December 1, 2026.",
+    "url": "https://www.aapa.org/research/research-events-aapa-conferences/"
+   },
+   "_why": "Blind audit 2026-09-26: the record showed AAPA's call for presentations (faculty session proposals, closed 2026-07-31), not its abstract call. AAPA's research page (aapa.org/research/research-events-aapa-conferences/) reads 'The call for research submission for AAPA 2027 will open December 1, 2026.' (ePosters and Research in Action). Re-read on 2026-09-26.",
+   "reviewed_on": "2026-09-26"
+  },
+  "3eecefb90b41": {
+   "location": "Hotel Roanoke & Conference Center, Roanoke, VA",
+   "_why": "Independent probe 2026-09-26: the record read 'Virginia (venue not posted)'. The organizer's conference page (vcnp.net/events/2027VCNPAnnualConference/) reads '2027 VCNP Annual Conference March 3 – March 6, 2027 – Hotel Roanoke & Conference Center' and gives the address '110 Shenandoah Ave NE, Roanoke, VA 24016'. Re-read on 2026-09-26.",
+   "reviewed_on": "2026-09-26"
+  },
+  "50a6bc48cd8f": {
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-26",
+   "_why": "Independent probe 2026-09-26: the Runway held only an expected month (March 2027). The organizer's event page (connapa.org/event/2027-charter-oak-conference/) reads '2027 Charter Oak Conference March 21, 2027 - March 23, 2027' and names the venue ('welcome you back to the beautiful Water's Edge Resort & Spa for the 2027 ConnAPA Charter Oak Conference'; 'Venue Water's Edge Resort and Spa 1525 Boston Post Road Westbrook, CT'). Re-read on 2026-09-26."
+  },
+  "5a807234462c": {
+   "save_the_date": true,
+   "source_reviewed": true,
+   "reviewed_on": "2026-09-26",
+   "evidence_image": "https://ncapa-offload-media.s3.amazonaws.com/wp-content/uploads/2026/07/20124624/S27-Save-the-Date-New-1080-x-540-1024x512.png",
+   "note": "The organizer publishes this as a save-the-date image; the agenda, registration and hotel details are to be announced.",
+   "_why": "Independent probe 2026-09-26: the Runway held only an expected month (August 2027). The organizer's Summer Conference page (ncapa.org/summer-cme-conference/) shows a save-the-date image reading 'Save the Date! 2027 Summer Conference is August 22nd-27th More information coming soon!'; the page text reads 'Held in North Myrtle Beach, SC' and 'the conference is offered as a hybrid event'. Page and image re-read on 2026-09-26."
   }
  },
  "rules": {

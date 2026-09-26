@@ -1616,6 +1616,17 @@
 "precision": "city",
 "region": "North America"
 },
+"Hotel Roanoke & Conference Center, Roanoke, VA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 37.2785,
+"lon": -79.9582,
+"place": "Roanoke",
+"precision": "city",
+"region": "South",
+"state": "VA"
+},
 "Hotel del Coronado, Coronado, CA": {
 "cc": "US",
 "continent": "North America",
@@ -2897,6 +2908,17 @@
 "region": "Northeast",
 "state": "PA"
 },
+"Omni Boston Seaport, Boston, MA": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 42.3386,
+"lon": -71.0183,
+"place": "Boston",
+"precision": "city",
+"region": "Northeast",
+"state": "MA"
+},
 "Omni Corpus Christi Hotel, TX": {
 "cc": "US",
 "continent": "North America",
@@ -3597,6 +3619,17 @@
 "precision": "city",
 "region": "Europe"
 },
+"Scottsdale Westin Kierland, Scottsdale, AZ": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 33.6843,
+"lon": -111.8614,
+"place": "Scottsdale",
+"precision": "city",
+"region": "West",
+"state": "AZ"
+},
 "Seattle Convention Center, WA": {
 "cc": "US",
 "continent": "North America",
@@ -3662,6 +3695,17 @@
 "precision": "city",
 "region": "South",
 "state": "TX"
+},
+"Sheraton Grand Chicago Riverwalk, Chicago, IL": {
+"cc": "US",
+"continent": "North America",
+"country": "United States",
+"lat": 41.837,
+"lon": -87.6849,
+"place": "Chicago",
+"precision": "city",
+"region": "Midwest",
+"state": "IL"
 },
 "Sheraton Grand Downtown, Nashville, TN": {
 "cc": "US",

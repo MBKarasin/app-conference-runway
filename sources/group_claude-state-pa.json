@@ -72,6 +72,23 @@
      "source_url": "https://connapa.org/cocconference/",
      "evidence": "Join us in celebrating the 40th Annual Charter Oak Conference, taking place March 21–23, 2026, at Water's Edge Resort & Spa in Westbrook, CT.",
      "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-03-21",
+     "end": "2027-03-23",
+     "location": "Water's Edge Resort & Spa, Westbrook, CT",
+     "format": "in person",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://connapa.org/event/2027-charter-oak-conference/",
+     "evidence": "2027 Charter Oak Conference March 21, 2027 - March 23, 2027",
+     "checked": "2026-09-26"
     }
    ]
   },
@@ -257,6 +274,23 @@
      "source_url": "https://ncapa.org/summer-cme-conference/",
      "evidence": "Approval is valid from 8/17/2026 to 8/21/2026 ... Held in North Myrtle Beach, SC; homepage: Celebrate 50 years of NCAPA at our Annual Summer Conference in Myrtle Beach...August 16–21",
      "checked": "2026-09-21"
+    },
+    {
+     "start": "2027-08-22",
+     "end": "2027-08-27",
+     "location": "North Myrtle Beach, SC",
+     "format": "hybrid",
+     "theme": null,
+     "call": {
+      "status": "none",
+      "opens": null,
+      "closes": null,
+      "text": null,
+      "url": null
+     },
+     "source_url": "https://ncapa.org/summer-cme-conference/",
+     "evidence": "Save the Date! 2027 Summer Conference is August 22nd-27th More information coming soon!",
+     "checked": "2026-09-26"
     }
    ]
   },
