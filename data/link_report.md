@@ -1,11 +1,13 @@
-# Link check — 2026-09-25
+# Link check — 2026-09-26
 
-Links: 1017 · ok 866 · HTTP 403 92 · HTTP 404 26 · URLError 21 · robots 9 · HTTP 406 2 · HTTP 401 1
+Links: 1018 · ok 876 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 · HTTP 406 2 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
+- HTTP 403 — https://aahpm.org/
+  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
 - HTTP 403 — https://aahpm.org/education-events/annual-assembly/
@@ -78,8 +80,6 @@ Links: 1017 · ok 866 · HTTP 403 92 · HTTP 404 26 · URLError 21 · robots 9 �
   - society-for-simulation-in-healthcare__imsh 2023-01-21 (source_url)
 - URLError — https://imsh2024.org/about
   - society-for-simulation-in-healthcare__imsh 2024-01-20 (source_url)
-- URLError — https://js-np.jp/
-  - Japan Society of Nurse Practitioner Annual Meeting (org_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2027-10-01 (source_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2028-10-01 (source_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2029-10-01 (source_url)
 - HTTP 403 — https://login.texasnp.org/events/EventDetails.aspx?id=1986716
   - texas-nurse-practitioners__tnp-pharmacology-conference 2026-04-23 (source_url)
 - HTTP 404 — https://magnetpathwaycon.nursingworld.org/ana-enterprise-research-symposium-1
@@ -120,12 +120,6 @@ Links: 1017 · ok 866 · HTTP 403 92 · HTTP 404 26 · URLError 21 · robots 9 �
   - society-of-hospital-medicine__shm-converge 2024-04-12 (source_url)
 - HTTP 403 — https://summit.nln.org/
   - NLN Education Summit (org_url); national-league-for-nursing__nln-education-summit 2026-09-23 (source_url); national-league-for-nursing__nln-education-summit 2028-09-01 (source_url); national-league-for-nursing__nln-education-summit 2029-09-01 (source_url)
-- URLError — https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=37048af8-bbee-4fd4-8d8c-018e9f6ee680&Home=%2Fhome
-  - sigma-theta-tau-international__international-nursing-research-congress 2024-07-25 (source_url)
-- URLError — https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=40b50b2c-f3b8-479b-83c3-0193497fd38c&Home=/home
-  - sigma-theta-tau-international__international-nursing-research-congress 2025-07-17 (source_url)
-- URLError — https://thecircle.sigmanursing.org/events/event-description?CalendarEventKey=5df40ca8-103d-495c-a467-0185f36bd16f&Home=%2Fhome
-  - sigma-theta-tau-international__international-nursing-research-congress 2023-07-20 (source_url)
 - HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
@@ -146,6 +140,8 @@ Links: 1017 · ok 866 · HTTP 403 92 · HTTP 404 26 · URLError 21 · robots 9 �
   - aacn-colleges-of-nursing__doctoral-education-conference 2023-01-18 (source_url)
 - HTTP 403 — https://worldcongressonpain.secure-platform.com/a/
   - World Congress on Pain (org_url); international-association-for-the-study-__world-congress-on-pain 2026-10-26 (source_url)
+- HTTP 404 — https://www.aaacn.org/publications-news/2027-call-abstracts
+  - american-academy-of-ambulatory-care-nurs__aaacn-annual-conference 2027-04-27 (call)
 - HTTP 404 — https://www.aaenp-natl.org/emergnp-2023-call-for-content
   - american-academy-of-emergency-nurse-prac__aaenp-national-conference-emergnp 2023-03-31 (source_url)
 - HTTP 404 — https://www.aamn.org/2023-annual-conference
@@ -230,22 +226,6 @@ Links: 1017 · ok 866 · HTTP 403 92 · HTTP 404 26 · URLError 21 · robots 9 �
   - heart-rhythm-society__hrx-live 2024-09-05 (source_url)
 - HTTP 403 — https://www.iapasociety.org
   - IPAS Fall CME Conference (Healthcare in the Heartland) (org_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2026-10-26 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2027-10-01 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2028-10-01 (source_url)
-- URLError — https://www.jans.or.jp/english/meetings/past/
-  - JANS Annual Conference (archive_url); japan-academy-of-nursing-science__jans-annual-conference 2023-12-09 (source_url); japan-academy-of-nursing-science__jans-annual-conference 2024-12-07 (source_url); japan-academy-of-nursing-science__jans-annual-conference 2025-12-06 (source_url)
-- URLError — https://www.jans.or.jp/english/slides/academic-conference43/
-  - japan-academy-of-nursing-science__jans-annual-conference 2023-12-09 (detail_url)
-- URLError — https://www.jans.or.jp/english/slides/academic-conference44/
-  - japan-academy-of-nursing-science__jans-annual-conference 2024-12-07 (detail_url)
-- URLError — https://www.jans.or.jp/english/slides/academic-conference45/
-  - japan-academy-of-nursing-science__jans-annual-conference 2025-12-06 (detail_url)
-- URLError — https://www.jans.or.jp/meetings/schedule/
-  - japan-academy-of-nursing-science__jans-annual-conference 2027-11-27 (source_url)
-- URLError — https://www.js-np.jp/scientific-meeting-single-10.htm
-  - japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2024-11-22 (source_url)
-- URLError — https://www.js-np.jp/scientific-meeting-single-11.htm
-  - japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2025-10-25 (source_url)
-- URLError — https://www.js-np.jp/scientific-meeting.htm
-  - Japan Society of Nurse Practitioner Annual Meeting (archive_url); japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2023-10-20 (source_url)
 - HTTP 403 — https://www.michigan.gov/whitmer/news/proclamations/2025/10/19/october-19-25-2025-doctor-of-nursing-practice-week
   - obs__national-dnp-week 2025-10-19 (source_url)
 - HTTP 404 — https://www.newjerseyena.org/ecc2026
@@ -272,6 +252,8 @@ Links: 1017 · ok 866 · HTTP 403 92 · HTTP 404 26 · URLError 21 · robots 9 �
   - rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (source_url)
 - HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
+- URLError — https://www.svnnet.org/page/annualconference
+  - SVN Annual Conference (org_url); society-for-vascular-nursing__svn-annual-conference 2027-06-02 (source_url); society-for-vascular-nursing__svn-annual-conference 2028-06-01 (source_url); society-for-vascular-nursing__svn-annual-conference 2029-06-01 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
 - HTTP 403 — https://www.thenpa.org/

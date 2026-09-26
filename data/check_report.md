@@ -1,21 +1,14 @@
-# Nightly source check — 2026-09-25
+# Nightly source check — 2026-09-26
 
-Generated 2026-09-25T10:42:29Z from commit 390578e. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-09-26T10:25:43Z from commit 3e6cb8c. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 293 · verified 262 · not found 2 · unreachable 29
-Checker could not match: 31 · of these, curator evidence on file: 31 · open: 0
-Confirmed by the second readers: rendered after JavaScript 3 · read from the organizer's image 2
-Past editions frozen (not re-read): 597
+Editions re-checked: 284 · verified 258 · not found 1 · unreachable 25
+Checker could not match: 26 · of these, curator evidence on file: 26 · open: 0
+Confirmed by the second readers: rendered after JavaScript 4 · read from the organizer's image 2
+Past editions frozen (not re-read): 606
 
-## Newly failing (were verified last run) — review these first
+## Checker could not match, curator evidence on file (26)
 
-- [ ] **NACNS Annual Conference** (2027-03-01): not on page: date — https://nacns.org/news-events/annual-conference/2027-annual-conference/
-
-## Checker could not match, curator evidence on file (31)
-
-- NPWH Annual Women's Healthcare Conference — 2026-09-23 — reviewed 2026-09-22 — https://npwh.org/m/event_details.asp?id=1984651
-- NLN Education Summit — 2026-09-23 — reviewed 2026-09-22 — https://summit.nln.org/
-- District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care — 2026-09-25 — reviewed 2026-09-24 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
 - Emergency Nursing (ENA Annual Conference) — 2026-09-28 — reviewed 2026-09-23 — https://www.ena.org/emergency-nursing-2026
 - AVA Annual Scientific Meeting — 2026-10-01 — reviewed 2026-09-24 — https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400
 - NNA Annual Convention — 2026-10-01 — reviewed 2026-09-22 — https://nebraskanurses.org/convention/
@@ -36,13 +29,11 @@ Past editions frozen (not re-read): 597
 - ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-25 — https://enrs2027conference.oa-event.com/
 - Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-09-22 — https://www.academyonline.org/page/conferences
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-09-22 — https://amia.org/education-events/2027-amplify-informatics-conference
-- AAAA Annual Conference — 2027-04-14 — reviewed 2026-09-25 — https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/
 - Heart Rhythm — 2027-05-13 — reviewed 2026-09-25 — https://heartrhythm.com/
 - ASCO Annual Meeting — 2027-06-04 — reviewed 2026-09-25 — https://www.asco.org/annual-meeting/dates-know
 - Emergency Nursing (ENA Annual Conference) — 2027-09-15 — reviewed 2026-09-23 — https://www.ena.org/events/emergency-nursing-2027
 - Global Emergency Nursing Conference — 2027-10-21 — reviewed ? — https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event
-- JANS Annual Conference — 2027-11-27 — reviewed 2026-09-22 — https://www.jans.or.jp/meetings/schedule/
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=1
+OPEN_ITEMS=0
