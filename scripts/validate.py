@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build gate. Fails (exit 1) on anything that should never reach the public site."""
-import json, re, sys, pathlib, datetime as dt
+import json, re, sys, pathlib, html, datetime as dt
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 d = json.load(open(ROOT / "site/data/runway.json", encoding="utf-8"))
 S = {s["id"]: s for s in d["series"]}
@@ -147,6 +147,34 @@ for a in audits if isinstance(audits, list) else []:
     if not ISO.match(str(a.get("date") or "")): errs.append(f"audit {a.get('id')}: bad date")
     if not whole(n) or n <= 0: errs.append(f"audit {a.get('id')}: audited must be a positive whole number")
     if not whole(w) or w < 0 or (whole(n) and w > n): errs.append(f"audit {a.get('id')}: wrong must be a whole number from 0 to the records audited")
+# The AI Handoff page (site/ai-handoff.html), rendered from site/AI-HANDOFF.md by build.py through
+# scripts/handoff_page.py: it must match a fresh rendering of the file, render every Markdown construct the
+# file uses, keep the noindex tag, and every section link to it (from the page itself, the site or the
+# README) must land on a section.
+sys.path.insert(0, str(ROOT / "scripts"))
+import handoff_page
+page_f = ROOT / "site" / handoff_page.OUT_NAME
+if not page_f.exists():
+    errs.append(f"site/{handoff_page.OUT_NAME} is missing: run scripts/build.py")
+else:
+    page = page_f.read_text(encoding="utf-8")
+    fresh, handoff_warnings = handoff_page.render()
+    if page != fresh:
+        errs.append(f"site/{handoff_page.OUT_NAME} does not match site/AI-HANDOFF.md: run scripts/build.py")
+    errs += [f"AI-HANDOFF.md: {w}" for w in handoff_warnings]
+    if '<meta name="robots" content="noindex' not in page:
+        errs.append("the AI Handoff page lacks the noindex tag")
+    ids = set(re.findall(r'\sid="([^"]+)"', page))
+    errs += [f"the AI Handoff page links #{f}, which is not on the page" for f in re.findall(r'href="#([^"]*)"', page) if f not in ids]
+    for src in ("site/index.html", "site/assets/app.js", "README.md"):
+        for f in re.findall(re.escape(handoff_page.OUT_NAME) + r"#([\w\-]+)", (ROOT / src).read_text(encoding="utf-8")):
+            if f not in ids:
+                errs.append(f"{src} links {handoff_page.OUT_NAME}#{f}, which is not a section of the handoff")
+    prose = re.sub(r"<(pre|code)\b.*?</\1>", " ", page.split("<article", 1)[-1], flags=re.S)
+    prose = html.unescape(re.sub(r"<[^>]+>", " ", prose))
+    for mark in ("**", "](", "```", "~~", "|---", "!["):
+        if mark in prose:
+            errs.append(f"the AI Handoff page shows unrendered Markdown ({mark!r})")
 if errs:
     print("\n".join(errs[:200])); print(f"\nFAILED: {len(errs)} problem(s)"); sys.exit(1)
 print(f"validate ok: {len(d['series'])} series, {len(d['editions'])} editions")

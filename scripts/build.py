@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Merge curated sources + verification results into site/data/runway.json and site/runway.ics.
+"""Merge curated sources + verification results into site/data/runway.json and site/runway.ics, and render
+site/AI-HANDOFF.md as the handoff page site/ai-handoff.html (scripts/handoff_page.py).
 
 Sources (never edited by the checker):
   sources/runway_2026-09-16.json   the original Conference Runway dataset (compiled 2026-09-16)
@@ -11,6 +12,7 @@ Verification (written by scripts/check.py):
 """
 import json, re, glob, hashlib, datetime as dt, pathlib, calendar
 from zoneinfo import ZoneInfo
+import handoff_page   # scripts/handoff_page.py: the AI Handoff as a page on the site
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, SITE = ROOT / "sources", ROOT / "site"
@@ -563,6 +565,11 @@ def main():
     (SITE / "data").mkdir(parents=True, exist_ok=True)
     json.dump(out, open(SITE / "data" / "runway.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     open(SITE / "runway.ics", "w", encoding="utf-8", newline="").write(ics(eds + [p for p in proj if p["verify"]["state"] == "rule"], series))
+    # The AI Handoff opens on the site itself, for anyone, with no GitHub page, account or app on the way
+    # (2026-09-26). Rendered at every build so it cannot drift from site/AI-HANDOFF.md; validate.py checks it.
+    for w in handoff_page.write():
+        print(f"AI Handoff: {w}")
+    print(f"handoff page site/{handoff_page.OUT_NAME} rendered from site/AI-HANDOFF.md")
     n = lambda st: sum(1 for e in eds if e["verify"]["state"] == st)
     print(f"merged twins {len(merged)}: " + ", ".join(merged))
     print(f"series {len(series)} | dated editions {len(eds)} | expected {len(proj)} | "

@@ -7,12 +7,14 @@ Needs Playwright for Python with a Chromium browser (`pip install playwright && 
 Every line printed is one assertion; the exit code is non-zero if any assertion failed. It checks the display
 switch, the Orbit ring, the filter rows, the header's Fidelity and Reliability indices (values re-derived from
 the published data), the landmark celebration weeks in every view, each Focus in each view, older links, the
-request address and footer links, the header tagline and icon URLs, phone, tablet and desktop layouts, the
-calendar feed, and console errors. Date-dependent cases run at a fixed clock (FIXED_NOW) so they reproduce.
+request address and footer links, the AI Handoff page (opened as a signed-out visitor would, at desktop and
+phone widths), the header tagline and icon URLs, phone, tablet and desktop layouts, the calendar feed, and
+console errors. Date-dependent cases run at a fixed clock (FIXED_NOW) so they reproduce.
 "Visible" means rendered with a real box and not inside a closed <details>; text in the DOM is not enough.
 """
-import argparse, functools, http.server, re, socketserver, sys, threading
+import argparse, functools, hashlib, http.server, re, socketserver, sys, threading
 from pathlib import Path
+from urllib.parse import urljoin
 from playwright.sync_api import sync_playwright
 
 LANDMARKS = ["National APP Week", "PA Week", "National Nurse Practitioner Week", "National CRNA Week"]
@@ -235,11 +237,54 @@ def main():
         check("request address is mark.karasin@protonmail.com", mail.startswith("mailto:mark.karasin@protonmail.com"), mail[:60])
         html = page.content().lower()
         check("no Rutgers email address on the page", "@rutgers.edu" not in html and "rutgers.edu\"" not in html.replace("nursing.rutgers.edu", ""))
+        # The AI Handoff opens on this site for anyone: no GitHub page, account or app on the way (2026-09-26,
+        # after the curator's phone met a GitHub sign-in page; the old check compared only the link's text).
         handoff = page.locator("a.hbtn", has_text="AI Handoff").get_attribute("href")
-        check("AI Handoff opens the rendered document on GitHub", handoff == "https://github.com/MBKarasin/app-conference-runway/blob/main/site/AI-HANDOFF.md", handoff)
-        # A public index ships with its definition: the footer points to it (hover notes do not reach phones).
+        check("AI Handoff opens the handoff on this site, not on GitHub", handoff == "ai-handoff.html", handoff)
+        # A public index ships with its definition: the footer and each index note point to it (hover notes do not reach phones).
         defs = page.evaluate("[...document.querySelectorAll('footer a, .method-summary a')].map(a => a.href)")
-        check("footer links the index definitions (AI Handoff §3.4)", any(u.endswith("/site/AI-HANDOFF.md#34-verification-pipeline") for u in defs))
+        page.locator("#updated button.idx").first.click()
+        notes = page.evaluate("[...document.querySelectorAll('#idx-note a')].map(a => a.href)")
+        page.keyboard.press("Escape")
+        hurl = urljoin(base, "ai-handoff.html")
+        md = page.request.get(urljoin(base, "AI-HANDOFF.md")).body()
+        want = [re.sub(r"[`*]", "", ln.split(" ", 1)[1]).strip() for ln in re.sub(r"(?ms)^```.*?^```", "", md.decode("utf-8")).splitlines() if re.match(r"#{1,3} ", ln)]
+        herrs = []
+        hctx = browser.new_context(viewport={"width": 1440, "height": 1000})   # a fresh browser: no cookies, not signed in anywhere
+        hpg = hctx.new_page()
+        hpg.on("console", lambda m: herrs.append(m.text) if m.type == "error" else None)
+        resp = hpg.goto(hurl, wait_until="load")
+        check("the AI Handoff page opens with no sign-in (HTTP 200, on this site, no password field)",
+              resp is not None and resp.status == 200 and hpg.url.startswith(base) and hpg.locator("input[type=password]").count() == 0,
+              f"{resp.status if resp else None} {hpg.url}")
+        heads = hpg.evaluate("""[...document.querySelectorAll('#doc h1, #doc h2, #doc h3')].map(h => [h.id,
+            [...h.childNodes].filter(n => !(n.nodeType === 1 && n.classList.contains('anchor'))).map(n => n.textContent).join('').trim()])""")
+        check("the AI Handoff page shows every heading of AI-HANDOFF.md, in order", [t for _, t in heads] == want, f"{len(heads)} on the page, {len(want)} in the file")
+        meta = lambda n: hpg.evaluate("n => (document.querySelector(`meta[name=${n}]`) || {}).content || ''", n)   # absent on a broken page: report, don't wait
+        sha = meta("handoff-source-sha256")
+        check("the AI Handoff page was rendered from the AI-HANDOFF.md this site serves", sha == hashlib.sha256(md).hexdigest(), sha[:12])
+        robots = meta("robots")
+        check("the AI Handoff page asks search engines not to index it", "noindex" in robots, robots)
+        sec = next((hid for hid, t in heads if t.startswith("3.4 ")), None)
+        target = urljoin(hurl, "#" + sec) if sec else None
+        check("footer and index notes link the index definitions on this site (AI Handoff §3.4)", bool(target) and target in defs and target in notes, f"{target}; notes {notes}")
+        if target:
+            hpg.goto(target, wait_until="load")
+            top = hpg.evaluate("id => document.getElementById(id).getBoundingClientRect().top", sec)
+            check("a section link opens the AI Handoff at that section", 0 <= top < 200, f"{top:.0f}px from the top")
+        hctx.close()
+        UA_IPHONE = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+        hctx = browser.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True, user_agent=UA_IPHONE)
+        hpg = hctx.new_page()
+        hpg.on("console", lambda m: herrs.append(m.text) if m.type == "error" else None)
+        hpg.goto(hurl, wait_until="load")
+        fit = hpg.evaluate("""() => ({over: document.scrollingElement.scrollWidth - window.innerWidth,
+            wide: [...document.querySelectorAll('.table-wrap, pre')].filter(x => x.getBoundingClientRect().right > window.innerWidth + 1).length,
+            h1: document.querySelector('#doc h1').getBoundingClientRect().top})""")
+        check("phone: the AI Handoff page fits the screen (tables and code scroll inside their own box)", fit["over"] <= 0 and fit["wide"] == 0, str(fit))
+        check("phone: the AI Handoff's title is on the first screen", 0 <= fit["h1"] < 844, f"{fit['h1']:.0f}px")
+        hctx.close()
+        check("the AI Handoff page loads with no console errors", not herrs, "; ".join(herrs[:3]))
 
         # 8. Layout at desktop and phone widths.
         for w in (1440, 390):
@@ -298,8 +343,8 @@ def main():
         check("header tagline is the curator's wording", eyebrow == TAGLINE, eyebrow)
         # Every icon URL carries ?v=<first 8 hex of its SHA-256>, so a changed icon is a new URL (browsers
         # keep an icon whose bytes change under the same URL).
-        import hashlib, json as _json, xml.etree.ElementTree as ET
-        from urllib.parse import urljoin, urlsplit, parse_qs
+        import json as _json, xml.etree.ElementTree as ET   # hashlib is imported at the top
+        from urllib.parse import urlsplit, parse_qs   # urljoin is imported at the top
         links = page.evaluate("[...document.querySelectorAll('link[rel~=icon],link[rel=apple-touch-icon],link[rel=mask-icon],link[rel=manifest]')].map(l => [l.rel, l.getAttribute('href'), l.type || ''])")
         def stamp_ok(href, rel_to):
             url = urljoin(rel_to, href)

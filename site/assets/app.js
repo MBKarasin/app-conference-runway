@@ -1499,7 +1499,8 @@
       const wasOpen = b.getAttribute("aria-expanded") === "true";
       close();
       if (wasOpen) return;
-      const how = REPO ? ` <a href="${esc(REPO)}/blob/main/site/AI-HANDOFF.md#34-verification-pipeline" target="_blank" rel="noopener noreferrer">How both indices are defined</a>` : "";
+      // The definitions live in the handoff on this site (§3.4), readable with no GitHub account (2026-09-26).
+      const how = ` <a href="ai-handoff.html#34-nightly-verification-and-admission-pipeline" target="_blank" rel="noopener">How both indices are defined</a>`;
       note.innerHTML = esc(b.dataset.note) + how;
       note.hidden = false;
       b.setAttribute("aria-expanded", "true");

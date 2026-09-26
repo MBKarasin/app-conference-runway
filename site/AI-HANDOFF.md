@@ -1,8 +1,8 @@
 # APP Conference Runway: AI Handoff
 
-**Live site:** https://mbkarasin.github.io/app-conference-runway/
-**Source code:** https://github.com/MBKarasin/app-conference-runway
-**Contact:** mark.karasin@protonmail.com
+**Live site:** https://mbkarasin.github.io/app-conference-runway/\
+**Source code:** https://github.com/MBKarasin/app-conference-runway\
+**Contact:** mark.karasin@protonmail.com\
 **Document date:** 2026-09-26
 
 ## 1. Why this exists
@@ -111,6 +111,7 @@ Conference Runway is intended to fit later into shared sovereign-platform servic
 ### 4.3 Website and release architecture
 
 - **Static site** in `site/`: no framework, cookies, analytics or third-party requests.
+- **This handoff on the site:** `scripts/build.py` renders this file to `site/ai-handoff.html` (`scripts/handoff_page.py`, standard library only), the page the site's AI Handoff links open, so reading it needs no GitHub account or app. The build gate fails if that page no longer matches this file, a section link misses, or Markdown is left unrendered.
 - **Search engines:** a `noindex` tag and `robots.txt` request exclusion by design; they cannot guarantee it.
 - **Hosting:** GitHub Pages via `.github/workflows/runway.yml`. Each push to `main` builds, validates and deploys; the nightly run (06:00 UTC, may start late) also checks sources and links, archives the data and updates the review issue, deploying only if the check and validation pass. Semantic additions and corrections remain human-reviewed; broader candidate automation will use branches and pull requests rather than direct publication.
 - **Icons:** browser-tab and installed-app icons are the logo's mark without letters (scarlet horizon over three navy lanes). Every icon URL carries `?v=` + the first 8 hex digits of its SHA-256, written by `python scripts/icon_versions.py`; `--check` exits 1 on a stale stamp.
@@ -127,6 +128,8 @@ Conference Runway is intended to fit later into shared sovereign-platform servic
 - **Phones:** a phone (screen's shorter side ≤ 700 px) gets the mobile layout with a **Desktop layout** link at the top; choosing it fits the desktop layout to the screen, and **Switch to the mobile layout** returns. The choice is kept only in that browser (localStorage, no cookie). Tablets and desktops get the desktop layout; upright tablets (701–900 px) fit the month grid to the screen. On a phone held upright, the Calendar is a day-by-day agenda that opens at today, with records under way today listed above today, and Orbit's twelve months show as a grid.
 
 ## 6. Reproduce
+
+The repository is public: its files and history can be read, and the whole project downloaded as a ZIP, without a GitHub account.
 
 ### 6.1 Environment
 
@@ -173,7 +176,7 @@ This reproduces the public site, admitted source records and nightly re-check. I
 
 Check any record against its source link. To correct one:
 
-1. **Report** it with **Suggest a fix** (a prefilled GitHub issue) or **Make a request** (mark.karasin@protonmail.com), linking organizer material that shows the right date.
+1. **Report** it with **Suggest a fix** (a prefilled GitHub issue, which needs a GitHub account) or **Make a request** (mark.karasin@protonmail.com), linking organizer material that shows the right date.
 2. **Re-read** the organizer's own material, translated where needed; aggregators do not count.
 3. **Record** the fix in `sources/overrides.json` with a `_why`, a `reviewed_on` date, the verbatim wording and the exact URL or image.
 4. **Publish:** a push to `main` rebuilds, validates and redeploys.

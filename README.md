@@ -6,7 +6,7 @@ A source-traced calendar of conferences, abstract deadlines, student and DNP pro
 
 The site is independent. It is not an official publication of, or endorsement by, Rutgers University or RWJBarnabas Health. It is curated by Dr. Mark Karasin, DNP, APN, AGACNP-BC, who decides what is published. Deterministic software and AI systems—including local models, Claude by Anthropic and ChatGPT by OpenAI—may assist research, implementation and independent review; no model decides what is published.
 
-Documentation, limitations, and instructions for reproducing or challenging the project: [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Terms of reuse: [`LICENSE`](LICENSE) (CC0 for the curator's own work). Contact: mark.karasin@protonmail.com.
+Documentation, limitations, and instructions for reproducing or challenging the project: the [AI Handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html), which opens on the site itself with no account; its source is [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Terms of reuse: [`LICENSE`](LICENSE) (CC0 for the curator's own work). Contact: mark.karasin@protonmail.com.
 
 ## What a visitor sees
 
@@ -26,7 +26,8 @@ Documentation, limitations, and instructions for reproducing or challenging the 
 | Path | What it is |
 |---|---|
 | `sources/` | Curated inputs; `overrides.json` (curator corrections) wins over everything |
-| `scripts/build.py` | Builds `site/data/runway.json` and the calendar feed `site/runway.ics` |
+| `scripts/build.py` | Builds `site/data/runway.json`, the calendar feed `site/runway.ics` and the handoff page `site/ai-handoff.html` |
+| `scripts/handoff_page.py` | Renders `site/AI-HANDOFF.md` as the handoff page (standard library only; run by `build.py`) |
 | `scripts/check.py` | Re-reads organizer pages (robots.txt obeyed) |
 | `scripts/linkcheck.py` | Reports links that now fail |
 | `scripts/validate.py` | Build gate |
