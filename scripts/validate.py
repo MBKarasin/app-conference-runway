@@ -159,6 +159,17 @@ for p in probes if isinstance(probes, list) else []:
     # The Horizon scan stamp shows when the latest probe finished: an ISO instant in UTC, on or after its date.
     if "finished" in p and not (re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", str(p["finished"])) and str(p["finished"])[:10] >= str(p.get("date"))):
         errs.append(f"probe {pid}: finished must be a UTC instant (YYYY-MM-DDThh:mm:ssZ) on or after its date")
+    # The Horizon scan dot reads the probe's reconciliation: the meetings it found that the Runway lacked, each added,
+    # rejected with a reason, or still open.
+    rc = p.get("reconciliation")
+    if rc is not None:
+        parts = [rc.get(k) for k in ("missing", "added", "rejected", "open")]
+        if not all(whole(x) and x >= 0 for x in parts):
+            errs.append(f"probe {pid}: reconciliation needs whole numbers missing, added, rejected and open")
+        elif whole(n) and whole(h) and (parts[0] != n - h or parts[1] + parts[2] + parts[3] != parts[0]):
+            errs.append(f"probe {pid}: reconciliation must count found - held = {n - h if whole(n) and whole(h) else '?'} missing, split into added + rejected + open")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", str(rc.get("as_of") or "")):
+            errs.append(f"probe {pid}: reconciliation as_of must be a UTC instant")
     if not (ISO.match(str(win.get("from") or "")) and ISO.match(str(win.get("to") or "")) and win["from"] <= win["to"]):
         errs.append(f"probe {pid}: the window needs ISO from and to dates in order")
     if not whole(n) or n <= 0: errs.append(f"probe {pid}: found must be a positive whole number")

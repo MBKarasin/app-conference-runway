@@ -921,7 +921,7 @@
     const p = latest(P), held = Number(p.held) || 0, found = Number(p.found);
     const [lo, hi] = wilsonInterval(held, found);
     const w = p.window || {};
-    return { pct: (100 * held) / found, held, found, low: 100 * lo, high: 100 * hi, date: p.date, finished: p.finished || null,
+    return { pct: (100 * held) / found, held, found, low: 100 * lo, high: 100 * hi, date: p.date, finished: p.finished || null, rec: p.reconciliation || null,
              from: w.from, to: w.to, frames: (p.frames || []).length };
   }
   // 95% Wilson score interval for a proportion x/n, as [low, high]; [0, 0] when nothing was audited.
@@ -1434,15 +1434,15 @@
     const f = fidelityIndex();
     const scanAt = f && f.finished ? f.finished : null;
     const scanStamp = scanAt ? stampET(scanAt) : f && f.date ? dayStamp(f.date) : "not yet run";
-    // The scan's dot, for a weekly scan: green within 8 days (a week and a day's grace), yellow within 14 (one weekly scan
-    // missed), red after 14 days or when no scan has run. A probe recorded only by its date counts from noon that day, New York.
-    const scanRef = scanAt || (f && f.date ? f.date + "T16:00:00Z" : null);
-    const scanDays = scanRef ? (Date.now() - Date.parse(scanRef)) / 864e5 : Infinity;
-    const scanTone = scanDays <= 8 ? "ok" : scanDays <= 14 ? "warn" : "bad";
-    const scanTip = !scanRef ? "No horizon scan has run yet, so the Fidelity Index has no reading."
-      : scanTone === "ok" ? "The latest horizon scan finished within the last 8 days (weekly, with a day's grace)."
-      : scanTone === "warn" ? "The latest horizon scan finished 8 to 14 days ago: a weekly scan is overdue. Fidelity is as of the time shown."
-      : "No horizon scan has finished in the last 14 days. Fidelity is as of the time shown.";
+    // The scan's dot reports its reconciliation, not its age (curator, 2026-09-26): green when everything the latest scan
+    // found has cleared (each meeting it found that the Runway lacked was added or rejected with a reason, and any error was
+    // checked and reconciled); yellow while anything is still to reconcile, or when no reconciliation is recorded.
+    const rc = f && f.rec;
+    const scanTone = rc && Number(rc.open) === 0 ? "ok" : "warn";
+    const scanTip = !f ? "No horizon scan is recorded yet."
+      : !rc ? "The latest horizon scan has no reconciliation recorded yet."
+      : scanTone === "ok" ? `The latest horizon scan has cleared: all ${rc.missing} meetings it found that the Runway lacked were reconciled (${rc.added} added, ${rc.rejected} set aside with a reason).`
+      : `The latest horizon scan has findings still to reconcile: ${rc.open} of the ${rc.missing} meetings it found that the Runway lacked await review (${rc.added} added and ${rc.rejected} set aside so far).`;
     // The dot reports freshness only: red when no nightly verification has been recorded in 36 hours, green otherwise.
     const failed = !checkedAt || (Date.now() - Date.parse(checkedAt)) / 36e5 > 36;
     const tone = failed ? "bad" : "ok";

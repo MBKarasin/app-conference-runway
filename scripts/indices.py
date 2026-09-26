@@ -76,7 +76,8 @@ def compute(data, today, now=None):
         held, found = int(p.get("held") or 0), int(p["found"])
         lo, hi = wilson(held, found)
         fid = {"pct": 100 * held / found, "held": held, "found": found, "low_pct": 100 * lo, "high_pct": 100 * hi,
-               "probe": p.get("id"), "date": p.get("date"), "finished": p.get("finished"), "window": p.get("window") or {},
+               "probe": p.get("id"), "date": p.get("date"), "finished": p.get("finished"), "reconciliation": p.get("reconciliation"),
+               "window": p.get("window") or {},
                "frames": p.get("frames") or [], "counted_twice": p.get("counted_twice") or 0,
                "series_held": p.get("series_held"), "series_found": p.get("series_found")}
 
@@ -103,12 +104,11 @@ def compute(data, today, now=None):
            "acc_pct": 100 * acc, "audited": audited, "wrong": wrong, "right": audited - wrong,
            "audit": a.get("id") if a else None, "audit_date": a.get("date") if a else None,
            "low_pct": 100 * conf * (1 - whi if audited else 1), "high_pct": 100 * conf * (1 - wlo if audited else 1)}
-    # The Horizon scan dot (app.js): green within 8 days of the latest probe's finish, yellow within 14, red after or with
-    # no probe. A probe recorded only by its date counts from noon that day in New York (16:00 UTC).
-    scan_ref = (fid.get("finished") or (fid["date"] + "T16:00:00Z" if fid.get("date") else None)) if fid else None
-    scan_days = (now - dt.datetime.fromisoformat(scan_ref.replace("Z", "+00:00"))).total_seconds() / 86400 if scan_ref else math.inf
-    scan = {"finished": fid.get("finished") if fid else None, "age_days": round(scan_days, 3) if scan_ref else None,
-            "tone": "ok" if scan_days <= 8 else "warn" if scan_days <= 14 else "bad"}
+    # The Horizon scan dot (app.js) reports the latest probe's reconciliation, not its age: green when nothing it found is
+    # still open, yellow while anything is (or when no reconciliation is recorded).
+    rc = (fid or {}).get("reconciliation") or None
+    scan = {"finished": fid.get("finished") if fid else None, "reconciliation": rc,
+            "tone": "ok" if rc and int(rc.get("open", 1)) == 0 else "warn"}
     return {
         "today": today, "now": now.isoformat(timespec="seconds"), "built": data.get("built"),
         "scan": scan, "verified_tone": "ok" if fresh else "bad",
@@ -192,8 +192,10 @@ def main():
     f, l = r["fidelity"], r["reliability"]
     print(f"Data built {r['built']}; latest nightly verification {r['sources_checked']} ({r['hours_since_check']} h before {r['now']}); today {r['today']}")
     sc = r["scan"]
-    print(f"Horizon scan {sc['finished'] or (f['date'] if f else 'not yet run')} ({sc['age_days']} days before now): dot {dict(ok='green', warn='yellow', bad='red')[sc['tone']]};"
-          f" Verified dot {dict(ok='green', bad='red')[r['verified_tone']]}")
+    rc = sc["reconciliation"] or {}
+    print(f"Horizon scan {sc['finished'] or (f['date'] if f else 'not yet run')}: dot {dict(ok='green', warn='yellow')[sc['tone']]}"
+          + (f" ({rc.get('open')} of {rc.get('missing')} missing meetings open; {rc.get('added')} added, {rc.get('rejected')} rejected; as of {rc.get('as_of')})" if rc else " (no reconciliation recorded)")
+          + f"; Verified dot {dict(ok='green', bad='red')[r['verified_tone']]}")
     print()
     if f:
         w = f["window"]

@@ -146,7 +146,7 @@ def main():
         check("Reliability note states the confirmation and audit basis", f"{rx['ok']} of {rx['upcoming_dated']} upcoming dated records" in rel_note and (not rx["audited"] or f"found {rx['right']} of {rx['audited']} audited records" in rel_note), rel_note[:200])
         dots = page.evaluate("[...document.querySelectorAll('#updated .stat')].map(x => x.className + '|' + (x.getAttribute('aria-label') || ''))")
         check("Verified dot reports freshness only (green within 36 hours, red after), with a text label", bool(dots) and dots[0].startswith("stat " + ix["verified_tone"] + "|") and len(dots[0].split("|", 1)[1]) > 20, f"{dots}; fresh={ix['fresh']}")
-        check("Horizon scan dot: green within 8 days, yellow within 14, red after (with a text label)", len(dots) == 2 and dots[1].startswith("stat " + ix["scan"]["tone"] + "|") and len(dots[1].split("|", 1)[1]) > 20, f"{dots}; scan={ix['scan']}")
+        check("Horizon scan dot: green when everything the latest scan found is reconciled, yellow while anything is open (with a text label)", len(dots) == 2 and dots[1].startswith("stat " + ix["scan"]["tone"] + "|") and len(dots[1].split("|", 1)[1]) > 20, f"{dots}; scan={ix['scan']}")
 
         # 4. Landmark celebration weeks in every view (next dated edition of each).
         series = {s["id"]: s for s in data["series"]}
@@ -433,21 +433,25 @@ def main():
         check("a verification older than 36 hours turns the dot red and counts only rule dates",
               bool(sx) and shown["dot"] == "stat bad" and sx["machine"] == 0 and f"Reliability Index: {sx['pct']:.2f}%" in shown["head"] and "no nightly verification has been recorded in the last 36 hours" in shown["note"],
               f"{shown['dot']}; derived {sx['pct'] if sx else None}; {shown['note'][:90]}")
-        # A horizon scan 10 days old turns its dot yellow, and 20 days old red (at the fixed clock).
-        for days, want in ((10, "stat warn"), (20, "stat bad")):
-            at = (_dt.datetime.fromisoformat(FIXED_NOW) - _dt.timedelta(days=days)).astimezone(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-            def old_scan_at(at):   # a factory, not a default argument: Playwright passes a handler's second argument the request
-                def old_scan(route):
+        # The Horizon scan dot reads the scan's reconciliation, not its age: a scan with nothing open is green, one with
+        # findings still open is yellow, and one with no reconciliation recorded is yellow; never red.
+        for label, rec, want in (("with nothing open", {"missing": 37, "added": 30, "rejected": 7, "open": 0, "as_of": "2026-09-20T12:00:00Z"}, "stat ok"),
+                                 ("with findings open", {"missing": 37, "added": 2, "rejected": 0, "open": 35, "as_of": "2026-09-20T12:00:00Z"}, "stat warn"),
+                                 ("with no reconciliation recorded", None, "stat warn")):
+            def scan_rec(rec):   # a factory, not a default argument: Playwright passes a handler's second argument the request
+                def h(route):
                     resp = route.fetch(); d = resp.json()
                     for pr in d.get("probes") or []:
-                        pr["finished"], pr["date"] = at, at[:10]
+                        pr["finished"] = "2026-08-01T12:00:00Z"   # an old scan: its age must not colour the dot
+                        if rec is None: pr.pop("reconciliation", None)
+                        else: pr["reconciliation"] = rec
                     route.fulfill(response=resp, body=_json.dumps(d))
-                return old_scan
-            fpg.route("**/data/runway.json*", old_scan_at(at))
+                return h
+            fpg.route("**/data/runway.json*", scan_rec(rec))
             fgo("")
             got = fpg.evaluate("[...document.querySelectorAll('#updated .stat')].map(x => x.className)")
             fpg.unroute("**/data/runway.json*")
-            check(f"a horizon scan {days} days old turns its dot {'yellow' if want.endswith('warn') else 'red'}", got[1:2] == [want], str(got))
+            check(f"a horizon scan {label} shows a {'green' if want.endswith('ok') else 'yellow'} dot, whatever its age", got[1:2] == [want], str(got))
         fctx.close()
         # A phone at the fixed clock: a record that started earlier this month and is still running stays in view.
         pctx = browser.new_context(viewport={"width": 390, "height": 664}, is_mobile=True, has_touch=True, timezone_id="America/New_York",

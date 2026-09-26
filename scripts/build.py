@@ -562,7 +562,7 @@ def main():
     probes = json.load(open(SRC / "probes.json", encoding="utf-8")) if (SRC / "probes.json").exists() else {}
     out = {"built": dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"), "horizon": HORIZON,
            "audits": [{k: a[k] for k in ("id", "date", "method", "audited", "wrong") if k in a} for a in audits],
-           "probes": [{k: p[k] for k in ("id", "date", "finished", "window", "frames", "counted_twice", "found", "held", "series_found", "series_held") if k in p}
+           "probes": [{k: p[k] for k in ("id", "date", "finished", "reconciliation", "window", "frames", "counted_twice", "found", "held", "series_found", "series_held") if k in p}
                       for p in probes.get("probes", [])],
            "probe_history": [{k: h[k] for k in ("id", "date", "source", "found", "held") if k in h} for h in probes.get("history", [])],
            "sources_checked": max(checked) if checked else None, "curator_reviewed": max(reviewed) if reviewed else None,
