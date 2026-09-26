@@ -59,16 +59,19 @@ The current re-read is a monitoring control, not a complete semantic admission t
 
 The nightly report must distinguish scheduled, attempted, successfully read, supported, unresolved and pending-review records. "Global" means worldwide coverage of a defined organizer universe; it is not a claim that the entire internet was searched.
 
-The header's **Updated** stamp gives the time of the last automated check, with a status dot: red when no check has completed in 36 hours, amber when the Fidelity Index is below 95%, green otherwise. Both indices beneath it are recomputed in the browser from `site/data/runway.json`; each opens its definition when clicked or tapped, and the footer links here.
+The header's **Updated** stamp gives the time of the last automated check, with a status dot: red when no check has completed in 36 hours, amber when the Fidelity Index is below 95%, green otherwise. Both indices beneath it are recomputed in the visitor's browser from `site/data/runway.json` at every page load; each opens its definition when clicked or tapped, and the footer links here. `python scripts/indices.py` recomputes both from the same file (or from the live copy, with `--data <URL>`) and prints every term; `scripts/ui_check.py` fails if the page shows a different value.
 
 **Fidelity Index = evidence coverage × projected correctness.**
 
-- *Evidence coverage:* of every dated record (past and upcoming; projections excluded), the share that carries the organizer's own wording or a published rule, holds a good verification state (confirmed, set by rule, save the date, or recorded when published), has a source link and, for a meeting not yet ended, a link not found gone and a confirmation no older than 90 days (rule dates excepted; an unreadable stamp fails).
-- *Projected correctness:* 1 − (records found wrong ÷ records audited), pooled over every independent audit in `sources/audits.json`. An audit counts a record wrong once if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagrees with the organizer. Pooling past audits projects the errors not yet found. Its note (hover, click or tap) gives the counts and a 95% Wilson interval.
+- *Evidence coverage* = records passing every test below ÷ every dated record (past and upcoming; month-only projections excluded). A record passes if it carries the organizer's own wording or a published rule, holds a settled verification state (confirmed, set by rule, save the date, or recorded when published) and has a source link. A meeting not yet ended must also have a link not found gone and a confirmation no older than 90 days (rule dates excepted; an unreadable stamp fails).
+- *Projected correctness* = 1 − (records found wrong ÷ records audited), summed over every audit in `sources/audits.json`. An audit counts a record wrong once if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagrees with the organizer. Pooling past audits projects the errors not yet found. The index's note (hover, click or tap) gives the counts and the 95% Wilson interval of that rate, scaled by coverage.
+- *Worked example* (data built 2026-09-26): coverage 927 ÷ 927 = 100.00% (614 ended, 313 not yet ended); correctness 1 − (10 + 9) ÷ (325 + 324) = 97.07%; Fidelity 97.07%, 95% range 95.5–98.1%.
 
-**Reliability Index:** of every dated record not yet ended (projections excluded), the share the latest automated check re-confirmed from the organizer's own page or linked image (start date, its year and a name word), plus dates computed from a published rule. Manual reviews never count. When no check has completed in 36 hours, it drops to the rule-computed share.
+**Reliability Index = (records re-confirmed by the latest automated check + dates computed from a published rule) ÷ dated records not yet ended** (projections excluded). Re-confirmed means the check found the start date, its year and a word of the name on the organizer's own page, rendered when it needs JavaScript, or in the organizer's image the record links. Manual reviews never count. When no check has completed in 36 hours, re-confirmations stop counting and the index falls to the rule-computed share.
 
-The organizer's page is the source of truth. Reliability asks whether a machine can re-read each record from that source now; Fidelity asks how likely a record is to be right, using the audit history. Mistranslation is one of the error classes audits count, not the whole of either index. Neither index measures completeness (meetings missing from the site).
+- *Worked example* (check of 2026-09-25, 10:42 UTC): (256 + 29) ÷ 313 = 91.05%. Most of the other 28 are pages whose servers refused the cloud-hosted checker that night; each rests on a manual review of the organizer's source.
+
+The organizer's page is the source of truth. Reliability asks whether a machine can re-read each record from that source now; Fidelity asks how likely a record is to be right, using the audit history. Mistranslation is one of the error classes audits count, not the whole of either index. Neither index measures completeness (meetings missing from the site). §3.5 states what else they leave out.
 
 **Labels.** A record that passed its check carries none; others read **Save the date**, **Set by rule**, **Recorded when published** or **Expected month** (never a day). A record confirmed by neither the latest check nor a current manual review is an exception ("Date needs review" or "Source not re-checked"), which **Needs review only** lists. Where an organizer's own pages disagree, the record follows the organizer's primary event page and states the disagreement inside it.
 
@@ -76,9 +79,13 @@ The organizer's page is the source of truth. Reliability asks whether a machine 
 
 - The check is a text match anywhere on the page, so another event on the same page can pass it.
 - End dates, venues and cut-off times are not re-checked automatically.
-- Some organizer servers refuse cloud-hosted readers, varying by run; Reliability shows what the runner could read.
+- Some organizer servers refuse cloud-hosted readers, varying by run; Reliability shows what the runner could read, and it measures re-readability, not correctness.
 - A call's cut-off time is known only where the organizer publishes one (`due_time`); otherwise its last day reads "Closes today · check the organizer's cut-off time".
 - 16 corrections made before review dates were kept carry no `reviewed_on`; none is invented for them.
+- **Evidence coverage is high largely by construction:** the build gate refuses an upcoming record without a quote and a source link, so coverage falls mainly when confirmations age past 90 days or organizer pages are removed.
+- **The audits overlap.** Both audits in `sources/audits.json` examined the same upcoming records as they stood on 2026-09-24, before the corrections that followed them. Pooling them treats 649 record audits as independent, which narrows the 95% range. Counting the shared sample once (n = 325) widens it to 94.6–98.4%; the re-derivation alone gives 96.92% (94.4–98.3%). `scripts/indices.py` prints these readings beside the index; they are not part of it.
+- **Who audited.** The re-derivation was carried out by AI agents without the stored values; the second audit was a review of the code, data and interface by another model family (ChatGPT) that, by its own report, re-derived no event in full, so it is likely to find fewer errors per record than a re-derivation. Both worked under the curator's direction; neither was a human audit.
+- **Past records** count toward evidence coverage but not toward the audits, which examined upcoming records only.
 
 ## 4. Architecture and public accountability
 
@@ -143,7 +150,7 @@ python scripts/validate.py
 python -m http.server 8000 --directory site
 ```
 
-Publish only after validation passes.
+Publish only after validation passes. `python scripts/indices.py` prints both header indices with every term (§3.4).
 
 ### 6.3 Maintenance run (network)
 

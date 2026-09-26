@@ -31,6 +31,7 @@ Documentation, limitations, and instructions for reproducing or challenging the 
 | `scripts/check.py` | Re-reads organizer pages (robots.txt obeyed) |
 | `scripts/linkcheck.py` | Reports links that now fail |
 | `scripts/validate.py` | Build gate |
+| `scripts/indices.py` | Recomputes the header's Fidelity and Reliability indices, with every term |
 | `scripts/ui_check.py` | Scripted browser check of the interface |
 | `scripts/icon_versions.py` | Stamps icon URLs with a content version |
 | `scripts/snapshot.py` | Archives the day's generated data |
@@ -52,10 +53,20 @@ The maintenance run, the interface check and hosting a copy are in §6 of the ha
 
 ## Header indices
 
-Both are recomputed in the browser from `site/data/runway.json` and defined in full in [§3.4 of the handoff](site/AI-HANDOFF.md#34-nightly-verification-and-admission-pipeline).
+Both numbers are recomputed in the visitor's browser from `site/data/runway.json` at every page load. `python scripts/indices.py` recomputes them from the same file, or from the live copy with `--data https://mbkarasin.github.io/app-conference-runway/data/runway.json`, and prints every term; the interface check fails if the page shows anything else. Full definitions and caveats: [§3.4 and §3.5 of the handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html#34-nightly-verification-and-admission-pipeline).
 
-- **Fidelity Index:** evidence coverage (the share of dated records that carry the organizer's wording or a published rule, a good verification state and a current source link) multiplied by projected correctness (one minus the error rate pooled from independent audits).
-- **Reliability Index:** the share of dated records not yet ended that the latest automated check re-confirmed from the organizer's own page or image, plus dates computed from a published rule. Manual reviews never count.
+**Fidelity Index = evidence coverage × projected correctness**
+
+- *Evidence coverage* = dated records that pass every test ÷ all dated records (ended and upcoming; month-only projections excluded). A record passes if it carries the organizer's verbatim wording or a published rule, holds a settled state (confirmed, set by rule, save the date, recorded when published) and has a source link; a meeting not yet ended also needs a link not found gone and a confirmation no older than 90 days.
+- *Projected correctness* = 1 − (records found wrong ÷ records audited), summed over the audits in `sources/audits.json`. A record counts wrong if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagreed with the organizer. The range shown is the 95% Wilson interval of that rate.
+- *Worked example* (data built 2026-09-26): coverage 927 ÷ 927 = 100.00%; correctness 1 − (10 + 9) ÷ (325 + 324) = 97.07%; Fidelity 97.07%, range 95.5–98.1%.
+
+**Reliability Index = (records re-confirmed by the latest automated check + dates set by a published rule) ÷ dated records not yet ended**
+
+- *Re-confirmed* means the nightly check found the start date, its year and a word of the meeting's name on the organizer's own page (rendered when it needs JavaScript) or in the organizer's image the record links. Manual reviews never count. When no check has completed in 36 hours, re-confirmations stop counting.
+- *Worked example* (check of 2026-09-25, 10:42 UTC): (256 + 29) ÷ 313 = 91.05%. Most of the other 28 are pages whose servers refused the cloud-hosted checker that night; each rests on a manual review of the organizer's source.
+
+**What they do not show.** Neither measures completeness (meetings missing from the site). Coverage is high largely by construction, since the build gate refuses an upcoming record without a quote and source link. Both audits examined the same upcoming records on 2026-09-24, before the corrections that followed them, and were carried out by AI systems under the curator's direction; the second, a review of the code, data and interface, re-derived no event in full. Counting their shared sample once widens the range to 94.6–98.4%, and the re-derivation alone gives 96.92%. Reliability measures whether a machine can re-read a record tonight, not whether the record is right.
 
 ## Verification labels
 

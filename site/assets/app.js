@@ -1464,7 +1464,7 @@
     const pc = x => x.toFixed(2) + "%";
     const fidTip = f
       ? `${f.ok} of ${f.total} dated records carry the organizer's own wording (or a published rule), hold a good verification state, and — for meetings still ahead — a working source link confirmed within 90 days (${pc(f.coverage)}).` +
-        (f.audited ? ` Independent audits found ${f.wrong} of ${f.audited} audited upcoming records wrong in a date, format, place, abstract call or eligibility, so a record is projected correct ${pc(f.correct)} of the time, errors not yet found included. Fidelity = ${pc(f.coverage)} × ${pc(f.correct)}; 95% range ${f.low.toFixed(1)}–${f.high.toFixed(1)}%.` : "")
+        (f.audited ? ` ${f.audits === 1 ? "An independent audit" : f.audits + " independent audits"} found ${f.wrong} wrong in ${f.audited} record audits of upcoming records (a date, format, place, abstract call or eligibility that disagreed with the organizer), so a record is projected correct ${pc(f.correct)} of the time, errors not yet found included. Fidelity = ${pc(f.coverage)} × ${pc(f.correct)}; 95% range ${f.low.toFixed(1)}–${f.high.toFixed(1)}%.${f.audits > 1 ? " The audits looked at the same records; the handoff (§3.5) gives the wider readings." : ""}` : "")
       : "";
     const r = reliabilityIndex(checkedAt);
     const relTip = r

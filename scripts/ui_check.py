@@ -120,49 +120,27 @@ def main():
         check("header shows Fidelity Index and Reliability Index", "Fidelity Index:" in head and "Reliability Index:" in head, head.replace("\n", " | "))
         check("header does not say 'metric'", "metric" not in head.lower())
         now_ms = page.evaluate("Date.now()")
-        eds = [e for e in data["editions"] if e["series"] in {s["id"] for s in data["series"]}]
-        state = lambda e: (e.get("verify") or {}).get("state")
-        dated = [e for e in eds if state(e) != "expected" and not e.get("month_only")]
-        past = lambda e: (e.get("end") or e["start"]) < today
-        def days_since(d):
-            y, m, dd = map(int, d[:10].split("-")); import datetime as _dt
-            return (_dt.date(*map(int, today.split("-"))) - _dt.date(y, m, dd)).days
-        def fid_ok(e):
-            v = e.get("verify") or {}
-            if not (e.get("evidence") or v.get("state") == "rule"): return False
-            if v.get("state") not in ("verified", "rule", "announced", "archived"): return False
-            if not e.get("source_url"): return False
-            if not past(e):
-                if e.get("link_dead"): return False
-                if v.get("state") != "rule":
-                    seen = v.get("last_verified") or v.get("checked")
-                    if not seen or days_since(seen) > 90: return False
-            return True
-        coverage = sum(map(fid_ok, dated)) / len(dated)
-        # Times the share projected correct from the pooled independent audits (§3.4). `wrong` is a count;
-        # a list (one entry per record) is counted by its length, as app.js does for a stale cached file.
-        aud = data.get("audits") or []
-        audited = sum(a["audited"] for a in aud)
-        wrong = sum(len(a["wrong"]) if isinstance(a.get("wrong"), list) else int(a.get("wrong") or 0) for a in aud)
-        fid = 100 * coverage * (1 - (wrong / audited if audited else 0))
+        # Both values re-derived by scripts/indices.py (the definitions of AI-HANDOFF §3.4) for this page's day and clock.
         import datetime as _dt
-        chk = data.get("sources_checked")
-        fresh = bool(chk) and (now_ms / 1000 - _dt.datetime.fromisoformat(chk.replace("Z", "+00:00")).timestamp()) / 3600 <= 36
-        up = [e for e in dated if not past(e)]
-        rule_n = sum(1 for e in up if state(e) == "rule")
-        mach_n = sum(1 for e in up if e.get("machine") and state(e) != "rule") if fresh else 0
-        rel = 100 * (rule_n + mach_n) / len(up)
-        check("Fidelity Index matches its definition re-derived from the data", f"Fidelity Index: {fid:.2f}%" in head, f"derived {fid:.2f}% = {100*coverage:.2f}% evidence x {100*(1-wrong/audited):.2f}% projected correct ({wrong}/{audited} wrong in {len(aud)} audits)")
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import indices
+        ix = indices.compute(data, today, _dt.datetime.fromtimestamp(now_ms / 1000, _dt.timezone.utc))
+        fx, rx = ix["fidelity"], ix["reliability"]
+        fid, rel, wrong, audited = fx["pct"], rx["pct"], fx["wrong"], fx["audited"]
+        check("Fidelity Index matches its definition re-derived from the data", f"Fidelity Index: {fid:.2f}%" in head, f"derived {fid:.2f}% = {fx['coverage_pct']:.2f}% evidence x {fx['correct_pct']:.2f}% projected correct ({wrong}/{audited} wrong in {fx['audits']} audits)")
         fid_note = page.evaluate("[...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.includes('dated records carry')) || ''")
-        check("Fidelity note states the audit basis", audited > 0 and f"found {wrong} of {audited} audited" in fid_note, fid_note[:120])
-        check("Reliability Index matches its definition re-derived from the data", f"Reliability Index: {rel:.2f}%" in head, f"derived {rel:.2f}% = ({mach_n} machine + {rule_n} rule) / {len(up)}, fresh={fresh}")
+        check("Fidelity note states the audit basis", audited > 0 and f"found {wrong} wrong in {audited} record audits" in fid_note, fid_note[:160])
+        check("Reliability Index matches its definition re-derived from the data", f"Reliability Index: {rel:.2f}%" in head, f"derived {rel:.2f}% = ({rx['machine']} machine + {rx['rule']} rule) / {rx['upcoming_dated']}, fresh={ix['fresh']}")
 
         # 4. Landmark celebration weeks in every view (next dated edition of each).
         series = {s["id"]: s for s in data["series"]}
         for name in LANDMARKS:
             eds = sorted((e for e in data["editions"] if series[e["series"]]["name"] == name and (e.get("verify") or {}).get("state") != "expected" and (e.get("end") or e["start"]) >= today), key=lambda e: e["start"])
             if not eds:
-                check(f"{name}: has an upcoming dated edition", False)
+                # Between editions (the next is not announced yet), the series must still be findable in the Directory.
+                had = any(series[e["series"]]["name"] == name and (e.get("verify") or {}).get("state") != "expected" for e in data["editions"])
+                go("display=directory")
+                check(f"{name}: between editions, still listed in Directory", had and name in page.inner_text("#view"), "no upcoming dated edition yet")
                 continue
             month = eds[0]["start"][:7]
             go(f"display=list&cal={month}")
@@ -174,8 +152,6 @@ def main():
             check(f"{name} in Orbit Celebrations ({month})", in_window and name in text(".orbit-group.obs"))
             go("display=directory")
             check(f"{name} in Directory", name in page.inner_text("#view"))
-        go(f"display=calendar&cal={today[:7]}")
-        check("National APP Week styled in the calendar", page.locator(".ce.appweek").count() >= 1 or today[:7] != "2026-09")
 
         # 5. Each Focus, each view.
         go("display=list&focus=celebrations")
@@ -414,6 +390,8 @@ def main():
         check("a venue pinned to its town is found near it (MAPA, Williamsburg MI)", "MAPA Fall CME Conference" in vtext())
         fgo("display=list&near=23219&r=100")
         check("a record pinned only to a state is left out of distance results (VCNP)", "VCNP Annual Conference" not in vtext())
+        fgo("display=calendar&cal=2026-09")   # National APP Week 2026 (Sep 21-25) is under way at FIXED_NOW
+        check("National APP Week styled in the calendar", fpg.locator(".ce.appweek").count() >= 1, f"{fpg.locator('.ce.appweek').count()} styled cells")
         # An ISO instant older than 90 days must fail the freshness test. The same data is served twice,
         # the second time with one upcoming record's stamp set to 2026-01-01T00:00:00Z.
         fid_count = lambda: fpg.evaluate("(() => { const t = [...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.includes('dated records carry')) || ''; const m = t.match(/(\\d+) of (\\d+)/); return m ? [+m[1], +m[2]] : null; })()")
