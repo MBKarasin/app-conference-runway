@@ -1033,6 +1033,14 @@
    "_why": "Red team F28 (2026-09-25): the stored quote ran to 212 characters; it is trimmed to its dated opening, still verbatim.",
    "reviewed_on": "2026-09-25",
    "evidence": "54th Annual Course ... May 22-24, 2027 ... New Orleans, Louisiana"
+  },
+  "66c22879fe97": {
+   "end": "2026-10-16",
+   "source_url": "https://www.akapa.org/event-6737177",
+   "evidence": "All-Alaska Medical Conference October 14 - 16 | BP Energy Center Join medical professionals from across Alaska and the Pacific Northwest for the 2026 All-Alaska",
+   "source_reviewed": true,
+   "_why": "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by two independent readers, which agree on this passage.",
+   "reviewed_on": "2026-09-26"
   }
  },
  "rules": {
