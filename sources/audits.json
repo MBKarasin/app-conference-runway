@@ -1,7 +1,8 @@
 {
- "_readme": "Independent audits of the upcoming records, pooled by the Fidelity Index (site/AI-HANDOFF.md §3.4). An audit counts a record wrong once if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagreed with the organizer. Add each new audit with its date, method and counts; never remove one.",
+ "_readme": "Audits of upcoming records against the organizers' own material. An audit counts a record wrong once if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagreed with the organizer. The latest audit's share right is the accuracy term of the Reliability Index; earlier audits give its reading from history (site/AI-HANDOFF.md §3.4). Add each new audit with its date, method and counts; never remove one.",
  "audits": [
   {"id": "rederivation-2026-09-24", "date": "2026-09-24", "method": "Every upcoming record re-derived from organizer material without the stored values (AI agents; sources that block cloud readers or publish dates only in images were read in a browser)", "audited": 325, "wrong": 10},
-  {"id": "cross-model-2026-09-24", "date": "2026-09-24", "method": "Independent review of the live build's code, data and interface by a second AI model family (ChatGPT)", "audited": 324, "wrong": 9}
+  {"id": "cross-model-2026-09-24", "date": "2026-09-24", "method": "Independent review of the live build's code, data and interface by a second AI model family (ChatGPT)", "audited": 324, "wrong": 9},
+  {"id": "blind-sample-2026-09-26", "date": "2026-09-26", "method": "Blind random sample of 40 upcoming records the latest check had confirmed, each re-derived from the organizer's own pages by AI agents that never saw the stored values; 35 could be assessed. All 35 dates were right; 7 abstract calls and 1 host city were not", "audited": 35, "wrong": 8}
  ]
 }

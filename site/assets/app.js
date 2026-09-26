@@ -18,6 +18,7 @@
   const daysBetween = (a, b) => Math.round((D(b) - D(a)) / 864e5);
   const longDate = s => { const d = D(s); return MONTH[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear(); };
   const md = s => MON[D(s).getMonth()] + " " + D(s).getDate();
+  const dayStamp = s => /^\d{4}-\d{2}-\d{2}$/.test(String(s || "")) ? md(s) + ", " + s.slice(0, 4) : String(s || "");
   // Phones held upright (below 700 px) get the Calendar as a day-by-day agenda; see calAgenda.
   const PHONE_CAL = window.matchMedia ? window.matchMedia("(max-width: 700px)") : { matches: false };
   function range(e) {
@@ -511,7 +512,7 @@
     // Check times stay in the page header.
     if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
-    // Fidelity is presumed: a record that passed its check carries no badge at all. A label appears only
+    // A confirmed record is presumed right: a record that passed its check carries no badge at all. A label appears only
     // when the checks found something to say: a projection, a save-the-date, a rule-computed date, or an exception.
     if (v.state === "verified") return "";
     if (exceptionsOnly && (v.state === "rule" || v.state === "archived")) return "";
@@ -906,52 +907,22 @@
     el.innerHTML = `<div class="live-ribbon"><span class="live-flag">${current.s.name === "National APP Week" ? `OUR WEEK · DAY ${daysBetween(current.start, TODAY) + 1} OF ${daysBetween(current.start, current.end) + 1}` : "HAPPENING NOW"}</span><strong>${esc(current.s.name)}</strong><span class="live-dates">${esc(range(current))} · through ${esc(MON[D(current.end).getMonth()] + " " + D(current.end).getDate())}</span><button class="live-source" data-e="${esc(current.id)}">View official source and details ↗</button></div>`;
   }
 
-  /* ---------- fidelity index ----------
-     What it counts: of every dated record the site shows, the share that
-       (1) carries the organizer's own wording, or is computed from a published rule,
-       (2) holds a good verification state,
-       (3) has a source link, and, if the meeting has not happened yet,
-       (4) a source link that still resolves, and
-       (5) a confirmation no older than 90 days.
-     That share is multiplied by the share projected correct from the independent audits' pooled
-     error rate (below), so the index reflects the errors audits keep finding.
-     It falls when an organizer removes a page an upcoming record depends on, when a check fails
-     with no organizer wording on file, when confirmations go stale, or when an audit finds errors. */
-  const FID_OK = new Set(["verified", "rule", "announced", "archived"]);
+  /* ---------- fidelity index: reach (the curator's team) ----------
+     No complete list of APP meetings exists, so reach is estimated by capture–recapture. An independent probe
+     starts from frames published by third parties (lists of organizations, or of meetings) and reads each
+     organizer's own events page without looking at the Runway (sources/probes.json, carried as DATA.probes). Fidelity is the share of the
+     distinct qualifying meetings the latest probe found that the Runway already held, with the 95% Wilson
+     interval. It says nothing about whether a record is right; that is Reliability's job. It changes only when a
+     new probe (the weekly horizon scan) is recorded. */
+  const latest = xs => xs.reduce((a, b) => (String(b.date) >= String(a.date) ? b : a));   // a later entry wins a tie
   function fidelityIndex() {
-    const dated = EDS.filter(e => !e.expectedRow && !e.month_only);
-    if (!dated.length) return null;
-    const ok = dated.filter(e => {
-      const v = e.verify || {};
-      if (!(e.evidence || v.state === "rule")) return false;
-      if (!FID_OK.has(v.state)) return false;
-      if (!e.source_url) return false;
-      if (!e.past) {
-        if (e.link_dead) return false;
-        if (v.state !== "rule") {
-          // Stamps come as dates ("YYYY-MM-DD") or instants ("YYYY-MM-DDThh:mm:ssZ"). D() takes a date only,
-          // so the age is taken from the calendar date. An unreadable stamp fails explicitly: NaN > 90 is false.
-          const seen = String(v.last_verified || v.checked || "").slice(0, 10);
-          const age = /^\d{4}-\d{2}-\d{2}$/.test(seen) ? daysBetween(seen, TODAY) : NaN;
-          if (!Number.isFinite(age) || age > 90) return false;
-        }
-      }
-      return true;
-    }).length;
-    // Independent audits of the upcoming records (sources/audits.json, carried as DATA.audits) count the records
-    // wrong in an action-critical field even though they carried organizer evidence. Their pooled rate projects how
-    // often a record with evidence is still wrong, including errors no audit has found yet. The index is the share
-    // with evidence times the share projected correct; the range uses the 95% Wilson interval of the audit rate.
-    // `wrong` is a count; a stale cached file may still carry a list of records, counted by its length.
-    const A = (DATA && DATA.audits) || [];
-    const audited = A.reduce((t, a) => t + (+a.audited || 0), 0);
-    const wrong = A.reduce((t, a) => t + (Array.isArray(a.wrong) ? a.wrong.length : (Number(a.wrong) || 0)), 0);
-    const rate = audited ? wrong / audited : 0;
-    const [rlo, rhi] = wilsonInterval(wrong, audited);
-    const coverage = ok / dated.length;
-    return { pct: 100 * coverage * (1 - rate), ok, total: dated.length, coverage: 100 * coverage,
-             wrong, audited, audits: A.length, correct: 100 * (1 - rate),
-             low: 100 * coverage * (1 - rhi), high: 100 * coverage * (1 - rlo) };
+    const P = ((DATA && DATA.probes) || []).filter(p => Number(p.found) > 0);
+    if (!P.length) return null;
+    const p = latest(P), held = Number(p.held) || 0, found = Number(p.found);
+    const [lo, hi] = wilsonInterval(held, found);
+    const w = p.window || {};
+    return { pct: (100 * held) / found, held, found, low: 100 * lo, high: 100 * hi, date: p.date,
+             from: w.from, to: w.to, frames: (p.frames || []).length };
   }
   // 95% Wilson score interval for a proportion x/n, as [low, high]; [0, 0] when nothing was audited.
   function wilsonInterval(x, n, z = 1.959964) {
@@ -960,23 +931,31 @@
     return [Math.max(0, (c - r) / d), Math.min(1, (c + r) / d)];
   }
 
-  /* ---------- reliability index ----------
-     What it counts: of every upcoming dated record, the share that the latest automated check
-       re-confirmed from the organizer's own material (start date, its year and a meeting-name word found
-       on the organizer's page, rendered when the page needs JavaScript, or in the organizer's own image
-       the record links; carried per edition by build.py as `machine`), plus dates computed from a published rule.
-     What it leaves out: records resting on a manual review of the organizer's source or on a
-       save-the-date. They count once the automated check can re-read them.
-     It falls when organizer sites block automated readers, when pages move, and to the rule-only
-     share when no check has completed in 36 hours. Fidelity asks "does every record carry the
-     organizer's evidence?"; reliability asks "can the machine reproduce it tonight?" */
+  /* ---------- reliability index: organizer display, as verified ----------
+     Confirmation (a census, every night): of every upcoming dated record, the share the latest nightly
+       verification confirmed on the organizer's own material (carried per edition by build.py as `machine`),
+       plus dates computed from a published rule. When no verification has been recorded in 36 hours, only the
+       rule dates count.
+     Accuracy (a sample): of the records the latest audit examined (sources/audits.json, carried as DATA.audits),
+       the share right in every action-critical field against the organizer's own page. It stands until the
+       next audit; the range is its 95% Wilson interval, scaled by confirmation.
+     Reliability = confirmation × accuracy. */
   function reliabilityIndex(checkedAt) {
     const up = EDS.filter(e => !e.expectedRow && !e.month_only && !e.past);
     if (!up.length) return null;
     const fresh = !!checkedAt && (Date.now() - Date.parse(checkedAt)) / 36e5 <= 36;
     const rule = up.filter(e => (e.verify || {}).state === "rule").length;
     const machine = fresh ? up.filter(e => e.machine && (e.verify || {}).state !== "rule").length : 0;
-    return { pct: (100 * (machine + rule)) / up.length, machine, rule, ok: machine + rule, total: up.length, fresh };
+    const conf = (machine + rule) / up.length;
+    // `wrong` is a count; a stale cached file may still carry a list of records, counted by its length.
+    const A = ((DATA && DATA.audits) || []).filter(a => Number(a.audited) > 0);
+    const a = A.length ? latest(A) : null;
+    const audited = a ? Number(a.audited) : 0, wrong = a ? (Array.isArray(a.wrong) ? a.wrong.length : Number(a.wrong) || 0) : 0;
+    const acc = audited ? 1 - wrong / audited : 1;
+    const [wlo, whi] = wilsonInterval(wrong, audited);
+    return { pct: 100 * conf * acc, machine, rule, ok: machine + rule, total: up.length, fresh, conf: 100 * conf,
+             acc: 100 * acc, audited, right: audited - wrong, auditDate: a ? a.date : null,
+             low: 100 * conf * (audited ? 1 - whi : 1), high: 100 * conf * (audited ? 1 - wlo : 1) };
   }
 
   /* ---------- chip availability: a filter is offered only when it can return a record ---------- */
@@ -1448,29 +1427,30 @@
       catch (e) { $("#view").innerHTML = `<div class="empty">The meeting data could not be loaded. Check your connection and refresh.</div>`; return; }
     }
     prep(d);
-    const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
-    const f = fidelityIndex();
-    // The dot reports the run, not the mood: red when the last check did not land, amber when
-    // fidelity has slipped below 95%, green otherwise.
+    // Two time stamps (§3.4). Verified: when the latest recorded nightly verification ran; it drives Reliability and the
+    // record labels. Horizon scan: the date of the latest probe for meetings the Runway does not list; it sets Fidelity.
     const checkedAt = d.sources_checked || null;
-    const staleHours = checkedAt ? (Date.now() - Date.parse(checkedAt)) / 36e5 : Infinity;
-    const failed = !checkedAt || staleHours > 36;
-    const tone = failed ? "bad" : (f && f.pct < 95 ? "warn" : "ok");
+    const verStamp = checkedAt ? stampET(checkedAt) : "not yet run";
+    const f = fidelityIndex();
+    const scanStamp = f && f.date ? dayStamp(f.date) : "not yet run";
+    // The dot reports freshness only: red when no nightly verification has been recorded in 36 hours, green otherwise.
+    const failed = !checkedAt || (Date.now() - Date.parse(checkedAt)) / 36e5 > 36;
+    const tone = failed ? "bad" : "ok";
     const dotTip = failed
-      ? "The most recent scheduled source check did not complete. The dates below are as of the time shown."
-      : tone === "warn"
-        ? "The last source check completed, and the fidelity index is below 95%."
-        : "The last source check completed, and the fidelity index is at or above 95%.";
-    const pc = x => x.toFixed(2) + "%";
+      ? "No nightly verification has been recorded in the last 36 hours. The records below are as of the time shown, and only dates set by a published rule count as confirmed."
+      : "The latest nightly verification was recorded within the last 36 hours.";
+    const pc = (x, n = 1) => x.toFixed(n) + "%";
     const fidTip = f
-      ? `${f.ok} of ${f.total} dated records carry the organizer's own wording (or a published rule), hold a good verification state, and — for meetings still ahead — a working source link confirmed within 90 days (${pc(f.coverage)}).` +
-        (f.audited ? ` ${f.audits === 1 ? "An independent audit" : f.audits + " independent audits"} found ${f.wrong} wrong in ${f.audited} record audits of upcoming records (a date, format, place, abstract call or eligibility that disagreed with the organizer), so a record is projected correct ${pc(f.correct)} of the time, errors not yet found included. Fidelity = ${pc(f.coverage)} × ${pc(f.correct)}; 95% range ${f.low.toFixed(1)}–${f.high.toFixed(1)}%.${f.audits > 1 ? " The audits looked at the same records; the handoff (§3.5) gives the wider readings." : ""}` : "")
+      ? `Reach: an independent probe on ${dayStamp(f.date)} drew organizations and meetings from ${f.frames} frames published by third parties and read each organizer's own events page without looking at the Runway. Of the ${f.found} qualifying dated meetings it found, starting ${dayStamp(f.from)} to ${dayStamp(f.to)}, the Runway already held ${f.held}: ${pc(f.pct, 2)} (95% interval ${pc(f.low)}–${pc(f.high)}). Every meeting found that the Runway lacks enters review. Fidelity measures how much of the APP meeting world the Runway holds, not whether a record is right; Reliability measures that.`
       : "";
     const r = reliabilityIndex(checkedAt);
     const relTip = r
       ? (r.fresh
-        ? `${r.ok} of ${r.total} upcoming dated records: ${r.machine} re-confirmed from the organizer's own page or image by the latest automated check, and ${r.rule} computed from a published rule. The other ${r.total - r.ok} rest on a manual review of the organizer's source or a save-the-date, and count once the check can re-read them.`
-        : `No automated check has completed in the last 36 hours, so only the ${r.rule} dates computed from a published rule count (${r.ok} of ${r.total}).`)
+          ? `Confirmation: ${r.ok} of ${r.total} upcoming dated records (${pc(r.conf, 2)}) were confirmed on the organizer's own material by the latest nightly verification (${r.machine}) or are set by a published rule (${r.rule}).`
+          : `Confirmation: no nightly verification has been recorded in the last 36 hours, so only the ${r.rule} dates set by a published rule count: ${r.ok} of ${r.total} upcoming dated records (${pc(r.conf, 2)}).`) +
+        (r.audited
+          ? ` Accuracy: the latest audit (${dayStamp(r.auditDate)}) found ${r.right} of ${r.audited} audited records right in every action-critical field (dates, place, format, abstract call, eligibility) against the organizers' own pages: ${pc(r.acc, 2)}. Reliability = ${pc(r.conf, 2)} × ${pc(r.acc, 2)}; 95% range ${pc(r.low)}–${pc(r.high)}.`
+          : " No audit is recorded, so accuracy is not measured.")
       : "";
     // Red team F16: a definition held only in a hover title cannot be reached by touch or keyboard. Each index is a
     // button (styled as the text it replaces) that opens its definition beneath the header; hover still shows it.
@@ -1479,7 +1459,8 @@
       r ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(relTip)}" data-note="${esc(relTip)}">Reliability Index: ${r.pct.toFixed(2)}%</button>` : ""
     ].filter(Boolean);
     $("#updated").innerHTML =
-      `<span class="stamp-line"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i>Updated ${esc(srcStamp)}</span>` +
+      `<span class="stamp-line"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i>Verified ${esc(verStamp)}</span>` +
+      `<span class="stamp-line scan-line" title="The date of the latest probe for meetings the Runway does not yet list; it sets the Fidelity Index.">Horizon scan ${esc(scanStamp)}</span>` +
       (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span><span class="idx-note" id="idx-note" role="note" hidden></span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     const lt = $(".layout-toggle");
@@ -1500,7 +1481,7 @@
       close();
       if (wasOpen) return;
       // The definitions live in the handoff on this site (§3.4), readable with no GitHub account (2026-09-26).
-      const how = ` <a href="ai-handoff.html#34-nightly-verification-and-admission-pipeline" target="_blank" rel="noopener">How both indices are defined</a>`;
+      const how = ` <a href="ai-handoff.html#34-fidelity-and-reliability" target="_blank" rel="noopener">How both indices are defined</a>`;
       note.innerHTML = esc(b.dataset.note) + how;
       note.hidden = false;
       b.setAttribute("aria-expanded", "true");

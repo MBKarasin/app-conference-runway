@@ -1,22 +1,36 @@
-APP Conference Runway — terms of reuse
+APP Conference Runway — rights and terms of use
 
-To the extent the curator, Mark Karasin, holds rights in this project's code, data compilation,
-design, AI-generated logo and documentation (including site/AI-HANDOFF.md), he dedicates them to
-the public domain under the Creative Commons CC0 1.0 Universal Public Domain Dedication.
-Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+© 2026 Mark Karasin. All rights reserved.
 
-You may copy, modify, redistribute and build on those parts for any purpose, commercial or not,
-without asking and without attribution. Attribution is appreciated but not required.
+Name and logo. "APP Conference Runway" and its logo, in every form (the mark alone, the mark with
+letters, and the mark with the name beside it), are claimed as trademarks of Mark Karasin. They may
+not be used without his written permission.
 
-This dedication does not cover:
-- Organizer material: event names, the short verbatim quotes kept as evidence, linked pages and
-  images, and organizer marks. They belong to their organizers and are reproduced only to show
-  where a date came from.
+This repository and the site. The code, data compilation, design and documentation (including
+site/AI-HANDOFF.md) are Mark Karasin's. No license to copy, modify or redistribute them is granted.
+
+Transparency. Anyone may read the site and this repository, link to them, run the repository's
+scripts to check the published data and indices, and check any record against its organizer's
+source. GitHub's terms also let GitHub users view and fork a public repository on GitHub; that
+grants no other use.
+
+Earlier versions. From commit ad9dd5f (2026-09-22) until this change, versions of this repository
+carried a Creative Commons CC0 1.0 public-domain dedication for the curator's code, data
+compilation, design and documentation; from commit c94aa5f (2026-09-23) it also named the logo
+artwork. That dedication cannot be withdrawn for those versions and does not extend to later
+changes. It never waived trademark rights (CC0 1.0, section 4(a)).
+
+Not Mark Karasin's:
+- Organizer material: organizer and event names, the short verbatim quotes kept as evidence,
+  linked pages and images, and organizer marks. They belong to their organizers and are
+  reproduced only to show where a date came from.
 - Third-party components, which keep their own licenses: Barlow Condensed and Source Sans 3
   (SIL Open Font License, see site/fonts/); GeoNames data (CC BY 4.0, attribution required);
   U.S. Census Bureau Gazetteer data (public domain).
-- Institutional names and marks: Rutgers University and RWJBarnabas Health names and logos are
-  not licensed, and nothing here implies their endorsement.
+- Institutional names and marks, including those of Rutgers University and RWJBarnabas Health.
+  They are not licensed, and nothing here implies their endorsement.
 
 No warranty. The site and its data are provided as is, without warranty of any kind. Dates change;
 confirm with the organizer before registering, submitting or traveling.
+
+Contact: mark.karasin@protonmail.com

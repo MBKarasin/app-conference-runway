@@ -136,17 +136,38 @@ if not any(e["start"] == "2026-09-23" and e["end"] == "2026-09-25" and "id=19846
     errs.append("NPWH 2026 must link to its own 2026 organizer event")
 if any(e["start"] == "2024-09-25" and "2023-Annual-Conference" in (e.get("source_url") or "") for e in npwh):
     errs.append("NPWH 2024 must not link to the misleading 2023 slug")
-# The audit ledger behind the Fidelity Index (sources/audits.json, carried as "audits"): each audit has an
-# ISO date, a positive whole number audited and a whole number wrong from 0 to the number audited.
+# The audit ledger behind the Reliability Index's accuracy term (sources/audits.json, carried as "audits"): each
+# audit has an ISO date, a positive whole number audited and a whole number wrong from 0 to the number audited.
 audits = d.get("audits")
 if not isinstance(audits, list) or not audits:
-    errs.append("the audit ledger behind the Fidelity Index is missing from runway.json")
+    errs.append("the audit ledger behind the Reliability Index is missing from runway.json")
 whole = lambda x: isinstance(x, int) and not isinstance(x, bool)
 for a in audits if isinstance(audits, list) else []:
     n, w = a.get("audited"), a.get("wrong")
     if not ISO.match(str(a.get("date") or "")): errs.append(f"audit {a.get('id')}: bad date")
     if not whole(n) or n <= 0: errs.append(f"audit {a.get('id')}: audited must be a positive whole number")
     if not whole(w) or w < 0 or (whole(n) and w > n): errs.append(f"audit {a.get('id')}: wrong must be a whole number from 0 to the records audited")
+# The probe ledger behind the Fidelity Index (sources/probes.json, carried as "probes" and "probe_history"): each probe
+# has an ISO date and window, frames whose counts add up to its totals (less meetings counted in two frames), and a
+# held count from 0 to the number found.
+probes = d.get("probes")
+if not isinstance(probes, list) or not probes:
+    errs.append("the probe ledger behind the Fidelity Index is missing from runway.json")
+for p in probes if isinstance(probes, list) else []:
+    pid, n, h, win = p.get("id"), p.get("found"), p.get("held"), p.get("window") or {}
+    if not ISO.match(str(p.get("date") or "")): errs.append(f"probe {pid}: bad date")
+    if not (ISO.match(str(win.get("from") or "")) and ISO.match(str(win.get("to") or "")) and win["from"] <= win["to"]):
+        errs.append(f"probe {pid}: the window needs ISO from and to dates in order")
+    if not whole(n) or n <= 0: errs.append(f"probe {pid}: found must be a positive whole number")
+    if not whole(h) or h < 0 or (whole(n) and h > n): errs.append(f"probe {pid}: held must be a whole number from 0 to the meetings found")
+    fr, twice = p.get("frames") or [], p.get("counted_twice") or 0
+    if fr and whole(n) and whole(h):
+        fn, fh = sum(f.get("found") or 0 for f in fr), sum(f.get("held") or 0 for f in fr)
+        if fn - twice != n: errs.append(f"probe {pid}: its frames found {fn}, less {twice} counted twice, which is not {n}")
+        if not (h <= fh <= h + twice): errs.append(f"probe {pid}: its frames held {fh}, which does not match {h}")
+for q in d.get("probe_history") or []:
+    if not ISO.match(str(q.get("date") or "")) or not whole(q.get("found")) or q["found"] <= 0 or not whole(q.get("held")) or not 0 <= q["held"] <= q["found"]:
+        errs.append(f"probe history {q.get('id')}: needs an ISO date, a positive found and a held from 0 to found")
 # The AI Handoff page (site/ai-handoff.html), rendered from site/AI-HANDOFF.md by build.py through
 # scripts/handoff_page.py: it must match a fresh rendering of the file, render every Markdown construct the
 # file uses, keep the noindex tag, and every section link to it (from the page itself, the site or the

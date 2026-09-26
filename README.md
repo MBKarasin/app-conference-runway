@@ -1,37 +1,40 @@
 # APP Conference Runway
 
-A source-traced calendar of conferences, abstract deadlines, student and DNP project venues, and observances for advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs). Every upcoming dated entry links to the organizer's own material and, unless computed from a published rule, quotes the wording its date came from, so a visitor can confirm it before registering, submitting or traveling. The project is global in scope and incomplete; current coverage remains concentrated in the United States.
+A source-traced calendar of conferences, abstract deadlines, student and DNP project venues, and observances for advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs). Every upcoming dated entry links to the organizer's own material and, unless computed from a published rule, quotes the wording its date came from, so a visitor can confirm it before registering, submitting or traveling. The project is global in scope and incomplete: its reach is measured (see the Fidelity Index below), and current coverage remains concentrated in the United States.
 
-**Live site:** https://mbkarasin.github.io/app-conference-runway/. It is kept out of search engines by design (a `noindex` tag and `robots.txt`) and is shared directly among APPs.
+**Live site:** https://mbkarasin.github.io/app-conference-runway/. Its pages carry a `noindex` tag, and it is shared directly among APPs.
 
-The site is independent. It is not an official publication of, or endorsement by, Rutgers University or RWJBarnabas Health. It is curated by Dr. Mark Karasin, DNP, APN, AGACNP-BC, who decides what is published. Deterministic software and AI systems—including local models, Claude by Anthropic and ChatGPT by OpenAI—may assist research, implementation and independent review; no model decides what is published.
+The site is independent. It is not an official publication of, or endorsement by, Rutgers University or RWJBarnabas Health. It is owned and curated by Dr. Mark Karasin, DNP, APN, AGACNP-BC, CNOR(E), who decides what is published. Every AI actor works under his MBK AI Governance Protocol: Claude by Anthropic assists research and implementation, ChatGPT by OpenAI is the red team, and no model decides what is published. The curator shares the Runway for critique with colleagues in academic nursing, research, clinical practice, artificial intelligence and data science; their feedback informs his scholarly inquiry.
 
-Documentation, limitations, and instructions for reproducing or challenging the project: the [AI Handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html), which opens on the site itself with no account; its source is [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Terms of reuse: [`LICENSE`](LICENSE) (CC0 for the curator's own work). Contact: mark.karasin@protonmail.com.
+Documentation, limitations, and how to check or challenge the project: the [AI Handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html), which opens on the site itself with no account; its source is [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Rights: [`LICENSE`](LICENSE) (all rights reserved; the name and logo are claimed as trademarks; the public receives transparency). Contact: mark.karasin@protonmail.com.
 
 ## What a visitor sees
 
 - Four views of the same filtered records: **List** (upcoming records by month), **Calendar** (a month grid), **Orbit** (the landing view: twelve months with the count of each record type) and **Directory** (every recurring series with its history).
 - Filters: **Discipline**, **Focus** (one record type at a time), **Scope**, **Location** and search. Every view is a shareable link. **Near City** takes a ZIP code or a place such as "Springfield, IL", "Portland ME" or "London, ON", and says so when it does not know a place.
 - Each record shows its source link and the organizer's quoted wording. Phones get a mobile layout, with a link to the desktop layout.
+- The header shows two time stamps, **Verified** (the latest nightly verification) and **Horizon scan** (the latest search for meetings not yet listed), and the two indices below.
 
 ## How it stays current
 
-- Every night a GitHub Action attempts the organizer pages of records that have not ended, writes `data/verification.json` and `data/check_report.md`, archives the day's generated data under `data/snapshots/`, and redeploys if the check and validation pass. Unreadable sources are reported rather than silently treated as corrections.
+- Every night a GitHub Action attempts the organizer source of every dated record not yet ended (dates set by a published rule excepted) and checks every source link, writes `data/verification.json` and `data/check_report.md`, archives the day's generated data under `data/snapshots/`, and redeploys if the check and validation pass. Unreadable sources are reported rather than silently treated as corrections.
 - Dates that no longer match are listed in the issue **"Runway: dates to review"**. Corrections go in `sources/overrides.json` with a `_why`, a `reviewed_on` date, the organizer's verbatim wording and the exact URL or image; the build gate rejects a correction without them.
 - Meetings that have ended are kept as captured and are not re-read.
-- New meetings enter a `sources/group_*.json` file, following `sources/SCHEMA.md`, only after the organizer evidence has been reviewed. The governed expansion will generate candidates outside the publication files first.
+- New meetings enter a `sources/group_*.json` file, following `sources/SCHEMA.md`, only after the organizer evidence has been reviewed.
 
 ## Repository map
 
 | Path | What it is |
 |---|---|
 | `sources/` | Curated inputs; `overrides.json` (curator corrections) wins over everything |
+| `sources/probes.json` | Independent probes behind the Fidelity Index |
+| `sources/audits.json` | Audits behind the Reliability Index's accuracy term |
 | `scripts/build.py` | Builds `site/data/runway.json`, the calendar feed `site/runway.ics` and the handoff page `site/ai-handoff.html` |
 | `scripts/handoff_page.py` | Renders `site/AI-HANDOFF.md` as the handoff page (standard library only; run by `build.py`) |
 | `scripts/check.py` | Re-reads organizer pages (robots.txt obeyed) |
 | `scripts/linkcheck.py` | Reports links that now fail |
 | `scripts/validate.py` | Build gate |
-| `scripts/indices.py` | Recomputes the header's Fidelity and Reliability indices, with every term |
+| `scripts/indices.py` | Recomputes the header's Fidelity and Reliability indices, with every term; `--history` adds the readings from history |
 | `scripts/ui_check.py` | Scripted browser check of the interface |
 | `scripts/icon_versions.py` | Stamps icon URLs with a content version |
 | `scripts/snapshot.py` | Archives the day's generated data |
@@ -39,34 +42,33 @@ Documentation, limitations, and instructions for reproducing or challenging the 
 | `site/` | The static website: no framework, cookies, analytics or third-party requests |
 | `.github/workflows/runway.yml` | Build, validate and deploy on push; nightly check on schedule |
 
-## Run it yourself
+## Check it yourself
 
 Python 3.12; the build uses only the standard library. From the repository root:
 
 ```text
 python scripts/build.py
 python scripts/validate.py
+python scripts/indices.py --history
 python -m http.server 8000 --directory site
 ```
 
-The maintenance run, the interface check and hosting a copy are in §6 of the handoff.
+`--history` reads the repository's own history, so it needs a git clone. The nightly checks and the interface check are in §6.1 of the handoff. Running the scripts to check the published data is part of the transparency the `LICENSE` grants; hosting a copy is not.
 
 ## Header indices
 
-Both numbers are recomputed in the visitor's browser from `site/data/runway.json` at every page load. `python scripts/indices.py` recomputes them from the same file, or from the live copy with `--data https://mbkarasin.github.io/app-conference-runway/data/runway.json`, and prints every term; the interface check fails if the page shows anything else. Full definitions and caveats: [§3.4 and §3.5 of the handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html#34-nightly-verification-and-admission-pipeline).
+Both numbers are recomputed in the visitor's browser from `site/data/runway.json` at every page load. `python scripts/indices.py` recomputes them from the same file, or from the live copy with `--data https://mbkarasin.github.io/app-conference-runway/data/runway.json`, and prints every term; the interface check fails if the page shows anything else. Full definitions and limits: [§3.4 and §3.5 of the handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html#34-fidelity-and-reliability).
 
-**Fidelity Index = evidence coverage × projected correctness**
+| Index | From history | Today (2026-09-26) |
+|---|---|---|
+| Fidelity (reach; the curator's team) | 30.0% (6 of 20) | 35.1% (20 of 57; 95% interval 24.0–48.1%) |
+| Reliability (organizer display, as verified) | 87.9% (90.50% × 97.07%) | 70.3% (91.11% × 77.14%) |
 
-- *Evidence coverage* = dated records that pass every test ÷ all dated records (ended and upcoming; month-only projections excluded). A record passes if it carries the organizer's verbatim wording or a published rule, holds a settled state (confirmed, set by rule, save the date, recorded when published) and has a source link; a meeting not yet ended also needs a link not found gone and a confirmation no older than 90 days.
-- *Projected correctness* = 1 − (records found wrong ÷ records audited), summed over the audits in `sources/audits.json`. A record counts wrong if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagreed with the organizer. The range shown is the 95% Wilson interval of that rate.
-- *Worked example* (data built 2026-09-26): coverage 927 ÷ 927 = 100.00%; correctness 1 − (10 + 9) ÷ (325 + 324) = 97.07%; Fidelity 97.07%, range 95.5–98.1%.
+**Fidelity Index = qualifying meetings found by the latest independent probe that the Runway already held ÷ all qualifying meetings the probe found** (capture–recapture; 95% Wilson interval). A probe starts from frames published by third parties (lists of organizations, or of meetings) and reads each organizer's own events page without looking at the Runway (`sources/probes.json`). Fidelity says nothing about whether a record is right.
 
-**Reliability Index = (records re-confirmed by the latest automated check + dates set by a published rule) ÷ dated records not yet ended**
+**Reliability Index = confirmation × accuracy.** Confirmation = (records not yet ended that the latest nightly verification confirmed on the organizer's own material + dates set by a published rule) ÷ dated records not yet ended; only the rule dates count when no verification has been recorded in 36 hours. Accuracy = the share of records right in every action-critical field (dates, place, format, abstract call or deadline, eligibility) in the latest audit (`sources/audits.json`); it stands until the next audit.
 
-- *Re-confirmed* means the nightly check found the start date, its year and a word of the meeting's name on the organizer's own page (rendered when it needs JavaScript) or in the organizer's image the record links. Manual reviews never count. When no check has completed in 36 hours, re-confirmations stop counting.
-- *Worked example* (check of 2026-09-25, 10:42 UTC): (256 + 29) ÷ 313 = 91.05%. Most of the other 28 are pages whose servers refused the cloud-hosted checker that night; each rests on a manual review of the organizer's source.
-
-**What they do not show.** Neither measures completeness (meetings missing from the site). Coverage is high largely by construction, since the build gate refuses an upcoming record without a quote and source link. Both audits examined the same upcoming records on 2026-09-24, before the corrections that followed them, and were carried out by AI systems under the curator's direction; the second, a review of the code, data and interface, re-derived no event in full. Counting their shared sample once widens the range to 94.6–98.4%, and the re-derivation alone gives 96.92%. Reliability measures whether a machine can re-read a record tonight, not whether the record is right.
+**What they do not show.** Fidelity is only as wide as its probes, and its interval is wide. Reliability's accuracy term is a sample of 35 records (its own 95% interval is 61–88%). The audits and the probe were carried out by AI systems under the curator's direction, not by people. A confirmation does not re-check every field; the audit measures what it misses.
 
 ## Verification labels
 

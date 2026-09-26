@@ -115,8 +115,9 @@ def main():
             check(f"{b_sel} sits to the right of {a_sel} at 1440 px", ok, f"{a} | {b}")
         check("filter rows run views/search, Discipline/Focus, Scope/Location", rows == sorted(rows) and len(set(rows)) == 3, str(rows))
 
-        # Header indices: labels, no "metric", and both values re-derived from the page's own data.
+        # Header: the two time stamps, the indices' labels, no "metric", and both values re-derived from the page's own data.
         head = page.inner_text("#updated")
+        check("header shows the Verified and Horizon scan stamps", "Verified " in head and "Horizon scan " in head and "Updated " not in head, head.replace("\n", " | "))
         check("header shows Fidelity Index and Reliability Index", "Fidelity Index:" in head and "Reliability Index:" in head, head.replace("\n", " | "))
         check("header does not say 'metric'", "metric" not in head.lower())
         now_ms = page.evaluate("Date.now()")
@@ -125,12 +126,21 @@ def main():
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         import indices
         ix = indices.compute(data, today, _dt.datetime.fromtimestamp(now_ms / 1000, _dt.timezone.utc))
-        fx, rx = ix["fidelity"], ix["reliability"]
-        fid, rel, wrong, audited = fx["pct"], rx["pct"], fx["wrong"], fx["audited"]
-        check("Fidelity Index matches its definition re-derived from the data", f"Fidelity Index: {fid:.2f}%" in head, f"derived {fid:.2f}% = {fx['coverage_pct']:.2f}% evidence x {fx['correct_pct']:.2f}% projected correct ({wrong}/{audited} wrong in {fx['audits']} audits)")
-        fid_note = page.evaluate("[...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.includes('dated records carry')) || ''")
-        check("Fidelity note states the audit basis", audited > 0 and f"found {wrong} wrong in {audited} record audits" in fid_note, fid_note[:160])
-        check("Reliability Index matches its definition re-derived from the data", f"Reliability Index: {rel:.2f}%" in head, f"derived {rel:.2f}% = ({rx['machine']} machine + {rx['rule']} rule) / {rx['upcoming_dated']}, fresh={ix['fresh']}")
+        fx, rx = ix["fidelity"] or {}, ix["reliability"]
+        fid, rel = fx.get("pct", -1), rx["pct"]
+        check("Fidelity Index matches its definition re-derived from the data (latest probe: held / found)", bool(fx) and f"Fidelity Index: {fid:.2f}%" in head,
+              f"derived {fid:.2f}% = {fx.get('held')} held / {fx.get('found')} found (probe {fx.get('probe')})")
+        titles = page.evaluate("[...document.querySelectorAll('#updated .idx')].map(x => x.title)")
+        fid_note = next((t for t in titles if t.startswith("Reach:")), "")
+        check("Fidelity note states the probe basis", bool(fx) and f"Of the {fx['found']} qualifying dated meetings" in fid_note and f"the Runway already held {fx['held']}" in fid_note, fid_note[:160])
+        check("Horizon scan shows the latest probe's date", bool(fx) and page.evaluate("s => document.querySelector('#updated .scan-line').textContent.endsWith(s)", _dt.date.fromisoformat(fx["date"]).strftime("%b %-d, %Y")),
+              page.evaluate("(document.querySelector('#updated .scan-line') || {}).textContent || ''"))
+        check("Reliability Index matches its definition re-derived from the data (confirmation x latest audit)", f"Reliability Index: {rel:.2f}%" in head,
+              f"derived {rel:.2f}% = ({rx['machine']} machine + {rx['rule']} rule) / {rx['upcoming_dated']} x {rx['right']}/{rx['audited']}, fresh={ix['fresh']}")
+        rel_note = next((t for t in titles if t.startswith("Confirmation:")), "")
+        check("Reliability note states the confirmation and audit basis", f"{rx['ok']} of {rx['upcoming_dated']} upcoming dated records" in rel_note and (not rx["audited"] or f"found {rx['right']} of {rx['audited']} audited records" in rel_note), rel_note[:200])
+        dot = page.evaluate("(document.querySelector('#updated .stat') || {}).className || ''")
+        check("status dot reports freshness only (green within 36 hours, red after)", dot == "stat " + ("ok" if ix["fresh"] else "bad"), f"{dot}; fresh={ix['fresh']}")
 
         # 4. Landmark celebration weeks in every view (next dated edition of each).
         series = {s["id"]: s for s in data["series"]}
@@ -203,7 +213,7 @@ def main():
 
         # 7. Records, contact and handoff.
         go("display=list")
-        # Fidelity is presumed: a record that passed its check carries no verification badge; a note appears
+        # A confirmed record is presumed right: a record that passed its check carries no verification badge; a note appears
         # only for an exception, projection, rule or save-the-date.
         cards = page.evaluate("[...document.querySelectorAll('#view .ev')].map(c => [c.dataset.e, !!c.querySelector('.side .vf, .side .source-note')])")
         by_id = {e["id"]: e for e in data["editions"]}
@@ -388,26 +398,35 @@ def main():
         check("Directory cards hold their badges, dates and years (no nested buttons)", dom["cards"] > 0 and dom["stray"] == 0 and dom["nested"] == 0 and dom["whole"], str(dom))
         fgo("display=list&near=49690&r=50")
         check("a venue pinned to its town is found near it (MAPA, Williamsburg MI)", "MAPA Fall CME Conference" in vtext())
-        fgo("display=list&near=23219&r=100")
-        check("a record pinned only to a state is left out of distance results (VCNP)", "VCNP Annual Conference" not in vtext())
+        # VCNP 2027 was pinned only to its state until its venue was announced (corrected 2026-09-26); Charter Oak's venue,
+        # Westbrook CT, is a town the geocoder places only at its state, so it takes over the state-pin case.
+        pinned = {e["id"]: (e.get("geo") or {}).get("precision") for e in data["editions"] if e["id"] in ("50a6bc48cd8f", "3eecefb90b41")}
+        fgo("display=list&near=06498&r=50")
+        check("a record pinned only to a state is left out of distance results (Charter Oak 2027, Westbrook CT)",
+              pinned.get("50a6bc48cd8f") == "state" and "Charter Oak Conference" not in vtext(), str(pinned))
+        fgo("display=list&near=24016&r=25")
+        check("VCNP 2027 is found near Roanoke once its venue is announced", pinned.get("3eecefb90b41") == "city" and "VCNP Annual Conference" in vtext(), str(pinned))
         fgo("display=calendar&cal=2026-09")   # National APP Week 2026 (Sep 21-25) is under way at FIXED_NOW
         check("National APP Week styled in the calendar", fpg.locator(".ce.appweek").count() >= 1, f"{fpg.locator('.ce.appweek').count()} styled cells")
-        # An ISO instant older than 90 days must fail the freshness test. The same data is served twice,
-        # the second time with one upcoming record's stamp set to 2026-01-01T00:00:00Z.
-        fid_count = lambda: fpg.evaluate("(() => { const t = [...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.includes('dated records carry')) || ''; const m = t.match(/(\\d+) of (\\d+)/); return m ? [+m[1], +m[2]] : null; })()")
-        fgo("")
-        before = fid_count()
+        # A verification older than 36 hours: the dot turns red and only rule dates count as confirmed. The same data is
+        # served with its verification stamp set three days before the fixed clock; the page must show what
+        # scripts/indices.py derives for that clock.
+        stale_at = "2026-09-21T16:00:00Z"
+        stale_d = {}
         def stale(route):
             resp = route.fetch(); d = resp.json()
-            for e in d["editions"]:
-                if e.get("id") == "b9f577965d09":
-                    e["verify"] = {**(e.get("verify") or {}), "last_verified": "2026-01-01T00:00:00Z", "checked": "2026-01-01T00:00:00Z"}
+            d["sources_checked"] = stale_at
+            stale_d.update(d)
             route.fulfill(response=resp, body=_json.dumps(d))
         fpg.route("**/data/runway.json*", stale)
         fgo("")
-        after = fid_count()
+        shown = fpg.evaluate("""({dot: (document.querySelector('#updated .stat') || {}).className || '', head: document.querySelector('#updated').innerText,
+            note: [...document.querySelectorAll('#updated .idx')].map(x => x.title).find(x => x.startsWith('Confirmation:')) || ''})""")
         fpg.unroute("**/data/runway.json*")
-        check("an ISO stamp older than 90 days fails the Fidelity freshness test", bool(before and after) and after[0] == before[0] - 1 and after[1] == before[1], f"{before} → {after}")
+        sx = indices.compute(stale_d, FIXED_NOW[:10], _dt.datetime.fromisoformat(FIXED_NOW))["reliability"] if stale_d else None
+        check("a verification older than 36 hours turns the dot red and counts only rule dates",
+              bool(sx) and shown["dot"] == "stat bad" and sx["machine"] == 0 and f"Reliability Index: {sx['pct']:.2f}%" in shown["head"] and "no nightly verification has been recorded in the last 36 hours" in shown["note"],
+              f"{shown['dot']}; derived {sx['pct'] if sx else None}; {shown['note'][:90]}")
         fctx.close()
         # A phone at the fixed clock: a record that started earlier this month and is still running stays in view.
         pctx = browser.new_context(viewport={"width": 390, "height": 664}, is_mobile=True, has_touch=True, timezone_id="America/New_York",
@@ -459,7 +478,7 @@ def main():
         shown = closed = False
         if n_idx:   # an older page has no index buttons: the check fails instead of stopping the run
             rpg.locator("#updated button.idx").first.click()
-            shown = rpg.locator("#idx-note").is_visible() and "dated records" in rpg.inner_text("#idx-note")
+            shown = rpg.locator("#idx-note").is_visible() and "qualifying dated meetings" in rpg.inner_text("#idx-note")
             rpg.keyboard.press("Escape")
             closed = not rpg.locator("#idx-note").is_visible()
         check("F16: each index opens its definition on click or tap; Escape closes it", n_idx == 2 and shown and closed, f"{n_idx} index buttons, shown={shown}, closed={closed}")

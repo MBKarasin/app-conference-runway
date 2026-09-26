@@ -962,8 +962,8 @@ details.month{scroll-margin-top:12px}
 
 /* ===== header stamp and list-card badges ===== */
 
-/* Status dot: the run's health, not decoration. Green = the last check landed and fidelity holds;
-   amber = fidelity below 95%; red = the last scheduled check did not complete. */
+/* Status dot: freshness only. Green = a nightly verification finished within 36 hours; red = none has.
+   (.warn is no longer set; kept so a cached page still styles.) */
 .mast .updated span::before{display:none!important}
 .mast .updated .stat{display:inline-block!important;width:8px;height:8px;border-radius:50%;
   margin-right:7px;vertical-align:1px;background:#1C7F48}
@@ -974,6 +974,7 @@ details.month{scroll-margin-top:12px}
 .mast .ledeRow{align-items:start}
 .mast .updated{align-self:start;padding-top:0;row-gap:2px}
 .mast .updated .stamp-line{display:block}
+.mast .updated .scan-line{font-size:.94em}
 .mast .updated .fidline{display:block;font-size:11.5px;font-weight:700;letter-spacing:.01em;
   color:#45606B;font-variant-numeric:tabular-nums}
 .mast .updated .fidline .idx{white-space:nowrap}

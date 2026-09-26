@@ -1,0 +1,29 @@
+{
+ "_readme": "Independent probes behind the Fidelity Index (site/AI-HANDOFF.md §3.4). A probe starts from frames published by third parties (lists of organizations, or of meetings) and reads each organizer's own events page without looking at the Runway. It counts the distinct qualifying dated meetings found in its window and how many of them the Runway already held; the Fidelity Index is held ÷ found for the latest probe. 'history' records the same count for sources brought up before the first probe. Add each new probe with its date; never remove one. The organization lists and the meetings found are kept with the curator's working files; every meeting a probe finds that the Runway lacks enters review.",
+ "probes": [
+  {
+   "id": "probe-2026-09-26",
+   "date": "2026-09-26",
+   "window": {"from": "2026-09-26", "to": "2027-12-31"},
+   "method": "Seven frames published by third parties: six lists of organizations, sampled by a fixed rule (every organization, or every second or third name in alphabetical order), and independent editorial lists of NP conferences. Each selected organizer's own events page was read without the Runway's data. A meeting qualifies if it is a dated conference, symposium or summit for APPs starting in the window; advocacy days, short courses, business meetings and meetings of unclear relevance to APPs are left out, as are three items read through a relay against the Runway's reading rules. Run by AI agents under the curator's direction.",
+   "frames": [
+    {"id": "F1", "label": "U.S. state PA associations", "found": 12, "held": 5},
+    {"id": "F2", "label": "U.S. state NP associations", "found": 9, "held": 1},
+    {"id": "F3", "label": "U.S. state nurse anesthetist associations", "found": 11, "held": 2},
+    {"id": "F4", "label": "PA specialty societies", "found": 10, "held": 5},
+    {"id": "F5", "label": "National NP/APN associations outside the United States", "found": 4, "held": 3},
+    {"id": "F6", "label": "National PA associations outside the United States", "found": 2, "held": 0},
+    {"id": "F7", "label": "Independent editorial lists of NP conferences", "found": 10, "held": 4}
+   ],
+   "counted_twice": 1,
+   "found": 57,
+   "held": 20,
+   "series_found": 53,
+   "series_held": 20
+  }
+ ],
+ "history": [
+  {"id": "outside-index-2026-09-23", "date": "2026-09-23", "source": "an outside conference index not previously captured", "found": 19, "held": 6},
+  {"id": "curator-lead-2026-09-24", "date": "2026-09-24", "source": "a meeting the curator brought up", "found": 1, "held": 0}
+ ]
+}

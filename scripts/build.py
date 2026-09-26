@@ -533,7 +533,7 @@ def main():
                 e["evidence"], e["evidence_auto"] = tidy_snippet(v["snippet"], e["start"]), True
         else:
             e["verify"] = {"state": "unchecked", "checked": None}
-    # The header's Reliability Index counts the records that the latest
+    # The Reliability Index's confirmation term (§3.4) counts the records that the latest
     # automated check re-confirmed from the organizer's own material: the start date, its year and a name word
     # found on the organizer's page (rendered in a browser when the page needs JavaScript) or, for a date the
     # organizer publishes only in a banner or flyer the record links, read from that image.
@@ -554,11 +554,17 @@ def main():
     # header stamps: when the nightly checker last read organizer pages, and the latest curator source review
     checked = [v.get("checked") for v in ver.values() if v.get("checked") and v.get("state") != "archived"]
     reviewed = [e.get("reviewed_on") for e in eds if e.get("source_reviewed") and e.get("reviewed_on")]
-    # The Fidelity Index pools the independent audits in sources/audits.json (§3.4): each audit gives its
-    # date, method, the records audited and the count found wrong.
+    # The header's indices (§3.4). Fidelity is the reach the latest independent probe measured (sources/probes.json:
+    # distinct qualifying meetings found and already held); Reliability's accuracy term is the latest audit in
+    # sources/audits.json (records audited and the count found wrong). Both ledgers travel with the data, so the
+    # page and scripts/indices.py compute from the same file.
     audits = json.load(open(SRC / "audits.json", encoding="utf-8")).get("audits", []) if (SRC / "audits.json").exists() else []
+    probes = json.load(open(SRC / "probes.json", encoding="utf-8")) if (SRC / "probes.json").exists() else {}
     out = {"built": dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"), "horizon": HORIZON,
            "audits": [{k: a[k] for k in ("id", "date", "method", "audited", "wrong") if k in a} for a in audits],
+           "probes": [{k: p[k] for k in ("id", "date", "window", "frames", "counted_twice", "found", "held", "series_found", "series_held") if k in p}
+                      for p in probes.get("probes", [])],
+           "probe_history": [{k: h[k] for k in ("id", "date", "source", "found", "held") if k in h} for h in probes.get("history", [])],
            "sources_checked": max(checked) if checked else None, "curator_reviewed": max(reviewed) if reviewed else None,
            "series": sorted([s for s in series.values()], key=lambda s: s["name"].lower()),
            "editions": all_eds}
