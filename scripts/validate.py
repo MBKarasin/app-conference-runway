@@ -156,6 +156,9 @@ if not isinstance(probes, list) or not probes:
 for p in probes if isinstance(probes, list) else []:
     pid, n, h, win = p.get("id"), p.get("found"), p.get("held"), p.get("window") or {}
     if not ISO.match(str(p.get("date") or "")): errs.append(f"probe {pid}: bad date")
+    # The Horizon scan stamp shows when the latest probe finished: an ISO instant in UTC, on or after its date.
+    if "finished" in p and not (re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", str(p["finished"])) and str(p["finished"])[:10] >= str(p.get("date"))):
+        errs.append(f"probe {pid}: finished must be a UTC instant (YYYY-MM-DDThh:mm:ssZ) on or after its date")
     if not (ISO.match(str(win.get("from") or "")) and ISO.match(str(win.get("to") or "")) and win["from"] <= win["to"]):
         errs.append(f"probe {pid}: the window needs ISO from and to dates in order")
     if not whole(n) or n <= 0: errs.append(f"probe {pid}: found must be a positive whole number")

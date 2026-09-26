@@ -13,7 +13,7 @@ Documentation, limitations, and how to check or challenge the project: the [AI H
 - Four views of the same filtered records: **List** (upcoming records by month), **Calendar** (a month grid), **Orbit** (the landing view: twelve months with the count of each record type) and **Directory** (every recurring series with its history).
 - Filters: **Discipline**, **Focus** (one record type at a time), **Scope**, **Location** and search. Every view is a shareable link. **Near City** takes a ZIP code or a place such as "Springfield, IL", "Portland ME" or "London, ON", and says so when it does not know a place.
 - Each record shows its source link and the organizer's quoted wording. Phones get a mobile layout, with a link to the desktop layout.
-- The header shows two time stamps, **Verified** (the latest nightly verification) and **Horizon scan** (the latest search for meetings not yet listed), and the two indices below.
+- The header shows two time stamps, each with a status dot: **Verified** (the latest nightly verification; green, or red after 36 hours) and **Horizon scan** (the latest search for meetings not yet listed; green, yellow after 8 days, red after 14). The two indices sit below them.
 
 ## How it stays current
 

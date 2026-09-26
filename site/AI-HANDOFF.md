@@ -84,7 +84,7 @@ The page recomputes both indices in the visitor's browser from `site/data/runway
 **Time stamps.** The header carries two:
 
 - **Verified**: when the latest recorded nightly verification ran, in New York time. It drives Reliability's confirmation term and the record labels. Its dot is green when a verification was recorded within 36 hours and red otherwise.
-- **Horizon scan**: the date of the latest probe for meetings the Runway does not yet list. It sets Fidelity. The scan is to run weekly; so far it has been run by hand, on 2026-09-26.
+- **Horizon scan**: when the latest probe for meetings the Runway does not yet list finished, in New York time. It sets Fidelity. Its dot is green when a scan finished within the last 8 days (weekly, with a day's grace), yellow at 8 to 14 days (a weekly scan overdue) and red after 14 days or before any scan. The scan is to run weekly; so far it has been run by hand, on 2026-09-26.
 
 **Labels.** A record that passed its check carries none; others read **Save the date**, **Set by rule**, **Recorded when published** or **Expected month** (never a day). A record confirmed by neither the latest check nor a current manual review is an exception ("Date needs review" or "Source not re-checked"), which **Needs review only** lists. Where an organizer's own pages disagree, the record follows the organizer's primary event page and states the disagreement inside it.
 

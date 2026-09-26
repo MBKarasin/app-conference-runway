@@ -962,13 +962,14 @@ details.month{scroll-margin-top:12px}
 
 /* ===== header stamp and list-card badges ===== */
 
-/* Status dot: freshness only. Green = a nightly verification finished within 36 hours; red = none has.
-   (.warn is no longer set; kept so a cached page still styles.) */
+/* Status dots: freshness only. Verified: green = a nightly verification recorded within 36 hours; red = none.
+   Horizon scan: green = a scan within 8 days; yellow = 8 to 14 days (a weekly scan overdue); red = none in 14 days.
+   Yellow carries a dark ring so the dot keeps 3:1 contrast on the light header. */
 .mast .updated span::before{display:none!important}
 .mast .updated .stat{display:inline-block!important;width:8px;height:8px;border-radius:50%;
   margin-right:7px;vertical-align:1px;background:#1C7F48}
 .mast .updated .stat.ok{background:#1C7F48}
-.mast .updated .stat.warn{background:#C25100}
+.mast .updated .stat.warn{background:#F2C200;box-shadow:inset 0 0 0 1px #8C6D00}
 .mast .updated .stat.bad{background:#CC0033}
 /* The stamp sits level with the first line of the lede, with the Fidelity and Reliability indices beneath it. */
 .mast .ledeRow{align-items:start}

@@ -921,7 +921,7 @@
     const p = latest(P), held = Number(p.held) || 0, found = Number(p.found);
     const [lo, hi] = wilsonInterval(held, found);
     const w = p.window || {};
-    return { pct: (100 * held) / found, held, found, low: 100 * lo, high: 100 * hi, date: p.date,
+    return { pct: (100 * held) / found, held, found, low: 100 * lo, high: 100 * hi, date: p.date, finished: p.finished || null,
              from: w.from, to: w.to, frames: (p.frames || []).length };
   }
   // 95% Wilson score interval for a proportion x/n, as [low, high]; [0, 0] when nothing was audited.
@@ -1428,11 +1428,21 @@
     }
     prep(d);
     // Two time stamps (§3.4). Verified: when the latest recorded nightly verification ran; it drives Reliability and the
-    // record labels. Horizon scan: the date of the latest probe for meetings the Runway does not list; it sets Fidelity.
+    // record labels. Horizon scan: when the latest probe for meetings the Runway does not list finished; it sets Fidelity.
     const checkedAt = d.sources_checked || null;
     const verStamp = checkedAt ? stampET(checkedAt) : "not yet run";
     const f = fidelityIndex();
-    const scanStamp = f && f.date ? dayStamp(f.date) : "not yet run";
+    const scanAt = f && f.finished ? f.finished : null;
+    const scanStamp = scanAt ? stampET(scanAt) : f && f.date ? dayStamp(f.date) : "not yet run";
+    // The scan's dot, for a weekly scan: green within 8 days (a week and a day's grace), yellow within 14 (one weekly scan
+    // missed), red after 14 days or when no scan has run. A probe recorded only by its date counts from noon that day, New York.
+    const scanRef = scanAt || (f && f.date ? f.date + "T16:00:00Z" : null);
+    const scanDays = scanRef ? (Date.now() - Date.parse(scanRef)) / 864e5 : Infinity;
+    const scanTone = scanDays <= 8 ? "ok" : scanDays <= 14 ? "warn" : "bad";
+    const scanTip = !scanRef ? "No horizon scan has run yet, so the Fidelity Index has no reading."
+      : scanTone === "ok" ? "The latest horizon scan finished within the last 8 days (weekly, with a day's grace)."
+      : scanTone === "warn" ? "The latest horizon scan finished 8 to 14 days ago: a weekly scan is overdue. Fidelity is as of the time shown."
+      : "No horizon scan has finished in the last 14 days. Fidelity is as of the time shown.";
     // The dot reports freshness only: red when no nightly verification has been recorded in 36 hours, green otherwise.
     const failed = !checkedAt || (Date.now() - Date.parse(checkedAt)) / 36e5 > 36;
     const tone = failed ? "bad" : "ok";
@@ -1459,8 +1469,8 @@
       r ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(relTip)}" data-note="${esc(relTip)}">Reliability Index: ${r.pct.toFixed(2)}%</button>` : ""
     ].filter(Boolean);
     $("#updated").innerHTML =
-      `<span class="stamp-line"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i>Verified ${esc(verStamp)}</span>` +
-      `<span class="stamp-line scan-line" title="The date of the latest probe for meetings the Runway does not yet list; it sets the Fidelity Index.">Horizon scan ${esc(scanStamp)}</span>` +
+      `<span class="stamp-line"><i class="stat ${tone}" role="img" aria-label="${esc(dotTip)}" title="${esc(dotTip)}"></i>Verified ${esc(verStamp)}</span>` +
+      `<span class="stamp-line scan-line"><i class="stat ${scanTone}" role="img" aria-label="${esc(scanTip)}" title="${esc(scanTip)}"></i>Horizon scan ${esc(scanStamp)}</span>` +
       (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span><span class="idx-note" id="idx-note" role="note" hidden></span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     const lt = $(".layout-toggle");

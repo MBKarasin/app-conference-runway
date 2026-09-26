@@ -133,14 +133,20 @@ def main():
         titles = page.evaluate("[...document.querySelectorAll('#updated .idx')].map(x => x.title)")
         fid_note = next((t for t in titles if t.startswith("Reach:")), "")
         check("Fidelity note states the probe basis", bool(fx) and f"Of the {fx['found']} qualifying dated meetings" in fid_note and f"the Runway already held {fx['held']}" in fid_note, fid_note[:160])
-        check("Horizon scan shows the latest probe's date", bool(fx) and page.evaluate("s => document.querySelector('#updated .scan-line').textContent.endsWith(s)", _dt.date.fromisoformat(fx["date"]).strftime("%b %-d, %Y")),
-              page.evaluate("(document.querySelector('#updated .scan-line') || {}).textContent || ''"))
+        # Horizon scan: when the latest probe finished, in New York time, formatted like the Verified stamp.
+        from zoneinfo import ZoneInfo as _ZI
+        norm = lambda t: re.sub(r"[\u202f\u00a0]", " ", t or "").strip()
+        scan_txt = norm(page.evaluate("(document.querySelector('#updated .scan-line') || {}).textContent || ''"))
+        want_scan = (_dt.datetime.fromisoformat(fx["finished"].replace("Z", "+00:00")).astimezone(_ZI("America/New_York")).strftime("%b %-d, %Y, %-I:%M:%S %p %Z")
+                     if fx.get("finished") else None)
+        check("Horizon scan shows when the latest probe finished (a timestamp, New York time)", bool(want_scan) and scan_txt == "Horizon scan " + want_scan, f"{scan_txt!r} vs {want_scan!r}")
         check("Reliability Index matches its definition re-derived from the data (confirmation x latest audit)", f"Reliability Index: {rel:.2f}%" in head,
               f"derived {rel:.2f}% = ({rx['machine']} machine + {rx['rule']} rule) / {rx['upcoming_dated']} x {rx['right']}/{rx['audited']}, fresh={ix['fresh']}")
         rel_note = next((t for t in titles if t.startswith("Confirmation:")), "")
         check("Reliability note states the confirmation and audit basis", f"{rx['ok']} of {rx['upcoming_dated']} upcoming dated records" in rel_note and (not rx["audited"] or f"found {rx['right']} of {rx['audited']} audited records" in rel_note), rel_note[:200])
-        dot = page.evaluate("(document.querySelector('#updated .stat') || {}).className || ''")
-        check("status dot reports freshness only (green within 36 hours, red after)", dot == "stat " + ("ok" if ix["fresh"] else "bad"), f"{dot}; fresh={ix['fresh']}")
+        dots = page.evaluate("[...document.querySelectorAll('#updated .stat')].map(x => x.className + '|' + (x.getAttribute('aria-label') || ''))")
+        check("Verified dot reports freshness only (green within 36 hours, red after), with a text label", bool(dots) and dots[0].startswith("stat " + ix["verified_tone"] + "|") and len(dots[0].split("|", 1)[1]) > 20, f"{dots}; fresh={ix['fresh']}")
+        check("Horizon scan dot: green within 8 days, yellow within 14, red after (with a text label)", len(dots) == 2 and dots[1].startswith("stat " + ix["scan"]["tone"] + "|") and len(dots[1].split("|", 1)[1]) > 20, f"{dots}; scan={ix['scan']}")
 
         # 4. Landmark celebration weeks in every view (next dated edition of each).
         series = {s["id"]: s for s in data["series"]}
@@ -427,6 +433,21 @@ def main():
         check("a verification older than 36 hours turns the dot red and counts only rule dates",
               bool(sx) and shown["dot"] == "stat bad" and sx["machine"] == 0 and f"Reliability Index: {sx['pct']:.2f}%" in shown["head"] and "no nightly verification has been recorded in the last 36 hours" in shown["note"],
               f"{shown['dot']}; derived {sx['pct'] if sx else None}; {shown['note'][:90]}")
+        # A horizon scan 10 days old turns its dot yellow, and 20 days old red (at the fixed clock).
+        for days, want in ((10, "stat warn"), (20, "stat bad")):
+            at = (_dt.datetime.fromisoformat(FIXED_NOW) - _dt.timedelta(days=days)).astimezone(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+            def old_scan_at(at):   # a factory, not a default argument: Playwright passes a handler's second argument the request
+                def old_scan(route):
+                    resp = route.fetch(); d = resp.json()
+                    for pr in d.get("probes") or []:
+                        pr["finished"], pr["date"] = at, at[:10]
+                    route.fulfill(response=resp, body=_json.dumps(d))
+                return old_scan
+            fpg.route("**/data/runway.json*", old_scan_at(at))
+            fgo("")
+            got = fpg.evaluate("[...document.querySelectorAll('#updated .stat')].map(x => x.className)")
+            fpg.unroute("**/data/runway.json*")
+            check(f"a horizon scan {days} days old turns its dot {'yellow' if want.endswith('warn') else 'red'}", got[1:2] == [want], str(got))
         fctx.close()
         # A phone at the fixed clock: a record that started earlier this month and is still running stays in view.
         pctx = browser.new_context(viewport={"width": 390, "height": 664}, is_mobile=True, has_touch=True, timezone_id="America/New_York",
