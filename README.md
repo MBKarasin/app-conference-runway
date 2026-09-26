@@ -1,12 +1,12 @@
 # APP Conference Runway
 
-A source-traced calendar of conferences, abstract deadlines, student and DNP project venues, and observances for advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs). Every upcoming dated entry links to the organizer's own material and, unless computed from a published rule, quotes the wording its date came from, so a visitor can confirm it before registering, submitting or traveling. Coverage is concentrated in the United States and is not exhaustive.
+A source-traced calendar of conferences, abstract deadlines, student and DNP project venues, and observances for advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs). Every upcoming dated entry links to the organizer's own material and, unless computed from a published rule, quotes the wording its date came from, so a visitor can confirm it before registering, submitting or traveling. The project is global in scope and incomplete; current coverage remains concentrated in the United States.
 
 **Live site:** https://mbkarasin.github.io/app-conference-runway/. It is kept out of search engines by design (a `noindex` tag and `robots.txt`) and is shared directly among APPs.
 
-The site is independent. It is not an official publication of, or endorsement by, Rutgers University or RWJBarnabas Health. It is curated by Dr. Mark Karasin, DNP, APN, AGACNP-BC, who decides what is published; AI assistants (Claude by Anthropic; ChatGPT by OpenAI) were used for research, implementation and review.
+The site is independent. It is not an official publication of, or endorsement by, Rutgers University or RWJBarnabas Health. It is curated by Dr. Mark Karasin, DNP, APN, AGACNP-BC, who decides what is published. Deterministic software and AI systems—including local models, Claude by Anthropic and ChatGPT by OpenAI—may assist research, implementation and independent review; no model decides what is published.
 
-How it works, its limits, and how to reproduce or challenge it: [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Terms of reuse: [`LICENSE`](LICENSE) (CC0 for the curator's own work). Contact: mark.karasin@protonmail.com.
+Documentation, limitations, and instructions for reproducing or challenging the project: [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Terms of reuse: [`LICENSE`](LICENSE) (CC0 for the curator's own work). Contact: mark.karasin@protonmail.com.
 
 ## What a visitor sees
 
@@ -16,10 +16,10 @@ How it works, its limits, and how to reproduce or challenge it: [`site/AI-HANDOF
 
 ## How it stays current
 
-- Every night a GitHub Action re-reads the organizer pages of records that have not ended, writes `data/verification.json` and `data/check_report.md`, archives the day's generated data under `data/snapshots/`, and redeploys if the check and validation pass.
+- Every night a GitHub Action attempts the organizer pages of records that have not ended, writes `data/verification.json` and `data/check_report.md`, archives the day's generated data under `data/snapshots/`, and redeploys if the check and validation pass. Unreadable sources are reported rather than silently treated as corrections.
 - Dates that no longer match are listed in the issue **"Runway: dates to review"**. Corrections go in `sources/overrides.json` with a `_why`, a `reviewed_on` date, the organizer's verbatim wording and the exact URL or image; the build gate rejects a correction without them.
 - Meetings that have ended are kept as captured and are not re-read.
-- New meetings go in a `sources/group_*.json` file, following `sources/SCHEMA.md`.
+- New meetings enter a `sources/group_*.json` file, following `sources/SCHEMA.md`, only after the organizer evidence has been reviewed. The governed expansion will generate candidates outside the publication files first.
 
 ## Repository map
 
@@ -51,7 +51,7 @@ The maintenance run, the interface check and hosting a copy are in §6 of the ha
 
 ## Header indices
 
-Both are recomputed in the browser from `site/data/runway.json` and defined in full in [§3.4 of the handoff](site/AI-HANDOFF.md#34-verification-pipeline).
+Both are recomputed in the browser from `site/data/runway.json` and defined in full in [§3.4 of the handoff](site/AI-HANDOFF.md#34-nightly-verification-and-admission-pipeline).
 
 - **Fidelity Index:** evidence coverage (the share of dated records that carry the organizer's wording or a published rule, a good verification state and a current source link) multiplied by projected correctness (one minus the error rate pooled from independent audits).
 - **Reliability Index:** the share of dated records not yet ended that the latest automated check re-confirmed from the organizer's own page or image, plus dates computed from a published rule. Manual reviews never count.

@@ -834,6 +834,7 @@ details.month{scroll-margin-top:12px}
 
 /* The site renders its light "clinical ledger" palette regardless of device theme; a reviewed dark palette is a roadmap item */
 :root{color-scheme:light}
+
 .calnav h2{order:initial;width:auto} /* inside the grid nav, cancel the narrow-screen .calhead h2 rule (order:-1; width:100%) */
 .partner{min-height:24px;padding:2px 0}
 .orbit-core strong.span{font-size:33px;letter-spacing:0;white-space:nowrap}

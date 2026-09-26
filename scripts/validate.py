@@ -105,8 +105,12 @@ anchors = {
     "4th BRICS+ Nursing Conference": "2026-10-21",
     "II Simpósio Internacional de Enfermagem – Práticas Avançadas": "2026-11-25",
 }
+def stable_series_name(name):
+    """Ignore a display-only trailing edition year when checking a recurring series anchor."""
+    return re.sub(r"\s+20\d{2}$", "", name).strip()
+
 for name, start in anchors.items():
-    if not any(S[e["series"]]["name"] == name and e["start"] == start
+    if not any(stable_series_name(S[e["series"]]["name"]) == name and e["start"] == start
                and e.get("verify", {}).get("state") in ("verified", "rule", "conflict", "announced") for e in d["editions"]):
         errs.append(f"missing or unreviewed anchor: {name} {start}")
 app_week = next((e for e in d["editions"] if S[e["series"]]["name"] == "National APP Week" and e["start"] == "2026-09-21"), None)
