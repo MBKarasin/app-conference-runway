@@ -1,6 +1,6 @@
-# Link check — 2026-09-26
+# Link check — 2026-09-27
 
-Links: 1018 · ok 876 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 · HTTP 406 2 · HTTP 401 1
+Links: 1025 · ok 876 · HTTP 403 100 · HTTP 404 27 · robots 9 · URLError 9 · HTTP 406 2 · HTTP 401 1 · TimeoutError 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -118,6 +118,20 @@ Links: 1018 · ok 876 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 �
   - Padjadjaran International Nursing Conference (org_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2026-11-07 (source_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2027-10-01 (source_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2028-10-01 (source_url)
 - HTTP 404 — https://shmconverge.hospitalmedicine.org/wp-content/uploads/2023/11/BIZ-23-0029-Converge-2024-Partner-Catalog-FNL.pdf
   - society-of-hospital-medicine__shm-converge 2024-04-12 (source_url)
+- HTTP 403 — https://site.thoracic.org/about-us/news/bringing-together-the-global-respiratory-community-at-ats-2023
+  - american-thoracic-society__ats-international-conference 2023-05-19 (source_url)
+- HTTP 403 — https://site.thoracic.org/about-us/news/lets-shape-the-future-of-respiratory-health-at-ats-2024
+  - american-thoracic-society__ats-international-conference 2024-05-17 (source_url)
+- HTTP 403 — https://site.thoracic.org/conference
+  - ATS International Conference (org_url); american-thoracic-society__ats-international-conference 2027-05-14 (call)
+- HTTP 403 — https://site.thoracic.org/conference/about/conference-history/past-annual-meetings-international-conferences
+  - ATS International Conference (archive_url)
+- HTTP 403 — https://site.thoracic.org/conference/attendees/future-conferences
+  - american-thoracic-society__ats-international-conference 2027-05-14 (source_url); american-thoracic-society__ats-international-conference 2028-05-19 (source_url); american-thoracic-society__ats-international-conference 2029-05-18 (source_url)
+- HTTP 403 — https://site.thoracic.org/events/ats-2025-international-conference
+  - american-thoracic-society__ats-international-conference 2025-05-17 (source_url)
+- HTTP 403 — https://site.thoracic.org/events/ats-international-conference
+  - american-thoracic-society__ats-international-conference 2026-05-15 (source_url)
 - HTTP 403 — https://summit.nln.org/
   - NLN Education Summit (org_url); national-league-for-nursing__nln-education-summit 2026-09-23 (source_url); national-league-for-nursing__nln-education-summit 2028-09-01 (source_url); national-league-for-nursing__nln-education-summit 2029-09-01 (source_url)
 - HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
@@ -228,6 +242,8 @@ Links: 1018 · ok 876 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 �
   - IPAS Fall CME Conference (Healthcare in the Heartland) (org_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2026-10-26 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2027-10-01 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2028-10-01 (source_url)
 - HTTP 403 — https://www.michigan.gov/whitmer/news/proclamations/2025/10/19/october-19-25-2025-doctor-of-nursing-practice-week
   - obs__national-dnp-week 2025-10-19 (source_url)
+- TimeoutError — https://www.mpa2026.org/abstract-submission-guideline.php
+  - malaysian-paediatric-association-mpa-and__mpa-annual-congress-pediatric-nursing-symposium 2026-10-29 (call)
 - HTTP 404 — https://www.newjerseyena.org/ecc2026
   - new-jersey-emergency-nurses-association__nj-emergency-care-conference 2026-03-18 (detail_url)
 - HTTP 403 — https://www.nonpf.org/events/EventDetails.aspx?id=1958293
@@ -252,8 +268,6 @@ Links: 1018 · ok 876 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 �
   - rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (source_url)
 - HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
-- URLError — https://www.svnnet.org/page/annualconference
-  - SVN Annual Conference (org_url); society-for-vascular-nursing__svn-annual-conference 2027-06-02 (source_url); society-for-vascular-nursing__svn-annual-conference 2028-06-01 (source_url); society-for-vascular-nursing__svn-annual-conference 2029-06-01 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
 - HTTP 403 — https://www.thenpa.org/
