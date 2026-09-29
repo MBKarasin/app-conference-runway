@@ -1,6 +1,6 @@
-# Link check — 2026-09-28
+# Link check — 2026-09-29
 
-Links: 1025 · ok 878 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 · TimeoutError 4 · HTTP 406 2 · HTTP 401 1
+Links: 1025 · ok 884 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 · HTTP 401 1 · HTTP 406 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -74,8 +74,6 @@ Links: 1025 · ok 878 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - heart-rhythm-society__heart-rhythm 2027-05-13 (call)
 - HTTP 403 — https://heartrhythm.com/heart-rhythm-2026
   - heart-rhythm-society__heart-rhythm 2026-04-23 (detail_url); heart-rhythm-society__heart-rhythm 2026-04-23 (source_url)
-- URLError — https://hemsirelikkongresi.com/
-  - t-rk-hem-ireler-derne-i-turkish-nurses-a__9-uluslararas-20-ulusal-hem-irelik-kongresi-intern 2026-05-14 (source_url)
 - HTTP 404 — https://idweek.org/wp-content/uploads/2024/06/1218-IDWeek-Exhibitor-Prospectus-202422.pdf
   - idsa-shea-hivma-pids-and-sidp-joint-meet__idweek 2024-10-16 (source_url)
 - URLError — https://imsh2023.org/about
@@ -130,6 +128,8 @@ Links: 1025 · ok 878 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
+- URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
+  - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
 - URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
   - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
 - URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
@@ -152,6 +152,8 @@ Links: 1025 · ok 878 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - american-association-for-men-in-nursing__aamn-annual-conference 2024-10-17 (source_url)
 - HTTP 404 — https://www.aana.com/event/national-crna-week-2025/
   - american-association-of-nurse-anesthesio__national-crna-week 2025-01-19 (source_url)
+- HTTP 404 — https://www.aanp.org/events/2023-hpc
+  - american-association-of-nurse-practition__health-policy-conference 2023-01-29 (source_url)
 - HTTP 404 — https://www.aapa.org/cme-calendar/pa-institute-2025/
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2025-12-11 (source_url)
 - HTTP 403 — https://www.academyonline.org/page/FallConference
@@ -168,14 +170,6 @@ Links: 1025 · ok 878 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2024-08-29 (source_url)
 - HTTP 404 — https://www.apao.cc/assets/Conference/2025Symposium/APAO25%2028th%20Annual%20Exhibitor%20Prospectus%20Final%205.22.25.pdf
   - association-of-pas-in-oncology-apao__annual-oncology-symposium-for-the-healthcare-provi 2025-09-25 (source_url)
-- TimeoutError — https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/
-  - Advanced Practice Provider (APRN & PA) Leadership Summit (archive_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2023-09-13 (source_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2024-09-18 (source_url); advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2025-09-10 (source_url)
-- TimeoutError — https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/presentations/?pid=48710
-  - advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2023-09-13 (detail_url)
-- TimeoutError — https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/presentations/?pid=51864
-  - advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2024-09-18 (detail_url)
-- TimeoutError — https://www.appexecutives.org/conferences/advanced-practice-leadership-summit/past-summits/presentations/?pid=55984
-  - advanced-practice-provider-executives-in__advanced-practice-provider-aprn-pa-leadership-summ 2025-09-10 (detail_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-2025-asco-annual-meeting
   - american-society-of-clinical-oncology__asco-annual-meeting 2025-05-30 (source_url)
 - HTTP 403 — https://www.asco.org/about-asco/press-center/news-releases/new-research-highlights-lifestyle-treatment-strategies-2026-annual-meeting
@@ -224,8 +218,6 @@ Links: 1025 · ok 878 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - american-college-of-cardiology__acc-27-annual-scientific-session 2025-03-29 (source_url)
 - HTTP 401 — https://www.gapna.org/education/past-conferences
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
-- HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
-  - Psych Congress PA Institute (org_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (call); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2027-12-01 (source_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2028-12-01 (source_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (source_url)
 - HTTP 404 — https://www.hospitalmedicine.org/news-publications/press-releases/society-of-hospital-medicine-brings-annual-conference-shm-converge-to-austin-tx/
@@ -262,10 +254,6 @@ Links: 1025 · ok 878 · HTTP 403 93 · HTTP 404 26 · URLError 12 · robots 9 �
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
-- URLError — https://www.texasnurses.org/page/SIU
-  - texas-nurses-association__tna-annual-conference 2026-06-11 (detail_url); texas-nurses-association__tna-annual-conference 2026-06-11 (source_url)
-- URLError — https://www.thder.org.tr/
-  - 9. Uluslararası 20. Ulusal Hemşirelik Kongresi (9th International, 20th National Nursing Congress) (org_url); t-rk-hem-ireler-derne-i-turkish-nurses-a__9-uluslararas-20-ulusal-hem-irelik-kongresi-intern 2028-05-01 (source_url)
 - HTTP 403 — https://www.thenpa.org/
   - NPA Annual Conference (NP26) (org_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2027-10-01 (source_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2028-10-01 (source_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2029-10-01 (source_url)
 - HTTP 403 — https://www.thenpa.org/page/Conferences
