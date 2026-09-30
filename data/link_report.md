@@ -1,6 +1,6 @@
-# Link check — 2026-09-29
+# Link check — 2026-09-30
 
-Links: 1025 · ok 884 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 · HTTP 401 1 · HTTP 406 1
+Links: 1025 · ok 881 · HTTP 403 93 · HTTP 404 28 · URLError 11 · robots 9 · HTTP 406 2 · HTTP 401 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -202,6 +202,8 @@ Links: 1025 · ok 884 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 �
   - cooper-university-health-care__advanced-practice-provider-symposium 2025-09-23 (source_url)
 - HTTP 403 — https://www.cooperhealth.org/sites/default/files/CME%202024/APP%20Symposium/2024%20APP%20Symposium-Schedule-final%20vertical.pdf
   - cooper-university-health-care__advanced-practice-provider-symposium 2024-11-01 (source_url)
+- HTTP 404 — https://www.crnasofmd.org/2026-mana-fall-meeting
+  - maryland-association-of-nurse-anesthetis__mana-fall-meeting 2026-09-11 (source_url)
 - HTTP 403 — https://www.ena.org/
   - Emergency Nursing (ENA Annual Conference) (org_url); Global Emergency Nursing Conference (org_url); emergency-nurses-association__emergency-nursing-ena-annual-conference 2028-09-01 (source_url); emergency-nurses-association__emergency-nursing-ena-annual-conference 2029-09-01 (source_url)
 - HTTP 403 — https://www.ena.org/about-us/emergency-nurses-week
@@ -218,6 +220,8 @@ Links: 1025 · ok 884 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 �
   - american-college-of-cardiology__acc-27-annual-scientific-session 2025-03-29 (source_url)
 - HTTP 401 — https://www.gapna.org/education/past-conferences
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
+- HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
+  - Psych Congress PA Institute (org_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (call); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2027-12-01 (source_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2028-12-01 (source_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (source_url)
 - HTTP 404 — https://www.hospitalmedicine.org/news-publications/press-releases/society-of-hospital-medicine-brings-annual-conference-shm-converge-to-austin-tx/
@@ -244,6 +248,8 @@ Links: 1025 · ok 884 · HTTP 403 93 · HTTP 404 27 · URLError 10 · robots 9 �
   - nurse-practitioner-association-of-maryla__npam-fall-conference 2025-11-15 (source_url)
 - HTTP 403 — https://www.pacnp.org/
   - PCNP Annual Education Conference (org_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2027-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2028-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2029-10-01 (source_url)
+- URLError — https://www.pana.org/page/Events
+  - PANA Fall Symposium (org_url); PANA Spring Symposium (org_url); pennsylvania-association-of-nurse-anesth__pana-fall-symposium 2025-11-14 (source_url); pennsylvania-association-of-nurse-anesth__pana-fall-symposium 2026-11-20 (source_url)
 - HTTP 403 — https://www.rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf
   - Acute and Critical Care APP Symposium (org_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2024-06-24 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2024-06-24 (source_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2027-06-01 (source_url)
 - HTTP 403 — https://www.rwjbh.org/documents/rwj-new-brunswick/Fundamental-Critical-Care-Support-Course-2023.pdf
