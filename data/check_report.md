@@ -1,6 +1,6 @@
-# Nightly source check — 2026-09-30
+# Nightly source check — 2026-10-01
 
-Generated 2026-09-30T11:29:10Z from commit fe00c35. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-01T11:57:39Z from commit e3f97af. This report is the canonical status; the review issue is rewritten from it on every run.
 
 Editions re-checked: 274 · verified 250 · not found 2 · unreachable 22
 Checker could not match: 24 · of these, curator evidence on file: 24 · open: 0
