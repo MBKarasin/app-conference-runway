@@ -1,26 +1,20 @@
-# Nightly source check — 2026-10-02
+# Nightly source check — 2026-10-03
 
-Generated 2026-10-02T11:29:02Z from commit 5bbd986. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-03T10:44:44Z from commit 05f93f9. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 271 · verified 247 · not found 3 · unreachable 21
-Checker could not match: 24 · of these, curator evidence on file: 23 · open: 1
+Editions re-checked: 265 · verified 242 · not found 3 · unreachable 20
+Checker could not match: 23 · of these, curator evidence on file: 22 · open: 1
 Confirmed by the second readers: rendered after JavaScript 2 · read from the organizer's image 2
-Past editions frozen (not re-read): 621
-
-## Newly failing (were verified last run) — review these first
-
-- [ ] **VCNP Annual Conference** (2027-03-03): not on page: date — https://www.vcnp.net/events
+Past editions frozen (not re-read): 627
 
 ## Date not found on the organizer page — open (1)
 
 - VCNP Annual Conference — 2027-03-03 — not on page: date — https://www.vcnp.net/events
 
-## Checker could not match, curator evidence on file (23)
+## Checker could not match, curator evidence on file (22)
 
 - AVA Annual Scientific Meeting — 2026-10-01 — reviewed 2026-09-24 — https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400
 - NPA Annual Conference (NP26) — 2026-10-01 — reviewed 2026-09-22 — https://www.thenpa.org/page/NP26
-- V&VN VS Annual Congress — 2026-10-01 — reviewed 2026-09-24 — https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs
-- National Midwifery Week — 2026-10-04 — reviewed ? — https://midwife.org/national-midwifery-week/
 - Emergency Nurses Week — 2026-10-11 — reviewed ? — https://www.ena.org/about-us/emergency-nurses-week
 - 2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society) — 2026-10-18 — reviewed 2026-09-22 — https://www.tnpa.org.tw/events/content.php?id=6262
 - CANO/ACIO Annual Conference — 2026-10-22 — reviewed 2026-09-22 — https://www.cano-acio.ca/page/cano2026
@@ -30,6 +24,7 @@ Past editions frozen (not re-read): 621
 - Padjadjaran International Nursing Conference — 2026-11-07 — reviewed 2026-09-24 — https://pinc.fkep.unpad.ac.id/
 - Qatar Health Congress — 2026-11-11 — reviewed 2026-09-22 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
+- Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-09-24 — https://aahpm.org/education-events/annual-assembly/
 - ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-25 — https://enrs2027conference.oa-event.com/
 - Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-09-22 — https://www.academyonline.org/page/conferences
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-09-22 — https://amia.org/education-events/2027-amplify-informatics-conference
@@ -41,4 +36,4 @@ Past editions frozen (not re-read): 621
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=2
+OPEN_ITEMS=1
