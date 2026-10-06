@@ -1468,9 +1468,14 @@
       f ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(fidTip)}" data-note="${esc(fidTip)}">Fidelity Index: ${f.pct.toFixed(2)}%</button>` : "",
       r ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(relTip)}" data-note="${esc(relTip)}">Reliability Index: ${r.pct.toFixed(2)}%</button>` : ""
     ].filter(Boolean);
+    // Curator reviewed (2026-10-06, curator's instruction): the date of the last supervised manual reconciliation of the
+    // published records, carried in data/runway.json as curator_reviewed. Verified and Horizon scan are automated; this is not.
+    const cur = /^\d{4}-\d{2}-\d{2}$/.test(d.curator_reviewed || "") ? d.curator_reviewed : null;
+    const curTip = cur ? `Curator reviewed ${dayStamp(cur)}: the last supervised manual reconciliation of the published records by the curator. Verified and Horizon scan are automated checks; this date is a human review and changes only when one is recorded.` : "";
     $("#updated").innerHTML =
       `<span class="stamp-line"><i class="stat ${tone}" role="img" aria-label="${esc(dotTip)}" title="${esc(dotTip)}"></i>Verified ${esc(verStamp)}</span>` +
       `<span class="stamp-line scan-line"><i class="stat ${scanTone}" role="img" aria-label="${esc(scanTip)}" title="${esc(scanTip)}"></i>Horizon scan ${esc(scanStamp)}</span>` +
+      (cur ? `<span class="stamp-line cur-line"><span class="cur-badge" role="img" aria-label="${esc(curTip)}" title="${esc(curTip)}">Curator reviewed ${esc(dayStamp(cur))}</span></span>` : "") +
       (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span><span class="idx-note" id="idx-note" role="note" hidden></span>` : "");
     $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     const lt = $(".layout-toggle");

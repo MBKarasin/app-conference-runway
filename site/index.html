@@ -17,7 +17,7 @@
 <link rel="icon" href="favicon-app-v2-32.png?v=661bd95e" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon-app-v2.png?v=ff46de7a" sizes="180x180">
 <link rel="mask-icon" href="safari-pinned-tab-app-v2.svg?v=1eb02501" color="#CC0033">
-<link rel="stylesheet" href="assets/app.css?v=20260926-3">
+<link rel="stylesheet" href="assets/app.css?v=20261006-1">
 </head>
 <body>
 <div class="layout-strip"><button type="button" class="layout-toggle" data-act="layout"></button></div>
@@ -26,6 +26,7 @@
   <div class="titlerow">
     <h1 class="brand-heading"><a class="home brand-link" href="./" title="Back to the landing page"><img class="brand-logo" src="assets/app-conference-runway-logo.png" width="1870" height="355" alt="APP Conference Runway" decoding="async" fetchpriority="high"></a></h1>
     <div class="headactions">
+      <button type="button" class="hbtn hbtn-about" data-about-open aria-haspopup="dialog" aria-controls="about" title="A one-minute orientation: what this site is, how to move through it, and how to read a record"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 7.2v4.3M8 4.6v.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>What am I looking at?</button>
       <button class="hbtn" data-act="copyview" title="Copy a link to exactly what you're looking at now"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3M7 4.5l1.5-1.5a2.8 2.8 0 014 4L11 8.5M9 11.5L7.5 13a2.8 2.8 0 01-4-4L5 7.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span class="hb-long">Copy link to this view</span><span class="hb-short">Copy link</span></button>
       <button class="hbtn" data-act="share" title="Copy a short note and the link, ready to send to a colleague"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11 5.5a2 2 0 10-1.9-2.6L6 4.6a2 2 0 100 2.8l3.1 1.7a2 2 0 10.5-1L6.5 6.4a2 2 0 000-.8l3.1-1.7c.36.4.87.6 1.4.6z" fill="currentColor"/></svg><span class="hb-long">Share with a colleague</span><span class="hb-short">Share</span></button>
       <a class="hbtn" data-request href="#"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 4l6 5 6-6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span class="hb-long">Make a request</span><span class="hb-short">Request</span></a>
@@ -88,8 +89,27 @@
 </footer>
 
 <dialog id="dlg" aria-label="Meeting details"></dialog>
-<script src="assets/config.js?v=20260924-8"></script>
+<dialog id="about" aria-labelledby="aboutTitle">
+  <div class="dlg about-dlg">
+    <button type="button" class="x" data-about-close aria-label="Close">×</button>
+    <header><h3 id="aboutTitle">What am I looking at?</h3></header>
+    <div class="about-body">
+      <h4>What this is</h4>
+      <p>A source-traced calendar of conferences, abstract deadlines, student and DNP project venues, and celebration weeks for advanced practice providers: NPs, PAs, CRNAs, CNSs and CNMs. Every upcoming dated entry links to the organizer's own material and quotes the wording its date came from. It is global in scope and incomplete by design; its reach is measured, not assumed.</p>
+      <h4>How to move</h4>
+      <p>Four views of the same filtered records: <b>Orbit</b> (the landing view: twelve months with the count of each record type; the arrows move a year), <b>List</b> (upcoming records by month), <b>Calendar</b> (a month grid) and <b>Directory</b> (every recurring series with its history). Narrow with <b>Discipline</b>, <b>Focus</b> (one record type at a time), <b>Scope</b>, <b>Location</b> (Near City takes a ZIP code or a place such as "Portland ME") and search. Every view is a shareable link: <b>Copy link to this view</b>.</p>
+      <h4>Reading a record</h4>
+      <p>Color is the record type: meeting, abstract call or celebration. Badges are disciplines. Each record carries its source link and the organizer's quoted wording. A record that passed its nightly check carries no label; otherwise it says <b>Save the date</b>, <b>Set by rule</b>, <b>Recorded when published</b>, <b>Expected month</b>, or <b>Needs review</b> / <b>Not re-checked</b>. The <b>Needs review only</b> switch lists the last two.</p>
+      <h4>The header stamps</h4>
+      <p><b>Verified</b> is the latest nightly check against the organizers' pages (green; red after 36 hours). <b>Horizon scan</b> is the latest search for meetings not yet listed. <b>Curator reviewed</b> is the last supervised manual reconciliation by the curator; the other two are automated. The <b>Fidelity</b> and <b>Reliability</b> indices beneath them are defined in the <a href="ai-handoff.html#34-fidelity-and-reliability" target="_blank" rel="noopener">AI Handoff (§3.4)</a>.</p>
+      <h4>Before you act</h4>
+      <p>Confirm details with the organizer before registering, submitting or booking travel. Missing a meeting? <a data-request href="#">Make a request</a>. How the site was built, and how to check or challenge it: the <a href="ai-handoff.html" target="_blank" rel="noopener">AI Handoff</a>.</p>
+    </div>
+  </div>
+</dialog>
+<script src="assets/config.js?v=20261006-1"></script>
 <script src="assets/footer.js?v=20260924-8"></script>
-<script src="assets/app.js?v=20260926-5"></script>
+<script src="assets/about.js?v=20261006-1"></script>
+<script src="assets/app.js?v=20261006-1"></script>
 </body>
 </html>
