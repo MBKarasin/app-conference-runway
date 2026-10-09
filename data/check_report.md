@@ -1,15 +1,27 @@
-# Nightly source check — 2026-10-08
+# Nightly source check — 2026-10-09
 
-Generated 2026-10-08T12:21:59Z from commit 56d1240. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-09T12:12:16Z from commit 0d69645. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 260 · verified 233 · not found 3 · unreachable 24
-Checker could not match: 27 · of these, curator evidence on file: 21 · open: 6
-Confirmed by the second readers: rendered after JavaScript 4 · read from the organizer's image 2
-Past editions frozen (not re-read): 632
+Editions re-checked: 258 · verified 227 · not found 8 · unreachable 23
+Checker could not match: 31 · of these, curator evidence on file: 21 · open: 10
+Confirmed by the second readers: rendered after JavaScript 2 · read from the organizer's image 2
+Past editions frozen (not re-read): 634
 
-## Date not found on the organizer page — open (1)
+## Newly failing (were verified last run) — review these first
+
+- [ ] **Mid-Year Assembly** (2027-04-16): not on page: date — https://www.aana.com/event/mid-year-assembly-2027/
+- [ ] **PAEA Education Forum** (2027-10-11): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+- [ ] **PAEA Education Forum** (2028-10-16): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+- [ ] **PAEA Education Forum** (2029-10-29): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+- [ ] **PAEA Education Forum** (2030-10-13): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+
+## Date not found on the organizer page — open (5)
 
 - VCNP Annual Conference — 2027-03-03 — not on page: date — https://www.vcnp.net/events
+- PAEA Education Forum — 2027-10-11 — not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+- PAEA Education Forum — 2028-10-16 — not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+- PAEA Education Forum — 2029-10-29 — not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+- PAEA Education Forum — 2030-10-13 — not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
 
 ## Could not read the page — open (5)
 
@@ -22,7 +34,6 @@ Past editions frozen (not re-read): 632
 ## Checker could not match, curator evidence on file (21)
 
 - Emergency Nurses Week — 2026-10-11 — reviewed ? — https://www.ena.org/about-us/emergency-nurses-week
-- ICCM Summit for Advanced Practice Providers — 2026-10-13 — reviewed 2026-09-24 — https://critcaresummit.com/
 - 2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society) — 2026-10-18 — reviewed 2026-09-22 — https://www.tnpa.org.tw/events/content.php?id=6262
 - CANO/ACIO Annual Conference — 2026-10-22 — reviewed 2026-09-22 — https://www.cano-acio.ca/page/cano2026
 - World Congress on Pain — 2026-10-26 — reviewed 2026-09-23 — https://worldcongressonpain.secure-platform.com/a/
@@ -35,6 +46,7 @@ Past editions frozen (not re-read): 632
 - ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-25 — https://enrs2027conference.oa-event.com/
 - Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-09-22 — https://www.academyonline.org/page/conferences
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-09-22 — https://amia.org/education-events/2027-amplify-informatics-conference
+- Mid-Year Assembly — 2027-04-16 — reviewed 2026-09-22 — https://www.aana.com/event/mid-year-assembly-2027/
 - Heart Rhythm — 2027-05-13 — reviewed 2026-09-25 — https://heartrhythm.com/
 - ASCO Annual Meeting — 2027-06-04 — reviewed 2026-09-25 — https://www.asco.org/annual-meeting/dates-know
 - NCAPA Annual Summer Conference — 2027-08-22 — reviewed 2026-09-26 — https://ncapa.org/summer-cme-conference/
@@ -43,4 +55,4 @@ Past editions frozen (not re-read): 632
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=6
+OPEN_ITEMS=15
