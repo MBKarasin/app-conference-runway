@@ -1,19 +1,11 @@
-# Nightly source check — 2026-10-09
+# Nightly source check — 2026-10-10
 
-Generated 2026-10-09T12:12:16Z from commit 0d69645. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-10T11:29:29Z from commit 7887608. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 258 · verified 227 · not found 8 · unreachable 23
+Editions re-checked: 255 · verified 224 · not found 8 · unreachable 23
 Checker could not match: 31 · of these, curator evidence on file: 21 · open: 10
 Confirmed by the second readers: rendered after JavaScript 2 · read from the organizer's image 2
-Past editions frozen (not re-read): 634
-
-## Newly failing (were verified last run) — review these first
-
-- [ ] **Mid-Year Assembly** (2027-04-16): not on page: date — https://www.aana.com/event/mid-year-assembly-2027/
-- [ ] **PAEA Education Forum** (2027-10-11): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
-- [ ] **PAEA Education Forum** (2028-10-16): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
-- [ ] **PAEA Education Forum** (2029-10-29): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
-- [ ] **PAEA Education Forum** (2030-10-13): not on page: date, year — https://paeaonline.org/resources/public-resources/events/paea-education-forum
+Past editions frozen (not re-read): 637
 
 ## Date not found on the organizer page — open (5)
 
@@ -55,4 +47,4 @@ Past editions frozen (not re-read): 634
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=15
+OPEN_ITEMS=10
