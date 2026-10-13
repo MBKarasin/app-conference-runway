@@ -1,6 +1,6 @@
-# Link check — 2026-10-12
+# Link check — 2026-10-13
 
-Links: 1025 · ok 862 · HTTP 403 114 · HTTP 404 29 · URLError 10 · robots 6 · HTTP 401 2 · HTTP 406 1 · TimeoutError 1
+Links: 1025 · ok 853 · HTTP 403 121 · HTTP 404 30 · URLError 10 · robots 6 · HTTP 401 2 · HTTP 406 2 · HTTP 522 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -136,6 +136,20 @@ Links: 1025 · ok 862 · HTTP 403 114 · HTTP 404 29 · URLError 10 · robots 6 
   - society-of-hospital-medicine__leadership-academy 2023-10-23 (source_url)
 - HTTP 403 — https://shmleadershipacademy.org/wp-content/uploads/2024/07/BIZ-23-0032-SHM-Leadership-Academy-2024-Partnership-Catalog.pdf
   - society-of-hospital-medicine__leadership-academy 2024-10-28 (source_url)
+- HTTP 403 — https://site.thoracic.org/about-us/news/bringing-together-the-global-respiratory-community-at-ats-2023
+  - american-thoracic-society__ats-international-conference 2023-05-19 (source_url)
+- HTTP 403 — https://site.thoracic.org/about-us/news/lets-shape-the-future-of-respiratory-health-at-ats-2024
+  - american-thoracic-society__ats-international-conference 2024-05-17 (source_url)
+- HTTP 403 — https://site.thoracic.org/conference
+  - ATS International Conference (org_url); american-thoracic-society__ats-international-conference 2027-05-14 (call)
+- HTTP 403 — https://site.thoracic.org/conference/about/conference-history/past-annual-meetings-international-conferences
+  - ATS International Conference (archive_url)
+- HTTP 403 — https://site.thoracic.org/conference/attendees/future-conferences
+  - american-thoracic-society__ats-international-conference 2027-05-14 (source_url); american-thoracic-society__ats-international-conference 2028-05-19 (source_url); american-thoracic-society__ats-international-conference 2029-05-18 (source_url)
+- HTTP 403 — https://site.thoracic.org/events/ats-2025-international-conference
+  - american-thoracic-society__ats-international-conference 2025-05-17 (source_url)
+- HTTP 403 — https://site.thoracic.org/events/ats-international-conference
+  - american-thoracic-society__ats-international-conference 2026-05-15 (source_url)
 - HTTP 403 — https://summit.nln.org/
   - NLN Education Summit (org_url); national-league-for-nursing__nln-education-summit 2026-09-23 (source_url); national-league-for-nursing__nln-education-summit 2028-09-01 (source_url); national-league-for-nursing__nln-education-summit 2029-09-01 (source_url)
 - HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
@@ -242,6 +256,8 @@ Links: 1025 · ok 862 · HTTP 403 114 · HTTP 404 29 · URLError 10 · robots 6 
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
 - HTTP 401 — https://www.gapna.org/engage26
   - gerontological-advanced-practice-nurses-__gapna-engage-annual-conference 2026-09-24 (source_url)
+- HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
+  - Psych Congress PA Institute (org_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (call); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2027-12-01 (source_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2028-12-01 (source_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (source_url)
 - HTTP 403 — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/
@@ -258,8 +274,6 @@ Links: 1025 · ok 862 · HTTP 403 114 · HTTP 404 29 · URLError 10 · robots 6 
   - IPAS Fall CME Conference (Healthcare in the Heartland) (org_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2026-10-26 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2027-10-01 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2028-10-01 (source_url)
 - HTTP 403 — https://www.michigan.gov/whitmer/news/proclamations/2025/10/19/october-19-25-2025-doctor-of-nursing-practice-week
   - obs__national-dnp-week 2025-10-19 (source_url)
-- TimeoutError — https://www.mpa2026.org/abstract-submission-guideline.php
-  - malaysian-paediatric-association-mpa-and__mpa-annual-congress-pediatric-nursing-symposium 2026-10-29 (call)
 - HTTP 403 — https://www.nccpa.net/news/whentheyseeus/
   - national-commission-on-certification-of-__represent-nccpa-summit 2024-09-16 (source_url)
 - HTTP 403 — https://www.nccpa.net/represent-summit/
@@ -278,6 +292,8 @@ Links: 1025 · ok 862 · HTTP 403 114 · HTTP 404 29 · URLError 10 · robots 6 
   - neurocritical-care-society__ncs-annual-meeting 2025-09-16 (source_url)
 - HTTP 403 — https://www.neurocriticalcare.org/portals/0/docs/events/2023/Final_Prospectus_2023.pdf
   - neurocritical-care-society__ncs-annual-meeting 2023-08-15 (source_url)
+- HTTP 404 — https://www.newjerseyena.org/2027-call-for-speakers
+  - NJ Emergency Care Conference (org_url); new-jersey-emergency-nurses-association__nj-emergency-care-conference 2027-03-17 (source_url); new-jersey-emergency-nurses-association__nj-emergency-care-conference 2028-03-01 (source_url); new-jersey-emergency-nurses-association__nj-emergency-care-conference 2029-03-01 (source_url)
 - HTTP 404 — https://www.newjerseyena.org/ecc2026
   - new-jersey-emergency-nurses-association__nj-emergency-care-conference 2026-03-18 (detail_url)
 - HTTP 403 — https://www.nonpf.org/events/EventDetails.aspx?id=1958293
@@ -292,6 +308,8 @@ Links: 1025 · ok 862 · HTTP 403 114 · HTTP 404 29 · URLError 10 · robots 6 
   - NPAM Fall Conference (org_url); nurse-practitioner-association-of-maryla__npam-fall-conference 2026-11-01 (source_url); nurse-practitioner-association-of-maryla__npam-fall-conference 2027-11-01 (source_url); nurse-practitioner-association-of-maryla__npam-fall-conference 2028-11-01 (source_url)
 - HTTP 403 — https://www.npamonline.org/events/EventDetails.aspx?id=1969593&group=
   - nurse-practitioner-association-of-maryla__npam-fall-conference 2025-11-15 (source_url)
+- HTTP 522 — https://www.ordemenfermeiros.pt/vii-congresso-dos-enfermeiros-e-i-f%C3%B3rum-acad%C3%A9mico-de-enfermagem/
+  - ordem-dos-enfermeiros__vii-congresso-dos-enfermeiros-e-i-f-rum-acad-mico- 2026-05-14 (call)
 - HTTP 403 — https://www.pacnp.org/
   - PCNP Annual Education Conference (org_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2027-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2028-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2029-10-01 (source_url)
 - HTTP 403 — https://www.rwjbh.org/documents/Acute-and-Critical-Care-Event-with-Program.pdf
