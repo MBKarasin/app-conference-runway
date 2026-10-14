@@ -1,11 +1,11 @@
-# Nightly source check — 2026-10-13
+# Nightly source check — 2026-10-14
 
-Generated 2026-10-13T13:04:04Z from commit 7549a8e. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-14T10:45:19Z from commit d4caf87. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 246 · verified 211 · not found 8 · unreachable 27
+Editions re-checked: 245 · verified 210 · not found 8 · unreachable 27
 Checker could not match: 35 · of these, curator evidence on file: 24 · open: 11
 Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 2
-Past editions frozen (not re-read): 646
+Past editions frozen (not re-read): 647
 
 ## Date not found on the organizer page — open (5)
 
