@@ -1,11 +1,11 @@
-# Nightly source check — 2026-10-14
+# Nightly source check — 2026-10-15
 
-Generated 2026-10-14T10:45:19Z from commit d4caf87. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-15T10:28:05Z from commit 4f057e5. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 245 · verified 210 · not found 8 · unreachable 27
-Checker could not match: 35 · of these, curator evidence on file: 24 · open: 11
+Editions re-checked: 244 · verified 213 · not found 8 · unreachable 23
+Checker could not match: 31 · of these, curator evidence on file: 20 · open: 11
 Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 2
-Past editions frozen (not re-read): 647
+Past editions frozen (not re-read): 648
 
 ## Date not found on the organizer page — open (5)
 
@@ -24,7 +24,7 @@ Past editions frozen (not re-read): 647
 - SHM Converge — 2027-03-30 — HTTP 403 — https://shmconverge.hospitalmedicine.org/
 - NCS Annual Meeting — 2027-09-27 — HTTP 403 — https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027
 
-## Checker could not match, curator evidence on file (24)
+## Checker could not match, curator evidence on file (20)
 
 - Emergency Nurses Week — 2026-10-11 — reviewed ? — https://www.ena.org/about-us/emergency-nurses-week
 - 2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society) — 2026-10-18 — reviewed 2026-09-22 — https://www.tnpa.org.tw/events/content.php?id=6262
@@ -35,20 +35,16 @@ Past editions frozen (not re-read): 647
 - Padjadjaran International Nursing Conference — 2026-11-07 — reviewed 2026-09-24 — https://pinc.fkep.unpad.ac.id/
 - Qatar Health Congress — 2026-11-11 — reviewed 2026-09-22 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
-- Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-09-24 — https://aahpm.org/education-events/annual-assembly/
 - ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-09-25 — https://enrs2027conference.oa-event.com/
 - Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-09-22 — https://www.academyonline.org/page/conferences
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-09-22 — https://amia.org/education-events/2027-amplify-informatics-conference
 - Mid-Year Assembly — 2027-04-16 — reviewed 2026-09-22 — https://www.aana.com/event/mid-year-assembly-2027/
 - Heart Rhythm — 2027-05-13 — reviewed 2026-09-25 — https://heartrhythm.com/
-- ATS International Conference — 2027-05-14 — reviewed 2026-09-25 — https://site.thoracic.org/conference/attendees/future-conferences
 - ASCO Annual Meeting — 2027-06-04 — reviewed 2026-09-25 — https://www.asco.org/annual-meeting/dates-know
 - NCAPA Annual Summer Conference — 2027-08-22 — reviewed 2026-09-26 — https://ncapa.org/summer-cme-conference/
 - Emergency Nursing (ENA Annual Conference) — 2027-09-15 — reviewed 2026-09-23 — https://www.ena.org/events/emergency-nursing-2027
 - Global Emergency Nursing Conference — 2027-10-21 — reviewed 2026-09-26 — https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-09-22 — https://www.nonpf.org/page/futureconferences
-- ATS International Conference — 2028-05-19 — reviewed 2026-09-24 — https://site.thoracic.org/conference/attendees/future-conferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-09-22 — https://www.asco.org/annual-meeting/dates-know
-- ATS International Conference — 2029-05-18 — reviewed 2026-09-24 — https://site.thoracic.org/conference/attendees/future-conferences
 
 OPEN_ITEMS=11
