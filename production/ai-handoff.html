@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src 'self' data:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="index, follow">
+<meta name="handoff-source-sha256" content="4099e292548c93acb6b509bda22e5d201b74f1f2d61df204527f764b63e54b35">
+<title>AI Handoff · APP Conference Runway</title>
+<meta name="description" content="How the APP Conference Runway was built, where its data comes from, and how to reproduce or challenge it.">
+<meta name="theme-color" content="#102F3B">
+<link rel="manifest" href="manifest.webmanifest?v=86ee656e">
+<link rel="icon" href="favicon-app-v2.ico?v=77b6ea4e" sizes="any">
+<link rel="icon" href="favicon-app-v2.svg?v=a54fc2e6" type="image/svg+xml">
+<link rel="icon" href="favicon-app-v2-32.png?v=661bd95e" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon-app-v2.png?v=ff46de7a" sizes="180x180">
+<link rel="mask-icon" href="safari-pinned-tab-app-v2.svg?v=1eb02501" color="#CC0033">
+<style>
+@font-face{font-family:"Source Sans 3";font-weight:400;font-display:swap;src:url(fonts/source-sans-3-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Source Sans 3";font-weight:400;font-style:italic;font-display:swap;src:url(fonts/source-sans-3-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Source Sans 3";font-weight:600;font-display:swap;src:url(fonts/source-sans-3-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Source Sans 3";font-weight:700;font-display:swap;src:url(fonts/source-sans-3-latin-700-normal.woff2) format("woff2")}
+:root{--ground:#F6F4F0;--surface:#FFFEFC;--sunk:#EEE9E3;--ink:#202329;--ink-2:#4C5358;--ink-3:#667075;--rule:#D5D1CB;--rule-soft:#E9E4DE;--scarlet:#CC0033;--link:#0B55A3;--focus:#1B62BD;color-scheme:light}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:12px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16.5px/1.6 "Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;border-top:3px solid var(--scarlet);-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.skip{position:absolute;z-index:10;left:16px;top:-60px;background:var(--ink);color:#fff;padding:8px 12px;font-weight:700}
+.skip:focus{top:0}
+.wrap{max-width:880px;margin:0 auto;padding-inline:24px}
+.top{background:var(--surface);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.home{display:block;min-width:0}
+.home img{display:block;height:34px;width:auto;max-width:100%}
+.back{flex:none;color:var(--ink-2);font-weight:600;text-decoration:none;border:1px solid var(--rule);padding:7px 11px;white-space:nowrap}
+.back:hover{color:var(--ink);border-color:var(--ink-3)}
+main{padding-block:28px 36px}
+.doc{background:var(--surface);border:1px solid var(--rule);padding:34px 44px 30px;overflow-wrap:break-word}
+.doc h1{font:400 clamp(30px,4.6vw,42px)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin:0 0 18px}
+.doc h2{font-size:23px;line-height:1.25;margin:38px 0 12px;padding-top:16px;border-top:1px solid var(--rule)}
+.doc h3{font-size:18.5px;line-height:1.3;margin:28px 0 8px}
+.doc h1,.doc h2,.doc h3,.doc h4{scroll-margin-top:12px}
+.anchor{margin-left:.35em;color:var(--ink-3);text-decoration:none;font-weight:400;opacity:0}
+h1:hover .anchor,h2:hover .anchor,h3:hover .anchor,h4:hover .anchor,.anchor:focus{opacity:1}
+.doc p,.doc ul,.doc ol,.doc pre,.doc blockquote{margin:0 0 14px}
+.doc ul,.doc ol{padding-left:1.45em}
+.doc li{margin:5px 0}
+.doc li>ul,.doc li>ol{margin:5px 0 0}
+.doc li>p{margin:0 0 8px}
+.doc a{overflow-wrap:anywhere}
+.doc code{font:.87em/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;background:var(--sunk);padding:.08em .34em;border-radius:3px;overflow-wrap:anywhere}
+.doc pre{background:#F8F6F2;border:1px solid var(--rule-soft);padding:12px 14px;overflow-x:auto}
+.doc pre code{background:none;padding:0;font-size:14px;overflow-wrap:normal;white-space:pre}
+.doc blockquote{margin-left:0;padding:2px 0 2px 16px;border-left:3px solid var(--rule);color:var(--ink-2)}
+.doc hr{border:0;border-top:1px solid var(--rule);margin:28px 0}
+.doc img{max-width:100%;height:auto}
+.table-wrap{overflow-x:auto;margin:0 0 16px;border:1px solid var(--rule)}
+.doc table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.doc th,.doc td{padding:8px 11px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule-soft)}
+.doc th{background:var(--sunk);font-weight:700;border-bottom-color:var(--rule)}
+.doc tbody tr:last-child td{border-bottom:0}
+.toc{margin:0 0 8px;padding:14px 18px;background:#F8F6F2;border:1px solid var(--rule-soft)}
+.toc p{margin:0 0 6px;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.toc ul{margin:0;padding:0;list-style:none;columns:2;column-gap:28px}
+.toc li{margin:0;padding:3px 0;break-inside:avoid}
+.toc a{text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.foot{color:var(--ink-3);font-size:14px;line-height:1.5;padding-bottom:40px}
+.foot p{margin:0 0 6px}
+.foot a{color:inherit}
+@media (max-width:640px){
+  .wrap{padding-inline:16px}
+  .top .wrap{padding-block:10px}
+  .home img{height:26px}
+  .back{padding:6px 9px;font-size:15px}
+  main{padding-block:18px 26px}
+  .doc{background:none;border:0;padding:0}
+  .doc h2{font-size:21px;margin-top:32px}
+  .toc{padding:12px 14px}
+  .toc ul{columns:1}
+  .doc table{font-size:14.5px}
+  .doc th,.doc td{padding:7px 9px}
+}
+@media print{
+  body{background:#fff;border:0}
+  .top,.skip,.toc,.anchor{display:none}
+  .doc{border:0;padding:0}
+  .doc a{color:inherit}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#doc">Skip to the handoff</a>
+<header class="top"><div class="wrap">
+<a class="home" href="./" title="The APP Conference Runway"><img src="assets/app-conference-runway-logo.png" width="1870" height="355" alt="APP Conference Runway" decoding="async"></a>
+<a class="back" href="./">Back to the Runway</a>
+</div></header>
+<main class="wrap"><article class="doc" id="doc">
+<h1 id="app-conference-runway-ai-handoff">APP Conference Runway: AI Handoff<a class="anchor" href="#app-conference-runway-ai-handoff" aria-label="Link to this section">#</a></h1>
+<p><strong>Live site:</strong> <a href="https://appconferencerunway.org/">https://appconferencerunway.org/</a><br>
+<strong>Owner and curator:</strong> Dr. Mark Karasin, DNP, APN, AGACNP-BC<br>
+<strong>Contact and corrections:</strong> <a href="mailto:mark.karasin@protonmail.com">mark.karasin@protonmail.com</a><br>
+<strong>Document date:</strong> 2026-09-26</p>
+<p>This page is written for people and for AI systems that need to understand, check or challenge the Runway. It describes only what runs; where a part is staged but not yet running, it says so.</p>
+<nav class="toc" aria-label="Contents">
+<p>Contents</p>
+<ul>
+<li><a href="#1-what-this-is">1. What this is</a></li>
+<li><a href="#2-ownership-and-roles">2. Ownership and roles</a></li>
+<li><a href="#3-the-evidence-rule">3. The evidence rule</a></li>
+<li><a href="#4-confidence-and-the-indices">4. Confidence and the indices</a></li>
+<li><a href="#5-the-re-read-pipeline">5. The re-read pipeline</a></li>
+<li><a href="#6-price-of-attendance-and-door-to-door-planning">6. Price of attendance and door-to-door planning</a></li>
+<li><a href="#7-architecture">7. Architecture</a></li>
+<li><a href="#8-challenge-and-correct">8. Challenge and correct</a></li>
+<li><a href="#9-limits-of-the-data">9. Limits of the data</a></li>
+<li><a href="#10-rights">10. Rights</a></li>
+<li><a href="#11-site-notes">11. Site notes</a></li>
+<li><a href="#12-daily-update-status">12. Daily update status</a></li>
+<li><a href="#13-october-17-2026-refresh">13. October 17, 2026 refresh</a></li>
+<li><a href="#14-october-17-manual-reconciliation-and-daily-follow-up">14. October 17 manual reconciliation and daily follow-up</a></li>
+<li><a href="#15-public-access-and-source-resolution">15. Public access and source resolution</a></li>
+<li><a href="#16-public-publication-and-mit-licensing--october-17-2026">16. Public publication and MIT licensing — October 17, 2026</a></li>
+<li><a href="#17-final-header-direction">17. Final header direction</a></li>
+</ul>
+</nav>
+<h2 id="1-what-this-is">1. What this is<a class="anchor" href="#1-what-this-is" aria-label="Link to this section">#</a></h2>
+<p>Advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs) and their students must search many organizer sites for meetings, abstract deadlines and student and DNP project venues. The Runway gathers them in one calendar that traces each upcoming record to the organizer's own material, re-reads those sources by machine, and helps a visitor plan attendance: dates, travel, lodging and the price of attendance by category. It is global in scope and incomplete; coverage is concentrated in the United States.</p>
+<p>The site is independent. It is not an official publication of, or endorsement by, Rutgers University, RWJBarnabas Health or any organizer listed.</p>
+<h2 id="2-ownership-and-roles">2. Ownership and roles<a class="anchor" href="#2-ownership-and-roles" aria-label="Link to this section">#</a></h2>
+<p>The Runway, this site and the appconferencerunway.org domain are owned and operated by the curator, who decides what is published and is accountable for it. Its source files, pipeline code and evidence archive are kept by the owner and are not published.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Actor</th><th>Role</th><th>No authority to</th></tr></thead>
+<tbody>
+<tr><td>Deterministic pipeline</td><td>Re-read sources, test quotes, build, validate, compute the indices, package and archive each release</td><td>Invent or approve facts</td></tr>
+<tr><td>AI systems (Claude by Anthropic; ChatGPT by OpenAI; local models)</td><td>Research, extraction, translation, implementation and independent review, as bounded workers</td><td>Publish on their own judgment, or change a fact without organizer evidence</td></tr>
+<tr><td>Curator</td><td>Examine evidence, resolve conflicts, approve or reject semantic changes, decide policy</td><td>—</td></tr>
+</tbody>
+</table></div>
+<p>No model is a source of truth. The organizer's own page is.</p>
+<h2 id="3-the-evidence-rule">3. The evidence rule<a class="anchor" href="#3-the-evidence-rule" aria-label="Link to this section">#</a></h2>
+<h3 id="31-records">3.1 Records<a class="anchor" href="#31-records" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Record</th><th>What it is</th></tr></thead>
+<tbody>
+<tr><td>Series</td><td>A recurring meeting or observance of one organizer; <code>np_pa_basis</code> says why it serves APPs</td></tr>
+<tr><td>Edition</td><td>One dated occurrence, with <code>source_url</code>, verbatim <code>evidence</code> and a <code>verify</code> state</td></tr>
+<tr><td>Observance</td><td>A celebration week or day, dated by the organizer or by its published rule</td></tr>
+<tr><td>Student opportunity</td><td>A student session, poster or DNP project venue at one edition</td></tr>
+<tr><td>Expected edition</td><td>A meeting's usual month, projected up to three years ahead; never a day</td></tr>
+<tr><td>Attendance</td><td>Registration prices, online option, official hotel block and support for one edition (§6)</td></tr>
+</tbody>
+</table></div>
+<h3 id="32-what-counts-as-evidence">3.2 What counts as evidence<a class="anchor" href="#32-what-counts-as-evidence" aria-label="Link to this section">#</a></h3>
+<p>An upcoming dated record, unless computed from a published rule, carries the organizer's own material as its source (an event page or sub-page, a program PDF, or a banner or flyer), <strong>verbatim</strong> wording from it that contains the dates (normally 200 characters or fewer) and the exact location of that wording. Aggregators never count; a social post counts only from the organizer's own account. The build gate refuses a record without a quote and a source link. The same rule applies to every price (§6).</p>
+<h3 id="33-corrections-and-precedence">3.3 Corrections and precedence<a class="anchor" href="#33-corrections-and-precedence" aria-label="Link to this section">#</a></h3>
+<p>Curator corrections win over every other input. Each carries a reason, a review date, the organizer's verbatim wording and the exact URL or image; the build gate refuses one without them (16 corrections made before review dates were kept carry none, and none is invented). A wrong edition is marked removed, never silently deleted. A ledger keeps every edition ever published, and each night's release is archived (§5.4).</p>
+<h2 id="4-confidence-and-the-indices">4. Confidence and the indices<a class="anchor" href="#4-confidence-and-the-indices" aria-label="Link to this section">#</a></h2>
+<h3 id="41-confidence-on-each-record">4.1 Confidence on each record<a class="anchor" href="#41-confidence-on-each-record" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>High confidence carries no label:</strong> the latest automated re-read confirmed the record from the organizer's own page or image (start date, its year and a word of the meeting's name), or the date comes from the organizer's published rule, or the meeting has ended and is kept as recorded when published.</li>
+<li><strong>Confidence: Medium</strong> marks a dated record not yet ended that the latest re-read did not confirm, with its reason inside the record: the organizer's site did not let the automated reader in (the record rests on a review by hand, dated), the dates were not found on the page, the organizer's own pages disagree, or no re-read has completed in 36 hours. The record stays listed. <strong>Medium confidence only</strong> lists these records.</li>
+<li><strong>Expected month</strong> is a projection and never carries a day.</li>
+</ul>
+<p>A price or hotel detail is High when code found its quoted wording on the organizer's page, and Medium when it was read through a secondary reader or the page no longer shows it (§6).</p>
+<h3 id="42-fidelity-index">4.2 Fidelity Index<a class="anchor" href="#42-fidelity-index" aria-label="Link to this section">#</a></h3>
+<p><strong>Fidelity Index = evidence coverage × projected correctness.</strong></p>
+<ul>
+<li><em>Evidence coverage</em> = records passing every test below ÷ every dated record (past and upcoming; month-only projections excluded). A record passes if it carries the organizer's own wording or a published rule, holds a settled verification state (confirmed, set by rule, save the date, or recorded when published) and has a source link. A meeting not yet ended must also have a link not found gone and a confirmation no older than 90 days (rule dates excepted; an unreadable stamp fails).</li>
+<li><em>Projected correctness</em> = 1 − (records found wrong ÷ records audited), summed over every independent audit on file. An audit counts a record wrong once if any action-critical field (dates, format, place, abstract call or deadline, eligibility) disagrees with the organizer. The index's note gives the counts and the 95% Wilson interval of that rate, scaled by coverage.</li>
+<li><em>Worked example</em> (data built 2026-09-26, 07:32 UTC): coverage 924 ÷ 927 = 99.68% (614 ended, 313 not yet ended); correctness 1 − (10 + 9) ÷ (325 + 324) = 97.07%; Fidelity 99.68% × 97.07% = 96.76%, 95% range 95.2–97.8%.</li>
+</ul>
+<h3 id="43-reliability-index">4.3 Reliability Index<a class="anchor" href="#43-reliability-index" aria-label="Link to this section">#</a></h3>
+<p><strong>Reliability Index = (records re-confirmed by the latest automated re-read + dates computed from a published rule) ÷ dated records not yet ended</strong> (projections excluded). Reviews by hand never count. When no re-read has completed in 36 hours, re-confirmations stop counting and the index falls to the rule-computed share. The records it leaves out are exactly the records marked Confidence: Medium.</p>
+<ul>
+<li><em>Worked example</em> (re-read of 2026-09-26, 06:51 UTC; data built 08:30 UTC): (250 + 29) ÷ 313 = 89.14%. The other 34 show Confidence: Medium; most are pages whose servers refused the automated reader that night and rest on a review by hand, and one was corrected that morning from the organizer's event page and waits for its first automated re-read there.</li>
+</ul>
+<p>Both indices are recomputed in the visitor's browser from <code>data/runway.json</code> at every page load, for the visitor's own calendar day; the pipeline recomputes them with the same definitions and the interface check fails if the page disagrees.</p>
+<h3 id="44-what-the-indices-do-not-show">4.4 What the indices do not show<a class="anchor" href="#44-what-the-indices-do-not-show" aria-label="Link to this section">#</a></h3>
+<ul>
+<li>Neither measures completeness: meetings missing from the site.</li>
+<li>Evidence coverage is high largely by construction, since the build gate refuses an upcoming record without a quote and a source link; it falls mainly when confirmations age or organizer pages are removed.</li>
+<li>The two audits on file examined the same upcoming records as they stood on 2026-09-24, before the corrections that followed them. Pooling them treats 649 record audits as independent, which narrows the range; on the data of 2026-09-26, counting the shared sample once (n = 325) widens it to 94.3–98.1%, and the re-derivation alone gives 96.61% (94.1–98.0%).</li>
+<li>The first audit was a re-derivation of every upcoming record by AI agents without the stored values; the second was a review of the code, data and interface by another model family (ChatGPT) that, by its own report, re-derived no event in full. Neither was a human audit.</li>
+<li>Reliability measures whether a machine can re-read a record tonight, not whether it is right; some organizer servers refuse automated readers, and that varies night to night.</li>
+<li>The re-read is a text match anywhere on the page, so another event on the same page can pass it. End dates, venues and cut-off times are not re-checked automatically.</li>
+</ul>
+<h2 id="5-the-re-read-pipeline">5. The re-read pipeline<a class="anchor" href="#5-the-re-read-pipeline" aria-label="Link to this section">#</a></h2>
+<p>Each run, in order. A run that fails a gate publishes nothing and the site stays on the last good release. The header's <strong>Updated</strong> stamp gives the time of the latest re-read; §5.5 says how often runs happen.</p>
+<h3 id="51-a-re-read">5.1 A: re-read<a class="anchor" href="#51-a-re-read" aria-label="Link to this section">#</a></h3>
+<p>Every organizer source of a dated record not yet ended is re-read: the plain page, then a rendered page when it needs JavaScript, and a linked organizer image by OCR. It identifies itself, obeys robots.txt and reports a refusal instead of retrying with another reader. Every cited price and hotel detail is re-read the same way and its quote re-tested. Every outbound link is checked. Each page read leaves a receipt: URL, time, status and a SHA-256 of the text.</p>
+<h3 id="52-b-confirm">5.2 B: confirm<a class="anchor" href="#52-b-confirm" aria-label="Link to this section">#</a></h3>
+<p>When the text of a page the first reader confirmed has changed since the last night, a second reader, written separately (its own fetch, its own HTML reader and its own date matcher), re-reads it. If the two disagree, the record shows Confidence: Medium until they agree. Today the second reader reads plain pages only: a record the first reader confirmed through the rendering browser or an organizer image is not second-read, and when the second reader cannot read a page, the first reader's result stands and the gap is logged. Prices are re-tested the same way (§5.1). A local model on the owner's machine is staged to become a further reader once it passes a blind pilot against published records.</p>
+<h3 id="53-c-discover">5.3 C: discover<a class="anchor" href="#53-c-discover" aria-label="Link to this section">#</a></h3>
+<p>The pipeline reads the organizer's own pages for every series whose next date is not yet known, and queues any date in the next two years found near the series' name as a candidate, with the page, the passage and a hash of the page. Candidates are internal: one enters the Runway only after review against the organizer's evidence. Automatic publication of a candidate at Confidence: Medium after a second night's confirmation is staged, as is a wider weekly search for organizers the Runway does not yet list.</p>
+<h3 id="54-publish-verify-archive">5.4 Publish, verify, archive<a class="anchor" href="#54-publish-verify-archive" aria-label="Link to this section">#</a></h3>
+<p>The pipeline builds the data, the calendar feed and this page; validates them; recomputes both indices; runs the scripted interface check; and packages the release with a SHA-256 manifest. After publication the live site is checked against that manifest and the interface check runs again. Only then is the release archived on the owner's machine, filed by year and date with its receipts, decisions and report; the live site is then verified once more. Nothing in the archive is ever deleted.</p>
+<h3 id="55-what-runs-today">5.5 What runs today<a class="anchor" href="#55-what-runs-today" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Part</th><th>Status (2026-09-26)</th></tr></thead>
+<tbody>
+<tr><td>A: re-read of dates, links and cited prices</td><td>Runs as described; first run 2026-09-26</td></tr>
+<tr><td>B: independent second read</td><td>Runs for plain pages; rendered and image pages, and a local-model reader, are staged</td></tr>
+<tr><td>C: new editions of known series</td><td>Runs as an internal queue; automatic publication and a weekly open search are staged</td></tr>
+<tr><td>Publish, verify, archive</td><td>Runs as described; publication is by the owner's account on the host</td></tr>
+<tr><td>Schedule</td><td>The first run was started by hand. An automatic nightly schedule is being set up; until it runs, the <strong>Updated</strong> stamp shows the latest run, and after 36 hours without one, re-read records count as Medium confidence (§4.1).</td></tr>
+</tbody>
+</table></div>
+<h2 id="6-price-of-attendance-and-door-to-door-planning">6. Price of attendance and door-to-door planning<a class="anchor" href="#6-price-of-attendance-and-door-to-door-planning" aria-label="Link to this section">#</a></h2>
+<p>Every meeting still ahead opens a <strong>Plan your attendance</strong> panel.</p>
+<ul>
+<li><strong>Registration</strong> prices are shown by category (member, non-member, student and the like; early, regular, late; full meeting, one day, online) exactly as the organizer states them, each with the organizer's link, the date read, and its confidence. A price is never estimated. Where an organizer has not published prices the panel says <strong>Not posted</strong>; where they have not been read yet, <strong>Not captured yet</strong>; where the organizer's site refuses automated reading, <strong>Not captured</strong>, with a link to the organizer's page in every case.</li>
+<li><strong>Getting there</strong> uses straight-line distance from the visitor's ZIP code, city or country (a country alone is represented by its most populous listed city, and the panel says so): up to 80 km is a commute; up to 400 km, a drive or rail trip; beyond, a flight, with airports that have scheduled service within 160 km of each end (OurAirports, public domain). Drive times are approximations and are labeled so. Fares are not estimated; the panel links out to search them.</li>
+<li><strong>Door-to-door dates:</strong> a commute is a day trip on each meeting day. A drive of more than 2.5 hours arrives the day before, and one of more than 4 hours returns the day after. A flight arrives the day before and returns the day after when the trip is international or longer than 1,500 km. Nights follow from those dates.</li>
+<li><strong>Lodging:</strong> the organizer's official hotel block first, with its rate, booking cut-off and link. An estimate is shown only when a per-night block rate is posted: that rate times the nights, before taxes, labeled as an estimate.</li>
+<li><strong>Ways to take part at lower cost</strong> lists, in the organizer's terms, online options, student, one-day and early rates still open, and published scholarships, grants or volunteer roles, and then meetings for the same disciplines nearer the visitor in the next twelve months. The wording is factual and never asks whether someone can afford a meeting.</li>
+<li><strong>Privacy:</strong> the place a visitor types stays in the browser; it reaches another site only if the visitor opens a link out.</li>
+</ul>
+<h2 id="7-architecture">7. Architecture<a class="anchor" href="#7-architecture" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Static site:</strong> no framework, cookies, analytics, advertising or third-party requests; a strict content security policy. The data are public files on the site: <code>data/runway.json</code> (records), <code>data/attendance.json</code> (prices and hotel blocks), <code>runway.ics</code> (calendar feed), <code>geo/</code> (city, ZIP and airport coordinates).</li>
+<li><strong>Hosting:</strong> Cloudflare Pages, under the owner's account; the domain is registered to the owner. The host keeps standard access logs and may collect browsers' network-error reports; the site's own code sets no cookies and runs no analytics. The site asks the host not to rewrite its pages (<code>Cache-Control: no-transform</code>), so the host inserts no analytics tag and leaves email addresses as written, and after every publication each served file is compared with the release, byte for byte.</li>
+<li><strong>Search engines:</strong> the owner requested public access and search discovery on October 17, 2026. Robots permit crawling and sitemap.xml lists the main public pages. Indexing is controlled by search engines and is not guaranteed.</li>
+<li><strong>Ownership of code and evidence:</strong> the source files, the pipeline and the captured organizer pages stay with the owner. Only short quotes, links and hashes are published.</li>
+</ul>
+<h2 id="8-challenge-and-correct">8. Challenge and correct<a class="anchor" href="#8-challenge-and-correct" aria-label="Link to this section">#</a></h2>
+<p>Check any record against its source link. To correct one, use <strong>Report a correction</strong> in the record, or email <a href="mailto:mark.karasin@protonmail.com">mark.karasin@protonmail.com</a> with the record's link and the organizer's page that shows the right detail. A correction is recorded with its reason, review date, the organizer's wording and the exact URL, and is published through the same gates as every other change. Analysis of blind spots is welcome at the same address.</p>
+<h2 id="9-limits-of-the-data">9. Limits of the data<a class="anchor" href="#9-limits-of-the-data" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>A curated directory, not a study: no completeness claim. Small organizers and non-English sources are likely under-represented.</li>
+<li>Discipline tags are curator judgments. "Advanced practice provider" is a U.S. umbrella term; titles and scopes differ by country.</li>
+<li>AI systems contributed to research and review; the evidence rule, deterministic checks, human authority and audits reduce, not remove, error risk.</li>
+<li>No label is itself a claim: a High-confidence record can still have a wrong end date or venue. Confirm with the organizer before registering, submitting or traveling.</li>
+<li>Distances use ZIP or city centroids and are approximate. A place typed into the planner or Near City stays in the page address or the browser.</li>
+</ul>
+<h2 id="10-rights">10. Rights<a class="anchor" href="#10-rights" aria-label="Link to this section">#</a></h2>
+<p>© 2026 Mark Karasin. The owner's code, original design, documentation and data compilation are released under the MIT license; see LICENSE.txt and THIRD_PARTY_NOTICES.md. Organizer names, marks, quoted wording, linked pages and images belong to their organizers and appear only to show where a date or price came from. Third-party components keep their licenses: Barlow Condensed and Source Sans 3 (SIL Open Font License), GeoNames (CC BY 4.0), U.S. Census Bureau Gazetteer and OurAirports (public domain). Institutional names are not licensed and imply no endorsement.</p>
+<h2 id="11-site-notes">11. Site notes<a class="anchor" href="#11-site-notes" aria-label="Link to this section">#</a></h2>
+<p>Moved from the main-page footer on October 17, 2026. The single Updated timestamp describes the most recent actual source check.</p>
+<p>Website is an independent resource. It is not an official publication of, or endorsement by, either Rutgers University or RWJBarnabas Health.</p>
+<p><strong>How dates are checked.</strong> Every dated entry comes from the organizer's own material and links the exact page, PDF, banner or flyer where its date was published. Organizer pages for meetings still ahead are re-read by an automated check, and ended meetings are kept as recorded when published; the Updated timestamp records the latest automated source check, the Fidelity and Reliability indices beneath it are defined in the <a href="#4-confidence-and-the-indices">AI Handoff (§4)</a>, and a record the latest re-read did not confirm says “Confidence: Medium” with its reason (see “Medium confidence only”).</p>
+<p><strong>Price of attendance.</strong> Registration prices, online options, official hotel blocks and support come only from the organizer's own pages, each with its link and the date it was read; what an organizer has not published reads “Not posted”. Travel fares are not estimated.</p>
+<p><strong>Coverage.</strong> Coverage snapshot on October 17, 2026: of 239 upcoming dated entries, 218 have mapped locations in 25 countries across 6 continents. A proprietary, curator-directed global research process proposes additions, but publication still requires organizer evidence, validation and human review. This remains an incomplete global calendar; <a href="mailto:mark.karasin@protonmail.com?subject=APP%20Conference%20Runway%20request">suggest a missing meeting or organizer</a>.</p>
+<p><strong>Expected months</strong> are projections, never assigned a day, and appear only when enabled.</p>
+<p>Confirm details with the organizer before registering, submitting or booking travel. Distance results use ZIP or city centroids and are approximate. Independent of the organizers listed; the site code sets no cookies or analytics; its host, Cloudflare, may keep standard access logs and network-error reports. City data: U.S. Census Bureau Gazetteer and <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0); airports: <a href="https://ourairports.com/data/">OurAirports</a> (public domain). This page asks search engines not to index it and is shared directly among APPs.</p>
+<p>© 2026 Mark Karasin. APP Conference Runway and appconferencerunway.org are owned and operated by the curator. Organizer names, marks and quoted wording belong to their organizers.</p>
+<h2 id="12-daily-update-status">12. Daily update status<a class="anchor" href="#12-daily-update-status" aria-label="Link to this section">#</a></h2>
+<p>The daily update is scheduled for 4 a.m. America/New_York. One header timestamp shows the most recent actual source-check time. It does not advance merely because the layout changed or a scheduled task woke up.</p>
+<p>The dot describes the latest scheduled run: green means source checking, validation and publication succeeded; yellow means the run started but remains in progress or reported an issue; red means the latest scheduled run is missing. Confidence labels, confidence filtering, and the two data-quality indices are currently hidden from the visitor interface at the curator’s request. Their underlying evidence and calculations are retained.</p>
+<p>The publishing workflow must maintain data/update-status.json with status, started_at, sources_checked_at and published_at. A success requires all three stages to finish. Until this is wired to the owning GitHub-to-Cloudflare publishing workflow, the preview correctly displays a red dot. A local chat follow-up has been scheduled; it is not evidence that an unattended GitHub-to-Cloudflare pipeline is operational.</p>
+<h2 id="13-october-17-2026-refresh">13. October 17, 2026 refresh<a class="anchor" href="#13-october-17-2026-refresh" aria-label="Link to this section">#</a></h2>
+<p>A fresh deterministic source check attempted 239 current dated editions on 185 organizer pages: 205 matched, 8 did not match, and 26 could not be read. Those exceptions remain in the data and review report; a successful fetch is not a comprehensive validation of every meeting field. PDF text extraction was available; optional rendered-page and image-OCR readers were not available in this run.</p>
+<p>A bounded organizer-source search also replaced two expected-month projections with dated 2027 records: Charter Oak, March 21–23; and NCAPA Summer, August 15–20. NCAPA’s updated October date image supersedes the older August 22–27 save-the-date. The reviewed organizer page still uses North Myrtle Beach in its general prose while its new image says Myrtle Beach; exact venue details remain to be announced. The Rutgers/RWJBarnabas cardiovascular meeting, October 16–17, was added from its official Rutgers CloudCME page. This was not an exhaustive global discovery sweep.</p>
+<p>The header therefore shows a current check time with a yellow badge, reflecting completed work with unresolved source exceptions. Detailed results: <a href="data/check_report.md">source check report</a>.</p>
+<h2 id="14-october-17-manual-reconciliation-and-daily-follow-up">14. October 17 manual reconciliation and daily follow-up<a class="anchor" href="#14-october-17-manual-reconciliation-and-daily-follow-up" aria-label="Link to this section">#</a></h2>
+<p>Completed 2026-10-17T08:57:46Z. Automated pass: 239 checked, 205 matched, 34 exceptions. Direct review: 30 confirmed or corrected (including one professional-association corroboration), four unsupported future PAEA editions withheld from public calendar with originals preserved. Four event date ranges corrected; six call records refreshed.</p>
+<p>Original evidence and automated failures are retained. See <a href="data/manual-review-report.md">manual review report</a>, <a href="data/manual-review.json">structured manual review</a>, <a href="data/withheld-editions.json">withheld records</a>, and <a href="data/follow-up.json">daily follow-up ledger</a>. Taiwan was subsequently confirmed from an organizer-issued letter hosted by its recipient. CANO was resolved against the conference-specific landing page and newsletter. Its registration prose discrepancy remains documented for monitoring. Four unsupported PAEA editions remain withheld and tracked for daily follow-up. The badge represents successful completion of the update process, not a claim of perfect data or universal page readability. Four PAEA future editions have no current organizer support and are withheld rather than displayed as confirmed.</p>
+<p>The next local chat heartbeat is October 18 at 4 a.m. Eastern. It must read the ledgers, follow up independently, refresh actual records, validate, publish and verify. The main Cloudflare site is not connected to GitHub publishing; a scheduled wakeup alone is not a successful publication. No credentials or expanded permissions were created.</p>
+<h2 id="15-public-access-and-source-resolution">15. Public access and source resolution<a class="anchor" href="#15-public-access-and-source-resolution" aria-label="Link to this section">#</a></h2>
+<p>Organizer-issued letter dated February 3, ROC year 115, visually reviewed on October 17. It confirms October 18, 2026, 12:30–16:00, Greater Tainan Convention Center, and July 31 abstract deadline. Letter hosted by its recipient, Taiwan Midwives Association; original organizer website remains protected.</p>
+<p>CANO dates remain October 22–25 based on conference-specific organizer materials and ISNCC. Four PAEA future editions remain withheld pending primary confirmation and are preserved in the daily follow-up ledger. Raw automated failures are retained for provenance; they are superseded by the documented manual dispositions, not silently erased.</p>
+<p>Public search crawling is permitted as requested. Publishing a sitemap does not itself submit the site to Google Search Console or prove indexing.</p>
+<h2 id="16-public-publication-and-mit-licensing--october-17-2026">16. Public publication and MIT licensing — October 17, 2026<a class="anchor" href="#16-public-publication-and-mit-licensing--october-17-2026" aria-label="Link to this section">#</a></h2>
+<p>The owner explicitly authorized public website access, public repository visibility, MIT licensing and search discovery to support the exchange of ideas and promotion of human health. His original code, design, artwork, documentation and data compilation throughout the repository are released under MIT. Preserve the copyright and license notice. Third-party content and components retain their rights and notices; no trademark rights or institutional endorsement are granted. See <a href="LICENSE.txt">MIT license</a> and <a href="THIRD_PARTY_NOTICES.md">scope and third-party notices</a>.</p>
+<p>Main public site: <a href="https://appconferencerunway.org/">https://appconferencerunway.org/</a> . Public source: <a href="https://github.com/MBKarasin/app-conference-runway">https://github.com/MBKarasin/app-conference-runway</a> . <code>production/</code> in the repository is the approved main-domain snapshot; the existing <code>site/</code> build and GitHub Pages workflow are a separate variant. Do not replace the main site with that variant or claim the two deployments are synchronized. Current main-site changes include the subtitle beneath the logo, logo reduced by 15%, and three header actions with sharing removed, compact footer, hidden confidence layer, fresh source review and one daily update stamp.</p>
+<p>Search robots permit crawling and the sitemap lists the main pages. The main domain is canonical. Search Console submission and actual indexing are separate states; only record them as completed after verification. No search-engine listing or ranking is guaranteed.</p>
+<p>Carry forward the withheld PAEA records and source-resolution history in the daily ledgers. Never restore unsupported dates merely to improve a badge. Green describes a successfully checked, validated and published update with documented dispositions. The local daily 4 a.m. Eastern heartbeat is configured; unattended GitHub-to-Cloudflare publishing is not yet connected. A scheduled wakeup alone is not successful publication.</p>
+<h2 id="17-final-header-direction">17. Final header direction<a class="anchor" href="#17-final-header-direction" aria-label="Link to this section">#</a></h2>
+<p>Restore the approved uppercase subtitle beneath the logo. Reduce logo artwork width by 15% relative to its containing logo area. Remove Share with a colleague; keep Copy link, Make a request and AI Handoff in their earlier header arrangement. Preserve the compact footer, source-check timestamp and badge.</p>
+</article></main>
+<footer class="wrap foot">
+<p>This page is generated from the Markdown file AI-HANDOFF.md (SHA-256 <code>4099e292548c</code>) every time the site is built. The file itself is <a href="AI-HANDOFF.md">on this site</a>.</p>
+</footer>
+</body>
+</html>

@@ -184,7 +184,7 @@ for q in d.get("probe_history") or []:
         errs.append(f"probe history {q.get('id')}: needs an ISO date, a positive found and a held from 0 to found")
 # The AI Handoff page (site/ai-handoff.html), rendered from site/AI-HANDOFF.md by build.py through
 # scripts/handoff_page.py: it must match a fresh rendering of the file, render every Markdown construct the
-# file uses, keep the noindex tag, and every section link to it (from the page itself, the site or the
+# file uses, keep the public indexing directive, and every section link to it (from the page itself, the site or the
 # README) must land on a section.
 sys.path.insert(0, str(ROOT / "scripts"))
 import handoff_page
@@ -197,8 +197,8 @@ else:
     if page != fresh:
         errs.append(f"site/{handoff_page.OUT_NAME} does not match site/AI-HANDOFF.md: run scripts/build.py")
     errs += [f"AI-HANDOFF.md: {w}" for w in handoff_warnings]
-    if '<meta name="robots" content="noindex' not in page:
-        errs.append("the AI Handoff page lacks the noindex tag")
+    if '<meta name="robots" content="index, follow"' not in page:
+        errs.append("the AI Handoff page lacks its public indexing directive")
     ids = set(re.findall(r'\sid="([^"]+)"', page))
     errs += [f"the AI Handoff page links #{f}, which is not on the page" for f in re.findall(r'href="#([^"]*)"', page) if f not in ids]
     for src in ("site/index.html", "site/assets/app.js", "README.md"):

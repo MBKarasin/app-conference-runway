@@ -1,0 +1,24 @@
+{
+  "schedule": "04:00 America/New_York",
+  "status": "success",
+  "started_at": "2026-10-17T08:43:50Z",
+  "completed_at": "2026-10-17T08:57:46Z",
+  "sources_checked_at": "2026-10-17T08:57:46Z",
+  "published_at": "2026-10-17T09:01:52Z",
+  "summary": {
+    "checked": 239,
+    "verified": 205,
+    "not_found": 8,
+    "unreachable": 26,
+    "new_source_supported_records": 3,
+    "manually_confirmed_or_corrected": 30,
+    "withheld": 4,
+    "date_ranges_corrected": 4,
+    "call_records_refreshed": 6
+  },
+  "report": "data/manual-review-report.md",
+  "remaining_followups": 4,
+  "resolution": "30 exceptions confirmed or corrected; four unsupported PAEA editions withheld with originals and daily follow-up retained",
+  "blocking_source_issues": 0,
+  "publication_state": "Cloudflare deployment success and live-domain footer verified; status manifest publication follows"
+}

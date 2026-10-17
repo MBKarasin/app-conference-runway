@@ -459,7 +459,7 @@ def render(source=None):
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src 'self' data:; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light">
-<meta name="robots" content="noindex, nofollow, noarchive"><!-- the Runway is circulated among APPs, not listed in search engines -->
+<meta name="robots" content="index, follow">
 <meta name="handoff-source-sha256" content="{digest}">
 <title>{html.escape(TITLE)}</title>
 <meta name="description" content="How the APP Conference Runway was built, where its data comes from, and how to reproduce or challenge it.">

@@ -256,7 +256,7 @@ def main():
         sha = meta("handoff-source-sha256")
         check("the AI Handoff page was rendered from the AI-HANDOFF.md this site serves", sha == hashlib.sha256(md).hexdigest(), sha[:12])
         robots = meta("robots")
-        check("the AI Handoff page asks search engines not to index it", "noindex" in robots, robots)
+        check("the AI Handoff page permits public indexing", "index" in robots and "noindex" not in robots, robots)
         sec = next((hid for hid, t in heads if t.startswith("3.4 ")), None)
         target = urljoin(hurl, "#" + sec) if sec else None
         check("footer and index notes link the index definitions on this site (AI Handoff §3.4)", bool(target) and target in defs and target in notes, f"{target}; notes {notes}")

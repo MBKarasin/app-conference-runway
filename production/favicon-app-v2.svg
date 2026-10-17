@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="APP Conference Runway">
+  <defs>
+    <linearGradient id="navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#124474"/>
+      <stop offset="1" stop-color="#062C57"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="248" height="248" rx="48" fill="#FFFFFF"/>
+  <g transform="translate(128,128) scale(0.9) translate(-128,-124.5)">
+    <path d="M18 84C72 23 184 23 238 84C181 50 75 50 18 84Z" fill="#CC0033"/>
+    <g fill="url(#navy)">
+      <path d="M86 72H108L72 226H12Z"/>
+      <path d="M112 72H128L164 226H84Z"/>
+      <path d="M132 72H148L244 226H176Z"/>
+    </g>
+  </g>
+</svg>

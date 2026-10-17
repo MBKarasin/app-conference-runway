@@ -1,0 +1,42 @@
+{
+  "next_check": "2026-10-18T04:00:00-04:00",
+  "timezone": "America/New_York",
+  "items": [
+    {
+      "edition_id": "3120ce066484",
+      "status": "awaiting_organizer_confirmation",
+      "action": "Recheck PAEA official future meeting announcements. Restore original record only with source-supported dates.",
+      "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+    },
+    {
+      "edition_id": "890190479333",
+      "status": "awaiting_organizer_confirmation",
+      "action": "Recheck PAEA official future meeting announcements. Restore original record only with source-supported dates.",
+      "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+    },
+    {
+      "edition_id": "89122ea45979",
+      "status": "awaiting_organizer_confirmation",
+      "action": "Recheck PAEA official future meeting announcements. Restore original record only with source-supported dates.",
+      "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+    },
+    {
+      "edition_id": "c1ce0f518355",
+      "status": "awaiting_organizer_confirmation",
+      "action": "Recheck PAEA official future meeting announcements. Restore original record only with source-supported dates.",
+      "source_url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+    },
+    {
+      "edition_id": "2fedca69186a",
+      "status": "resolved_monitor",
+      "action": "Dates confirmed in organizer-issued letter. Recheck live organizer page when accessible; no current content correction required.",
+      "source_url": "https://www.tnpa.org.tw/events/content.php?id=6262"
+    },
+    {
+      "edition_id": "2bedae9df083",
+      "status": "resolved_monitor",
+      "action": "Recheck registration prose inconsistency; main conference page and professional society agree on October 22–25.",
+      "source_url": "https://www.cano-acio.ca/page/cano2026"
+    }
+  ]
+}

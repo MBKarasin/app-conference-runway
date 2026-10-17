@@ -2,13 +2,15 @@
 
 A source-traced calendar of conferences, abstract deadlines, student and DNP project venues, and observances for advanced practice providers (NPs, PAs, CRNAs, CNSs, CNMs). Every upcoming dated entry links to the organizer's own material and, unless computed from a published rule, quotes the wording its date came from, so a visitor can confirm it before registering, submitting or traveling. The project is global in scope and incomplete: its reach is measured (see the Fidelity Index below), and current coverage remains concentrated in the United States.
 
-**Live site:** https://mbkarasin.github.io/app-conference-runway/. Its pages carry a `noindex` tag, and it is shared directly among APPs.
+**Main public site:** https://appconferencerunway.org/ . Public source and owner contributions are MIT licensed for exchange of ideas and promotion of human health. Search crawling is permitted.
+
+**Deployment distinction:** `production/` is the approved main-domain Cloudflare snapshot. The existing `site/` build publishes the separate GitHub Pages variant at https://mbkarasin.github.io/app-conference-runway/ . The daily GitHub workflow does not publish the main domain. See [publication notes](PUBLICATION.md).
 
 The site is independent. It is not an official publication of, or endorsement by, Rutgers University or RWJBarnabas Health. It is owned and curated by Dr. Mark Karasin, DNP, APN, AGACNP-BC, CNOR(E), who decides what is published. Every AI actor works under his MBK AI Governance Protocol: Claude by Anthropic assists research and implementation, ChatGPT by OpenAI is the red team, and no model decides what is published. The curator shares the Runway for critique with colleagues in academic nursing, research, clinical practice, artificial intelligence and data science; their feedback informs his scholarly inquiry.
 
-Documentation, limitations, and how to check or challenge the project: the [AI Handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html), which opens on the site itself with no account; its source is [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Rights: [`LICENSE`](LICENSE) (all rights reserved; the name and logo are claimed as trademarks; the public receives transparency). Contact: mark.karasin@protonmail.com.
+Documentation, limitations, and how to check or challenge the project: the [AI Handoff](https://mbkarasin.github.io/app-conference-runway/ai-handoff.html), which opens on the site itself with no account; its source is [`site/AI-HANDOFF.md`](site/AI-HANDOFF.md). Rights: [`LICENSE`](LICENSE) (MIT for the owner's contributions; third-party rights and trademark exclusions are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)). Contact: mark.karasin@protonmail.com.
 
-## What a visitor sees
+## What a visitor sees in the separate GitHub Pages variant
 
 - Four views of the same filtered records: **List** (upcoming records by month), **Calendar** (a month grid), **Orbit** (the landing view: twelve months with the count of each record type) and **Directory** (every recurring series with its history).
 - Filters: **Discipline**, **Focus** (one record type at a time), **Scope**, **Location** and search. Every view is a shareable link. **Near City** takes a ZIP code or a place such as "Springfield, IL", "Portland ME" or "London, ON", and says so when it does not know a place.

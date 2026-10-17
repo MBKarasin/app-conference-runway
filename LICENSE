@@ -1,36 +1,21 @@
-APP Conference Runway — rights and terms of use
+MIT License
 
-© 2026 Mark Karasin. All rights reserved.
+Copyright (c) 2026 Mark Karasin
 
-Name and logo. "APP Conference Runway" and its logo, in every form (the mark alone, the mark with
-letters, and the mark with the name beside it), are claimed as trademarks of Mark Karasin. They may
-not be used without his written permission.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This repository and the site. The code, data compilation, design and documentation (including
-site/AI-HANDOFF.md) are Mark Karasin's. No license to copy, modify or redistribute them is granted.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Transparency. Anyone may read the site and this repository, link to them, run the repository's
-scripts to check the published data and indices, and check any record against its organizer's
-source. GitHub's terms also let GitHub users view and fork a public repository on GitHub; that
-grants no other use.
-
-Earlier versions. From commit ad9dd5f (2026-09-22) until this change, versions of this repository
-carried a Creative Commons CC0 1.0 public-domain dedication for the curator's code, data
-compilation, design and documentation; from commit c94aa5f (2026-09-23) it also named the logo
-artwork. That dedication cannot be withdrawn for those versions and does not extend to later
-changes. It never waived trademark rights (CC0 1.0, section 4(a)).
-
-Not Mark Karasin's:
-- Organizer material: organizer and event names, the short verbatim quotes kept as evidence,
-  linked pages and images, and organizer marks. They belong to their organizers and are
-  reproduced only to show where a date came from.
-- Third-party components, which keep their own licenses: Barlow Condensed and Source Sans 3
-  (SIL Open Font License, see site/fonts/); GeoNames data (CC BY 4.0, attribution required);
-  U.S. Census Bureau Gazetteer data (public domain).
-- Institutional names and marks, including those of Rutgers University and RWJBarnabas Health.
-  They are not licensed, and nothing here implies their endorsement.
-
-No warranty. The site and its data are provided as is, without warranty of any kind. Dates change;
-confirm with the organizer before registering, submitting or traveling.
-
-Contact: mark.karasin@protonmail.com
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

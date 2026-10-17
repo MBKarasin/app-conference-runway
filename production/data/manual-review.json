@@ -1,0 +1,922 @@
+{
+  "reviewed_at": "2026-10-17T08:57:46Z",
+  "scope": "34 automated exceptions; not a new crawl of every source",
+  "records": [
+    {
+      "edition_id": "2fedca69186a",
+      "name": "2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society)",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.tnpa.org.tw/events/content.php?id=6262",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://midwife.org.tw/upfiles/newsfiles/2026/02/20260224091148-92c26dbdd06e5ef9905d86971ece4935.pdf",
+        "https://www.ccna.org.tw/publicUI/B/B10301.aspx?arg=8DE754808F8D3D1071"
+      ],
+      "original_dates": [
+        "2026-10-18",
+        "2026-10-18"
+      ],
+      "disposition": "confirmed",
+      "method": "organizer_letter_visual_review",
+      "finding": "Organizer-issued letter dated February 3, ROC year 115, visually reviewed on October 17. It confirms October 18, 2026, 12:30–16:00, Greater Tainan Convention Center, and July 31 abstract deadline. Letter hosted by its recipient, Taiwan Midwives Association; original organizer website remains protected.",
+      "current_dates": [
+        "2026-10-18",
+        "2026-10-18"
+      ]
+    },
+    {
+      "edition_id": "273ab4936c7d",
+      "name": "Leadership Academy",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "snippet": "ractices, including clinical and non-clinical leaders. Learn More Leadership Academy 2026 October 19-22, 2026 | Scottsdale, AZ Join us at the JW Marriott Camelback Inn and become the guiding",
+        "state": "unreachable",
+        "url": "https://www.hospitalmedicine.org/event/conferences/",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.hospitalmedicine.org/event/conferences/"
+      ],
+      "original_dates": [
+        "2026-10-19",
+        "2026-10-22"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2026-10-19",
+        "2026-10-22"
+      ]
+    },
+    {
+      "edition_id": "48ef8653cead",
+      "name": "NCS Annual Meeting",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "snippet": "ister now and join the NCS community in \"Reaching New Heights\" in neurocritical care this October 20-23 in Seattle. Event Home Registration Schedule Workshops Keynotes Hotel + Travel Network",
+        "state": "unreachable",
+        "url": "https://www.neurocriticalcare.org/Events/Annual-Meeting",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.neurocriticalcare.org/Events/Annual-Meeting/Past-Future-Annual-Meetings"
+      ],
+      "original_dates": [
+        "2026-10-20",
+        "2026-10-23"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2026-10-20",
+        "2026-10-23"
+      ]
+    },
+    {
+      "edition_id": "2bedae9df083",
+      "name": "CANO/ACIO Annual Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.cano-acio.ca/page/cano2026",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.cano-acio.ca/page/cano2026",
+        "https://www.isncc.org/event-6569022",
+        "https://www.cano-acio.ca/events/EventDetails.aspx?alias=canoacio2026"
+      ],
+      "original_dates": [
+        "2026-10-22",
+        "2026-10-25"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Conference landing page, official newsletter, event calendar and ISNCC announcement agree on October 22–25. A registration-page prose sentence says October 26, while its structured range says October 25. Retained October 25 based on the conference-specific sources; retain the discrepancy for follow-up.",
+      "current_dates": [
+        "2026-10-22",
+        "2026-10-25"
+      ]
+    },
+    {
+      "edition_id": "460a16759e79",
+      "name": "IPAS Fall CME Conference (Healthcare in the Heartland)",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.iapasociety.org",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.iapasociety.org"
+      ],
+      "original_dates": [
+        "2026-10-26",
+        "2026-10-27"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2026-10-26",
+        "2026-10-27"
+      ]
+    },
+    {
+      "edition_id": "b64d6d0401c3",
+      "name": "2026 Annual Scientific Conference & AGM",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 1,
+        "last_verified": "2026-09-24",
+        "state": "not_found",
+        "url": "https://nnak2026.inburstcorp.com/",
+        "why": "not on page: date"
+      },
+      "sources": [
+        "https://nnak2026.inburstcorp.com/img/background.jpeg"
+      ],
+      "original_dates": [
+        "2026-10-28",
+        "2026-10-30"
+      ],
+      "disposition": "confirmed",
+      "method": "official_image_visual_review",
+      "finding": "Date verified visually in the organizer-linked conference banner; the automated text reader did not read the image.",
+      "current_dates": [
+        "2026-10-28",
+        "2026-10-30"
+      ]
+    },
+    {
+      "edition_id": "b4e1a4663559",
+      "name": "Sustainable Health Excellence Nursing Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-21",
+        "state": "unreachable",
+        "url": "https://conference.manipal.edu/shelac2026/",
+        "why": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl"
+      },
+      "sources": [
+        "https://conference.manipal.edu/shelac2026/"
+      ],
+      "original_dates": [
+        "2026-10-30",
+        "2026-10-31"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "edition_id": "f21293985b2b",
+      "name": "NONPF Fall Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.nonpf.org/page/futureconferences",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.nonpf.org/page/futureconferences"
+      ],
+      "original_dates": [
+        "2026-11-05",
+        "2026-11-06"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2026-11-05",
+        "2026-11-06"
+      ]
+    },
+    {
+      "edition_id": "2891e7185321",
+      "name": "Padjadjaran International Nursing Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-24",
+        "state": "unreachable",
+        "url": "https://pinc.fkep.unpad.ac.id/",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://pinc.fkep.unpad.ac.id/"
+      ],
+      "original_dates": [
+        "2026-11-07",
+        "2026-11-08"
+      ],
+      "disposition": "corrected",
+      "method": "official_page_review",
+      "finding": "Current organizer homepage and program give November 6–7; previous stored November 7–8 is superseded.",
+      "current_dates": [
+        "2026-11-06",
+        "2026-11-07"
+      ]
+    },
+    {
+      "edition_id": "08404cd571fb",
+      "name": "Qatar Health Congress",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx",
+        "why": "the site asked the reader to prove it is human; not attempted"
+      },
+      "sources": [
+        "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx"
+      ],
+      "original_dates": [
+        "2026-11-11",
+        "2026-11-14"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2026-11-11",
+        "2026-11-14"
+      ]
+    },
+    {
+      "edition_id": "c6226c5e9add",
+      "name": "National Postgraduate Nursing Congress",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/",
+        "why": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl"
+      },
+      "sources": [
+        "https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/"
+      ],
+      "original_dates": [
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2026-11-26",
+        "2026-11-27"
+      ]
+    },
+    {
+      "edition_id": "a6986e02edc1",
+      "name": "National CRNA Week",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-24",
+        "state": "unreachable",
+        "url": "https://www.aana.com/event/national-crna-week-2027/",
+        "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+      },
+      "sources": [
+        "https://www.aana.com/event/national-crna-week-2027/"
+      ],
+      "original_dates": [
+        "2027-01-17",
+        "2027-01-23"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-01-17",
+        "2027-01-23"
+      ]
+    },
+    {
+      "edition_id": "db6c943ce1b9",
+      "name": "EDGE (nurse anesthesia educators)",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.aana.com/event/edge-2027/",
+        "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+      },
+      "sources": [
+        "https://www.aana.com/event/edge-2027/"
+      ],
+      "original_dates": [
+        "2027-02-25",
+        "2027-02-28"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-02-25",
+        "2027-02-28"
+      ]
+    },
+    {
+      "edition_id": "3eecefb90b41",
+      "name": "VCNP Annual Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 2,
+        "last_verified": "2026-09-25T10:42:29Z",
+        "state": "not_found",
+        "url": "https://www.vcnp.net/events",
+        "why": "not on page: date"
+      },
+      "sources": [
+        "https://www.vcnp.net/vcnp-award-winners/"
+      ],
+      "original_dates": [
+        "2027-03-03",
+        "2027-03-06"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-03-03",
+        "2027-03-06"
+      ]
+    },
+    {
+      "edition_id": "8dacb8f4aa3f",
+      "name": "National Hospitalist Day",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "snippet": "year out of an applicant pool of more than 18,000. Save the Date for Next Year: Thursday, March 4, 2027! Thank you for celebrating with us this year! We appreciate you taking the time to",
+        "state": "unreachable",
+        "url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/"
+      ],
+      "original_dates": [
+        "2027-03-04",
+        "2027-03-04"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-03-04",
+        "2027-03-04"
+      ]
+    },
+    {
+      "edition_id": "10976499e525",
+      "name": "Annual Assembly of Hospice and Palliative Care",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-24",
+        "state": "unreachable",
+        "url": "https://aahpm.org/education-events/annual-assembly/",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://aahpm.org/education-events/annual-assembly/"
+      ],
+      "original_dates": [
+        "2027-03-17",
+        "2027-03-20"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-03-17",
+        "2027-03-20"
+      ]
+    },
+    {
+      "edition_id": "a4c64b558932",
+      "name": "AmSECT International Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "snippet": "Statements & Endorsements International Conference AmSECT 65 th International Conference March 17-21, 2027 • Nashville, Tennessee, U.S.A. Stay tuned for more details! Call for Abstracts S",
+        "state": "unreachable",
+        "url": "https://amsect.org/events-education/international-conference",
+        "why": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl"
+      },
+      "sources": [
+        "https://amsect.org/events-education/international-conference"
+      ],
+      "original_dates": [
+        "2027-03-17",
+        "2027-03-21"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-03-17",
+        "2027-03-21"
+      ]
+    },
+    {
+      "edition_id": "7b6f95d9ef1c",
+      "name": "NJ Emergency Care Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "snippet": "Networking, Advocacy 2027 Emergency Care Conference Call for Speakers Conference Dates: March 17th, 18th, & 19th, 2027 Deadline for submissions is September 18, 2026. Presenters will be no",
+        "state": "unreachable",
+        "url": "https://www.newjerseyena.org/2027-call-for-speakers",
+        "why": "HTTP 404"
+      },
+      "sources": [
+        "https://www.newjerseyena.org/2027-call-for-posters"
+      ],
+      "original_dates": [
+        "2027-03-17",
+        "2027-03-19"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-03-17",
+        "2027-03-19"
+      ]
+    },
+    {
+      "edition_id": "31f21fec28cb",
+      "name": "SHM Converge",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "snippet": "Sponsor Opportunities X Register Now What's next for hospital medicine in 2027 & beyond? March 30 - April 2, 2027 *March 30 is for pre-courses. Main conference begins March 31. Mandalay B",
+        "state": "unreachable",
+        "url": "https://shmconverge.hospitalmedicine.org/",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://shmconverge.hospitalmedicine.org/"
+      ],
+      "original_dates": [
+        "2027-03-30",
+        "2027-04-02"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Published date range includes March 30 pre-courses; main meeting starts March 31.",
+      "current_dates": [
+        "2027-03-30",
+        "2027-04-02"
+      ]
+    },
+    {
+      "edition_id": "f728d5279341",
+      "name": "ENRS Annual Scientific Sessions",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 1,
+        "last_verified": "2026-09-25",
+        "state": "not_found",
+        "url": "https://enrs2027conference.oa-event.com/",
+        "why": "not on page: date, year, name"
+      },
+      "sources": [
+        "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png"
+      ],
+      "original_dates": [
+        "2027-03-31",
+        "2027-04-02"
+      ],
+      "disposition": "confirmed",
+      "method": "official_image_visual_review",
+      "finding": "Date verified visually in the conference banner linked by the official event homepage; the text checker did not read the image.",
+      "current_dates": [
+        "2027-03-31",
+        "2027-04-02"
+      ]
+    },
+    {
+      "edition_id": "a83ba760ec56",
+      "name": "Advanced Practice Neonatal Nurses Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.academyonline.org/page/conferences",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.academyonline.org/page/APconference"
+      ],
+      "original_dates": [
+        "2027-04-08",
+        "2027-04-10"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-04-08",
+        "2027-04-10"
+      ]
+    },
+    {
+      "edition_id": "63b4fd60df55",
+      "name": "AMIA Amplify (Informatics Summit + Clinical Informatics Conference)",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://amia.org/education-events/2027-amplify-informatics-conference",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://amia.org/education-events/2027-amplify-informatics-conference"
+      ],
+      "original_dates": [
+        "2027-04-12",
+        "2027-04-15"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-04-12",
+        "2027-04-15"
+      ]
+    },
+    {
+      "edition_id": "b9f577965d09",
+      "name": "AAAA Annual Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-25",
+        "state": "unreachable",
+        "url": "https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/",
+        "why": "page has almost no readable text (43 chars; likely JavaScript-only)"
+      },
+      "sources": [
+        "https://www.anesthetist.org/fall-fundraiser-2026"
+      ],
+      "original_dates": [
+        "2027-04-14",
+        "2027-04-18"
+      ],
+      "disposition": "corrected",
+      "method": "official_page_review",
+      "finding": "Organizer fundraising page explicitly identifies April 15–18, 2027. This resolves the unreadable Whova page and malformed industry-calendar date.",
+      "current_dates": [
+        "2027-04-15",
+        "2027-04-18"
+      ]
+    },
+    {
+      "edition_id": "002ad3b7a061",
+      "name": "Mid-Year Assembly",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.aana.com/event/mid-year-assembly-2027/",
+        "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+      },
+      "sources": [
+        "https://www.aana.com/event/mid-year-assembly-2027/"
+      ],
+      "original_dates": [
+        "2027-04-16",
+        "2027-04-21"
+      ],
+      "disposition": "corrected",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-04-17",
+        "2027-04-21"
+      ]
+    },
+    {
+      "edition_id": "2b995c9ce64e",
+      "name": "ASCO Annual Meeting",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-25",
+        "state": "unreachable",
+        "url": "https://www.asco.org/annual-meeting/dates-know",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.asco.org/annual-meeting/dates-know"
+      ],
+      "original_dates": [
+        "2027-06-04",
+        "2027-06-08"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-06-04",
+        "2027-06-08"
+      ]
+    },
+    {
+      "edition_id": "bfb1cef79cb1",
+      "name": "PNAA National Convention",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 1,
+        "last_verified": "2026-09-24",
+        "state": "not_found",
+        "url": "https://mypnaa.org/events",
+        "why": "not on page: date, year"
+      },
+      "sources": [
+        "https://mypnaa.org/48th-PNAA-National-Convention"
+      ],
+      "original_dates": [
+        "2027-07-17",
+        "2027-07-24"
+      ],
+      "disposition": "corrected",
+      "method": "official_page_review",
+      "finding": "Specific convention page gives July 16–24; retain full convention range rather than July 17 cruise departure. Page heading has an edition-number typo.",
+      "current_dates": [
+        "2027-07-16",
+        "2027-07-24"
+      ]
+    },
+    {
+      "edition_id": "63030a7dee9b",
+      "name": "AANA Annual Congress",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.aana.com/event/aana-annual-congress-2027/",
+        "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
+      },
+      "sources": [
+        "https://www.aana.com/event/aana-annual-congress-2027/"
+      ],
+      "original_dates": [
+        "2027-08-08",
+        "2027-08-12"
+      ],
+      "disposition": "confirmed",
+      "method": "official_page_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-08-08",
+        "2027-08-12"
+      ]
+    },
+    {
+      "edition_id": "20467b982cf4",
+      "name": "NCS Annual Meeting",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "snippet": "ffers in-person and online events year round. Annual Meeting NCS 25th Annual Meeting 2027 September 27-30, 2027 Hyatt Regency New Orleans Save the date for the NCS 25th Annual Meeting, taking",
+        "state": "unreachable",
+        "url": "https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027"
+      ],
+      "original_dates": [
+        "2027-09-27",
+        "2027-09-30"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2027-09-27",
+        "2027-09-30"
+      ]
+    },
+    {
+      "edition_id": "3120ce066484",
+      "name": "PAEA Education Forum",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "state": "not_found",
+        "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+        "why": "not on page: date, year"
+      },
+      "sources": [
+        "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+      ],
+      "original_dates": [
+        "2027-10-11",
+        "2027-10-16"
+      ],
+      "disposition": "withheld",
+      "finding": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily."
+    },
+    {
+      "edition_id": "0c7fb520bb72",
+      "name": "NONPF Annual Conference",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.nonpf.org/page/futureconferences",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.nonpf.org/page/futureconferences"
+      ],
+      "original_dates": [
+        "2028-04-19",
+        "2028-04-23"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2028-04-19",
+        "2028-04-23"
+      ]
+    },
+    {
+      "edition_id": "0062195111b0",
+      "name": "ASCO Annual Meeting",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "fails": 1,
+        "last_verified": "2026-09-22",
+        "state": "unreachable",
+        "url": "https://www.asco.org/annual-meeting/dates-know",
+        "why": "HTTP 403"
+      },
+      "sources": [
+        "https://www.asco.org/annual-meeting/dates-know"
+      ],
+      "original_dates": [
+        "2028-06-02",
+        "2028-06-06"
+      ],
+      "disposition": "confirmed",
+      "method": "official_indexed_source_review",
+      "finding": "Dates confirmed in the current official source.",
+      "current_dates": [
+        "2028-06-02",
+        "2028-06-06"
+      ]
+    },
+    {
+      "edition_id": "89122ea45979",
+      "name": "PAEA Education Forum",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "state": "not_found",
+        "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+        "why": "not on page: date, year"
+      },
+      "sources": [
+        "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+      ],
+      "original_dates": [
+        "2028-10-16",
+        "2028-10-21"
+      ],
+      "disposition": "withheld",
+      "finding": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily."
+    },
+    {
+      "edition_id": "890190479333",
+      "name": "PAEA Education Forum",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "state": "not_found",
+        "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+        "why": "not on page: date, year"
+      },
+      "sources": [
+        "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+      ],
+      "original_dates": [
+        "2029-10-29",
+        "2029-11-03"
+      ],
+      "disposition": "withheld",
+      "finding": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily."
+    },
+    {
+      "edition_id": "c1ce0f518355",
+      "name": "PAEA Education Forum",
+      "reviewed_at": "2026-10-17T08:57:46Z",
+      "original_automated_result": {
+        "checked": "2026-10-17T08:43:50Z",
+        "evidence_match": false,
+        "fails": 1,
+        "last_verified": "2026-09-26T06:51:17Z",
+        "state": "not_found",
+        "url": "https://paeaonline.org/resources/public-resources/events/paea-education-forum",
+        "why": "not on page: date, year"
+      },
+      "sources": [
+        "https://paeaonline.org/resources/public-resources/events/paea-education-forum"
+      ],
+      "original_dates": [
+        "2030-10-13",
+        "2030-10-17"
+      ],
+      "disposition": "withheld",
+      "finding": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily."
+    }
+  ]
+}

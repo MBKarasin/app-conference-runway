@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <g transform="translate(128,128) scale(0.9) translate(-128,-124.5)">
+    <path d="M18 84C72 23 184 23 238 84C181 50 75 50 18 84Z"/>
+    <path d="M86 72H108L72 226H12Z"/>
+    <path d="M112 72H128L164 226H84Z"/>
+    <path d="M132 72H148L244 226H176Z"/>
+  </g>
+</svg>

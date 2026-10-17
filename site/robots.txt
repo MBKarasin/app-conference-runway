@@ -1,5 +1,3 @@
-# The Runway is shared by link among advanced practice providers. Its pages carry a noindex tag, which a
-# crawler can obey only if it may read the page, so nothing is disallowed here. (Crawlers read robots.txt
-# only at a host's root; this copy states the site's intent.)
 User-agent: *
 Allow: /
+Sitemap: https://appconferencerunway.org/sitemap.xml

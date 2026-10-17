@@ -4332,16 +4332,6 @@
 "region": "Northeast",
 "state": "PA"
 },
-"Virginia (venue not posted)": {
-"cc": "US",
-"continent": "North America",
-"country": "United States",
-"lat": 37.558,
-"lon": -77.924,
-"precision": "state",
-"region": "South",
-"state": "VA"
-},
 "Virginia Beach, VA": {
 "cc": "US",
 "continent": "North America",
@@ -4592,8 +4582,8 @@
 "cc": "TW",
 "continent": "Asia",
 "country": "Taiwan",
-"lat": 22.9908,
-"lon": 120.2133,
+"lat": 22.9926,
+"lon": 120.2051,
 "place": "Tainan",
 "precision": "city",
 "region": "Asia"
