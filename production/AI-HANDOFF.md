@@ -215,3 +215,10 @@ Carry forward the withheld PAEA records and source-resolution history in the dai
 ## 17. Final header direction
 
 Restore the approved uppercase subtitle beneath the logo. Reduce logo artwork width by 15% relative to its containing logo area. Remove Share with a colleague; keep Copy link, Make a request and AI Handoff in their earlier header arrangement. Preserve the compact footer, source-check timestamp and badge.
+
+
+## Source reconciliation and visitor analytics — October 17, 2026
+
+Reader failures do not establish broken public pages. Current organizer browser evidence is preserved in data/manual-review.json and carried into repository source overrides. Four unconfirmed future PAEA editions remain withheld. AAAA 2027 starts April 14 according to the official event page; that supersedes the fundraising page. VCNP links to its dedicated 2027 event page and NJENA to the working poster page. Nightly reporting distinguishes current manual evidence from machine-read failures; evidence older than 90 days returns to review.
+
+Cloudflare automatic visitor analytics requires static.cloudflareinsights.com in script-src; ingestion is same-origin /cdn-cgi/rum. The policy has been repaired without adding another beacon. Receipt must be confirmed in the Cloudflare report before analytics is called verified. Cloudflare does not provide custom action events here.

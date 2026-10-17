@@ -373,15 +373,15 @@
         "why": "not on page: date"
       },
       "sources": [
-        "https://www.vcnp.net/vcnp-award-winners/"
+        "https://www.vcnp.net/events/2027VCNPAnnualConference/"
       ],
       "original_dates": [
         "2027-03-03",
         "2027-03-06"
       ],
       "disposition": "confirmed",
-      "method": "official_indexed_source_review",
-      "finding": "Dates confirmed in the current official source.",
+      "method": "official_browser_review",
+      "finding": "Dedicated official conference page confirms March 3–6, 2027 and Hotel Roanoke & Conference Center.",
       "current_dates": [
         "2027-03-03",
         "2027-03-06"
@@ -621,6 +621,7 @@
         "why": "page has almost no readable text (43 chars; likely JavaScript-only)"
       },
       "sources": [
+        "https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/",
         "https://www.anesthetist.org/fall-fundraiser-2026"
       ],
       "original_dates": [
@@ -628,10 +629,10 @@
         "2027-04-18"
       ],
       "disposition": "corrected",
-      "method": "official_page_review",
-      "finding": "Organizer fundraising page explicitly identifies April 15–18, 2027. This resolves the unreadable Whova page and malformed industry-calendar date.",
+      "method": "official_event_browser_review",
+      "finding": "Official organizer event/registration page rendered directly in browser states April 14–18; it takes precedence over the fundraising page advertising April 15–18.",
       "current_dates": [
-        "2027-04-15",
+        "2027-04-14",
         "2027-04-18"
       ]
     },

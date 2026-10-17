@@ -17,6 +17,7 @@ Nothing here edits dates. It only writes data/verification.json and data/check_r
 import os, json, re, sys, html, time, datetime as dt, pathlib, threading, calendar, urllib.parse, urllib.robotparser
 from concurrent.futures import ThreadPoolExecutor
 import urllib.request, ssl
+from review_support import evidence_current
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 UA = "APPConferenceRunwayChecker/1.0 (+https://github.com/; weekly date check, one request per page)"
@@ -197,6 +198,39 @@ def ocr_image(url):
     # letter-spaced type ("L O E W S") reads as single characters; add a copy with those runs joined
     return t + " " + re.sub(r"(?<![\w.])((?:[\w.] ){2,}[\w.])(?![\w.])", lambda m: m.group(1).replace(" ", ""), t)
 
+def write_report(eds, ver, flips, series, frozen):
+    # human report
+    from collections import Counter
+    c = Counter(v["state"] for v in ver.values())
+    on_file = lambda e: evidence_current(e, TODAY)   # curator walked the source and kept a verbatim quote + URL
+    failed = [e for e in eds if ver[e["id"]]["state"] in ("not_found", "unreachable")]
+    open_ = [e for e in failed if not on_file(e)]
+    flips = [(e,r) for e,r in flips if not on_file(e)]
+    sha = os.environ.get("GITHUB_SHA", "local")[:7]
+    L = [f"# Nightly source check — {NOW[:10]}", "",
+         f"Generated {NOW} from commit {sha}. This report is the canonical status; the review issue is rewritten from it on every run.", "",
+         f"Editions re-checked: {len(eds)} · verified {c['verified']} · not found {c['not_found']} · unreachable {c['unreachable']}",
+         f"Checker could not match: {len(failed)} · of these, curator evidence on file: {len(failed) - len(open_)} · open: {len(open_)}",
+         f"Confirmed by the second readers: rendered after JavaScript {sum(1 for v in ver.values() if v.get('via') == 'rendered')} · read from the organizer's image {sum(1 for v in ver.values() if v.get('via') == 'image')}",
+         f"Past editions frozen (not re-read): {len(frozen)}", ""]
+    if flips:
+        L += ["## Newly failing (were verified last run) — review these first", ""]
+        L += [f"- [ ] **{series[e['series']]['name']}** ({e['start']}): {r.get('why')} — {e['source_url']}" for e, r in flips] + [""]
+    for st, title in (("not_found", "Automatic text did not match; no current manual confirmation"), ("unreachable", "Automated reader could not read; no current manual confirmation")):
+        rows = [(e, ver[e["id"]]) for e in eds if ver[e["id"]]["state"] == st and not on_file(e)]
+        if rows:
+            L += [f"## {title} — open ({len(rows)})", ""]
+            L += [f"- {series[e['series']]['name']} — {e['start']} — {r.get('why')} — {e['source_url']}" for e, r in rows] + [""]
+    kept = [e for e in failed if on_file(e)]
+    if kept:
+        L += [f"## Reader exceptions resolved by current curator evidence ({len(kept)})", ""]
+        L += [f"- {series[e['series']]['name']} — {e['start']} — reviewed {e.get('reviewed_on') or '?'} — {e['source_url']}" for e in kept] + [""]
+    L += [f"OPEN_ITEMS={len(open_) + len(flips)}"]
+    (ROOT / "data" / "check_report.md").write_text("\n".join(L), encoding="utf-8")
+    print(f"archived {c['archived']} | verified {c['verified']} | not_found {c['not_found']} | unreachable {c['unreachable']} | newly failing {len(flips)}"
+          f" | via rendered {sum(1 for v in ver.values() if v.get('via') == 'rendered')} | via image {sum(1 for v in ver.values() if v.get('via') == 'image')}")
+
+
 def main():
     data = json.load(open(ROOT / "site" / "data" / "runway.json", encoding="utf-8"))
     series = {s["id"]: s for s in data["series"]}
@@ -262,10 +296,22 @@ def main():
                 if all(j):
                     results[e["id"]] = ("image", page_text, j)   # the image text is matched, never quoted
 
+    # Bounded fallback to official alternate sources already curated in source overrides.
+    alternate_used = {}
+    for e in eds:
+        if confirmed(e): continue
+        for u in list(dict.fromkeys(e.get("review_sources") or []))[:3]:
+            if u == e["source_url"]: continue
+            pg_alt = get_page(u)
+            if pg_alt.get("ok") and all(judge(e, pg_alt["text"])):
+                results[e["id"]] = ("official_alternate", pg_alt["text"], judge(e, pg_alt["text"]))
+                alternate_used[e["id"]] = u
+                break
+
     for e in eds:
         pg = pages[e["source_url"]]
         prev = old.get(e["id"], {})
-        rec = {"checked": NOW, "url": e["source_url"], "last_verified": prev.get("last_verified")}
+        rec = {"checked": NOW, "url": alternate_used.get(e["id"], e["source_url"]), "last_verified": prev.get("last_verified")}
         if e["id"] not in results:
             rec.update(state="unreachable", why=pg["why"])
             if prev.get("snippet"): rec["snippet"] = prev["snippet"]   # keep the last wording captured from the organizer
@@ -299,35 +345,7 @@ def main():
         ver[e["id"]] = rec
     vfile.parent.mkdir(exist_ok=True)
     json.dump(ver, open(vfile, "w", encoding="utf-8"), indent=1, sort_keys=True)
-    # human report
-    from collections import Counter
-    c = Counter(v["state"] for v in ver.values())
-    on_file = lambda e: bool(e.get("source_reviewed") and e.get("evidence"))   # curator walked the source and kept a verbatim quote + URL
-    failed = [e for e in eds if ver[e["id"]]["state"] in ("not_found", "unreachable")]
-    open_ = [e for e in failed if not on_file(e)]
-    sha = os.environ.get("GITHUB_SHA", "local")[:7]
-    L = [f"# Nightly source check — {NOW[:10]}", "",
-         f"Generated {NOW} from commit {sha}. This report is the canonical status; the review issue is rewritten from it on every run.", "",
-         f"Editions re-checked: {len(eds)} · verified {c['verified']} · not found {c['not_found']} · unreachable {c['unreachable']}",
-         f"Checker could not match: {len(failed)} · of these, curator evidence on file: {len(failed) - len(open_)} · open: {len(open_)}",
-         f"Confirmed by the second readers: rendered after JavaScript {sum(1 for v in ver.values() if v.get('via') == 'rendered')} · read from the organizer's image {sum(1 for v in ver.values() if v.get('via') == 'image')}",
-         f"Past editions frozen (not re-read): {len(frozen)}", ""]
-    if flips:
-        L += ["## Newly failing (were verified last run) — review these first", ""]
-        L += [f"- [ ] **{series[e['series']]['name']}** ({e['start']}): {r.get('why')} — {e['source_url']}" for e, r in flips] + [""]
-    for st, title in (("not_found", "Date not found on the organizer page"), ("unreachable", "Could not read the page")):
-        rows = [(e, ver[e["id"]]) for e in eds if ver[e["id"]]["state"] == st and not on_file(e)]
-        if rows:
-            L += [f"## {title} — open ({len(rows)})", ""]
-            L += [f"- {series[e['series']]['name']} — {e['start']} — {r.get('why')} — {e['source_url']}" for e, r in rows] + [""]
-    kept = [e for e in failed if on_file(e)]
-    if kept:
-        L += [f"## Checker could not match, curator evidence on file ({len(kept)})", ""]
-        L += [f"- {series[e['series']]['name']} — {e['start']} — reviewed {e.get('reviewed_on') or '?'} — {e['source_url']}" for e in kept] + [""]
-    L += [f"OPEN_ITEMS={len(open_) + len(flips)}"]
-    (ROOT / "data" / "check_report.md").write_text("\n".join(L), encoding="utf-8")
-    print(f"archived {c['archived']} | verified {c['verified']} | not_found {c['not_found']} | unreachable {c['unreachable']} | newly failing {len(flips)}"
-          f" | via rendered {sum(1 for v in ver.values() if v.get('via') == 'rendered')} | via image {sum(1 for v in ver.values() if v.get('via') == 'image')}")
+    write_report(eds, ver, flips, series, frozen)
 
 if __name__ == "__main__":
     main()

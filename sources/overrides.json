@@ -1,1182 +1,1681 @@
 {
- "_readme": "Curator corrections. 'aliases' folds a duplicate series into the kept one; 'series' and 'editions' patch fields by id; an edition with \"removed\": true is dropped.",
- "aliases": {
-  "american-association-of-neuroscience-nur__neuroscience-nursing-annual-conference": "american-association-of-neuroscience-nur__aann-annual-conference",
-  "associa-o-brasileira-de-enfermagem-aben__76-congresso-brasileiro-de-enfermagem-cben": "associa-o-brasileira-de-enfermagem-aben__congresso-brasileiro-de-enfermagem-cben"
- },
- "series": {
-  "university-of-washington-school-of-nursi__dnp-final-project-poster-presentations": {
-   "org_url": "https://nursing.uw.edu/academics/dnp/",
-   "_why": "The previous organizer link (students.nursing.uw.edu/?p=6814) now returns HTTP 404. Re-pointed 2026-09-24 to the school's own DNP programme page, which states: 'The program culminates in the presentation and defense of your DNP Project as your final examination.'",
-   "reviewed_on": "2026-09-24"
+  "_readme": "Curator corrections. 'aliases' folds a duplicate series into the kept one; 'series' and 'editions' patch fields by id; an edition with \"removed\": true is dropped.",
+  "aliases": {
+    "american-association-of-neuroscience-nur__neuroscience-nursing-annual-conference": "american-association-of-neuroscience-nur__aann-annual-conference",
+    "associa-o-brasileira-de-enfermagem-aben__76-congresso-brasileiro-de-enfermagem-cben": "associa-o-brasileira-de-enfermagem-aben__congresso-brasileiro-de-enfermagem-cben"
   },
-  "american-organization-for-nursing-leader__professional-governance-leadership-conference": {
-   "archive_url": null,
-   "_why": "The archive link (aonl.org/education-events/professional-governance-overview) returns HTTP 404 and AONL's events index no longer lists the page. Removed 2026-09-24 rather than shown as a working archive.",
-   "reviewed_on": "2026-09-24"
+  "series": {
+    "university-of-washington-school-of-nursi__dnp-final-project-poster-presentations": {
+      "org_url": "https://nursing.uw.edu/academics/dnp/",
+      "_why": "The previous organizer link (students.nursing.uw.edu/?p=6814) now returns HTTP 404. Re-pointed 2026-09-24 to the school's own DNP programme page, which states: 'The program culminates in the presentation and defense of your DNP Project as your final examination.'",
+      "reviewed_on": "2026-09-24"
+    },
+    "american-organization-for-nursing-leader__professional-governance-leadership-conference": {
+      "archive_url": null,
+      "_why": "The archive link (aonl.org/education-events/professional-governance-overview) returns HTTP 404 and AONL's events index no longer lists the page. Removed 2026-09-24 rather than shown as a working archive.",
+      "reviewed_on": "2026-09-24"
+    }
+  },
+  "editions": {
+    "e8d98a25caca": {
+      "removed": true,
+      "_why": "This was a roll-up of 29 separate SCCM course listings over 14 months, not one conference."
+    },
+    "8f0aefce3cc4": {
+      "removed": true,
+      "_why": "This displayed four separate Geisinger-hosted SCCM courses as one continuous month-long event."
+    },
+    "43335d5f76c7": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://npwh.org/news/674033/",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "27th Annual NPWH Women’s Healthcare Conference, September 25-28, 2024"
+    },
+    "426f2f34845c": {
+      "date_conflict": null,
+      "compiled": "2026-09-21",
+      "note": "The society's meeting page and the meeting's own site both give November 21-23, 2026 at Morinomiya University of Medical Sciences, Osaka. The summary line on the society's index reads 11/21-11/22 but labels the end day 月・祝 (Monday, public holiday), which is November 23; the index line is a typo.",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "js-np.jp/scientific-meeting-single-12.htm read 2026-09-22: 会期 2026.11.21(土)〜23(月・祝), 会場 森ノ宮医療大学; jsnp2026.jp/outline.html gives the same range."
+    },
+    "85a947e04684": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "28th Annual NPWH Women's Healthcare Conference, October 1–3, 2025, Caesars Palace in Las Vegas."
+    },
+    "7c83d68f1860": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://www.ons.org/education-hub/events/congress/blog/ignite-extraordinary-possibilities-impacting-cancer-care-ons",
+      "source_reviewed": true,
+      "evidence": "The 2024 ONS Congress takes place April 24–28 in Washington, DC."
+    },
+    "f5590a05975e": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://amia.org/education-events/amia-2025-informatics-summit",
+      "source_reviewed": true,
+      "evidence": "AMIA 2025 Informatics Summit, March 10–13, Pittsburgh, PA."
+    },
+    "371badb11823": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://texasnp.org/wp-content/uploads/2025/07/C6-TNP-Pulse-Magazine-Summer-2025-Singles.pdf",
+      "source_reviewed": true,
+      "evidence": "TNP 2025 Annual Conference, September 25–28, Hilton Anatole, Dallas, TX."
+    },
+    "51e706b5534b": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://ache2026.eventscribe.net/agenda.asp?all=1&pfp=FullSchedule",
+      "source_reviewed": true,
+      "evidence": "ACHE 2026 Congress on Healthcare Leadership program, March 2–4, 2026, Houston, TX."
+    },
+    "d6cf72ac03b2": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://login.texasnp.org/events/EventDetails.aspx?id=1986716",
+      "source_reviewed": true,
+      "evidence": "2026 Pharmacology & Primary Care Conference, April 23–25, 2026, San Antonio, Texas."
+    },
+    "cd48f1f07eaf": {
+      "source_url": "https://oncologypas.org/event/2027-annual-symposium/",
+      "date_conflict": null,
+      "note": null,
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "oncologypas.org/event/2027-annual-symposium/ and the events index both read \"September 23 - September 26, 2027\" on 2026-09-22; the earlier 23-27 value came from a structured metadata field that no longer appears."
+    },
+    "e1d965344e5e": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "NYONL 34th Annual Meeting and Leadership Conference: September 27–29, 2026, Tarrytown, New York."
+    },
+    "75c789c89d9d": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://delawareana.org/event-6571840",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "Delaware Association of Nurse Anesthetists 2026 Annual Fall Meeting: October 10, Wilmington, Delaware."
+    },
+    "a8f8d986acc5": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "Psych Congress PA Institute: December 4–6, 2026, Orlando, Florida."
+    },
+    "7fca18685d3c": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "68th ASH Annual Meeting and Exposition: December 12–15, 2026, New Orleans, Louisiana."
+    },
+    "5fbb7d8ba316": {
+      "removed": true,
+      "_why": "A broad nine-day virtual-sessions placeholder has no matching named event on the organizer calendar; individual SCCM sessions remain separately sourced."
+    },
+    "9c25bb01384b": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "Fri, Sep 25, 2026 - 7:45 AM to 3:30 PM CDT - Memorial Hermann Memorial City Medical Center - Tower Conference Center - Houston, Texas",
+      "source_url": "https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263",
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site returns 403 to cloud readers); date and venue confirmed."
+    },
+    "d0b45cb18fd0": {
+      "source_url": "https://convention.jtbcom.co.jp/jans46/outline.html",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "第46回日本看護科学学会学術集会 The 46th Annual Conference of Japan Academy of Nursing Science … 会期 2026年12月12日（土）・13日（日） 会場 東京国際フォーラム",
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+    },
+    "9e0e24120486": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://njsna.org/events/month/2026-10/",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "location": "Online",
+      "note": "The organizer's calendar lists the NJSNA 2026 Annual Meeting as virtual, 8 a.m.–1 p.m. on October 8.",
+      "evidence": "NJSNA 2026 Annual Meeting *VIRTUAL*: October 8, 8:00 a.m.–1:00 p.m."
+    },
+    "2baa3d5fee7a": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "participants can attend in-person at Mount Sinai Hospital, Hess Building, or join Virtually by Zoom",
+      "source_url": "https://critcaresummit.com/",
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: organizer page offers in-person or Zoom attendance; format was stored as in person.",
+      "format": "hybrid"
+    },
+    "f21293985b2b": {
+      "source_url": "https://www.nonpf.org/page/futureconferences",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "The 2026 NONPF Fall Conference will take place November 5-6 2026 in Tuscon, Arizona",
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "start": "2026-11-05",
+      "end": "2026-11-06",
+      "location": "Tucson, AZ",
+      "call": {
+        "status": "none",
+        "text": "No call posted",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.nonpf.org/page/futureconferences"
+      ]
+    },
+    "6e8d92987926": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "2026 Annual Symposium November 7–11, 2026 Dallas, TX",
+      "source_url": "https://brand.amia.org/m/65eea6d416de44d1/original/AMIA-2026-Annual-Symposium-Prospectus.pdf",
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+    },
+    "7656f2da8579": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "Join us for NNA’s Annual Convention Oct 1-2, 2026 | Kearney, NE",
+      "source_url": "https://nebraskanurses.org/convention/",
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+    },
+    "89de4656498c": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "October 1- 4 - Niagara Falls, NY",
+      "source_url": "https://www.thenpa.org/page/NP26",
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+    },
+    "7439fe42fefc": {
+      "start": "2026-10-01",
+      "end": "2026-10-04",
+      "source_url": "https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "note": "Pre-meeting workshops start October 1; the main meeting runs October 2–4.",
+      "evidence": "AVA 2026 ANNUAL SCIENTIFIC MEETING 10/1/2026 to 10/4/2026 ... Gaylord Texan Resort & Convention Center Grapevine, Texas",
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site returns 403 to cloud readers); dates and venue confirmed."
+    },
+    "785efb278b8a": {
+      "source_url": "https://www.acep.org/sa",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "Join Us for ACEP26 October 5-8, 2026",
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+    },
+    "7111b734f1a9": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "2026 NPWH Annual Women's Healthcare Conference 9/23/2026 to 9/25/2026 When: September 23 - 25, 2026",
+      "source_url": "https://npwh.org/m/event_details.asp?id=1984651",
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+    },
+    "98da2c267857": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "2027 Annual Conference will take place at the Loews Kansas City, in Kansas City Missouri, March 1 – 4, 2027.",
+      "source_url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/",
+      "reviewed_on": "2026-09-25",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url. Red team F03 (2026-09-24): the call's closing date was the student-poster deadline (Sep 27), so the site showed every visitor an open call that had closed for professionals on Aug 13. Organizer page re-read 2026-09-25: 'Final Deadline for Abstract Submission: Thursday, August 13, 2026, at 11:59 PM ET'; 'Final Deadline for Student Poster Submission: Sunday, September 27, 2026, 11:59 PM ET'. The call now carries the professional call; the student-poster call stays in the student record.",
+      "call": {
+        "status": "closed",
+        "opens": "2026-06-10",
+        "closes": "2026-08-13",
+        "final": null,
+        "text": "Professional abstracts: opened Wednesday, June 10, 2026; final deadline Thursday, August 13, 2026, at 11:59 PM ET. Student posters: opened Tuesday, July 14, 2026; final deadline Sunday, September 27, 2026, 11:59 PM ET (there will be no deadline extensions)",
+        "url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/"
+      }
+    },
+    "b32ffbb674ac": {
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "2026 NLN EDUCATION SUMMIT Beyond the Storm: Reshaping Resilience & Recovery WASHINGTON, DC SEPTEMBER 23-25",
+      "source_url": "https://summit.nln.org/",
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
+    },
+    "09391e1f6db0": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "source_url": "https://texasnp.org/calendar/",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "September 24–27, 2026: TNP 2026 Annual Conference and Skills Workshops, Moody Gardens, Galveston."
+    },
+    "f306cd0b410d": {
+      "source_url": "https://npweek.aanp.org/press-releases-and-letters",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "2026 National Nurse Practitioner Week Is November 8-14",
+      "location": "Nationwide",
+      "_why": "National Nurse Practitioner Week is a nationwide observance with no venue; it shipped with an empty location. Set to Nationwide 2026-09-24, matching every other observance.",
+      "reviewed_on": "2026-09-24"
+    },
+    "a6986e02edc1": {
+      "source_url": "https://www.aana.com/event/national-crna-week-2027/",
+      "source_reviewed": true,
+      "compiled": "2026-09-21",
+      "evidence": "National CRNA Week 2027 January 17, 2027 - January 23, 2027",
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "location": "Nationwide",
+      "start": "2027-01-17",
+      "end": "2027-01-23",
+      "call": {
+        "status": "none",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.aana.com/event/national-crna-week-2027/"
+      ]
+    },
+    "3d8a3d9936ff": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "start": "2026-09-28",
+      "source_url": "https://www.elso.org/ecmo-education/elso-meetings.aspx",
+      "note": "The organizer's meetings page lists September 28 to October 1; an earlier registration source listed September 29."
+    },
+    "95a63454c08f": {
+      "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
+      "end": "2026-04-17",
+      "source_url": "https://www.aaacn.org/sites/default/files/images/conference/AAACN%202026%20prospectus_FINAL.pdf",
+      "note": "The organizer's conference prospectus and poster call list April 14 to 17; an oral abstracts notice lists April 18."
+    },
+    "d983c6b34b97": {
+      "removed": true,
+      "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+    },
+    "bc1ed82321a6": {
+      "removed": true,
+      "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+    },
+    "85dd540efc18": {
+      "removed": true,
+      "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+    },
+    "96e3fec22ac3": {
+      "removed": true,
+      "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+    },
+    "a2b5b8c2e1e7": {
+      "removed": true,
+      "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
+    },
+    "823a00629439": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://na-admin.eventscloud.com/file_uploads/0f16f866d07fe3cf70432a7e11c23f02_2026NZNOTermsandConditions.pdf",
+      "evidence": "Tuesday 22 September 2026 – NZNO Annual General Meeting"
+    },
+    "e48b8600d4b5": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: organizer event page describes live, streamed and on-demand participation; format was stored as in person.",
+      "format": "hybrid",
+      "source_url": "https://www.okpa.org/events/annual-oapa-fall-cme-conference-2026/",
+      "evidence": "attendees can participate through live presentations, virtual streaming, or an on-demand library"
+    },
+    "460a16759e79": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://www.iapasociety.org",
+      "evidence": "IPAS Fall CME Conference October 26-27, 2026 | Coralville, Iowa",
+      "start": "2026-10-26",
+      "end": "2026-10-27",
+      "location": "Coralville, IA",
+      "call": {
+        "status": "none",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.iapasociety.org"
+      ]
+    },
+    "51ef23154e50": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://wapa.com/events/wapa-fall-conference-2026/",
+      "evidence": "Join your fellow physician associates for the WAPA Fall Conference, happening November 1st-4th at the scenic Hyatt Regency Lake Washington"
+    },
+    "9fa932165f0a": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: program PDF opened in a browser on 2026-09-24; dates, venue and in-person format confirmed.",
+      "source_url": "https://seoc.cl/uploads/islands/26/files/6ab2a4b0c317d_programa-8-congreso-seoc-2026_.pdf",
+      "evidence": "19/20/21 NOVIEMBRE EVENTO PRESENCIAL ... HOTEL BEST WESTERN Alonso de Córdova 5727, Las Condes"
+    },
+    "df41d3af0294": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: organizer page states a submission deadline of August 29, 2026, which has passed; call was stored as tba.",
+      "source_url": "https://congresoenfermeria.ufro.cl/",
+      "evidence": "FECHA 19 Y 20 DE NOVIEMBRE 2026",
+      "call": {
+        "status": "closed",
+        "opens": null,
+        "closes": "2026-08-29",
+        "final": null,
+        "text": "Submission Deadline: August 29, 2026",
+        "url": "https://congresoenfermeria.ufro.cl/"
+      }
+    },
+    "c6226c5e9add": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "location": "Poliforum Científico y Cultural, Chihuahua, Mexico",
+      "source_url": "https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/",
+      "evidence": "Fecha 26 y 27 de noviembre de 2026 Sede Poliforum Científico y Cultural “Dr. Víctor M. Gómez Moreno”",
+      "start": "2026-11-26",
+      "end": "2026-11-27",
+      "call": {
+        "status": "tba",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/"
+      ]
+    },
+    "db6c943ce1b9": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://www.aana.com/event/edge-2027/",
+      "evidence": "EDGE 2027 February 25, 2027 - February 28, 2027 Sheraton Dallas Hotel — Dallas, TX",
+      "start": "2027-02-25",
+      "end": "2027-02-28",
+      "location": "Sheraton Dallas, TX",
+      "call": {
+        "status": "tba",
+        "text": "Not posted",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.aana.com/event/edge-2027/"
+      ]
+    },
+    "a83ba760ec56": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://www.academyonline.org/page/conferences",
+      "evidence": "Join us in Louisville, Kentucky for the Spring 2027 Advanced Practice Neonatal Nurses Conference. April 8-10, 2027",
+      "start": "2027-04-08",
+      "end": "2027-04-10",
+      "location": "Louisville, KY",
+      "call": {
+        "status": "tba",
+        "text": "Not posted",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.academyonline.org/page/APconference"
+      ]
+    },
+    "63b4fd60df55": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://amia.org/education-events/2027-amplify-informatics-conference",
+      "evidence": "2027 Amplify Informatics Conference … April 12 - 15 Atlanta, GA",
+      "start": "2027-04-12",
+      "end": "2027-04-15",
+      "location": "Atlanta, GA",
+      "call": {
+        "status": "closed",
+        "text": "Closed Sep 3",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://amia.org/education-events/2027-amplify-informatics-conference"
+      ]
+    },
+    "002ad3b7a061": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://www.aana.com/event/mid-year-assembly-2027/",
+      "evidence": "Direct source review: organizer currently gives 2027-04-17 through 2027-04-21.",
+      "start": "2027-04-17",
+      "end": "2027-04-21",
+      "location": "JW Marriott, Washington, DC",
+      "call": {
+        "status": "tba",
+        "text": "Not posted",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.aana.com/event/mid-year-assembly-2027/"
+      ]
+    },
+    "479121152dc2": {
+      "source_reviewed": false,
+      "reviewed_on": "2026-09-22",
+      "_why": "2026-09-24 (evening): ONS publishes Oncology Nursing Month only as a rule (\"Every May\"), not as dated 2027 days, so this edition is labelled Set by rule like 2028 and 2029 rather than as a reviewed date. The 2026-09-22 walk confirmed the rule wording at source_url; the verbatim wording and the page are kept.",
+      "source_url": "https://www.ons.org/oncology-nursing-month",
+      "evidence": "Every May, we honor oncology nurses for the hope they nurture and the strength they inspire.",
+      "status": "rule",
+      "note": "Computed from the organizer's published rule"
+    },
+    "fc952b75dcbc": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://www.aacn.org/conferences-and-events/nti",
+      "evidence": "NTI 2027 Indianapolis May 2-5"
+    },
+    "2b995c9ce64e": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://www.asco.org/annual-meeting/dates-know",
+      "evidence": "June 4 - 8, 2027 location_on McCormick Place, Chicago, IL #ASCO27",
+      "call_patch": {
+        "due_time": "23:59",
+        "tz": "America/New_York"
+      },
+      "start": "2027-06-04",
+      "end": "2027-06-08",
+      "location": "McCormick Place, Chicago, IL",
+      "call": {
+        "status": "soon",
+        "text": "Opens November 4, 2026; deadline January 26, 2027, at 11:59 PM ET; late-breaking March 8, 2027, at 12:00 PM ET",
+        "opens": "2026-11-04",
+        "closes": "2027-01-26",
+        "final": null,
+        "url": "https://www.asco.org/annual-meeting/dates-know",
+        "due_time": "23:59",
+        "tz": "America/New_York"
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.asco.org/annual-meeting/dates-know"
+      ]
+    },
+    "63030a7dee9b": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://www.aana.com/event/aana-annual-congress-2027/",
+      "evidence": "AANA Annual Congress 2027 August 8, 2027 - August 12, 2027 Join us in New Orleans, LA",
+      "start": "2027-08-08",
+      "end": "2027-08-12",
+      "location": "Ernest N. Morial Convention Center, New Orleans, LA",
+      "call": {
+        "status": "closed",
+        "text": "Closes Sep 24 (noon CT)",
+        "opens": null,
+        "closes": "2026-09-24",
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.aana.com/event/aana-annual-congress-2027/"
+      ]
+    },
+    "919004c82f9a": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "end": "2027-10-03",
+      "source_url": "https://wapa.com/events/wapa-fall-conference-2027/",
+      "evidence": "WAPA Fall Conference 2027 Save the Date and Plan to join us! DATE Sep 30 2027 - Oct 03 2027"
+    },
+    "c45dffbcbe96": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://www.acep.org/sa/general-information/future-dates",
+      "evidence": "ACEP27 Scientific Assembly 10/25/2027 - 10/28/2027 Boston, Massachusetts"
+    },
+    "2b4240065e0a": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://www.jans.or.jp/meetings/schedule/",
+      "evidence": "第47回学術集会（2027年度） 日時：2027年11月27日・28日 場所：札幌コンベンションセンター"
+    },
+    "0062195111b0": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "source_url": "https://www.asco.org/annual-meeting/dates-know",
+      "evidence": "Future Meetings June 2 - 6, 2028 Chicago, IL",
+      "start": "2028-06-02",
+      "end": "2028-06-06",
+      "location": "Chicago, IL",
+      "call": {
+        "status": "tba",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.asco.org/annual-meeting/dates-know"
+      ]
+    },
+    "bfff1655d95c": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://www.acep.org/sa/general-information/future-dates",
+      "evidence": "ACEP28 Scientific Assembly 9/17/2028 - 9/20/2028 Las Vegas, Nevada"
+    },
+    "27adc53dd3fe": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://www.acep.org/sa/general-information/future-dates",
+      "evidence": "ACEP29 Scientific Assembly 10/1/2029 - 10/4/2029 Philadelphia, Pennsylvania"
+    },
+    "e2d3b8e33ed3": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://www.acep.org/sa/general-information/future-dates",
+      "evidence": "ACEP30 Scientific Assembly 10/17/2030 - 10/20/2030 San Francisco, California"
+    },
+    "194ce1735b8f": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
+      "source_url": "https://www.acep.org/sa/general-information/future-dates",
+      "evidence": "ACEP31 Scientific Assembly 10/27/2031 - 10/30/2031 Chicago, Illinois"
+    },
+    "df0c3e9bbf98": {
+      "removed": true,
+      "_why": "2027 dates could not be confirmed: aannet.org blocks automated reads and academypolicyconference.com shows only the 2026 conference (October 8-10, 2026). Removed 2026-09-22; the expected-month row covers October 2027."
+    },
+    "4169d9ce47cd": {
+      "removed": true,
+      "_why": "AAOHN says the 2027 national conference is all-virtual \"this upcoming June\" but publishes no dates. The single-day June 1 record was a placeholder, not an organizer date. Removed 2026-09-22."
+    },
+    "a3400aa377d9": {
+      "source_url": "https://kapn.enpnetwork.com/nurse-practitioner-news/228218-save-the-date-and-call-for-presentations-for-kansas-advanced-practice-nurses-6th-annual-sunflower-conference-february-19-20-2027-in-wichita-ks",
+      "evidence": "Call for Presentations for Kansas Advanced Practice Nurses 6th Annual Sunflower Conference February 19-20, 2027 in Wichita, KS",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "call": {
+        "status": "open",
+        "opens": null,
+        "closes": "2026-09-30",
+        "text": "Call for presentations; submissions close September 30, 2026",
+        "url": "https://forms.gle/Mun8EChacCsdaTT47"
+      },
+      "_why": "Walked kapn.enpnetwork.com: events list (webinars only), then News, where the save-the-date post carries the dates, venue city and the presentation deadline."
+    },
+    "f728d5279341": {
+      "source_url": "https://enrs2027conference.oa-event.com/",
+      "call": {
+        "status": "open",
+        "opens": null,
+        "closes": "2026-10-28",
+        "text": "Peer-reviewed paper and poster, clinical nurse researcher-scholar poster, workshop and symposium applications close Wednesday, October 28, 2026, 11:59 p.m. Eastern; school-selected student posters close December 18, 2026",
+        "url": "https://enrs2027conference.oa-event.com/abstracts",
+        "due_time": "23:59",
+        "tz": "America/New_York"
+      },
+      "note": null,
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "evidence": "ENRS 39th Annual Scientific Sessions LOEWS PHILADELPHIA 03 31 27 - 04 02 27",
+      "evidence_image": "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png",
+      "_why": "Date verified visually in the conference banner linked by the official event homepage; the text checker did not read the image.",
+      "call_patch": {
+        "due_time": "23:59",
+        "tz": "America/New_York"
+      },
+      "start": "2027-03-31",
+      "end": "2027-04-02",
+      "location": "Loews Philadelphia, PA",
+      "review_method": "official_image_visual_review",
+      "review_sources": [
+        "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png"
+      ]
+    },
+    "bfb1cef79cb1": {
+      "note": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
+      "save_the_date": true,
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "source_url": "https://mypnaa.org/48th-PNAA-National-Convention",
+      "evidence": "Direct source review: organizer currently gives 2027-07-16 through 2027-07-24.",
+      "evidence_image": "https://mypnaa.org/resources/Events/PNAA48/48th%20PNAA%20National%20Convention%20Flyer%20with%20Theme%20v3.png",
+      "location": "Inter-island cruise, Hawaii (host chapter: PNA Hawaii)",
+      "_why": "Specific convention page gives July 16–24; retain full convention range rather than July 17 cruise departure. Page heading has an edition-number typo.",
+      "start": "2027-07-16",
+      "end": "2027-07-24",
+      "call": {
+        "status": "tba",
+        "text": "Not posted",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://mypnaa.org/48th-PNAA-National-Convention"
+      ]
+    },
+    "4963c59b8b50": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "evidence": "2027 AANP Health Policy Conference · February 7, 2027 – February 9, 2027 · Washington, District of Columbia",
+      "location": "Washington, DC",
+      "_why": "aanp.org/events/2027-hpc read 2026-09-22; the page is JavaScript-only to the automatic check."
+    },
+    "64d695b36d4b": {
+      "source_url": "https://www.iapacon.org/",
+      "evidence": "24th, 25th & 26th September 2026 | Fairfield by Marriott – Ozone Convention Centre, Kolkata",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed."
+    },
+    "825ae90df474": {
+      "source_url": "https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs",
+      "evidence": "Het 18e jaarcongres zal plaatsvinden in het NBC-congrescentrum in Nieuwegein op donderdag 1 en vrijdag 2 oktober 2026. ... zowel live als online deelnemen",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates, venue and hybrid format confirmed."
+    },
+    "6db24e4a848d": {
+      "source_url": "https://onanigeria.org/registration",
+      "evidence": "7th - 10th October 2026 Abuja, Nigeria",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-24",
+      "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates confirmed."
+    },
+    "2fedca69186a": {
+      "source_url": "https://www.tnpa.org.tw/events/content.php?id=6262",
+      "evidence": "2026/10/18 (日) 12:30 ~ 16:00",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Organizer-issued letter dated February 3, ROC year 115, visually reviewed on October 17. It confirms October 18, 2026, 12:30–16:00, Greater Tainan Convention Center, and July 31 abstract deadline. Letter hosted by its recipient, Taiwan Midwives Association; original organizer website remains protected.",
+      "start": "2026-10-18",
+      "end": "2026-10-18",
+      "location": "大臺南會展中心 (Tainan Exhibition Center), Tainan City, Taiwan",
+      "call": {
+        "status": "closed",
+        "text": "Abstract submissions; deadline 5 p.m. Taiwan time.",
+        "opens": null,
+        "closes": "2026-07-31",
+        "final": "2026-07-31",
+        "url": "https://midwife.org.tw/upfiles/newsfiles/2026/02/20260224091148-92c26dbdd06e5ef9905d86971ece4935.pdf"
+      },
+      "review_method": "organizer_letter_visual_review",
+      "review_sources": [
+        "https://midwife.org.tw/upfiles/newsfiles/2026/02/20260224091148-92c26dbdd06e5ef9905d86971ece4935.pdf",
+        "https://www.ccna.org.tw/publicUI/B/B10301.aspx?arg=8DE754808F8D3D1071"
+      ]
+    },
+    "2bedae9df083": {
+      "source_url": "https://www.cano-acio.ca/page/cano2026",
+      "evidence": "CANO/ACIO Annual Conference 2026 Congrès annuel 2026 de l’ACIO/CANO October 22–25, 2026 | Montréal, Québec",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Conference landing page, official newsletter, event calendar and ISNCC announcement agree on October 22–25. A registration-page prose sentence says October 26, while its structured range says October 25. Retained October 25 based on the conference-specific sources; retain the discrepancy for follow-up.",
+      "start": "2026-10-22",
+      "end": "2026-10-25",
+      "location": "Montréal, QC, Canada",
+      "call": {
+        "status": "tba",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.cano-acio.ca/page/cano2026",
+        "https://www.isncc.org/event-6569022",
+        "https://www.cano-acio.ca/events/EventDetails.aspx?alias=canoacio2026"
+      ]
+    },
+    "2891e7185321": {
+      "source_url": "https://pinc.fkep.unpad.ac.id/",
+      "evidence": "Direct source review: organizer currently gives 2026-11-06 through 2026-11-07.",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Current organizer homepage and program give November 6–7; previous stored November 7–8 is superseded.",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "format": "hybrid",
+      "location": "Auditorium Suharyati, Universitas Padjadjaran, Jatinangor, Indonesia",
+      "call": {
+        "status": "open",
+        "text": "Abstract submissions",
+        "opens": "2026-03-12",
+        "closes": "2026-10-20",
+        "final": "2026-10-20",
+        "url": "https://pinc.fkep.unpad.ac.id/"
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://pinc.fkep.unpad.ac.id/"
+      ]
+    },
+    "08404cd571fb": {
+      "source_url": "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx",
+      "evidence": "The Qatar Health Congress 2026, held from 11 to 14 November at the Sheraton-Grand Doha Resort & Convention Hotel",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "start": "2026-11-11",
+      "end": "2026-11-14",
+      "location": "Doha, Qatar",
+      "call": {
+        "status": "closed",
+        "text": "Abstract submissions",
+        "opens": null,
+        "closes": "2026-09-15",
+        "final": "2026-09-15",
+        "url": "https://www.hamad.qa/EN/All-Events/Qatar-Health2026/Abstract/Pages/default.aspx"
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx"
+      ]
+    },
+    "b9f577965d09": {
+      "source_url": "https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/",
+      "evidence": "Apr 14 — 18, 2027",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Official organizer event/registration page rendered directly in browser states April 14–18; it takes precedence over the fundraising page advertising April 15–18.",
+      "location": "Orlando World Center Marriott, Orlando, FL",
+      "date_conflict": false,
+      "note": "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session.",
+      "call": {
+        "status": "open",
+        "text": "CAA poster submissions; deadline 11:59 p.m. Eastern.",
+        "opens": null,
+        "closes": "2027-02-05",
+        "final": "2027-02-05",
+        "url": "https://www.anesthetist.org/aaaa-posters-2027"
+      },
+      "start": "2027-04-14",
+      "end": "2027-04-18",
+      "call_patch": {
+        "due_time": "23:59",
+        "tz": "America/New_York"
+      },
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.anesthetist.org/fall-fundraiser-2026"
+      ]
+    },
+    "0c7fb520bb72": {
+      "source_url": "https://www.nonpf.org/page/futureconferences",
+      "evidence": "54th Annual Conference Dates: April 19-23, 2028 Location: Phoenix, Arizona",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "start": "2028-04-19",
+      "end": "2028-04-23",
+      "location": "Phoenix, AZ",
+      "call": {
+        "status": "tba",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.nonpf.org/page/futureconferences"
+      ]
+    },
+    "60ec5ef3bd26": {
+      "removed": true,
+      "_why": "Duplicate of 168119a896f1. ABEn's page read 2026-09-22 gives the 76th CBEn as 8 a 12 de novembro de 2026; the 9-11 November record was wrong."
+    },
+    "e9ba48026efc": {
+      "source_url": "https://www.itns.org/",
+      "evidence": "The 34th Annual ITNS Symposium Where Compassion Meets Innovation: Bringing the World of Transplant Nursing Together September 25-27, 2026",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+    },
+    "8a0d140dd475": {
+      "source_url": "https://www.napnap.org/specialty-symposium/",
+      "evidence": "our fall virtual symposium live on Oct. 9 from 11 a.m. to 6 p.m. ET with on-demand access through Dec. 31, 2026",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+    },
+    "dbfaf50988f0": {
+      "source_url": "https://nam.edu/event/2026-annual-meeting-chronic-disease/",
+      "evidence": "NAM Member Interest Group Meetings | Sunday, October 18 … Scientific Symposium | Monday, October 19",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+    },
+    "a82459f399b8": {
+      "source_url": "https://nam.edu/event/2026-healthy-longevity-global-innovator-summit/",
+      "evidence": "will host Catalyzing Healthy Longevity: NAM Global Innovator Summit on October 20, 2026, in Washington, D.C.",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+    },
+    "341d49a57d61": {
+      "source_url": "https://www.clintox.org/nacct",
+      "evidence": "2026 | San Diego, California | October 21st - 25th",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-22",
+      "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
+    },
+    "ee1eb9c0e631": {
+      "source_url": "https://heartrhythm.com/",
+      "evidence": "Heart Rhythm 2027 | May 13–16, 2027 | San Francisco, CA",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-25",
+      "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded. Red team F03 (2026-09-24): the call showed Nov 1 as the abstract deadline and an unsourced 'abstracts Oct 1–Dec 16' window. Read 2026-09-25: the organizer's session-ideas page gives a second-wave deadline of November 1, 2026; its home, Present and HRS event pages give no scientific-abstract dates, and its abstract portal disallows robots. The unsourced window was removed and Nov 1 labeled as the session-ideas deadline.",
+      "call": {
+        "status": "open",
+        "opens": null,
+        "closes": "2026-11-01",
+        "final": null,
+        "text": "Session ideas, second wave: close November 1, 2026 (no time zone given). Scientific abstract dates: not yet given on the organizer's event pages",
+        "url": "https://heartrhythm.com/call-hrs2027-session-ideas"
+      }
+    },
+    "43862213a496": {
+      "source_url": "https://aann.org/meetings/annual-educational-conference",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-23",
+      "evidence": "Saturday, March 13-Tuesday, March 16, 2027 The Westin Seattle, Seattle, WA",
+      "_why": "Nightly checker got HTTP 307 (redirect loop for automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+    },
+    "260f68c5cb83": {
+      "source_url": "https://aann.org/meetings/virtual-innrs",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-23",
+      "evidence": "The next Virtual INNRS will be held on Friday, January 29, 2027.",
+      "_why": "Nightly checker got HTTP 307 (redirect loop for automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+    },
+    "819fe90fd52b": {
+      "source_url": "https://www.ena.org/emergency-nursing-2026",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-23",
+      "evidence": "Sep 28, 2026 - Oct 01, 2026 Phoenix, Arizona",
+      "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+    },
+    "d4e7559150f1": {
+      "source_url": "https://www.ena.org/events/emergency-nursing-2027",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-23",
+      "evidence": "Sep 15, 2027 - Sep 18, 2027 Kansas City Convention Center, Kansas City",
+      "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+    },
+    "79ff0d69f162": {
+      "source_url": "https://worldcongressonpain.secure-platform.com/a/",
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-23",
+      "evidence": "Join the global pain community at the 2026 World Congress on Pain in Bangkok, Thailand, from 26 – 30 October 2026.",
+      "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
+    },
+    "16ee2e3c0b61": {
+      "format": "hybrid",
+      "source_url": "https://acgmeetings.gi.org/registration/",
+      "evidence": "ACG is offering flexible registration options for this year's hybrid conference. Registrants can choose to attend in-person in Nashville, participate virtually, or select a combination of both.",
+      "_why": "Repopulation audit 2026-09-24: organizer registration page describes a hybrid meeting; format was stored as in person.",
+      "reviewed_on": "2026-09-24",
+      "source_reviewed": true
+    },
+    "db80e502cbf5": {
+      "format": "hybrid",
+      "source_url": "https://ebpom.org/product/ebpom-ireland-2026/",
+      "evidence": "28 September - 01 October 2026 ... LIVE in Dingle, Ireland ... Virtual attendance options are also available",
+      "_why": "Repopulation audit 2026-09-24: organizer product page offers virtual attendance alongside the live meeting; format was stored as in person.",
+      "reviewed_on": "2026-09-24",
+      "source_reviewed": true
+    },
+    "97a2b66704e8": {
+      "call": {
+        "status": "closed",
+        "opens": null,
+        "closes": "2026-07-14",
+        "final": null,
+        "text": "Fecha límite para envío 14 de julio de 2026",
+        "url": "https://congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/"
+      },
+      "_why": "Blind audit 2026-09-26: the congress's own abstract instructions (congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/, the congress site ELSO's meetings page links) read 'Apertura del envío Enero 2026 Fecha límite para envío 14 de julio de 2026' and 'Fechas del Congreso ELSO LATAM 2026 4–6 de noviembre de 2026'. That is the evidence the earlier 'Closed Jul 14' lacked. Re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
+      "reviewed_on": "2026-09-26",
+      "source_reviewed": true,
+      "evidence": "VII Congreso ELSOLATAM 2026 Location: San Jose, Costa Rica November 4, 2026 - November 6, 2026"
+    },
+    "5c74b6afd77c": {
+      "call": {
+        "status": "closed",
+        "opens": null,
+        "closes": "2026-08-10",
+        "final": null,
+        "text": "'The deadline has been extended to August 10, 2026.' 'The deadline for abstract submissions has closed.'",
+        "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/call-for-abstracts/"
+      },
+      "_why": "Repopulation audit 2026-09-24: organizer page shows an open Call for Abstracts; call was stored as closed. 2026-09-25: the call was shown as open with no due date. The organizer's call page reads 'The deadline has been extended to August 10, 2026' and 'The deadline for abstract submissions has closed.'",
+      "reviewed_on": "2026-09-25",
+      "source_reviewed": true,
+      "evidence": "ACS Innovation Summit March 11-12, 2027 | Chicago, Illinois"
+    },
+    "b5ed85970d92": {
+      "call": {
+        "status": "open",
+        "opens": null,
+        "closes": "2026-09-30",
+        "final": null,
+        "text": "论文投稿截止日期 2026年9月30日 (paper submission deadline September 30, 2026)",
+        "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm"
+      },
+      "_why": "Repopulation audit 2026-09-24: organizer notice states a paper submission deadline of September 30, 2026; call was stored as tba.",
+      "reviewed_on": "2026-09-24",
+      "source_reviewed": true
+    },
+    "b64d6d0401c3": {
+      "source_url": "https://nnak2026.inburstcorp.com/",
+      "evidence_image": "https://nnak2026.inburstcorp.com/img/background.jpeg",
+      "evidence": "28-30TH OCT 2026 ... 68TH INTERNATIONAL ANNUAL NURSES SCIENTIFIC CONFERENCE & AGM ... VENUE: Sai Rock Hotel, Mombasa County",
+      "location": "Sai Rock Hotel, Mombasa County, Kenya",
+      "call": {
+        "status": "tba",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "text": "Flyer invites abstracts by email to the NNAK abstracts address; no deadline shown",
+        "url": "https://nnak2026.inburstcorp.com/"
+      },
+      "_why": "Date verified visually in the organizer-linked conference banner; the automated text reader did not read the image.",
+      "reviewed_on": "2026-10-17",
+      "source_reviewed": true,
+      "start": "2026-10-28",
+      "end": "2026-10-30",
+      "review_method": "official_image_visual_review",
+      "review_sources": [
+        "https://nnak2026.inburstcorp.com/img/background.jpeg"
+      ]
+    },
+    "4b6554deed4e": {
+      "date_conflict": false,
+      "note": "NANN's conference listing states the meeting date as October 6–8, 2027. Its abstract page describes the same conference as \"taking place October 5-8, 2027\", which most likely counts a pre-conference day. The listing's labelled meeting date is taken as the source of truth; confirm with NANN if you are booking travel for October 5.",
+      "_why": "Reconciled 2026-09-24 from NANN's own conference listing, which states a labelled Meeting Date, over prose on the abstract page. The remaining ambiguity is recorded inside the record instead of on the card.",
+      "reviewed_on": "2026-09-24",
+      "source_reviewed": true,
+      "evidence": "Meeting Date: October 6–8, 2027 — Las Vegas, NV",
+      "start": "2027-10-06",
+      "end": "2027-10-08",
+      "location": "Las Vegas, NV",
+      "source_url": "https://nann.org/education/past-conferences/"
+    },
+    "873c689cc3ce": {
+      "removed": true,
+      "_why": "Repopulation audit 2026-09-24: duplicate of 4b6554deed4e (same NANN 43rd Annual Conference, captured from a second NANN page with a different start day); the conflict is recorded on the kept record."
+    },
+    "2cb4704b50ae": {
+      "evidence": "When: October 16, 2026 Where: The Drexelbrook Catering & Event Center",
+      "location": "Drexelbrook Catering & Event Center, Drexel Hill, PA",
+      "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); date and venue confirmed.",
+      "reviewed_on": "2026-09-24",
+      "source_reviewed": true
+    },
+    "168119a896f1": {
+      "evidence": "acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães",
+      "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (eventosaben.org.br/76cben/trabalhos/) read 'O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.' (day/month/year: 9 May to 30 September 2026) and show '30/09 Limite de envio'. The event page still reads 'acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães'. Both re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
+      "reviewed_on": "2026-09-26",
+      "source_reviewed": true,
+      "call": {
+        "status": "open",
+        "opens": "2026-05-09",
+        "closes": "2026-09-30",
+        "final": null,
+        "text": "O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.",
+        "url": "https://eventosaben.org.br/76cben/trabalhos/"
+      }
+    },
+    "637a8ed896be": {
+      "_why": "Repopulation audit 2026-09-24: annanurse.org was offline for maintenance on 2026-09-24; stored dates (April 17-21, 2027) left as captured, not re-confirmed."
+    },
+    "10976499e525": {
+      "evidence": "2027 Annual Assembly March 17-20, 2027 David L. Lawrence Convention Center Pittsburgh, PA",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "start": "2027-03-17",
+      "end": "2027-03-20",
+      "location": "David L. Lawrence Convention Center, Pittsburgh, PA",
+      "source_url": "https://aahpm.org/education-events/annual-assembly/",
+      "call": {
+        "status": "open",
+        "text": "Fall call (early career, late-breaking, RAPiD posters): closes Sep 28",
+        "opens": null,
+        "closes": "2026-09-28",
+        "final": null,
+        "url": null
+      },
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://aahpm.org/education-events/annual-assembly/"
+      ]
+    },
+    "e01ad708f9e7": {
+      "source_url": "https://nursing.uw.edu/academics/dnp/",
+      "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+      "reviewed_on": "2026-09-24"
+    },
+    "df1e5711757f": {
+      "source_url": "https://nursing.uw.edu/academics/dnp/",
+      "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+      "reviewed_on": "2026-09-24"
+    },
+    "333710218753": {
+      "source_url": "https://nursing.uw.edu/academics/dnp/",
+      "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+      "reviewed_on": "2026-09-24"
+    },
+    "4a5f7e5998f7": {
+      "source_url": "https://nursing.uw.edu/academics/dnp/",
+      "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
+      "reviewed_on": "2026-09-24"
+    },
+    "ac347521ac00": {
+      "location": "Grand Marquis, 1550 U.S. 9, Old Bridge, NJ 08857",
+      "evidence": "AACN Central New Jersey Chapter's 9th Critical Care Symposium — Thursday, September 17, 2026 at 8:00am ET through Friday, September 18, 2026 at 4:00pm ET. Grand Marquis, 1550 U.S. 9, Old Bridge, NJ 08857",
+      "_why": "Recorded with no organizer wording. Re-read the chapter's own event page 2026-09-24 and captured its date and venue verbatim.",
+      "reviewed_on": "2026-09-24"
+    },
+    "c453801a9986": {
+      "location": "Virtual",
+      "evidence": "9th Annual Administrative (Evening/Night) Supervisor Virtual Conference — September 17, 2026, 8:00 AM to 2:00 PM EDT, virtual",
+      "_why": "Recorded with no organizer wording. Re-read the organizer's registration page 2026-09-24 and captured its date and format verbatim.",
+      "reviewed_on": "2026-09-24"
+    },
+    "acf27c4896bf": {
+      "location": "Philadelphia, PA",
+      "evidence": "Multisite Leaders in Hospital Medicine Summit — September 17-18, 2026 | Philadelphia, PA",
+      "_why": "Recorded with no organizer wording. Re-read SHM's own conferences index 2026-09-24 and captured its date and city verbatim.",
+      "reviewed_on": "2026-09-24"
+    },
+    "c62cab081779": {
+      "location": "Atlanta, GA",
+      "evidence": "HRX Live 2026 — September 18-20, 2026, Atlanta, GA",
+      "_why": "Recorded with no organizer wording. Re-read the organizer's own site 2026-09-24 and captured its date and city verbatim.",
+      "reviewed_on": "2026-09-24"
+    },
+    "8dacb8f4aa3f": {
+      "location": "Nationwide",
+      "_why": "Dates confirmed in the current official source.",
+      "reviewed_on": "2026-10-17",
+      "start": "2027-03-04",
+      "end": "2027-03-04",
+      "source_url": "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/",
+      "evidence": "Save the Date for Next Year: Thursday, March 4, 2027!",
+      "call": {
+        "status": "none",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "source_reviewed": true,
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/"
+      ]
+    },
+    "b57f0a2c43fe": {
+      "location": "Virtual",
+      "format": "virtual",
+      "evidence": "We Are Family (Medicine) | January 16 – 18, 2027, Virtual",
+      "_why": "AAPA's events index states this meeting is virtual; the record shipped with no location. Read 2026-09-24.",
+      "reviewed_on": "2026-09-24"
+    },
+    "19b4ff7f7de5": {
+      "location": "Host city not yet announced",
+      "evidence": "AAPA 2028 | May 19 – 23, 2028 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
+      "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+      "reviewed_on": "2026-09-24"
+    },
+    "2d41c6dd5d42": {
+      "location": "Host city not yet announced",
+      "evidence": "AAPA 2029 | April 27 – May 1, 2029 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
+      "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+      "reviewed_on": "2026-09-24"
+    },
+    "9f0e3dbb33b1": {
+      "location": "Host city not yet announced",
+      "evidence": "AAPA 2030 | May 17 – 21, 2030 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
+      "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+      "reviewed_on": "2026-09-24"
+    },
+    "79d298e81fa1": {
+      "location": "Sheraton Grand Chicago Riverwalk, Chicago, IL",
+      "evidence": "Jun 9 - 13 2027 SDPA Annual Summer Dermatology Conference",
+      "_why": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference) reads 'Save the date! When: June 9-13, 2027 Where: Sheraton Grand Chicago Riverwalk Chicago, Illinois', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+      "reviewed_on": "2026-09-26"
+    },
+    "60b19fa7fb93": {
+      "location": "Scottsdale Westin Kierland, Scottsdale, AZ",
+      "evidence": "Nov 10 - 14 2027 SDPA 25th Annual Fall Dermatology Conference",
+      "_why": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-25th-annual-fall-dermatology-conference) reads 'Save the date! When: November 10-14, 2027 Where: Scottsdale Westin Kierland Scottsdale, Arizona', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+      "reviewed_on": "2026-09-26"
+    },
+    "ee76d4c7f3bf": {
+      "location": "Omni Boston Seaport, Boston, MA",
+      "evidence": "Jun 7 - 11 2028 SDPA Annual Summer Dermatology Conference",
+      "_why": "Blind audit 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference-0) reads 'Save the date! When: June 7-11, 2028 Where: Omni Boston Seaport Boston, Massachusetts', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+      "reviewed_on": "2026-09-26"
+    },
+    "7ca43ec52267": {
+      "location": "East Tennessee State University, Johnson City, TN",
+      "_why": "The chapter's page gives the 2023 date (April 20, 2023) but no 2023 venue; the host institution is named on the page. Recorded at institution level only, 2026-09-24, rather than left empty.",
+      "reviewed_on": "2026-09-24"
+    },
+    "a5ace80185dd": {
+      "start": "2027-05-14",
+      "end": "2027-05-19",
+      "location": "New Orleans, LA",
+      "source_reviewed": true,
+      "evidence": "May 14-19, 2027 — New Orleans, LA",
+      "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '5 p.m. ET', recorded as 17:00 America/New_York so the site closes the call at that time.",
+      "reviewed_on": "2026-09-25",
+      "call_patch": {
+        "due_time": "17:00",
+        "tz": "America/New_York"
+      }
+    },
+    "199e0768daa7": {
+      "start": "2028-05-19",
+      "end": "2028-05-24",
+      "location": "San Francisco, CA",
+      "source_reviewed": true,
+      "evidence": "May 19-24, 2028 — San Francisco, CA",
+      "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
+      "reviewed_on": "2026-09-24"
+    },
+    "ad00946861ac": {
+      "start": "2029-05-18",
+      "end": "2029-05-23",
+      "location": "Washington, DC",
+      "source_reviewed": true,
+      "evidence": "May 18-23, 2029 — Washington, DC",
+      "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
+      "reviewed_on": "2026-09-24"
+    },
+    "e22d93b3c36f": {
+      "_why": "Red team F02 (2026-09-24): the call was stored as 'soon' with no opening date, and the site showed it as open. VAM's own call page gives the plenary and poster submission window as Nov. 18 - Jan. 13, 2027, read 2026-09-24.",
+      "reviewed_on": "2026-09-24",
+      "call": {
+        "status": "soon",
+        "opens": "2026-11-18",
+        "closes": "2027-01-13",
+        "final": null,
+        "text": "Plenary Sessions & Posters: Nov. 18 - Jan. 13, 2027 (no time zone given); Late-Breaking Abstracts: Feb. 10 - Mar. 3, 2027",
+        "url": "https://vam.vascular.org/present-at-vam/"
+      }
+    },
+    "3b0963321583": {
+      "_why": "2026-09-25: the call was shown as open with no due date. The organizer's call page gives 'Materials must be received by NPAA by February 27, 2026', so it is closed.",
+      "reviewed_on": "2026-09-25",
+      "call": {
+        "status": "closed",
+        "opens": null,
+        "closes": "2026-02-27",
+        "final": null,
+        "text": "Podium and poster abstracts: 'Materials must be received by NPAA by February 27, 2026'",
+        "url": "https://npaa.wildapricot.org/event-6524437"
+      }
+    },
+    "fce4c70fffdc": {
+      "_why": "2026-09-25: the call was shown as open with no due date; the organizer's event page read that day shows no call for poster abstracts, so the call is shown as not posted.",
+      "reviewed_on": "2026-09-25",
+      "call": {
+        "status": "tba",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "text": "Call for poster abstracts not shown on the organizer's event page as of September 25, 2026",
+        "url": "https://isapn.enpnetwork.com/nurse-practitioner-events/149858-2026-aprn-midwest-conference"
+      }
+    },
+    "f51b0a709cbc": {
+      "_why": "2026-09-25: the call had no due date. The organizer's abstracts page reads 'Abstract Submission Opens: Tuesday, September 8, 2026' and 'Abstract Submission Deadline: Monday, November 2, 2026, 11:00 AM EST / 8:00 AM PST'.",
+      "reviewed_on": "2026-09-25",
+      "call": {
+        "status": "open",
+        "opens": "2026-09-08",
+        "closes": "2026-11-02",
+        "final": null,
+        "due_time": "11:00",
+        "tz": "America/New_York",
+        "text": "Abstract submission opens Tuesday, September 8, 2026; deadline Monday, November 2, 2026, 11:00 AM EST / 8:00 AM PST",
+        "url": "https://wocnext.org/abstracts?cpn_id=6aa04cc25b9233b52e87c5e6&e_id=6a0cc42024090bba99463d4b"
+      }
+    },
+    "fff7c127c15a": {
+      "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '1 p.m. ET', recorded as 13:00 America/New_York so the site closes the call at that time.",
+      "reviewed_on": "2026-09-25",
+      "call_patch": {
+        "due_time": "13:00",
+        "tz": "America/New_York"
+      }
+    },
+    "63ef4e7d0d47": {
+      "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 PM CT', recorded as 23:59 America/Chicago so the site closes the call at that time.",
+      "reviewed_on": "2026-09-25",
+      "call_patch": {
+        "due_time": "23:59",
+        "tz": "America/Chicago"
+      }
+    },
+    "e7405aabe655": {
+      "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. PST (read as Pacific time)', recorded as 23:59 America/Vancouver so the site closes the call at that time.",
+      "reviewed_on": "2026-09-25",
+      "call_patch": {
+        "due_time": "23:59",
+        "tz": "America/Vancouver"
+      }
+    },
+    "71c8c7f9ec54": {
+      "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. CT', recorded as 23:59 America/Chicago so the site closes the call at that time.",
+      "reviewed_on": "2026-09-25",
+      "call_patch": {
+        "due_time": "23:59",
+        "tz": "America/Chicago"
+      }
+    },
+    "53bd4ec0ecfe": {
+      "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as 'noon ET', recorded as 12:00 America/New_York so the site closes the call at that time.",
+      "reviewed_on": "2026-09-25",
+      "call_patch": {
+        "due_time": "12:00",
+        "tz": "America/New_York"
+      }
+    },
+    "d127e081c886": {
+      "_why": "Red team F28 (2026-09-25): the stored quote ran to 212 characters; it is trimmed to its dated opening, still verbatim.",
+      "reviewed_on": "2026-09-25",
+      "evidence": "54th Annual Course ... May 22-24, 2027 ... New Orleans, Louisiana"
+    },
+    "66c22879fe97": {
+      "end": "2026-10-16",
+      "source_url": "https://www.akapa.org/event-6737177",
+      "evidence": "All-Alaska Medical Conference October 14 - 16 | BP Energy Center Join medical professionals from across Alaska and the Pacific Northwest for the 2026 All-Alaska",
+      "source_reviewed": true,
+      "_why": "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by two independent readers, which agree on this passage.",
+      "reviewed_on": "2026-09-26"
+    },
+    "6b3653108bcd": {
+      "call": {
+        "status": "closed",
+        "opens": null,
+        "closes": "2026-09-25",
+        "final": null,
+        "text": "SUBMISSÕES PRORROGADAS ATÉ 25/09/2026",
+        "url": "https://www.sobenfee.org.br/regulamento-2026"
+      },
+      "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (sobenfee.org.br/regulamento-2026) read 'SUBMISSÕES PRORROGADAS ATÉ 25/09/2026' and '2.1. O prazo limite para envio dos resumos via sistema será até 25/09/2026'; the extended deadline has passed. Re-read on 2026-09-26.",
+      "reviewed_on": "2026-09-26"
+    },
+    "269fb342e367": {
+      "call": {
+        "status": "closed",
+        "opens": null,
+        "closes": "2026-08-31",
+        "final": null,
+        "text": "Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)",
+        "url": "https://www.mpa2026.org/abstract-submission-guideline.php",
+        "due_time": "23:59",
+        "tz": "Asia/Kuala_Lumpur"
+      },
+      "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The congress's abstract guideline (mpa2026.org/abstract-submission-guideline.php) reads 'Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)'; the call covers the whole 47th MPA Annual Congress. Re-read on 2026-09-26.",
+      "reviewed_on": "2026-09-26"
+    },
+    "6cfadbc4e525": {
+      "call": {
+        "status": "closed",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "text": "The call for abstracts is now closed.",
+        "url": "https://www.sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026"
+      },
+      "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's event page (sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026) reads 'Abstract The call for abstracts is now closed. Type of presentation : Oral Presentation/ E poster'; no closing date is published. Re-read on 2026-09-26.",
+      "reviewed_on": "2026-09-26"
+    },
+    "45504b46ea75": {
+      "call": {
+        "status": "open",
+        "opens": null,
+        "closes": "2027-05-07",
+        "final": null,
+        "text": "Abstract deadline: 7 May 2027",
+        "url": "https://www.elsevier.com/events/conferences/all/global-emergency-nursing-conference/participate"
+      },
+      "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The conference page of the co-organizer ('Presented by Elsevier and Emergency Nurses Association') reads 'Abstract submission deadline: 7 May 2027', and its Participate page reads 'Abstract deadline: 7 May 2027 Submit oral abstract here ... Submit poster abstract here', so submission is open. Re-read on 2026-09-26.",
+      "reviewed_on": "2026-09-26"
+    },
+    "c3d8a04559de": {
+      "call": {
+        "status": "soon",
+        "opens": "2026-12-01",
+        "closes": null,
+        "final": null,
+        "text": "The call for research submission for AAPA 2027 will open December 1, 2026.",
+        "url": "https://www.aapa.org/research/research-events-aapa-conferences/"
+      },
+      "_why": "Official AAPA two-page conference agenda PDF reviewed directly on October 17 confirms May 21–25, 2027; local automatic PDF extraction was unavailable.",
+      "reviewed_on": "2026-10-17",
+      "source_reviewed": true,
+      "evidence": "Phoenix • May 21-25, 2027 • aapa.org/conference"
+    },
+    "3eecefb90b41": {
+      "location": "Hotel Roanoke & Conference Center, Roanoke, VA, USA",
+      "_why": "Dedicated official conference page confirms March 3–6, 2027 and Hotel Roanoke & Conference Center.",
+      "reviewed_on": "2026-10-17",
+      "start": "2027-03-03",
+      "end": "2027-03-06",
+      "source_url": "https://www.vcnp.net/events/2027VCNPAnnualConference/",
+      "evidence": "March 3 – March 6, 2027 – Hotel Roanoke & Conference Center",
+      "call": {
+        "status": "tba",
+        "text": null,
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "source_reviewed": true,
+      "review_method": "official_browser_review",
+      "review_sources": [
+        "https://www.vcnp.net/events/2027VCNPAnnualConference/"
+      ]
+    },
+    "50a6bc48cd8f": {
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-26",
+      "_why": "Independent probe 2026-09-26: the Runway held only an expected month (March 2027). The organizer's event page (connapa.org/event/2027-charter-oak-conference/) reads '2027 Charter Oak Conference March 21, 2027 - March 23, 2027' and names the venue ('welcome you back to the beautiful Water's Edge Resort & Spa for the 2027 ConnAPA Charter Oak Conference'; 'Venue Water's Edge Resort and Spa 1525 Boston Post Road Westbrook, CT'). Re-read on 2026-09-26."
+    },
+    "5a807234462c": {
+      "save_the_date": true,
+      "source_reviewed": true,
+      "reviewed_on": "2026-09-26",
+      "evidence_image": "https://ncapa-offload-media.s3.amazonaws.com/wp-content/uploads/2026/07/20124624/S27-Save-the-Date-New-1080-x-540-1024x512.png",
+      "note": "The organizer publishes this as a save-the-date image; the agenda, registration and hotel details are to be announced.",
+      "_why": "Independent probe 2026-09-26: the Runway held only an expected month (August 2027). The organizer's Summer Conference page (ncapa.org/summer-cme-conference/) shows a save-the-date image reading 'Save the Date! 2027 Summer Conference is August 22nd-27th More information coming soon!'; the page text reads 'Held in North Myrtle Beach, SC' and 'the conference is offered as a hybrid event'. Page and image re-read on 2026-09-26."
+    },
+    "273ab4936c7d": {
+      "start": "2026-10-19",
+      "end": "2026-10-22",
+      "location": "JW Marriott Camelback Inn, Scottsdale, AZ",
+      "source_url": "https://www.hospitalmedicine.org/event/conferences/",
+      "evidence": "Learn More Leadership Academy 2026 October 19-22, 2026",
+      "call": {
+        "status": "none",
+        "text": "No call",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.hospitalmedicine.org/event/conferences/"
+      ]
+    },
+    "48ef8653cead": {
+      "start": "2026-10-20",
+      "end": "2026-10-23",
+      "location": "Seattle Convention Center, WA",
+      "source_url": "https://www.neurocriticalcare.org/Events/Annual-Meeting",
+      "evidence": "join the NCS community in \"Reaching New Heights\" in neurocritical care this October 20-23 in Seattle. Event Home Registration Schedule Workshops Keynotes Hotel + Trav",
+      "call": {
+        "status": "closed",
+        "text": "Closed",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.neurocriticalcare.org/Events/Annual-Meeting/Past-Future-Annual-Meetings"
+      ]
+    },
+    "b4e1a4663559": {
+      "start": "2026-10-30",
+      "end": "2026-10-31",
+      "location": "Manipal, India",
+      "source_url": "https://conference.manipal.edu/shelac2026/",
+      "evidence": "30-31 October 2026 | Dr. TMA Pai Hall, KMC, MAHE, Manipal | Hybrid Mode",
+      "call": {
+        "status": "closed",
+        "text": "Abstract deadline extended to October 11; older milestone table still lists September 20.",
+        "opens": null,
+        "closes": "2026-10-11",
+        "final": "2026-10-11",
+        "url": "https://conference.manipal.edu/shelac2026/"
+      },
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://conference.manipal.edu/shelac2026/"
+      ]
+    },
+    "a4c64b558932": {
+      "start": "2027-03-17",
+      "end": "2027-03-21",
+      "location": "Nashville, TN (venue not yet posted)",
+      "source_url": "https://amsect.org/events-education/international-conference",
+      "evidence": "Statements & Endorsements International Conference AmSECT 65 th International Conference March 17-21, 2027",
+      "call": {
+        "status": "open",
+        "text": "Closes Nov 23",
+        "opens": null,
+        "closes": "2026-11-23",
+        "final": null,
+        "url": null
+      },
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://amsect.org/events-education/international-conference"
+      ]
+    },
+    "7b6f95d9ef1c": {
+      "start": "2027-03-17",
+      "end": "2027-03-19",
+      "location": "Hard Rock Hotel & Casino, Atlantic City, NJ",
+      "source_url": "https://www.newjerseyena.org/2027-call-for-posters",
+      "evidence": "Networking, Advocacy 2027 Emergency Care Conference Call for Speakers Conference Dates: March 17th, 18th, & 19th, 2027 Deadline for submissions is September 18, 2026. Presenters will be no",
+      "call": {
+        "status": "open",
+        "text": "Poster submissions; separate speaker call closed September 18, 2026.",
+        "opens": null,
+        "closes": "2026-12-31",
+        "final": "2026-12-31",
+        "url": "https://www.newjerseyena.org/2027-call-for-posters"
+      },
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://www.newjerseyena.org/2027-call-for-posters"
+      ]
+    },
+    "31f21fec28cb": {
+      "start": "2027-03-30",
+      "end": "2027-04-02",
+      "location": "Mandalay Bay Resort & Casino, Las Vegas, NV",
+      "source_url": "https://shmconverge.hospitalmedicine.org/",
+      "evidence": "March 30 - April 2, 2027 ... Mandalay Bay Resort & Casino",
+      "call": {
+        "status": "open",
+        "text": "Submissions are open from September 11 through November 23, 2026. (no time zone stated)",
+        "opens": "2026-09-11",
+        "closes": "2026-11-23",
+        "final": null,
+        "url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=EQLVXWNI"
+      },
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Published date range includes March 30 pre-courses; main meeting starts March 31.",
+      "review_method": "official_page_review",
+      "review_sources": [
+        "https://shmconverge.hospitalmedicine.org/"
+      ]
+    },
+    "20467b982cf4": {
+      "start": "2027-09-27",
+      "end": "2027-09-30",
+      "location": "Hyatt Regency New Orleans, LA",
+      "source_url": "https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027",
+      "evidence": "Annual Meeting NCS 25th Annual Meeting 2027 September 27-30, 2027 Hyatt Regency New Orleans Save the date for the NCS 25th Annual Meeting, taking",
+      "call": {
+        "status": "tba",
+        "text": "Not posted",
+        "opens": null,
+        "closes": null,
+        "final": null,
+        "url": null
+      },
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-17",
+      "_why": "Dates confirmed in the current official source.",
+      "review_method": "official_indexed_source_review",
+      "review_sources": [
+        "https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027"
+      ]
+    },
+    "3120ce066484": {
+      "removed": true,
+      "_why": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily.",
+      "reviewed_on": "2026-10-17"
+    },
+    "89122ea45979": {
+      "removed": true,
+      "_why": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily.",
+      "reviewed_on": "2026-10-17"
+    },
+    "890190479333": {
+      "removed": true,
+      "_why": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily.",
+      "reviewed_on": "2026-10-17"
+    },
+    "c1ce0f518355": {
+      "removed": true,
+      "_why": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily.",
+      "reviewed_on": "2026-10-17"
+    }
+  },
+  "rules": {
+    "american-nurses-credentialing-center__certified-nurses-day": {
+      "type": "fixed",
+      "month": 3,
+      "day": 19
+    },
+    "society-for-simulation-in-healthcare__healthcare-simulation-week": {
+      "type": "weekday_after",
+      "month": 9,
+      "day": 11,
+      "weekday": 0,
+      "length": 5
+    },
+    "society-of-hospital-medicine__national-hospitalist-day": {
+      "type": "nth_weekday",
+      "month": 3,
+      "weekday": 3,
+      "n": 1
+    },
+    "american-nurses-association__national-nurses-week": {
+      "type": "fixed",
+      "month": 5,
+      "day": 6,
+      "end_day": 12
+    },
+    "american-academy-of-physician-associates__pa-week": {
+      "type": "fixed",
+      "month": 10,
+      "day": 6,
+      "end_day": 12
+    },
+    "international-confederation-of-midwives-__international-day-of-the-midwife": {
+      "type": "fixed",
+      "month": 5,
+      "day": 5
+    },
+    "international-council-of-nurses-icn__international-nurses-day": {
+      "type": "fixed",
+      "month": 5,
+      "day": 12
+    },
+    "oncology-nursing-society-ons__oncology-nursing-month": {
+      "type": "fixed",
+      "month": 5,
+      "day": 1,
+      "end_day": 31
+    }
   }
- },
- "editions": {
-  "e8d98a25caca": {
-   "removed": true,
-   "_why": "This was a roll-up of 29 separate SCCM course listings over 14 months, not one conference."
-  },
-  "8f0aefce3cc4": {
-   "removed": true,
-   "_why": "This displayed four separate Geisinger-hosted SCCM courses as one continuous month-long event."
-  },
-  "43335d5f76c7": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://npwh.org/news/674033/",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "27th Annual NPWH Women’s Healthcare Conference, September 25-28, 2024"
-  },
-  "426f2f34845c": {
-   "date_conflict": null,
-   "compiled": "2026-09-21",
-   "note": "The society's meeting page and the meeting's own site both give November 21-23, 2026 at Morinomiya University of Medical Sciences, Osaka. The summary line on the society's index reads 11/21-11/22 but labels the end day 月・祝 (Monday, public holiday), which is November 23; the index line is a typo.",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "js-np.jp/scientific-meeting-single-12.htm read 2026-09-22: 会期 2026.11.21(土)〜23(月・祝), 会場 森ノ宮医療大学; jsnp2026.jp/outline.html gives the same range."
-  },
-  "85a947e04684": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "28th Annual NPWH Women's Healthcare Conference, October 1–3, 2025, Caesars Palace in Las Vegas."
-  },
-  "7c83d68f1860": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://www.ons.org/education-hub/events/congress/blog/ignite-extraordinary-possibilities-impacting-cancer-care-ons",
-   "source_reviewed": true,
-   "evidence": "The 2024 ONS Congress takes place April 24–28 in Washington, DC."
-  },
-  "f5590a05975e": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://amia.org/education-events/amia-2025-informatics-summit",
-   "source_reviewed": true,
-   "evidence": "AMIA 2025 Informatics Summit, March 10–13, Pittsburgh, PA."
-  },
-  "371badb11823": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://texasnp.org/wp-content/uploads/2025/07/C6-TNP-Pulse-Magazine-Summer-2025-Singles.pdf",
-   "source_reviewed": true,
-   "evidence": "TNP 2025 Annual Conference, September 25–28, Hilton Anatole, Dallas, TX."
-  },
-  "51e706b5534b": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://ache2026.eventscribe.net/agenda.asp?all=1&pfp=FullSchedule",
-   "source_reviewed": true,
-   "evidence": "ACHE 2026 Congress on Healthcare Leadership program, March 2–4, 2026, Houston, TX."
-  },
-  "d6cf72ac03b2": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://login.texasnp.org/events/EventDetails.aspx?id=1986716",
-   "source_reviewed": true,
-   "evidence": "2026 Pharmacology & Primary Care Conference, April 23–25, 2026, San Antonio, Texas."
-  },
-  "cd48f1f07eaf": {
-   "source_url": "https://oncologypas.org/event/2027-annual-symposium/",
-   "date_conflict": null,
-   "note": null,
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "oncologypas.org/event/2027-annual-symposium/ and the events index both read \"September 23 - September 26, 2027\" on 2026-09-22; the earlier 23-27 value came from a structured metadata field that no longer appears."
-  },
-  "e1d965344e5e": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "NYONL 34th Annual Meeting and Leadership Conference: September 27–29, 2026, Tarrytown, New York."
-  },
-  "75c789c89d9d": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://delawareana.org/event-6571840",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "Delaware Association of Nurse Anesthetists 2026 Annual Fall Meeting: October 10, Wilmington, Delaware."
-  },
-  "a8f8d986acc5": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "Psych Congress PA Institute: December 4–6, 2026, Orlando, Florida."
-  },
-  "7fca18685d3c": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "68th ASH Annual Meeting and Exposition: December 12–15, 2026, New Orleans, Louisiana."
-  },
-  "5fbb7d8ba316": {
-   "removed": true,
-   "_why": "A broad nine-day virtual-sessions placeholder has no matching named event on the organizer calendar; individual SCCM sessions remain separately sourced."
-  },
-  "9c25bb01384b": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "Fri, Sep 25, 2026 - 7:45 AM to 3:30 PM CDT - Memorial Hermann Memorial City Medical Center - Tower Conference Center - Houston, Texas",
-   "source_url": "https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263",
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site returns 403 to cloud readers); date and venue confirmed."
-  },
-  "d0b45cb18fd0": {
-   "source_url": "https://convention.jtbcom.co.jp/jans46/outline.html",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "第46回日本看護科学学会学術集会 The 46th Annual Conference of Japan Academy of Nursing Science … 会期 2026年12月12日（土）・13日（日） 会場 東京国際フォーラム",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "9e0e24120486": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://njsna.org/events/month/2026-10/",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "location": "Online",
-   "note": "The organizer's calendar lists the NJSNA 2026 Annual Meeting as virtual, 8 a.m.–1 p.m. on October 8.",
-   "evidence": "NJSNA 2026 Annual Meeting *VIRTUAL*: October 8, 8:00 a.m.–1:00 p.m."
-  },
-  "2baa3d5fee7a": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "participants can attend in-person at Mount Sinai Hospital, Hess Building, or join Virtually by Zoom",
-   "source_url": "https://critcaresummit.com/",
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: organizer page offers in-person or Zoom attendance; format was stored as in person.",
-   "format": "hybrid"
-  },
-  "f21293985b2b": {
-   "source_url": "https://www.nonpf.org/page/futureconferences",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "The 2026 NONPF Fall Conference will take place November 5-6 2026 in Tuscon, Arizona",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "6e8d92987926": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "2026 Annual Symposium November 7–11, 2026 Dallas, TX",
-   "source_url": "https://brand.amia.org/m/65eea6d416de44d1/original/AMIA-2026-Annual-Symposium-Prospectus.pdf",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "7656f2da8579": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "Join us for NNA’s Annual Convention Oct 1-2, 2026 | Kearney, NE",
-   "source_url": "https://nebraskanurses.org/convention/",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "89de4656498c": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "October 1- 4 - Niagara Falls, NY",
-   "source_url": "https://www.thenpa.org/page/NP26",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "7439fe42fefc": {
-   "start": "2026-10-01",
-   "end": "2026-10-04",
-   "source_url": "https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "note": "Pre-meeting workshops start October 1; the main meeting runs October 2–4.",
-   "evidence": "AVA 2026 ANNUAL SCIENTIFIC MEETING 10/1/2026 to 10/4/2026 ... Gaylord Texan Resort & Convention Center Grapevine, Texas",
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site returns 403 to cloud readers); dates and venue confirmed."
-  },
-  "785efb278b8a": {
-   "source_url": "https://www.acep.org/sa",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "Join Us for ACEP26 October 5-8, 2026",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "7111b734f1a9": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "2026 NPWH Annual Women's Healthcare Conference 9/23/2026 to 9/25/2026 When: September 23 - 25, 2026",
-   "source_url": "https://npwh.org/m/event_details.asp?id=1984651",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "98da2c267857": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "2027 Annual Conference will take place at the Loews Kansas City, in Kansas City Missouri, March 1 – 4, 2027.",
-   "source_url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/",
-   "reviewed_on": "2026-09-25",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url. Red team F03 (2026-09-24): the call's closing date was the student-poster deadline (Sep 27), so the site showed every visitor an open call that had closed for professionals on Aug 13. Organizer page re-read 2026-09-25: 'Final Deadline for Abstract Submission: Thursday, August 13, 2026, at 11:59 PM ET'; 'Final Deadline for Student Poster Submission: Sunday, September 27, 2026, 11:59 PM ET'. The call now carries the professional call; the student-poster call stays in the student record.",
-   "call": {
-    "status": "closed",
-    "opens": "2026-06-10",
-    "closes": "2026-08-13",
-    "final": null,
-    "text": "Professional abstracts: opened Wednesday, June 10, 2026; final deadline Thursday, August 13, 2026, at 11:59 PM ET. Student posters: opened Tuesday, July 14, 2026; final deadline Sunday, September 27, 2026, 11:59 PM ET (there will be no deadline extensions)",
-    "url": "https://nacns.org/news-events/annual-conference/2027-annual-conference/"
-   }
-  },
-  "b32ffbb674ac": {
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "2026 NLN EDUCATION SUMMIT Beyond the Storm: Reshaping Resilience & Recovery WASHINGTON, DC SEPTEMBER 23-25",
-   "source_url": "https://summit.nln.org/",
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "09391e1f6db0": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "source_url": "https://texasnp.org/calendar/",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "September 24–27, 2026: TNP 2026 Annual Conference and Skills Workshops, Moody Gardens, Galveston."
-  },
-  "f306cd0b410d": {
-   "source_url": "https://npweek.aanp.org/press-releases-and-letters",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "2026 National Nurse Practitioner Week Is November 8-14",
-   "location": "Nationwide",
-   "_why": "National Nurse Practitioner Week is a nationwide observance with no venue; it shipped with an empty location. Set to Nationwide 2026-09-24, matching every other observance.",
-   "reviewed_on": "2026-09-24"
-  },
-  "a6986e02edc1": {
-   "source_url": "https://www.aana.com/event/national-crna-week-2027/",
-   "source_reviewed": true,
-   "compiled": "2026-09-21",
-   "evidence": "National CRNA Week 2027 January 17, 2027 - January 23, 2027",
-   "reviewed_on": "2026-09-24",
-   "_why": "National CRNA Week is a nationwide observance with no venue; it shipped with an empty location. Set to Nationwide 2026-09-24, matching every other observance.",
-   "location": "Nationwide"
-  },
-  "3d8a3d9936ff": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "start": "2026-09-28",
-   "source_url": "https://www.elso.org/ecmo-education/elso-meetings.aspx",
-   "note": "The organizer's meetings page lists September 28 to October 1; an earlier registration source listed September 29."
-  },
-  "95a63454c08f": {
-   "_why": "Added before every correction had to state its reason; the entry records the organizer source and wording shown here.",
-   "end": "2026-04-17",
-   "source_url": "https://www.aaacn.org/sites/default/files/images/conference/AAACN%202026%20prospectus_FINAL.pdf",
-   "note": "The organizer's conference prospectus and poster call list April 14 to 17; an oral abstracts notice lists April 18."
-  },
-  "d983c6b34b97": {
-   "removed": true,
-   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
-  },
-  "bc1ed82321a6": {
-   "removed": true,
-   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
-  },
-  "85dd540efc18": {
-   "removed": true,
-   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
-  },
-  "96e3fec22ac3": {
-   "removed": true,
-   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
-  },
-  "a2b5b8c2e1e7": {
-   "removed": true,
-   "_why": "agent derived this date from the published rule; the rule projection supplies it instead"
-  },
-  "823a00629439": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://na-admin.eventscloud.com/file_uploads/0f16f866d07fe3cf70432a7e11c23f02_2026NZNOTermsandConditions.pdf",
-   "evidence": "Tuesday 22 September 2026 – NZNO Annual General Meeting"
-  },
-  "e48b8600d4b5": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: organizer event page describes live, streamed and on-demand participation; format was stored as in person.",
-   "format": "hybrid",
-   "source_url": "https://www.okpa.org/events/annual-oapa-fall-cme-conference-2026/",
-   "evidence": "attendees can participate through live presentations, virtual streaming, or an on-demand library"
-  },
-  "460a16759e79": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.iapasociety.org",
-   "evidence": "IPAS Fall CME Conference October 26-27, 2026 | Coralville, Iowa"
-  },
-  "51ef23154e50": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://wapa.com/events/wapa-fall-conference-2026/",
-   "evidence": "Join your fellow physician associates for the WAPA Fall Conference, happening November 1st-4th at the scenic Hyatt Regency Lake Washington"
-  },
-  "9fa932165f0a": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: program PDF opened in a browser on 2026-09-24; dates, venue and in-person format confirmed.",
-   "source_url": "https://seoc.cl/uploads/islands/26/files/6ab2a4b0c317d_programa-8-congreso-seoc-2026_.pdf",
-   "evidence": "19/20/21 NOVIEMBRE EVENTO PRESENCIAL ... HOTEL BEST WESTERN Alonso de Córdova 5727, Las Condes"
-  },
-  "df41d3af0294": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: organizer page states a submission deadline of August 29, 2026, which has passed; call was stored as tba.",
-   "source_url": "https://congresoenfermeria.ufro.cl/",
-   "evidence": "FECHA 19 Y 20 DE NOVIEMBRE 2026",
-   "call": {
-    "status": "closed",
-    "opens": null,
-    "closes": "2026-08-29",
-    "final": null,
-    "text": "Submission Deadline: August 29, 2026",
-    "url": "https://congresoenfermeria.ufro.cl/"
-   }
-  },
-  "c6226c5e9add": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "location": "Poliforum Científico y Cultural, Chihuahua, Mexico",
-   "source_url": "https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/",
-   "evidence": "Fecha 26 y 27 de noviembre de 2026 Sede Poliforum Científico y Cultural “Dr. Víctor M. Gómez Moreno”"
-  },
-  "db6c943ce1b9": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.aana.com/event/edge-2027/",
-   "evidence": "EDGE 2027 February 25, 2027 - February 28, 2027 Sheraton Dallas Hotel — Dallas, TX"
-  },
-  "a83ba760ec56": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.academyonline.org/page/conferences",
-   "evidence": "Join us in Louisville, Kentucky for the Spring 2027 Advanced Practice Neonatal Nurses Conference. April 8-10, 2027"
-  },
-  "63b4fd60df55": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://amia.org/education-events/2027-amplify-informatics-conference",
-   "evidence": "2027 Amplify Informatics Conference … April 12 - 15 Atlanta, GA"
-  },
-  "002ad3b7a061": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.aana.com/event/mid-year-assembly-2027/",
-   "evidence": "Mid-Year Assembly 2027 April 16, 2027 - April 21, 2027"
-  },
-  "479121152dc2": {
-   "source_reviewed": false,
-   "reviewed_on": "2026-09-22",
-   "_why": "2026-09-24 (evening): ONS publishes Oncology Nursing Month only as a rule (\"Every May\"), not as dated 2027 days, so this edition is labelled Set by rule like 2028 and 2029 rather than as a reviewed date. The 2026-09-22 walk confirmed the rule wording at source_url; the verbatim wording and the page are kept.",
-   "source_url": "https://www.ons.org/oncology-nursing-month",
-   "evidence": "Every May, we honor oncology nurses for the hope they nurture and the strength they inspire.",
-   "status": "rule",
-   "note": "Computed from the organizer's published rule"
-  },
-  "fc952b75dcbc": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.aacn.org/conferences-and-events/nti",
-   "evidence": "NTI 2027 Indianapolis May 2-5"
-  },
-  "2b995c9ce64e": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-25",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 PM ET', recorded as 23:59 America/New_York so the site closes the call at that time.",
-   "source_url": "https://www.asco.org/annual-meeting/dates-know",
-   "evidence": "June 4 - 8, 2027 location_on McCormick Place, Chicago, IL #ASCO27",
-   "call_patch": {
-    "due_time": "23:59",
-    "tz": "America/New_York"
-   }
-  },
-  "63030a7dee9b": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.aana.com/event/aana-annual-congress-2027/",
-   "evidence": "AANA Annual Congress 2027 August 8, 2027 - August 12, 2027 Join us in New Orleans, LA"
-  },
-  "919004c82f9a": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "end": "2027-10-03",
-   "source_url": "https://wapa.com/events/wapa-fall-conference-2027/",
-   "evidence": "WAPA Fall Conference 2027 Save the Date and Plan to join us! DATE Sep 30 2027 - Oct 03 2027"
-  },
-  "c45dffbcbe96": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.acep.org/sa/general-information/future-dates",
-   "evidence": "ACEP27 Scientific Assembly 10/25/2027 - 10/28/2027 Boston, Massachusetts"
-  },
-  "2b4240065e0a": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.jans.or.jp/meetings/schedule/",
-   "evidence": "第47回学術集会（2027年度） 日時：2027年11月27日・28日 場所：札幌コンベンションセンター"
-  },
-  "0062195111b0": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.asco.org/annual-meeting/dates-know",
-   "evidence": "Future Meetings June 2 - 6, 2028 Chicago, IL"
-  },
-  "bfff1655d95c": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.acep.org/sa/general-information/future-dates",
-   "evidence": "ACEP28 Scientific Assembly 9/17/2028 - 9/20/2028 Las Vegas, Nevada"
-  },
-  "27adc53dd3fe": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.acep.org/sa/general-information/future-dates",
-   "evidence": "ACEP29 Scientific Assembly 10/1/2029 - 10/4/2029 Philadelphia, Pennsylvania"
-  },
-  "e2d3b8e33ed3": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.acep.org/sa/general-information/future-dates",
-   "evidence": "ACEP30 Scientific Assembly 10/17/2030 - 10/20/2030 San Francisco, California"
-  },
-  "194ce1735b8f": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url.",
-   "source_url": "https://www.acep.org/sa/general-information/future-dates",
-   "evidence": "ACEP31 Scientific Assembly 10/27/2031 - 10/30/2031 Chicago, Illinois"
-  },
-  "df0c3e9bbf98": {
-   "removed": true,
-   "_why": "2027 dates could not be confirmed: aannet.org blocks automated reads and academypolicyconference.com shows only the 2026 conference (October 8-10, 2026). Removed 2026-09-22; the expected-month row covers October 2027."
-  },
-  "4169d9ce47cd": {
-   "removed": true,
-   "_why": "AAOHN says the 2027 national conference is all-virtual \"this upcoming June\" but publishes no dates. The single-day June 1 record was a placeholder, not an organizer date. Removed 2026-09-22."
-  },
-  "a3400aa377d9": {
-   "source_url": "https://kapn.enpnetwork.com/nurse-practitioner-news/228218-save-the-date-and-call-for-presentations-for-kansas-advanced-practice-nurses-6th-annual-sunflower-conference-february-19-20-2027-in-wichita-ks",
-   "evidence": "Call for Presentations for Kansas Advanced Practice Nurses 6th Annual Sunflower Conference February 19-20, 2027 in Wichita, KS",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "call": {
-    "status": "open",
-    "opens": null,
-    "closes": "2026-09-30",
-    "text": "Call for presentations; submissions close September 30, 2026",
-    "url": "https://forms.gle/Mun8EChacCsdaTT47"
-   },
-   "_why": "Walked kapn.enpnetwork.com: events list (webinars only), then News, where the save-the-date post carries the dates, venue city and the presentation deadline."
-  },
-  "f728d5279341": {
-   "source_url": "https://enrs2027conference.oa-event.com/",
-   "call": {
-    "status": "open",
-    "opens": null,
-    "closes": "2026-10-28",
-    "text": "Peer-reviewed paper and poster, clinical nurse researcher-scholar poster, workshop and symposium applications close Wednesday, October 28, 2026, 11:59 p.m. Eastern; school-selected student posters close December 18, 2026",
-    "url": "https://enrs2027conference.oa-event.com/abstracts"
-   },
-   "note": null,
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-25",
-   "evidence": "ENRS 39th Annual Scientific Sessions LOEWS PHILADELPHIA 03 31 27 - 04 02 27",
-   "evidence_image": "https://cloud-1de12d.becdn.net/media/original/ebbb61afde73a2404726ecced6d28a3f/ENRS-39th-Annual-Scientific-Sessions-1-.png",
-   "_why": "Repopulation audit 2026-09-24: banner image re-read in a browser on 2026-09-24 (ENRS 39th Annual Scientific Sessions, LOEWS PHILADELPHIA, 03.31.27 - 04.02.27); the site publishes the dates only in that image. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. Eastern', recorded as 23:59 America/New_York so the site closes the call at that time.",
-   "call_patch": {
-    "due_time": "23:59",
-    "tz": "America/New_York"
-   }
-  },
-  "bfb1cef79cb1": {
-   "note": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
-   "save_the_date": true,
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "source_url": "https://mypnaa.org/events",
-   "evidence": "July 17-24, 2027 This year, we’re taking you on a spectacular Inter-Island Cruise in Hawaii",
-   "evidence_image": "https://mypnaa.org/resources/Events/PNAA48/48th%20PNAA%20National%20Convention%20Flyer%20with%20Theme%20v3.png",
-   "location": "Inter-island cruise, Hawaii (host chapter: PNA Hawaii)",
-   "_why": "Repopulation audit 2026-09-24: organizer flyer image re-read in a browser on 2026-09-24 (Save the date July 17-24, 2027, 48th PNAA Annual National Convention); PNAA publishes the dates only in that flyer."
-  },
-  "4963c59b8b50": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "evidence": "2027 AANP Health Policy Conference · February 7, 2027 – February 9, 2027 · Washington, District of Columbia",
-   "location": "Washington, DC",
-   "_why": "aanp.org/events/2027-hpc read 2026-09-22; the page is JavaScript-only to the automatic check."
-  },
-  "64d695b36d4b": {
-   "source_url": "https://www.iapacon.org/",
-   "evidence": "24th, 25th & 26th September 2026 | Fairfield by Marriott – Ozone Convention Centre, Kolkata",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed."
-  },
-  "825ae90df474": {
-   "source_url": "https://cms.venvn.nl/afdelingen/maag-darm-lever/agenda/18de-jaarcongres-v-vn-vs",
-   "evidence": "Het 18e jaarcongres zal plaatsvinden in het NBC-congrescentrum in Nieuwegein op donderdag 1 en vrijdag 2 oktober 2026. ... zowel live als online deelnemen",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates, venue and hybrid format confirmed."
-  },
-  "6db24e4a848d": {
-   "source_url": "https://onanigeria.org/registration",
-   "evidence": "7th - 10th October 2026 Abuja, Nigeria",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates confirmed."
-  },
-  "2fedca69186a": {
-   "source_url": "https://www.tnpa.org.tw/events/content.php?id=6262",
-   "evidence": "2026/10/18 (日) 12:30 ~ 16:00",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "2bedae9df083": {
-   "source_url": "https://www.cano-acio.ca/page/cano2026",
-   "evidence": "CANO/ACIO Annual Conference 2026 Congrès annuel 2026 de l’ACIO/CANO October 22–25, 2026 | Montréal, Québec",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "2891e7185321": {
-   "source_url": "https://pinc.fkep.unpad.ac.id/",
-   "evidence": "HYBRID CONFERENCE • NOVEMBER 7th - 8th, 2026, Auditorium Suharyati - Universitas Padjadjaran",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: organizer site now shows November 7-8, 2026 (previously captured as 6-7) and labels the meeting hybrid.",
-   "start": "2026-11-07",
-   "end": "2026-11-08",
-   "format": "hybrid",
-   "location": "Auditorium Suharyati, Universitas Padjadjaran, Jatinangor, Indonesia"
-  },
-  "08404cd571fb": {
-   "source_url": "https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx",
-   "evidence": "The Qatar Health Congress 2026, held from 11 to 14 November at the Sheraton-Grand Doha Resort & Convention Hotel",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "b9f577965d09": {
-   "source_url": "https://whova.com/web/l8DFdjm5yESE0aiiF00qy6C16Oz2Iw6Elxaaf84GA1A%3D/",
-   "evidence": "AAAA 2027 Annual Conference — April 14 – 18, 2027 — Orlando, FL",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-25",
-   "_why": "Reconciled 2026-09-24 from the organizer's own official event page rather than a social post. The remaining ambiguity is recorded inside the record instead of on the card. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 PM (EST)', recorded as 23:59 America/New_York so the site closes the call at that time.",
-   "location": "Orlando World Center Marriott, Orlando, FL",
-   "date_conflict": false,
-   "note": "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session.",
-   "call": {
-    "status": "open",
-    "opens": null,
-    "closes": "2027-02-05",
-    "final": null,
-    "text": "Poster Submission Deadline: February 5, 2027, at 11:59 PM (EST)",
-    "url": "https://www.anesthetist.org/aaaa-posters-2027"
-   },
-   "start": "2027-04-14",
-   "end": "2027-04-18",
-   "call_patch": {
-    "due_time": "23:59",
-    "tz": "America/New_York"
-   }
-  },
-  "0c7fb520bb72": {
-   "source_url": "https://www.nonpf.org/page/futureconferences",
-   "evidence": "54th Annual Conference Dates: April 19-23, 2028 Location: Phoenix, Arizona",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Walked 2026-09-22 (organizer page, its menu links, images/PDFs, in a real browser): dates confirmed at source_url."
-  },
-  "60ec5ef3bd26": {
-   "removed": true,
-   "_why": "Duplicate of 168119a896f1. ABEn's page read 2026-09-22 gives the 76th CBEn as 8 a 12 de novembro de 2026; the 9-11 November record was wrong."
-  },
-  "e9ba48026efc": {
-   "source_url": "https://www.itns.org/",
-   "evidence": "The 34th Annual ITNS Symposium Where Compassion Meets Innovation: Bringing the World of Transplant Nursing Together September 25-27, 2026",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
-  },
-  "8a0d140dd475": {
-   "source_url": "https://www.napnap.org/specialty-symposium/",
-   "evidence": "our fall virtual symposium live on Oct. 9 from 11 a.m. to 6 p.m. ET with on-demand access through Dec. 31, 2026",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
-  },
-  "dbfaf50988f0": {
-   "source_url": "https://nam.edu/event/2026-annual-meeting-chronic-disease/",
-   "evidence": "NAM Member Interest Group Meetings | Sunday, October 18 … Scientific Symposium | Monday, October 19",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
-  },
-  "a82459f399b8": {
-   "source_url": "https://nam.edu/event/2026-healthy-longevity-global-innovator-summit/",
-   "evidence": "will host Catalyzing Healthy Longevity: NAM Global Innovator Summit on October 20, 2026, in Washington, D.C.",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
-  },
-  "341d49a57d61": {
-   "source_url": "https://www.clintox.org/nacct",
-   "evidence": "2026 | San Diego, California | October 21st - 25th",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-22",
-   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded."
-  },
-  "ee1eb9c0e631": {
-   "source_url": "https://heartrhythm.com/",
-   "evidence": "Heart Rhythm 2027 | May 13–16, 2027 | San Francisco, CA",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-25",
-   "_why": "Due diligence 2026-09-22: the stored quote did not carry the date; organizer page re-read in a real browser and the dated wording recorded. Red team F03 (2026-09-24): the call showed Nov 1 as the abstract deadline and an unsourced 'abstracts Oct 1–Dec 16' window. Read 2026-09-25: the organizer's session-ideas page gives a second-wave deadline of November 1, 2026; its home, Present and HRS event pages give no scientific-abstract dates, and its abstract portal disallows robots. The unsourced window was removed and Nov 1 labeled as the session-ideas deadline.",
-   "call": {
-    "status": "open",
-    "opens": null,
-    "closes": "2026-11-01",
-    "final": null,
-    "text": "Session ideas, second wave: close November 1, 2026 (no time zone given). Scientific abstract dates: not yet given on the organizer's event pages",
-    "url": "https://heartrhythm.com/call-hrs2027-session-ideas"
-   }
-  },
-  "43862213a496": {
-   "source_url": "https://aann.org/meetings/annual-educational-conference",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-23",
-   "evidence": "Saturday, March 13-Tuesday, March 16, 2027 The Westin Seattle, Seattle, WA",
-   "_why": "Nightly checker got HTTP 307 (redirect loop for automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
-  },
-  "260f68c5cb83": {
-   "source_url": "https://aann.org/meetings/virtual-innrs",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-23",
-   "evidence": "The next Virtual INNRS will be held on Friday, January 29, 2027.",
-   "_why": "Nightly checker got HTTP 307 (redirect loop for automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
-  },
-  "819fe90fd52b": {
-   "source_url": "https://www.ena.org/emergency-nursing-2026",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-23",
-   "evidence": "Sep 28, 2026 - Oct 01, 2026 Phoenix, Arizona",
-   "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
-  },
-  "d4e7559150f1": {
-   "source_url": "https://www.ena.org/events/emergency-nursing-2027",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-23",
-   "evidence": "Sep 15, 2027 - Sep 18, 2027 Kansas City Convention Center, Kansas City",
-   "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
-  },
-  "79ff0d69f162": {
-   "source_url": "https://worldcongressonpain.secure-platform.com/a/",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-23",
-   "evidence": "Join the global pain community at the 2026 World Congress on Pain in Bangkok, Thailand, from 26 – 30 October 2026.",
-   "_why": "Nightly checker got HTTP 403 (site blocks automated readers) on 2026-09-23; page read in a browser the same day and the dates are unchanged."
-  },
-  "16ee2e3c0b61": {
-   "format": "hybrid",
-   "source_url": "https://acgmeetings.gi.org/registration/",
-   "evidence": "ACG is offering flexible registration options for this year's hybrid conference. Registrants can choose to attend in-person in Nashville, participate virtually, or select a combination of both.",
-   "_why": "Repopulation audit 2026-09-24: organizer registration page describes a hybrid meeting; format was stored as in person.",
-   "reviewed_on": "2026-09-24",
-   "source_reviewed": true
-  },
-  "db80e502cbf5": {
-   "format": "hybrid",
-   "source_url": "https://ebpom.org/product/ebpom-ireland-2026/",
-   "evidence": "28 September - 01 October 2026 ... LIVE in Dingle, Ireland ... Virtual attendance options are also available",
-   "_why": "Repopulation audit 2026-09-24: organizer product page offers virtual attendance alongside the live meeting; format was stored as in person.",
-   "reviewed_on": "2026-09-24",
-   "source_reviewed": true
-  },
-  "97a2b66704e8": {
-   "call": {
-    "status": "closed",
-    "opens": null,
-    "closes": "2026-07-14",
-    "final": null,
-    "text": "Fecha límite para envío 14 de julio de 2026",
-    "url": "https://congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/"
-   },
-   "_why": "Blind audit 2026-09-26: the congress's own abstract instructions (congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/, the congress site ELSO's meetings page links) read 'Apertura del envío Enero 2026 Fecha límite para envío 14 de julio de 2026' and 'Fechas del Congreso ELSO LATAM 2026 4–6 de noviembre de 2026'. That is the evidence the earlier 'Closed Jul 14' lacked. Re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
-   "reviewed_on": "2026-09-26",
-   "source_reviewed": true,
-   "evidence": "VII Congreso ELSOLATAM 2026 Location: San Jose, Costa Rica November 4, 2026 - November 6, 2026"
-  },
-  "5c74b6afd77c": {
-   "call": {
-    "status": "closed",
-    "opens": null,
-    "closes": "2026-08-10",
-    "final": null,
-    "text": "'The deadline has been extended to August 10, 2026.' 'The deadline for abstract submissions has closed.'",
-    "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/innovation-summit/call-for-abstracts/"
-   },
-   "_why": "Repopulation audit 2026-09-24: organizer page shows an open Call for Abstracts; call was stored as closed. 2026-09-25: the call was shown as open with no due date. The organizer's call page reads 'The deadline has been extended to August 10, 2026' and 'The deadline for abstract submissions has closed.'",
-   "reviewed_on": "2026-09-25",
-   "source_reviewed": true,
-   "evidence": "ACS Innovation Summit March 11-12, 2027 | Chicago, Illinois"
-  },
-  "b5ed85970d92": {
-   "call": {
-    "status": "open",
-    "opens": null,
-    "closes": "2026-09-30",
-    "final": null,
-    "text": "论文投稿截止日期 2026年9月30日 (paper submission deadline September 30, 2026)",
-    "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm"
-   },
-   "_why": "Repopulation audit 2026-09-24: organizer notice states a paper submission deadline of September 30, 2026; call was stored as tba.",
-   "reviewed_on": "2026-09-24",
-   "source_reviewed": true
-  },
-  "b64d6d0401c3": {
-   "source_url": "https://nnak2026.inburstcorp.com/",
-   "evidence_image": "https://nnak2026.inburstcorp.com/img/background.jpeg",
-   "evidence": "28-30TH OCT 2026 ... 68TH INTERNATIONAL ANNUAL NURSES SCIENTIFIC CONFERENCE & AGM ... VENUE: Sai Rock Hotel, Mombasa County",
-   "location": "Sai Rock Hotel, Mombasa County, Kenya",
-   "call": {
-    "status": "tba",
-    "opens": null,
-    "closes": null,
-    "final": null,
-    "text": "Flyer invites abstracts by email to the NNAK abstracts address; no deadline shown",
-    "url": "https://nnak2026.inburstcorp.com/"
-   },
-   "_why": "Repopulation audit 2026-09-24: original organizer page now returns 404; NNAK home menu links \"2026 ASC & AGM\" to this registration site, whose flyer image carries the dates and venue (read in a browser on 2026-09-24).",
-   "reviewed_on": "2026-09-24",
-   "source_reviewed": true
-  },
-  "4b6554deed4e": {
-   "date_conflict": false,
-   "note": "NANN's conference listing states the meeting date as October 6–8, 2027. Its abstract page describes the same conference as \"taking place October 5-8, 2027\", which most likely counts a pre-conference day. The listing's labelled meeting date is taken as the source of truth; confirm with NANN if you are booking travel for October 5.",
-   "_why": "Reconciled 2026-09-24 from NANN's own conference listing, which states a labelled Meeting Date, over prose on the abstract page. The remaining ambiguity is recorded inside the record instead of on the card.",
-   "reviewed_on": "2026-09-24",
-   "source_reviewed": true,
-   "evidence": "Meeting Date: October 6–8, 2027 — Las Vegas, NV",
-   "start": "2027-10-06",
-   "end": "2027-10-08",
-   "location": "Las Vegas, NV",
-   "source_url": "https://nann.org/education/past-conferences/"
-  },
-  "873c689cc3ce": {
-   "removed": true,
-   "_why": "Repopulation audit 2026-09-24: duplicate of 4b6554deed4e (same NANN 43rd Annual Conference, captured from a second NANN page with a different start day); the conflict is recorded on the kept record."
-  },
-  "2cb4704b50ae": {
-   "evidence": "When: October 16, 2026 Where: The Drexelbrook Catering & Event Center",
-   "location": "Drexelbrook Catering & Event Center, Drexel Hill, PA",
-   "_why": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); date and venue confirmed.",
-   "reviewed_on": "2026-09-24",
-   "source_reviewed": true
-  },
-  "168119a896f1": {
-   "evidence": "acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães",
-   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (eventosaben.org.br/76cben/trabalhos/) read 'O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.' (day/month/year: 9 May to 30 September 2026) and show '30/09 Limite de envio'. The event page still reads 'acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães'. Both re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
-   "reviewed_on": "2026-09-26",
-   "source_reviewed": true,
-   "call": {
-    "status": "open",
-    "opens": "2026-05-09",
-    "closes": "2026-09-30",
-    "final": null,
-    "text": "O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.",
-    "url": "https://eventosaben.org.br/76cben/trabalhos/"
-   }
-  },
-  "637a8ed896be": {
-   "_why": "Repopulation audit 2026-09-24: annanurse.org was offline for maintenance on 2026-09-24; stored dates (April 17-21, 2027) left as captured, not re-confirmed."
-  },
-  "10976499e525": {
-   "evidence": "2027 Annual Assembly March 17-20, 2027 David L. Lawrence Convention Center Pittsburgh, PA",
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-24",
-   "_why": "Repopulation audit 2026-09-24: aahpm.org returned HTTP 403 to the checker on 2026-09-24; this is the organizer wording the checker captured on 2026-09-23 (verification.json at commit 53e5d4a), recorded so the record keeps its quote while the page blocks automated readers."
-  },
-  "e01ad708f9e7": {
-   "source_url": "https://nursing.uw.edu/academics/dnp/",
-   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
-   "reviewed_on": "2026-09-24"
-  },
-  "df1e5711757f": {
-   "source_url": "https://nursing.uw.edu/academics/dnp/",
-   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
-   "reviewed_on": "2026-09-24"
-  },
-  "333710218753": {
-   "source_url": "https://nursing.uw.edu/academics/dnp/",
-   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
-   "reviewed_on": "2026-09-24"
-  },
-  "4a5f7e5998f7": {
-   "source_url": "https://nursing.uw.edu/academics/dnp/",
-   "_why": "Organizer link re-pointed 2026-09-24: the old students.nursing.uw.edu page returns HTTP 404.",
-   "reviewed_on": "2026-09-24"
-  },
-  "ac347521ac00": {
-   "location": "Grand Marquis, 1550 U.S. 9, Old Bridge, NJ 08857",
-   "evidence": "AACN Central New Jersey Chapter's 9th Critical Care Symposium — Thursday, September 17, 2026 at 8:00am ET through Friday, September 18, 2026 at 4:00pm ET. Grand Marquis, 1550 U.S. 9, Old Bridge, NJ 08857",
-   "_why": "Recorded with no organizer wording. Re-read the chapter's own event page 2026-09-24 and captured its date and venue verbatim.",
-   "reviewed_on": "2026-09-24"
-  },
-  "c453801a9986": {
-   "location": "Virtual",
-   "evidence": "9th Annual Administrative (Evening/Night) Supervisor Virtual Conference — September 17, 2026, 8:00 AM to 2:00 PM EDT, virtual",
-   "_why": "Recorded with no organizer wording. Re-read the organizer's registration page 2026-09-24 and captured its date and format verbatim.",
-   "reviewed_on": "2026-09-24"
-  },
-  "acf27c4896bf": {
-   "location": "Philadelphia, PA",
-   "evidence": "Multisite Leaders in Hospital Medicine Summit — September 17-18, 2026 | Philadelphia, PA",
-   "_why": "Recorded with no organizer wording. Re-read SHM's own conferences index 2026-09-24 and captured its date and city verbatim.",
-   "reviewed_on": "2026-09-24"
-  },
-  "c62cab081779": {
-   "location": "Atlanta, GA",
-   "evidence": "HRX Live 2026 — September 18-20, 2026, Atlanta, GA",
-   "_why": "Recorded with no organizer wording. Re-read the organizer's own site 2026-09-24 and captured its date and city verbatim.",
-   "reviewed_on": "2026-09-24"
-  },
-  "8dacb8f4aa3f": {
-   "location": "Nationwide",
-   "_why": "National Hospitalist Day is a nationwide observance with no venue; it shipped with an empty location. Set to Nationwide 2026-09-24, matching every other observance.",
-   "reviewed_on": "2026-09-24"
-  },
-  "b57f0a2c43fe": {
-   "location": "Virtual",
-   "format": "virtual",
-   "evidence": "We Are Family (Medicine) | January 16 – 18, 2027, Virtual",
-   "_why": "AAPA's events index states this meeting is virtual; the record shipped with no location. Read 2026-09-24.",
-   "reviewed_on": "2026-09-24"
-  },
-  "19b4ff7f7de5": {
-   "location": "Host city not yet announced",
-   "evidence": "AAPA 2028 | May 19 – 23, 2028 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
-   "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-24"
-  },
-  "2d41c6dd5d42": {
-   "location": "Host city not yet announced",
-   "evidence": "AAPA 2029 | April 27 – May 1, 2029 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
-   "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-24"
-  },
-  "9f0e3dbb33b1": {
-   "location": "Host city not yet announced",
-   "evidence": "AAPA 2030 | May 17 – 21, 2030 — The Conference destination is announced at the previous year's conference during a Main Stage event.",
-   "_why": "AAPA publishes the dates but states the destination is announced a year ahead. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-24"
-  },
-  "79d298e81fa1": {
-   "location": "Sheraton Grand Chicago Riverwalk, Chicago, IL",
-   "evidence": "Jun 9 - 13 2027 SDPA Annual Summer Dermatology Conference",
-   "_why": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference) reads 'Save the date! When: June 9-13, 2027 Where: Sheraton Grand Chicago Riverwalk Chicago, Illinois', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-26"
-  },
-  "60b19fa7fb93": {
-   "location": "Scottsdale Westin Kierland, Scottsdale, AZ",
-   "evidence": "Nov 10 - 14 2027 SDPA 25th Annual Fall Dermatology Conference",
-   "_why": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-25th-annual-fall-dermatology-conference) reads 'Save the date! When: November 10-14, 2027 Where: Scottsdale Westin Kierland Scottsdale, Arizona', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-26"
-  },
-  "ee76d4c7f3bf": {
-   "location": "Omni Boston Seaport, Boston, MA",
-   "evidence": "Jun 7 - 11 2028 SDPA Annual Summer Dermatology Conference",
-   "_why": "Blind audit 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference-0) reads 'Save the date! When: June 7-11, 2028 Where: Omni Boston Seaport Boston, Massachusetts', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-   "reviewed_on": "2026-09-26"
-  },
-  "7ca43ec52267": {
-   "location": "East Tennessee State University, Johnson City, TN",
-   "_why": "The chapter's page gives the 2023 date (April 20, 2023) but no 2023 venue; the host institution is named on the page. Recorded at institution level only, 2026-09-24, rather than left empty.",
-   "reviewed_on": "2026-09-24"
-  },
-  "a5ace80185dd": {
-   "start": "2027-05-14",
-   "end": "2027-05-19",
-   "location": "New Orleans, LA",
-   "source_reviewed": true,
-   "evidence": "May 14-19, 2027 — New Orleans, LA",
-   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim. Red team F10 (2026-09-25): the call wording on file gives the cut-off as '5 p.m. ET', recorded as 17:00 America/New_York so the site closes the call at that time.",
-   "reviewed_on": "2026-09-25",
-   "call_patch": {
-    "due_time": "17:00",
-    "tz": "America/New_York"
-   }
-  },
-  "199e0768daa7": {
-   "start": "2028-05-19",
-   "end": "2028-05-24",
-   "location": "San Francisco, CA",
-   "source_reviewed": true,
-   "evidence": "May 19-24, 2028 — San Francisco, CA",
-   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
-   "reviewed_on": "2026-09-24"
-  },
-  "ad00946861ac": {
-   "start": "2029-05-18",
-   "end": "2029-05-23",
-   "location": "Washington, DC",
-   "source_reviewed": true,
-   "evidence": "May 18-23, 2029 — Washington, DC",
-   "_why": "ATS's future-conferences page blocks the automated checker with HTTP 403. Read by the curator in a browser on 2026-09-24 and the organizer's own dates and cities captured verbatim.",
-   "reviewed_on": "2026-09-24"
-  },
-  "e22d93b3c36f": {
-   "_why": "Red team F02 (2026-09-24): the call was stored as 'soon' with no opening date, and the site showed it as open. VAM's own call page gives the plenary and poster submission window as Nov. 18 - Jan. 13, 2027, read 2026-09-24.",
-   "reviewed_on": "2026-09-24",
-   "call": {
-    "status": "soon",
-    "opens": "2026-11-18",
-    "closes": "2027-01-13",
-    "final": null,
-    "text": "Plenary Sessions & Posters: Nov. 18 - Jan. 13, 2027 (no time zone given); Late-Breaking Abstracts: Feb. 10 - Mar. 3, 2027",
-    "url": "https://vam.vascular.org/present-at-vam/"
-   }
-  },
-  "3b0963321583": {
-   "_why": "2026-09-25: the call was shown as open with no due date. The organizer's call page gives 'Materials must be received by NPAA by February 27, 2026', so it is closed.",
-   "reviewed_on": "2026-09-25",
-   "call": {
-    "status": "closed",
-    "opens": null,
-    "closes": "2026-02-27",
-    "final": null,
-    "text": "Podium and poster abstracts: 'Materials must be received by NPAA by February 27, 2026'",
-    "url": "https://npaa.wildapricot.org/event-6524437"
-   }
-  },
-  "fce4c70fffdc": {
-   "_why": "2026-09-25: the call was shown as open with no due date; the organizer's event page read that day shows no call for poster abstracts, so the call is shown as not posted.",
-   "reviewed_on": "2026-09-25",
-   "call": {
-    "status": "tba",
-    "opens": null,
-    "closes": null,
-    "final": null,
-    "text": "Call for poster abstracts not shown on the organizer's event page as of September 25, 2026",
-    "url": "https://isapn.enpnetwork.com/nurse-practitioner-events/149858-2026-aprn-midwest-conference"
-   }
-  },
-  "f51b0a709cbc": {
-   "_why": "2026-09-25: the call had no due date. The organizer's abstracts page reads 'Abstract Submission Opens: Tuesday, September 8, 2026' and 'Abstract Submission Deadline: Monday, November 2, 2026, 11:00 AM EST / 8:00 AM PST'.",
-   "reviewed_on": "2026-09-25",
-   "call": {
-    "status": "open",
-    "opens": "2026-09-08",
-    "closes": "2026-11-02",
-    "final": null,
-    "due_time": "11:00",
-    "tz": "America/New_York",
-    "text": "Abstract submission opens Tuesday, September 8, 2026; deadline Monday, November 2, 2026, 11:00 AM EST / 8:00 AM PST",
-    "url": "https://wocnext.org/abstracts?cpn_id=6aa04cc25b9233b52e87c5e6&e_id=6a0cc42024090bba99463d4b"
-   }
-  },
-  "fff7c127c15a": {
-   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '1 p.m. ET', recorded as 13:00 America/New_York so the site closes the call at that time.",
-   "reviewed_on": "2026-09-25",
-   "call_patch": {
-    "due_time": "13:00",
-    "tz": "America/New_York"
-   }
-  },
-  "63ef4e7d0d47": {
-   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 PM CT', recorded as 23:59 America/Chicago so the site closes the call at that time.",
-   "reviewed_on": "2026-09-25",
-   "call_patch": {
-    "due_time": "23:59",
-    "tz": "America/Chicago"
-   }
-  },
-  "e7405aabe655": {
-   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. PST (read as Pacific time)', recorded as 23:59 America/Vancouver so the site closes the call at that time.",
-   "reviewed_on": "2026-09-25",
-   "call_patch": {
-    "due_time": "23:59",
-    "tz": "America/Vancouver"
-   }
-  },
-  "71c8c7f9ec54": {
-   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as '11:59 p.m. CT', recorded as 23:59 America/Chicago so the site closes the call at that time.",
-   "reviewed_on": "2026-09-25",
-   "call_patch": {
-    "due_time": "23:59",
-    "tz": "America/Chicago"
-   }
-  },
-  "53bd4ec0ecfe": {
-   "_why": "Red team F10 (2026-09-25): the call wording on file gives the cut-off as 'noon ET', recorded as 12:00 America/New_York so the site closes the call at that time.",
-   "reviewed_on": "2026-09-25",
-   "call_patch": {
-    "due_time": "12:00",
-    "tz": "America/New_York"
-   }
-  },
-  "d127e081c886": {
-   "_why": "Red team F28 (2026-09-25): the stored quote ran to 212 characters; it is trimmed to its dated opening, still verbatim.",
-   "reviewed_on": "2026-09-25",
-   "evidence": "54th Annual Course ... May 22-24, 2027 ... New Orleans, Louisiana"
-  },
-  "66c22879fe97": {
-   "end": "2026-10-16",
-   "source_url": "https://www.akapa.org/event-6737177",
-   "evidence": "All-Alaska Medical Conference October 14 - 16 | BP Energy Center Join medical professionals from across Alaska and the Pacific Northwest for the 2026 All-Alaska",
-   "source_reviewed": true,
-   "_why": "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by two independent readers, which agree on this passage.",
-   "reviewed_on": "2026-09-26"
-  },
-  "6b3653108bcd": {
-   "call": {
-    "status": "closed",
-    "opens": null,
-    "closes": "2026-09-25",
-    "final": null,
-    "text": "SUBMISSÕES PRORROGADAS ATÉ 25/09/2026",
-    "url": "https://www.sobenfee.org.br/regulamento-2026"
-   },
-   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (sobenfee.org.br/regulamento-2026) read 'SUBMISSÕES PRORROGADAS ATÉ 25/09/2026' and '2.1. O prazo limite para envio dos resumos via sistema será até 25/09/2026'; the extended deadline has passed. Re-read on 2026-09-26.",
-   "reviewed_on": "2026-09-26"
-  },
-  "269fb342e367": {
-   "call": {
-    "status": "closed",
-    "opens": null,
-    "closes": "2026-08-31",
-    "final": null,
-    "text": "Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)",
-    "url": "https://www.mpa2026.org/abstract-submission-guideline.php",
-    "due_time": "23:59",
-    "tz": "Asia/Kuala_Lumpur"
-   },
-   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The congress's abstract guideline (mpa2026.org/abstract-submission-guideline.php) reads 'Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)'; the call covers the whole 47th MPA Annual Congress. Re-read on 2026-09-26.",
-   "reviewed_on": "2026-09-26"
-  },
-  "6cfadbc4e525": {
-   "call": {
-    "status": "closed",
-    "opens": null,
-    "closes": null,
-    "final": null,
-    "text": "The call for abstracts is now closed.",
-    "url": "https://www.sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026"
-   },
-   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's event page (sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026) reads 'Abstract The call for abstracts is now closed. Type of presentation : Oral Presentation/ E poster'; no closing date is published. Re-read on 2026-09-26.",
-   "reviewed_on": "2026-09-26"
-  },
-  "45504b46ea75": {
-   "call": {
-    "status": "open",
-    "opens": null,
-    "closes": "2027-05-07",
-    "final": null,
-    "text": "Abstract deadline: 7 May 2027",
-    "url": "https://www.elsevier.com/events/conferences/all/global-emergency-nursing-conference/participate"
-   },
-   "_why": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The conference page of the co-organizer ('Presented by Elsevier and Emergency Nurses Association') reads 'Abstract submission deadline: 7 May 2027', and its Participate page reads 'Abstract deadline: 7 May 2027 Submit oral abstract here ... Submit poster abstract here', so submission is open. Re-read on 2026-09-26.",
-   "reviewed_on": "2026-09-26"
-  },
-  "c3d8a04559de": {
-   "call": {
-    "status": "soon",
-    "opens": "2026-12-01",
-    "closes": null,
-    "final": null,
-    "text": "The call for research submission for AAPA 2027 will open December 1, 2026.",
-    "url": "https://www.aapa.org/research/research-events-aapa-conferences/"
-   },
-   "_why": "Blind audit 2026-09-26: the record showed AAPA's call for presentations (faculty session proposals, closed 2026-07-31), not its abstract call. AAPA's research page (aapa.org/research/research-events-aapa-conferences/) reads 'The call for research submission for AAPA 2027 will open December 1, 2026.' (ePosters and Research in Action). Re-read on 2026-09-26.",
-   "reviewed_on": "2026-09-26"
-  },
-  "3eecefb90b41": {
-   "location": "Hotel Roanoke & Conference Center, Roanoke, VA",
-   "_why": "Independent probe 2026-09-26: the record read 'Virginia (venue not posted)'. The organizer's conference page (vcnp.net/events/2027VCNPAnnualConference/) reads '2027 VCNP Annual Conference March 3 – March 6, 2027 – Hotel Roanoke & Conference Center' and gives the address '110 Shenandoah Ave NE, Roanoke, VA 24016'. Re-read on 2026-09-26.",
-   "reviewed_on": "2026-09-26"
-  },
-  "50a6bc48cd8f": {
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-26",
-   "_why": "Independent probe 2026-09-26: the Runway held only an expected month (March 2027). The organizer's event page (connapa.org/event/2027-charter-oak-conference/) reads '2027 Charter Oak Conference March 21, 2027 - March 23, 2027' and names the venue ('welcome you back to the beautiful Water's Edge Resort & Spa for the 2027 ConnAPA Charter Oak Conference'; 'Venue Water's Edge Resort and Spa 1525 Boston Post Road Westbrook, CT'). Re-read on 2026-09-26."
-  },
-  "5a807234462c": {
-   "save_the_date": true,
-   "source_reviewed": true,
-   "reviewed_on": "2026-09-26",
-   "evidence_image": "https://ncapa-offload-media.s3.amazonaws.com/wp-content/uploads/2026/07/20124624/S27-Save-the-Date-New-1080-x-540-1024x512.png",
-   "note": "The organizer publishes this as a save-the-date image; the agenda, registration and hotel details are to be announced.",
-   "_why": "Independent probe 2026-09-26: the Runway held only an expected month (August 2027). The organizer's Summer Conference page (ncapa.org/summer-cme-conference/) shows a save-the-date image reading 'Save the Date! 2027 Summer Conference is August 22nd-27th More information coming soon!'; the page text reads 'Held in North Myrtle Beach, SC' and 'the conference is offered as a hybrid event'. Page and image re-read on 2026-09-26."
-  }
- },
- "rules": {
-  "american-nurses-credentialing-center__certified-nurses-day": {
-   "type": "fixed",
-   "month": 3,
-   "day": 19
-  },
-  "society-for-simulation-in-healthcare__healthcare-simulation-week": {
-   "type": "weekday_after",
-   "month": 9,
-   "day": 11,
-   "weekday": 0,
-   "length": 5
-  },
-  "society-of-hospital-medicine__national-hospitalist-day": {
-   "type": "nth_weekday",
-   "month": 3,
-   "weekday": 3,
-   "n": 1
-  },
-  "american-nurses-association__national-nurses-week": {
-   "type": "fixed",
-   "month": 5,
-   "day": 6,
-   "end_day": 12
-  },
-  "american-academy-of-physician-associates__pa-week": {
-   "type": "fixed",
-   "month": 10,
-   "day": 6,
-   "end_day": 12
-  },
-  "international-confederation-of-midwives-__international-day-of-the-midwife": {
-   "type": "fixed",
-   "month": 5,
-   "day": 5
-  },
-  "international-council-of-nurses-icn__international-nurses-day": {
-   "type": "fixed",
-   "month": 5,
-   "day": 12
-  },
-  "oncology-nursing-society-ons__oncology-nursing-month": {
-   "type": "fixed",
-   "month": 5,
-   "day": 1,
-   "end_day": 31
-  }
- }
 }
