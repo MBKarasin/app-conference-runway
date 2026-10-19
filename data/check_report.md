@@ -1,13 +1,13 @@
-# Nightly source check — 2026-10-18
+# Nightly source check — 2026-10-19
 
-Generated 2026-10-18T10:01:25Z from commit 2c8c71e. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-19T11:25:03Z from commit b74c57d. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 230 · verified 207 · not found 3 · unreachable 20
-Checker could not match: 23 · of these, curator evidence on file: 23 · open: 0
-Confirmed by the second readers: rendered after JavaScript 3 · read from the organizer's image 1
-Past editions frozen (not re-read): 658
+Editions re-checked: 227 · verified 205 · not found 2 · unreachable 20
+Checker could not match: 22 · of these, curator evidence on file: 22 · open: 0
+Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 1
+Past editions frozen (not re-read): 661
 
-## Reader exceptions resolved by current curator evidence (23)
+## Reader exceptions resolved by current curator evidence (22)
 
 - Leadership Academy — 2026-10-19 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/event/conferences/
 - NCS Annual Meeting — 2026-10-20 — reviewed 2026-10-17 — https://www.neurocriticalcare.org/Events/Annual-Meeting
@@ -17,7 +17,6 @@ Past editions frozen (not re-read): 658
 - Padjadjaran International Nursing Conference — 2026-11-06 — reviewed 2026-10-17 — https://pinc.fkep.unpad.ac.id/
 - Qatar Health Congress — 2026-11-11 — reviewed 2026-10-17 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
-- NACNS Annual Conference — 2027-03-01 — reviewed 2026-09-25 — https://nacns.org/news-events/annual-conference/2027-annual-conference/
 - National Hospitalist Day — 2027-03-04 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/
 - Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-10-17 — https://aahpm.org/education-events/annual-assembly/
 - SHM Converge — 2027-03-30 — reviewed 2026-10-17 — https://shmconverge.hospitalmedicine.org/
