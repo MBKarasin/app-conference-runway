@@ -1,4 +1,4 @@
-/* Status of the nightly update (GitHub Actions, scheduled 06:00 UTC; GitHub may start it a few hours late).
+/* Status of the nightly update (GitHub Actions, scheduled 4 a.m. America/New_York; GitHub may start it a few hours late).
    Red when the latest recorded run started more than 30 hours ago. Independent of the data-quality indices. */
 window.runwayDailyStatus = function (run, now) {
   const started = run && run.started_at && new Date(run.started_at);

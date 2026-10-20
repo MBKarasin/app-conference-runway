@@ -2,7 +2,8 @@ name: Check sources and publish
 
 on:
   schedule:
-    - cron: "0 6 * * *"          # 06:00 UTC = 2 a.m. EDT / 1 a.m. EST. GitHub may start scheduled runs hours late; the check runs whenever it starts.
+    - cron: "0 4 * * *"
+      timezone: "America/New_York" # 4 a.m. Eastern, including DST; delayed starts still run.
   push:
     branches: [main]
   workflow_dispatch: {}
@@ -86,7 +87,7 @@ jobs:
           d = json.load(open("site/data/runway.json", encoding="utf-8"))
           ok = os.environ["VALIDATE_OUTCOME"] == "success"
           readers_ok = all(os.environ[k] == "success" for k in ("SOURCES_OUTCOME", "LINKS_OUTCOME"))
-          status = {"schedule": "06:00 UTC (02:00 EDT / 01:00 EST; GitHub Actions)",
+          status = {"schedule": "04:00 America/New_York (GitHub Actions)",
                     "status": ("success" if readers_ok else "issues") if ok else "failure", "started_at": os.environ["RUN_STARTED"],
                     "completed_at": now, "sources_checked_at": d.get("sources_checked"),
                     "published_at": None,
