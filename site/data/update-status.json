@@ -1,8 +1,8 @@
 {
   "schedule": "02:00 America/New_York (GitHub Actions)",
   "status": "failure",
-  "started_at": "2026-10-20T00:41:48Z",
-  "completed_at": "2026-10-20T00:46:08Z",
-  "sources_checked_at": "2026-10-20T00:42:18Z",
+  "started_at": "2026-10-20T10:31:31Z",
+  "completed_at": "2026-10-20T10:36:15Z",
+  "sources_checked_at": "2026-10-20T10:32:01Z",
   "published_at": null
 }
