@@ -1,13 +1,21 @@
-# Nightly source check — 2026-10-19
+# Nightly source check — 2026-10-20
 
-Generated 2026-10-19T11:25:03Z from commit b74c57d. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-20T00:42:18Z from commit 876c845. This report is the canonical status; the review issue is rewritten from it on every run.
 
 Editions re-checked: 227 · verified 205 · not found 2 · unreachable 20
-Checker could not match: 22 · of these, curator evidence on file: 22 · open: 0
-Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 1
-Past editions frozen (not re-read): 661
+Checker could not match: 22 · of these, curator evidence on file: 21 · open: 1
+Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 2
+Past editions frozen (not re-read): 662
 
-## Reader exceptions resolved by current curator evidence (22)
+## Newly failing (were verified last run) — review these first
+
+- [ ] **NSNA Annual Convention** (2027-03-31): not on page: date — https://nsna.glueup.com/event/nsna-75th-annual-convention-184130/
+
+## Automatic text did not match; no current manual confirmation — open (1)
+
+- NSNA Annual Convention — 2027-03-31 — not on page: date — https://nsna.glueup.com/event/nsna-75th-annual-convention-184130/
+
+## Reader exceptions resolved by current curator evidence (21)
 
 - Leadership Academy — 2026-10-19 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/event/conferences/
 - NCS Annual Meeting — 2026-10-20 — reviewed 2026-10-17 — https://www.neurocriticalcare.org/Events/Annual-Meeting
@@ -25,11 +33,10 @@ Past editions frozen (not re-read): 661
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-10-17 — https://amia.org/education-events/2027-amplify-informatics-conference
 - Heart Rhythm — 2027-05-13 — reviewed 2026-09-25 — https://heartrhythm.com/
 - ASCO Annual Meeting — 2027-06-04 — reviewed 2026-10-17 — https://www.asco.org/annual-meeting/dates-know
-- NCAPA Annual Summer Conference — 2027-08-22 — reviewed 2026-09-26 — https://ncapa.org/summer-cme-conference/
 - Emergency Nursing (ENA Annual Conference) — 2027-09-15 — reviewed 2026-09-23 — https://www.ena.org/events/emergency-nursing-2027
 - NCS Annual Meeting — 2027-09-27 — reviewed 2026-10-17 — https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027
-- Global Emergency Nursing Conference — 2027-10-21 — reviewed 2026-09-26 — https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event
+- Global Emergency Nursing Conference — 2027-10-21 — reviewed ? — https://www.ena.org/news-publications/newsroom/netherlands-2027-ena-announces-first-ever-global-education-event
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-10-17 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-10-17 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=0
+OPEN_ITEMS=2

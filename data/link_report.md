@@ -1,6 +1,6 @@
-# Link check — 2026-10-19
+# Link check — 2026-10-20
 
-Links: 1028 · ok 872 · HTTP 403 108 · HTTP 404 31 · URLError 8 · robots 5 · HTTP 401 2 · HTTP 406 2
+Links: 1024 · ok 865 · HTTP 403 108 · HTTP 404 31 · URLError 10 · robots 5 · HTTP 401 2 · TimeoutError 2 · HTTP 406 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -140,6 +140,10 @@ Links: 1028 · ok 872 · HTTP 403 108 · HTTP 404 31 · URLError 8 · robots 5 �
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
+- URLError — https://web.archive.org/web/20241003223604/https://wapa.com/events/wapa-conference-oct-10-12-2024/
+  - washington-academy-of-physician-associat__wapa-fall-conference 2024-10-10 (source_url)
+- URLError — https://web.archive.org/web/20241118070950/https://congresoenfermeria.ufro.cl/images/documentos/programa-congreso-2024-4.pdf
+  - universidad-de-la-frontera__international-nursing-specialties-and-research-con 2024-11-11 (source_url)
 - URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
   - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
 - URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
@@ -240,8 +244,6 @@ Links: 1028 · ok 872 · HTTP 403 108 · HTTP 404 31 · URLError 8 · robots 5 �
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
 - HTTP 401 — https://www.gapna.org/engage26
   - gerontological-advanced-practice-nurses-__gapna-engage-annual-conference 2026-09-24 (source_url)
-- HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
-  - Psych Congress PA Institute (org_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (call); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2027-12-01 (source_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2028-12-01 (source_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (source_url)
 - HTTP 403 — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/
@@ -286,6 +288,10 @@ Links: 1028 · ok 872 · HTTP 403 108 · HTTP 404 31 · URLError 8 · robots 5 �
   - NPAM Fall Conference (org_url); nurse-practitioner-association-of-maryla__npam-fall-conference 2026-11-01 (source_url); nurse-practitioner-association-of-maryla__npam-fall-conference 2027-11-01 (source_url); nurse-practitioner-association-of-maryla__npam-fall-conference 2028-11-01 (source_url)
 - HTTP 403 — https://www.npamonline.org/events/EventDetails.aspx?id=1969593&group=
   - nurse-practitioner-association-of-maryla__npam-fall-conference 2025-11-15 (source_url)
+- TimeoutError — https://www.nursingworld.org/education-events/certified-nurses-day/
+  - Certified Nurses Day (org_url); american-nurses-credentialing-center__certified-nurses-day 2023-03-19 (source_url); american-nurses-credentialing-center__certified-nurses-day 2024-03-19 (source_url); american-nurses-credentialing-center__certified-nurses-day 2025-03-19 (source_url)
+- TimeoutError — https://www.nursingworld.org/news/news-releases/2024/ancc-opens-registration-the-2024-national-magnet-conference-and-pathway-to-excellence-conference-comes-to-new-orleans/
+  - american-nurses-credentialing-center__magnet-pathway-conference 2024-10-30 (source_url)
 - HTTP 403 — https://www.pacnp.org/
   - PCNP Annual Education Conference (org_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2027-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2028-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2029-10-01 (source_url)
 - HTTP 403 — https://www.rwjbh.org/events/event/?event=32770
