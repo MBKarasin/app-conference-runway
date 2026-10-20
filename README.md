@@ -4,6 +4,8 @@ A source-traced calendar of conferences, abstract deadlines, student and DNP pro
 
 **Main public site:** https://appconferencerunway.org/ . Public source and owner contributions are MIT licensed for exchange of ideas and promotion of human health. Search crawling is permitted.
 
+**One active source and publisher:** this repository's `main` branch feeds the single `.github/workflows/runway.yml` publishing workflow and GitHub Pages site above. Organizer checks are scheduled daily at **4 a.m. America/New_York**, including daylight saving time; GitHub may start late. The live daily badge reflects the actual completed source check. Old production/upload copies and the one-time bootstrap workflow are archived, not active inputs.
+
 **Publication:** the nightly GitHub workflow checks sources, rebuilds `site/` and commits it; GitHub Pages publishes appconferencerunway.org from `site/` on `main`. See [publication notes](PUBLICATION.md).
 
 The site is independent. It is not an official publication of, or endorsement by, Rutgers University or RWJBarnabas Health. It is owned and curated by Dr. Mark Karasin, DNP, APN, AGACNP-BC, CNOR(E), who decides what is published. Every AI actor works under his MBK AI Governance Protocol: Claude by Anthropic assists research and implementation, ChatGPT by OpenAI is the red team, and no model decides what is published. The curator shares the Runway for critique with colleagues in academic nursing, research, clinical practice, artificial intelligence and data science; their feedback informs his scholarly inquiry.
