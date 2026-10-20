@@ -50,6 +50,8 @@ Curator corrections win over every other input. Each carries a reason, a review 
 
 ## 4. Confidence and the indices
 
+These definitions and historical examples describe retained evidence calculations. Confidence labels and indices are currently hidden from visitors (§11); the hosted workflow does not run the older browser interface comparison.
+
 ### 4.1 Confidence on each record
 
 - **High confidence carries no label:** the latest automated re-read confirmed the record from the organizer's own page or image (start date, its year and a word of the meeting's name), or the date comes from the organizer's published rule, or the meeting has ended and is kept as recorded when published.
@@ -72,7 +74,7 @@ A price or hotel detail is High when code found its quoted wording on the organi
 
 - *Worked example* (re-read of 2026-09-26, 06:51 UTC; data built 08:30 UTC): (250 + 29) ÷ 313 = 89.14%. The other 34 show Confidence: Medium; most are pages whose servers refused the automated reader that night and rest on a review by hand, and one was corrected that morning from the organizer's event page and waits for its first automated re-read there.
 
-Both indices are recomputed in the visitor's browser from `data/runway.json` at every page load, for the visitor's own calendar day; the pipeline recomputes them with the same definitions and the interface check fails if the page disagrees.
+The retained interface calculates these indices from `data/runway.json` for the visitor's calendar day, and the build records the corresponding indices. The hosted workflow validates the generated data; an automated browser comparison is not currently part of that workflow.
 
 ### 4.4 What the indices do not show
 
@@ -101,7 +103,9 @@ The pipeline reads the organizer's own pages for every series whose next date is
 
 ### 5.4 Publish, verify, archive
 
-The pipeline builds the data, the calendar feed and this page; validates them; recomputes both indices; runs the scripted interface check; and packages the release with a SHA-256 manifest. After publication the live site is checked against that manifest and the interface check runs again. Only then is the release archived on the owner's machine, filed by year and date with its receipts, decisions and report; the live site is then verified once more. Nothing in the archive is ever deleted.
+GitHub Actions builds the data, calendar feed and this page, checks sources and links separately, rebuilds, and runs regression checks and the validation gate. Organizer refusals and unmatched text remain evidence to review. A checker crash is recorded as an issue; it cannot suppress the separate structural validation. A failed validation preserves the previous published candidate and records diagnostics. A validated candidate is uploaded as this run's artifact, which GitHub Pages deploys without checking out a potentially newer commit. Pushes also build, test and validate before uploading their artifact.
+
+The workflow archives the generated candidate in `data/snapshots/` with a SHA-256 manifest; a repeated run replaces that calendar day's candidate snapshot, while repository history retains committed versions. The hosted workflow does not currently run a browser interface check, compare the live site with a release manifest, or attest publication through a local archive. The separate freshness alarm checks the live update-status file. Candidate validation does not itself prove deployment; the file's `published_at` remains null because it is not a deployment receipt.
 
 ### 5.5 What runs today
 
@@ -110,8 +114,8 @@ The pipeline builds the data, the calendar feed and this page; validates them; r
 | A: re-read of dates, links and cited prices | Runs nightly |
 | B: independent second read | Runs for plain pages; rendered pages and organizer images are read when the optional readers install |
 | C: new editions of known series | Runs as an internal queue; publication is by curator review |
-| Schedule and publication | GitHub Actions runs the check nightly at 2 a.m. Eastern (GitHub may start it a few hours late) and commits the result, and GitHub Pages publishes the domain from that commit. A separate daily check fails, and notifies the owner, if the live site has not updated in 30 hours. |
-| Archive | Every published version stays in the repository's history; the day's data is also archived in `data/snapshots/` with a SHA-256 manifest. Nothing is deleted. |
+| Schedule and publication | GitHub Actions runs nightly at 06:00 UTC (2 a.m. EDT / 1 a.m. EST; starts can be delayed), commits reports and validated output, and deploys the same run's validated artifact to GitHub Pages. A separate daily alarm fails if the live run is more than 30 hours old or its status is not successful. GitHub notification delivery depends on the owner's notification settings. |
+| Archive | Every published version stays in the repository's history; the latest generated candidate for each day is also archived in `data/snapshots/` with a SHA-256 manifest. A repeated run replaces that day's candidate snapshot. |
 
 ## 6. Price of attendance and door-to-door planning
 
@@ -150,12 +154,14 @@ Check any record against its source link. To correct one, use **Report a correct
 
 ## 11. Daily update status
 
-One header timestamp, **Updated**, shows the most recent actual source check; it does not move because the layout changed. The dot beside it is green when the latest nightly update checked, validated and published; amber while one is in progress or when checking reported an issue; red when no update has started in 30 hours. The workflow writes `data/update-status.json` with `status`, `started_at`, `sources_checked_at` and `published_at`. Confidence labels and the two indices are hidden from visitors at the curator's request; their evidence and calculations are retained.
+One header timestamp, **Updated**, shows the most recent actual source check; it does not move because the layout changed. The dot is green when the status served with the viewed site records a completed successful source/link check and validation; amber while one is in progress or when checking reported an issue; red when no recorded update has started in 30 hours. This operational 30-hour threshold differs from the 36-hour evidence-quality windows in §4. The workflow records step outcomes, `started_at`, `completed_at` and `sources_checked_at`; `published_at` stays null rather than asserting an unverified deployment receipt. A failed candidate's diagnostics stay in `data/run-status.json` and do not replace the previous live stamp. Confidence labels and the two indices are hidden from visitors at the curator's request; their evidence and calculations are retained.
 
 ## 12. Curator log
 
 Short notes of curator decisions and corrections, newest first. Detail stays in the linked reports and the repository history.
 
+- **2026-10-20** The claimed October 19–20 RWJUH FCCS edition is withheld pending organizer confirmation. Its earlier automated quote described a different course in Danville. Historical ledger evidence is retained; this is not a cancellation claim. A regression reproduces the nightly validation failure and verifies that withholding the unsupported record preserves the publication gate.
+- **2026-10-19** Review correction: explicit curator patches preserve newer organizer research; curated additions enter normalization and verification, keep their published identities, and avoid duplicate ledger recovery. Expired calls close after reconciliation; unsupported PAEA dates remain withheld while month-only projections remain visible. Current machine notes replace frozen summaries. The workflow separates diagnostics from validation and deploys the same run's artifact; documentation states the UTC schedule and actual checks.
 - **2026-10-19** Publishing moved to a single route: the nightly check commits to the repository and GitHub Pages publishes the domain from it. The duplicate copy (the hand-uploaded Cloudflare snapshot) retired and archived. The October 17 reconciliation is carried into every nightly build (`sources/curated.json`). Orientation guide restored; phone layout of the Orbit legend tidied.
 - **2026-10-17** Manual reconciliation of 34 exceptions from the source check: 30 confirmed or corrected against organizer material, four unsupported future PAEA editions withheld pending organizer confirmation, four date ranges and six abstract calls corrected. Originals and automated results retained ([manual review](data/manual-review.json), [withheld records](data/withheld-editions.json)). Site opened to the public and to search engines; code and documentation released under the MIT license. Header simplified to one update stamp.
 - **2026-10-06** Orientation guide ("What am I looking at?") and shared footer added.

@@ -441,6 +441,7 @@ def ics(eds, series):
     return "\r\n".join(fold(line) for line in L) + "\r\n"
 
 def main():
+    cur = json.load(open(SRC / "curated.json", encoding="utf-8")) if (SRC / "curated.json").exists() else {}
     series, eds = migrate_runway()
     load_groups(series, eds)
     load_archive(series, eds)
@@ -465,7 +466,22 @@ def main():
                 # without restating the whole call; every other key replaces the field it names.
                 e.update({x: y for x, y in v.items() if x != "call_patch"})
                 if v.get("call_patch"): e["call"] = {**(e.get("call") or {}), **v["call_patch"]}
-    eds = [e for e in eds if not e.get("removed")]
+    eds = dedupe([e for e in eds if not e.get("removed")])
+    held = set(cur.get("withhold", []))
+    for k, v in cur.get("add_series", {}).items(): series.setdefault(k, v)
+    eds = [e for e in eds if e["id"] not in held]
+    # Published IDs predate the hash rule for these two curated records. Keep the
+    # existing links/calendar UIDs, and deduplicate later source editions by meaning.
+    for stable_id, addition in cur.get("add", {}).items():
+        derived = edition_id(addition)
+        if not re.fullmatch(r"[0-9a-f]{12}", stable_id) or addition.get("id") != stable_id or addition.get("_derived_id", derived) != derived:
+            raise ValueError("Invalid curated addition identity: " + stable_id)
+        matches = [e for e in eds if (e["series"], e["start"]) == (addition["series"], addition["start"])]
+        if matches:
+            for e in matches: e["id"], e["uid"] = stable_id, addition.get("uid", stable_id)
+        elif addition["series"] in series:
+            eds.append(dict(addition))
+
     student_file = SRC / "student_opportunities.json"
     if student_file.exists():
         student_editions = json.load(open(student_file, encoding="utf-8")).get("editions", {})
@@ -479,9 +495,15 @@ def main():
     ledger = json.load(open(led_f, encoding="utf-8")) if led_f.exists() else {}
     have = {e["id"] for e in eds}
     removed_ids = {k for k, patch in ov.get("editions", {}).items() if patch.get("removed")}
+    have_semantic = {(e["series"], e["start"]) for e in eds}
     for lid, le in ledger.items():
-        if lid not in have and lid not in removed_ids and le["series"] in series:
+        semantic = (le["series"], le["edition"]["start"])
+        if (lid not in have and lid not in removed_ids and lid not in held
+                and le["series"] in series and semantic not in have_semantic):
             eds.append({**le["edition"], "id": lid, "origin": "ledger"})
+            have_semantic.add(semantic)
+        # A superseded ledger ID remains intact as provenance, but must not restore
+        # a second public record/UID for an edition already represented above.
     now = dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     for e in eds:
         rec = ledger.setdefault(e["id"], {"series": e["series"], "first_seen": now})
@@ -493,6 +515,7 @@ def main():
     close_past_calls(eds)
     proj = project(series, eds)
     for e in proj: e["id"] = edition_id(e)
+    proj = [e for e in proj if e["id"] not in held]
     present(series)
     geo = json.load(open(SRC / "geo" / "locations.json", encoding="utf-8")) if (SRC / "geo" / "locations.json").exists() else {}
     for e in eds + proj:
@@ -549,19 +572,46 @@ def main():
     org_display = json.load(open(SRC / "org_display.json", encoding="utf-8"))
     for s in series.values():
         s["org_display"] = org_display.get(s["org"], s["org"])
-    # Curator reconciliation (sources/curated.json, 2026-10-17): a curated value applies only while the field still
-    # holds the value it replaced, so any later nightly update to that field wins.
-    cur = json.load(open(SRC / "curated.json", encoding="utf-8")) if (SRC / "curated.json").exists() else {}
-    held = set(cur.get("withhold", []))
-    for k, v in cur.get("add_series", {}).items(): series.setdefault(k, v)
-    eds = [e for e in eds if e["id"] not in held]; proj = [e for e in proj if e["id"] not in held]
-    have = {e["id"] for e in eds + proj}
-    eds += [dict(e) for i, e in cur.get("add", {}).items() if i not in have and e["series"] in series]
+    patch_counts = {"applied": 0, "already_current": 0, "preserved_newer_or_unmatched": 0}
+    # Reconcile generated display fields only after they have been computed. Additions above
+    # still pass through the same verification and normalization as every other edition.
     for e in eds + proj:
-        for k, (before, after) in cur.get("patch", {}).get(e["id"], {}).items():
-            if e.get(k) == before:
+        for k, patch in cur.get("patch", {}).get(e["id"], {}).items():
+            before, after = patch["from"], patch["to"]
+            current = e.get(k)
+            if k == "call":
+                def comparable(value):
+                    if not isinstance(value, dict): return value
+                    value = {"status": "tba", "text": None, "opens": None, "closes": None,
+                             "final": None, "url": None, **value}
+                    close_past_calls([{"call": value}])
+                    return value
+                current, before, after = map(comparable, (current, before, after))
+            if current == before:
                 if after is None: e.pop(k, None)
                 else: e[k] = after
+                patch_counts["applied"] += 1
+            elif current == after:
+                patch_counts["already_current"] += 1
+            else:
+                patch_counts["preserved_newer_or_unmatched"] += 1
+                print("curated patch preserved newer/unmatched:", e["id"], k)
+    close_past_calls(eds)
+    attendance_path = SITE / "data" / "attendance.json"
+    attendance = json.load(open(attendance_path, encoding="utf-8")).get("records", {}) if attendance_path.exists() else {}
+    for e in eds:
+        current_check = ver.get(e["id"], {})
+        if current_check.get("url") == e.get("source_url"):
+            e["check_note"] = {k: current_check[k] for k in ("checked", "state", "why") if k in current_check}
+        else:
+            e.pop("check_note", None)
+        record = attendance.get(e["id"])
+        if record:
+            e["attend"] = {"fees": len(record.get("fees", [])), "status": record.get("status"),
+                           "checked_on": record.get("checked_on")}
+        else:
+            e.pop("attend", None)
+    print("curated patches:", patch_counts)
     all_eds = sorted(eds + proj, key=lambda e: (e["start"], e["series"]))
     used = {e["series"] for e in all_eds}
     # header stamps: when the nightly checker last read organizer pages, and the latest curator source review
@@ -582,7 +632,11 @@ def main():
            "series": sorted([s for s in series.values()], key=lambda s: s["name"].lower()),
            "editions": all_eds}
     (SITE / "data").mkdir(parents=True, exist_ok=True)
-    json.dump(out, open(SITE / "data" / "runway.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    def public_value(value):
+        if isinstance(value, dict): return {k: public_value(v) for k, v in value.items() if not k.startswith("_")}
+        if isinstance(value, list): return [public_value(v) for v in value]
+        return value
+    json.dump(public_value(out), open(SITE / "data" / "runway.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     open(SITE / "runway.ics", "w", encoding="utf-8", newline="").write(ics(eds + [p for p in proj if p["verify"]["state"] == "rule"], series))
     # The AI Handoff opens on the site itself, for anyone, with no GitHub page, account or app on the way
     # (2026-09-26). Rendered at every build so it cannot drift from site/AI-HANDOFF.md; validate.py checks it.

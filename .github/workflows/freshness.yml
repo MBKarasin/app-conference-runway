@@ -1,5 +1,5 @@
 name: Live site freshness alarm
-# Fails (GitHub emails the repository owner) when appconferencerunway.org has not published a nightly update in 30 hours.
+# Fails when the live run is older than 30 hours or not successful; notification delivery follows the owner's GitHub settings.
 # Added 2026-10-19 after the domain sat on its 2026-10-17 copy while the nightly job kept running elsewhere.
 on:
   schedule:
@@ -19,5 +19,7 @@ jobs:
           started = dt.datetime.fromisoformat(s["started_at"].replace("Z", "+00:00"))
           age = (dt.datetime.now(dt.UTC) - started).total_seconds() / 3600
           print(f"live update started {s['started_at']} ({age:.1f} h ago), status {s.get('status')}")
+          if age > 30: print("FAIL: live nightly run is older than 30 hours")
+          if s.get("status") != "success": print("FAIL: live source-check/validation status is not successful")
           sys.exit(1 if age > 30 or s.get("status") != "success" else 0)
           PY
