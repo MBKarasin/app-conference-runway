@@ -1628,6 +1628,13 @@
       "removed": true,
       "_why": "No current organizer confirmation located. Third-party listings are insufficient to publish these exact future dates. Original record retained in withheld-editions.json; follow up daily.",
       "reviewed_on": "2026-10-17"
+    },
+    "0a2ff5b7cee1": {
+      "_why": "Organizer event page re-read 2026-10-20 after the automated reader could not confirm it (JavaScript page).",
+      "source_url": "https://nsna.glueup.com/event/nsna-75th-annual-convention-184130/",
+      "source_reviewed": true,
+      "reviewed_on": "2026-10-20",
+      "evidence": "NSNA 75th Annual Convention, Mar 31, 2027 to Apr 3, 2027, Lake Buena Vista, Florida"
     }
   },
   "rules": {

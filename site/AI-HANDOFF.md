@@ -110,7 +110,7 @@ The pipeline builds the data, the calendar feed and this page; validates them; r
 | A: re-read of dates, links and cited prices | Runs nightly |
 | B: independent second read | Runs for plain pages; rendered pages and organizer images are read when the optional readers install |
 | C: new editions of known series | Runs as an internal queue; publication is by curator review |
-| Schedule and publication | GitHub Actions runs the check nightly at 2 a.m. Eastern (GitHub may start it a few hours late) and commits the result; Cloudflare Pages publishes the domain from that commit. A separate daily check fails, and notifies the owner, if the live site has not updated in 30 hours. |
+| Schedule and publication | GitHub Actions runs the check nightly at 2 a.m. Eastern (GitHub may start it a few hours late) and commits the result, and GitHub Pages publishes the domain from that commit. A separate daily check fails, and notifies the owner, if the live site has not updated in 30 hours. |
 | Archive | Every published version stays in the repository's history; the day's data is also archived in `data/snapshots/` with a SHA-256 manifest. Nothing is deleted. |
 
 ## 6. Price of attendance and door-to-door planning
@@ -126,8 +126,8 @@ Every meeting still ahead opens a **Plan your attendance** panel.
 
 ## 7. Architecture
 
-- **Static site:** no framework, cookies, advertising or third-party requests from the site's own code; a strict content security policy that permits only the host's visitor-count beacon. The data are public files on the site: `data/runway.json` (records), `data/attendance.json` (prices and hotel blocks), `runway.ics` (calendar feed), `geo/` (city, ZIP and airport coordinates).
-- **Hosting:** Cloudflare Pages, under the owner's account, built from the repository's `site/` folder; the domain is registered to the owner. The host keeps standard access logs and may collect browsers' network-error reports and aggregate visit counts.
+- **Static site:** no framework, cookies, advertising or third-party requests from the site's own code; a strict content security policy that permits only Cloudflare's visitor-count beacon. The data are public files on the site: `data/runway.json` (records), `data/attendance.json` (prices and hotel blocks), `runway.ics` (calendar feed), `geo/` (city, ZIP and airport coordinates).
+- **Hosting:** GitHub Pages, from the repository's `site/` folder; the domain is registered to the owner and its DNS is at Cloudflare. The host and the DNS provider keep standard access logs.
 - **Search engines:** the owner requested public access and search discovery on October 17, 2026. Robots permit crawling and sitemap.xml lists the main public pages. Indexing is controlled by search engines and is not guaranteed.
 - **Evidence:** the captured organizer pages stay with the owner. Only short quotes, links and hashes are published.
 
@@ -156,7 +156,7 @@ One header timestamp, **Updated**, shows the most recent actual source check; it
 
 Short notes of curator decisions and corrections, newest first. Detail stays in the linked reports and the repository history.
 
-- **2026-10-19** Publishing moved to a single route: the nightly check commits to GitHub and Cloudflare Pages publishes from it. Duplicate copies (the GitHub Pages copy, the hand-uploaded snapshot) retired and archived. The October 17 reconciliation is carried into every nightly build (`sources/curated.json`). Orientation guide restored; phone layout of the Orbit legend tidied.
+- **2026-10-19** Publishing moved to a single route: the nightly check commits to the repository and GitHub Pages publishes the domain from it. The duplicate copy (the hand-uploaded Cloudflare snapshot) retired and archived. The October 17 reconciliation is carried into every nightly build (`sources/curated.json`). Orientation guide restored; phone layout of the Orbit legend tidied.
 - **2026-10-17** Manual reconciliation of 34 exceptions from the source check: 30 confirmed or corrected against organizer material, four unsupported future PAEA editions withheld pending organizer confirmation, four date ranges and six abstract calls corrected. Originals and automated results retained ([manual review](data/manual-review.json), [withheld records](data/withheld-editions.json)). Site opened to the public and to search engines; code and documentation released under the MIT license. Header simplified to one update stamp.
 - **2026-10-06** Orientation guide ("What am I looking at?") and shared footer added.
 - **2026-09-26** First automated re-read of every upcoming record.
