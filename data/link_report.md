@@ -1,21 +1,19 @@
 # Link check — 2026-10-20
 
-Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 · TimeoutError 2 · HTTP 401 2 · HTTP 406 1
+Links: 1030 · ok 842 · HTTP 403 138 · HTTP 404 30 · URLError 11 · robots 5 · HTTP 401 2 · HTTP 406 1 · TimeoutError 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
-- HTTP 403 — https://aahpm.org/
-  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
-- HTTP 403 — https://aahpm.org/education-events/annual-assembly/
-  - Annual Assembly of Hospice and Palliative Care (org_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2027-03-17 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url)
 - HTTP 403 — https://aana2026.eventscribe.net/
   - american-association-of-nurse-anesthesio__aana-annual-congress 2026-08-21 (detail_url)
+- HTTP 403 — https://aapa.org/conference/special-events/aapa-2024-savenger-hunt
+  - american-academy-of-physician-associates__aapa-conference 2024-05-18 (source_url)
 - HTTP 403 — https://academic.oup.com/ofid/supplements
   - IDWeek (proceedings_url)
 - HTTP 403 — https://acg2025.eventscribe.net/
@@ -26,8 +24,6 @@ Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 �
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2026-03-02 (source_url)
 - HTTP 403 — https://achewfc.org/event/ache-2023-congress-on-healthcare-leadership/
   - american-college-of-healthcare-executive__ache-congress-on-healthcare-leadership 2023-03-20 (source_url)
-- TimeoutError — https://advanced-practice.hee.nhs.uk/news-and-events/advancing-practice-conference/
-  - Advancing Practice Week (org_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2026-11-08 (source_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2027-11-01 (source_url); nhs-england-centre-for-advancing-practic__advancing-practice-week 2028-11-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/2027-amplify-informatics-conference
   - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) (org_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2027-04-12 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2028-03-01 (source_url); american-medical-informatics-association__amia-amplify-informatics-summit-clinical-informati 2029-03-01 (source_url)
 - HTTP 403 — https://amia.org/education-events/amia-2024-annual-symposium
@@ -64,8 +60,6 @@ Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 �
   - society-of-critical-care-medicine__critical-care-congress 2026-03-22 (detail_url)
 - HTTP 403 — https://edge26.eventscribe.net/reports/dynamicprogram.asp
   - american-association-of-nurse-anesthesio__edge-nurse-anesthesia-educators 2026-02-04 (detail_url); american-association-of-nurse-anesthesio__edge-nurse-anesthesia-educators 2026-02-04 (source_url)
-- HTTP 403 — https://eventosaben.org.br/76cben/
-  - associa-o-brasileira-de-enfermagem-aben__congresso-brasileiro-de-enfermagem-cben 2026-11-08 (source_url)
 - HTTP 404 — https://fannp.org/_downloads/FANNP24Conference.pdf
   - florida-association-of-neonatal-nurse-pr__national-neonatal-nurse-practitioner-symposium 2024-10-15 (source_url)
 - HTTP 404 — https://gane.nursingnetwork.com/nursing-news/203680-gane-2026-at-the-ritz-carlton-reynolds-resort-lake-oconee-2-12-26-2-14-26
@@ -86,8 +80,6 @@ Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 �
   - society-for-simulation-in-healthcare__imsh 2023-01-21 (source_url)
 - URLError — https://imsh2024.org/about
   - society-for-simulation-in-healthcare__imsh 2024-01-20 (source_url)
-- URLError — https://jsnp2026.jp/program.html
-  - japan-society-of-nurse-practitioner__japan-society-of-nurse-practitioner-annual-meeting 2026-11-21 (source_url)
 - HTTP 403 — https://login.texasnp.org/events/EventDetails.aspx?id=1986716
   - texas-nurse-practitioners__tnp-pharmacology-conference 2026-04-23 (source_url)
 - HTTP 404 — https://magnetpathwaycon.nursingworld.org/ana-enterprise-research-symposium-1
@@ -126,10 +118,6 @@ Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 �
   - transcultural-nursing-society__transcultural-nursing-society-annual-conference 2025-10-29 (source_url)
 - URLError — https://old-prod.asco.org/about-asco/press-center/news-releases/additional-noteworthy-studies-be-presented-during-2023-asco
   - american-society-of-clinical-oncology__asco-annual-meeting 2023-06-02 (source_url)
-- HTTP 403 — https://onanigeria.org/
-  - ONAN Oncology Nursing Conference (org_url); oncology-nurses-association-of-nigeria-o__onan-oncology-nursing-conference 2027-10-01 (source_url); oncology-nurses-association-of-nigeria-o__onan-oncology-nursing-conference 2028-10-01 (source_url); oncology-nurses-association-of-nigeria-o__onan-oncology-nursing-conference 2029-10-01 (source_url)
-- HTTP 403 — https://onanigeria.org/registration
-  - oncology-nurses-association-of-nigeria-o__onan-oncology-nursing-conference 2026-10-07 (source_url)
 - HTTP 403 — https://onlnj.glueup.com/org/onlnj/events/
   - APN Conference (archive_url); Annual Nurse Leader and Aspiring Nurse Leader Conference (archive_url)
 - HTTP 403 — https://pinc.fkep.unpad.ac.id/
@@ -164,6 +152,14 @@ Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 �
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
+- URLError — https://web.archive.org/web/20241003223604/https://wapa.com/events/wapa-conference-oct-10-12-2024/
+  - washington-academy-of-physician-associat__wapa-fall-conference 2024-10-10 (source_url)
+- URLError — https://web.archive.org/web/20241118070950/https://congresoenfermeria.ufro.cl/images/documentos/programa-congreso-2024-4.pdf
+  - universidad-de-la-frontera__international-nursing-specialties-and-research-con 2024-11-11 (source_url)
+- URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
+  - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
+- URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
+  - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
 - URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
   - the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2025-10-16 (source_url)
 - URLError — https://web.archive.org/web/20250913144147/https://wcapn.enpnetwork.com/nurse-practitioner-events/147012-2025-wna-convention
@@ -188,8 +184,54 @@ Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 �
   - american-association-of-nurse-anesthesio__national-crna-week 2025-01-19 (source_url)
 - HTTP 404 — https://www.aanp.org/events/2023-hpc
   - american-association-of-nurse-practition__health-policy-conference 2023-01-29 (source_url)
-- HTTP 404 — https://www.aapa.org/cme-calendar/pa-institute-2025/
+- HTTP 403 — https://www.aapa.org/cme-calendar/2023-musculoskeletal-galaxy/
+  - american-academy-of-physician-associates__musculoskeletal-galaxy 2023-06-10 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/2023-we-are-family-medicine/
+  - american-academy-of-physician-associates__we-are-family-medicine 2023-02-03 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/2024-executive-leadership-conference/
+  - american-academy-of-physician-associates__aapa-executive-leadership-conference 2024-02-19 (detail_url); american-academy-of-physician-associates__aapa-executive-leadership-conference 2024-02-19 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/2024-musculoskeletal-galaxy/
+  - american-academy-of-physician-associates__musculoskeletal-galaxy 2024-06-05 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/2024-we-are-family-medicine/
+  - american-academy-of-physician-associates__we-are-family-medicine 2024-01-13 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/2025-executive-leadership-conference/
+  - american-academy-of-physician-associates__aapa-executive-leadership-conference 2025-03-03 (detail_url); american-academy-of-physician-associates__aapa-executive-leadership-conference 2025-03-03 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/2025-musculoskeletal-galaxy/
+  - american-academy-of-physician-associates__musculoskeletal-galaxy 2025-07-27 (detail_url); american-academy-of-physician-associates__musculoskeletal-galaxy 2025-07-27 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/2025-we-are-family-medicine/
+  - american-academy-of-physician-associates__we-are-family-medicine 2025-01-11 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/52nd-annual-cme-conference/
+  - oklahoma-academy-of-physician-associates__oapa-annual-cme-conference 2025-09-17 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/aapa-leadership-and-advocacy-summit/
+  - american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit 2023-09-28 (detail_url); american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit 2023-09-28 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/executive-leadership-conference-2023/
+  - american-academy-of-physician-associates__aapa-executive-leadership-conference 2023-03-06 (source_url)
+- HTTP 403 — https://www.aapa.org/cme-calendar/pa-institute-2025/
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2025-12-11 (source_url)
+- HTTP 403 — https://www.aapa.org/conference-2025/
+  - american-academy-of-physician-associates__aapa-conference 2025-05-16 (detail_url); american-academy-of-physician-associates__aapa-conference 2025-05-16 (source_url)
+- HTTP 403 — https://www.aapa.org/conference/
+  - AAPA Conference (org_url)
+- HTTP 403 — https://www.aapa.org/events/
+  - american-academy-of-physician-associates__aapa-conference 2026-05-15 (source_url); american-academy-of-physician-associates__aapa-conference 2028-05-19 (source_url); american-academy-of-physician-associates__aapa-conference 2029-04-27 (source_url); american-academy-of-physician-associates__aapa-conference 2030-05-17 (source_url)
+- HTTP 403 — https://www.aapa.org/events/elc/
+  - AAPA Executive Leadership Conference (org_url); american-academy-of-physician-associates__aapa-executive-leadership-conference 2026-02-23 (source_url); american-academy-of-physician-associates__aapa-executive-leadership-conference 2028-02-01 (source_url); american-academy-of-physician-associates__aapa-executive-leadership-conference 2029-02-01 (source_url)
+- HTTP 403 — https://www.aapa.org/events/hospital-medicine-essentials/
+  - Hospital Medicine Essentials (org_url); american-academy-of-physician-associates__hospital-medicine-essentials 2027-08-01 (source_url); american-academy-of-physician-associates__hospital-medicine-essentials 2028-08-01 (source_url); american-academy-of-physician-associates__hospital-medicine-essentials 2029-08-01 (source_url)
+- HTTP 403 — https://www.aapa.org/events/leadership-advocacy-summit/
+  - AAPA Leadership and Advocacy Summit (org_url); american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit 2026-09-24 (source_url); american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit 2027-09-01 (source_url); american-academy-of-physician-associates__aapa-leadership-and-advocacy-summit 2028-09-01 (source_url)
+- HTTP 403 — https://www.aapa.org/events/musculoskeletal-galaxy/
+  - Musculoskeletal Galaxy (org_url); american-academy-of-physician-associates__musculoskeletal-galaxy 2027-06-01 (source_url); american-academy-of-physician-associates__musculoskeletal-galaxy 2028-06-01 (source_url); american-academy-of-physician-associates__musculoskeletal-galaxy 2029-06-01 (source_url)
+- HTTP 403 — https://www.aapa.org/events/we-are-family-medicine/
+  - We Are Family (Medicine) (org_url); american-academy-of-physician-associates__we-are-family-medicine 2028-01-01 (source_url); american-academy-of-physician-associates__we-are-family-medicine 2029-01-01 (source_url)
+- HTTP 403 — https://www.aapa.org/pas-go-beyond/pa-week/
+  - PA Week (org_url); american-academy-of-physician-associates__pa-week 2023-10-06 (source_url); american-academy-of-physician-associates__pa-week 2024-10-06 (source_url); american-academy-of-physician-associates__pa-week 2025-10-06 (source_url)
+- HTTP 403 — https://www.aapa.org/research/research-events-aapa-conferences/
+  - american-academy-of-physician-associates__aapa-conference 2027-05-21 (call)
+- HTTP 403 — https://www.aapa.org/wp-content/uploads/2022/06/2023-AAPA-Exhibitor-Rules-and-Regulations-1.pdf
+  - american-academy-of-physician-associates__aapa-conference 2023-05-20 (source_url)
+- HTTP 403 — https://www.aapa.org/wp-content/uploads/2026/05/AC-27.002-AAPA-2027-Conference-Website_Agenda-PDF-8.5x11in-4.23.26.pdf
+  - american-academy-of-physician-associates__aapa-conference 2027-05-21 (source_url); american-academy-of-physician-associates__aapa-conference 2027-05-21 (student)
 - HTTP 404 — https://www.aaspa.com/2023-annual-cme-meeting
   - american-association-of-surgical-physici__aaspa-annual-virtual-surgical-cme-conference 2023-08-30 (source_url)
 - HTTP 404 — https://www.aaspa.com/2024-annual-cme-meeting
@@ -306,12 +348,14 @@ Links: 1024 · ok 858 · HTTP 403 118 · HTTP 404 31 · URLError 7 · robots 5 �
   - nurse-practitioner-association-of-maryla__npam-fall-conference 2025-11-15 (source_url)
 - HTTP 403 — https://www.pacnp.org/
   - PCNP Annual Education Conference (org_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2027-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2028-10-01 (source_url); pennsylvania-coalition-of-nurse-practiti__pcnp-annual-education-conference 2029-10-01 (source_url)
+- TimeoutError — https://www.pana.org/page/Events
+  - PANA Fall Symposium (org_url); PANA Spring Symposium (org_url); pennsylvania-association-of-nurse-anesth__pana-fall-symposium 2025-11-14 (source_url); pennsylvania-association-of-nurse-anesth__pana-fall-symposium 2026-11-20 (source_url)
 - HTTP 403 — https://www.rwjbh.org/events/event/?event=32770
   - rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (source_url)
 - HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
-- TimeoutError — https://www.svnnet.org/page/PastConferences
-  - SVN Annual Conference (archive_url); society-for-vascular-nursing__svn-annual-conference 2023-06-14 (source_url); society-for-vascular-nursing__svn-annual-conference 2024-06-19 (source_url); society-for-vascular-nursing__svn-annual-conference 2025-06-10 (source_url)
+- URLError — https://www.svnnet.org/page/annualconference
+  - SVN Annual Conference (org_url); society-for-vascular-nursing__svn-annual-conference 2027-06-02 (source_url); society-for-vascular-nursing__svn-annual-conference 2028-06-01 (source_url); society-for-vascular-nursing__svn-annual-conference 2029-06-01 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
 - HTTP 403 — https://www.thenpa.org/

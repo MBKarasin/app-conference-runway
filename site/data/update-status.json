@@ -1,8 +1,14 @@
 {
-  "schedule": "02:00 America/New_York (GitHub Actions)",
-  "status": "failure",
-  "started_at": "2026-10-20T10:31:31Z",
-  "completed_at": "2026-10-20T10:36:15Z",
-  "sources_checked_at": "2026-10-20T10:32:01Z",
-  "published_at": null
+  "schedule": "04:00 America/New_York (GitHub Actions)",
+  "status": "success",
+  "started_at": "2026-10-20T15:08:03Z",
+  "completed_at": "2026-10-20T15:13:00Z",
+  "sources_checked_at": "2026-10-20T15:08:38Z",
+  "published_at": null,
+  "outcomes": {
+    "validate": "success",
+    "sources": "success",
+    "links": "success",
+    "readers": "success"
+  }
 }
