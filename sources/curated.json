@@ -1,5 +1,5 @@
 {
- "_readme": "Curator reconciliation of 2026-10-17 (organizer evidence, attendance prices, withheld editions), carried into the nightly build. patch: per edition id, field -> [value before curation, curated value]; the curated value is applied only while the field still holds the value before curation, so a later nightly update to the same field wins. add: curated editions not produced by the sources. withhold: editions removed pending organizer confirmation. add_series: curated series the sources do not yet carry.",
+ "_readme": "Curator reconciliation carried into the nightly build. patch: per edition id, field -> explicit {from, to, basis}; current organizer-evidenced overrides take precedence over historical snapshot fields. add: curated editions not yet produced by sources, with stable published id/uid and checked _derived_id for semantic deduplication. withhold: editions removed pending organizer confirmation. add_series: curated series. Historical machine check_note and attend summaries remain in the immutable archived production snapshot; current builds derive these from current verification and available attendance records.",
  "add": {
   "9e2cce1712a8": {
    "_why": "Organizer page and its new October 2026 date image independently reviewed October 17, 2026. Prior August 22–27 dates superseded by the organizer’s new image.",
@@ -39,7 +39,9 @@
     "state": "announced",
     "url": "https://ncapa.org/summer-cme-conference/",
     "why": "The organizer has announced this as a save-the-date; the full programme is not posted yet."
-   }
+   },
+   "_derived_id": "8f6a0726063f",
+   "uid": "9e2cce1712a8"
   },
   "f7203b70d72f": {
    "_why": "Official Rutgers CloudCME course page confirms date range, Hyatt Regency New Brunswick, and nurse practitioner/physician assistant target audience. No AAPA-credit amount inferred because page sections disagree.",
@@ -74,7 +76,9 @@
     "method": "manual",
     "state": "verified",
     "url": "https://rutgers.cloud-cme.com/course/courseoverview?EID=35523&P=0&formid=7856"
-   }
+   },
+   "_derived_id": "1efe852408fe",
+   "uid": "f7203b70d72f"
   }
  },
  "add_series": {
@@ -99,7 +103,7 @@
     "PA"
    ],
    "recurrence": "unknown",
-   "region": "US",
+   "region": "us",
    "specialty": [
     "Cardiovascular"
    ],
@@ -109,9 +113,9 @@
  "curated_at": "2026-10-17T08:57:46Z",
  "patch": {
   "002ad3b7a061": {
-   "correction_history": [
-    null,
-    [
+   "correction_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -122,19 +126,21 @@
       },
       "source_url": "https://www.aana.com/event/mid-year-assembly-2027/"
      }
-    ]
-   ]
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "068ad5e18e97": {
-   "evidence": [
-    "When Saturday, April 10, 2027 8:00 AM to 6:15 PM ET Where Jordan Medical Education Center Law Auditorium, 3400 Ci",
-    "the Real World Hybrid CME/CE Conference Cutting Edge Resuscitation for the Real World April 10, 2027"
-   ]
+   "evidence": {
+    "from": "When Saturday, April 10, 2027 8:00 AM to 6:15 PM ET Where Jordan Medical Education Center Law Auditorium, 3400 Ci",
+    "to": "the Real World Hybrid CME/CE Conference Cutting Edge Resuscitation for the Real World April 10, 2027",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "08404cd571fb": {
-   "call_history": [
-    null,
-    [
+   "call_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -146,117 +152,93 @@
        "url": null
       }
      }
-    ]
-   ]
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "0b79c69409b5": {
-   "evidence": [
-    "Save the Date 49th Biennial Convention 29 October - 1 November 2027 Denver, Colorado, USA Call for Abstracts Call for Abstracts will open s",
-    "Save the Date 49th Biennial Convention 29 October - 1 November 2027 Denver, Colorado, USA Call for Abstracts Call for Abstracts will open o"
-   ]
+   "evidence": {
+    "from": "Save the Date 49th Biennial Convention 29 October - 1 November 2027 Denver, Colorado, USA Call for Abstracts Call for Abstracts will open s",
+    "to": "Save the Date 49th Biennial Convention 29 October - 1 November 2027 Denver, Colorado, USA Call for Abstracts Call for Abstracts will open o",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "0e593bbb8b12": {
-   "evidence": [
-    "know you are attending TQIP26! Social Toolkit Save the Date 2027 TQIP Annual Conference November 15-17, 2027",
-    "Access TQIP25 On-Demand Upcoming Conference 2027 TQIP Annual Conference November 15-17, 2027"
-   ]
+   "evidence": {
+    "from": "know you are attending TQIP26! Social Toolkit Save the Date 2027 TQIP Annual Conference November 15-17, 2027",
+    "to": "Access TQIP25 On-Demand Upcoming Conference 2027 TQIP Annual Conference November 15-17, 2027",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "10976499e525": {
-   "call": [
-    {
-     "closes": "2026-09-28",
-     "final": null,
-     "opens": null,
-     "status": "closed",
-     "text": "Fall call (early career, late-breaking, RAPiD posters): closes Sep 28",
-     "url": null
-    },
-    {
+   "call": {
+    "from": {
      "closes": "2026-09-28",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Fall call (early career, late-breaking, RAPiD posters): closes Sep 28",
      "url": null
-    }
-   ]
+    },
+    "to": {
+     "status": "closed",
+     "text": "Fall call (early career, late-breaking, RAPiD posters): closes Sep 28",
+     "opens": null,
+     "closes": "2026-09-28",
+     "final": null,
+     "url": null
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   }
   },
   "12b654aab1f6": {
-   "attend": [
-    null,
-    {
-     "fees": 27,
-     "status": "posted"
-    }
-   ],
-   "evidence": [
-    null,
-    "The event will take place October 9-12, 2026 at the Kansas City Convention Center in Kansas City, Missouri"
-   ]
+   "evidence": {
+    "from": null,
+    "to": "The event will take place October 9-12, 2026 at the Kansas City Convention Center in Kansas City, Missouri",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "168119a896f1": {
-   "_why": [
-    "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (eventosaben.org.br/76cben/trabalhos/) read 'O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.' (day/month/year: 9 May to 30 September 2026) and show '30/09 Limite de envio'. The event page still reads 'acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães'. Both re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
-    "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed."
-   ],
-   "call": [
-    {
+   "_why": {
+    "from": "Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
+    "to": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (eventosaben.org.br/76cben/trabalhos/) read 'O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.' (day/month/year: 9 May to 30 September 2026) and show '30/09 Limite de envio'. The event page still reads 'acontecerá de 8 a 12 de novembro de 2026, em Brasília (DF), no Centro de Convenções Ulysses Guimarães'. Both re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: re-read in a browser on 2026-09-24 (site blocks cloud readers); dates and venue confirmed.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
+     "closes": null,
+     "final": null,
+     "opens": null,
+     "status": "tba",
+     "text": null,
+     "url": null
+    },
+    "to": {
+     "status": "closed",
+     "opens": "2026-05-09",
      "closes": "2026-09-30",
      "final": null,
-     "opens": "2026-05-09",
-     "status": "closed",
      "text": "O prazo para submissão dos trabalhos ao 76° Congresso Brasileiro de Enfermagem – CBEn, ... será de 09/05/2026 até 30/09/2026.",
      "url": "https://eventosaben.org.br/76cben/trabalhos/"
     },
-    {
-     "closes": null,
-     "final": null,
-     "opens": null,
-     "status": "tba",
-     "text": null,
-     "url": null
-    }
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    "2026-09-24"
-   ]
-  },
-  "16ee2e3c0b61": {
-   "attend": [
-    null,
-    {
-     "fees": 72,
-     "status": "posted"
-    }
-   ]
-  },
-  "194ce1735b8f": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "reviewed_on": {
+    "from": "2026-09-24",
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "247d1b565c86": {
-   "attend": [
-    null,
-    {
-     "fees": 9,
-     "status": "posted"
-    }
-   ],
-   "evidence": [
-    null,
-    "... 2026 Fall Meeting John Klocek T09:52:22-04:00 Fall Meeting 2026 Saturday, October 3, 2026 Join CRNAs and anesthesia experts from across New Jersey for a day of clinical rese"
-   ]
+   "evidence": {
+    "from": null,
+    "to": "... 2026 Fall Meeting John Klocek T09:52:22-04:00 Fall Meeting 2026 Saturday, October 3, 2026 Join CRNAs and anesthesia experts from across New Jersey for a day of clinical rese",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "260f68c5cb83": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-02",
      "final": null,
      "opens": null,
@@ -264,69 +246,54 @@
      "text": "Closes Oct 2",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-10-02",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Closes Oct 2",
      "url": null
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "269fb342e367": {
-   "_why": [
-    "Blind audit 2026-09-26: the record showed the abstract call as not posted. The congress's abstract guideline (mpa2026.org/abstract-submission-guideline.php) reads 'Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)'; the call covers the whole 47th MPA Annual Congress. Re-read on 2026-09-26.",
-    null
-   ],
-   "call": [
-    {
-     "closes": "2026-08-31",
-     "due_time": "23:59",
-     "final": null,
-     "opens": null,
-     "status": "closed",
-     "text": "Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)",
-     "tz": "Asia/Kuala_Lumpur",
-     "url": "https://www.mpa2026.org/abstract-submission-guideline.php"
-    },
-    {
+   "_why": {
+    "from": null,
+    "to": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The congress's abstract guideline (mpa2026.org/abstract-submission-guideline.php) reads 'Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)'; the call covers the whole 47th MPA Annual Congress. Re-read on 2026-09-26.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
      "closes": null,
      "final": null,
      "opens": null,
      "status": "tba",
      "text": null,
      "url": null
-    }
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    null
-   ]
-  },
-  "27adc53dd3fe": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
-  },
-  "2854d25554ae": {
-   "attend": [
-    null,
-    {
-     "fees": 8,
-     "status": "posted"
-    }
-   ]
+    },
+    "to": {
+     "status": "closed",
+     "opens": null,
+     "closes": "2026-08-31",
+     "final": null,
+     "text": "Deadline for Abstract Submission: 31st August 2026 at 23:59 (MYT/SGT)",
+     "url": "https://www.mpa2026.org/abstract-submission-guideline.php",
+     "due_time": "23:59",
+     "tz": "Asia/Kuala_Lumpur"
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "reviewed_on": {
+    "from": null,
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "2891e7185321": {
-   "call_history": [
-    null,
-    [
+   "call_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -338,11 +305,12 @@
        "url": null
       }
      }
-    ]
-   ],
-   "correction_history": [
-    null,
-    [
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "correction_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -353,58 +321,26 @@
       },
       "source_url": "https://pinc.fkep.unpad.ac.id/"
      }
-    ]
-   ],
-   "note": [
-    null,
-    "Current organizer homepage and program give November 6–7; previous stored November 7–8 is superseded."
-   ]
-  },
-  "2baa3d5fee7a": {
-   "attend": [
-    null,
-    {
-     "fees": 0,
-     "status": "unreadable"
-    }
-   ],
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
-    }
-   ]
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "note": {
+    "from": null,
+    "to": "Current organizer homepage and program give November 6–7; previous stored November 7–8 is superseded.",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "2bedae9df083": {
-   "note": [
-    null,
-    "Conference landing page, official newsletter, event calendar and ISNCC announcement agree on October 22–25. A registration-page prose sentence says October 26, while its structured range says October 25. Retained October 25 based on the conference-specific sources; retain the discrepancy for follow-up."
-   ]
-  },
-  "2ec2c80a85dd": {
-   "attend": [
-    null,
-    {
-     "fees": 2,
-     "status": "posted"
-    }
-   ]
-  },
-  "2fbe67b81d88": {
-   "attend": [
-    null,
-    {
-     "fees": 8,
-     "status": "posted"
-    }
-   ]
+   "note": {
+    "from": null,
+    "to": "Conference landing page, official newsletter, event calendar and ISNCC announcement agree on October 22–25. A registration-page prose sentence says October 26, while its structured range says October 25. Retained October 25 based on the conference-specific sources; retain the discrepancy for follow-up.",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "2fedca69186a": {
-   "call_history": [
-    null,
-    [
+   "call_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -416,10 +352,11 @@
        "url": "https://www.tnpa.org.tw/events/"
       }
      }
-    ]
-   ],
-   "geo": [
-    {
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "geo": {
+    "from": {
      "cc": "TW",
      "continent": "Asia",
      "country": "Taiwan",
@@ -429,7 +366,7 @@
      "precision": "city",
      "region": "Asia"
     },
-    {
+    "to": {
      "cc": "TW",
      "continent": "Asia",
      "country": "Taiwan",
@@ -438,54 +375,44 @@
      "place": "Tainan",
      "precision": "city",
      "region": "Asia"
-    }
-   ],
-   "note": [
-    null,
-    "Organizer-issued letter dated February 3, ROC year 115, visually reviewed on October 17. It confirms October 18, 2026, 12:30–16:00, Greater Tainan Convention Center, and July 31 abstract deadline. Letter hosted by its recipient, Taiwan Midwives Association; original organizer website remains protected."
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "note": {
+    "from": null,
+    "to": "Organizer-issued letter dated February 3, ROC year 115, visually reviewed on October 17. It confirms October 18, 2026, 12:30–16:00, Greater Tainan Convention Center, and July 31 abstract deadline. Letter hosted by its recipient, Taiwan Midwives Association; original organizer website remains protected.",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "31f21fec28cb": {
-   "note": [
-    null,
-    "Published date range includes March 30 pre-courses; main meeting starts March 31."
-   ]
-  },
-  "3b0963321583": {
-   "attend": [
-    null,
-    {
-     "fees": 6,
-     "status": "posted"
-    }
-   ]
+   "note": {
+    "from": null,
+    "to": "Published date range includes March 30 pre-courses; main meeting starts March 31.",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "3d05eaea0c63": {
-   "evidence": [
-    "HA AONL Homepage AONL Professional Governance Leadership Conference PGLC 2027 · June 6-8 · Atlanta PGLC 2027 Call for Abstracts Professional governance is more than a",
-    "Mark your calendar for PGLC 2027, June 6-8 in Atlanta"
-   ]
+   "evidence": {
+    "from": "HA AONL Homepage AONL Professional Governance Leadership Conference PGLC 2027 · June 6-8 · Atlanta PGLC 2027 Call for Abstracts Professional governance is more than a",
+    "to": "Mark your calendar for PGLC 2027, June 6-8 in Atlanta",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "3d8a3d9936ff": {
-   "attend": [
-    null,
-    {
-     "fees": 10,
-     "status": "posted"
-    }
-   ],
-   "evidence": [
-    null,
-    "Past Meetings ELSO 37th Annual Conference Location: Nashville, Tennessee September 28, 2026 - October 1, 2026 https://cvent.me/eWoqqG Posted Date: June"
-   ]
+   "evidence": {
+    "from": null,
+    "to": "Past Meetings ELSO 37th Annual Conference Location: Nashville, Tennessee September 28, 2026 - October 1, 2026 https://cvent.me/eWoqqG Posted Date: June",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "3eecefb90b41": {
-   "_why": [
-    "Dedicated official conference page confirms March 3–6, 2027 and Hotel Roanoke & Conference Center.",
-    "Dates confirmed in the current official source."
-   ],
-   "geo": [
-    {
+   "_why": {
+    "from": "Dates confirmed in the current official source.",
+    "to": "Dedicated official conference page confirms March 3–6, 2027 and Hotel Roanoke & Conference Center.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "geo": {
+    "from": {
      "cc": "US",
      "continent": "North America",
      "country": "United States",
@@ -496,7 +423,7 @@
      "region": "South",
      "state": "VA"
     },
-    {
+    "to": {
      "cc": "US",
      "continent": "North America",
      "country": "United States",
@@ -505,12 +432,13 @@
      "precision": "state",
      "region": "South",
      "state": "VA"
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "43862213a496": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-02",
      "final": null,
      "opens": "2026-08-04",
@@ -518,53 +446,58 @@
      "text": "Opens: Tuesday, August 4, 2026; Closes: Friday, October 2, 2026",
      "url": "https://app.oxfordabstracts.com/api/auth/aann/start"
     },
-    {
+    "to": {
      "closes": "2026-10-02",
      "final": null,
      "opens": "2026-08-04",
      "status": "open",
      "text": "Opens: Tuesday, August 4, 2026; Closes: Friday, October 2, 2026",
      "url": "https://app.oxfordabstracts.com/api/auth/aann/start"
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "45504b46ea75": {
-   "_why": [
-    "Blind audit 2026-09-26: the record showed the abstract call as not posted. The conference page of the co-organizer ('Presented by Elsevier and Emergency Nurses Association') reads 'Abstract submission deadline: 7 May 2027', and its Participate page reads 'Abstract deadline: 7 May 2027 Submit oral abstract here ... Submit poster abstract here', so submission is open. Re-read on 2026-09-26.",
-    null
-   ],
-   "call": [
-    {
-     "closes": "2027-05-07",
-     "final": null,
-     "opens": null,
-     "status": "open",
-     "text": "Abstract deadline: 7 May 2027",
-     "url": "https://www.elsevier.com/events/conferences/all/global-emergency-nursing-conference/participate"
-    },
-    {
+   "_why": {
+    "from": null,
+    "to": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The conference page of the co-organizer ('Presented by Elsevier and Emergency Nurses Association') reads 'Abstract submission deadline: 7 May 2027', and its Participate page reads 'Abstract deadline: 7 May 2027 Submit oral abstract here ... Submit poster abstract here', so submission is open. Re-read on 2026-09-26.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
      "closes": null,
      "final": null,
      "opens": null,
      "status": "tba",
      "text": null,
      "url": null
-    }
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    null
-   ]
+    },
+    "to": {
+     "status": "open",
+     "opens": null,
+     "closes": "2027-05-07",
+     "final": null,
+     "text": "Abstract deadline: 7 May 2027",
+     "url": "https://www.elsevier.com/events/conferences/all/global-emergency-nursing-conference/participate"
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "reviewed_on": {
+    "from": null,
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "4dd5c1ce3f89": {
-   "evidence": [
-    "Clinical Congress 2027 Clinical Congress 2027 Hotel Information Clinical Congress 2027 October 16-19",
-    "For Surgeons Conferences and Meetings Clinical Congress 2027 Clinical Congress 2027 October 16-19"
-   ]
+   "evidence": {
+    "from": "Clinical Congress 2027 Clinical Congress 2027 Hotel Information Clinical Congress 2027 October 16-19",
+    "to": "For Surgeons Conferences and Meetings Clinical Congress 2027 Clinical Congress 2027 October 16-19",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "5010c607ecdc": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-13",
      "final": null,
      "opens": null,
@@ -572,23 +505,25 @@
      "text": "Closes Oct 13",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-10-13",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Closes Oct 13",
      "url": null
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "50a6bc48cd8f": {
-   "_why": [
-    "Independent probe 2026-09-26: the Runway held only an expected month (March 2027). The organizer's event page (connapa.org/event/2027-charter-oak-conference/) reads '2027 Charter Oak Conference March 21, 2027 - March 23, 2027' and names the venue ('welcome you back to the beautiful Water's Edge Resort & Spa for the 2027 ConnAPA Charter Oak Conference'; 'Venue Water's Edge Resort and Spa 1525 Boston Post Road Westbrook, CT'). Re-read on 2026-09-26.",
-    "Organizer event page reviewed October 17, 2026: March 21–23, 2027, Water’s Edge Resort and Spa, Westbrook, CT. Replaces an expected-month projection."
-   ],
-   "call": [
-    {
+   "_why": {
+    "from": "Organizer event page reviewed October 17, 2026: March 21–23, 2027, Water’s Edge Resort and Spa, Westbrook, CT. Replaces an expected-month projection.",
+    "to": "Independent probe 2026-09-26: the Runway held only an expected month (March 2027). The organizer's event page (connapa.org/event/2027-charter-oak-conference/) reads '2027 Charter Oak Conference March 21, 2027 - March 23, 2027' and names the venue ('welcome you back to the beautiful Water's Edge Resort & Spa for the 2027 ConnAPA Charter Oak Conference'; 'Venue Water's Edge Resort and Spa 1525 Boston Post Road Westbrook, CT'). Re-read on 2026-09-26.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
      "closes": null,
      "final": null,
      "opens": null,
@@ -596,80 +531,38 @@
      "text": null,
      "url": null
     },
-    {
+    "to": {
      "closes": null,
      "final": null,
      "opens": null,
      "status": "not_posted",
      "text": "No current abstract call was located on the reviewed organizer page.",
      "url": "https://connapa.org/event/2027-charter-oak-conference/"
-    }
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    "2026-10-17"
-   ]
-  },
-  "510e499763c0": {
-   "attend": [
-    null,
-    {
-     "fees": 9,
-     "status": "posted"
-    }
-   ]
-  },
-  "51ef23154e50": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
-    }
-   ]
-  },
-  "52d255cae650": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
-  },
-  "563fdff9f17b": {
-   "attend": [
-    null,
-    {
-     "fees": 8,
-     "status": "posted"
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "reviewed_on": {
+    "from": "2026-10-17",
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "58b15548af8e": {
-   "link_dead": [
-    "HTTP 404",
-    null
-   ]
-  },
-  "5c7ccd77a47e": {
-   "attend": [
-    null,
-    {
-     "fees": 3,
-     "status": "posted"
-    }
-   ]
+   "link_dead": {
+    "from": "HTTP 404",
+    "to": null,
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "60b19fa7fb93": {
-   "_why": [
-    "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-25th-annual-fall-dermatology-conference) reads 'Save the date! When: November 10-14, 2027 Where: Scottsdale Westin Kierland Scottsdale, Arizona', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-    "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24."
-   ],
-   "geo": [
-    {
+   "_why": {
+    "from": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+    "to": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-25th-annual-fall-dermatology-conference) reads 'Save the date! When: November 10-14, 2027 Where: Scottsdale Westin Kierland Scottsdale, Arizona', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "geo": {
+    "from": null,
+    "to": {
      "cc": "US",
      "continent": "North America",
      "country": "United States",
@@ -680,57 +573,36 @@
      "region": "West",
      "state": "AZ"
     },
-    null
-   ],
-   "location": [
-    "Scottsdale Westin Kierland, Scottsdale, AZ",
-    "Host city not yet announced"
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    "2026-09-24"
-   ]
+    "basis": "sources/overrides.json location; preserve coordinates for evidenced venue"
+   },
+   "location": {
+    "from": "Host city not yet announced",
+    "to": "Scottsdale Westin Kierland, Scottsdale, AZ",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "reviewed_on": {
+    "from": "2026-09-24",
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "61060a9b90f8": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ],
-   "evidence": [
-    "Philadelphia, PA, April 10-13, 2027 Registration is now open for the largest gathering of perioperative professional",
-    "Philadelphia, PA, April 10-13, 2027 Experience immersive education, inspiration, networking, and more at our annual"
-   ]
-  },
-  "64d695b36d4b": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
-    }
-   ]
+   "evidence": {
+    "from": "Philadelphia, PA, April 10-13, 2027 Registration is now open for the largest gathering of perioperative professional",
+    "to": "Philadelphia, PA, April 10-13, 2027 Experience immersive education, inspiration, networking, and more at our annual",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "66c22879fe97": {
-   "_why": [
-    "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by two independent readers, which agree on this passage.",
-    "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by the price-capture reader and, independently, by the pipeline's second reader, which agree on this passage."
-   ],
-   "attend": [
-    null,
-    {
-     "fees": 7,
-     "status": "posted"
-    }
-   ]
+   "_why": {
+    "from": "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by the price-capture reader and, independently, by the pipeline's second reader, which agree on this passage.",
+    "to": "The organizer's event page gives October 14 - 16 (2026); the record carried only the start day, from the organizer's home page. Read on 2026-09-26 by two independent readers, which agree on this passage.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "67a017b14a9f": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-05",
      "final": null,
      "opens": null,
@@ -738,91 +610,82 @@
      "text": "Podium & poster: closes Oct 5",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-10-05",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Podium & poster: closes Oct 5",
      "url": null
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "6b3653108bcd": {
-   "_why": [
-    "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (sobenfee.org.br/regulamento-2026) read 'SUBMISSÕES PRORROGADAS ATÉ 25/09/2026' and '2.1. O prazo limite para envio dos resumos via sistema será até 25/09/2026'; the extended deadline has passed. Re-read on 2026-09-26.",
-    null
-   ],
-   "call": [
-    {
-     "closes": "2026-09-25",
+   "_why": {
+    "from": null,
+    "to": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's submission rules (sobenfee.org.br/regulamento-2026) read 'SUBMISSÕES PRORROGADAS ATÉ 25/09/2026' and '2.1. O prazo limite para envio dos resumos via sistema será até 25/09/2026'; the extended deadline has passed. Re-read on 2026-09-26.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
+     "closes": null,
      "final": null,
      "opens": null,
+     "status": "tba",
+     "text": null,
+     "url": null
+    },
+    "to": {
      "status": "closed",
+     "opens": null,
+     "closes": "2026-09-25",
+     "final": null,
      "text": "SUBMISSÕES PRORROGADAS ATÉ 25/09/2026",
      "url": "https://www.sobenfee.org.br/regulamento-2026"
     },
-    {
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "reviewed_on": {
+    "from": null,
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
+  },
+  "6cfadbc4e525": {
+   "_why": {
+    "from": null,
+    "to": "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's event page (sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026) reads 'Abstract The call for abstracts is now closed. Type of presentation : Oral Presentation/ E poster'; no closing date is published. Re-read on 2026-09-26.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
      "closes": null,
      "final": null,
      "opens": null,
      "status": "tba",
      "text": null,
      "url": null
-    }
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    null
-   ]
-  },
-  "6cfadbc4e525": {
-   "_why": [
-    "Blind audit 2026-09-26: the record showed the abstract call as not posted. The organizer's event page (sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026) reads 'Abstract The call for abstracts is now closed. Type of presentation : Oral Presentation/ E poster'; no closing date is published. Re-read on 2026-09-26.",
-    null
-   ],
-   "attend": [
-    null,
-    {
-     "fees": 9,
-     "status": "posted"
-    }
-   ],
-   "call": [
-    {
+    },
+    "to": {
+     "status": "closed",
+     "opens": null,
      "closes": null,
      "final": null,
-     "opens": null,
-     "status": "closed",
      "text": "The call for abstracts is now closed.",
      "url": "https://www.sgh.com.sg/about-sgh/events/sgh-wound-nursing-conference-2026"
     },
-    {
-     "closes": null,
-     "final": null,
-     "opens": null,
-     "status": "tba",
-     "text": null,
-     "url": null
-    }
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    null
-   ]
-  },
-  "6db24e4a848d": {
-   "attend": [
-    null,
-    {
-     "fees": 0,
-     "status": "unreadable"
-    }
-   ]
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "reviewed_on": {
+    "from": null,
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "71c8c7f9ec54": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-13",
      "due_time": "23:59",
      "final": null,
@@ -832,7 +695,7 @@
      "tz": "America/Chicago",
      "url": "https://www.aan.com/events/annual-meeting/abstracts"
     },
-    {
+    "to": {
      "closes": "2026-10-13",
      "due_time": "23:59",
      "final": null,
@@ -841,98 +704,26 @@
      "text": "All abstract submissions are due by 11:59 p.m. CT on Tuesday, October 13, 2026",
      "tz": "America/Chicago",
      "url": "https://www.aan.com/events/annual-meeting/abstracts"
-    }
-   ]
-  },
-  "7439fe42fefc": {
-   "attend": [
-    null,
-    {
-     "fees": 0,
-     "status": "unreadable"
-    }
-   ],
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "751c879e18d6": {
-   "attend": [
-    null,
-    {
-     "fees": 4,
-     "status": "posted"
-    }
-   ],
-   "evidence": [
-    "P Contact 37th National Neonatal Nurse Practitioner Symposium: Clinical Update and Review October 13-17, 2026, at the Sheraton Sand Key Resort, Clearwater Beach, Florida In-person registrati",
-    "P Contact 37th National Neonatal Nurse Practitioner Symposium: Clinical Update and Review October 13-17, 2026, at the Sheraton Sand Key Resort, Clearwater Beach, Florida The Conference Broch"
-   ]
-  },
-  "75c789c89d9d": {
-   "attend": [
-    null,
-    {
-     "fees": 4,
-     "status": "posted"
-    }
-   ]
-  },
-  "7656f2da8579": {
-   "attend": [
-    null,
-    {
-     "fees": 7,
-     "status": "closed"
-    }
-   ],
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
-    }
-   ]
-  },
-  "785efb278b8a": {
-   "attend": [
-    null,
-    {
-     "fees": 16,
-     "status": "posted"
-    }
-   ],
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
-  },
-  "79603cac8cbb": {
-   "attend": [
-    null,
-    {
-     "fees": 2,
-     "status": "posted"
-    }
-   ]
+   "evidence": {
+    "from": "P Contact 37th National Neonatal Nurse Practitioner Symposium: Clinical Update and Review October 13-17, 2026, at the Sheraton Sand Key Resort, Clearwater Beach, Florida In-person registrati",
+    "to": "P Contact 37th National Neonatal Nurse Practitioner Symposium: Clinical Update and Review October 13-17, 2026, at the Sheraton Sand Key Resort, Clearwater Beach, Florida The Conference Broch",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "79d298e81fa1": {
-   "_why": [
-    "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference) reads 'Save the date! When: June 9-13, 2027 Where: Sheraton Grand Chicago Riverwalk Chicago, Illinois', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-    "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24."
-   ],
-   "geo": [
-    {
+   "_why": {
+    "from": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+    "to": "Independent probe 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference) reads 'Save the date! When: June 9-13, 2027 Where: Sheraton Grand Chicago Riverwalk Chicago, Illinois', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "geo": {
+    "from": null,
+    "to": {
      "cc": "US",
      "continent": "North America",
      "country": "United States",
@@ -943,21 +734,23 @@
      "region": "Midwest",
      "state": "IL"
     },
-    null
-   ],
-   "location": [
-    "Sheraton Grand Chicago Riverwalk, Chicago, IL",
-    "Host city not yet announced"
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    "2026-09-24"
-   ]
+    "basis": "sources/overrides.json location; preserve coordinates for evidenced venue"
+   },
+   "location": {
+    "from": "Host city not yet announced",
+    "to": "Sheraton Grand Chicago Riverwalk, Chicago, IL",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "reviewed_on": {
+    "from": "2026-09-24",
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "7b6f95d9ef1c": {
-   "call_history": [
-    null,
-    [
+   "call_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -969,78 +762,18 @@
        "url": null
       }
      }
-    ]
-   ],
-   "link_dead": [
-    null,
-    "HTTP 404"
-   ]
-  },
-  "7f016cb3e84c": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
-    }
-   ]
-  },
-  "819fe90fd52b": {
-   "attend": [
-    null,
-    {
-     "fees": 14,
-     "status": "posted"
-    }
-   ]
-  },
-  "825ae90df474": {
-   "attend": [
-    null,
-    {
-     "fees": 16,
-     "status": "posted"
-    }
-   ],
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "robots.txt disallows"
-    }
-   ]
-  },
-  "89de4656498c": {
-   "attend": [
-    null,
-    {
-     "fees": 26,
-     "status": "posted"
-    }
-   ],
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
-  },
-  "8a0d140dd475": {
-   "attend": [
-    null,
-    {
-     "fees": 4,
-     "status": "posted"
-    }
-   ]
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "link_dead": {
+    "from": null,
+    "to": "HTTP 404",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "8f38e757e5c7": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-09-29",
      "final": null,
      "opens": null,
@@ -1048,91 +781,58 @@
      "text": "Closes Sep 29",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-09-29",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Closes Sep 29",
      "url": null
-    }
-   ]
-  },
-  "919004c82f9a": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "91ae0e5fac82": {
-   "evidence": [
-    "Learn more Save the Date 38th International Nursing Research Congress 16-18 July 2027 Dublin, Ireland Thank You for Being Part of Congress 2026 For three inspiring days i",
-    "Explore Congress Highlights Save the Date 38th International Nursing Research Congress 16-18 July 2027 Dublin, Ireland Share Your Research Submit Your Abstract for Congress 2027 The Call"
-   ]
-  },
-  "94bc3d269ab8": {
-   "attend": [
-    null,
-    {
-     "fees": 9,
-     "status": "posted"
-    }
-   ]
+   "evidence": {
+    "from": "Learn more Save the Date 38th International Nursing Research Congress 16-18 July 2027 Dublin, Ireland Thank You for Being Part of Congress 2026 For three inspiring days i",
+    "to": "Explore Congress Highlights Save the Date 38th International Nursing Research Congress 16-18 July 2027 Dublin, Ireland Share Your Research Submit Your Abstract for Congress 2027 The Call",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "97a2b66704e8": {
-   "_why": [
-    "Blind audit 2026-09-26: the congress's own abstract instructions (congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/, the congress site ELSO's meetings page links) read 'Apertura del envío Enero 2026 Fecha límite para envío 14 de julio de 2026' and 'Fechas del Congreso ELSO LATAM 2026 4–6 de noviembre de 2026'. That is the evidence the earlier 'Closed Jul 14' lacked. Re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
-    "Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted."
-   ],
-   "call": [
-    {
-     "closes": "2026-07-14",
-     "final": null,
-     "opens": null,
-     "status": "closed",
-     "text": "Fecha límite para envío 14 de julio de 2026",
-     "url": "https://congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/"
-    },
-    {
+   "_why": {
+    "from": "Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
+    "to": "Blind audit 2026-09-26: the congress's own abstract instructions (congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/, the congress site ELSO's meetings page links) read 'Apertura del envío Enero 2026 Fecha límite para envío 14 de julio de 2026' and 'Fechas del Congreso ELSO LATAM 2026 4–6 de noviembre de 2026'. That is the evidence the earlier 'Closed Jul 14' lacked. Re-read on 2026-09-26. Earlier (2026-09-24): Repopulation audit 2026-09-24: stored call text (Closed Jul 14) had no recorded evidence and contradicts the ELSO listing; set to tba with the organizer wording quoted.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
      "closes": null,
      "final": null,
      "opens": null,
      "status": "tba",
      "text": "ELSO's meetings list shows 'Deadline: 05 November 2026' for this congress without saying what the deadline is; the earlier 'Closed Jul 14' had no evidence on file",
      "url": "https://www.elso.org/ecmo-education/elso-meetings.aspx"
-    }
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    "2026-09-24"
-   ]
-  },
-  "98da2c267857": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "page has almost no readable text (1 chars; likely JavaScript-only)"
-    }
-   ]
-  },
-  "9e0e24120486": {
-   "attend": [
-    null,
-    {
-     "fees": 2,
-     "status": "posted"
-    }
-   ]
+    },
+    "to": {
+     "status": "closed",
+     "opens": null,
+     "closes": "2026-07-14",
+     "final": null,
+     "text": "Fecha límite para envío 14 de julio de 2026",
+     "url": "https://congresosusp.com/congreso-elso/instrucciones-para-el-envio-de-trabajos-libres/"
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "reviewed_on": {
+    "from": "2026-09-24",
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "a00f57dd940f": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-13",
      "final": null,
      "opens": null,
@@ -1140,46 +840,39 @@
      "text": "Posters & podium: closes Oct 13",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-10-13",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Posters & podium: closes Oct 13",
      "url": null
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "a3400aa377d9": {
-   "call": [
-    {
-     "closes": "2026-09-30",
-     "opens": null,
-     "status": "closed",
-     "text": "Call for presentations; submissions close September 30, 2026",
-     "url": "https://forms.gle/Mun8EChacCsdaTT47"
-    },
-    {
+   "call": {
+    "from": {
      "closes": "2026-09-30",
      "opens": null,
      "status": "open",
      "text": "Call for presentations; submissions close September 30, 2026",
      "url": "https://forms.gle/Mun8EChacCsdaTT47"
-    }
-   ]
-  },
-  "a4aa36e9f2f4": {
-   "attend": [
-    null,
-    {
-     "fees": 5,
-     "status": "posted"
-    }
-   ]
+    },
+    "to": {
+     "status": "closed",
+     "opens": null,
+     "closes": "2026-09-30",
+     "text": "Call for presentations; submissions close September 30, 2026",
+     "url": "https://forms.gle/Mun8EChacCsdaTT47"
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   }
   },
   "a70f1737c4a9": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-02",
      "final": null,
      "opens": null,
@@ -1187,19 +880,20 @@
      "text": "Competitive abstracts: close Oct 2",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-10-02",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Competitive abstracts: close Oct 2",
      "url": null
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "b44b4324cc8c": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-01",
      "final": null,
      "opens": null,
@@ -1207,20 +901,21 @@
      "text": "Podium & poster: closes Oct 1 (5 p.m.)",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-10-01",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "Podium & poster: closes Oct 1 (5 p.m.)",
      "url": null
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "b4e1a4663559": {
-   "call_history": [
-    null,
-    [
+   "call_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -1232,67 +927,63 @@
        "url": null
       }
      }
-    ]
-   ]
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "b5ed85970d92": {
-   "call": [
-    {
-     "closes": "2026-09-30",
-     "final": null,
-     "opens": null,
-     "status": "closed",
-     "text": "论文投稿截止日期 2026年9月30日 (paper submission deadline September 30, 2026)",
-     "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm"
-    },
-    {
+   "call": {
+    "from": {
      "closes": "2026-09-30",
      "final": null,
      "opens": null,
      "status": "open",
      "text": "论文投稿截止日期 2026年9月30日 (paper submission deadline September 30, 2026)",
      "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm"
-    }
-   ],
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
-    }
-   ]
+    },
+    "to": {
+     "status": "closed",
+     "opens": null,
+     "closes": "2026-09-30",
+     "final": null,
+     "text": "论文投稿截止日期 2026年9月30日 (paper submission deadline September 30, 2026)",
+     "url": "https://nursing.bjmu.edu.cn/xwgg/tzgg/8a7c27e4010444de970ffed1e4a0696c.htm"
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   }
   },
   "b64d6d0401c3": {
-   "note": [
-    null,
-    "Date verified visually in the organizer-linked conference banner; the automated text reader did not read the image."
-   ]
+   "note": {
+    "from": null,
+    "to": "Date verified visually in the organizer-linked conference banner; the automated text reader did not read the image.",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "b9f577965d09": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2027-02-05",
-     "due_time": "23:59",
      "final": "2027-02-05",
      "opens": null,
      "status": "open",
      "text": "CAA poster submissions; deadline 11:59 p.m. Eastern.",
-     "tz": "America/New_York",
      "url": "https://www.anesthetist.org/aaaa-posters-2027"
     },
-    {
-     "closes": "2027-02-05",
-     "final": "2027-02-05",
-     "opens": null,
+    "to": {
      "status": "open",
      "text": "CAA poster submissions; deadline 11:59 p.m. Eastern.",
-     "url": "https://www.anesthetist.org/aaaa-posters-2027"
-    }
-   ],
-   "call_history": [
-    null,
-    [
+     "opens": null,
+     "closes": "2027-02-05",
+     "final": "2027-02-05",
+     "url": "https://www.anesthetist.org/aaaa-posters-2027",
+     "due_time": "23:59",
+     "tz": "America/New_York"
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "call_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -1306,11 +997,12 @@
        "url": "https://www.anesthetist.org/aaaa-posters-2027"
       }
      }
-    ]
-   ],
-   "correction_history": [
-    null,
-    [
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "correction_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -1321,23 +1013,26 @@
       },
       "source_url": "https://www.anesthetist.org/fall-fundraiser-2026"
      }
-    ]
-   ],
-   "note": [
-    "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session.",
-    "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session. Organizer fundraising page explicitly identifies April 15–18, 2027. This resolves the unreadable Whova page and malformed industry-calendar date."
-   ]
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "note": {
+    "from": "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session. Organizer fundraising page explicitly identifies April 15–18, 2027. This resolves the unreadable Whova page and malformed industry-calendar date.",
+    "to": "AAAA's own official event page, the one anesthetist.org links as \"AAAA 2027\", gives April 14–18, 2027. An AAAA social post earlier said April 15–18. The organizer's event page is taken as the source of truth; confirm the first day with the published programme if you are travelling for the opening session.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "ba1fd203973c": {
-   "evidence": [
-    "forward-thinking discussions to enhance the care of critically ill children. Learn More 10/19//20/2026 Danville, PA Hosted Training FCCS: Pediatrics FCCS: Pediatrics-Geisinger Hea",
-    "Registered attendees receive complimentary access to the webcast for one year. Learn More 10/19//20/2026 Danville, PA Hosted Training FCCS: Pediatrics FCCS: Pediatrics-Geisinger Hea"
-   ]
+   "evidence": {
+    "from": "forward-thinking discussions to enhance the care of critically ill children. Learn More 10/19//20/2026 Danville, PA Hosted Training FCCS: Pediatrics FCCS: Pediatrics-Geisinger Hea",
+    "to": "Registered attendees receive complimentary access to the webcast for one year. Learn More 10/19//20/2026 Danville, PA Hosted Training FCCS: Pediatrics FCCS: Pediatrics-Geisinger Hea",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "bfb1cef79cb1": {
-   "correction_history": [
-    null,
-    [
+   "correction_history": {
+    "from": null,
+    "to": [
      {
       "at": "2026-10-17T08:57:46Z",
       "before": {
@@ -1348,155 +1043,74 @@
       },
       "source_url": "https://mypnaa.org/48th-PNAA-National-Convention"
      }
-    ]
-   ],
-   "note": [
-    "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
-    "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet. Specific convention page gives July 16–24; retain full convention range rather than July 17 cruise departure. Page heading has an edition-number typo."
-   ]
-  },
-  "bfff1655d95c": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
+    ],
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   },
+   "note": {
+    "from": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet. Specific convention page gives July 16–24; retain full convention range rather than July 17 cruise departure. Page heading has an edition-number typo.",
+    "to": "The organizer publishes this as a save-the-date flyer; the daily program and ship are not posted yet.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "c3d8a04559de": {
-   "_why": [
-    "Official AAPA two-page conference agenda PDF reviewed directly on October 17 confirms May 21–25, 2027; local automatic PDF extraction was unavailable.",
-    null
-   ],
-   "call": [
-    {
-     "closes": null,
-     "final": null,
-     "opens": "2026-12-01",
-     "status": "soon",
-     "text": "The call for research submission for AAPA 2027 will open December 1, 2026.",
-     "url": "https://www.aapa.org/research/research-events-aapa-conferences/"
-    },
-    {
+   "_why": {
+    "from": null,
+    "to": "Official AAPA two-page conference agenda PDF reviewed directly on October 17 confirms May 21–25, 2027; local automatic PDF extraction was unavailable.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "call": {
+    "from": {
      "closes": "2026-07-31",
      "final": null,
      "opens": null,
      "status": "closed",
      "text": "The deadline to apply is July 31, 2026 (call for presentations; selected presenters informed by late fall of 2026)",
      "url": "https://www.aapa.org/events/aapa-call-for-presentations/"
-    }
-   ],
-   "reviewed_on": [
-    "2026-10-17",
-    null
-   ],
-   "source_reviewed": [
-    true,
-    false
-   ]
-  },
-  "c45dffbcbe96": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
+    },
+    "to": {
+     "status": "soon",
+     "opens": "2026-12-01",
+     "closes": null,
+     "final": null,
+     "text": "The call for research submission for AAPA 2027 will open December 1, 2026.",
+     "url": "https://www.aapa.org/research/research-events-aapa-conferences/"
+    },
+    "basis": "sources/overrides.json organizer-evidenced call and call_patch; preserve cutoff and normalized deadline"
+   },
+   "reviewed_on": {
+    "from": null,
+    "to": "2026-10-17",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "source_reviewed": {
+    "from": false,
+    "to": true,
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "ceca55093877": {
-   "attend": [
-    null,
-    {
-     "fees": 9,
-     "status": "posted"
-    }
-   ],
-   "evidence": [
-    null,
-    "Close Register Now 2026 Health Policy Conference Digital Health: Promise, Responsibility October 8-10, 2026 Register Now About the Conference The American Academy of Nursing (Academy) is p"
-   ]
+   "evidence": {
+    "from": null,
+    "to": "Close Register Now 2026 Health Policy Conference Digital Health: Promise, Responsibility October 8-10, 2026 Register Now About the Conference The American Academy of Nursing (Academy) is p",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "d32cd8f73f22": {
-   "evidence": [
-    null,
-    "CME Information Events Exhibit Hall News Hotel Attendee Services Clinical Congress 2026 September 26-29"
-   ]
-  },
-  "d3cca844a839": {
-   "attend": [
-    null,
-    {
-     "fees": 0,
-     "status": "unreadable"
-    }
-   ]
-  },
-  "d4d9fb2509c4": {
-   "attend": [
-    null,
-    {
-     "fees": 20,
-     "status": "posted"
-    }
-   ]
-  },
-  "d99c10e3c6f2": {
-   "attend": [
-    null,
-    {
-     "fees": 51,
-     "status": "posted"
-    }
-   ]
-  },
-  "da908a040f80": {
-   "attend": [
-    null,
-    {
-     "fees": 1,
-     "status": "posted"
-    }
-   ]
-  },
-  "db80e502cbf5": {
-   "attend": [
-    null,
-    {
-     "fees": 7,
-     "status": "posted"
-    }
-   ]
-  },
-  "e2d3b8e33ed3": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
-  },
-  "e48b8600d4b5": {
-   "attend": [
-    null,
-    {
-     "fees": 0,
-     "status": "not_posted"
-    }
-   ]
+   "evidence": {
+    "from": null,
+    "to": "CME Information Events Exhibit Hall News Hotel Attendee Services Clinical Congress 2026 September 26-29",
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   },
   "ee76d4c7f3bf": {
-   "_why": [
-    "Blind audit 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference-0) reads 'Save the date! When: June 7-11, 2028 Where: Omni Boston Seaport Boston, Massachusetts', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
-    "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24."
-   ],
-   "geo": [
-    {
+   "_why": {
+    "from": "SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+    "to": "Blind audit 2026-09-26: the organizer's event page (dermpa.org/events/sdpa-annual-summer-dermatology-conference-0) reads 'Save the date! When: June 7-11, 2028 Where: Omni Boston Seaport Boston, Massachusetts', so the host city is now announced. Re-read on 2026-09-26. Earlier (2026-09-24): SDPA's own conference index lists the dates with no host city. Recorded as not yet announced rather than left empty. Read 2026-09-24.",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "geo": {
+    "from": null,
+    "to": {
      "cc": "US",
      "continent": "North America",
      "country": "United States",
@@ -1507,45 +1121,29 @@
      "region": "Northeast",
      "state": "MA"
     },
-    null
-   ],
-   "location": [
-    "Omni Boston Seaport, Boston, MA",
-    "Host city not yet announced"
-   ],
-   "reviewed_on": [
-    "2026-09-26",
-    "2026-09-24"
-   ]
+    "basis": "sources/overrides.json location; preserve coordinates for evidenced venue"
+   },
+   "location": {
+    "from": "Host city not yet announced",
+    "to": "Omni Boston Seaport, Boston, MA",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   },
+   "reviewed_on": {
+    "from": "2026-09-24",
+    "to": "2026-09-26",
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "f728d5279341": {
-   "note": [
-    null,
-    "Date verified visually in the conference banner linked by the official event homepage; the text checker did not read the image."
-   ]
-  },
-  "fc952b75dcbc": {
-   "check_note": [
-    null,
-    {
-     "checked": "2026-09-26T06:51:17Z",
-     "state": "unreachable",
-     "why": "HTTP 403"
-    }
-   ]
-  },
-  "ff96990874e9": {
-   "attend": [
-    null,
-    {
-     "fees": 13,
-     "status": "posted"
-    }
-   ]
+   "note": {
+    "from": "Date verified visually in the conference banner linked by the official event homepage; the text checker did not read the image.",
+    "to": null,
+    "basis": "sources/overrides.json; preserve explicit organizer-evidenced correction"
+   }
   },
   "fff7c127c15a": {
-   "call": [
-    {
+   "call": {
+    "from": {
      "closes": "2026-10-06",
      "due_time": "13:00",
      "final": null,
@@ -1555,7 +1153,7 @@
      "tz": "America/New_York",
      "url": null
     },
-    {
+    "to": {
      "closes": "2026-10-06",
      "due_time": "13:00",
      "final": null,
@@ -1564,14 +1162,16 @@
      "text": "Abstracts & cases: close Oct 6 (1 p.m. ET)",
      "tz": "America/New_York",
      "url": null
-    }
-   ]
+    },
+    "basis": "archive/production-2026-10-17/data/runway.json; historical reconciliation delta"
+   }
   }
  },
  "withhold": [
-  "3b3172bb161a",
-  "5a5d8ed2aab0",
   "5a807234462c",
-  "96935d212c22"
+  "3120ce066484",
+  "89122ea45979",
+  "890190479333",
+  "c1ce0f518355"
  ]
 }

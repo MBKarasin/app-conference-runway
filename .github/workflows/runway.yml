@@ -39,6 +39,7 @@ jobs:
         run: pip install --no-cache-dir "pypdf==5.*"
       - if: steps.gate.outputs.go == 'true'
         name: Second readers (headless Chromium for JavaScript-only pages, OCR for organizer images)
+        id: readers
         # 2026-09-24: optional. If this install fails, check.py keeps its plain reader and the run continues.
         continue-on-error: true
         run: |
@@ -46,37 +47,69 @@ jobs:
           pip install --no-cache-dir "playwright==1.*" "pillow==11.*"
           python -m playwright install --with-deps chromium
       - if: steps.gate.outputs.go == 'true'
+        name: Curated data regression checks
+        run: python -m unittest discover -s tests
+      - name: Daily status regression checks
+        run: node tests/test_daily_status.js
+      - if: steps.gate.outputs.go == 'true'
         run: python scripts/build.py
       - if: steps.gate.outputs.go == 'true'
-        name: Check sources, links and data
-        id: check
+        name: Read organizer sources (advisory)
+        id: sources
         continue-on-error: true
-        run: python scripts/check.py && python scripts/linkcheck.py && python scripts/build.py && python scripts/validate.py
+        run: python scripts/check.py
       - if: steps.gate.outputs.go == 'true'
-        name: Daily archive (runs even if the check failed)
+        name: Read outbound links (advisory)
+        id: links
+        continue-on-error: true
+        run: python scripts/linkcheck.py
+      - if: steps.gate.outputs.go == 'true'
+        name: Build and validate candidate
+        id: validate
+        continue-on-error: true
+        run: python scripts/build.py && python scripts/validate.py
+      - if: always() && steps.gate.outputs.go == 'true'
+        name: Daily archive (also retain failed-candidate evidence)
         run: python scripts/snapshot.py
-      - if: steps.gate.outputs.go == 'true'
-        name: Update status for the site header (the domain publishes from this commit via Cloudflare Pages)
-        env: { CHECK_OUTCOME: "${{ steps.check.outcome }}" }
+      - if: always() && steps.gate.outputs.go == 'true'
+        name: Record candidate status (publication receipt is separate)
+        env:
+          VALIDATE_OUTCOME: "${{ steps.validate.outcome }}"
+          SOURCES_OUTCOME: "${{ steps.sources.outcome }}"
+          LINKS_OUTCOME: "${{ steps.links.outcome }}"
+          READERS_OUTCOME: "${{ steps.readers.outcome }}"
         run: |
           python - <<'PY'
           import json, os, datetime as dt
-          d = json.load(open("site/data/runway.json", encoding="utf-8"))
+          from pathlib import Path
           now = dt.datetime.now(dt.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
-          ok = os.environ["CHECK_OUTCOME"] == "success"
-          json.dump({"schedule": "02:00 America/New_York (GitHub Actions)", "status": "success" if ok else "failure",
-                     "started_at": os.environ["RUN_STARTED"], "completed_at": now,
-                     "sources_checked_at": d.get("sources_checked"), "published_at": now if ok else None},
-                    open("site/data/update-status.json", "w", encoding="utf-8"), indent=2)
+          d = json.load(open("site/data/runway.json", encoding="utf-8"))
+          ok = os.environ["VALIDATE_OUTCOME"] == "success"
+          readers_ok = all(os.environ[k] == "success" for k in ("SOURCES_OUTCOME", "LINKS_OUTCOME"))
+          status = {"schedule": "06:00 UTC (02:00 EDT / 01:00 EST; GitHub Actions)",
+                    "status": ("success" if readers_ok else "issues") if ok else "failure", "started_at": os.environ["RUN_STARTED"],
+                    "completed_at": now, "sources_checked_at": d.get("sources_checked"),
+                    "published_at": None,
+                    "outcomes": {k: os.environ[k.upper() + "_OUTCOME"] for k in ("validate", "sources", "links", "readers")}}
+          Path("data/run-status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
+          # Preserve the previous live stamp when validation failed.
+          if ok:
+              Path("site/data/update-status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
           PY
-      - if: steps.gate.outputs.go == 'true'
-        name: Commit verification stamps
+      - if: always() && steps.gate.outputs.go == 'true'
+        name: Commit reports; commit candidate only after validation
+        env: { VALIDATE_OUTCOME: "${{ steps.validate.outcome }}" }
         run: |
           git config user.name "runway-checker"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/verification.json data/check_report.md data/link_report.md data/link_status.json data/ledger.json data/snapshots site/data/runway.json site/data/update-status.json site/runway.ics
+          git add data
+          if [ "$VALIDATE_OUTCOME" = success ]; then git add site; fi
           git diff --cached --quiet || git commit -m "Nightly source check $(date -u +%F)"
+          # GITHUB_TOKEN pushes do not create another push workflow.
           git push
+      - if: success() && steps.validate.outcome == 'success'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+        with: { path: site }
       - if: steps.gate.outputs.go == 'true'
         name: Review digest
         # 2026-09-24: a GitHub API hiccup here must not fail the job and block a deploy whose data already validated.
@@ -92,8 +125,8 @@ jobs:
           if [ -n "$n" ]; then
             if [ "${open_items:-1}" = "0" ]; then gh issue close "$n" --reason completed || true; else gh issue reopen "$n" || true; fi
           fi
-      - if: steps.check.outcome == 'failure'
-        name: Fail the run if the check or validation failed (after archiving and reporting)
+      - if: always() && steps.validate.outcome != 'success'
+        name: Fail the run if candidate validation failed (after archiving and reporting)
         run: exit 1
 
   rebuild:
@@ -109,12 +142,18 @@ jobs:
         with: { ref: main, persist-credentials: true }
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97   # v7.0.0
         with: { python-version: "3.12" }
+      - name: Curated data regression checks
+        run: python -m unittest discover -s tests
+      - name: Daily status regression checks
+        run: node tests/test_daily_status.js
       - run: python scripts/build.py && python scripts/validate.py
       - run: |
           git config user.name "runway-checker"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site
           git diff --cached --quiet || { git commit -m "Rebuild site $(date -u +%F)"; git push; }
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+        with: { path: site }
 
   deploy:
     # One source, one site (curator decision 2026-10-19): GitHub Pages serves appconferencerunway.org from main's site/.
@@ -130,10 +169,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
-        with: { ref: main, persist-credentials: false }
-      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d   # v6.0.0
-      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9   # v5.0.0
-        with: { path: site }
+      # Deploy only the validated artifact uploaded by this run, never a later main checkout.
       - id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346   # v5.0.1
