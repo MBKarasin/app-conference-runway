@@ -2,14 +2,12 @@
 
 Owner authorization: October 17, 2026. Website and repository public; owner contributions MIT licensed. Purpose: exchange of ideas and promotion of human health. See LICENSE and THIRD_PARTY_NOTICES.md.
 
-Main site uses Cloudflare Pages Direct Upload. Its current publishable snapshot is production/. Existing site/ and scripts/ retain their native GitHub Pages build; they do not overwrite production/. Do not assume a GitHub commit updates the main domain.
+## How the main domain is published (since October 19, 2026)
 
-The main snapshot includes the manually reconciled source review, source provenance, withheld unsupported PAEA future editions and persistent follow-up ledger. The 4 a.m. America/New_York heartbeat in the owner's local Codex app is configured to review, validate, publish and verify; it is not an unattended GitHub-to-Cloudflare integration.
+One source, one site. The nightly workflow (`.github/workflows/runway.yml`) checks organizer sources, rebuilds `site/`, validates it and commits the result to `main`. Cloudflare Pages is connected to this repository and publishes https://appconferencerunway.org/ from `site/` on every commit to `main`. A curator push is rebuilt and committed by the same workflow. `.github/workflows/freshness.yml` fails, and notifies the owner, when the live site has not updated in 30 hours.
 
-## Publishing main-domain changes
-
-Review production/data/follow-up.json and AI-HANDOFF.md; apply evidence-supported changes, preserve correction history, regenerate calendar and handoff, validate, upload the contents of production/ to the existing Cloudflare Pages appconferencerunway project, and verify the live domain. Record actual source-check and publication times, not merely a scheduler wakeup. Green requires successful checking, validation and publication.
+The October 17 manual reconciliation is carried into every build through `sources/curated.json`. Earlier copies (the hand-uploaded Cloudflare snapshot and the GitHub Pages copy) are retired and archived under `archive/`; every later version stays in the repository history and the daily data archive in `data/snapshots/`.
 
 ## Search discovery
 
-The main index and handoff permit indexing. robots.txt allows crawling and references sitemap.xml. The canonical main domain is https://appconferencerunway.org/. Search Console sitemap submission and URL inspection require an authenticated property with appropriate access. Search engines decide whether and when to index.
+robots.txt allows crawling and references sitemap.xml. The canonical domain is https://appconferencerunway.org/. Search engines decide whether and when to index.

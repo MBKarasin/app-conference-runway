@@ -549,6 +549,19 @@ def main():
     org_display = json.load(open(SRC / "org_display.json", encoding="utf-8"))
     for s in series.values():
         s["org_display"] = org_display.get(s["org"], s["org"])
+    # Curator reconciliation (sources/curated.json, 2026-10-17): a curated value applies only while the field still
+    # holds the value it replaced, so any later nightly update to that field wins.
+    cur = json.load(open(SRC / "curated.json", encoding="utf-8")) if (SRC / "curated.json").exists() else {}
+    held = set(cur.get("withhold", []))
+    for k, v in cur.get("add_series", {}).items(): series.setdefault(k, v)
+    eds = [e for e in eds if e["id"] not in held]; proj = [e for e in proj if e["id"] not in held]
+    have = {e["id"] for e in eds + proj}
+    eds += [dict(e) for i, e in cur.get("add", {}).items() if i not in have and e["series"] in series]
+    for e in eds + proj:
+        for k, (before, after) in cur.get("patch", {}).get(e["id"], {}).items():
+            if e.get(k) == before:
+                if after is None: e.pop(k, None)
+                else: e[k] = after
     all_eds = sorted(eds + proj, key=lambda e: (e["start"], e["series"]))
     used = {e["series"] for e in all_eds}
     # header stamps: when the nightly checker last read organizer pages, and the latest curator source review

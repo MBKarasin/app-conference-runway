@@ -962,20 +962,18 @@ details.month{scroll-margin-top:12px}
 
 /* ===== header stamp and list-card badges ===== */
 
-/* Status dots. Verified: green = a nightly verification recorded within 36 hours; red = none.
-   Horizon scan: green = everything the latest scan found is reconciled; yellow = something is still to reconcile.
-   Yellow carries a dark ring so the dot keeps 3:1 contrast on the light header. */
+/* Status dot: the run's health, not decoration. Green = the last check landed and fidelity holds;
+   amber = fidelity below 95%; red = the last scheduled check did not complete. */
 .mast .updated span::before{display:none!important}
 .mast .updated .stat{display:inline-block!important;width:8px;height:8px;border-radius:50%;
   margin-right:7px;vertical-align:1px;background:#1C7F48}
 .mast .updated .stat.ok{background:#1C7F48}
-.mast .updated .stat.warn{background:#F2C200;box-shadow:inset 0 0 0 1px #8C6D00}
+.mast .updated .stat.warn{background:#C25100}
 .mast .updated .stat.bad{background:#CC0033}
 /* The stamp sits level with the first line of the lede, with the Fidelity and Reliability indices beneath it. */
 .mast .ledeRow{align-items:start}
 .mast .updated{align-self:start;padding-top:0;row-gap:2px}
 .mast .updated .stamp-line{display:block}
-.mast .updated .scan-line{font-size:.94em}
 .mast .updated .fidline{display:block;font-size:11.5px;font-weight:700;letter-spacing:.01em;
   color:#45606B;font-variant-numeric:tabular-nums}
 .mast .updated .fidline .idx{white-space:nowrap}
@@ -1123,7 +1121,144 @@ details.month{scroll-margin-top:12px}
 /* F11: open calls with no published due date, listed above the Calendar's month grid. */
 .undatedrow{margin-top:6px}
 
-/* ---- 2026-10-06: orientation button, orientation dialog, curator-review badge (curator's instruction) ---- */
+/* ======================= appconferencerunway.org (2026-09-26) ======================= */
+/* Hero: what the Runway does, four live figures and three ways in. Compact, so the tool stays near the fold. */
+.hero{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;align-items:center;margin:14px 0 6px;padding:18px 22px;
+  background:linear-gradient(135deg,#102F3B 0%,#173F4E 70%,#1E4C5C 100%);color:#fff;border-radius:14px}
+.hero-h{font-family:var(--display);font-weight:700;font-size:clamp(1.35rem,2.2vw,1.9rem);line-height:1.12;margin:0 0 8px;letter-spacing:.2px}
+.hero-h span{display:block;color:#FFD2DC;font-weight:600}
+.hero-p{margin:0 0 12px;color:#E4EEF1;font-size:1rem;line-height:1.45;max-width:62ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:8px}
+.hero-cta .btn{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.35);text-decoration:none}
+.hero-cta .btn:hover,.hero-cta .btn:focus-visible{background:rgba(255,255,255,.18)}
+.hero-cta .btn.primary{background:#CC0033;border-color:#CC0033;color:#fff}
+.hero-cta .btn.primary:hover{background:#A8002A}
+.hero-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}
+.hero-stats div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:10px 12px}
+.hero-stats dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:#BFD3DA}
+.hero-stats dd{margin:2px 0 0;font-family:var(--display);font-size:1.9rem;font-weight:700;line-height:1;color:#fff}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:14px;padding:14px 16px}.hero-stats{grid-template-columns:repeat(4,minmax(0,1fr))}.hero-stats dd{font-size:1.4rem}}
+@media (max-width:560px){.hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-p{font-size:.95rem}.hero-cta .btn{flex:1 1 auto;text-align:center}}
+
+/* Confidence: High carries no label; Medium is stated plainly, with its reason inside the record. */
+.conf{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;font-weight:600;padding:1px 7px;border-radius:999px;white-space:nowrap;vertical-align:middle}
+.conf.med{background:#FBEFD6;color:#7A4A00;border:1px solid #E8C98A}
+.conf-why{display:block;margin-top:4px;font-size:.88rem;color:var(--ink-2)}
+
+/* Plan your attendance */
+.plan{margin:14px 0 6px;padding:14px 16px;border:1px solid var(--rule);border-radius:12px;background:var(--surface-2)}
+.plan-h{font-family:var(--display);font-size:1.25rem;margin:0}
+.plan-sub{margin:2px 0 10px;color:var(--ink-2)}
+.plan-from{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.plan-from label{font-weight:600}
+.plan-from input{flex:1 1 220px;min-width:0;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;font:inherit;background:#fff}
+.is-phone .plan-from input{font-size:16px}   /* a phone zooms in on a field smaller than 16 px */
+.plan-privacy{margin:6px 0 0;font-size:.82rem;color:var(--ink-3)}
+.plan-summary{margin:12px 0 8px;padding:10px 12px;background:#fff;border-left:4px solid #CC0033;border-radius:6px}
+.plan-warn{margin:10px 0;color:#7A4A00;background:#FBEFD6;padding:8px 10px;border-radius:6px}
+.plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin-top:10px}
+.plan-card{background:#fff;border:1px solid var(--rule-soft);border-radius:10px;padding:10px 12px}
+.plan-card.wide{margin-top:10px}
+.plan-card.muted{color:var(--ink-2)}
+.plan-card h5{margin:0 0 6px;font-size:.8rem;letter-spacing:.07em;text-transform:uppercase;color:#102F3B}
+.plan-card p{margin:4px 0}
+.fees{width:100%;border-collapse:collapse;font-size:.92rem}
+.fees td{padding:4px 2px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+.fees td.amt{text-align:right;font-weight:700;white-space:nowrap}
+.fees tr.ended td{color:var(--ink-3);font-weight:400}
+.fees tr.ended td.amt{text-decoration:line-through;font-weight:400}
+.plan-srcs,.plan-links{font-size:.86rem;color:var(--ink-2)}
+.plan-src a{word-break:break-all}
+.plan-list{margin:4px 0 0;padding-left:18px}
+.plan-list li{margin:3px 0}
+.plan-near ul{margin:4px 0 0;padding-left:18px}
+.plan-foot{margin:10px 0 0;font-size:.82rem;color:var(--ink-3)}
+.owner{margin-top:6px}
+/* Phones: the meetings come first. The masthead's own lede already says what the Runway is, so the hero is left out. */
+@media (max-width:700px){ html:not(.force-desktop) .hero{display:none} }
+.fees-ended{margin-top:6px}
+.fees-ended summary{cursor:pointer;font-size:.86rem;color:var(--ink-2)}
+.conf-line{font-size:.86rem;color:var(--ink-2)}
+
+/* October 17, 2026: one compact curator row; full site notes live in AI Handoff. */
+footer{padding-block:10px!important}
+footer .foot{display:block!important}
+footer .curator{display:grid!important;grid-template-columns:260px minmax(0,1fr)!important;gap:0 28px!important;padding:4px 0 4px 12px!important}
+footer .curator .curated-line{grid-column:1!important;grid-row:1!important;font-size:10px!important;line-height:1.2!important}
+footer .curator .who{grid-column:1!important;grid-row:2!important;font-size:16px!important;line-height:1.2!important}
+footer .curator .credentials{grid-column:1!important;grid-row:3!important;font-size:11px!important;line-height:1.3!important}
+footer .footer-resource{grid-column:1!important;grid-row:4!important;margin:2px 0 0!important;font-size:11px;line-height:1.3}
+footer .roles{grid-column:2!important;grid-row:1/5!important;grid-template-columns:1fr 1fr!important;gap:20px!important;margin:0!important}
+footer .roles li{gap:2px!important;min-width:0}
+footer .roles a{font-size:12px!important;line-height:1.25!important}
+footer .roles .role-title{font-size:11px!important;line-height:1.25!important}
+footer .role-title-line{white-space:normal!important}
+@media(max-width:800px){footer .curator{grid-template-columns:210px minmax(0,1fr)!important;gap:0 18px!important}footer .roles{gap:12px!important}}
+@media(max-width:600px){footer .curator{grid-template-columns:1fr!important;gap:2px!important}footer .roles{grid-column:1!important;grid-row:5!important;grid-template-columns:1fr 1fr!important;margin-top:8px!important}footer .roles li{padding-left:8px!important}}
+/* Balanced compact footer revision. */
+footer{padding-block:7px!important}
+footer .curator{grid-template-columns:230px minmax(0,660px)!important;gap:0 24px!important;padding-block:2px!important}
+footer .curator .curated-line{font-size:9px!important;line-height:1.1!important;margin-bottom:1px!important}
+footer .curator .who{font-size:15px!important;line-height:1.15!important}
+footer .curator .credentials{font-size:10px!important;line-height:1.2!important}
+footer .footer-resource{font-size:10px!important;line-height:1.2!important;margin-top:1px!important}
+footer .roles{grid-template-columns:minmax(0,310px) minmax(0,310px)!important;gap:24px!important;align-self:center}
+footer .roles li{padding-left:10px!important;gap:1px!important}
+footer .roles .role-label{font-size:9px!important;line-height:1.15!important;letter-spacing:.06em!important}
+footer .roles a{font-size:11px!important;line-height:1.2!important}
+footer .roles .role-title{font-size:10px!important;line-height:1.2!important}
+@media(max-width:800px){footer .curator{grid-template-columns:195px minmax(0,1fr)!important;gap:0 18px!important}footer .roles{gap:16px!important}}
+@media(max-width:600px){footer .curator{grid-template-columns:1fr!important}footer .roles{grid-column:1!important;grid-row:5!important;margin-top:7px!important;gap:16px!important;grid-template-columns:1fr 1fr!important}}
+
+.mast .updated .stat.warn{background:#D4A300}
+
+/* Confidence remains in records and calculations; hidden from the visitor interface. */
+.conf,.conf-why,.conf-line,.fidline,.idx-note,label:has(#review){display:none!important}
+
+footer .roles{grid-row:1/4!important}footer .curator .who a{font:inherit;color:inherit;text-decoration:none}footer .curator .who a:hover{text-decoration:underline}
+@media(max-width:600px){footer .roles{grid-row:4!important}}
+/* Footer identity accents requested October 17. */
+footer{border-top:2px solid #CC0033!important}
+footer .roles li:last-child{border-left-color:#50A9D3!important;background:transparent;padding:0 0 0 10px!important}
+footer .roles li:last-child .role-label{color:#627B85!important}
+footer .roles li:last-child>a{color:#173946!important}
+footer .roles li:last-child .role-title{color:inherit!important}
+
+/* Curator identity follows the website navy; outer footer divider remains scarlet. */
+footer .curator{border-left-color:#102F3B!important;border-top-color:#102F3B!important}
+footer .curator .curated-line,footer .curator .who,footer .curator .who a{color:#102F3B!important}
+
+/* Local header preview: end subtitle at the first action button. */
+.mast .lede{max-width:var(--subtitle-width,100%)!important}
+
+/* Subtitle adopts the former right-side identity caption typography. */
+.mast .lede{font-family:var(--body)!important;font-size:.72rem!important;font-weight:700!important;line-height:1.25!important;letter-spacing:.12em!important;text-transform:uppercase;color:#102F3B!important;text-wrap:balance}
+@media(max-width:700px){.mast .lede{font-size:10.5px!important;letter-spacing:.06em!important}}
+
+/* Two-line desktop subtitle with the approved caption style. */
+@media(min-width:701px){.mast .lede{font-size:11px!important;letter-spacing:.045em!important;line-height:1.3!important}}
+
+/* Right-side identity caption and three vertically grouped actions. */
+.mast.header-right-caption .titlerow{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:28px!important;align-items:center!important}
+.mast.header-right-caption .headactions{display:grid!important;grid-template-columns:145px minmax(0,1fr)!important;gap:20px!important;align-items:center!important;width:100%;margin:0!important}
+.mast.header-right-caption .header-links{display:flex;flex-direction:column;gap:5px}
+.mast.header-right-caption .header-links .hbtn{width:100%;justify-content:flex-start;min-height:30px;padding:6px 9px!important;font-size:11px!important;margin:0!important}
+.mast.header-right-caption .header-links .hb-long{display:inline!important}
+.mast.header-right-caption .header-links .hb-short{display:none!important}
+.mast.header-right-caption .lede{max-width:100%!important;width:100%;text-align:left;margin:0!important;grid-column:2;letter-spacing:.045em!important}
+.mast.header-right-caption .ledeRow{display:flex!important;justify-content:flex-end;min-height:0}
+@media(max-width:700px){
+ .mast.header-right-caption .titlerow{grid-template-columns:1fr!important;gap:14px!important}
+ .mast.header-right-caption .headactions{grid-template-columns:135px minmax(0,1fr)!important;gap:16px!important}
+ .mast.header-right-caption h1.brand-heading{width:100%!important;max-width:620px!important}
+}
+
+/* Owner final direction: logo reduced by 15%; subtitle restored beneath it. */
+.mast .brand-logo{width:85%!important}
+
+@media(max-width:700px){.mast .headactions{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+
+/* "What am I looking at?" orientation dialog (curator instruction 2026-10-06). */
 .headactions .hbtn-about,.mast .headactions .hbtn-about{background:#CC0033!important;border-color:#CC0033!important;color:#fff!important}
 .headactions .hbtn-about:hover,.headactions .hbtn-about:focus-visible,.mast .headactions .hbtn-about:hover,.mast .headactions .hbtn-about:focus-visible{background:#A8002A!important;border-color:#A8002A!important;color:#fff!important}
 .about-dlg{max-width:680px}
@@ -1131,5 +1266,6 @@ details.month{scroll-margin-top:12px}
 .about-body h4{margin:6px 0 0;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#CC0033}
 .about-body p{margin:0}
 .about-body a{color:inherit}
-.cur-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;color:#3B2F00;background:#FFD54A;border:1px solid #E6B800;border-radius:4px;padding:1px 7px;cursor:help;white-space:nowrap}
-.mast .updated .cur-line::before,.mast .updated .cur-badge::before{display:none!important}
+/* Phone: Orbit legend as a 2x2 grid so the four record types line up (curator instruction 2026-10-19). */
+@media (max-width:640px){.orbit-legend{display:grid;grid-template-columns:repeat(2,max-content);justify-content:center;gap:6px 24px}.orbit-legend span{white-space:nowrap}}
+@media (max-width:700px){.mast .headactions .hbtn-about{grid-column:1/-1}}

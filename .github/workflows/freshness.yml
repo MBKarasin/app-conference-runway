@@ -1,0 +1,23 @@
+name: Live site freshness alarm
+# Fails (GitHub emails the repository owner) when appconferencerunway.org has not published a nightly update in 30 hours.
+# Added 2026-10-19 after the domain sat on its 2026-10-17 copy while the nightly job kept running elsewhere.
+on:
+  schedule:
+    - cron: "0 15 * * *"         # 11 a.m. EDT / 10 a.m. EST, after the late-starting nightly run has had time to publish
+  workflow_dispatch: {}
+permissions: {}
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, sys, urllib.request, datetime as dt
+          url = "https://appconferencerunway.org/data/update-status.json"
+          s = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"Cache-Control": "no-cache"}), timeout=30))
+          started = dt.datetime.fromisoformat(s["started_at"].replace("Z", "+00:00"))
+          age = (dt.datetime.now(dt.UTC) - started).total_seconds() / 3600
+          print(f"live update started {s['started_at']} ({age:.1f} h ago), status {s.get('status')}")
+          sys.exit(1 if age > 30 or s.get("status") != "success" else 0)
+          PY

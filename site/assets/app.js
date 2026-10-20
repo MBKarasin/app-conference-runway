@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   const CONFIG = window.RUNWAY_CONFIG || {};
-  const REPO = CONFIG.repo || "";
+  const MAIL = CONFIG.requestEmail || "";
 
   /* ---------- helpers ---------- */
   const $ = (s, r = document) => r.querySelector(s);
@@ -18,7 +18,6 @@
   const daysBetween = (a, b) => Math.round((D(b) - D(a)) / 864e5);
   const longDate = s => { const d = D(s); return MONTH[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear(); };
   const md = s => MON[D(s).getMonth()] + " " + D(s).getDate();
-  const dayStamp = s => /^\d{4}-\d{2}-\d{2}$/.test(String(s || "")) ? md(s) + ", " + s.slice(0, 4) : String(s || "");
   // Phones held upright (below 700 px) get the Calendar as a day-by-day agenda; see calAgenda.
   const PHONE_CAL = window.matchMedia ? window.matchMedia("(max-width: 700px)") : { matches: false };
   function range(e) {
@@ -115,7 +114,7 @@
     if (!st.focus && legacyView === "deadlines") st.focus = "due";                          // older view=deadlines links
     if (h.get("near")) st.nearQ = h.get("near");
     if (+h.get("r")) st.radius = +h.get("r");
-    st.review = h.get("review") === "1"; st.expected = h.get("exp") === "1";
+    st.review = false; // Confidence filtering is currently hidden. st.expected = h.get("exp") === "1";
     st.within = +(h.get("within") || 0);
     if (/^\d{4}-\d{2}$/.test(h.get("cal") || "")) {
       st.cal = h.get("cal");
@@ -146,6 +145,7 @@
 
   /* ---------- data ---------- */
   let DATA, SERIES, EDS, SPECS, COUNTRIES = [], CITIES = null;
+  let CHECK_FRESH = false;   // a nightly re-read completed within 36 hours (sets Confidence and the Reliability Index)
   // Red team F10: when the organizer publishes a cut-off time (call.due_time "HH:MM" in call.tz, an IANA zone), the
   // call closes at that instant, wherever the visitor is. cutoffAt turns the organizer's wall-clock time into an instant.
   function cutoffAt(date, time, tz) {
@@ -221,6 +221,7 @@
       s.focus = focusOrder.filter(f => focus.has(f));
     });
     DATA = d;
+    CHECK_FRESH = !!d.sources_checked && (Date.now() - Date.parse(d.sources_checked)) / 36e5 <= 36;
     SERIES = new Map(d.series.map(s => [s.id, s]));
     EDS = d.editions.filter(e => SERIES.has(e.series)).map(e => {
       const s = SERIES.get(e.series);
@@ -352,6 +353,26 @@
   }
   // An exception is any record whose current source check did not confirm it: not found, conflicting,
   // or unreadable without curator evidence on file.
+  /* ---------- confidence (appconferencerunway.org) ----------
+     High confidence carries no label: the latest nightly re-read confirmed the record from the organizer's own page
+     or image, or the date comes from a published rule, or the meeting has ended and is kept as recorded.
+     A dated record not yet ended that the latest re-read did not confirm shows "Confidence: Medium" with its reason.
+     It stays listed. The same records are the ones the Reliability Index leaves out. */
+  const whenReviewed = v => { const d = String(v.last_verified || v.checked || "").slice(0, 10); return /^\d{4}-\d{2}-\d{2}$/.test(d) ? " on " + longDate(d) : ""; };
+  function mediumWhy(e) {
+    const v = e.verify || {};
+    if (e.past || e.expectedRow || e.month_only || v.state === "rule" || v.state === "expected") return "";
+    if (!CHECK_FRESH) return "No automated re-read of the organizer's page has completed in the last 36 hours.";
+    if (e.machine) return "";
+    const c = e.check_note || {}, why = c.why || v.why || "";
+    if (c.state === "disagree") return "On the latest re-read our two independent readers disagreed about the organizer's page. The record is under review; confirm with the organizer.";
+    if (v.state === "not_found" || c.state === "not_found") return "The latest re-read did not find these dates on the organizer's page. The record is under review; confirm with the organizer.";
+    if (v.state === "conflict") return v.why || "The organizer's own pages give different dates; the record follows the primary event page.";
+    if (/HTTP 40[36]|HTTP 429|asked the reader|robots/i.test(why)) return "The organizer's site did not let our automated reader in on the latest re-read. The date was confirmed by hand from the organizer's page" + whenReviewed(v) + ".";
+    if (v.method === "manual") return "Confirmed by hand from the organizer's page" + whenReviewed(v) + "; the latest automated re-read could not confirm it" + (why ? " (" + why.replace(/^URLError: /, "") + ")" : "") + ".";
+    if (v.state === "announced") return "The organizer has published a save-the-date; the latest re-read did not confirm it.";
+    return "Not confirmed by the latest automated re-read" + (why ? " (" + why + ")" : "") + ".";
+  }
   function isException(e) {
     const v = e.verify || { state: "unchecked" };
     if (["expected", "rule", "archived", "announced"].includes(v.state)) return false;
@@ -361,7 +382,7 @@
     if (v.state === "verified") return false;
     return true;
   }
-  function verMatch(e) { return !st.review || isException(e); }
+  function verMatch(e) { return !st.review || !!mediumWhy(e); }
   /* ---------- search synonyms ----------
      The corpus says "Cardiothoracic Surgery"; a clinician types "cardiac". Each query word also matches
      its clinical equivalents. Every expansion below points at wording that actually appears in this
@@ -511,17 +532,19 @@
     // exceptionsOnly = false: list cards. exceptionsOnly = true: record dialog and Directory (exceptions and projections only).
     // Check times stay in the page header.
     if (v.state === "expected") return `<span class="source-note muted" title="Projected from this meeting's usual month. No date has been published.">Expected month</span>`;
+    const mw = mediumWhy(e);
+    if (mw) return `<span class="conf med" title="${esc(mw)}">Confidence: Medium</span>`;
     const [baseLabel, icon] = VSTATE[v.state] || VSTATE.unchecked;
-    // A confirmed record is presumed right: a record that passed its check carries no badge at all. A label appears only
+    // Fidelity is presumed: a record that passed its check carries no badge at all. A label appears only
     // when the checks found something to say: a projection, a save-the-date, a rule-computed date, or an exception.
     if (v.state === "verified") return "";
     if (exceptionsOnly && (v.state === "rule" || v.state === "archived")) return "";
     if (v.state === "announced" && exceptionsOnly) return `<span class="vf verified" title="The organizer has published a save-the-date for these days; the detailed programme is still to come.">${ICON.check}Save the date</span>`;
     const label = v.state === "verified" && v.method === "manual" ? "Source reviewed" : baseLabel;
     const when = "";   // the page header carries the check time; repeating it on every record only adds noise
-    const tip = v.state === "verified" && v.method === "manual" ? "Confirmed by a manual review of the organizer's own source, not by the nightly text match. Open the record for the quoted wording and the source link, and confirm details with the organizer before booking." :
+    const tip = v.state === "verified" && v.method === "manual" ? "Confirmed by a manual review of the organizer's own source, not by the automated text match. Open the record for the quoted wording and the source link, and confirm details with the organizer before booking." :
       v.state === "verified" ? "Start date, year and a distinctive meeting-name word were found on the organizer page. Confirm the end date there before booking." :
-      v.state === "not_found" ? "The nightly check could not find these dates on the organizer page. Confirm before relying on them." :
+      v.state === "not_found" ? "The latest automated check could not find these dates on the organizer page. Confirm before relying on them." :
       v.state === "conflict" ? (v.why || "The organizer publishes conflicting dates; confirm the final date before relying on it.") :
       v.state === "expected" ? "Projected from this meeting's usual month. No date has been published." :
       v.state === "announced" ? "The organizer has published a save-the-date for these days. Treat the range as theirs and the programme as still to come." :
@@ -907,22 +930,52 @@
     el.innerHTML = `<div class="live-ribbon"><span class="live-flag">${current.s.name === "National APP Week" ? `OUR WEEK · DAY ${daysBetween(current.start, TODAY) + 1} OF ${daysBetween(current.start, current.end) + 1}` : "HAPPENING NOW"}</span><strong>${esc(current.s.name)}</strong><span class="live-dates">${esc(range(current))} · through ${esc(MON[D(current.end).getMonth()] + " " + D(current.end).getDate())}</span><button class="live-source" data-e="${esc(current.id)}">View official source and details ↗</button></div>`;
   }
 
-  /* ---------- fidelity index: reach (the curator's team) ----------
-     No complete list of APP meetings exists, so reach is estimated by capture–recapture. An independent probe
-     starts from frames published by third parties (lists of organizations, or of meetings) and reads each
-     organizer's own events page without looking at the Runway (sources/probes.json, carried as DATA.probes). Fidelity is the share of the
-     distinct qualifying meetings the latest probe found that the Runway already held, with the 95% Wilson
-     interval. It says nothing about whether a record is right; that is Reliability's job. It changes only when a
-     new probe (the weekly horizon scan) is recorded. */
-  const latest = xs => xs.reduce((a, b) => (String(b.date) >= String(a.date) ? b : a));   // a later entry wins a tie
+  /* ---------- fidelity index ----------
+     What it counts: of every dated record the site shows, the share that
+       (1) carries the organizer's own wording, or is computed from a published rule,
+       (2) holds a good verification state,
+       (3) has a source link, and, if the meeting has not happened yet,
+       (4) a source link that still resolves, and
+       (5) a confirmation no older than 90 days.
+     That share is multiplied by the share projected correct from the independent audits' pooled
+     error rate (below), so the index reflects the errors audits keep finding.
+     It falls when an organizer removes a page an upcoming record depends on, when a check fails
+     with no organizer wording on file, when confirmations go stale, or when an audit finds errors. */
+  const FID_OK = new Set(["verified", "rule", "announced", "archived"]);
   function fidelityIndex() {
-    const P = ((DATA && DATA.probes) || []).filter(p => Number(p.found) > 0);
-    if (!P.length) return null;
-    const p = latest(P), held = Number(p.held) || 0, found = Number(p.found);
-    const [lo, hi] = wilsonInterval(held, found);
-    const w = p.window || {};
-    return { pct: (100 * held) / found, held, found, low: 100 * lo, high: 100 * hi, date: p.date, finished: p.finished || null, rec: p.reconciliation || null,
-             from: w.from, to: w.to, frames: (p.frames || []).length };
+    const dated = EDS.filter(e => !e.expectedRow && !e.month_only);
+    if (!dated.length) return null;
+    const ok = dated.filter(e => {
+      const v = e.verify || {};
+      if (!(e.evidence || v.state === "rule")) return false;
+      if (!FID_OK.has(v.state)) return false;
+      if (!e.source_url) return false;
+      if (!e.past) {
+        if (e.link_dead) return false;
+        if (v.state !== "rule") {
+          // Stamps come as dates ("YYYY-MM-DD") or instants ("YYYY-MM-DDThh:mm:ssZ"). D() takes a date only,
+          // so the age is taken from the calendar date. An unreadable stamp fails explicitly: NaN > 90 is false.
+          const seen = String(v.last_verified || v.checked || "").slice(0, 10);
+          const age = /^\d{4}-\d{2}-\d{2}$/.test(seen) ? daysBetween(seen, TODAY) : NaN;
+          if (!Number.isFinite(age) || age > 90) return false;
+        }
+      }
+      return true;
+    }).length;
+    // Independent audits of the upcoming records (sources/audits.json, carried as DATA.audits) count the records
+    // wrong in an action-critical field even though they carried organizer evidence. Their pooled rate projects how
+    // often a record with evidence is still wrong, including errors no audit has found yet. The index is the share
+    // with evidence times the share projected correct; the range uses the 95% Wilson interval of the audit rate.
+    // `wrong` is a count; a stale cached file may still carry a list of records, counted by its length.
+    const A = (DATA && DATA.audits) || [];
+    const audited = A.reduce((t, a) => t + (+a.audited || 0), 0);
+    const wrong = A.reduce((t, a) => t + (Array.isArray(a.wrong) ? a.wrong.length : (Number(a.wrong) || 0)), 0);
+    const rate = audited ? wrong / audited : 0;
+    const [rlo, rhi] = wilsonInterval(wrong, audited);
+    const coverage = ok / dated.length;
+    return { pct: 100 * coverage * (1 - rate), ok, total: dated.length, coverage: 100 * coverage,
+             wrong, audited, audits: A.length, correct: 100 * (1 - rate),
+             low: 100 * coverage * (1 - rhi), high: 100 * coverage * (1 - rlo) };
   }
   // 95% Wilson score interval for a proportion x/n, as [low, high]; [0, 0] when nothing was audited.
   function wilsonInterval(x, n, z = 1.959964) {
@@ -931,31 +984,23 @@
     return [Math.max(0, (c - r) / d), Math.min(1, (c + r) / d)];
   }
 
-  /* ---------- reliability index: organizer display, as verified ----------
-     Confirmation (a census, every night): of every upcoming dated record, the share the latest nightly
-       verification confirmed on the organizer's own material (carried per edition by build.py as `machine`),
-       plus dates computed from a published rule. When no verification has been recorded in 36 hours, only the
-       rule dates count.
-     Accuracy (a sample): of the records the latest audit examined (sources/audits.json, carried as DATA.audits),
-       the share right in every action-critical field against the organizer's own page. It stands until the
-       next audit; the range is its 95% Wilson interval, scaled by confirmation.
-     Reliability = confirmation × accuracy. */
+  /* ---------- reliability index ----------
+     What it counts: of every upcoming dated record, the share that the latest automated check
+       re-confirmed from the organizer's own material (start date, its year and a meeting-name word found
+       on the organizer's page, rendered when the page needs JavaScript, or in the organizer's own image
+       the record links; carried per edition by build.py as `machine`), plus dates computed from a published rule.
+     What it leaves out: records resting on a manual review of the organizer's source or on a
+       save-the-date. They count once the automated check can re-read them.
+     It falls when organizer sites block automated readers, when pages move, and to the rule-only
+     share when no check has completed in 36 hours. Fidelity asks "does every record carry the
+     organizer's evidence?"; reliability asks "can the machine reproduce it tonight?" */
   function reliabilityIndex(checkedAt) {
     const up = EDS.filter(e => !e.expectedRow && !e.month_only && !e.past);
     if (!up.length) return null;
     const fresh = !!checkedAt && (Date.now() - Date.parse(checkedAt)) / 36e5 <= 36;
     const rule = up.filter(e => (e.verify || {}).state === "rule").length;
     const machine = fresh ? up.filter(e => e.machine && (e.verify || {}).state !== "rule").length : 0;
-    const conf = (machine + rule) / up.length;
-    // `wrong` is a count; a stale cached file may still carry a list of records, counted by its length.
-    const A = ((DATA && DATA.audits) || []).filter(a => Number(a.audited) > 0);
-    const a = A.length ? latest(A) : null;
-    const audited = a ? Number(a.audited) : 0, wrong = a ? (Array.isArray(a.wrong) ? a.wrong.length : Number(a.wrong) || 0) : 0;
-    const acc = audited ? 1 - wrong / audited : 1;
-    const [wlo, whi] = wilsonInterval(wrong, audited);
-    return { pct: 100 * conf * acc, machine, rule, ok: machine + rule, total: up.length, fresh, conf: 100 * conf,
-             acc: 100 * acc, audited, right: audited - wrong, auditDate: a ? a.date : null,
-             low: 100 * conf * (audited ? 1 - whi : 1), high: 100 * conf * (audited ? 1 - wlo : 1) };
+    return { pct: (100 * (machine + rule)) / up.length, machine, rule, ok: machine + rule, total: up.length, fresh };
   }
 
   /* ---------- chip availability: a filter is offered only when it can return a record ---------- */
@@ -1017,7 +1062,7 @@
       <div class="fgroup"><span class="flabel">Type</span>${chipRow("kind", KIND_CHIPS)}</div>
       <div class="fgroup"><label class="flabel" for="spec">Specialty</label><select id="spec" class="sel"><option value="">All specialties</option>${SPECS.map(s => `<option ${s === st.spec ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
         <label class="toggle"><input type="checkbox" id="exp" ${st.expected ? "checked" : ""}> Show expected dates through ${DATA.horizon}</label>
-        <label class="toggle" title="Show only records whose latest automated source check did not confirm them"><input type="checkbox" id="review" ${st.review ? "checked" : ""}> Needs review only</label></div>`;
+        <label class="toggle" title="Show only records at Medium confidence: dated, not yet ended, and not confirmed by the latest automated re-read"><input type="checkbox" id="review" ${st.review ? "checked" : ""}> Medium confidence only</label></div>`;
     $("#filters").classList.toggle("open", filtersOpen);
     $("#geoquick").classList.toggle("open", filtersOpen);
     $("#fbtn").setAttribute("aria-expanded", String(filtersOpen));
@@ -1060,7 +1105,7 @@
     else if (st.nearQ) applied.push(`Near: no place found for ${st.nearQ}; distance not applied`);
     if (st.spec) applied.push("Specialty: " + st.spec);
     if (st.q) applied.push("Search: " + st.q);
-    if (st.review) applied.push("Needs review only");
+    if (st.review) applied.push("Medium confidence only");
     const stamp = DATA && DATA.built ? stampET(DATA.built).replace(/^Data snapshot /, "") : "";
     $("#summary").innerHTML = `<b>${esc(summary)}</b>` + (applied.length ? `<span class="applied">${esc(applied.join(" · "))}</span>` : "");
     $("#fbtn").textContent = "Filters" + (activeCount() ? " (" + activeCount() + ")" : "");
@@ -1083,7 +1128,7 @@
   async function zipLookup(z) {
     const k = z.slice(0, 3);
     if (window.RUNWAY_ZIP) return window.RUNWAY_ZIP[z] || null;
-    try { const r = await fetch("geo/zip/" + k + ".json"); if (!r.ok) return null; const j = await r.json(); return j[z] || null; } catch (e) { return null; }
+    try { const r = await fetch("geo/zip2/" + z.slice(0, 2) + ".json"); if (!r.ok) return null; const j = await r.json(); return j[z] || null; } catch (e) { return null; }
   }
   // Cities carry their state or province (red team F05), so "Springfield, IL", "Springfield Illinois" and
   // "Portland, ME" resolve to the right place. Two-letter US state, Canadian province and Australian state codes are
@@ -1152,6 +1197,22 @@
     const others = quals.length ? 0 : C.filter(c => fold(c[0]) === fold(hit[0]) && c !== hit).length;
     st.near = { lat: hit[2], lon: hit[3], label: cityLabel(hit), others };
   }
+  // One place (ZIP, city with or without its state or country, or a country alone) → coordinates, for the planner.
+  async function resolvePlace(q) {
+    q = String(q || "").trim();
+    if (!q) return null;
+    if (/^\d{5}$/.test(q)) { const ll = await zipLookup(q); return ll ? { lat: ll[0], lon: ll[1], label: "ZIP " + q, country: "United States" } : null; }
+    const C = await cities(), { name, quals } = parsePlace(q), fn = fold(name);
+    const fits = c => quals.every(x => qualifies(x, c));
+    let hits = C.filter(c => fold(c[0]) === fn && fits(c));
+    if (!hits.length && !quals.length) {
+      const cn = fold(COUNTRY_ALIAS[fold(q)] || q), inC = C.filter(c => fold(c[1]) === cn);
+      if (inC.length) return { lat: inC[0][2], lon: inC[0][3], label: inC[0][0] + ", " + inC[0][1], country: inC[0][1], proxy: inC[0][1] };
+      hits = C.filter(c => fold(c[0]).startsWith(fn));
+    }
+    if (!hits.length) return null;
+    return { lat: hits[0][2], lon: hits[0][3], label: cityLabel(hits[0]), country: hits[0][1] };
+  }
   async function fillCityList(q) {
     if (!q || /^\d/.test(q)) { $("#citylist").innerHTML = ""; return; }
     const C = await cities(), { name, quals } = parsePlace(q), fn = fold(name);
@@ -1179,17 +1240,19 @@
     </div>`;
     if (!$("#dlg").open) $("#dlg").showModal();
   }
+  // The attendance planner (assets/plan.js) opens in every upcoming dated meeting, not in celebrations or projections.
+  const planFor = e => !e.past && !e.expectedRow && !e.month_only && e.s.kind !== "observance";
   function openDetail(e) {
     const s = e.s, v = e.verify || {};
     $("#dlg").dataset.cur = e.id;
     const L = EDS.filter(x => x.series === s.id).sort((a, b) => a.start.localeCompare(b.start));
     const Y0 = +TODAY.slice(0, 4), older = L.filter(x => +x.start.slice(0, 4) < Y0 - 3 && !x.expectedRow).reverse();
-    const fix = REPO ? `${REPO}/issues/new?template=fix.yml&title=${encodeURIComponent("Fix: " + s.name + " " + e.start.slice(0, 4))}` : "";
+    const fix = MAIL ? `mailto:${MAIL}?subject=${encodeURIComponent("Correction: " + s.name + " " + e.start.slice(0, 4))}&body=${encodeURIComponent("Record: " + s.name + " (" + range(e) + ")\nLink: " + location.origin + location.pathname + "#e=" + e.id + "\n\nWhat is wrong, and the organizer's page that shows the right detail:\n")}` : "";
     const li = x => `<li class="${x.id === e.id ? "cur" : ""}"><span class="y">${esc(range(x))}</span><span>${esc(x.location || (x.expectedRow ? ((x.end || x.start) < TODAY ? "No data available" : "Expected; not yet announced") : ""))}${x.detail_url ? ` · <a href="${esc(x.detail_url)}" target="_blank" rel="noopener noreferrer">Program & materials</a>` : ""}</span>${vBadge(x, true)}</li>`;
     $("#dlg").innerHTML = `<div class="dlg"><button class="x" data-act="close" aria-label="Close">×</button>
       <header><p class="eyebrow">${esc(s.org_display || s.org)}</p><h3>${esc(s.name)}</h3><div class="badges">${profTags(s)}${scopeBadges(s)}${specTags(s)}</div></header>
       <dl class="kv">
-        <dt>When</dt><dd><b>${esc(range(e))}</b> ${vBadge(e, true)}</dd>
+        <dt>When</dt><dd><b>${esc(range(e))}</b> ${vBadge(e, true)}${mediumWhy(e) ? `<span class="conf-why">${esc(mediumWhy(e))}</span>` : ""}</dd>
         ${e.location ? `<dt>Where</dt><dd>${esc(e.location)}${e.format && e.format !== "in person" ? " · " + esc(e.format) : ""}</dd>` : ""}
         ${e.theme ? `<dt>Theme</dt><dd><i>${esc(e.theme)}</i></dd>` : ""}
         ${s.kind !== "observance" && !e.expectedRow && !e.past ? `<dt>Call for abstracts</dt><dd>${callPill(e)} ${esc((e.call && e.call.text) || "")}${e.call && e.call.url ? ` · <a href="${esc(e.call.url)}" target="_blank" rel="noopener noreferrer">Submission page</a>` : ""}</dd>` : ""}
@@ -1202,6 +1265,7 @@
       </dl>
       ${e.evidence
         ? `<blockquote class="quote" title="${esc(e.evidence_auto ? "The sentence the date was found in at the last check." : "The wording recorded from the organizer's page.")}">“${esc(e.evidence)}”${e.evidence_auto ? ` <span class="fine">· found on the page at the last check</span>` : ""}</blockquote>` : ""}
+      ${planFor(e) ? `<section class="plan" id="plan" aria-label="Plan your attendance"></section>` : ""}
       ${e.sessions && e.sessions.length ? `<div><p class="flabel">Sessions & courses</p><ul class="sessions">${e.sessions.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
       ${e.daily && e.daily.length ? `<div><p class="flabel">Daily program · organizer calendar</p><ul class="sessions">${e.daily.map(x => `<li><b>${esc(md(x.date))}</b> · ${esc(x.title)}</li>`).join("")}</ul></div>` : ""}
       <div><p class="flabel">Seven-year view · ${Y0 - 3}–${Y0 + 3}</p><ol class="timeline years">${yearRows(s, L)}</ol>
@@ -1211,11 +1275,15 @@
         ${!e.expectedRow && !e.past ? `<button class="btn primary" data-act="ics">${ICON.cal}Add to calendar</button>` : ""}
         ${e.source_url ? `<a class="btn" href="${esc(e.source_url)}" target="_blank" rel="noopener noreferrer">${ICON.ext}Organizer page</a>` : ""}
         <button class="btn" data-act="copy">${ICON.link}Copy link</button>
-        ${fix ? `<a class="btn" href="${esc(fix)}" target="_blank" rel="noopener noreferrer">Suggest a fix</a>` : ""}
+        ${fix ? `<a class="btn" href="${esc(fix)}">Report a correction</a>` : ""}
       </div>
       <p class="fine">Details change. Confirm on the organizer's page before registering, submitting or booking travel.</p></div>`;
-    $("#dlg").dataset.e = e.id;
+    // The open record is dataset.cur (set above). The dialog must not carry data-e: the page's click handler opens the
+    // record named by the nearest [data-e], so a click anywhere inside it (the planner's field, its Plan button) re-rendered
+    // the record and lost what was being typed (2026-09-26).
     if (!$("#dlg").open) $("#dlg").showModal();
+    const planEl = $("#plan");
+    if (planEl && window.RunwayPlan) window.RunwayPlan.mount(planEl, e);
     writeHash({ e: e.id });
   }
   // A year row is judged by the last day of its expected window, not by its year: nothing in the past is
@@ -1324,7 +1392,7 @@
       const act = t.dataset.act;
       if (act === "clear") { const keep = { display: st.display, orbitScope: st.orbitScope, orbitFrom: st.orbitFrom, cal: st.cal }; Object.assign(st, DEF(), keep); render(); return; }
       if (act === "share") {
-        const note = `APP Conference Runway: conferences, abstract deadlines, student and DNP project opportunities, and celebration weeks for advanced practice providers, checked nightly against the organizers' own pages.\n${location.origin + location.pathname}\n(Search indexing is discouraged; pass it directly to colleagues.)`;
+        const note = `APP Conference Runway: conferences, abstract deadlines, student and DNP project opportunities, and celebration weeks for advanced practice providers, re-read by machine against the organizers' own pages.\n${location.origin + location.pathname}\n(Search indexing is discouraged; pass it directly to colleagues.)`;
         copy(note, "Note and link copied — paste it into an email or message.");
         return;
       }
@@ -1354,7 +1422,7 @@
       if (act === "prevY" || act === "nextY") { const [y, m] = st.cal.split("-").map(Number); st.cal = (y + (act === "nextY" ? 1 : -1)) + "-" + String(m).padStart(2, "0"); if (st.display === "orbit") { const [fy, fm] = st.orbitFrom.split("-").map(Number); st.orbitFrom = (fy + (act === "nextY" ? 1 : -1)) + "-" + String(fm).padStart(2, "0"); } render(); return; }
       if (act === "today") { st.cal = TODAY.slice(0, 7); render(); return; }
       if (act === "close") { $("#dlg").close(); return; }
-      if (act === "ics") { icsFor(byId($("#dlg").dataset.e)); return; }
+      if (act === "ics") { icsFor(byId($("#dlg").dataset.cur)); return; }
       if (act === "copy") { copy(location.href, "Link copied"); return; }
       if (act === "copyview") { copy(location.href, "Link to this view copied"); return; }
       if (act === "layout") {   // phones only: switch between the mobile and desktop layouts (assets/layout.js)
@@ -1418,6 +1486,16 @@
     window.addEventListener("hashchange", async () => { const e = readHash(); await resolveNear(); render(); if (e && byId(e)) openDetail(byId(e)); });
   }
 
+  /* ---------- hero figures (appconferencerunway.org) ---------- */
+  function fillHero() {
+    const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+    const up = EDS.filter(e => !e.past && !e.expectedRow && !e.month_only && e.s.kind !== "observance");
+    set("hs-meet", up.length.toLocaleString());
+    set("hs-open", String(new Set(EDS.filter(e => !e.past && isOpenNow(e)).map(e => e.id)).size));
+    set("hs-ctry", String(COUNTRIES.length));
+    set("hs-fees", String(up.filter(e => e.attend && (e.attend.status === "posted" || e.attend.status === "closed")).length));
+  }
+
   /* ---------- boot ---------- */
   async function boot() {
     const want = readHash();
@@ -1427,57 +1505,36 @@
       catch (e) { $("#view").innerHTML = `<div class="empty">The meeting data could not be loaded. Check your connection and refresh.</div>`; return; }
     }
     prep(d);
-    // Two time stamps (§3.4). Verified: when the latest recorded nightly verification ran; it drives Reliability and the
-    // record labels. Horizon scan: when the latest probe for meetings the Runway does not list finished; it sets Fidelity.
-    const checkedAt = d.sources_checked || null;
-    const verStamp = checkedAt ? stampET(checkedAt) : "not yet run";
+    fillHero();
+    const srcStamp = d.sources_checked ? stampET(d.sources_checked).replace(/^Data snapshot /, "") : stampET(d.built).replace(/^Data snapshot /, "");
     const f = fidelityIndex();
-    const scanAt = f && f.finished ? f.finished : null;
-    const scanStamp = scanAt ? stampET(scanAt) : f && f.date ? dayStamp(f.date) : "not yet run";
-    // The scan's dot reports its reconciliation, not its age (curator, 2026-09-26): green when everything the latest scan
-    // found has cleared (each meeting it found that the Runway lacked was added or rejected with a reason, and any error was
-    // checked and reconciled); yellow while anything is still to reconcile, or when no reconciliation is recorded.
-    const rc = f && f.rec;
-    const scanTone = rc && Number(rc.open) === 0 ? "ok" : "warn";
-    const scanTip = !f ? "No horizon scan is recorded yet."
-      : !rc ? "The latest horizon scan has no reconciliation recorded yet."
-      : scanTone === "ok" ? `The latest horizon scan has cleared: all ${rc.missing} meetings it found that the Runway lacked were reconciled (${rc.added} added, ${rc.rejected} set aside with a reason).`
-      : `The latest horizon scan has findings still to reconcile: ${rc.open} of the ${rc.missing} meetings it found that the Runway lacked await review (${rc.added} added and ${rc.rejected} set aside so far).`;
-    // The dot reports freshness only: red when no nightly verification has been recorded in 36 hours, green otherwise.
-    const failed = !checkedAt || (Date.now() - Date.parse(checkedAt)) / 36e5 > 36;
-    const tone = failed ? "bad" : "ok";
-    const dotTip = failed
-      ? "No nightly verification has been recorded in the last 36 hours. The records below are as of the time shown, and only dates set by a published rule count as confirmed."
-      : "The latest nightly verification was recorded within the last 36 hours.";
-    const pc = (x, n = 1) => x.toFixed(n) + "%";
+    let dailyRun = null;
+    try { const response = await fetch("data/update-status.json", { cache: "no-cache" }); if (response.ok) dailyRun = await response.json(); } catch (_) { /* Missing status is reported as a missed run. */ }
+    const daily = window.runwayDailyStatus(dailyRun);
+    const checkedAt = d.sources_checked || null;
+    const tone = daily.tone;
+    const dotTip = daily.detail;
+    const pc = x => x.toFixed(2) + "%";
     const fidTip = f
-      ? `Reach: an independent probe on ${dayStamp(f.date)} drew organizations and meetings from ${f.frames} frames published by third parties and read each organizer's own events page without looking at the Runway. Of the ${f.found} qualifying dated meetings it found, starting ${dayStamp(f.from)} to ${dayStamp(f.to)}, the Runway already held ${f.held}: ${pc(f.pct, 2)} (95% interval ${pc(f.low)}–${pc(f.high)}). Every meeting found that the Runway lacks enters review. Fidelity measures how much of the APP meeting world the Runway holds, not whether a record is right; Reliability measures that.`
+      ? `${f.ok} of ${f.total} dated records carry the organizer's own wording (or a published rule), hold a good verification state, and — for meetings still ahead — a working source link confirmed within 90 days (${pc(f.coverage)}).` +
+        (f.audited ? ` ${f.audits === 1 ? "An independent audit" : f.audits + " independent audits"} found ${f.wrong} wrong in ${f.audited} record audits of upcoming records (a date, format, place, abstract call or eligibility that disagreed with the organizer), so a record is projected correct ${pc(f.correct)} of the time, errors not yet found included. Fidelity = ${pc(f.coverage)} × ${pc(f.correct)}; 95% range ${f.low.toFixed(1)}–${f.high.toFixed(1)}%.${f.audits > 1 ? " The audits looked at the same records; the handoff (§3.5) gives the wider readings." : ""}` : "")
       : "";
     const r = reliabilityIndex(checkedAt);
     const relTip = r
       ? (r.fresh
-          ? `Confirmation: ${r.ok} of ${r.total} upcoming dated records (${pc(r.conf, 2)}) were confirmed on the organizer's own material by the latest nightly verification (${r.machine}) or are set by a published rule (${r.rule}).`
-          : `Confirmation: no nightly verification has been recorded in the last 36 hours, so only the ${r.rule} dates set by a published rule count: ${r.ok} of ${r.total} upcoming dated records (${pc(r.conf, 2)}).`) +
-        (r.audited
-          ? ` Accuracy: the latest audit (${dayStamp(r.auditDate)}) found ${r.right} of ${r.audited} audited records right in every action-critical field (dates, place, format, abstract call, eligibility) against the organizers' own pages: ${pc(r.acc, 2)}. Reliability = ${pc(r.conf, 2)} × ${pc(r.acc, 2)}; 95% range ${pc(r.low)}–${pc(r.high)}.`
-          : " No audit is recorded, so accuracy is not measured.")
+        ? `${r.ok} of ${r.total} upcoming dated records: ${r.machine} re-confirmed from the organizer's own page or image by the latest automated check, and ${r.rule} computed from a published rule. The other ${r.total - r.ok} rest on a manual review of the organizer's source or a save-the-date, and count once the check can re-read them.`
+        : `No automated check has completed in the last 36 hours, so only the ${r.rule} dates computed from a published rule count (${r.ok} of ${r.total}).`)
       : "";
     // Red team F16: a definition held only in a hover title cannot be reached by touch or keyboard. Each index is a
     // button (styled as the text it replaces) that opens its definition beneath the header; hover still shows it.
-    const idx = [
+    const trackedIndices = [
       f ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(fidTip)}" data-note="${esc(fidTip)}">Fidelity Index: ${f.pct.toFixed(2)}%</button>` : "",
       r ? `<button type="button" class="idx" aria-expanded="false" aria-controls="idx-note" title="${esc(relTip)}" data-note="${esc(relTip)}">Reliability Index: ${r.pct.toFixed(2)}%</button>` : ""
     ].filter(Boolean);
-    // Curator reviewed (2026-10-06, curator's instruction): the date of the last supervised manual reconciliation of the
-    // published records, carried in data/runway.json as curator_reviewed. Verified and Horizon scan are automated; this is not.
-    const cur = /^\d{4}-\d{2}-\d{2}$/.test(d.curator_reviewed || "") ? d.curator_reviewed : null;
-    const curTip = cur ? `Curator reviewed ${dayStamp(cur)}: the last supervised manual reconciliation of the published records by the curator. Verified and Horizon scan are automated checks; this date is a human review and changes only when one is recorded.` : "";
+    const idx = []; // Retain index calculations; hide the confidence layer in the visitor interface.
     $("#updated").innerHTML =
-      `<span class="stamp-line"><i class="stat ${tone}" role="img" aria-label="${esc(dotTip)}" title="${esc(dotTip)}"></i>Verified ${esc(verStamp)}</span>` +
-      `<span class="stamp-line scan-line"><i class="stat ${scanTone}" role="img" aria-label="${esc(scanTip)}" title="${esc(scanTip)}"></i>Horizon scan ${esc(scanStamp)}</span>` +
-      (cur ? `<span class="stamp-line cur-line"><span class="cur-badge" role="img" aria-label="${esc(curTip)}" title="${esc(curTip)}">Curator reviewed ${esc(dayStamp(cur))}</span></span>` : "") +
+      `<span class="stamp-line" role="status"><i class="stat ${tone}" title="${esc(dotTip)}" aria-hidden="true"></i><span class="sr">${esc(daily.label)}. </span>Updated ${esc(srcStamp)}</span>` +
       (idx.length ? `<span class="fidline">${idx.join('<span class="idx-sep" aria-hidden="true"> · </span>')}</span><span class="idx-note" id="idx-note" role="note" hidden></span>` : "");
-    $("#updated").setAttribute("datetime", d.sources_checked || d.built);
     const lt = $(".layout-toggle");
     if (lt) lt.textContent = document.documentElement.classList.contains("force-desktop") ? "Switch to the mobile layout" : "Desktop layout";
     await resolveNear();
@@ -1495,8 +1552,8 @@
       const wasOpen = b.getAttribute("aria-expanded") === "true";
       close();
       if (wasOpen) return;
-      // The definitions live in the handoff on this site (§3.4), readable with no GitHub account (2026-09-26).
-      const how = ` <a href="ai-handoff.html#34-fidelity-and-reliability" target="_blank" rel="noopener">How both indices are defined</a>`;
+      // The definitions live in the handoff on this site (§4).
+      const how = ` <a href="ai-handoff.html#4-confidence-and-the-indices" target="_blank" rel="noopener">How both indices are defined</a>`;
       note.innerHTML = esc(b.dataset.note) + how;
       note.hidden = false;
       b.setAttribute("aria-expanded", "true");
@@ -1518,5 +1575,7 @@
     const now = new Date(), next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 30);
     setTimeout(function tick() { check(); setTimeout(tick, 36e5); }, Math.max(1000, next - now));
   }
+  window.RunwayAPI = { resolvePlace, esc, range, longDate, md, D, iso, addDays, daysBetween, TODAY, colorOf: s => colorOf(s),
+    eds: () => EDS, open: id => { const e = byId(id); if (e) openDetail(e); }, near: () => st.nearQ, mediumWhy };
   boot();
 })();
