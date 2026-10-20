@@ -1635,6 +1635,16 @@
       "source_reviewed": true,
       "reviewed_on": "2026-10-20",
       "evidence": "NSNA 75th Annual Convention, Mar 31, 2027 to Apr 3, 2027, Lake Buena Vista, Florida"
+    },
+    "ba1fd203973c": {
+      "removed": true,
+      "reviewed_on": "2026-10-20",
+      "_why": "Withheld pending organizer confirmation: the migrated RWJUH FCCS claim for October 19–20, 2026 in New Brunswick has no stored organizer evidence quote. The earlier SCCM calendar snippet instead describes FCCS: Pediatrics-Geisinger in Danville, PA and cannot support this host or course. On October 20, 2026 the official RWJUH schedule lists 2025 courses only, and the current SCCM calendar does not confirm this RWJUH edition. Preserve its original source and dated record in the ledger; do not treat this as proof the course was cancelled.",
+      "review_method": "official_page_review_unsupported_edition_withheld",
+      "review_sources": [
+        "https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/",
+        "https://sccm.org/education-center/conference-calendar"
+      ]
     }
   },
   "rules": {
