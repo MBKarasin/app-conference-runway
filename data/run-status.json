@@ -1,14 +1,14 @@
 {
   "schedule": "04:00 America/New_York (GitHub Actions)",
-  "status": "success",
-  "started_at": "2026-10-20T15:08:03Z",
-  "completed_at": "2026-10-20T15:13:00Z",
+  "status": "failure",
+  "started_at": "2026-10-21T13:33:00Z",
+  "completed_at": "2026-10-21T13:33:51Z",
   "sources_checked_at": "2026-10-20T15:08:38Z",
   "published_at": null,
   "outcomes": {
-    "validate": "success",
-    "sources": "success",
-    "links": "success",
+    "validate": "skipped",
+    "sources": "skipped",
+    "links": "skipped",
     "readers": "success"
   }
 }
