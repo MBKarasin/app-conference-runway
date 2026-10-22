@@ -1,39 +1,31 @@
 # Nightly source check — 2026-10-22
 
-Generated 2026-10-22T02:48:37Z from commit 3bf795b. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-22T13:38:52Z from commit 08fb37c. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 224 · verified 196 · not found 5 · unreachable 23
-Checker could not match: 28 · of these, curator evidence on file: 25 · open: 3
-Confirmed by the second readers: rendered after JavaScript 2 · read from the organizer's image 2
-Past editions frozen (not re-read): 664
+Editions re-checked: 223 · verified 197 · not found 4 · unreachable 22
+Checker could not match: 26 · of these, curator evidence on file: 24 · open: 2
+Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 2
+Past editions frozen (not re-read): 665
 
-## Newly failing (were verified last run) — review these first
+## Automatic text did not match; no current manual confirmation — open (2)
 
-- [ ] **CHEST Annual Meeting** (2026-10-17): not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting/registration-information
-- [ ] **CHEST Annual Meeting** (2029-10-07): not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
-- [ ] **CHEST Annual Meeting** (2030-10-20): not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
-
-## Automatic text did not match; no current manual confirmation — open (3)
-
-- CHEST Annual Meeting — 2026-10-17 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting/registration-information
 - CHEST Annual Meeting — 2029-10-07 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
 - CHEST Annual Meeting — 2030-10-20 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
 
-## Reader exceptions resolved by current curator evidence (25)
+## Reader exceptions resolved by current curator evidence (24)
 
 - Leadership Academy — 2026-10-19 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/event/conferences/
 - NCS Annual Meeting — 2026-10-20 — reviewed 2026-10-17 — https://www.neurocriticalcare.org/Events/Annual-Meeting
 - World Congress on Pain — 2026-10-26 — reviewed 2026-09-23 — https://worldcongressonpain.secure-platform.com/a/
 - IPAS Fall CME Conference (Healthcare in the Heartland) — 2026-10-26 — reviewed 2026-10-17 — https://www.iapasociety.org
-- WAPA Fall Conference — 2026-11-01 — reviewed 2026-09-22 — https://wapa.com/events/wapa-fall-conference-2026/
 - NONPF Fall Conference — 2026-11-05 — reviewed 2026-10-17 — https://www.nonpf.org/page/futureconferences
 - Padjadjaran International Nursing Conference — 2026-11-06 — reviewed 2026-10-17 — https://pinc.fkep.unpad.ac.id/
 - Qatar Health Congress — 2026-11-11 — reviewed 2026-10-17 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
 - International Nursing Specialties and Research Congress — 2026-11-19 — reviewed 2026-09-24 — https://congresoenfermeria.ufro.cl/
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
-- NACNS Annual Conference — 2027-03-01 — reviewed 2026-09-25 — https://nacns.org/news-events/annual-conference/2027-annual-conference/
 - National Hospitalist Day — 2027-03-04 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/
 - Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-10-17 — https://aahpm.org/education-events/annual-assembly/
+- Charter Oak Conference — 2027-03-21 — reviewed 2026-09-26 — https://connapa.org/event/2027-charter-oak-conference/
 - SHM Converge — 2027-03-30 — reviewed 2026-10-17 — https://shmconverge.hospitalmedicine.org/
 - ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-10-17 — https://enrs2027conference.oa-event.com/
 - NSNA Annual Convention — 2027-03-31 — reviewed 2026-10-20 — https://nsna.glueup.com/event/nsna-75th-annual-convention-184130/
@@ -47,4 +39,4 @@ Past editions frozen (not re-read): 664
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-10-17 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-10-17 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=6
+OPEN_ITEMS=2
