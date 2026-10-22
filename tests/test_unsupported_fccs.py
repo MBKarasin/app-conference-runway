@@ -1,5 +1,6 @@
 """Reproduce the nightly no-quote failure without inventing organizer evidence."""
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -31,8 +32,10 @@ class UnsupportedFCCSTest(unittest.TestCase):
                 "why": "No matching RWJUH FCCS organizer quote",
             }
             verification_path.write_text(json.dumps(verification), encoding="utf-8")
+            # Pin the day before the edition so the scenario stays "upcoming" after the real date passes.
+            env = {**os.environ, "RUNWAY_TODAY": "2026-10-18"}
             run = lambda script: subprocess.run(
-                [sys.executable, str(root / "scripts" / script)], capture_output=True, text=True)
+                [sys.executable, str(root / "scripts" / script)], capture_output=True, text=True, env=env)
             self.assertEqual(run("build.py").returncode, 0)
             gate = run("validate.py")
             self.assertNotEqual(gate.returncode, 0)

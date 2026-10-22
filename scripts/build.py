@@ -18,7 +18,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, SITE = ROOT / "sources", ROOT / "site"
 # The build's calendar day is New York's, like the daily archive (snapshot.py). On the UTC clock a call
 # due "today" would close at 8 p.m. Eastern, hours before a US organizer's deadline.
-TODAY_ = dt.datetime.now(ZoneInfo("America/New_York")).date()
+import os
+# RUNWAY_TODAY (YYYY-MM-DD) pins the calendar day for tests only; the nightly run never sets it.
+TODAY_ = dt.date.fromisoformat(os.environ["RUNWAY_TODAY"]) if os.environ.get("RUNWAY_TODAY") else dt.datetime.now(ZoneInfo("America/New_York")).date()
 HORIZON = TODAY_.year + 3          # rolling: current year plus three
 LOOKBACK = 3                        # years of history every meeting should show
 RULES = {}

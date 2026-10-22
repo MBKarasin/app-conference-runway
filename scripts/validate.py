@@ -6,7 +6,8 @@ d = json.load(open(ROOT / "site/data/runway.json", encoding="utf-8"))
 S = {s["id"]: s for s in d["series"]}
 errs = []
 from zoneinfo import ZoneInfo
-TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()   # same calendar day as build.py and check.py
+import os
+TODAY = os.environ.get("RUNWAY_TODAY") or dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()   # same calendar day as build.py and check.py
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ABSENCE = ["the only", "no published", "not published", "none found", "no public", "does not exist", "no source"]
 PRIVATE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}|Rosenkvist|\b\d{3}[-.]\d{3}[-.]\d{4}\b")
