@@ -1,30 +1,37 @@
-# Nightly source check — 2026-10-20
+# Nightly source check — 2026-10-22
 
-Generated 2026-10-20T15:08:38Z from commit b719b61. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-22T02:48:37Z from commit 3bf795b. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 225 · verified 197 · not found 2 · unreachable 26
-Checker could not match: 28 · of these, curator evidence on file: 23 · open: 5
-Confirmed by the second readers: rendered after JavaScript 3 · read from the organizer's image 2
-Past editions frozen (not re-read): 663
+Editions re-checked: 224 · verified 196 · not found 5 · unreachable 23
+Checker could not match: 28 · of these, curator evidence on file: 25 · open: 3
+Confirmed by the second readers: rendered after JavaScript 2 · read from the organizer's image 2
+Past editions frozen (not re-read): 664
 
-## Automated reader could not read; no current manual confirmation — open (5)
+## Newly failing (were verified last run) — review these first
 
-- We Are Family (Medicine) — 2027-01-16 — HTTP 403 — https://www.aapa.org/events/
-- AAPA Executive Leadership Conference — 2027-03-01 — HTTP 403 — https://www.aapa.org/events/
-- AAPA Conference — 2028-05-19 — HTTP 403 — https://www.aapa.org/events/
-- AAPA Conference — 2029-04-27 — HTTP 403 — https://www.aapa.org/events/
-- AAPA Conference — 2030-05-17 — HTTP 403 — https://www.aapa.org/events/
+- [ ] **CHEST Annual Meeting** (2026-10-17): not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting/registration-information
+- [ ] **CHEST Annual Meeting** (2029-10-07): not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
+- [ ] **CHEST Annual Meeting** (2030-10-20): not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
 
-## Reader exceptions resolved by current curator evidence (23)
+## Automatic text did not match; no current manual confirmation — open (3)
+
+- CHEST Annual Meeting — 2026-10-17 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting/registration-information
+- CHEST Annual Meeting — 2029-10-07 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
+- CHEST Annual Meeting — 2030-10-20 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
+
+## Reader exceptions resolved by current curator evidence (25)
 
 - Leadership Academy — 2026-10-19 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/event/conferences/
 - NCS Annual Meeting — 2026-10-20 — reviewed 2026-10-17 — https://www.neurocriticalcare.org/Events/Annual-Meeting
 - World Congress on Pain — 2026-10-26 — reviewed 2026-09-23 — https://worldcongressonpain.secure-platform.com/a/
 - IPAS Fall CME Conference (Healthcare in the Heartland) — 2026-10-26 — reviewed 2026-10-17 — https://www.iapasociety.org
+- WAPA Fall Conference — 2026-11-01 — reviewed 2026-09-22 — https://wapa.com/events/wapa-fall-conference-2026/
 - NONPF Fall Conference — 2026-11-05 — reviewed 2026-10-17 — https://www.nonpf.org/page/futureconferences
 - Padjadjaran International Nursing Conference — 2026-11-06 — reviewed 2026-10-17 — https://pinc.fkep.unpad.ac.id/
 - Qatar Health Congress — 2026-11-11 — reviewed 2026-10-17 — https://hamad.qa/EN/All-Events/Qatar-Health2026/About-conference/Pages/default.aspx
+- International Nursing Specialties and Research Congress — 2026-11-19 — reviewed 2026-09-24 — https://congresoenfermeria.ufro.cl/
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
+- NACNS Annual Conference — 2027-03-01 — reviewed 2026-09-25 — https://nacns.org/news-events/annual-conference/2027-annual-conference/
 - National Hospitalist Day — 2027-03-04 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/
 - Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-10-17 — https://aahpm.org/education-events/annual-assembly/
 - SHM Converge — 2027-03-30 — reviewed 2026-10-17 — https://shmconverge.hospitalmedicine.org/
@@ -33,7 +40,6 @@ Past editions frozen (not re-read): 663
 - Advanced Practice Neonatal Nurses Conference — 2027-04-08 — reviewed 2026-10-17 — https://www.academyonline.org/page/conferences
 - AMIA Amplify (Informatics Summit + Clinical Informatics Conference) — 2027-04-12 — reviewed 2026-10-17 — https://amia.org/education-events/2027-amplify-informatics-conference
 - Heart Rhythm — 2027-05-13 — reviewed 2026-09-25 — https://heartrhythm.com/
-- AAPA Conference — 2027-05-21 — reviewed 2026-10-17 — https://www.aapa.org/wp-content/uploads/2026/05/AC-27.002-AAPA-2027-Conference-Website_Agenda-PDF-8.5x11in-4.23.26.pdf
 - ASCO Annual Meeting — 2027-06-04 — reviewed 2026-10-17 — https://www.asco.org/annual-meeting/dates-know
 - Emergency Nursing (ENA Annual Conference) — 2027-09-15 — reviewed 2026-09-23 — https://www.ena.org/events/emergency-nursing-2027
 - NCS Annual Meeting — 2027-09-27 — reviewed 2026-10-17 — https://www.neurocriticalcare.org/Events/Event-Calendar/Event-Details/ncs-25th-annual-meeting-2027
@@ -41,4 +47,4 @@ Past editions frozen (not re-read): 663
 - NONPF Annual Conference — 2028-04-19 — reviewed 2026-10-17 — https://www.nonpf.org/page/futureconferences
 - ASCO Annual Meeting — 2028-06-02 — reviewed 2026-10-17 — https://www.asco.org/annual-meeting/dates-know
 
-OPEN_ITEMS=5
+OPEN_ITEMS=6
