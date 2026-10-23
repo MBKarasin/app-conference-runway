@@ -1,20 +1,19 @@
-# Nightly source check — 2026-10-22
+# Nightly source check — 2026-10-23
 
-Generated 2026-10-22T13:38:52Z from commit 08fb37c. This report is the canonical status; the review issue is rewritten from it on every run.
+Generated 2026-10-23T13:24:41Z from commit 1456c71. This report is the canonical status; the review issue is rewritten from it on every run.
 
-Editions re-checked: 223 · verified 197 · not found 4 · unreachable 22
-Checker could not match: 26 · of these, curator evidence on file: 24 · open: 2
+Editions re-checked: 221 · verified 198 · not found 4 · unreachable 19
+Checker could not match: 23 · of these, curator evidence on file: 21 · open: 2
 Confirmed by the second readers: rendered after JavaScript 1 · read from the organizer's image 2
-Past editions frozen (not re-read): 665
+Past editions frozen (not re-read): 667
 
 ## Automatic text did not match; no current manual confirmation — open (2)
 
 - CHEST Annual Meeting — 2029-10-07 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
 - CHEST Annual Meeting — 2030-10-20 — not on page: date — https://www.chestnet.org/learning-and-events/events/chest-annual-meeting
 
-## Reader exceptions resolved by current curator evidence (24)
+## Reader exceptions resolved by current curator evidence (21)
 
-- Leadership Academy — 2026-10-19 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/event/conferences/
 - NCS Annual Meeting — 2026-10-20 — reviewed 2026-10-17 — https://www.neurocriticalcare.org/Events/Annual-Meeting
 - World Congress on Pain — 2026-10-26 — reviewed 2026-09-23 — https://worldcongressonpain.secure-platform.com/a/
 - IPAS Fall CME Conference (Healthcare in the Heartland) — 2026-10-26 — reviewed 2026-10-17 — https://www.iapasociety.org
@@ -24,8 +23,6 @@ Past editions frozen (not re-read): 665
 - International Nursing Specialties and Research Congress — 2026-11-19 — reviewed 2026-09-24 — https://congresoenfermeria.ufro.cl/
 - Psych Congress PA Institute — 2026-12-04 — reviewed ? — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
 - National Hospitalist Day — 2027-03-04 — reviewed 2026-10-17 — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/
-- Annual Assembly of Hospice and Palliative Care — 2027-03-17 — reviewed 2026-10-17 — https://aahpm.org/education-events/annual-assembly/
-- Charter Oak Conference — 2027-03-21 — reviewed 2026-09-26 — https://connapa.org/event/2027-charter-oak-conference/
 - SHM Converge — 2027-03-30 — reviewed 2026-10-17 — https://shmconverge.hospitalmedicine.org/
 - ENRS Annual Scientific Sessions — 2027-03-31 — reviewed 2026-10-17 — https://enrs2027conference.oa-event.com/
 - NSNA Annual Convention — 2027-03-31 — reviewed 2026-10-20 — https://nsna.glueup.com/event/nsna-75th-annual-convention-184130/

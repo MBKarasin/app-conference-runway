@@ -1,6 +1,6 @@
-# Link check — 2026-10-22
+# Link check — 2026-10-23
 
-Links: 1030 · ok 865 · HTTP 403 108 · HTTP 404 32 · URLError 15 · robots 5 · HTTP 401 2 · HTTP 406 2 · RemoteDisconnected 1
+Links: 1030 · ok 868 · HTTP 403 110 · HTTP 404 32 · URLError 9 · robots 5 · TimeoutError 3 · HTTP 401 2 · HTTP 406 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -10,8 +10,6 @@ Links: 1030 · ok 865 · HTTP 403 108 · HTTP 404 32 · URLError 15 · robots 5 
   - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
-- HTTP 403 — https://aahpm.org/education-events/annual-assembly/
-  - Annual Assembly of Hospice and Palliative Care (org_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2027-03-17 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url)
 - HTTP 403 — https://aana2026.eventscribe.net/
@@ -62,14 +60,6 @@ Links: 1030 · ok 865 · HTTP 403 108 · HTTP 404 32 · URLError 15 · robots 5 
   - society-of-critical-care-medicine__critical-care-congress 2025-02-23 (detail_url)
 - HTTP 403 — https://congress2026.eventscribe.net/
   - society-of-critical-care-medicine__critical-care-congress 2026-03-22 (detail_url)
-- URLError — https://connapa.org/cocconference/
-  - Charter Oak Conference (archive_url); Charter Oak Conference (org_url); connecticut-academy-of-physician-associa__charter-oak-conference 2026-03-21 (source_url); connecticut-academy-of-physician-associa__charter-oak-conference 2028-03-01 (source_url)
-- URLError — https://connapa.org/event/2027-charter-oak-conference/
-  - connecticut-academy-of-physician-associa__charter-oak-conference 2027-03-21 (call); connecticut-academy-of-physician-associa__charter-oak-conference 2027-03-21 (source_url)
-- URLError — https://connapa.org/news/charter-oak-conference-2024-recap/
-  - connecticut-academy-of-physician-associa__charter-oak-conference 2024-03-24 (source_url)
-- URLError — https://connapa.org/news/charter-oak-conference-recap/
-  - connecticut-academy-of-physician-associa__charter-oak-conference 2025-03-23 (source_url)
 - HTTP 403 — https://edge26.eventscribe.net/reports/dynamicprogram.asp
   - american-association-of-nurse-anesthesio__edge-nurse-anesthesia-educators 2026-02-04 (detail_url); american-association-of-nurse-anesthesio__edge-nurse-anesthesia-educators 2026-02-04 (source_url)
 - HTTP 404 — https://experiencehrx.com/2025-highlights/
@@ -102,14 +92,16 @@ Links: 1030 · ok 865 · HTTP 403 108 · HTTP 404 32 · URLError 15 · robots 5 
   - american-nurses-credentialing-center__magnet-pathway-conference 2025-10-08 (source_url)
 - HTTP 404 — https://mdapa.org/Call-for-Speakers
   - maryland-academy-of-physician-assistants__mdapa-annual-cme-conference 2026-08-19 (call)
+- HTTP 403 — https://members.nebraskanurses.org/calendar/Details/2023-nna-annual-convention-836248?sourceTypeId=Website
+  - nebraska-nurses-association__nna-annual-convention 2023-10-06 (source_url)
+- HTTP 403 — https://members.nebraskanurses.org/calendar/Details/2024-nna-annual-convention-1100319?rendermode=print
+  - nebraska-nurses-association__nna-annual-convention 2024-10-03 (source_url)
+- HTTP 403 — https://members.nebraskanurses.org/calendar/details/2025-nna-annual-convention-1383277
+  - nebraska-nurses-association__nna-annual-convention 2025-10-01 (source_url)
 - HTTP 403 — https://minnesotapa.org/cme-conference-archives/
   - MAPA Annual Conference (archive_url)
 - HTTP 404 — https://mypnaa.org/PNAA47
   - philippine-nurses-association-of-america__pnaa-national-convention 2026-07-15 (detail_url); philippine-nurses-association-of-america__pnaa-national-convention 2026-07-15 (source_url)
-- URLError — https://nationalappweek.com/
-  - National APP Week (org_url); obs__national-app-week 2026-09-21 (source_url)
-- URLError — https://nationalappweek.com/wp-content/uploads/2024/01/MKTG23-1974-NURSING-National-APP-Week-FLYER-Final.pdf
-  - obs__national-app-week 2023-09-25 (source_url)
 - HTTP 403 — https://npwh.org/
   - NPWH Annual Women's Healthcare Conference (org_url); national-association-of-nurse-practition__npwh-annual-women-s-healthcare-conference 2027-09-01 (source_url); national-association-of-nurse-practition__npwh-annual-women-s-healthcare-conference 2028-09-01 (source_url); national-association-of-nurse-practition__npwh-annual-women-s-healthcare-conference 2029-09-01 (source_url)
 - HTTP 403 — https://npwh.org/events/eventdetails.aspx?id=1834358
@@ -188,6 +180,10 @@ Links: 1030 · ok 865 · HTTP 403 108 · HTTP 404 32 · URLError 15 · robots 5 
   - american-association-of-surgical-physici__aaspa-annual-virtual-surgical-cme-conference 2023-08-30 (source_url)
 - HTTP 404 — https://www.aaspa.com/2024-annual-cme-meeting
   - american-association-of-surgical-physici__aaspa-annual-virtual-surgical-cme-conference 2024-08-28 (source_url)
+- TimeoutError — https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=EQLVXWNI
+  - society-of-hospital-medicine__shm-converge 2027-03-30 (call)
+- TimeoutError — https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=UDMRCRLB
+  - aacn-colleges-of-nursing__transform 2024-12-05 (source_url)
 - HTTP 403 — https://www.academyonline.org/page/FallConference
   - academy-of-neonatal-nursing__national-neonatal-nurses-conference-fall 2026-09-08 (detail_url); academy-of-neonatal-nursing__national-neonatal-nurses-conference-fall 2026-09-08 (source_url)
 - HTTP 403 — https://www.academyonline.org/page/PastConferences
@@ -254,8 +250,6 @@ Links: 1030 · ok 865 · HTTP 403 108 · HTTP 404 32 · URLError 15 · robots 5 
   - GAPNA ENGAGE (Annual Conference) (archive_url); GAPNA PharmaCon (archive_url)
 - HTTP 401 — https://www.gapna.org/engage26
   - gerontological-advanced-practice-nurses-__gapna-engage-annual-conference 2026-09-24 (source_url)
-- HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute
-  - Psych Congress PA Institute (org_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (call); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2027-12-01 (source_url); hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2028-12-01 (source_url)
 - HTTP 406 — https://www.hmpglobalevents.com/psych-congress-pa-institute/agenda
   - hmp-global-in-partnership-with-the-ameri__psych-congress-pa-institute 2026-12-04 (source_url)
 - HTTP 403 — https://www.hospitalmedicine.org/about-shm/national-hospitalist-day/
@@ -306,8 +300,8 @@ Links: 1030 · ok 865 · HTTP 403 108 · HTTP 404 32 · URLError 15 · robots 5 
   - rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (detail_url); rwjbarnabas-health__acute-and-critical-care-app-symposium 2023-06-27 (source_url)
 - HTTP 403 — https://www.rwjbh.org/for-health-care-professionals/medical-education/robert-wood-johnson-university-hospital/fundamental-critical-care-support-course/schedule-and-location/
   - Fundamental Critical Care Support (FCCS) (archive_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-01-09 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-03-13 (source_url); sccm-course-hosted-by-robert-wood-johnso__fundamental-critical-care-support-fccs 2025-06-05 (source_url)
-- RemoteDisconnected — https://www.svnnet.org/resource/resmgr/2023_files/svn_2024_program_with_modera.pdf
-  - society-for-vascular-nursing__svn-annual-conference 2024-06-19 (detail_url)
+- TimeoutError — https://www.svnnet.org/page/annualconference
+  - SVN Annual Conference (org_url); society-for-vascular-nursing__svn-annual-conference 2027-06-02 (source_url); society-for-vascular-nursing__svn-annual-conference 2028-06-01 (source_url); society-for-vascular-nursing__svn-annual-conference 2029-06-01 (source_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
 - HTTP 403 — https://www.thenpa.org/
