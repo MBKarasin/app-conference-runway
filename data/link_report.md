@@ -1,6 +1,6 @@
-# Link check — 2026-10-24
+# Link check — 2026-10-25
 
-Links: 1030 · ok 862 · HTTP 403 116 · HTTP 404 32 · URLError 11 · robots 5 · HTTP 401 2 · HTTP 406 1 · RemoteDisconnected 1
+Links: 1030 · ok 864 · HTTP 403 116 · HTTP 404 32 · URLError 10 · robots 5 · HTTP 401 2 · HTTP 406 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -150,8 +150,6 @@ Links: 1030 · ok 862 · HTTP 403 116 · HTTP 404 32 · URLError 11 · robots 5 
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
-- URLError — https://web.archive.org/web/20241118070950/https://congresoenfermeria.ufro.cl/images/documentos/programa-congreso-2024-4.pdf
-  - universidad-de-la-frontera__international-nursing-specialties-and-research-con 2024-11-11 (source_url)
 - URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
   - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
 - URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
@@ -314,8 +312,6 @@ Links: 1030 · ok 862 · HTTP 403 116 · HTTP 404 32 · URLError 11 · robots 5 
   - society-for-vascular-nursing__svn-annual-conference 2026-06-10 (detail_url)
 - HTTP 403 — https://www.tandfonline.com/doi/full/10.1080/15563650.2025.2532975
   - North American Congress of Clinical Toxicology (NACCT) (proceedings_url)
-- RemoteDisconnected — https://www.texasnurses.org/events/EventDetails.aspx?id=1947762
-  - texas-nurses-association__tna-annual-conference 2025-06-06 (source_url)
 - HTTP 403 — https://www.thenpa.org/
   - NPA Annual Conference (NP26) (org_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2027-10-01 (source_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2028-10-01 (source_url); the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2029-10-01 (source_url)
 - HTTP 403 — https://www.thenpa.org/page/Conferences
