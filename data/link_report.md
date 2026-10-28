@@ -1,13 +1,17 @@
-# Link check — 2026-10-27
+# Link check — 2026-10-28
 
-Links: 1030 · ok 879 · HTTP 403 95 · HTTP 404 34 · URLError 12 · robots 5 · HTTP 401 2 · HTTP 406 2 · TimeoutError 1
+Links: 1030 · ok 876 · HTTP 403 105 · HTTP 404 34 · URLError 10 · HTTP 401 2 · HTTP 406 2 · robots 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
+- HTTP 403 — https://aahpm.org/
+  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
+- HTTP 403 — https://aahpm.org/education-events/annual-assembly/
+  - Annual Assembly of Hospice and Palliative Care (org_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2027-03-17 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/wp-content/uploads/2024/08/AAHPM2025-Sponsor-and-Exhibitor-Prospectus-FINAL.pdf
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2025-02-05 (source_url)
 - HTTP 403 — https://aana2026.eventscribe.net/
@@ -62,6 +66,8 @@ Links: 1030 · ok 879 · HTTP 403 95 · HTTP 404 34 · URLError 12 · robots 5 �
   - heart-rhythm-society__hrx-live 2025-09-04 (detail_url)
 - HTTP 404 — https://fannp.org/_downloads/FANNP24Conference.pdf
   - florida-association-of-neonatal-nurse-pr__national-neonatal-nurse-practitioner-symposium 2024-10-15 (source_url)
+- HTTP 403 — https://fnpn.enpnetwork.com/page/37414-fnpn-past-conferences
+  - FNPN Annual Conference (archive_url)
 - HTTP 404 — https://gane.nursingnetwork.com/nursing-news/203680-gane-2026-at-the-ritz-carlton-reynolds-resort-lake-oconee-2-12-26-2-14-26
   - georgia-association-for-nursing-educatio__gane-conference 2026-02-12 (source_url)
 - HTTP 403 — https://heartrhythm.com/attend/heart-rhythm-2024
@@ -98,8 +104,6 @@ Links: 1030 · ok 879 · HTTP 403 95 · HTTP 404 34 · URLError 12 · robots 5 �
   - nebraska-nurses-association__nna-annual-convention 2025-10-01 (source_url)
 - HTTP 404 — https://mypnaa.org/PNAA47
   - philippine-nurses-association-of-america__pnaa-national-convention 2026-07-15 (detail_url); philippine-nurses-association-of-america__pnaa-national-convention 2026-07-15 (source_url)
-- TimeoutError — https://npao2026annualconference.vfairs.com/
-  - nurse-practitioners-association-of-ontar__npao-annual-conference 2026-09-23 (source_url)
 - URLError — https://npconference.nnpbc.com/
   - NNPBC NP Conference (org_url); nurses-and-nurse-practitioners-of-britis__nnpbc-np-conference 2026-05-29 (source_url); nurses-and-nurse-practitioners-of-britis__nnpbc-np-conference 2027-05-01 (source_url); nurses-and-nurse-practitioners-of-britis__nnpbc-np-conference 2028-05-01 (source_url)
 - HTTP 403 — https://npwh.org/
@@ -132,16 +136,30 @@ Links: 1030 · ok 879 · HTTP 403 95 · HTTP 404 34 · URLError 12 · robots 5 �
   - Padjadjaran International Nursing Conference (org_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2026-11-06 (call); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2026-11-06 (source_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2027-10-01 (source_url)
 - HTTP 404 — https://shmconverge.hospitalmedicine.org/wp-content/uploads/2023/11/BIZ-23-0029-Converge-2024-Partner-Catalog-FNL.pdf
   - society-of-hospital-medicine__shm-converge 2024-04-12 (source_url)
+- HTTP 403 — https://site.thoracic.org/about-us/news/bringing-together-the-global-respiratory-community-at-ats-2023
+  - american-thoracic-society__ats-international-conference 2023-05-19 (source_url)
+- HTTP 403 — https://site.thoracic.org/about-us/news/lets-shape-the-future-of-respiratory-health-at-ats-2024
+  - american-thoracic-society__ats-international-conference 2024-05-17 (source_url)
+- HTTP 403 — https://site.thoracic.org/conference
+  - ATS International Conference (org_url); american-thoracic-society__ats-international-conference 2027-05-14 (call)
+- HTTP 403 — https://site.thoracic.org/conference/about/conference-history/past-annual-meetings-international-conferences
+  - ATS International Conference (archive_url)
+- HTTP 403 — https://site.thoracic.org/conference/attendees/future-conferences
+  - american-thoracic-society__ats-international-conference 2027-05-14 (source_url); american-thoracic-society__ats-international-conference 2028-05-19 (source_url); american-thoracic-society__ats-international-conference 2029-05-18 (source_url)
+- HTTP 403 — https://site.thoracic.org/events/ats-2025-international-conference
+  - american-thoracic-society__ats-international-conference 2025-05-17 (source_url)
+- HTTP 403 — https://site.thoracic.org/events/ats-international-conference
+  - american-thoracic-society__ats-international-conference 2026-05-15 (source_url)
 - HTTP 403 — https://summit.nln.org/
   - NLN Education Summit (org_url); national-league-for-nursing__nln-education-summit 2026-09-23 (source_url); national-league-for-nursing__nln-education-summit 2028-09-01 (source_url); national-league-for-nursing__nln-education-summit 2029-09-01 (source_url)
 - HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
   - District 9 Conference: Jurisprudence, Geriatrics and Inclusive Care (org_url); texas-nurses-association__district-9-conference-jurisprudence-geriatrics-and 2026-09-25 (source_url)
 - HTTP 403 — https://tqip25.eventscribe.net/login.asp
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
-- URLError — https://uach.mx/
-  - National Postgraduate Nursing Congress (org_url); universidad-aut-noma-de-chihuahua__national-postgraduate-nursing-congress 2027-11-01 (source_url); universidad-aut-noma-de-chihuahua__national-postgraduate-nursing-congress 2028-11-01 (source_url); universidad-aut-noma-de-chihuahua__national-postgraduate-nursing-congress 2029-11-01 (source_url)
-- URLError — https://uach.mx/fen/noticias/2026/7/20/14-congreso-nacional-posgrado-en-enfermeria/
-  - universidad-aut-noma-de-chihuahua__national-postgraduate-nursing-congress 2026-11-26 (source_url)
+- URLError — https://web.archive.org/web/20241118070950/https://congresoenfermeria.ufro.cl/images/documentos/programa-congreso-2024-4.pdf
+  - universidad-de-la-frontera__international-nursing-specialties-and-research-con 2024-11-11 (source_url)
+- URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
+  - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
 - URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
   - the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2025-10-16 (source_url)
 - URLError — https://web.archive.org/web/20250913144147/https://wcapn.enpnetwork.com/nurse-practitioner-events/147012-2025-wna-convention
@@ -232,8 +250,6 @@ Links: 1030 · ok 879 · HTTP 403 95 · HTTP 404 34 · URLError 12 · robots 5 �
   - heart-rhythm-society__hrx-live 2024-09-05 (source_url)
 - HTTP 403 — https://www.iapasociety.org
   - IPAS Fall CME Conference (Healthcare in the Heartland) (org_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2026-10-26 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2027-10-01 (source_url); iowa-physician-associates-society-ipas__ipas-fall-cme-conference-healthcare-in-the-heartla 2028-10-01 (source_url)
-- URLError — https://www.madonna.edu/academics/research/symposium/
-  - Symposium for Research, Scholarship and Creativity (org_url); madonna-university-college-of-nursing-an__symposium-for-research-scholarship-and-creativity 2024-04-17 (student); madonna-university-college-of-nursing-an__symposium-for-research-scholarship-and-creativity 2026-04-22 (source_url); madonna-university-college-of-nursing-an__symposium-for-research-scholarship-and-creativity 2026-04-22 (student)
 - HTTP 403 — https://www.michigan.gov/whitmer/news/proclamations/2025/10/19/october-19-25-2025-doctor-of-nursing-practice-week
   - obs__national-dnp-week 2025-10-19 (source_url)
 - HTTP 403 — https://www.neurocriticalcare.org/Events/Annual-Meeting
@@ -292,5 +308,3 @@ Links: 1030 · ok 879 · HTTP 403 95 · HTTP 404 34 · URLError 12 · robots 5 �
   - 2026台灣胸腔及心臟血管外科學會暨台灣專科護理師學會合辦【學術海報發表暨口頭演講競賽】(Joint Academic Conference with the Taiwan Thoracic & Cardiovascular Surgery Society) (org_url); taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2027-10-01 (source_url); taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2028-10-01 (source_url); taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2029-10-01 (source_url)
 - HTTP 403 — https://www.tnpa.org.tw/events/content.php?id=6262
   - taiwan-association-of-nurse-practitioner__2026-joint-academic-conference-with-the-taiwan-tho 2026-10-18 (source_url)
-- URLError — https://www.ufro.cl/
-  - International Nursing Specialties and Research Congress (org_url); universidad-de-la-frontera__international-nursing-specialties-and-research-con 2027-11-01 (source_url); universidad-de-la-frontera__international-nursing-specialties-and-research-con 2028-11-01 (source_url); universidad-de-la-frontera__international-nursing-specialties-and-research-con 2029-11-01 (source_url)
