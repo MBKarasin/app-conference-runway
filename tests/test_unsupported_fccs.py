@@ -1,4 +1,5 @@
 """Reproduce the nightly no-quote failure without inventing organizer evidence."""
+import datetime as dt
 import json
 import os
 from pathlib import Path
@@ -7,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 IDENTITY = "ba1fd203973c"
@@ -23,6 +25,13 @@ class UnsupportedFCCSTest(unittest.TestCase):
             override_path = root / "sources/overrides.json"
             overrides = json.loads(override_path.read_text(encoding="utf-8"))
             disposition = overrides["editions"].pop(IDENTITY)
+            # Move only this unsupported fixture into the future. Rewinding the
+            # entire catalog resurrects ended records whose archived checks no
+            # longer contain snippets, blocking unrelated nightly publication.
+            today = dt.datetime.now(ZoneInfo("America/New_York")).date()
+            start = (today + dt.timedelta(days=1)).isoformat()
+            end = (today + dt.timedelta(days=2)).isoformat()
+            overrides["editions"][IDENTITY] = {"start": start, "end": end}
             override_path.write_text(json.dumps(overrides), encoding="utf-8")
             verification_path = root / "data/verification.json"
             verification = json.loads(verification_path.read_text(encoding="utf-8"))
@@ -32,14 +41,13 @@ class UnsupportedFCCSTest(unittest.TestCase):
                 "why": "No matching RWJUH FCCS organizer quote",
             }
             verification_path.write_text(json.dumps(verification), encoding="utf-8")
-            # Pin the day before the edition so the scenario stays "upcoming" after the real date passes.
-            env = {**os.environ, "RUNWAY_TODAY": "2026-10-18"}
+            env = {**os.environ, "RUNWAY_TODAY": today.isoformat()}
             run = lambda script: subprocess.run(
                 [sys.executable, str(root / "scripts" / script)], capture_output=True, text=True, env=env)
             self.assertEqual(run("build.py").returncode, 0)
             gate = run("validate.py")
             self.assertNotEqual(gate.returncode, 0)
-            self.assertIn("2026-10-19: upcoming record has no evidence quote", gate.stdout + gate.stderr)
+            self.assertIn(f"{start}: upcoming record has no evidence quote", gate.stdout + gate.stderr)
             ledger_path = root / "data/ledger.json"
             retained = json.loads(ledger_path.read_text(encoding="utf-8"))[IDENTITY]
             self.assertIsNone(retained["edition"]["evidence"])
