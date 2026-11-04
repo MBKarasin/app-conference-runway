@@ -1,13 +1,11 @@
-# Link check — 2026-11-03
+# Link check — 2026-11-04
 
-Links: 1030 · ok 874 · HTTP 403 105 · HTTP 404 37 · URLError 9 · HTTP 401 2 · HTTP 406 2 · robots 1
+Links: 1030 · ok 865 · HTTP 403 104 · HTTP 404 37 · URLError 10 · TimeoutError 9 · HTTP 401 2 · HTTP 406 2 · robots 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
 - HTTP 403 — https://2024svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2024-06-19 (detail_url)
-- HTTP 403 — https://aahpm.org/
-  - Annual Assembly of Hospice and Palliative Care (org_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2027-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2028-03-01 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2029-03-01 (source_url)
 - HTTP 403 — https://aahpm.org/assembly/attend
   - aahpm-hospice-and-palliative-nurses-asso__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url); american-academy-of-hospice-and-palliati__annual-assembly-of-hospice-and-palliative-care 2024-03-20 (source_url)
 - HTTP 403 — https://aahpm.org/education-events/annual-assembly/
@@ -160,6 +158,8 @@ Links: 1030 · ok 874 · HTTP 403 105 · HTTP 404 37 · URLError 9 · HTTP 401 2
   - american-college-of-surgeons__tqip-annual-conference 2025-11-08 (detail_url)
 - URLError — https://web.archive.org/web/20250110034326/https://pinc.fkep.unpad.ac.id/absbook/9th_PINC_ABSTRACT_BOOKS_2024.pdf
   - universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2024-10-29 (source_url)
+- URLError — https://web.archive.org/web/20250429104539/https://www.vapa.org/events/2025VAPASummerConference/
+  - virginia-academy-of-pas-vapa__vapa-summer-conference 2025-07-20 (source_url)
 - URLError — https://web.archive.org/web/20250716104322/https://www.thenpa.org/news/703458/NP25-Annual-Conference-.htm
   - the-nurse-practitioner-association-new-y__npa-annual-conference-np26 2025-10-16 (source_url)
 - URLError — https://web.archive.org/web/20250913144147/https://wcapn.enpnetwork.com/nurse-practitioner-events/147012-2025-wna-convention
@@ -208,6 +208,24 @@ Links: 1030 · ok 874 · HTTP 403 105 · HTTP 404 37 · URLError 9 · HTTP 401 2
   - ASCO Annual Meeting (org_url); american-society-of-clinical-oncology__asco-annual-meeting 2029-06-01 (source_url)
 - HTTP 403 — https://www.asco.org/annual-meeting/dates-know
   - american-society-of-clinical-oncology__asco-annual-meeting 2027-06-04 (call); american-society-of-clinical-oncology__asco-annual-meeting 2027-06-04 (source_url); american-society-of-clinical-oncology__asco-annual-meeting 2028-06-02 (source_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/
+  - Kidney Week (org_url); american-society-of-nephrology__kidney-week 2028-10-01 (source_url); american-society-of-nephrology__kidney-week 2029-10-01 (source_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/2025/program-search-abstract.aspx
+  - american-society-of-nephrology__kidney-week 2025-11-05 (detail_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/2026/important-dates.aspx
+  - american-society-of-nephrology__kidney-week 2026-10-21 (call)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/2026/register-overview.aspx
+  - american-society-of-nephrology__kidney-week 2026-10-21 (source_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/
+  - Kidney Week (proceedings_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/KW23Abstracts.pdf
+  - american-society-of-nephrology__kidney-week 2023-11-01 (detail_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/KW24Abstracts.pdf
+  - american-society-of-nephrology__kidney-week 2024-10-23 (detail_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/future.aspx
+  - american-society-of-nephrology__kidney-week 2027-10-27 (source_url)
+- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/past.aspx
+  - Kidney Week (archive_url); american-society-of-nephrology__kidney-week 2023-11-01 (source_url); american-society-of-nephrology__kidney-week 2024-10-23 (source_url); american-society-of-nephrology__kidney-week 2025-11-05 (source_url)
 - HTTP 403 — https://www.avainfo.org
   - AVA Annual Scientific Meeting (org_url); association-for-vascular-access__ava-annual-scientific-meeting 2027-10-01 (source_url); association-for-vascular-access__ava-annual-scientific-meeting 2028-10-01 (source_url); association-for-vascular-access__ava-annual-scientific-meeting 2029-10-01 (source_url)
 - HTTP 403 — https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400
