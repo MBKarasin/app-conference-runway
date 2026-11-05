@@ -1,6 +1,6 @@
-# Link check — 2026-11-04
+# Link check — 2026-11-05
 
-Links: 1030 · ok 865 · HTTP 403 104 · HTTP 404 37 · URLError 10 · TimeoutError 9 · HTTP 401 2 · HTTP 406 2 · robots 1
+Links: 1030 · ok 881 · HTTP 403 97 · HTTP 404 37 · URLError 10 · HTTP 401 2 · HTTP 406 2 · robots 1
 
 - HTTP 403 — https://2023svsvam.eventscribe.net/
   - society-for-vascular-surgery__vascular-annual-meeting-vam 2023-06-14 (detail_url)
@@ -136,20 +136,6 @@ Links: 1030 · ok 865 · HTTP 403 104 · HTTP 404 37 · URLError 10 · TimeoutEr
   - Padjadjaran International Nursing Conference (org_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2026-11-06 (call); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2026-11-06 (source_url); universitas-padjadjaran-faculty-of-nursi__padjadjaran-international-nursing-conference 2027-10-01 (source_url)
 - HTTP 404 — https://shmconverge.hospitalmedicine.org/wp-content/uploads/2023/11/BIZ-23-0029-Converge-2024-Partner-Catalog-FNL.pdf
   - society-of-hospital-medicine__shm-converge 2024-04-12 (source_url)
-- HTTP 403 — https://site.thoracic.org/about-us/news/bringing-together-the-global-respiratory-community-at-ats-2023
-  - american-thoracic-society__ats-international-conference 2023-05-19 (source_url)
-- HTTP 403 — https://site.thoracic.org/about-us/news/lets-shape-the-future-of-respiratory-health-at-ats-2024
-  - american-thoracic-society__ats-international-conference 2024-05-17 (source_url)
-- HTTP 403 — https://site.thoracic.org/conference
-  - ATS International Conference (org_url); american-thoracic-society__ats-international-conference 2027-05-14 (call)
-- HTTP 403 — https://site.thoracic.org/conference/about/conference-history/past-annual-meetings-international-conferences
-  - ATS International Conference (archive_url)
-- HTTP 403 — https://site.thoracic.org/conference/attendees/future-conferences
-  - american-thoracic-society__ats-international-conference 2027-05-14 (source_url); american-thoracic-society__ats-international-conference 2028-05-19 (source_url); american-thoracic-society__ats-international-conference 2029-05-18 (source_url)
-- HTTP 403 — https://site.thoracic.org/events/ats-2025-international-conference
-  - american-thoracic-society__ats-international-conference 2025-05-17 (source_url)
-- HTTP 403 — https://site.thoracic.org/events/ats-international-conference
-  - american-thoracic-society__ats-international-conference 2026-05-15 (source_url)
 - HTTP 403 — https://summit.nln.org/
   - NLN Education Summit (org_url); national-league-for-nursing__nln-education-summit 2026-09-23 (source_url); national-league-for-nursing__nln-education-summit 2028-09-01 (source_url); national-league-for-nursing__nln-education-summit 2029-09-01 (source_url)
 - HTTP 403 — https://tna.ce21.com/item/tna-district-9-conference-jurisprudence-geriatrics-inclusive-care-788263
@@ -208,24 +194,6 @@ Links: 1030 · ok 865 · HTTP 403 104 · HTTP 404 37 · URLError 10 · TimeoutEr
   - ASCO Annual Meeting (org_url); american-society-of-clinical-oncology__asco-annual-meeting 2029-06-01 (source_url)
 - HTTP 403 — https://www.asco.org/annual-meeting/dates-know
   - american-society-of-clinical-oncology__asco-annual-meeting 2027-06-04 (call); american-society-of-clinical-oncology__asco-annual-meeting 2027-06-04 (source_url); american-society-of-clinical-oncology__asco-annual-meeting 2028-06-02 (source_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/
-  - Kidney Week (org_url); american-society-of-nephrology__kidney-week 2028-10-01 (source_url); american-society-of-nephrology__kidney-week 2029-10-01 (source_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/2025/program-search-abstract.aspx
-  - american-society-of-nephrology__kidney-week 2025-11-05 (detail_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/2026/important-dates.aspx
-  - american-society-of-nephrology__kidney-week 2026-10-21 (call)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/2026/register-overview.aspx
-  - american-society-of-nephrology__kidney-week 2026-10-21 (source_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/
-  - Kidney Week (proceedings_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/KW23Abstracts.pdf
-  - american-society-of-nephrology__kidney-week 2023-11-01 (detail_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/KW24Abstracts.pdf
-  - american-society-of-nephrology__kidney-week 2024-10-23 (detail_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/future.aspx
-  - american-society-of-nephrology__kidney-week 2027-10-27 (source_url)
-- TimeoutError — https://www.asn-online.org/education/kidneyweek/archives/past.aspx
-  - Kidney Week (archive_url); american-society-of-nephrology__kidney-week 2023-11-01 (source_url); american-society-of-nephrology__kidney-week 2024-10-23 (source_url); american-society-of-nephrology__kidney-week 2025-11-05 (source_url)
 - HTTP 403 — https://www.avainfo.org
   - AVA Annual Scientific Meeting (org_url); association-for-vascular-access__ava-annual-scientific-meeting 2027-10-01 (source_url); association-for-vascular-access__ava-annual-scientific-meeting 2028-10-01 (source_url); association-for-vascular-access__ava-annual-scientific-meeting 2029-10-01 (source_url)
 - HTTP 403 — https://www.avainfo.org/events/EventDetails.aspx?group=162447&id=2045400
